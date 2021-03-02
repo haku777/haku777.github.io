@@ -1,0 +1,48 @@
+*{margin: 0;padding: 0;}
+body{
+	background: linear-gradient(to left,indigo 2%,skyblue 98%);
+}
+
+.reloj{
+	font-family: verdana;
+	background: white;
+	width: 670px;
+	margin: auto;
+	margin-top: 70px;
+	padding: 7px;
+	border:1px solid #f1f1f1;
+	box-shadow: 3px 3px 3px 1px #d1d1d1;
+}
+
+.fecha{
+	padding: 40px;
+	font-size: 24px;
+	background:skyblue;
+	margin-bottom: 10px;
+	background:steelblue;
+	color:white;
+	padding: 0px 40px;
+}
+
+h2{	display: inline-block;}
+
+a{
+	color: indigo;
+	padding: 20px;
+}
+
+/*--------------------*/
+
+.date{
+	padding: 40px;
+	font-size: 70px;
+	background:skyblue;
+}
+.am-pm{
+	font-size: 30px;
+	width: 100px;
+	display: inline-block;
+}
+#ampm{
+	font-size: 40px;
+}
