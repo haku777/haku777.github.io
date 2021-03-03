@@ -1,0 +1,16 @@
+*{margin: 0;padding: 0;}
+
+body{
+	background: #707070;
+}
+
+img{
+	width: 700px;
+	height: 500px;
+}
+a{
+	background:#c1c1c1;
+	color: white;
+	padding: 7px;
+	margin: 10px;
+}
