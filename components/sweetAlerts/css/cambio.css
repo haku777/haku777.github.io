@@ -2,12 +2,48 @@
 
 body{background:#e2e2e2;}
 
+main{
+	padding: 40px 60px;
+}
+
+/*-------------------*/
 .content{
 	padding: 20px;
 	background:teal;
 	color:#fff;
+	margin: auto;
+	width: 700px;
 }
 .clase_cambiar {
 	background: #e1e1e1;
 	color:#000;
+}
+
+
+/*-------------------*/
+h2{
+	text-align: center;
+}
+
+button{
+	background: crimson;
+	padding: 10px;
+	border-radius: 3px;
+	border:none;
+}
+a{
+	text-decoration: none;
+	color: white;
+}
+
+input{
+	background: indigo;
+	display: block;
+	color: white;
+	padding: 10px;
+	width: 100px;
+	border:none;
+	margin: auto;
+	border-radius: 3px;
+	margin-bottom: 3px;
 }

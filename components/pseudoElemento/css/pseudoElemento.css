@@ -1,0 +1,73 @@
+/**/
+/*--utilizamos variables--*/
+/**/
+
+:root{
+	--background:#f1f1f1;
+	--backgroundSecundario:crimson;
+	--backgroundSection:teal;
+	--color:crimson;
+}
+
+*{margin: 0;padding: 0;}
+
+aside{background:var(--backgroundSection);padding: 20px; }
+
+a{color: white;background: var(--backgroundSecundario);padding: 10px;}
+
+h2{
+	background: red;
+	color: white;
+	text-align: center;
+}
+
+main{
+	background: var(--backgroundSecundario);
+	padding: 20px;
+}
+
+.pseudoElemento{
+	/*background: salmon;*/
+	width: 200px;
+	margin: auto;
+	padding:10px;
+	position: relative;
+}
+p{
+	background: var(--background);
+	color: var(--color);
+	display: block;
+	width: 80%;
+	margin: auto;
+	border-radius: 3px; 
+	padding: 20px;
+}
+
+p::selection{
+	background: cyan;
+	color:black;
+}
+
+.paragraf::after{
+	content: '';
+	display: block;
+	position: absolute;
+	bottom: 36px;
+	right: 45%;
+	border-top: 20px solid var(--background);
+	border-right: 20px solid transparent;
+	border-left: 20px solid transparent;
+	border-bottom: 20px solid transparent;
+}
+
+
+
+
+
+
+
+
+
+
+
+

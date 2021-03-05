@@ -46,3 +46,26 @@ a{
 #ampm{
 	font-size: 40px;
 }
+
+
+
+
+
+/*--------------------*/
+
+
+h2{
+	text-align: center;
+}
+
+button{
+	background: crimson;
+	padding: 10px;
+	margin: 10px;
+	border-radius: 3px;
+	border:none;
+}
+a{
+	text-decoration: none;
+	color: white;
+}

@@ -3,30 +3,61 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 		<title>componets</title>
 
 
 		<style>
-			body{background: #e1e1e1;}
-			a{
-				background: salmon;
-				font-size: 20px;
-				margin:10px 0px 10px 0px;
-				text-decoration: none;
-				display: inline-block;
-				color :white;
+			*{margin: 0;padding: 0;}
+			body{
+				background: #e1e1e1;
 			}
+			.container{
+				background: indigo;
+				height: 400px;
+			}
+			button{
+				background: crimson;
+				color :white;
+				border:none;
+				display: block;
+				margin:10px 0px 0px 70px;
+			}
+			a{
+				padding: 20px;
+				text-decoration: none;
+				color: white;
+				font-size: 20px;
+			}
+			input{
+				background: purple;
+				display: block;
+				color: white;
+				padding: 10px;
+				width: 100px;
+				border:none;
+				margin: auto;
+				border-radius: 3px;
+				margin-bottom: 3px;
+}
 		</style>
 	</head>
 
 	<body>
-		<a href="../page.html"><h2>back</h2></a><br>
-		<a href="reloj/reloj.html">reloj</a><br>
-		<a href="sweetAlerts/sweetAlerts.html">Alert</a><br>
-		<a href="text/text.html">text</a><br>
-		<a href="carrucel/carrucel.html">carrucel</a><br>
-	</body>
 
+		<main>
+			<div class="container">
+				<a href="../page.html"><input type="submit" value="Menu"></a>
+				<br>
+				<button type="submit"><a href="reloj/reloj.html">Reloj</a></button>
+				<button type="submit"><a href="sweetAlerts/sweetAlerts.html">Alert</a></button>
+				<button type="submit"><a href="pseudoElemento/pseudoElemento.html">pseudoElemento</a></button>
+				<button type="submit"><a href="menu/menu.html">Menu</a></button>
+				<button type="submit"><a href="text/text.html">Text</a></button>
+				<button type="submit"><a href="carrucel/carrucel.html">Carrucel</a></button>	
+			</div>
+		</main>
+
+
+	</body>
 </html>
 
