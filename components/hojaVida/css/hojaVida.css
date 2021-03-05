@@ -1,0 +1,41 @@
+*{margin: 0;padding: 0;}
+
+body{
+	background: #f1f1f1;
+}
+
+header{
+	background: #50dedf;
+	padding: 20px;
+}
+header h2{
+	color: indigo;
+	padding: 10px;
+}
+header a{
+	text-decoration: none;
+	background: crimson;
+	padding: 10px;
+	color:white;
+}
+/*-------------------*/
+main{
+	margin: auto;
+	width: 80%;
+	box-shadow: 0px 0px 3px gray;
+}
+
+.personalInformation{
+	display: inline-block;
+	background:rgb(0,188,241);
+	color:white;
+	width: 30%;
+}
+
+.generalInformation{
+	display: inline-block;
+	background:#ffffff;
+	color: black;
+	width: 50%;
+}
+

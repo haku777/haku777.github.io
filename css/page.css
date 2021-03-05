@@ -12,18 +12,24 @@ header{
 	justify-content: space-around;
 	overflow: hidden;
 }
-
-
-h2{
-	color: white;
+h2{color: white; }
+p{color:salmon; }
+button{
+border: none;
+border-radius: 3px;
+margin: 3px;
+width: 13%;
 }
-
-h3{
-	color:crimson;
+main a{
+text-decoration: none;
+display: inline-block;
+border-radius: 3px;
+background: black;
+padding: 3px;
+width: 100%;
+color: #e1e1e1;
 }
-p{
-	color:salmon;
-}
+main a:hover{background: crimson;color: white;transition: 700ms;}
 /*------------------*/
 
 .myPage{
@@ -70,17 +76,14 @@ li a{
 /*------------------*/
 
 .wrapper{
-	padding: 77px 0px 70px 0px;
-	background: url("../img/sky.jpg");
-	background-repeat: no-repeat;
-	background-size: 100% 100%;
-	background-attachment: fixed;
+	padding: 77px 0px;
+	background: linear-gradient(120deg,indigo,#00a4ef,lightblue,white);
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
 }
 .representation{
-	background: steelblue;
+	background: indigo;
 	width: 100%;
 	padding: 60px 0px;
 	margin:auto;
@@ -121,8 +124,8 @@ aside{
 }
 /*------------------*/
 footer{
-	border-top: solid teal 3px;
-	background: #526077;
+	border-top: solid lightblue 3px;
+	background: #2d3e50;
 	color: white;
 	
 	padding: 30px 0px;
@@ -136,7 +139,7 @@ footer div{
 	margin-right: 7px;
 	padding: 17px 20px;
 	display: inline-block;
-	background: #525077;
+	background: rgb(66, 91, 118);
 	height: 300px;
 }
 
