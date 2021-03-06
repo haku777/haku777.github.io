@@ -1,112 +1,124 @@
-
 /*-----------------------------------*/
 /*--------agregamosVariables---------*/
 /*-----------------------------------*/
 
 :root{
-	--primeraVariable:red;
+	--color1:crimson;
+	--color2:teal;
+	--color3:black;
+	--color4:gray;
+	--color5:#ee7e57;
+	--color6:#80c7c7;
 }
 
-
-
-/**{margin: 0; padding: 0; }*/
+*{margin: 0; padding: 0; }
 /*   para comentar es ctrl + /           */
 body{
-	margin: 0;
-	padding: 0;
-	background: #f1f1f1;
+	background: var(--color6);
 }
 
-ul{background: red; margin-bottom: 10px;}
-li{background: teal;}
-a{
-	text-transform: uppercase;
+header{background: var(--color2);padding: 70px 10px;margin: auto;}
+
+/* -------------------- */
+ul{
+	background: magenta;
 }
 
 .nav-area{
-	background: lightblue;
-	color: crimson;
+	background: var(--color3);
+	padding: 10px;
 }
 /*----------------------*/
 
 .nav-area::after{
-	content: "";
+	content: '';
 	clear: both;
 	display: block;
 }
 
 .nav-area ul {
 	list-style: none;
-	margin: 0;
 }
 .nav-area ul li{
-	float: left;
+	display: inline-block;
 	position: relative;
 }
+/* ------------- */
+/* primera linea */
+/* ------------- */
 
-.nav-area ul li a{
-	text-decoration: auto;
-	color: white;
-	padding:15px 20px;
-	display: block;	
+
+.nav-area ul li:hover ul{
+	display: block !important;
 }
-.nav-area ul li:hover a{
-	background: #34495a
+.nav-area ul li{
+	background: gray;
 }
+.nav-area ul li a:hover{
+	background: red;
+}
+
+/* ------------- */
+/* segunda linea */
+/* ------------- */
+
 .nav-area ul ul{
 	position: absolute;
+	/* display: none; */
 	padding: 0;
-	min-width: 160px;
-	display: none;
 	top: 100%;
 	left: 0;
 }
-
-.nav-area ul li:hover ul{
-	display: block;
-}
-
-.nav-area ul ul li:hover a{
-	background:#262626;
+.nav-area ul ul li:hover li{
+	display: block !important;
 }
 .nav-area ul ul li{
+	background:lightcoral;
+}
+.nav-area ul ul li:hover{
+	background: crimson;
+}
+/* --------------------------------- */
+/* ------------- */
+/* tercera linea */
+/* ------------- */
+.nav-area ul ul ul li{
 	position: relative;
+	/* display: none !important; */
 }
 .nav-area ul ul ul{
 	top: 0;
 	left: 100%;
 }
-.nav-area ul ul ul li:hover a{
-	background:#34495a;
 
-
+.nav-area ul ul ul li:hover li{
+	display: block !important;
 }
+.nav-area ul ul ul li{
+	background: orange;
+}
+.nav-area ul ul ul ul:hover{
+	background: magenta;
+}
+/* ------------- */
+/* cuarta linea */
+/* ------------- */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.nav-area ul ul ul ul{
+	/* display: none !important; */
+	
+}
+.nav-area ul ul ul ul{
+	top: 0;
+	left: 100%;
+}
+.nav-area ul ul ul ul{
+	background: yellow;
+	color: black;
+}
+.nav-area ul ul ul ul li:hover a{
+	background: blue;
+}
 
 
 

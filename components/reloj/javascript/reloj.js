@@ -12,6 +12,7 @@ var reloj = function(){
 	var ampm;
 	
 	var day = date.getDate();
+	var dayn = date.getDate();
 	var month = date.getMonth();
 	var year = date.getFullYear();
 
@@ -24,6 +25,7 @@ var seconds= document.getElementById('seconds');
 
 var am_pm= document.getElementById('ampm');
 
+var dayf= document.getElementById('day');
 var days= document.getElementById('days');
 var months= document.getElementById('months');
 var years= document.getElementById('years');
@@ -33,10 +35,13 @@ var years= document.getElementById('years');
 la se mana y otro para los meses del año*/
 
 /*ejemplo:
-
-var diasSemana = [domingo,lunes,martes, etc] 
-days = diasSemana[days]
 */
+var diasSemana = ["Domingo","Lunes","Martes", "Miercoles","Jueves","Viernes","Sabado"];
+day = diasSemana[day];
+
+
+var meses = ["Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre"];
+month = meses[month];
 
 
 if (hour>=12) {
@@ -69,6 +74,7 @@ hours.textContent=hour;
 minutes.textContent=minute;
 seconds.textContent=second;
 
+dayf.textContent=dayn;
 days.textContent=day;
 months.textContent=month;
 years.textContent=year;
