@@ -1,7 +1,8 @@
 *{margin: 0;padding: 0;}
 :root{
 	--color1:teal;
-	--color2:white;
+	--color2:#e9e9e9;
+	--color3:#000;
 }
 body{
 	background: #e9e9e9;
@@ -88,7 +89,7 @@ li a{
 .representation{
 	background: indigo;
 	width: 100%;
-	padding: 150px 0px;
+	padding: 140px 0px;
 	margin:auto;
 	color: white;
 	margin-bottom: 7px;
@@ -117,11 +118,11 @@ aside{
 	/*background: linear-gradient(120deg , skyblue, white , blue);*/
 	display: inline-block;
 	padding: 20px 20px;
-	overflow-y: scroll;
-	max-height: 500px;
 	position: sticky;
 	top: 0px;
-
+	
+	overflow-y: scroll;
+	max-height: 700px;
 }
 
 aside::-webkit-scrollbar{
@@ -138,11 +139,23 @@ aside::-webkit-scrollbar-thumb{
 	background: rgba(255,255,255,0.3);
 	padding: 7px;
 	color: white;
+
 }
 .redes{
-	background:var(--color1);
-	color: var(--color2);
+	background: #a9a9a9;
 }
+.redesContainer{
+	margin: auto;
+}
+
+.contador{
+	display: inline-block;
+}
+.fa-code{color: rgb(255,255,255);}/*rgb(83,84,85);*/
+.fa-facebook-square{color: rgb(66,103,178);}
+.fa-youtube{color: rgb(255,0,0);}
+.fa-twitter{color: rgb(29,161,242);}
+
 
 /*------------------*/
 footer{

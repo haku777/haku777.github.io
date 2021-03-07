@@ -104,6 +104,8 @@ aside {
 	background: #1D2F3D;
 	padding: 20px;
 	border-radius: 3px;
+	position: sticky;
+	top: 20px;
 }
 
 aside .titulo {
@@ -124,7 +126,14 @@ aside .indice a {
 /* * ========== FOOTER ============ */
 /* * ============================== */
 
-
+.img{
+	position: relative;
+	width: 70%;
+	margin: auto;
+}
+footer{
+	background: black;
+}
 
 /* * ============================== */
 /* * ====== MEDIA QUERIES ========= */
