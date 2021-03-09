@@ -20,7 +20,7 @@ function loadPage(){
 Swal.fire({
   title: 'Pre Load jeje :)',
   html: 'UWU <b></b> milliseconds.',
-  timer: 7000,
+  timer: 2000,
   timerProgressBar: true,
   didOpen: () => {
     Swal.showLoading()
@@ -76,5 +76,15 @@ if (color) {
 };
 
 
-	
+
+
+
+
+
+
+
+
+
+
+
 

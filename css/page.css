@@ -17,7 +17,7 @@ header{
 	overflow: hidden;
 }
 h2{color: white; }
-p{color:salmon; }
+p{color:salmon; width: 300px;}
 button{
 border: none;
 border-radius: 3px;
