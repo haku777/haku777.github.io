@@ -1,73 +1,85 @@
-/*-----------------------------------*/
-/*--------agregamosVariables---------*/
-/*-----------------------------------*/
-:root{
-	--color2:black;
-	--color3:lightblue;
-}
 *{
-	margin: 0; 
-	padding: 0; 
+	margin: 0;
+	padding: 0;
 }
+/* #008493 */
 body{
-	background: var(--color3);
+	background:#c1c1c1;
+}
+.logo img{
+	border-radius: 100%;
 }
 
-header{
-	background: var(--color2);
-}
-.nav{
-	background:lightslategray;
-	width: 50%;
-	margin: auto;
-	padding: 20px;
-
-}
-/* ------------------------------------ */
-/* ------------------------------------ */
-/* ------------------------------------ */
-/* ------------------------------------ */
-
-.nav ul{
-	list-style: none;
-	width: 100%;
-}
-.nav ul li a{
-	text-decoration: none;
-	color: white;
-}
-
-.nav ul li{
-	display: inline-block;
-	position: relative;
-	background:mediumaquamarine;
-}
-.nav ul ul{
-	left: 0%;
-}
-
-.nav ul li:hover ul{
-	display: block !important;
-}
-.nav ul li:hover{
-	background: lightsteelblue;
-}
-.nav ul ul li{
-	background-color: teal;
-}
-
-.nav ul ul{
-	/* display: none; */
-	position: absolute;
-	width: 100%;
+nav{
+	background: #008a93;
 	padding: 10px;
+	display: flex;
+	justify-content: space-around;
+}
+
+nav ul{
+	list-style: none;
+	display: flex;
+}
+
+a{
+	text-decoration: none;
+	display: block;
+	padding: 20px;
+	color: white;
+	font-size: 20px;
+}
+
+a:hover{
+	background:rgb(44,44,44);
+}
+nav ul{
+	display: flex;
+	justify-content: space-between;
+}
+nav ul li ul{
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	background: #008a93;
+	display: none;
+}
+.nav ul li:hover > ul{
+	display: block;
+
+}
+nav ul li ul li{
+	position: relative;
+	width: 180px;
+	top: 0;
+}
+
+nav ul li ul li ul{
+	position: absolute;
+	left: 180px;
+	top: 0;
 }
 
 
-/* -------------- */
 
-.nav ul ul ul{
-	top:0;
-	left: 100%;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
