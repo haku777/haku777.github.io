@@ -6,17 +6,16 @@ body{
 .reloj{
 	font-family: verdana;
 	background: white;
-	width: 670px;
+	width: 30%;
 	margin: auto;
-	/* margin-top: 70px; */
-	padding: 7px;
-	border:1px solid #f1f1f1;
+	margin-top: 70px;
+	padding: 10px;
 	box-shadow: 3px 3px 3px 1px #d1d1d1;
 }
-
 .fecha{
 	padding: 40px;
-	font-size: 24px;
+	font-size: 20px;
+	font-family:tahoma;
 	background:skyblue;
 	margin-bottom: 10px;
 	background:steelblue;
@@ -35,16 +34,17 @@ a{
 
 .date{
 	padding: 40px;
-	font-size: 70px;
+	font-size: 65px;
 	background:skyblue;
+	font-family: fantasy;
 }
 .am-pm{
-	font-size: 30px;
+	font-size: 35px;
 	width: 100px;
 	display: inline-block;
 }
 #ampm{
-	font-size: 40px;
+	font-size: 35px;
 }
 
 

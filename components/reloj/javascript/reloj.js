@@ -11,7 +11,7 @@ var reloj = function(){
 	var second = date.getSeconds();
 	var ampm;
 	
-	var day = date.getDate();
+	var day = date.getDay();
 	var dayn = date.getDate();
 	var month = date.getMonth();
 	var year = date.getFullYear();
@@ -38,7 +38,6 @@ la se mana y otro para los meses del año*/
 */
 var diasSemana = ["Domingo","Lunes","Martes", "Miercoles","Jueves","Viernes","Sabado"];
 day = diasSemana[day];
-
 
 var meses = ["Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre"];
 month = meses[month];
@@ -69,7 +68,6 @@ if (hour ==0 ) {
 
 
 am_pm.textContent=ampm;
-
 hours.textContent=hour;
 minutes.textContent=minute;
 seconds.textContent=second;
