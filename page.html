@@ -35,10 +35,12 @@
 		<div class="representation">
 
 			<audio src="song/hello.mp3" controls="" autoplay="autoplay" autoplay style="display:none;"></audio>
+				<div class="h2">
 
-					<h2>hello!!! welcome to my page</h2>
-					<h4>here you can view what can i do!</h4>
+					<h2>Hello welcome to my page</h2>
+					<h2>here you can view what can i do!</h2>
 				</div>
+		</div>
 	
 	<main>
 
@@ -276,9 +278,18 @@
 						(() =>{
 						})();
 					</p>
+					<p>
+						1vh = 1% de la altura del viewport
 
+						100vh = altura del viewport
+
+						1vw = 1% del ancho del viewport
+
+						100vw = ancho del viewport
+					</p>
 					<p>en css se puede restar utilizando rigth:calc(50% -20px);</p>
 					<p>grafeno</p>
+					<p>proyects para mi portafolio ejemplo page movies,animes with appi etc</p>
 					<p>alt f12 para ver definicion y editar sobre la definicion</p>
 					<p>uso de variables en css</p>
 					<p>Alt + z   para activar o desactivar el salto automatico de linea en visual studio code</p>
@@ -325,6 +336,126 @@
 							  p*5>lorem                               
 							  .contenedor                             
 					</p>
+
+
+					<p>zed  28,162
+
+						diana 34,794
+						
+						ww 30,873
+						
+						yasuo 348,526</p>
+
+						<p>
+							api
+
+
+conexion como para gps  mapas etc
+
+tipos:
+     rest(representacion de estado de transferencia)
+
+
+xml es el formato
+
+json formato mas nuevo y mejor
+
+
+
+pueden ser:
+
+publicas
+
+privadas(con login o con token)(formato para tokens en rest jwt)
+
+
+rest
+
+
+api locales y reotas
+
+
+remotas
+
+soap o rest (protocolos)(arquitectura rest)
+
+consultar recursos(uri)(se consulta por endpoint)
+
+
+
+metodos http:
+
+get solicitar informacion
+post enviar informacion
+patch modificaciones parciales
+put actualizar informacion
+delete borrar recursos
+
+
+formatos:
+
+json
+xml
+texto plano
+
+
+buenas practicas:
+
+hateoas(se autodescribe)
+seguridad(login)
+testear(api)
+documentar(el funcionamiento)
+
+
+500 problemas de server
+						</p>
+
+
+
+						<p>
+							var NightModeSwitch = (function () {
+								function NightModeSwitch() {
+								}
+								NightModeSwitch["switch"] = function () {
+									var darkMode = NightModeSwitch.isDarkMode();
+									WgHelpers.sendGaEvent('NightModeSwitch', darkMode ? 'toLight' : 'toDark', '');
+									WgHelpers.setCookie('darkMode', darkMode ? '0' : '1', 365);
+									location.reload();
+								};
+								NightModeSwitch.isDarkMode = function () {
+									var cookie = WgHelpers.getCookie('darkMode');
+									return !!(cookie && parseInt(cookie));
+								};
+								return NightModeSwitch;
+							}());
+							
+							
+							
+							
+							var AdBlockHelper = (function () {
+								function AdBlockHelper() {
+								}
+								AdBlockHelper.initFallback = function (zoneId, fallbackHtml, targetLanguage) {
+									if (!targetLanguage || (navigator.language || navigator.userLanguage) == targetLanguage) {
+										adblockDetect(function (adblockDetected) {
+											if (adblockDetected) {
+												setTimeout(function () {
+													$(zoneId).css('margin-bottom', '0px');
+													$(zoneId).parent().css('height', '250px');
+													$(zoneId).parent().css('overflow-y', 'hidden');
+													$(zoneId).parent().append(fallbackHtml);
+												}, 1000);
+												console.log('Adblock IS detected');
+											}
+											else {
+												console.log('Adblock NOT detected');
+											}
+										});
+									}
+								};
+								return AdBlockHelper;
+							}());
+						</p>
 
 			</div>
 	</aside>
