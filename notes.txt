@@ -5,8 +5,37 @@ hoja de vida
     anandir al linkedin
         phyton
         github
-        api
+        api (conexion como para gps  mapas etc)
         rest
+
+
+    poner mensajes al realizar hover a un texto o algo
+
+    poner notas
+
+    alertas
+
+    poner notificaciones
+
+
+
+					<p>proyectos para mi portafolio ejemplo page movies,animes with appi etc</p>
+
+
+				<p>festivos	,   tipo de usuario actual</p>
+				<p>cambio de color segun la hora como esta en la pagina de professor .gg</p>
+				<p>agregar los links de lo que esta como favoritos</p>
+				<p>pajina con textos y textos mobiles</p> 
+				<p>pajina con media querys</p>
+				<p>sass o less con visual studio como precompilar</p>
+                				<p>estudiar ingles</p>
+				<p>carrusel de imagejenes</p>
+                <p>menu pagina principla responsive</p>
+				<p>add media queris para dispositivos</p>
+
+				<p>agregar tenjo</p>
+				<p>drop down</p>
+				<p>drag y drop</p>
 
 
 https://jikan.moe/
@@ -45,6 +74,7 @@ buy:
     talco
     leche
     papa criolla
+    pan
 
 debo:
     lucho marzo
@@ -101,7 +131,168 @@ work:
 
 
 
+-------------------------------
 
+
+
+
+
+					<p>zed  28,162
+
+						diana 34,794
+						
+						ww 30,873
+						
+						yasuo 348,526</p>
+
+
+
+--------------------------------------------
+API
+tipos:
+     rest(representacion de estado de transferencia)
+
+
+xml es el formato
+
+json formato mas nuevo y mejor
+
+
+
+pueden ser:
+
+publicas
+
+privadas(con login o con token)(formato para tokens en rest jwt)
+
+
+rest
+
+
+api locales y reotas
+
+
+remotas
+
+soap o rest (protocolos)(arquitectura rest)
+
+consultar recursos(uri)(se consulta por endpoint)
+
+
+
+metodos http:
+
+get solicitar informacion
+post enviar informacion
+patch modificaciones parciales
+put actualizar informacion
+delete borrar recursos
+
+
+formatos:
+
+json
+xml
+texto plano
+
+
+buenas practicas:
+
+hateoas(se autodescribe)
+seguridad(login)
+testear(api)
+documentar(el funcionamiento)
+
+
+500 problemas de server
+
+
+----------------------------------
+PWA(progresive web apps)
+
+
+progresive web apps
+acceso a camara y otros temas en el movil
+
+funcionalidad off line
+
+se puede con js(agregar mas jg)
+api que provee el navegador para agregar funcionalidad (funcione como nativa)
+
+se puede mejorar 
+
+notificaciones etc
+
+acceso directo como si fuera aplicacion nativa del dispositivos
+
+datos en memoria
+
+guardar datos en memoria
+
+push notificaciones
+
+services workers
+
+sincronizacion de datos(api de js)(services worker)
+
+icono en el dispositivo con archiv(manifest)
+
+api de geolocalizacion
+api de camara
+api de audio
+
+
+-------------------------
+
+
+
+
+
+
+svj para iconos
+jpg para fotos
+
+graficos svg(son graficos con svg)
+agregar la extencion a visual studio code
+
+
+-----------------------------------
+
+junior:
+    supervicion
+    tareas especificas(no entiende el alcance del proyecto)
+    uivesitarios no son junior(ya traen varios anos estudiando sobre el tema)
+
+
+semiSenior:
+    compresion de etapas del proyecto
+    dimensiona el proyecto 
+    tareas complejas
+    -se creen sinior
+    couch a los junior
+
+
+
+
+senior:
+    gestion
+    tecnicos
+    manejo de equipo
+    alinear
+    escalamiento
+    a futuro funcionamiento de lo que se esta creando
+    patrones de diseno
+    programar para que algien mas entienda el codigo
+    constante aprendizaje
+
+
+
+
+
+
+-----------------------------------
+
+microservicios
 
 
 

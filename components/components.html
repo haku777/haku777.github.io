@@ -9,29 +9,31 @@
 		<style>
 			*{margin: 0;padding: 0;}
 			body{
-				background: #e1e1e1;
+				background: #d9d9d9;
 			}
 			.container{
 				background: indigo;
 				height: 100%;
-				padding: 20px;
-			}
-			button{
-				background: crimson;
-				color :white;
-				border:none;
-				display: block;
-				margin:10px 0px 0px 70px;
-				padding: 7px;
-				width: 20%;
+				padding: 10px 70px;
 			}
 			a{
+				background: black;
 				text-decoration: none;
-				color: white;
+				text-align: center;
+				color :white;
+				display: block;
+				padding: 7px;
+				width: 200px;
 				font-size: 20px;
+				border:none;
+				border-radius: 3px;
+				margin-top: 10px;
 			}
-			input{
+			a:hover{background: crimson; transition: .2s;}
+			
+			.menu{
 				background: purple;
+				text-align: center;
 				display: block;
 				color: white;
 				padding: 10px;
@@ -40,6 +42,7 @@
 				margin: auto;
 				border-radius: 3px;
 				margin-bottom: 3px;
+				cursor: pointer;
 }
 		</style>
 	</head>
@@ -47,24 +50,29 @@
 	<body>
 
 		<main>
+
 			<div class="container">
-				<a href="../page.html"><input type="submit" value="Menu"></a>
-				<br>
-				<button type="submit"><a href="reloj/reloj.html">Reloj</a></button>
-				<button type="submit"><a href="sweetAlerts/sweetAlerts.html">Alert</a></button>
-				<button type="submit"><a href="pseudoElemento/pseudoElemento.html">pseudoElement</a></button>
-				<button type="submit"><a href="properties/properties.html">properties</a></button>	
-				<button type="submit"><a href="heart/heart.html">heart</a></button>	
-				<button type="submit"><a href="hojaVida/hojaVida.html">sheet of live (CV)</a></button>	
-				<button type="submit"><a href="calendar/calendar.html">Calendar</a></button>
-				<button type="submit"><a href="menu/menu.html">Menu</a></button>
-				<button type="submit"><a href="api/iframe.html">iframe</a></button>	
-				<button type="submit"><a href="contador/contador.html">Couter</a></button>	
-				<button type="submit"><a href="text/text.html">Text</a></button>
-				<button type="submit"><a href="carousel/carousel.html">Carousel</a></button>	
-				<button type="submit"><a href="#">Canvas</a></button>	
+				
+				<a href="../page.html" class="menu">Menu</a>
+				
+					<a href="reloj/reloj.html">Reloj</a>
+					<a href="sweetAlerts/sweetAlerts.html">Alert</a>
+					<a href="pseudoElemento/pseudoElemento.html">pseudoElement</a>
+					<a href="properties/properties.html">properties</a>
+					<a href="heart/heart.html">heart</a>
+					<a href="hojaVida/hojaVida.html">sheet of live (CV)</a>
+					<a href="calendar/calendar.html">Calendar</a>
+					<a href="menu/menu.html">Menu</a>
+					<a href="api/iframe.html">iframe</a>
+					<a href="contador/contador.html">Couter</a>
+					<a href="text/text.html">Text</a>
+					<a href="carousel/carousel.html">Carousel</a>
+					<a href="#">Canvas</a>
+				
 			</div>
+
 		</main>
+		
 	</body>
 </html>
 
