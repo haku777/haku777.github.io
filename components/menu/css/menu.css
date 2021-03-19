@@ -2,30 +2,32 @@
 	margin: 0;
 	padding: 0;
 }
-/* #008493 */
+
 body{
 	background:#c1c1c1;
 }
+
 .logo img{
 	border-radius: 100%;
+	width: 70px;
+	height: 70px;
+}
+
+header{
+	padding: 10px;
+	background: teal;
 }
 
 nav{
-	background: #008a93;
-	padding: 10px;
 	display: flex;
 	justify-content: space-around;
-}
-
-nav ul{
-	list-style: none;
-	display: flex;
+	align-items: center;
 }
 
 a{
 	text-decoration: none;
 	display: block;
-	padding: 20px;
+	padding: 10px;
 	color: white;
 	font-size: 20px;
 }
@@ -33,10 +35,16 @@ a{
 a:hover{
 	background:rgb(44,44,44);
 }
+
+/* --------------------------- */
+
 nav ul{
+	background: lightseagreen;
 	display: flex;
 	justify-content: space-between;
+	list-style: none;
 }
+
 nav ul li ul{
 	display: flex;
 	flex-direction: column;
@@ -44,19 +52,19 @@ nav ul li ul{
 	background: #008a93;
 	display: none;
 }
+
 .nav ul li:hover > ul{
 	display: block;
 
 }
+
 nav ul li ul li{
 	position: relative;
-	width: 180px;
-	top: 0;
 }
 
 nav ul li ul li ul{
 	position: absolute;
-	left: 180px;
+	left: 100%;
 	top: 0;
 }
 
