@@ -1,13 +1,22 @@
-*{margin: 0;padding: 0;}
+*{
+	margin: 0;
+	padding: 0;
+}
 
 body{
 	background: #f1f1f1;
+	font-size: 20px;
 }
 
 header{
 	background: black;
 	padding: 0px 20px;
-	height: 40px;
+}
+a{
+	display: inline-block;
+	width: 40px;
+	margin: 7px;
+	border-radius: 3px;
 }
 header h2{
 	color: #ee7e57;
@@ -20,31 +29,43 @@ header a{
 	color:white;
 }
 /*-------------------*/
+@font-face {
+	font-family: Merge;
+	src: url('../../../font/merge_light.otf');
+}
+
 main{
 	border-top: 20px solid rgb(0,188,241);
 	background:#ffffff;
 	box-shadow: 0px 0px 3px gray;
 	margin: auto;
-	width: 60%;
+	width: 70%;
 	display: flex;
+	justify-content: space-between;
+	font-family: Merge,serif !important;
 
 }
+
+/* ---------------------------- */
+
 
 .personalInformation{
 	border-top: 20px solid rgb(0,188,241);
-	display: inline-block;
-	padding: 40px;
+	border-bottom: 70px solid rgb(0,188,241);
+	padding: 250px 40px 0px 40px;
 	background:rgb(0,188,241);
 	color:white;
-	border-bottom: 70px solid rgb(0,188,241);
+	width: 30%;
 }
 
 .generalInformation{
-	display: inline-block;
 	background:#ffffff;
-	padding: 40px;
 	color: black;
+	padding: 60px;
+	width: 50%;
 }
+
+/* ---------------------------- */
 
 .generalInformation h2{
 	text-align: right;
@@ -58,4 +79,37 @@ footer{
 	background: teal;
 	padding: 20px 60px;
 	color: white;
+}
+
+
+/* ---------------- */
+@media(max-width:1200px){
+	body{
+		font-size: 16px;
+	}
+}
+
+@media(max-width:1000px){
+	main{
+		width: 100% !important;
+	}
+}
+
+@media(max-width:700px){
+	main{
+		display: block;
+		width: 100%;
+	}
+	.generalInformation, .personalInformation{
+		display: block;
+		width: 93%;
+		text-align: left !important;
+		padding: 20px;
+	}
+}
+@media(max-width:400px){
+	.generalInformation, .personalInformation{
+		padding: 0px !important;
+		width: 100%;
+	}
 }

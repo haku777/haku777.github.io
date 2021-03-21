@@ -9,15 +9,17 @@
 		<style>
 			*{margin: 0;padding: 0;}
 			body{background: #c9c9c9;}
-
+			@font-face {
+				font-family: Merge;
+				src: url(../font/merge_light.otf);
+			}
 			.container{
 				background: indigo;
 				width: 70%;
 				margin: auto;
-				padding: 20px;
+				padding: 70px;
 				margin-top: 20px;
-				display: flex;
-				flex-direction: column;
+				font-family: Merge,serif;
 			}
 
 			.menu{
@@ -29,7 +31,7 @@
 				border:none;
 				margin: auto;
 				margin-top: 10px;
-				margin-bottom: 20px;
+				margin-bottom: 70px;
 				cursor: pointer;
 				border-radius: 3px;
 			}
@@ -38,14 +40,15 @@
 				font-size: 20px;
 				background: black;
 				text-decoration: none;
+				display: inline-block;
+				border-radius: 3px;
 				text-align: center;
+				margin: 3px 0px;
 				color :white;
+				padding: 10px;
 				border:none;
 				width: 20%;
-				padding: 10px;
-				margin: 3px 0px;
-				border-radius: 3px;
- 			}
+			}
 
 			 a:hover{
 				background: crimson;
@@ -74,6 +77,7 @@
 					<a href="api/iframe.html">iframe</a>
 					<a href="contador/contador.html">Couter</a>
 					<a href="sass/sass.html">Sass</a>
+					<a href="bootstrap/bootstrap.html">Bootstrap</a>
 					<a href="InDevelop.html">Text</a>
 					<a href="InDevelop.html">Carousel</a>
 					<a href="InDevelop.html">Canvas</a>

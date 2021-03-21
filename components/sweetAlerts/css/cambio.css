@@ -1,6 +1,15 @@
 *{margin: 0;padding: 0;}
+@font-face{
+	font-family:Merge;
+	src:url(../../../font/merge_light.otf)
 
-body{background:#e2e2e2;}
+}
+body{
+	background:url(../../../img/develop.jpg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	font-family: Merge,serif;
+}
 
 main{
 	padding: 40px 60px;
@@ -8,8 +17,9 @@ main{
 
 /*-------------------*/
 .content{
-	padding: 20px;
-	background:teal;
+	padding: 20px 40px;
+	background:rgba(255,255,255,0.7);
+	border-radius: 3px;
 	color:#fff;
 	margin: auto;
 	width: 700px;
