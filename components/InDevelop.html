@@ -14,16 +14,11 @@
                 background: black;
             }
             main{
-                background: #c9c9c9;
-                background: url('../img/n.PNG');
-                background-repeat: no-repeat;
+                background: url('../img/error2.PNG');
                 background-size: 100% 100%;
-                background-attachment: fixed;
-                position: absolute;
-                width: 99%;
+                width: 70%;
                 margin: auto;
-                border:3px solid black;
-                height: 99%;
+                height: 800px;
             }
             h3{
                 /* background: teal; */
@@ -51,12 +46,19 @@
             audio{
                 display: none;
             }
+            @media(max-width:750px){
+                main{
+                    height: 450px;
+                    width: 100%;
+                }
+            }
         </style>
     </head>
     <body>
+        <h3><a href="components.html">Back</a></h3>
         <main>
-            <h3><a href="components.html">Back</a></h3>
-            <audio src="../song/elevedor.mp3" controls autoplay></audio>
+
+            
         </main>
     </body>
 </html>

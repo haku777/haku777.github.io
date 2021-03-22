@@ -328,4 +328,9 @@ footer h3{
 	nav a{
 		display: block;
 	}
+	footer img{
+		width: 16%;
+		height: 100px;
+		margin-left: 16px;
+	}
 }

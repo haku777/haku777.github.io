@@ -5,14 +5,15 @@
 
 }
 body{
-	background:url(../../../img/develop.jpg);
-	background-size: 100%;
-	background-repeat: no-repeat;
 	font-family: Merge,serif;
 }
 
 main{
+	background:url(../../../img/develop.jpg);
+	/* background-size: 100% 100%; */
+	background-repeat: no-repeat;
 	padding: 40px 60px;
+	height: 858px;
 }
 
 /*-------------------*/
@@ -22,7 +23,7 @@ main{
 	border-radius: 3px;
 	color:#fff;
 	margin: auto;
-	width: 700px;
+	width: 70%;
 }
 .clase_cambiar {
 	background: #e1e1e1;
