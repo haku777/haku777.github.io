@@ -9,11 +9,24 @@
 	--color:crimson;
 }
 
-*{margin: 0;padding: 0;}
+*{
+	margin: 0;
+	padding: 0;
+}
 
-aside{background:var(--backgroundSection);padding: 20px; }
+@font-face{
+	font-family:Merge;
+	src:url(../../../font/merge_light.otf);
+}
 
-a{color: white;background: var(--backgroundSecundario);padding: 10px;}
+section{
+	background:var(--backgroundSection);padding: 20px; 
+}
+
+a{
+	color: white;
+	background: var(--backgroundSecundario);padding: 10px;
+}
 
 h2{
 	background: red;
@@ -33,17 +46,18 @@ main{
 	padding:10px;
 	position: relative;
 }
-p{
+h3{
 	background: var(--background);
 	color: var(--color);
 	display: block;
 	width: 80%;
+	font-size: 14px;
 	margin: auto;
 	border-radius: 3px; 
 	padding: 20px;
 }
 
-p::selection{
+h3::selection{
 	background: cyan;
 	color:black;
 }
@@ -61,13 +75,72 @@ p::selection{
 }
 
 
+.section{
+	background:linear-gradient(to top,crimson,#ee7e57);
+	padding: 40px;
+}
+.section p{
+	background: teal;
+	color: white;
+}
+/* ----------------- */
+.flex-direction p{
+	width: 77px;
+	margin: 3px;
 
-
-
-
-
-
-
-
-
-
+}
+.flex-Direction-column{
+	background: skyblue;
+	padding: 10px;
+	display: flex;
+	height: 150px;
+	flex-direction: column;
+}
+.flex-Direction-column-reverse{
+	background: lightseagreen;
+	padding: 10px;
+	display: flex;
+	height: 150px;
+	flex-direction: column-reverse;
+}
+.flex-Direction-row{
+	background: cyan;
+	padding: 10px;
+	display: flex;
+	height: 150px;
+	flex-direction: row;
+}
+.flex-Direction-row-reverse{
+	background: indigo;
+	padding: 10px;
+	display: flex;
+	height: 150px;
+	flex-direction: row-reverse;
+}
+/* ----------------- */
+.flex-wrap p{
+	width: 150px;
+	margin: 3px;
+}
+.flex-wrap-nowrap{
+	background: indigo;
+	padding: 10px;
+	height: 150px;
+	display: flex;
+	flex-wrap: nowrap;
+}
+.flex-wrap-wrap{
+	background: cyan;
+	padding: 10px;
+	height: 150px;
+	display: flex;
+	flex-wrap: wrap;
+}
+.flex-wrap-wrap-reverse{
+	background: indigo;
+	padding: 10px;
+	height: 150px;
+	display: flex;
+	flex-wrap: wrap-reverse;
+}
+/* -------------------- */

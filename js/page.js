@@ -96,11 +96,11 @@ function what(){
 }
 
     
-    setTimeout(task,2000);
-    setTimeout(task1,5000);
-    setTimeout(task2,7000);
-    setTimeout(task3,9000);
-    setTimeout(task4,12000);
-    setTimeout(what,15000);
+    // setTimeout(task,2000);
+    // setTimeout(task1,5000);
+    // setTimeout(task2,7000);
+    // setTimeout(task3,9000);
+    // setTimeout(task4,12000);
+    // setTimeout(what,15000);
     
     
