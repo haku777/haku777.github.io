@@ -1,3 +1,4 @@
+
 const iconMenu = document.querySelector('#icono-menu'),
     menu = document.querySelector('#menu');
 
@@ -5,7 +6,8 @@ const iconMenu = document.querySelector('#icono-menu'),
 
 
         menu.classList.toggle('active');
-        iconMenu.innerHTML=(src="../../img/icons/open-menu2.png");
+        iconMenu.removeAttribute("class");
+        iconMenu.innerHTML=(src="<i class='fas fa-bars' id='icono-menu' style='font-size: 70px;'></i>");
         document.body.classList.toggle('opacity');
 
 

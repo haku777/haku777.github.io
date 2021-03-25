@@ -24,6 +24,7 @@
   :root {
     --background: #e0e5ec;
     --gray: #797d7f;
+    --green: #005555;
   }
   
   *,
@@ -37,6 +38,11 @@
     font-family: "Raleway", sans-serif;
   }
   
+  a{
+    text-decoration: none;
+    color: crimson;
+  }
+
   img {
     max-width: 100%;
   }
@@ -44,7 +50,8 @@
   .container {
     background-color: var(--background);
     display: flex;
-    align-items: center;
+    padding-top: 70px;
+    /* align-items: center; */
     justify-content: center;
     min-height: 100vh;
   }
@@ -76,11 +83,18 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: -8px -8px 20px 0px #fff9, -6px -6px 6px 0px #fff9,
-      8px 8px 20px #0001, 5px 5px 6px 0px #0001;
-    color: var(--gray);
+    box-shadow: 
+    -8px -8px 20px 0px #fff9, 
+    -6px -6px 6px 0px #fff9,
+    8px 8px 20px #0001, 
+    5px 5px 6px 0px #0001;
+    
+    color: var(--green);
   }
-  
+  .player__btn:hover{
+    background: linear-gradient(30deg,white,lightblue,white);
+  }
+
   .player__btn:active {
     box-shadow: inset -8px -8px 20px #fff9, inset -5px -5px 6px #fff9,
       inset 8px 8px 20px #0003, inset 5px 5px 6px #0001;
@@ -152,7 +166,7 @@
   }
   
   .audio-duration {
-    margin-top: -30px;
+    /* margin-top: -30px; */
     display: flex;
     width: 78%;
     font-size: 10px;
@@ -199,11 +213,25 @@
   
   </head>
   
-  <body translate="no">
+  <body>
     <div class="container">
      <div class="player">
+
+      <div class="player__controls">
+
+        <div class="player__btn player__btn--small" id="previous" style="padding: 10px;border-radius: 3px;">
+          <i class="fas fa-chevron-circle-left"><a href="../components.html">&nbsp;&nbsp;&nbsp;Back</a></i>
+        </div>
+        
+        <div class="player__btn player__btn--small" id="previous" style="padding: 10px;border-radius: 3px;">
+          <i class="fas fa-angle-double-left"><a href="../../page.html">&nbsp;&nbsp;&nbsp;Menu</a></i>
+        </div>
+      </div>
+
        <div class="player__controls">
-         <div class="player__btn player__btn--small" id="previous">
+        
+
+        <div class="player__btn player__btn--small" id="previous">
            <i class="fas fa-arrow-left"></i>
          </div>
          <h5 class="player__title">playing now</h5>
@@ -212,20 +240,22 @@
          </div>
        </div>
        <div class="player__album">
-         <img src="https://i.ibb.co/ZS3wRSh/cover.jpg" alt="Album Cover" class="player__img" loading="lazy">
+         <!-- <img src="https://i.ibb.co/ZS3wRSh/cover.jpg" alt="Album Cover" class="player__img" loading="lazy"> -->
+         <img src="../../img/akali.PNG" alt="">
        </div>
   
-       <h2 class="player__artist">Disclosure</h2>
-       <h3 class="player__song">Latch</h3>
+       <h2 class="player__artist">Halo</h2>
+       <h3 class="player__song">(original)</h3>
   
-       <input type="range" value="20" min="0" class="player__level" id="range">
+       <input type="range" value="0" min="0" class="player__level" id="range">
        <div class="audio-duration">
-         <div class="start">00:01</div>
-         <div class="end">04:30</div>
+         <div class="start">00:00</div>
+         <div class="end">03:33</div>
        </div>
   
-       <audio class="player__audio" controls="" id="audio">
-         <source src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/308622/Leo%20-%20Trying.mp3" type="audio/mpeg">
+       <audio class="player__audio" controls="" id="audio" autoplay loop>
+         <!-- <source src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/308622/Leo%20-%20Trying.mp3" type="audio/mpeg"> -->
+          <source src="../../song/halo-theme-song-original-2m252s.mp3">
        </audio>
   
        <div class="player__controls">
