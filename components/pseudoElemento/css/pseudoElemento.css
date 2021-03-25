@@ -1,6 +1,7 @@
-/**/
-/*--utilizamos variables--*/
-/**/
+*{
+	margin: 0;
+	padding: 0;
+}
 
 :root{
 	--background:#f1f1f1;
@@ -9,23 +10,32 @@
 	--color:crimson;
 }
 
-*{
-	margin: 0;
-	padding: 0;
-}
-
 @font-face{
 	font-family:Merge;
 	src:url(../../../font/merge_light.otf);
 }
 
+body{
+	font-family: Merge,serif;
+	background-color: linen;
+}
+
 section{
-	background:var(--backgroundSection);padding: 20px; 
+	background:var(--backgroundSection);
+	padding: 20px;
+	width: 70%;
+	margin: auto;
+	border-radius: 3px;
 }
 
 a{
-	color: white;
 	background: var(--backgroundSecundario);padding: 10px;
+	text-decoration: none;
+	border-radius: 3px;
+	color: white;
+}
+a:hover{
+	background:red;
 }
 
 h2{
@@ -37,6 +47,9 @@ h2{
 main{
 	background: var(--backgroundSecundario);
 	padding: 20px;
+	width: 70%;
+	margin :auto;
+	border-radius: 3px;
 }
 
 .pseudoElemento{
@@ -73,7 +86,7 @@ h3::selection{
 	border-left: 20px solid transparent;
 	border-bottom: 20px solid transparent;
 }
-
+/* ----------------------- */
 
 .section{
 	background:linear-gradient(to top,crimson,#ee7e57);

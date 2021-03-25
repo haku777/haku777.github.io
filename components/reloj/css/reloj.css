@@ -10,10 +10,10 @@ body{
 .reloj{
 	/* font-family: verdana; */
 	background: white;
-	width: 30%;
+	width: 500px;
 	margin: auto;
 	margin-top: 70px;
-	padding: 10px;
+	padding: 3px;
 	box-shadow: 3px 3px 3px 1px #d1d1d1;
 }
 .fecha{
@@ -31,19 +31,18 @@ h2{	display: inline-block;}
 
 a{
 	color: indigo;
-	padding: 20px;
+	padding: 10px;
 }
 
 /*--------------------*/
 
 .date{
-	padding: 40px;
-	font-size: 70px;
+	padding: 10px;
+	font-size: 60px;
 	background:skyblue;
-	/* font-family: fantasy; */
 }
 .am-pm{
-	font-size: 34px;
+	font-size: 27px;
 	width: 100px;
 	display: inline-block;
 }
@@ -51,12 +50,7 @@ a{
 	font-size: 40px;
 }
 
-
-
-
-
 /*--------------------*/
-
 
 h2{
 	text-align: center;

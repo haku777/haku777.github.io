@@ -3,9 +3,9 @@
     <head>
         <meta charset="UTF=-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script class="https://cdn.jsdelivr.net/npm/sweetalert2@10" src="../sweetAlerts/javascript/sweetAlertsTwo.js"></script>
         <link rel="stylesheet" href="css/calendar.css">
 
-        <script src="js/calendar.js"></script> 
 
         <title>Calendar</title>
     </head>
@@ -17,17 +17,22 @@
             <h3>January 2021</h3>
             <a href="../components.html">back</a>
             <a href="../../page.html">menu</a>
+ 
             <code>complementar con base de datos y dias festivos</code>
-            <br>
-            <br>
-            <br>
-            
+           
             <script>
+                let enero =document.getElementsByClassName("january");
+                enero.textContent= "<p>hi !!! </p>";
+                enero.innerHTML= "<p>hi !!! </p>";
 
                 
+
             </script>
             
             <div class="calendar">
+                <div class="january">
+                </div>
+
                 <ol>
                     <li class="day-name">lun</li>
                     <li class="day-name">Mar</li>
@@ -72,10 +77,7 @@
             </div>
 
         </main>
-
-
-
-
+        <script src="js/calendar.js"></script> 
 
     </body>
 </html>

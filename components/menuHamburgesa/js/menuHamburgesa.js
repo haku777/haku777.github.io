@@ -5,6 +5,7 @@ const iconMenu = document.querySelector('#icono-menu'),
 
 
         menu.classList.toggle('active');
+        iconMenu.innerHTML=(src="../../img/icons/open-menu2.png");
         document.body.classList.toggle('opacity');
 
 
