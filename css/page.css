@@ -68,6 +68,20 @@ header{
 h2{
 	color: white;
 }
+section h2{
+	color:salmon;
+	text-align: center;
+	text-shadow: 2px 2px 1px crimson;
+	padding-bottom: 16px;
+	/* background: linear-gradient(to right,#1277,#005594,black,salmon);
+	width: 100%;
+	border-radius: 3px;
+	margin: auto;
+	margin-bottom: 20px; */
+}
+section h2::selection{
+	background: black;
+}
 
 .h2{
 	background: rgb(44,44,44,0.7);
