@@ -2,3 +2,32 @@
     margin: 0;
     padding: 0;
 }
+body{
+    background: white;
+}
+main{
+    padding: 20px 40px;
+}
+
+section{
+    background: #1277;
+    padding: 20px 40px;
+}
+
+p{
+    background: indigo;
+    color: white;
+}
+a{
+    text-decoration: none;
+    background: crimson;
+    color: white;
+    width: 70px;
+    padding: 10px;
+    border-radius: 3px;
+    display: inline-block;
+}
+a:hover{
+    background:red;
+
+}
