@@ -51,23 +51,6 @@ h2,p{
     text-shadow:1px 1px 1px black,
     1px 1px 1px skyblue;
 }
-h2::selection{
-    background: black;
-}
-h2:hover::before{
-    background: black;
-    content: '!?';
-    padding: 2px 7px;
-    color: white;
-    font-size: 30px;
-    position: absolute;
-    margin: -50px 0px 0px 30px;
-    transition: margin-left 5s ease 5s;
-
-}
-h2::after{
-    
-}
 
 p{ 
     width: 20%;
@@ -76,27 +59,7 @@ p{
     display: inline-block;
 }
 
-.container{
-    background: tomato;
-    padding: 7px;
-    width: 99%;
-}
-.transition{
-    border:3px solid white;
 
-    /* background: teal; */
-
-    display: block;
-    padding: 20px;
-    width: 10px;
-
-    transition-property: border-radius,transform;
-    transition-duration: 7s;
-    
-    /* border-radius:50%; */
-    transform: translate(1250px);
-    transform: rotate3d(300);
-}
 /* ----------------------- */
 .color1{background:purple;}
 .color2{background:indigo;}

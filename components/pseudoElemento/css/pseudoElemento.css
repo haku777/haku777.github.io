@@ -5,155 +5,239 @@
 
 :root{
 	--background:#f1f1f1;
-	--backgroundSecundario:crimson;
+	--backgroundSecundario:#1277;
 	--backgroundSection:teal;
-	--color:crimson;
 }
 
 @font-face{
 	font-family:Merge;
 	src:url(../../../font/merge_light.otf);
 }
-
 body{
 	font-family: Merge,serif;
 	background-color: linen;
 }
-
-section{
-	background:var(--backgroundSection);
-	padding: 20px;
-	width: 70%;
-	margin: auto;
-	border-radius: 3px;
-}
-
-a{
-	background: var(--backgroundSecundario);padding: 10px;
-	text-decoration: none;
-	border-radius: 3px;
-	color: white;
-}
-a:hover{
-	background:red;
-}
-
-h2{
-	background: red;
-	color: white;
-	text-align: center;
-}
+/* ------------------- */
 
 main{
-	background: var(--backgroundSecundario);
+	background: #1277;
 	padding: 20px;
 	width: 70%;
 	margin :auto;
 	border-radius: 3px;
 }
+.links{
+	background:white;
+}
 
-.pseudoElemento{
-	/*background: salmon;*/
-	width: 200px;
+/* ------------- */
+section{
+	background:#1277;
+	border-radius: 3px;
+	padding: 10px;
+	width: 90%;
 	margin: auto;
-	padding:10px;
-	position: relative;
+	margin-top:20px;
+}
+
+a{
+	background:black;
+	text-decoration: none;
+	display: inline-block;
+	border-radius: 3px;
+	padding: 7px;
+	width: 100px;
+	color: #f7f7f7;
+}
+
+h2{
+    color: orangered;
+	display: inline-block;
+	width: 60%;
+	text-align: center;
+	padding: 4px;
+	/* background: indigo; */
+    text-shadow:
+    2px 1px 1px purple;
 }
 h3{
-	background: var(--background);
+	background: tomato;
+	color: white;
+	text-align: center;
+	padding: 10px;
+	display: block;
+	border-radius: 3px;
+	margin-top: 20px;
+}
+
+h4{
+	background: white;
 	color: var(--color);
 	display: block;
-	width: 80%;
 	font-size: 14px;
 	margin: auto;
-	border-radius: 3px; 
 	padding: 20px;
 }
 
-h3::selection{
-	background: cyan;
-	color:black;
+.pseudoElemento{
+	width: 60%;
+	margin: auto;
+	position: relative;
 }
-
 .paragraf::after{
 	content: '';
 	display: block;
 	position: absolute;
-	bottom: 36px;
+	bottom: 24px;
 	right: calc(50% - 20px);
-	border-top: 20px solid var(--background);
+	border-top: 20px solid white;
 	border-right: 20px solid transparent;
 	border-left: 20px solid transparent;
 	border-bottom: 20px solid transparent;
 }
-/* ----------------------- */
 
-.section{
-	background:linear-gradient(to top,crimson,#ee7e57);
-	padding: 40px;
+/* ----------------- */
+
+.container{
+	background: tomato;
+	margin-bottom: 10px;
+	padding: 10px;
+    width: 94%;
 }
-.section p{
-	background: teal;
+
+.explain{
+	background: black;
+	padding: 10px;
+}
+element{
 	color: white;
+	background: indigo;
+	margin-bottom: 7px;
+	padding: 10px;
+	display: block;
 }
+
 /* ----------------- */
-.flex-direction p{
-	width: 77px;
-	margin: 3px;
+
+h2::selection{
+    background: black;
+}
+h2:hover::before{   /* antes */
+	background: black;
+    font-size: 16px;
+	padding: 7px;
+	content: '😊';
+	color: white;
+	position: absolute;
+	border-radius: 3px;
+	margin: 0px 0px 0px -60px;
+}
+
+h2:hover::after{     /* despues */
+    background: black;
+    content: '';
+    color: white;
+    position: absolute;
+	margin: 5px 0px 0px -74px;
+	border-top: 12px solid white;
+	border-right: 12px solid white;
+	border-bottom: 12px solid white;
+	border-left: 12px solid black;
+}
+
+/* ------------------- */
+p{
+	background:#252525;
+	text-align: center;
+	border-radius: 2px;
+	color: white;
+	padding: 10px;
+    width: 100px;
+	margin: auto;
+}
+.border-radius p{
+	transition-property: border-radius,font-size;
+	transition-duration: 4s;
+    border-radius: 100%;
+	font-size: 10px;
+}
+
+.scale p{
+	transition-property: transform;
+	transition-duration: 4s;
+	transform:scale(1,1.4);
+}
+
+.translate{    /* aqui movemos toda la caja */
+    border:3px solid white;
+    display: block;
+    width: 120px;
+	padding: 10px;
+    transition-property: transform;
+    transition-duration: 4s;
+    transform: translate(450px);
 
 }
-.flex-Direction-column{
-	background: skyblue;
-	padding: 10px;
-	display: flex;
-	height: 150px;
-	flex-direction: column;
+
+.rotate3d p{
+    transition-property: transform;
+    transition-duration: 4s;
+	transform: rotate3d(99,99,0,360deg);
 }
-.flex-Direction-column-reverse{
-	background: lightseagreen;
-	padding: 10px;
-	display: flex;
-	height: 150px;
-	flex-direction: column-reverse;
+
+.matrix p{
+    transition-property: transform;
+    transition-duration: 4s;
+    transform: matrix(4,0.0,0.0,0.1,0.1,0.1);
+
 }
-.flex-Direction-row{
-	background: cyan;
-	padding: 10px;
-	display: flex;
-	height: 150px;
-	flex-direction: row;
+.matrix3d p{
+    transition-property: transform;
+    transition-duration: 459s;
+    transform:matrix3d(1,0,0,0,0,1,6,0,0,0,1,0,5,10,0,1.1);
 }
-.flex-Direction-row-reverse{
-	background: indigo;
-	padding: 10px;
-	display: flex;
-	height: 150px;
-	flex-direction: row-reverse;
+
+.perspective p{
+    transition-property: transform,transform-style;
+    transition-duration: 4s;
+	transform: perspective(1000cm) rotateX(-12deg) rotateY(45deg);
 }
-/* ----------------- */
-.flex-wrap p{
-	width: 150px;
-	margin: 3px;
+.perspective p{
+    transition-property: transform,transform-style;
+    transition-duration: 4s;
+	transform: perspective(7cm) rotateX(-12deg) rotateY(45deg);
 }
-.flex-wrap-nowrap{
-	background: indigo;
-	padding: 10px;
-	height: 150px;
-	display: flex;
-	flex-wrap: nowrap;
+
+
+
+
+/* ------------------------------------------------ */
+
+@media(max-width:980px){
+	a{
+		width: auto;
+	}
+	.translate{
+		transition-property: boder-radius,transform;
+		transition-duration: 2s;
+		transform: translate(200px);
+	}
 }
-.flex-wrap-wrap{
-	background: cyan;
-	padding: 10px;
-	height: 150px;
-	display: flex;
-	flex-wrap: wrap;
+
+@media(max-width:600px){
+	a{
+		width: auto;
+	}
+	.translate{
+		transition-property: boder-radius,transform;
+		transition-duration: 2s;
+		transform: translate(116px);
+	}
+	.matrix p{
+		margin: auto;
+		transition-property: transform;
+		transition-duration: 5s;
+		transform: matrix(2,0.0,0.0,0.1,0.1,0.1);
+	
+	}
 }
-.flex-wrap-wrap-reverse{
-	background: indigo;
-	padding: 10px;
-	height: 150px;
-	display: flex;
-	flex-wrap: wrap-reverse;
-}
-/* -------------------- */

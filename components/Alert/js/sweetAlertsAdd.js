@@ -1,16 +1,24 @@
 
-Swal.fire(
-		  'sweetAlerts',
-		  'y ahora que?',
-		  'question'
-		)
+Swal.fire({
+  position: 'center',
+  icon: 'success',
+  title: 'Welcome',
+  showConfirmButton: false,
+  timer:1700
+})
+
+
 
 function loadImagen(){
 
 	Swal.fire({
-	  imageUrl: 'img/flowers.jpg',
+    title: 'Flowers!?',
+    text: '!hi i"m a image',
+	  imageUrl: '../../img/flowers.jpg',
+    imageWidth: 400,
 	  imageHeight: 300,
 	  imageAlt: 'A tall image'
+
 	})
 }
 
@@ -76,7 +84,19 @@ if (color) {
 };
 
 
+// -------------------
 
+function changeColor(){
+  let documento = document.getElementsByClassName('content')[0];
+
+
+  if (documento.style.cssText !== "background-color: lightslategray; color: white;"){
+      documento.style.cssText= 'background-color: lightslategray; color: white;';
+  }else{
+    documento.style.cssText='background-color: rgba(0,0,0,0.7);';
+  }
+  console.log(documento.style.cssText)
+}
 
 
 
