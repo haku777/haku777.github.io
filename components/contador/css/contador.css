@@ -2,44 +2,53 @@
     margin: 0;
     padding: 0;
 }
+
 body{
     background: #e1e1e1;
 }
-header{
-    background: #ee7e57;
-    /* background: linear-gradient(to right, 
-    #00404a 0%, 
-    #00384a 20%, 
-    #ff4000 20%, 
-    #ff4000 20%, 
-    #ff4000 40%, 
-    #ff8800 40%, 
-    #ff8800 60%, 
-    #ffd000 60%, 
-    #ffd000 60%, 
-    #ffd000 80%, 
-    #fffccc 80%, 
-    #fffccc 80%, 
-    #fffccc 100%);
-    padding: 20px; */
-}
-p{
-    background: #008493;
-    color: white;
+
+main{
+    background: lightslategray;
+    padding: 40px 70px;
+    margin: auto;
+    margin-top: 70px;
     text-align: center;
+    box-sizing: border-box;
+    width: 70%;
+}
+
+p{
+    background: cyan;
+    text-align: center;
+    color: black;
     margin: auto;
     width: 50%;
     padding: 10px;
     font-size: 20px;
 }
 a{
-    text-decoration: none;
-    color: #e1e1e1;
     background: #008493;
-    padding: 10px;
+    text-decoration: none;
     display: inline-block;
+    margin: 20px;
+    color: #e1e1e1;
+    padding: 10px;
     width: 50px;
 }
 a:hover{
     background: lightseagreen;
+}
+a::selection{
+    background: none;
+    outline: none;
+}
+
+.queBoton input{
+    background: darkcyan;
+    margin: 20px;
+    border: none;
+    padding: 20px;
+    color: white;
+    border-radius: 30px;
+    
 }

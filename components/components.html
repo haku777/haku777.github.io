@@ -7,33 +7,43 @@
 
 
 		<style>
-			*{margin: 0;padding: 0;}
-			body{background: #d9d9d9;}
+			*{
+				margin: 0;
+				padding: 0;
+			}
+
+			body{
+				background: #efefef;
+			}
+
 			@font-face {
 				font-family: Merge;
 				src: url(../font/merge_light.otf);
 			}
 			.container{
 				background: indigo;
-				width: 70%;
-				margin: auto;
-				padding: 40px;
-				margin-top: 20px;
 				font-family: Merge,serif;
+				border-radius: 7px;
+				padding: 40px;
+				margin: auto;
+				margin-top: 20px;
+				width: 50%;
 			}
 
-			.menu{
+			.link{
 				background: purple;
+				border:2px solid lightskyblue;
+				border-radius: 30px;
 				text-align: center;
 				display: block;
 				color: white;
 				padding: 10px;
-				border:none;
+				width: 40%;
+
+				cursor: pointer;
 				margin: auto;
 				margin-top: 10px;
 				margin-bottom: 70px;
-				cursor: pointer;
-				border-radius: 3px;
 			}
 
 			a{
@@ -50,44 +60,54 @@
 			}
 
 			 a:hover{
-				background: #008394;
-				color:#c9c9c9;
+				background: #acdc;
+				color:#f1f1ff;
 				transition: .2s;
 			}
+
 			.success{
 				background: cyan;
 				color: #002525;
 			}
+
 			.falta{
 				background: #ee7e57;
 			}
+
 			.develop{
 				background:crimson;
 			}
+
+			@media(max-width:750px){
+				.container{
+					width: 80%;
+				}
+			}
+
 		</style>
 	</head>
 
 	<body>
 		<main>
 			<div class="container">
-					<a href="../page.html" class="menu">Principal Page</a>
+					<a href="../page.html" class="link">Principal Page</a>
 
 					<a class="success" href="hojaVida/hojaVida.html">sheet of live (CV)</a>
 					<a class="success" href="properties/properties.html">properties</a>
 					<a class="success" href="Neumorfismo/reproductor.html">rep Neumorfismo</a>
 					<a class="success" href="menuHamburgesa/menuHamburgesa.html">menuHamburgesa</a>
+					<a class="success" href="Neumorfismo/login.html">log Neumorfismo</a>
+					<a class="success" href="colors/colors.html">Colors</a>
 					<a class="falta" href="reloj/reloj.html">Reloj</a>
-					<a class="falta" href="Alert/alert.html">Alert</a>
+					<a class="falta" href="alert/alert.html">Alert</a>
 					<a class="falta" href="pseudoElemento/pseudoElemento.html">pseudoElement</a>
-					<a class="falta" href="heart/heart.html">heart</a>
 					<a class="falta" href="calendar/calendar.html">Calendar</a>
 					<a class="falta" href="menu/menu.html">Menu</a>
 					<a class="falta" href="contador/contador.html">Couter</a>
 					<a class="falta" href="sass/sass.html">Sass</a>
 					<a class="falta" href="bootstrap/bootstrap.html">Bootstrap</a>
-					<a class="falta" href="Neumorfismo/login.html">log Neumorfismo</a>
 					<a class="falta" href="text/text.html">Text</a>
-					<a class="falta" href="colors/colors.html">Colors</a>
+					<a class="falta" href="heart/heart.html">heart</a>
 					<a class="develop" href="api/iframe.html">Api</a>
 					
 					<a class="develop" href="InDevelop.html">Carousel</a>

@@ -11,21 +11,6 @@
 	--color4:#ee7e57;
 	--color5:aqua;
 
-
-
-
-/* 	
-Tomato
-Orange
-DodgerBlue
-MediumSeaGreen
-Gray
-SlateBlue
-Violet
-LightGray 
-#272b33
-*/
-
 }
 
 @font-face {
@@ -40,6 +25,8 @@ body
 	font-family: Merge;
 	background: #e9e9e9;
 	overflow-y: auto;
+	box-sizing: border-box;
+
 }
 
 body::-webkit-scrollbar{
@@ -288,33 +275,76 @@ aside::-webkit-scrollbar-thumb{
 .fa-twitter{color: rgb(29,161,242);}
 
 
+/* --------------------- */
+.adds{
+	background: rgb(255, 123, 0);
+	color: white;
+	padding: 70px 120px;
+	margin: 0;
+	margin-bottom: 7px;
+	box-shadow: 
+	inset 0px 2px 3px 0px #2525,
+	inset 0px 4px 3px 0px orangered,
+	0px 2px 1px 1px #2f0000,
+	0px 4px 7px 4px #252525;
+}
+.adds img{
+	float: left;
+	margin-top: -30px;
+	margin-right: 20px;
+	filter: blur(3px);
+}
+.adds p{
+	color: white;
+}
+
 /*------------------*/
 footer{
-	border-top: solid lightblue 3px;
 	background: #2d3e50;
 	color: white;
 
 	padding: 77px 0px;
-	display: flex;
-	justify-content: center;
 	width: 100%;
 }
 
-footer div{
+footer section{
+	background: transparent;
+	justify-content: center;
+	display: flex;
+	margin: auto;
+	width: 70%;
+	/* background: rgb(66, 91, 118); */
+	/* height: 200px; */
+}
+
+footer section img{
+	border: 3px solid white;
+}
+
+footer section div{
 	width: 20%;
 	padding: 0px 40px;
 	display: inline-block;
-	/* background: rgb(66, 91, 118); */
-	/* height: 200px; */
 	border-left: 4px solid #008394;
-}
 
+}
 
 footer img{
 	border-radius: 50%;
 	width: 200px;
 	height: 200px;
 	margin: 0px 77px 0px 0px;
+}
+
+footer hr{
+	background: white; 
+	padding: 1px; 
+	width: 70%;
+	margin: auto;
+}
+footer p{
+	color: #7fffff;
+	font-size: 12px;
 }
 
 footer h3{
