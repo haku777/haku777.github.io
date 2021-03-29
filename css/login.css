@@ -1,47 +1,174 @@
-*{
-	margin: 0;
-	padding: 0;
-}
-@font-face{
-	font-family: Merge;
-	src:url(font/merge_light.otf);
-}
-body{
-	background:#e1e1e1;
-	font-family: Merge,serif;
-	font-size: 20px;
-}
-main{
-	width: 360px;
-	margin: auto;
-	padding: 40px;
-	margin-top: 200px;
-	box-shadow: 0px 0px 3px gray;
-	border-radius:30px;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.login{
-	border-radius:30px;
-	background: white;
+@font-face {
+  font-family: Merge,Serif;
+  src: url(../../font/merge_light.otf);
+}
+
+body {
+  font-family: Merge,serif;
+  background: white;
+}
+
+main{
+  background: #fefefe;
+  font-family: Merge,serif;
+  color: #005555;
+
+  height: 100vh;
+
+}
+
+a{
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  width: 100%;
+  display: block;
+}
+.forgot{
 	padding: 20px;
 }
-label{
-	background:#008493;
-	color: white;
-	padding: 10px;
-	width: 30%;
-	margin: 3px;
-	display: inline-block;
-	border-radius: 30px;
+
+.forgot a{
+	color: indigo;
 }
-input{
-	border: none;
-	padding: 10px;
-	width: 50%;
-	margin: 3px;
-	border-radius: 30px;
-	background: #e1e1e1;
+
+.forgot a:hover{
+	color: crimson;
 }
+
+/* --------------------- */
+/* --------------------- */
+
+.login-div {
+  background: #fff;        /* sdaasdasd */
+  border-radius: 7px;
+  padding: 40px;
+  margin: auto;
+  margin-top: 70px;
+  width: 360px;
+  
+  box-sizing: border-box;
+  
+  box-shadow: 
+  0px 0px 0px 3px #ecf0f3,
+  3px 3px 5px 3px gray,
+  -1px -1px 7px 2px white,
+  1px 1px 77px 4px #cbced1;
+
+  /* box-shadow: 
+  5px 7px 20px 1px black,
+  12px 12px 3px 1px rebeccapurple; */
+  
+}
+
+.logo {
+  background: url("../../img/flower.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  /* background: white; */
+  margin: 0 auto;
+  box-shadow: 
+  3px 3px 3px 1px #5f5f5f,
+  0px 0px 0px 10px #ecf0f3,
+  22px 16px 16px #a7aaaf,
+  -5px -5px 20px #ffffff;
+  
+  /* opacity:50%; */
+  /* filter:blur(0.3px); */
+	/* x and y:-18px; */
+	/* #ecf0f3 */
+}
+
+.titulo p{
+  background: lightskyblue;
+  border-radius: 3px;
+  text-align: center;
+  font-size: 28px;
+  margin-top: 24px;
+  padding: 7px;
+
+  font-weight: 700;
+  letter-spacing: 1px;
+
+}
+
+.subtitulo {
+  text-align: center;
+  font-size: 16px;
+  margin-top: 10px;
+  letter-spacing: 7px;
+}
+/* ---------------- */
+
+.campos {
+  margin-top: 55px;
+}
+/* imputs */
+.usuario,
+.contraseña {
+  margin-bottom: 30px;
+  border-radius: 7px;
+  background: #ecf0f3;
+  box-shadow: 
+  inset 4px 2px 7px 1px gray, 
+  inset -2px -4px 7px 1px white;
+}
+
+input {
+  color: #005555;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 14px;
+  margin: 20px 10px;
+}
+
+svg {
+  height: 25px;
+  margin: 2px 15px -7px 15px;
+}
+
+button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  height: 50px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+  background: #24cfaa;
+  border-radius: 7px;
+  box-shadow: 
+  -0px -0px 0px 3px #fe77,
+  -3px -3px 6px 1px #fff7,
+  4px 5px 3px 1px gray,
+  10px 10px 20px lightgray;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #2fdbb6;
+}
+
+button:active {
+  background: #1da88a;
+}
+
+
+
+/* ------------------- */
+
+
+
 input:active{
 	border: none;
 	outline: none;
@@ -52,14 +179,3 @@ input:focus{
 	border: none;
 }
 
-a{
-	text-decoration: none;
-	color: white;
-	padding: 20px;
-	border-radius: 30px;
-	background:#444444;
-	display: block;
-	width: 10%;
-	margin: auto;
-	margin-top: 20px;
-}

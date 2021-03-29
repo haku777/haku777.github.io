@@ -1,51 +1,74 @@
-*{margin: 0;padding: 0;}
+*{
+	margin: 0;
+	padding: 0;
+}
+
 @font-face{
 	font-family: Merge;
 	src: url(../../../font/merge_light.otf);
 }
+
 body{
 	background: linear-gradient(to left,indigo 2%,skyblue 98%);
 	font-family: Merge,serif;
 }
-.reloj{
-	/* font-family: verdana; */
-	background: white;
-	width: 500px;
+
+section{
+	background: #eaf0f6;
+	width: 60%;
 	margin: auto;
-	margin-top: 70px;
-	padding: 3px;
-	box-shadow: 3px 3px 3px 1px #d1d1d1;
-}
-.fecha{
-	padding: 40px;
-	font-size: 20px;
-	/* font-family:tahoma; */
-	background:skyblue;
-	margin-bottom: 10px;
-	background:steelblue;
-	color:white;
-	padding: 0px 40px;
+	margin-top: 4%;
+	padding: 10px;
+	border-radius: 3px;
 }
 
-h2{	display: inline-block;}
+.links{
+	display: flex;
+	justify-content: space-around;
+}
 
 a{
-	color: indigo;
+	background: tomato;
+	display: inline-block;
+	border-radius: 3px;
+	text-align: center;
 	padding: 10px;
+	width: 70px;
+}
+
+a:hover{
+	background: black;
+	transition:  1s ease;
+}
+
+.fecha{
+	background:steelblue;
+	margin-bottom: 10px;
+	text-align: center;
+	font-size: 16px;
+	color:white;
+	padding: 20px;
+}
+
+h2{	
+	display: inline-block;
 }
 
 /*--------------------*/
 
 .date{
-	padding: 10px;
-	font-size: 60px;
 	background:skyblue;
+	text-align: center;
+	font-size: 70px;
+	padding: 10px;
 }
+
 .am-pm{
-	font-size: 27px;
-	width: 100px;
+	position: absolute;
 	display: inline-block;
+	font-size: 37px;
 }
+
 #ampm{
 	font-size: 40px;
 }
@@ -63,7 +86,15 @@ button{
 	border-radius: 3px;
 	border:none;
 }
+
 a{
 	text-decoration: none;
 	color: white;
+}
+/* ------------- */
+
+@media(max-width:700px){
+	section{
+		width: auto;
+	}
 }

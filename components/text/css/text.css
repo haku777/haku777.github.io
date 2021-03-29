@@ -5,13 +5,20 @@
 body{
     background: white;
 }
-main{
-    padding: 20px 40px;
-}
 
 section{
     background: #1277;
-    padding: 20px 40px;
+    padding: 20px 70px;
+}
+
+.links{
+    background: black;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+.links h2{
+    color: white;
 }
 
 p{
@@ -31,3 +38,19 @@ a:hover{
     background:red;
 
 }
+
+.decoration1 {
+    text-decoration: overline;
+  }
+  
+.decoration2 {
+    text-decoration: line-through;
+  }
+  
+.decoration3 {
+    text-decoration: underline;
+  }
+
+.decoration4 {
+    text-decoration: underline overline;
+  }

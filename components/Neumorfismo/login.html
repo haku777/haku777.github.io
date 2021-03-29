@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -11,10 +10,8 @@
       * {
         margin: 0;
         padding: 0;
-        box-sizing: border-box;
-        color: #055;
       }
-
+      
       @font-face {
         font-family: Merge,Serif;
         src: url(../../font/merge_light.otf);
@@ -22,26 +19,65 @@
       
       body {
         font-family: Merge,serif;
-        margin: 0;
-        height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background: #ecf0f3;
+        background: white;
       }
       
-      .login-div {
-        padding: 40px 20px;
-        border: 3px solid gray;
-        border-radius: 7px;
-        height: 600px;
-        width: 330px;
+      main{
+        background: #fefefe;
+        font-family: Merge,serif;
+        color: #005555;
+
+        height: 100vh;
+ 
+      }
+
+      .links{
+        border-radius: 3px;
+        padding: 20px 0px;
+        width: 360px;
+        margin: auto;
+        margin-bottom: 40px;
+        display: flex;
+        justify-content: space-around;
+      }
+
+      a{
+        background: black;
+        display: inline-block;
+        text-decoration: none;
+        text-align: center;
+        border-radius: 3px;
+        color: white;
+        padding: 10px;
+
         box-shadow: 
-        -10px -10px 30px 3px white,
-        -20px -20px 1px 10px gray,
-        -10px -10px 60px 20px darkgray,
-        20px 20px 3px 10px #055;
-       
+        0px 0px 0px 3px #ecf0f3,
+        3px 3px 5px 3px gray,
+        -1px -1px 7px 2px white,
+        1px 1px 77px 4px #cbced1;
+      }
+      /* --------------------- */
+      /* --------------------- */
+
+      .login-div {
+        background: #fff;        /* sdaasdasd */
+        border-radius: 7px;
+        padding: 40px;
+        margin: auto;
+        width: 360px;
+        
+        box-sizing: border-box;
+        
+        box-shadow: 
+        0px 0px 0px 3px #ecf0f3,
+        3px 3px 5px 3px gray,
+        -1px -1px 7px 2px white,
+        1px 1px 77px 4px #cbced1;
+
+        /* box-shadow: 
+        5px 7px 20px 1px black,
+        12px 12px 3px 1px rebeccapurple; */
+        
       }
       
       .logo {
@@ -51,28 +87,40 @@
         width: 70px;
         height: 70px;
         border-radius: 50%;
+        /* background: white; */
         margin: 0 auto;
         box-shadow: 
-          0px 0px 2px #5f5f5f,
-          0px 0px 0px 5px #ecf0f3,
-          10px 10px 20px #a7aaaf,
-          -10px -10px 20px #ffffff;
+        3px 3px 3px 1px #5f5f5f,
+        0px 0px 0px 10px #ecf0f3,
+        22px 16px 16px #a7aaaf,
+        -5px -5px 20px #ffffff;
+        
+        /* opacity:50%; */
+        /* filter:blur(0.3px); */
+          /* x and y:-18px; */
+          /* #ecf0f3 */
       }
       
-      .titulo {
+      .titulo p{
+        background: lightskyblue;
+        border-radius: 3px;
         text-align: center;
         font-size: 28px;
+        margin-top: 24px;
+        padding: 7px;
+
         font-weight: 700;
-        letter-spacing: 0.5px;
-        padding-top: 24px;
+        letter-spacing: 1px;
+
       }
-      
+
       .subtitulo {
         text-align: center;
-        font-size: 15px;
-        margin-top: 7px;
-        letter-spacing: 3px;
+        font-size: 16px;
+        margin-top: 10px;
+        letter-spacing: 7px;
       }
+      /* ---------------- */
       
       .campos {
         margin-top: 55px;
@@ -83,10 +131,13 @@
         margin-bottom: 30px;
         border-radius: 7px;
         background: #ecf0f3;
-        box-shadow: inset 10px 10px 20px #cbced1, inset -10px -10px 20px #ffffff;
+        box-shadow: 
+        inset 4px 2px 7px 1px gray, 
+        inset -2px -4px 7px 1px white;
       }
       
       input {
+        color: #005555;
         border: none;
         outline: none;
         background: none;
@@ -110,8 +161,12 @@
         color: #fff;
         background: #24cfaa;
         border-radius: 7px;
-        box-shadow: 5px 5px 10px #b1b1b1, -5px -5px 10px #ffffff;
-        transition: 0.5s;
+        box-shadow: 
+        -0px -0px 0px 3px #fe77,
+        -3px -3px 6px 1px #fff7,
+        4px 5px 3px 1px gray,
+        10px 10px 20px lightgray;
+        transition: 0.3s;
       }
       
       button:hover {
@@ -122,80 +177,63 @@
         background: #1da88a;
       }
       
-      .link {
-        padding-top: 20px;
-        text-align: center;
-      }
-      
-      .link a {
-        text-decoration: none;
-        color: #a7aaaf;
-        font-size: 15px;
-      }
-/* -------------------------- */
-      section{
-        background: #1f1f1f;
-        padding: 20px;
-        margin-bottom: 70px;
-        display: flex;
-        justify-content: space-around;
-      }
-      section a{
-        text-decoration: none;
-        background: #2fdbb6;
-        padding: 10px;
-        width: 70px;
-        border-radius: 3px;
-        display: inline-block;
-        box-shadow:
-        -2px -2px 1px 0px gray,
-        -4px -4px 1px 0px darkgray;
-      }
-    </style>
+
+      </style>
+
     
   </head>
  
   <body>
+    
     <main>
       <section>
-        <a href="../components.html">Back</a>
-        <a href="../../page.html">Menu</a>
-    </section>
-    <div class="login-div">
+        <div class="links">
+          <a href="../components.html">Back</a>
+          <a href="../../page.html">Menu</a>
+        </div>
+      </section>
 
-      <div class="logo"></div>
+      <section>
+
+        <div class="login-div">
+          
+          <div class="logo"></div>
+          
+          <div class="titulo">
+            <p>Login</p>
+            </div>
+
+          <div class="subtitulo">
+            <p>こんにちは　ようこそ</p>
+            <small>konichiwa Youkoso</small>
+          </div>
+          <div class="campos">
+            <div class="usuario">
+              <!-- imagen tipo svg -->
+              <svg class="svg-icon" fill="#999" viewBox="0 0 20 20">
+                <path d="M12.075,10.812c1.358-0.853,2.242-2.507,2.242-4.037c0-2.181-1.795-4.618-4.198-4.618S5.921,4.594,5.921,6.775c0,1.53,0.884,3.185,2.242,4.037c-3.222,0.865-5.6,3.807-5.6,7.298c0,0.23,0.189,0.42,0.42,0.42h14.273c0.23,0,0.42-0.189,0.42-0.42C17.676,14.619,15.297,11.677,12.075,10.812 M6.761,6.775c0-2.162,1.773-3.778,3.358-3.778s3.359,1.616,3.359,3.778c0,2.162-1.774,3.778-3.359,3.778S6.761,8.937,6.761,6.775 M3.415,17.69c0.218-3.51,3.142-6.297,6.704-6.297c3.562,0,6.486,2.787,6.705,6.297H3.415z" ></path>
+              </svg>
+              <input type="text" class="input-usuario" placeholder="User" />
+            </div>
+            
+            <div class="contraseña">
+              <svg class="svg-icon" fill="#999" viewBox="0 0 20 20">
+                <path d="M17.308,7.564h-1.993c0-2.929-2.385-5.314-5.314-5.314S4.686,4.635,4.686,7.564H2.693c-0.244,0-0.443,0.2-0.443,0.443v9.3c0,0.243,0.199,0.442,0.443,0.442h14.615c0.243,0,0.442-0.199,0.442-0.442v-9.3C17.75,7.764,17.551,7.564,17.308,7.564 M10,3.136c2.442,0,4.43,1.986,4.43,4.428H5.571C5.571,5.122,7.558,3.136,10,3.136 M16.865,16.864H3.136V8.45h13.729V16.864z M10,10.664c-0.854,0-1.55,0.696-1.55,1.551c0,0.699,0.467,1.292,1.107,1.485v0.95c0,0.243,0.2,0.442,0.443,0.442s0.443-0.199,0.443-0.442V13.7c0.64-0.193,1.106-0.786,1.106-1.485C11.55,11.36,10.854,10.664,10,10.664 M10,12.878c-0.366,0-0.664-0.298-0.664-0.663c0-0.366,0.298-0.665,0.664-0.665c0.365,0,0.664,0.299,0.664,0.665C10.664,12.58,10.365,12.878,10,12.878" ></path>
+              </svg>
+              <input type="password" class="input-pass" placeholder="password" />
+            </div>
+            
+            <button class="boton">GO!</button>
+              <!-- <a href="#">Forgot password!?</a> -->
+          </div>
+        </div>
+
+      </section>
+        
+      </main>
       
-      <div class="titulo">Login</div>
-      <div class="subtitulo">なに</div>
-      <div class="campos">
-        <div class="usuario">
-          <!-- imagen tipo svg -->
-          <svg class="svg-icon" fill="#999" viewBox="0 0 20 20">
-            <path
-              d="M12.075,10.812c1.358-0.853,2.242-2.507,2.242-4.037c0-2.181-1.795-4.618-4.198-4.618S5.921,4.594,5.921,6.775c0,1.53,0.884,3.185,2.242,4.037c-3.222,0.865-5.6,3.807-5.6,7.298c0,0.23,0.189,0.42,0.42,0.42h14.273c0.23,0,0.42-0.189,0.42-0.42C17.676,14.619,15.297,11.677,12.075,10.812 M6.761,6.775c0-2.162,1.773-3.778,3.358-3.778s3.359,1.616,3.359,3.778c0,2.162-1.774,3.778-3.359,3.778S6.761,8.937,6.761,6.775 M3.415,17.69c0.218-3.51,3.142-6.297,6.704-6.297c3.562,0,6.486,2.787,6.705,6.297H3.415z"
-            ></path>
-          </svg>
-          <input type="text" class="input-usuario" placeholder="User" />
-        </div>
-
-        <div class="contraseña">
-          <svg class="svg-icon" fill="#999" viewBox="0 0 20 20">
-            <path
-              d="M17.308,7.564h-1.993c0-2.929-2.385-5.314-5.314-5.314S4.686,4.635,4.686,7.564H2.693c-0.244,0-0.443,0.2-0.443,0.443v9.3c0,0.243,0.199,0.442,0.443,0.442h14.615c0.243,0,0.442-0.199,0.442-0.442v-9.3C17.75,7.764,17.551,7.564,17.308,7.564 M10,3.136c2.442,0,4.43,1.986,4.43,4.428H5.571C5.571,5.122,7.558,3.136,10,3.136 M16.865,16.864H3.136V8.45h13.729V16.864z M10,10.664c-0.854,0-1.55,0.696-1.55,1.551c0,0.699,0.467,1.292,1.107,1.485v0.95c0,0.243,0.2,0.442,0.443,0.442s0.443-0.199,0.443-0.442V13.7c0.64-0.193,1.106-0.786,1.106-1.485C11.55,11.36,10.854,10.664,10,10.664 M10,12.878c-0.366,0-0.664-0.298-0.664-0.663c0-0.366,0.298-0.665,0.664-0.665c0.365,0,0.664,0.299,0.664,0.665C10.664,12.58,10.365,12.878,10,12.878"
-            ></path>
-          </svg>
-          <input type="password" class="input-pass" placeholder="password" />
-        </div>
-
-        <button class="boton">GO!</button>
-        <div class="link">
-          <a href="#">Forgot password!?</a>
-        </div>
-      </div>
-    </div>
-    </main>
-
-  </body>
-</html>
-
-<!-- https://www.youtube.com/watch?v=vDv--hIoUbQ -->
+    </body>
+    </html>
+    
+    <!-- https://www.youtube.com/watch?v=vDv--hIoUbQ -->
+    
