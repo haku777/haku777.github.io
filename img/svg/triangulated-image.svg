@@ -1,0 +1,25 @@
+<?xml version="1.0" standalone="yes"?>
+<svg width="273" height="311" xmlns="http://www.w3.org/2000/svg" version="1.1" >
+	
+	<polygon points="-12,-19 0,310 23,206" fill="#131d1a" stroke="#131d1a" stroke-width="0" stroke-linejoin="miter"/>
+	<polygon points="0,0 -12,-19 23,206" fill="#243725" stroke="#243725" stroke-width="0" stroke-linejoin="miter"/>
+	<polygon points="-12,-19 0,0 103,0" fill="#1b262f" stroke="#1b262f" stroke-width="0" stroke-linejoin="miter"/>
+	<polygon points="0,0 23,206 123,130" fill="#1f1006" stroke="#1f1006" stroke-width="0" stroke-linejoin="miter"/>
+	<polygon points="23,206 112,186 123,130" fill="#010e16" stroke="#010e16" stroke-width="0" stroke-linejoin="miter"/>
+	<polygon points="103,0 0,0 123,130" fill="#283742" stroke="#283742" stroke-width="0" stroke-linejoin="miter"/>
+	<polygon points="103,0 123,130 159,98" fill="#cd964a" stroke="#cd964a" stroke-width="0" stroke-linejoin="miter"/>
+	<polygon points="23,206 0,310 112,186" fill="#141f27" stroke="#141f27" stroke-width="0" stroke-linejoin="miter"/>
+	<polygon points="112,186 0,310 248,336" fill="#161e25" stroke="#161e25" stroke-width="0" stroke-linejoin="miter"/>
+	<polygon points="-12,-19 103,0 239,-107" fill="#273642" stroke="#273642" stroke-width="0" stroke-linejoin="miter"/>
+	<polygon points="103,0 159,98 272,0" fill="#25343f" stroke="#25343f" stroke-width="0" stroke-linejoin="miter"/>
+	<polygon points="239,-107 103,0 272,0" fill="#202b36" stroke="#202b36" stroke-width="0" stroke-linejoin="miter"/>
+	<polygon points="112,186 248,336 272,310" fill="#0b1219" stroke="#0b1219" stroke-width="0" stroke-linejoin="miter"/>
+	<polygon points="123,130 112,186 159,98" fill="#589cc7" stroke="#589cc7" stroke-width="0" stroke-linejoin="miter"/>
+	<polygon points="272,310 248,336 295,337" fill="#19261c" stroke="#19261c" stroke-width="0" stroke-linejoin="miter"/>
+	<polygon points="159,98 112,186 272,310" fill="#270d01" stroke="#270d01" stroke-width="0" stroke-linejoin="miter"/>
+	<polygon points="272,0 159,98 375,131" fill="#1f392f" stroke="#1f392f" stroke-width="0" stroke-linejoin="miter"/>
+	<polygon points="159,98 272,310 375,131" fill="#16201a" stroke="#16201a" stroke-width="0" stroke-linejoin="miter"/>
+	<polygon points="239,-107 272,0 375,131" fill="#182925" stroke="#182925" stroke-width="0" stroke-linejoin="miter"/>
+	<polygon points="272,310 295,337 375,131" fill="#141e16" stroke="#141e16" stroke-width="0" stroke-linejoin="miter"/>
+	
+</svg>

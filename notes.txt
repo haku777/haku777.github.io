@@ -1,1 +1,56 @@
-pasar lo del tablero aqui cada vez que se llene pasarlo al page task y relizarlo 
+bases de datos
+
+ajustar el box shadow y degradado del footer del page
+
+pasar lo del tablero aqui
+
+revisar la scala de la pagina de someting
+
+despues de validar lo de base de datos revisar lo de los servicios y php y llamar a las empresas
+
+usar el blur o focus tambien para el formulario de login y asi tener siempre seleccionado el primer campo
+
+crear alertas de lista de tareas a realizar con boton de aceptar para que no se cierre solo
+
+crear en pseudo elemento un nuevo contenedor usando la propiedad  de ease-in etc
+
+crear pagina para mostrar las imagenes con las propiedades de filtro
+
+js con el atributo toggle planear si agregar la pagina o usar una para realizar el cambio de dia a night  element.classList.toggle("mystyle");
+
+aprende escritura animada https://www.youtube.com/watch?v=bSHitSCqWr8&list=TLPQMjYwMzIwMjGabG4ZCz5YnQ&index=1
+
+agregar pagina con ajax
+
+agregar pagina con websockets
+
+crear imagen con svg    https://www.google.com/search?client=firefox-b-d&q=como+crear+una+imagen+svg
+
+crear carousel con boostrap y manualmente
+
+crear pajina con crud de php para usuarios , roles y  (tabas)
+
+crear pagina para consumir una api de lol para ver los campeones   https://www.youtube.com/results?search_query=consumo+de+api+de+lol+para+ver+los+campeones
+
+crear pagina con angular
+---------------------------------
+
+aprede node js https://www.youtube.com/watch?v=BhvLIzVL8_o
+
+
+
+pagina con ajax y otra con jquery y otra con websockets
+
+revisar paginas abiertas en visual studio code
+
+
+itterasai           (adios respuesta cuando companeros de trabajo salen a casa) 
+otsukaresamadesu   (gracias por tu arduo trabajo)
+oissu               (hola entre hombres que se conocen)
+oishii              (Delicioso)
+hisashiburi         (hola amigo que no he visto hace tiempo)
+hisashiburidane     (hola amigo que no he visto hace tiempo)
+omatase             ()
+
+
+
