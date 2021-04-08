@@ -4,7 +4,7 @@
 		echo "se enviaron los datos del formulario<br>";
 
 		if(isset($_POST["go"])){
-			echo "se pulso el boton de envio<br>";
+			// echo "se pulso el boton de envio<br>";
 
 			require_once 'conexion.php';
 
@@ -18,9 +18,8 @@
 				$clave = $_POST['clave'];
 
 				$consulta = "select * from usuarios where usuario='" . $usuario . "' and password='" . $clave . "'";
-				echo $consulta;
 				$resultado = $con -> query($consulta);
-				echo "registros encontrados:" . $resultado -> num_rows ."<br>";
+				// echo "registros encontrados:" . $resultado -> num_rows ."<br>";
 
 				if($resultado -> num_rows){
 
@@ -30,8 +29,8 @@
 
 					header('location: index.php');
 				}else{
-					echo "datos incorrectos el usuario: '" . $usuario . "' intente nuevamente";
-					echo "fallo";
+					echo "datos incorrectos intente nuevamente";
+					echo "<br>fallo";
 					echo "<br><a href='login.html'>Login</a>";
 				}
 			}

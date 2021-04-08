@@ -1,18 +1,68 @@
-https://cuevana3.io/serie/the-terror
 
-https://cuevana3.io/40056/sunod
+ver noticias
+ mvc
 
-https://cuevana3.io/34024/radioactive
+crear reloj analogico
 
-https://cuevana3.io/30123/teleios
+<form action="/action_page_binary.asp" method="post" enctype="multipart/form-data">
 
-https://cuevana3.io/38708/tom-and-jerry
+https://www.cine-calidad.com/pelicula/hannibal/
 
-https://cuevana3.io/40300/godzilla-vs-kong
+https://www.youtube.com/channel/UCXtxgWwk55kVJo9lCCZRdmg
 
-https://cuevana3.io/40366/chaos-walking
+https://www.phpmyadmin.co/
 
-https://cuevana3.io/30890/yummy
+
+machine learning
+mvc
+Copyright © 2021,
+
+
+sql login/////
+sql10.freesqldatabase.com 	
+sql10404272 	
+sql10404272
+8JNYJxb4b4
+
+SELECT DATE_FORMAT(NOW( ), "%D:%M:%Y:%H:%i:%S" )
+SELECT DATE_FORMAT('2007-10-04 22:23:00', '%H:%i:%s');
+
+#formato fecha Mysql
+https://dev.mysql.com/doc/refman/8.0/en/date-and-time-functions.html#function_date-sub
+
+#hora mundial
+https://24timezones.com/reloj_hora_exacta.php#/map
+
+
+
+https://dev.mysql.com/doc/refman/8.0/en/select.html
+
+
+#peso de la base de datos
+SELECT table_schema AS "Base de datos",
+ROUND(SUM(data_length + index_length) / 1024 / 1024, 2) AS "Tamaño (MB)"
+FROM information_schema.TABLES
+GROUP BY table_schema; 
+
+
+
+
+
+
+
+dayana rocha
+
+rocio
+
+
+oclone song buscar , pdt no la que ya tengo si no la que estaba buscando
+
+//////////////////////////////////
+
+consumir una api desde php
+consumir una api desde javaScript
+
+-----------------------------------------------------------------------------------------------------------------
 
 bit.ly/3diuJEn
 
@@ -35,27 +85,9 @@ https://cihhfd.datinglocator24.com/?utm_source=5f5887e7556d3&s=GaAjUxQD&r=&fp=JT
 https://cihhfd.datinglocator24.com/?utm_source=5f5887e7556d3&s=GaAjUxQD&r=&fp=JTVCJTdCJTIya2V5JTIyJTNBJTIydXNlckFnZW50JTIyJTJDJTIydmFsdWUlMjIlM0ElMjJNb3ppbGxhJTJGNS4wJTIwKFdpbmRvd3MlMjBOVCUyMDEwLjAlM0IlMjBXaW42NCUzQiUyMHg2NCUzQiUyMHJ2JTNBODguMCklMjBHZWNrbyUyRjIwMTAwMTAxJTIwRmlyZWZveCUyRjg4LjAlMjIlN0QlMkMlN0IlMjJrZXklMjIlM0ElMjJ3ZWJkcml2ZXIlMjIlMkMlMjJ2YWx1ZSUyMiUzQWZhbHNlJTdEJTJDJTdCJTIya2V5JTIyJTNBJTIybGFuZ3VhZ2UlMjIlMkMlMjJ2YWx1ZSUyMiUzQSUyMmVzLUVTJTIyJTdEJTJDJTdCJTIya2V5JTIyJTNBJTIyY29sb3JEZXB0aCUyMiUyQyUyMnZhbHVlJTIyJTNBMjQlN0QlMkMlN0IlMjJrZXklMjIlM0ElMjJkZXZpY2VNZW1vcnklMjIlMkMlMjJ2YWx1ZSUyMiUzQSUyMm5vdCUyMGF2YWlsYWJsZSUyMiU3RCUyQyU3QiUyMmtleSUyMiUzQSUyMmhhcmR3YXJlQ29uY3VycmVuY3klMjIlMkMlMjJ2YWx1ZSUyMiUzQTIlN0QlMkMlN0IlMjJrZXklMjIlM0ElMjJzY3JlZW5SZXNvbHV0aW9uJTIyJTJDJTIydmFsdWUlMjIlM0ElNUI3NjglMkMxMzY2JTVEJTdEJTJDJTdCJTIya2V5JTIyJTNBJTIyYXZhaWxhYmxlU2NyZWVuUmVzb2x1dGlvbiUyMiUyQyUyMnZhbHVlJTIyJTNBJTVCNzIyJTJDMTM2NiU1RCU3RCUyQyU3QiUyMmtleSUyMiUzQSUyMnRpbWV6b25lT2Zmc2V0JTIyJTJDJTIydmFsdWUlMjIlM0EzMDAlN0QlMkMlN0IlMjJrZXklMjIlM0ElMjJ0aW1lem9uZSUyMiUyQyUyMnZhbHVlJTIyJTNBJTIyQW1lcmljYSUyRkJvZ290YSUyMiU3RCUyQyU3QiUyMmtleSUyMiUzQSUyMnNlc3Npb25TdG9yYWdlJTIyJTJDJTIydmFsdWUlMjIlM0F0cnVlJTdEJTJDJTdCJTIya2V5JTIyJTNBJTIybG9jYWxTdG9yYWdlJTIyJTJDJTIydmFsdWUlMjIlM0F0cnVlJTdEJTJDJTdCJTIya2V5JTIyJTNBJTIyaW5kZXhlZERiJTIyJTJDJTIydmFsdWUlMjIlM0F0cnVlJTdEJTJDJTdCJTIya2V5JTIyJTNBJTIyYWRkQmVoYXZpb3IlMjIlMkMlMjJ2YWx1ZSUyMiUzQWZhbHNlJTdEJTJDJTdCJTIya2V5JTIyJTNBJTIyb3BlbkRhdGFiYXNlJTIyJTJDJTIydmFsdWUlMjIlM0FmYWxzZSU3RCUyQyU3QiUyMmtleSUyMiUzQSUyMmNwdUNsYXNzJTIyJTJDJTIydmFsdWUlMjIlM0ElMjJub3QlMjBhdmFpbGFibGUlMjIlN0QlMkMlN0IlMjJrZXklMjIlM0ElMjJwbGF0Zm9ybSUyMiUyQyUyMnZhbHVlJTIyJTNBJTIyV2luMzIlMjIlN0QlMkMlN0IlMjJrZXklMjIlM0ElMjJ3ZWJnbFZlbmRvckFuZFJlbmRlcmVyJTIyJTJDJTIydmFsdWUlMjIlM0ElMjJHb29nbGUlMjBJbmMufkFOR0xFJTIwKEludGVsKFIpJTIwSEQlMjBHcmFwaGljcyUyMERpcmVjdDNEMTElMjB2c181XzAlMjBwc181XzApJTIyJTdEJTJDJTdCJTIya2V5JTIyJTNBJTIyaGFzTGllZExhbmd1YWdlcyUyMiUyQyUyMnZhbHVlJTIyJTNBZmFsc2UlN0QlMkMlN0IlMjJrZXklMjIlM0ElMjJoYXNMaWVkUmVzb2x1dGlvbiUyMiUyQyUyMnZhbHVlJTIyJTNBZmFsc2UlN0QlMkMlN0IlMjJrZXklMjIlM0ElMjJoYXNMaWVkT3MlMjIlMkMlMjJ2YWx1ZSUyMiUzQWZhbHNlJTdEJTJDJTdCJTIya2V5JTIyJTNBJTIyaGFzTGllZEJyb3dzZXIlMjIlMkMlMjJ2YWx1ZSUyMiUzQWZhbHNlJTdEJTJDJTdCJTIya2V5JTIyJTNBJTIydG91Y2hTdXBwb3J0JTIyJTJDJTIydmFsdWUlMjIlM0ElNUIwJTJDZmFsc2UlMkNmYWxzZSU1RCU3RCUyQyU3QiUyMmtleSUyMiUzQSUyMmF1ZGlvJTIyJTJDJTIydmFsdWUlMjIlM0ElMjIzNS43MzgzMjk1OTMwOTIyJTIyJTdEJTJDJTdCJTIya2V5JTIyJTNBJTIyX19oYXNoJTIyJTJDJTIydmFsdWUlMjIlM0ElMjIzZWM3YTk2YWY4NGQ2NzFmMTY1ZmY2ZjMyYWVjMWRlYyUyMiU3RCU1RA==
 
 
-https://www.youtube.com/watch?v=oohjbkRv_jY
-
-dayana rocha
-
-rocio
-
-https://www.youtube.com/watch?v=EDwb9jOVRtU
-
-https://www.youtube.com/watch?v=vqXNkEc-WaA
-
-https://www.youtube.com/watch?v=ZeVyglDONxY
-
-oclone song buscar , pdt no la que ya tengo si no la que estaba buscando
-
------------------------
-consumir una api desde php
-consumir una api desde javaScript
 
 
 
-https://www.youtube.com/watch?v=BnSjnz_mSxk
 
 
 

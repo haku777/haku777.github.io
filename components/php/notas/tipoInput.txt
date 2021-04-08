@@ -44,19 +44,6 @@ value 	Specifies the default value for an input field
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 ------------------------------
 
 
