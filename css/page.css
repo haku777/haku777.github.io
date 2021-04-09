@@ -60,15 +60,16 @@ section h2{
 	text-align: center;
 	text-shadow: 2px 2px 1px crimson;
 	padding-bottom: 16px;
-
-	/* background: linear-gradient(to right,#1277,#005594,black,salmon);
-	width: 100%;
-	border-radius: 3px;
-	margin: auto;
-	margin-bottom: 20px; */
 }
 section h2::selection{
 	background: black;
+}
+.time{
+	background: linear-gradient(to right,#1277,#005594,black,salmon);
+	width: 100%;
+	border-radius: 40px;
+	color: white;
+	padding: 12px;
 }
 
 .h2{
@@ -78,11 +79,19 @@ section h2::selection{
 	padding: 20px;
 	margin: auto;
 	width: 30%;
-	transition-property: transform,background,padding,border-radius;
+	transition-property: transform,background,border-radius;
 	transition-duration: 2s;
 	border-radius: 70px;
 	background: rgba(69,25,77, 0.7);
 	transform: rotate(-45deg);
+}
+.h2:hover{
+	transition-property: transform,border;
+	transition-duration: 2s;
+	transform: rotate(0deg);
+	box-shadow: 
+	inset 0px 0px 0px 0px black,
+	inset 0px -7px 2px 0px #252525;
 }
 
 p{
@@ -242,6 +251,26 @@ hr{
 		display: flex;
 		flex-direction: column;
 	}
+	main div .img{
+		background: url(../img/earth.jpg);
+		height: 270px;
+		width: 270px;
+		float: left;
+		margin-right: 17px;
+		border-radius: 50%;
+		background-size: cover;
+		animation: earht 16s linear infinite;
+		box-shadow:
+		3px 2px 6px 0px black,
+		6px 4px 7px 0px #252525;
+	}
+
+	@keyframes earht{
+		0%   {background-position: 0;}
+		100% {background-position: 167%;}
+	  }
+	/* main div img:hover{
+	} */
 
 		section{
 		background: rgba(255,255,255,0.3);
@@ -358,6 +387,7 @@ footer section{
 }
 footer section h2{
 	padding: 10px;
+	cursor: wait;
 	box-shadow:
 	inset 0px 2px 3px 0px #2525,
 	inset 0px 4px 4px 0px black,

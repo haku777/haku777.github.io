@@ -16,7 +16,7 @@
         icon: 'success',
         title: 'Welcome again :)',
         showConfirmButton: false,
-        timer: 3000
+        timer: 1200
       })
 
 
