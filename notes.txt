@@ -1,56 +1,792 @@
-bases de datos
+to do
 
-ajustar el box shadow y degradado del footer del page
+    ajustar el box shadow y degradado del footer del page
+    revisar la scala de la pagina de someting
+    imagenes svg
+    api 
+    mvc
+    crear reloj analogico
+    crear pagina para consumir una api de lol para ver los campeones   https://www.youtube.com/results?search_query=consumo+de+api+de+lol+para+ver+los+campeones
+    usar el blur o focus tambien para el formulario de login y asi tener siempre seleccionado el primer campo
+    crear alertas de lista de tareas a realizar con boton de aceptar para que no se cierre solo
+    crear en pseudo elemento un nuevo contenedor usando la propiedad  de ease-in etc
+    crear pagina para mostrar las imagenes con las propiedades de filtro
+    js con el atributo toggle planear si agregar la pagina o usar una para realizar el cambio de dia a night  element.classList.toggle("mystyle");
+    crear pagina con :
+    escritura animada https://www.youtube.com/watch?v=bSHitSCqWr8&list=TLPQMjYwMzIwMjGabG4ZCz5YnQ&index=1
+    agregar pagina con ajax
+    agregar pagina con websockets
+    pagina con jquery
+    agregar el cursor wait en otra pagina
+    crear pagina con angular
+    aprede node js https://www.youtube.com/watch?v=BhvLIzVL8_o
 
-pasar lo del tablero aqui
+    page blur
+    con imgane y texto el resto es blur
 
-revisar la scala de la pagina de someting
+    neon
+    boton que se ilumine neon al hacer hover
 
-despues de validar lo de base de datos revisar lo de los servicios y php y llamar a las empresas
+    animacion en el login
+    como cambio de color
 
-usar el blur o focus tambien para el formulario de login y asi tener siempre seleccionado el primer campo
+    neumorfims load gradient con animacion de carga
 
-crear alertas de lista de tareas a realizar con boton de aceptar para que no se cierre solo
+    header rectangular
+    https://www.youtube.com/channel/UCbwXnUipZsLfUckBPsC7Jog/videos
 
-crear en pseudo elemento un nuevo contenedor usando la propiedad  de ease-in etc
+    slide de imagenes
 
-crear pagina para mostrar las imagenes con las propiedades de filtro
+    pagina con imagen en movimiento sobre otra
 
-js con el atributo toggle planear si agregar la pagina o usar una para realizar el cambio de dia a night  element.classList.toggle("mystyle");
+    pagina en la que tenga un background y se siga al mouse
 
-aprende escritura animada https://www.youtube.com/watch?v=bSHitSCqWr8&list=TLPQMjYwMzIwMjGabG4ZCz5YnQ&index=1
+    cambiar el mouse de la pagina
 
-agregar pagina con ajax
+    https://www.youtube.com/watch?v=QNTeq4QdOsQ
+-- ////////////////////////////////////////////////////
+search
 
-agregar pagina con websockets
+    https://www.youtube.com/watch?v=ib8AYFCZtdk
 
-crear imagen con svg    https://www.google.com/search?client=firefox-b-d&q=como+crear+una+imagen+svg
+    crear radar
 
-crear carousel con boostrap y manualmente
+    https://diego.com.es/programacion-orientada-a-objetos-en-php
 
-crear pajina con crud de php para usuarios , roles y  (tabas)
+    https://www.youtube.com/watch?v=8A3h31xmqD8
 
-crear pagina para consumir una api de lol para ver los campeones   https://www.youtube.com/results?search_query=consumo+de+api+de+lol+para+ver+los+campeones
+    https://www.youtube.com/watch?v=FbNKt2A5leQ
 
-crear pagina con angular
----------------------------------
+    https://www.youtube.com/watch?v=d35pHYwgVpg&list=TLPQMDgwNDIwMjEMRahnpUj59w&index=17
 
-aprede node js https://www.youtube.com/watch?v=BhvLIzVL8_o
+    https://www.youtube.com/watch?v=T6kvsfehsMM
+
+    https://www.google.com/search?q=mandala&client=firefox-b-d&source=lnms&tbm=isch&sa=X&ved=2ahUKEwiS5pvqwenvAhW_QzABHc6QBg0Q_AUoAXoECAEQAw&biw=1366&bih=648
+
+    https://www.youtube.com/watch?v=TPYQwm0Qx8A
+
+    https://www.youtube.com/watch?v=BnSjnz_mSxk
+
+    https://icoconvert.com/
+
+    https://www.youtube.com/watch?v=oohjbkRv_jY
+
+    https://www.db4free.net/    200mb / no estable / se borran datos periodicamente
+
+    https://www.freesqldatabase.com  5mb / estable
+
+    https://www.phpmyadmin.co
+
+    180 grados para la plancha
+
+    crema para peinar con keratina
+
+    shampoo libre de sulfato,silicona, aceites minerales
+
+    shampu cantu en colombia
+
+    @canturizoscolombia  instagram
+
+    Freight Text
+---------------------------
+agregar a hoja de vida
+
+    sql server
+
+    MYSQL
+
+
+-- ////////////////////////////////////////////////////
+
+tematicas
+
+    -crear la pagina donde me muestre imajenes en las que al realizar hover
+    se desplege la informacion
+
+    -Colombia Joya Natural
+    -tienda
+    -hotel	
+    lugares exoticos
+
+    -pagina para la iglesia en ubate
+
+    canal comunitario de ubate tv
+
+    imagen de precentacion micky en blanco y negro
+	-ceries antiguas como el branndy y el sr bigotes
+		-danny phanton
+		-kimposible
+		-billy mandy
+		-los chicos del barrio
+		-futboll callejero
+		-doraemon
+		-Heidi(abuelito dime tu)
+		-pokemon
+		-chicas superpoderosas
+		-chicas super poderosas mejor animacion
+		-plaza cesamo
+		-la abeja maya
+		-jorge de la jungla(antigua)
+		-las locuras del emperador cuzco
+		-ben 10
+		-el perro cobarde
+		-jimmy neutron
+		-la casa de monstrulos
+		-rugarts
+		-dinosaurios
+		-los sustitutos
+		-kid vs kat
+		-jony bravo
+		-dexter
+		-edd edd y edy
+		-recreo
+		-lilo y stich
+		-happy three friends
+		-nino dragon
+		-vacas vaqueras
+		-los titanes(version antigua)
+		-pato aventuras
+		-mansion foster
+		-robot boy
+		-popeye marino(old)
+		-betty boop
+		-chowder
+		-shaun el cordero
+		-wallace y gromit
+		-winnie pooh (old) mis amigos tiger y pooh
+		-manny a la obra
+		-jake long: el dragon occidental
+		-la casa de los dibujos
+		-las chicas superpoderosas z
+		-el gato felix
+			el gato felix silvando
+
+
+-- ////////////////////////////////////////////////////
+
+informaticion
+
+    <input type="text">
+    <input type="password">
+    <input type="reset">     #restablece los valores definidos para los campos input text
+    <input type="radio">     #campos tipo radio button 
+    <input type="checkbox">  #campos tipo checkbox
+    <input type="button">	 #campos tipo boton
+    <input type="date">		 #campo fecha desplega un calendario con un formato especifico validar con la base de datos
+    <input type="datetime-local">  # validar con los otros navegadores
+    <input type="email">     #campo que solo acepta email
+    <input type="file">      #campo para subir archivos
+    <input type="hidden">    #campos ocultos para actualizar por ejemplo sobre el formulario
+    <input type="month">     #depende del avegador campo para mes
+    <input type="number">    #solo para numeros // revisar los valores para maximo y minimo y si es posible para todos los tipos de input
+    <input type="range">     #rango para volumen por ejemplo
+    <input type="search">    #para buscar no me funciono xd
+    <input type="tel">		 #para telefonos y se puede establecer un formato y un placeholder para darle un texto de eje, probar para todos los campos
+    <input type="time">      #para tiempos y especico para hora 
+    <input type="url">		 #solo soporta urls
+    <input type="week">      #validar en chrome
+    <input type="submit">    #botones
+    <input type="color">     #se puede seleccionar un color especifico validar el campo con php a ver que envia
+    <input type="image">	 #src="img_submit.gif" igual que la etiqueta img pero para los forms validar con php
+-------------------------------------------
+    Atributos
+
+    checked 	Specifies that an input field should be pre-selected when the page loads (for type="checkbox" or type="radio")
+    disabled 	Specifies that an input field should be disabled
+    max 	Specifies the maximum value for an input field
+    maxlength 	Specifies the maximum number of character for an input field
+    min 	Specifies the minimum value for an input field
+    pattern 	Specifies a regular expression to check the input value against
+    readonly 	Specifies that an input field is read only (cannot be changed)
+    required 	Specifies that an input field is required (must be filled out)
+    size 	Specifies the width (in characters) of an input field
+    step 	Specifies the legal number intervals for an input field
+    value 	Specifies the default value for an input field
+--------------------------------------
+
+    camposTipoDate
+    crear campos con los valores
+
+    smalldatetime  ?
+
+
+    active= bit
+
+    bit= 0,1,null
+
+    date=year mouth day 3ytes
+
+    datetime=fecha y hora 8 bytes
+
+    datetime2= 8 bytes
+
+    datetimeoffset= 10bytes
+
+    smalldatetime=4 bytes 1min
+
+    time= hora 100ns
+------------------------------------------------------
+    crear imagenes para camisetas
+
+    pedir un vaso de cambio de color por temperatura con el emote de la taza de te que cuando este obscuro se vea de color negra la taza con el emote
 
 
 
-pagina con ajax y otra con jquery y otra con websockets
+    construcion
+    plomeria
+    conduccion
+    escolta
 
-revisar paginas abiertas en visual studio code
+    year 1973
+    edad 48
+    5 de mayo
+------------------------------------------------------
+english y sql
+
+        crear lista de palabras en ingles crear un juego en el que me recuerde las que no acierto deacuerdo a un quizt y que se puedan agregar mas palabras
+
+        uso:
+
+        will         50%
+        be going to  100%
+        would if     30%
 
 
-itterasai           (adios respuesta cuando companeros de trabajo salen a casa) 
-otsukaresamadesu   (gracias por tu arduo trabajo)
-oissu               (hola entre hombres que se conocen)
-oishii              (Delicioso)
-hisashiburi         (hola amigo que no he visto hace tiempo)
-hisashiburidane     (hola amigo que no he visto hace tiempo)
-omatase             ()
+        crear base de datos de tienda de peliculas y alquiler de las mismas
+
+        de una cocina
+
+
+        dilema quien tiene al pez
+
+        1. El británico vive en la casa roja
+        2. El sueco tiene un perro como mascota
+        3. El danés toma té
+        4. El noruego vive en la primera casa
+        5. El alemán fuma Prince
+        6. La casa verde está inmediatamente a la izquierda de la blanca
+        7. El dueño de la casa verde bebe café
+        8. El propietario que fuma Pall Mall cría pájaros
+        9. El dueño de la casa amarilla fuma Dunhill
+        10. El hombre que vive en la casa del centro bebe leche
+        11. El vecino que fuma Blends vive al lado del que tiene un gato
+        12. El hombre que tiene un caballo vive al lado del que fuma Dunhill
+        13. El propietario que fuma Bluemaster toma cerveza
+        14. El vecino que fuma Blends vive al lado del que toma agua
+        15. El noruego vive al lado de la casa azul
+
+
+
+        https://ingenieria.udistrital.edu.co/course/view.php?id=231
+
+        -------------------------------------------------------------------------------------------------
+
+        triggers o procedimientos almacenados sql
+
+
+        instalar uml
+
+        --------------------
+        ddl lenguage de definicion de datos
+
+        https://www.sqlshack.com/es/restricciones-en-sql-server-sql-not-null-unique-y-sql-primary-key/
+
+        validar constrains (SELECT CONSTRAINT_NAME, TABLE_SCHEMA , TABLE_NAME, CONSTRAINT_TYPE FROM INFORMATION_SCHEMA.TABLE_CONSTRAINTS WHERE TABLE_NAME='nombreTabla')
+        crete database
+
+        create   table
+        alter    table
+        truncate table   // sirve para eliminar los datos de una tabla pero no la tabla
+        drop     table
+
+
+        primary key
+        foreign key
+
+        alter table nombreTabla rename to nuevoNombre  //se cambia el nombre de la tabla
+
+        alter table enum(tipo sexo) restriccion
+        not null       // no se pueden insertar valores nulos en la columna especificada
+        unique         //evita registros duplicados para la columna
+
+        show tables from nameDatabase //muesta las tablas de la base de datos en MySql
+        use database; select * from sys.tables; // ver tablas de una base de datos en sql
+
+        -----------------------
+        dml lenguage de manipulacion de datos
+
+        insert datos
+        update datos
+        delete datos
+        select datos
+        -----------------------
+        dcl lenguage de control de datos
+
+        grand    asignar permisos
+        revoque  renovar permisos
+        deny     denegar permisos
+
+-----------------------------------------------
+
+select * from sys.databases
+
+    create table usuarios (
+    id int identity primary key,
+    usuario varchar(70) not null,
+    edad int null,
+    telefono int null)
+
+    drop table usuarios
+
+    insert into usuarios(usuario)values('Riven')
+
+    select * from usuarios
+
+    alter table usuarios drop constraint PK__usuarios__3213E83F03825F9B
+
+    alter table usuarios drop column id
+    alter table usuarios drop column usuario
+    alter table usuarios drop column telefono
+
+    alter table usuarios add id int primary key identity
+    alter table usuarios add usuario varchar(70) not null
+    alter table usuarios add edad int null
+    alter table usuarios add telefono int null
+
+    alter table usuarios add fecha_hoy datetime not null default(1900-01-01)
+    alter table usuarios add fecha_modificacion datetime not null default(1900)
+
+
+    alert table nombreTabla add default valorDefault for nombreCampo
+
+    ALTER TABLE Production.TransactionHistoryArchive DROP CONSTRAINT PK_TransactionHistoryArchive_TransactionID
+
+    alter table usuarios add default (valordefault) for fecha_hoy
+
+
+    --------
+
+    create view view_tiposSubtiposDoc as select
+    doc_documento.id_documento,
+    doc_documento.prefijo,
+    doc_documento.active,
+    doc_documento.id_subtipoDocumento,
+    doc_subtipoDocumento.id_tipoDocumento,
+    doc_tipoDocumento.tipoDocumento
+    from doc_documento inner join doc_subtipoDocumento 
+    on doc_documento.id_subtipoDocumento = doc_subtipoDocumento.id inner join doc_tipoDocumento on doc_subtipoDocumento.id_tipoDocumento=doc_tipoDocumento.id 
+    where doc_documento.active=1 and doc_documento.id_documento>0
+    order by doc_documento.id_documento
+    -------------------------------
+
+    create table usuarios(
+	id int auto_increment primary key,
+	active bit not null default(1),
+	usuario varchar(70) unique not null,
+	password varchar(50) not null,
+	edad int null
+)
+
+
+    insert into usuarios (usuario,edad) values('Haku',23);
+    insert into usuarios (usuario,edad) values('Akali',24);
+    insert into usuarios (usuario,edad) values('Violet',19);
+
+    insert into usuarios (usuario,edad) values('Milena',24);
+    insert into usuarios (usuario,edad) values('Liszet',22);
+    insert into usuarios (usuario,edad) values('Baxter',25);
+
+    insert into usuarios (usuario,edad) values('Jessica',24);
+    insert into usuarios (usuario,edad) values('Lee',37);
+    insert into usuarios (usuario,edad) values('Ahri',24);
+
+    insert into usuarios (usuario,edad) values('Katarina',25);
+    insert into usuarios (usuario,edad) values('Kalista',26);
+    ----------------------------------------------
+    create table usuarios(
+	id int auto_increment primary key,
+	fecha_creacion datetime not null default(NOW()),
+	fecha_modificacion datetime not null default(NOW()),
+	active bit not null default(1),
+	usuario varchar(70) unique not null,
+	password varchar(50) not null,
+	edad int null,
+	telefono int null
+    )
+
+
+
+    CREATE TABLE `sql10404272`.`usuarios` ( 
+        `id` INT NOT NULL AUTO_INCREMENT , 
+        `fecha_creacion` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP , 
+        `fecha_modificacion` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP , 
+        `active` BIT NOT NULL , `usuario` VARCHAR NOT NULL , 
+        `password` VARCHAR NOT NULL , 
+        `edad` INT NULL DEFAULT NULL , 
+        `telefono` INT NULL DEFAULT NULL , 
+        PRIMARY KEY (`id`), 
+        UNIQUE (`usuario`)) 
+
+        ENGINE = InnoDB CHARSET=utf8mb4 COLLATE utf8mb4_unicode_ci;
+
+
+        '1900-01-01 00:00:00'
+
+
+
+    fechas en nulo 
+
+    CREATE TABLE `sql10404272`.`usuarios` ( `id` INT NOT NULL AUTO_INCREMENT , `fecha_creacion` DATETIME NOT NULL DEFAULT '\'1900-01-01 00:00:00\'' COMMENT '123' , `fecha_modificacion` DATETIME NOT NULL DEFAULT '\'1900-01-01 00:00:00\'' , `active` BIT(1) NOT NULL , `usuario` VARCHAR(70) NOT NULL , `password` VARCHAR(50) NOT NULL , `edad` INT NULL DEFAULT NULL , `telefono` INT NULL DEFAULT NULL , PRIMARY KEY (`id`), UNIQUE (`usuario`)) ENGINE = InnoDB CHARSET=utf8mb4 COLLATE utf8mb4_unicode_ci;
+----------------------------------------------------------
+
+        SPA(single page aplication)
+
+        ---------------------------
+        char js graficos
+        ---------------------------
+        fetch() E s  8
+        ---------------------------
+        ajax
+
+        promesas (funcion que hacer mientras se valida 
+                la promesa revisar mas a fondo y crear la imagen)
+
+            icono envio respuesta como el retorn en 
+            una cancion o actualizacion de pagina etc
+
+        peticion 
+        respuesta
+
+        como para validar login sin recargar la pagina
+        ---------------------------
+        websockets
+        icono de canal recorrido en ambos sentidos
+        canal siempre abierto
+
+        como para chats de
+        TEXTO
+        voz
+        juegos online
+        llamadas etc
+
+        ---------------------------
+        view js 
+
+        c + +
+-----------------------------------------
+
+por hacer
+
+        <p>
+        --hacer---
+
+        web scraping:
+        buscar algo de otras paginas
+
+        phyton
+
+        //////////////////////////
+
+        hacer un api
+        django
+        flask
+        hack
+
+        ////////////////////////////
+
+        crear un juego
+        packman
+        snake
+
+        //////////////
+
+        servidor web
+        se pede crear con el equipo viejo
+
+
+        ///////////////////
+
+        programar un bot en python
+
+
+        ///////////////////////////
+
+        <!-- ------------------ -->
+        reack js  - js
+        angular   - java
+        <!-- ------------------ -->
+
+
+
+        windos r shell:startup  aplicaciones que inician solas
+
+
+        vertices y matices de color
+        text-shadow: 7px 7px 2px black, 7px 0px 7px red, -4px -2px 2px green, 10px 11px 4px blue;
+
+
+        crear api tipo wikipedia ejemplo: http://www.w3api.com/wiki/HTML5:CANVAS
+
+        proyectos a largo plazo mediano y corto plazo
+
+
+
+        etiqueta marquee y demas para textos
+        arreglar la pagina de imagenes para que se vea tipo galeria  y ademas targetas personalizadas con animaciones
+
+
+        ajustar calendario para tenerlo todo en una pagina aplicar condicionales puede ser con js o php
+
+        <!-- 
+        100kb cookies no mas usar
+        -->
+        </p>
+
+
+
+
+        ///////////////////////////////
+        -------------------------------
+        ///////////////////////////////
+
+
+
+
+
+        notes:
+
+        documentacion
+        metricas y posibles fallos
+        bugs
+
+        2000-4000 dolares
+        programar e ingles b1 -b2
+        empresa que contrata que asu vez contrata estados unidos
+
+
+        raro:
+
+        graficos vectoriales
+        estudia portuges
+        cabello 1,27 por mes
+
+
+        game:
+        riven 
+        wukon
+        ezreal mid
+        irelia mid
+        taliya sup
+
+
+
+
+
+        -------------------------------
+
+
+
+        </p>
+
+
+
+
+
+
+
+
+
+
+
+
+        <p>	
+        --------------------------------------------
+        API
+        tipos:
+        rest(representacion de estado de transferencia)
+
+
+        xml es el formato
+
+        json formato mas nuevo y mejor
+
+
+
+        pueden ser:
+
+        publicas
+
+        privadas(con login o con token)(formato para tokens en rest jwt)
+
+
+        rest
+
+
+        api locales y reotas
+
+
+        remotas
+
+        soap o rest (protocolos)(arquitectura rest)
+
+        consultar recursos(uri)(se consulta por endpoint)
+
+
+
+        metodos http:
+
+        get solicitar informacion
+        post enviar informacion
+        patch modificaciones parciales
+        put actualizar informacion
+        delete borrar recursos
+
+
+        formatos:
+
+        json
+        xml
+        texto plano
+
+
+        buenas practicas:
+
+        hateoas(se autodescribe)
+        seguridad(login)
+        testear(api)
+        documentar(el funcionamiento)
+
+
+        500 problemas de server
+
+
+        ----------------------------------
+        PWA(progresive web apps)
+
+
+        progresive web apps
+        acceso a camara y otros temas en el movil
+
+        funcionalidad off line
+
+        se puede con js(agregar mas jg)
+        api que provee el navegador para agregar funcionalidad (funcione como nativa)
+
+        se puede mejorar 
+
+        notificaciones etc
+
+        acceso directo como si fuera aplicacion nativa del dispositivos
+
+        datos en memoria
+
+        guardar datos en memoria
+
+        push notificaciones
+
+        services workers
+
+        sincronizacion de datos(api de js)(services worker)
+
+        icono en el dispositivo con archiv(manifest)
+
+        api de geolocalizacion
+        api de camara
+        api de audio
+
+
+        -------------------------
+
+
+
+
+
+
+        svj para iconos
+        jpg para fotos
+
+        graficos svg(son graficos con svg)
+        agregar la extencion a visual studio code
+
+
+        -----------------------------------
+
+        junior:
+        supervicion
+        tareas especificas(no entiende el alcance del proyecto)
+        uivesitarios no son junior(ya traen varios anos estudiando sobre el tema)
+
+
+        semiSenior:
+        compresion de etapas del proyecto
+        dimensiona el proyecto 
+        tareas complejas
+        -se creen sinior
+        couch a los junior
+
+
+
+
+        senior:
+        gestion
+        tecnicos
+        manejo de equipo
+        alinear
+        escalamiento
+        a futuro funcionamiento de lo que se esta creando
+        patrones de diseno
+        programar para que algien mas entienda el codigo
+        constante aprendizaje
+
+
+
+
+
+
+        -----------------------------------
+
+        microservicios
+
+
+
+
+--------------------------------------
+videos
+    http://www.bigbuckbunny.org",
+    "sources" : [ "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4
+    http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4
+    http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4
+    http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4
+    http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4
+    http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4
+    http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerMeltdowns.mp4
+    http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4
+    http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/SubaruOutbackOnStreetAndDirt.mp4
+    http://www.tearsofsteel.org", 
+    "sources" : [
+    http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4
+    http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/VolkswagenGTIReview.mp4
+    http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/WeAreGoingOnBullrun.mp4
+    http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/WhatCarCanYouGetForAGrand.mp4
+
+
+
+
+    http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/images/BigBuckBunny.jpg
+    http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/images/ElephantsDream.jpg
+    http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/images/ForBiggerBlazes.jpg
+    http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/images/ForBiggerEscapes.jpg
+    http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/images/ForBiggerFun.jpg
+    http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/images/ForBiggerJoyrides.jpg
+    http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/images/ForBiggerMeltdowns.jpg
+    http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/images/Sintel.jpg
+    http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/images/SubaruOutbackOnStreetAndDirt.jpg
+    http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/images/TearsOfSteel.jpg
+
+
+
+
+
 
 
 

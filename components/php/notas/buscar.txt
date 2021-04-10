@@ -1,13 +1,11 @@
 
-ver noticias
- mvc
 
-crear reloj analogico
 
 <form action="/action_page_binary.asp" method="post" enctype="multipart/form-data">
 
-https://www.cine-calidad.com/pelicula/hannibal/
 
+
+#canal de youtobe cinencia
 https://www.youtube.com/channel/UCXtxgWwk55kVJo9lCCZRdmg
 
 https://www.phpmyadmin.co/
