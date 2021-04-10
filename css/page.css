@@ -1,4 +1,3 @@
-
 *{
 	margin: 0;
 	padding: 0;
@@ -18,15 +17,14 @@
 	src: url('../font/merge_light.otf');
 }
 
-body
-{
+body{
 	font-size: 16px;
 	font-weight: 77;
 	font-family: Merge;
 	background: #e9e9e9;
 	overflow-y: auto;
 	box-sizing: border-box;
-	cursor: url('../img/svg/crear2.png');
+	/* cursor: url('../img/'); */
 }
 
 body::-webkit-scrollbar{
@@ -55,15 +53,18 @@ header{
 h2{
 	color: white;
 }
+
 section h2{
 	color:salmon;
 	text-align: center;
 	text-shadow: 2px 2px 1px crimson;
 	padding-bottom: 16px;
 }
+
 section h2::selection{
 	background: black;
 }
+
 .time{
 	background: linear-gradient(to right,#1277,#005594,black,salmon);
 	width: 100%;
@@ -85,6 +86,7 @@ section h2::selection{
 	background: rgba(69,25,77, 0.7);
 	transform: rotate(-45deg);
 }
+
 .h2:hover{
 	transition-property: transform,border;
 	transition-duration: 2s;
@@ -97,6 +99,7 @@ section h2::selection{
 p{
 	color:#005555; 
 }
+
 p::selection{
 	background:var(--color5);
 }
@@ -137,6 +140,7 @@ main a:hover{
 	border-radius: 10px;
 	margin: 10px ;
 }
+
 h1{
 	background: linear-gradient(to right, 
 	black 0%, 
@@ -149,6 +153,7 @@ h1{
 	-webkit-text-fill-color:transparent;
 
 }
+
 .nav{
 	padding-top: 20px;
 
@@ -183,6 +188,7 @@ li a{
 	skyblue 98% ,
 	white 1%);
 }
+
 .nav a:active{
 	background: linear-gradient(to top,
 	skyblue 98% ,
@@ -203,6 +209,7 @@ li a{
 	flex-wrap: wrap;
 	justify-content: center;
 }
+
 .representation{
 	
 background: #a80077;/* Old Browsers */
@@ -224,6 +231,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a80077', end
 	margin-bottom: 7px;
 	text-align: center;
 }
+
 hr{
 
 
@@ -251,6 +259,7 @@ hr{
 		display: flex;
 		flex-direction: column;
 	}
+
 	main div .img{
 		background: url(../img/earth.jpg);
 		height: 270px;
@@ -269,16 +278,15 @@ hr{
 		0%   {background-position: 0;}
 		100% {background-position: 167%;}
 	  }
-	/* main div img:hover{
-	} */
 
-		section{
-		background: rgba(255,255,255,0.3);
-			margin-bottom: 10px;
-			margin-top: 10px;
-			padding: 7px;
-			color:white;
-		}
+section{
+	  background: rgba(255,255,255,0.3);
+	  margin-bottom: 10px;
+	  border-radius: 3px;
+	  margin-top: 10px;
+	  padding: 7px;
+	  color: white;
+  }
 
 aside{
 	/* background:rgba(0,0,0,0.7); */
@@ -292,27 +300,25 @@ aside{
 	width: 277px;
 	/* border-radius: 0px 5px 5px 0px; */
 }
+
 aside::-webkit-scrollbar{
 	background: white;
 	border-radius: 5px;
 	width: 4px;
 }
+
 aside::-webkit-scrollbar-thumb{
 	background: #ee7e57;
 	width: 10px;
 	border-radius: 5px;
 }
 
-
 .aside{
 	background: rgba(255,255,255,0.3);
 	padding: 7px;
 	color: white;
+}
 
-}
-.redes{
-	/* background: #a9a9a9; */
-}
 .redesContainer{
 	margin: auto;
 	text-align: center;
@@ -321,6 +327,7 @@ aside::-webkit-scrollbar-thumb{
 .contador{
 	display: inline-block;
 }
+
 .fa-code{color: rgb(255,255,255);}/*rgb(83,84,85);*/
 .fa-facebook-square{color: rgb(66,103,178);}
 .fa-youtube{color: rgb(255,0,0);}
@@ -343,12 +350,13 @@ aside::-webkit-scrollbar-thumb{
 	padding: 120px 120px;
 	margin: 0;
 	/* margin-bottom: 5px; */
-	box-shadow: 
+	/* box-shadow: 
 	inset 0px 2px 3px 0px #2525,
 	inset 0px 4px 3px 0px orangered,
 	0px 2px 7px 1px #2f0000,
-	0px 4px 7px 3px #252525;
+	0px 4px 7px 3px #252525; */
 }
+
 .adds img{
 	float: left;
 	margin-top: -30px;
@@ -357,6 +365,7 @@ aside::-webkit-scrollbar-thumb{
 	border:3px solid white;
 	border-radius: 17px;
 }
+
 .adds p{
 	color: white;
 }
@@ -369,11 +378,11 @@ footer{
 	padding: 77px 0px;
 	width: 100%;
 
-	box-shadow: 
+	/* box-shadow: 
 	inset 0px 2px 3px 0px #2525,
 	inset 0px 4px 7px 0px black,
 	0px 2px 7px 1px #2f0000,
-	0px 4px 7px 3px #252525;
+	0px 4px 7px 3px #252525; */
 }
 
 footer section{
@@ -385,14 +394,16 @@ footer section{
 	/* background: rgb(66, 91, 118); */
 	/* height: 200px; */
 }
+
 footer section h2{
 	padding: 10px;
 	/* cursor: wait; */
-	box-shadow:
+
+	/* box-shadow:
 	inset 0px 2px 3px 0px #2525,
 	inset 0px 4px 4px 0px black,
 	-1px -1px 1px 1px #252525,
-	1px 1px 2px 2px lightslategray;
+	1px 1px 2px 2px lightslategray; */
 }
 
 footer section img{
@@ -419,6 +430,7 @@ footer hr{
 	width: 70%;
 	margin: auto;
 }
+
 footer p{
 	color: #7fffff;
 	font-size: 12px;
