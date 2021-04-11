@@ -5,7 +5,6 @@ to do
     imagenes svg
     api 
     mvc
-    crear reloj analogico
     crear pagina para consumir una api de lol para ver los campeones   https://www.youtube.com/results?search_query=consumo+de+api+de+lol+para+ver+los+campeones
     usar el blur o focus tambien para el formulario de login y asi tener siempre seleccionado el primer campo
     crear alertas de lista de tareas a realizar con boton de aceptar para que no se cierre solo

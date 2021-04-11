@@ -350,11 +350,11 @@ aside::-webkit-scrollbar-thumb{
 	padding: 120px 120px;
 	margin: 0;
 	/* margin-bottom: 5px; */
-	/* box-shadow: 
+	box-shadow: 
 	inset 0px 2px 3px 0px #2525,
 	inset 0px 4px 3px 0px orangered,
 	0px 2px 7px 1px #2f0000,
-	0px 4px 7px 3px #252525; */
+	0px 4px 7px 3px #252525;
 }
 
 .adds img{
@@ -399,11 +399,11 @@ footer section h2{
 	padding: 10px;
 	/* cursor: wait; */
 
-	/* box-shadow:
+	box-shadow:
 	inset 0px 2px 3px 0px #2525,
 	inset 0px 4px 4px 0px black,
 	-1px -1px 1px 1px #252525,
-	1px 1px 2px 2px lightslategray; */
+	1px 1px 2px 2px lightslategray;
 }
 
 footer section img{

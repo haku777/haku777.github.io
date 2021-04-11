@@ -13,10 +13,11 @@
 
     Swal.fire({
         position: 'center',
-        icon: 'success',
-        title: 'Welcome again :)',
+        icon: 'info',
+        title: '<ol><p>Repasar</p><li>Api</li><br><li>Javascript</li><br><li>Angular</li> <br><li>AngularJS</li><br><li>web sokets</li> <br><li>python</li> <br><li>Ajax</li><br><li>Java</li></ol>',
+        
         showConfirmButton: false,
-        timer: 1200
+        timer: 4000
       })
 
 
