@@ -48,6 +48,8 @@ header{
 	height: 70px;
 	justify-content: space-around;
 	overflow: hidden;
+	/* transform: skewY(-4deg); */
+
 }
 
 h2{
@@ -81,15 +83,15 @@ section h2::selection{
 	margin: auto;
 	width: 30%;
 	transition-property: transform,background,border-radius;
-	transition-duration: 2s;
+	transition-duration: 3s;
 	border-radius: 70px;
 	background: rgba(69,25,77, 0.7);
-	transform: rotate(-45deg);
+	transform: rotate(360deg);
 }
 
 .h2:hover{
 	transition-property: transform,border;
-	transition-duration: 2s;
+	transition-duration: 3s;
 	transform: rotate(0deg);
 	box-shadow: 
 	inset 0px 0px 0px 0px black,
@@ -268,10 +270,12 @@ hr{
 		margin-right: 17px;
 		border-radius: 50%;
 		background-size: cover;
-		animation: earht 16s linear infinite;
+		animation: earht 17s linear infinite;
 		box-shadow:
-		3px 2px 6px 0px black,
-		6px 4px 7px 0px #252525;
+		1px 1px 0.7px 0px #121212,
+		2px 2px 7px 0px #272727,
+		inset 1px 0.7px 1px 0px white,
+		inset 7px 1px 7.7px 0px gray;
 	}
 
 	@keyframes earht{
@@ -350,11 +354,11 @@ aside::-webkit-scrollbar-thumb{
 	padding: 120px 120px;
 	margin: 0;
 	/* margin-bottom: 5px; */
-	box-shadow: 
+	/* box-shadow: 
 	inset 0px 2px 3px 0px #2525,
 	inset 0px 4px 3px 0px orangered,
 	0px 2px 7px 1px #2f0000,
-	0px 4px 7px 3px #252525;
+	0px 4px 7px 3px #252525; */
 }
 
 .adds img{
@@ -378,11 +382,11 @@ footer{
 	padding: 77px 0px;
 	width: 100%;
 
-	/* box-shadow: 
+	box-shadow: 
 	inset 0px 2px 3px 0px #2525,
 	inset 0px 4px 7px 0px black,
 	0px 2px 7px 1px #2f0000,
-	0px 4px 7px 3px #252525; */
+	0px 4px 7px 3px #252525;
 }
 
 footer section{

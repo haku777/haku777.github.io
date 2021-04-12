@@ -7,6 +7,52 @@
 (() =>{ })(); 
 
 
+
+
+		
+var reloj = function(){
+let fecha = document.getElementById('fecha');
+let hora = document.getElementById('hora');
+let minutos = document.getElementById('minutos');
+let segundos = document.getElementById('segundos');
+let ampm = document.getElementById('ampm');
+
+
+
+let date = new Date(),
+day = date.getDay(),
+day2 = date.getDate(),
+month = date.getMonth(),
+year = date.getFullYear(),
+hour = date.getHours(),
+minutes = date.getMinutes(),
+seconds = date.getSeconds(),
+am_pm;
+
+diaSemana = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday']
+day =diaSemana[day];
+
+mes = ['January','February','March','April','May','June','Julie','August','September','October','November','Dicember']
+month =mes[month];
+
+fecha.textContent=day + " " + day2 + " , " + month + " , " + year;
+
+if (hour <= 12){am_pm="AM";}else{am_pm="PM";}
+
+if (hour = '0'){hour=12;}
+if (minutes < 10){minutes='0' + minutes;}
+if (seconds < 10){seconds='0' + seconds;}
+
+hora.textContent= hour;
+minutos.textContent=minutes;
+segundos.textContent=seconds;
+ampm.textContent=am_pm;
+};
+let interval=setInterval(reloj,1000);
+
+
+
+
 ((e) => {
     console.log('permanece activo');
 
