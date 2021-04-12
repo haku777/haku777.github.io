@@ -39,7 +39,9 @@ fecha.textContent=day + " " + day2 + " , " + month + " , " + year;
 
 if (hour <= 12){am_pm="AM";}else{am_pm="PM";}
 
-if (hour = '0'){hour=12;}
+console.log(hour);
+if (hour == 0){hour=12;}
+if (hour < 10){hour='0' + hour;}
 if (minutes < 10){minutes='0' + minutes;}
 if (seconds < 10){seconds='0' + seconds;}
 
