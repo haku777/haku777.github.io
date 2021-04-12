@@ -40,7 +40,7 @@
 				
 				<ul>	
 					<li><a href="../components.html">Back</a></li>
-					<li><a href="../../page.html" target="_blank">Menu</a></li>
+					<li><a href="../../page.html">Menu</a></li>
 					<li><a href="https://haku777.github.io" target="_blank">Nosotros</a></li>
 					<li><a href="http://localhost/haku/index.php">InicioPHP</a></li>
 					<li><a href="#">Sericios▼</a>

@@ -4,7 +4,7 @@
 }
 
 section{
-	background: #127777;
+	background: #cdcdcd;
 	padding: 20px;
 	margin: auto;
 	width: 160px;
@@ -25,7 +25,7 @@ input{
 }
 
 input[type="submit"]{
-	background: orangered;
+	background: green;
 	padding: 20px;
 	color: white;
 	margin-top: 10px;
@@ -35,5 +35,5 @@ input[type="submit"]{
 }
 
 input[type="submit"]:hover{
-	background: crimson;
+	background: #2fdbb6;
 }

@@ -146,7 +146,7 @@ aside section input[type="submit"]{
 	border-radius: 3px;
 }
 aside section input[type="submit"]:hover{
-	background: orangered;
+	background: #2fdbb6;
 }
 
 footer{
