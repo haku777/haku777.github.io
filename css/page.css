@@ -76,23 +76,22 @@ section h2::selection{
 }
 
 .h2{
-	background: rgb(44,44,44,0.7);
-	/* width: 40%; */
-	border-radius: 3px;
+	background: #252525;
 	padding: 20px;
 	margin: auto;
-	width: 30%;
-	transition-property: transform,background,border-radius;
-	transition-duration: 3s;
-	border-radius: 70px;
-	background: rgba(69,25,77, 0.7);
-	transform: rotate(360deg);
+	width: 55%;
+	transition-property: transform,background,border-radius,opacity;
+	transition-duration: 1s;
+	transition-delay: 0.07s;
+	opacity: 9px;
+	/* transform: translate(30px); */
+	/* transform: skewy(20px); */
+	transform: matrix(1px ,2px ,3px ,30px);
+	border-radius: 50% 0px 50% 0px;
 }
 
 .h2:hover{
-	transition-property: transform,border;
-	transition-duration: 3s;
-	transform: rotate(0deg);
+	background: rgba(25,25,25,0.3);
 	box-shadow: 
 	inset 0px 0px 0px 0px black,
 	inset 0px -7px 2px 0px #252525;
@@ -213,15 +212,15 @@ li a{
 }
 
 .representation{
+	background: #cb60b3;
+	background: -moz-linear-gradient(-45deg, #cb60b3 0%, #700050 11%, #c146a1 24%, #700050 27%, #a80077 30%, #700050 30%, #db36a4 100%);
+	background: -webkit-gradient(left top, right bottom, color-stop(0%, #cb60b3), color-stop(11%, #700050), color-stop(24%, #c146a1), color-stop(27%, #700050), color-stop(30%, #a80077), color-stop(30%, #700050), color-stop(100%, #db36a4));
+	background: -webkit-linear-gradient(-45deg, #cb60b3 0%, #700050 11%, #c146a1 24%, #700050 27%, #a80077 30%, #700050 30%, #db36a4 100%);
+	background: -o-linear-gradient(-45deg, #cb60b3 0%, #700050 11%, #c146a1 24%, #700050 27%, #a80077 30%, #700050 30%, #db36a4 100%);
+	background: -ms-linear-gradient(-45deg, #cb60b3 0%, #700050 11%, #c146a1 24%, #700050 27%, #a80077 30%, #700050 30%, #db36a4 100%);
+	background: linear-gradient(135deg, #cb60b3 0%, #700050 11%, #c146a1 24%, #700050 27%, #a80077 30%, #700050 30%, #db36a4 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cb60b3', endColorstr='#db36a4', GradientType=1 );
 	
-background: #a80077;/* Old Browsers */
-background: -moz-linear-gradient(-45deg, #a80077 0%, #a80077 31%, #cb60b3 31%, #cb60b3 31%, #c146a1 38%, #a80077 38%, #a80077 39%, #a80077 46%, #c146a1 46%, #c146a1 46%, #db36a4 60%, #a80077 61%, #a80077 61%, #a80077 100%); /* FF3.6+ */
-background: -webkit-gradient(left top, right bottom, color-stop(0%, #a80077), color-stop(31%, #a80077), color-stop(31%, #cb60b3), color-stop(31%, #cb60b3), color-stop(38%, #c146a1), color-stop(38%, #a80077), color-stop(39%, #a80077), color-stop(46%, #a80077), color-stop(46%, #c146a1), color-stop(46%, #c146a1), color-stop(60%, #db36a4), color-stop(61%, #a80077), color-stop(61%, #a80077), color-stop(100%, #a80077));/* Chrome, Safari4+ */
-background: -webkit-linear-gradient(-45deg, #a80077 0%, #a80077 31%, #cb60b3 31%, #cb60b3 31%, #c146a1 38%, #a80077 38%, #a80077 39%, #a80077 46%, #c146a1 46%, #c146a1 46%, #db36a4 60%, #a80077 61%, #a80077 61%, #a80077 100%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(-45deg, #a80077 0%, #a80077 31%, #cb60b3 31%, #cb60b3 31%, #c146a1 38%, #a80077 38%, #a80077 39%, #a80077 46%, #c146a1 46%, #c146a1 46%, #db36a4 60%, #a80077 61%, #a80077 61%, #a80077 100%); /* Opera 11.10+ */
-background: -ms-linear-gradient(-45deg, #a80077 0%, #a80077 31%, #cb60b3 31%, #cb60b3 31%, #c146a1 38%, #a80077 38%, #a80077 39%, #a80077 46%, #c146a1 46%, #c146a1 46%, #db36a4 60%, #a80077 61%, #a80077 61%, #a80077 100%); /* IE 10+ */
-background: linear-gradient(135deg, #a80077 0%, #a80077 31%, #cb60b3 31%, #cb60b3 31%, #c146a1 38%, #a80077 38%, #a80077 39%, #a80077 46%, #c146a1 46%, #c146a1 46%, #db36a4 60%, #a80077 61%, #a80077 61%, #a80077 100%);/* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a80077', endColorstr='#a80077', GradientType=1 );/* IE6-9 fallback on horizontal gradient */
 
 	background-attachment: fixed;
 	background-position-x: center;
@@ -230,8 +229,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a80077', end
 	padding: 230px 0px;
 	margin:auto;
 	color: white;
-	margin-bottom: 7px;
+	margin-bottom: 77px;
 	text-align: center;
+	border-radius: 0px 0px 50% 0px;
+
 }
 
 hr{
