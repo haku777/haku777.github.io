@@ -39,7 +39,6 @@ fecha.textContent=day + " " + day2 + " , " + month + " , " + year;
 
 if (hour <= 12){am_pm="AM";}else{am_pm="PM";}
 
-console.log(hour);
 if (hour == 0){hour=12;}
 if (hour < 10){hour='0' + hour;}
 if (minutes < 10){minutes='0' + minutes;}
@@ -54,21 +53,16 @@ let interval=setInterval(reloj,1000);
 
 
 
-
 ((e) => {
-    console.log('permanece activo');
-
 
     Swal.fire({
         position: 'center',
         icon: 'info',
         title: '<ol><p>Repasar</p><li>Api</li><br><li>Javascript</li><br><li>Laravel</li><br><li>Angular</li> <br><li>AngularJS</li><br><li>web sokets</li> <br><li>python</li> <br><li>Ajax</li><br><li>Java</li></ol>',
         
-        showConfirmButton: true
-        // timer: 4000
+        showConfirmButton: true,
+        timer: 300
       })
-
-
 
 })();
 
