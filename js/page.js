@@ -58,10 +58,10 @@ let interval=setInterval(reloj,1000);
     Swal.fire({
         position: 'center',
         icon: 'info',
-        title: '<ol><p>Repasar</p><li>Api</li><br><li>Javascript</li><br><li>Laravel</li><br><li>Angular</li> <br><li>AngularJS</li><br><li>web sokets</li> <br><li>python</li> <br><li>Ajax</li><br><li>Java</li></ol>',
+        title: '<ol><p>Repasar</p><li>.net</li><br><li>node js</li><br><li>Api</li><br><li>Javascript</li><br><li>Ajax</li><br><li>Canvas</li><br><li>Laravel</li><br><li>Angular</li><br><li>AngularJS</li><br><li>web sokets</li><br><li>python</li><br><li>Linux</li><br><li>Java</li></ol>',
         
-        showConfirmButton: true,
-        timer: 300
+        showConfirmButton: true
+        // ,timer: 1700
       })
 
 })();

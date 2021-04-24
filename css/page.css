@@ -17,6 +17,10 @@
 	src: url('../font/merge_light.otf');
 }
 
+html{
+	scroll-behavior: smooth;
+}
+
 body{
 	font-size: 16px;
 	font-weight: 77;

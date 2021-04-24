@@ -1,0 +1,23 @@
+.reloj{
+	background: rgba(0,0,0,0.7);
+	text-align: center;
+	padding: 2px;
+	width: 23%;
+}
+.reloj p{
+	display: inline;
+	padding: 0;
+}
+.fecha{
+	padding: 4px;
+	/*background: blue;*/
+}
+.hora p{font-size: 40px;
+	font-family: ocr a extended;
+}
+.segundos{display: inline-block;}
+.segundos p{
+	font-size: 17px;
+	display: block;
+	width: 50px;
+}
