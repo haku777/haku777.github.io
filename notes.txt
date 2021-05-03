@@ -1,5 +1,56 @@
-to do
+hoy
 
+
+
+	usar el archivo de js ya creado y usar js poo utilizar prompt y los arrays etc repaso de lo visto validar temas de.....
+
+	.net crud
+
+	targets
+
+	api
+
+	api lol
+
+	js
+
+    separa las secciones del portafoli como tematicas,css , leguajes  arreglar pagina de componentes con una previsualizacion de cada componente como tipo targeta
+
+	angular 
+
+	animacion  y transition
+
+	typeSript
+
+	dejar las componentes como parte del menu en un buscador que ademas los muestre todos en orden pero al buscar se filtre
+
+	node js
+
+	php poo
+
+	transition al active del up de la page
+
+	slide de imagenes automatico y manual ademas de los pequenos circulos para cambiar
+
+	pagina con tabs ajax para cada uno
+
+	python
+
+	algebra de baldor
+
+	ecuaciones lineales, diferenciales, exponeciales
+
+	transformada de la place
+
+	crear lector de texto
+
+	python Cortana 
+
+	ingles
+
+
+
+to do
 
     investigar sobre como obtener las voces de las personas (proyecto ia)
     recopilar datos de busqueda que se an almacenado en los diferentes archivos

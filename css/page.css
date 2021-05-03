@@ -214,6 +214,7 @@ li a{
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
+	padding-bottom: 70px;
 }
 
 .representation{
@@ -384,7 +385,7 @@ aside::-moz-scrollbar-thumb{
 	filter: blur(0px);
 	border:7px solid lightsalmon;
 	border-radius: 7px;
-	width: 400px;
+	width: 20%;
 }
 
 
