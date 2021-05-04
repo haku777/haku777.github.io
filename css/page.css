@@ -472,8 +472,8 @@ footer h3{
 	border-radius: 100%;
 	cursor: pointer;
 	position: fixed;
-	bottom: 20px;
-	right: 20px;	
+	bottom: 3vh;
+	right: 2vh;	
 }
 #go a{
 	text-decoration: none;

@@ -1,6 +1,10 @@
 hoy
 
+ ingles sena
 
+ hover a las letras 
+
+ sistem de rejilla con grid
 
 	usar el archivo de js ya creado y usar js poo utilizar prompt y los arrays etc repaso de lo visto validar temas de.....
 
