@@ -1,5 +1,16 @@
 hoy
 
+
+revisar correo para prgrama de ingles en el sena
+
+grupos conversacionales en ingles
+
+https://cursosonlineyempleos.com/niveles-de-ingles/
+
+vallas de bayas
+
+<body onload="document.location.href='forms/general/inicio.aspx'">
+
  ingles sena
 
  hover a las letras 

@@ -11,63 +11,115 @@
 				margin: 0;
 				padding: 0;
 			}
-
 			body{
-				background: #efefef;
+				animation-name: fondo;
+				animation-duration: 3s;
+				animation-iteration-count: infinite;
+				animation-timing-function: linear;
 			}
-
+			@keyframes fondo {
+				0%{
+					background: lightcyan;
+				}
+				50%{
+					background: lightseagreen;
+				}
+				75%{
+					background: lightskyblue;
+					
+				}
+				100%{
+					background: lightcyan;
+				}
+			}
 			@font-face {
 				font-family: Merge;
 				src: url(../font/merge_light.otf);
 			}
-			.container{
-				background: indigo;
+			main{
+				background: lightcyan;
 				font-family: Merge,serif;
-				border-radius: 7px;
-				padding: 40px;
 				margin: auto;
-				margin-top: 20px;
-				width: 50%;
+				width: 80%;
+				height: 100vh;
+			}
+
+			.container{
+				padding: 40px;
 			}
 
 			.link{
-				background: purple;
-				border:2px solid lightskyblue;
-				border-radius: 30px;
+				background: linear-gradient(to right, black 70%,lightcyan 100%);
 				text-align: center;
-				display: block;
 				color: white;
-				padding: 10px;
-				width: 40%;
-
+				padding: 20px;
 				cursor: pointer;
 				margin: auto;
 				margin-top: 10px;
-				margin-bottom: 70px;
+				margin-left: -10px;
+			}
+			.link:hover{
+				background: linear-gradient(to right, black 70%,lightcyan 100%);
+			}
+			.link::before{
+				content: '';
+				position: absolute;
+				margin-top:42px;
+				margin-left: -61px;
+				margin-right: 68px;
+				transition-property: margin;
+				transition-duration: .2s;
+				transition-timing-function: linear;
+				border-top: 10px solid #252525;
+				border-right: 0px solid transparent;
+				border-bottom: 10px solid transparent;
+				border-left:  10px solid transparent;
+
+			}
+			.link:hover::before{
+				margin-top: -45px;
+				margin-left: 80px;
+				border-top: 20px solid transparent;
+				border-right: 20px solid transparent;
+				border-bottom: 20px solid white;
+				border-left: 20px solid transparent;
 			}
 
 			a{
-				font-size: 20px;
-				background: black;
+				background: #252525;
+				position: relative;
+				text-transform: uppercase;
 				text-decoration: none;
 				display: inline-block;
-				border-radius: 3px;
+				letter-spacing: 1px;
+				width: 17%;
+				font-size: 20px;
 				text-align: center;
-				margin: 3px 0px;
+
 				color :white;
-				padding: 10px;
+				text-shadow: 1px 1px 2px #252525;
+				padding: 20px 10px;
 				border:none;
+
+				transition-property: padding,margin,background,width,border-radius;
+				transition-duration: .5s;
+				transition-timing-function: linear;
 			}
 
 			 a:hover{
-				background: #acdc;
-				color:#f1f1ff;
-				transition: .2s;
+				 border-radius: 3px;
+				background:blue;
+				padding: 30px 10px;
+				margin: 3px 0px;
+				width: 17%;
+				/* animation-direction: alternate; realiza la animacion en reverso al finalizar el derecho pdt: agregar el count */
+				/* animation-direction: alternate-reverse; realiza la animacion en reverso desde el inicio pdt: agregar el count */
+				/* animation-fill-mode: forwards;   se queda en la posicion final*/ 
+				/* animation: myfirst 5s linear 2s infinite alternate; */
 			}
 
 			.success{
 				background: cyan;
-				color: #002525;
 			}
 
 			.falta{
@@ -79,18 +131,24 @@
 			}
 
 			@media(max-width:750px){
-				.container{
-					width: 80%;
+				main{
+					width: 100%;
+				}
+				a{
+					width: 40%;
+					margin: auto;
+				}
+				a:hover{
+					width: 40%;
 				}
 			}
-
 		</style>
 	</head>
 
 	<body>
 		<main>
+			<a href="../page.html" class="link">Principal Page</a>
 			<div class="container">
-					<a href="../page.html" class="link">Principal Page</a>
 
 					<a class="success" href="hojaVida/hojaVida.html">sheet of live (CV)</a>
 					<a class="success" href="properties/properties.html">properties</a>
@@ -111,7 +169,7 @@
 					<a class="falta" href="sass/sass.html">Sass</a>
 					<a class="falta" href="svg/svg.html">svg</a>
 					<a class="falta" href="parallax/parallax.html">parallax</a>
-					<hr>
+		
 					<a class="falta" href="api/iframe.html">Api</a>
 					<a class="falta" href="canvas/canvas.html">Canvas</a>
 					<a class="falta" href="contador/contador.html">Couter</a>
@@ -131,7 +189,6 @@
 					<a class="develop" href="InDevelop.html">eventos js</a>
 					<a class="develop" href="InDevelop.html">Materialize</a>
 					<a class="develop" href="InDevelop.html">lol</a>
-					<hr>
 					
 					<a href="../../php/index.php">Laravel</a>
 					<a href="something/something.html">Something for add</a>
