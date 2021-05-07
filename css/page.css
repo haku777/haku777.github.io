@@ -312,14 +312,14 @@ aside{
 	/* border-radius: 0px 5px 5px 0px; */
 }
 
-aside::-moz-scrollbar{
+aside::-webkit-scrollbar{
 
 	background: white;
 	border-radius: 5px;
 	width: 4px;	
 }
 
-aside::-moz-scrollbar-thumb{
+aside::-webkit-scrollbar-thumb{
 	background: #ee7e57;
 	width: 10px;
 	border-radius: 5px;
