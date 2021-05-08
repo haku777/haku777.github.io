@@ -3,8 +3,13 @@
     padding: 0;
     /* box-sizing: border-box; */
 }
+@font-face{
+    font-family: Merge;
+    src: url(../../../font/merge_light.otf);
+}
 body{
     background: #252525;
+    font-family: Merge, Serif;
 }
 .img1,.img2,.img3{
     background: url(../../../img/fondo/fondo3.png);background-attachment: fixed;
@@ -16,7 +21,7 @@ body{
     background-attachment: fixed;
 }
 .img3{
-    background: url(../../../img/flowers.jpg);
+    background: url(../../../img/pngFondo/rw2.png);
     background-size: 110% 110%;
     background-attachment: fixed;
 }
@@ -78,7 +83,6 @@ li:hover{
 
 /* ------------------- */
 
-
 .img2 div h2, p{
     color: white;
     text-align: center;
@@ -99,7 +103,7 @@ li:hover{
     border:1px thick lime;
     font-size: 69px;
     letter-spacing: 3px;
-    padding: 10px;
+    padding: 20px;
     border-radius: 4px;
     display: block;
     width: 24vh;
@@ -121,15 +125,31 @@ li:hover{
     -webkit-box-reflect:below 1px linear-gradient(transparent,#0004);
     
 }
+/* -------------------------- */
+
+.img3 div h3{
+    background: #0007;
+    border:2px solid cyan;
+    color: white;
+    width: 500px;
+    padding: 120px;
+    border-radius: 50%;
+    margin: auto;
+    font-size: 30px;
+    letter-spacing: 2px;
+    word-spacing: 4px;
+    height: 40vh;
+    background: linear-gradient(45deg,#fe0060,#ffed3d);
+}
 
 
+/* .img1,.img2{display: none;} */
 
-
-
-
-
-
-
-
-
-
+.usar{
+    clip-path: circle(180vh at 50% -80vh);
+    clip-path: circle(80vh at 50% auto);
+    background: deepskyblue;
+    background: #fe0060;
+    background: #ffed3d;
+	/* transform: matrix(1px ,2px ,3px ,30px); */
+}

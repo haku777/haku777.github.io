@@ -83,24 +83,33 @@ section h2::selection{
 
 .h2{
 	background: #252525;
-	padding: 20px;
-	margin: auto;
-	width: 55%;
-	transition-property: transform,background,border-radius,opacity;
-	transition-duration: 1s;
-	transition-delay: 0.07s;
-	opacity: 9px;
-	/* transform: translate(30px); */
-	/* transform: skewy(20px); */
-	transform: matrix(1px ,2px ,3px ,30px);
-	border-radius: 50% 0px 50% 0px;
+	width: 30vw;
+	padding: 40px 20px;
+	margin-top: 20vh;
+	margin-left: 10vw;
+	
+
+	animation-name: move;
+	animation-duration: 2s;
+	animation-iteration-count: 2;
+	animation-timing-function: linear;
+	animation-direction: alternate-reverse;
+	
+	-webkit-box-reflect: below 1px linear-gradient(transparent,#0002);
+}
+@keyframes move {
+	0%{background:#0004;transform: translate(20vh);  margin-top : 20vh;}
+	25%{background:#cdc4;transform: translate(30vh); margin-top : 20vh;}
+	50%{background:#0004;transform: translate(50vh); margin-top : 20vh;}
+	75%{background:#cdc4;transform: translate(60vh); margin-top : 20vh;}
+	100%{background:#0004;margin-top: 20vh;margin-left: 10vw; }
+}
+.h2:hover{
+	animation: two 0.3s linear 0s infinite !important;
 }
 
-.h2:hover{
-	background: rgba(25,25,25,0.3);
-	box-shadow: 
-	inset 0px 0px 0px 0px black,
-	inset 0px -7px 2px 0px #252525;
+@keyframes two {
+	100%{transform: rotate(360deg);}
 }
 
 p{
@@ -226,19 +235,16 @@ li a{
 	background: -ms-linear-gradient(-45deg, #cb60b3 0%, #700050 11%, #c146a1 24%, #700050 27%, #a80077 30%, #700050 30%, #db36a4 100%);
 	background: linear-gradient(135deg, #cb60b3 0%, #700050 11%, #c146a1 24%, #700050 27%, #a80077 30%, #700050 30%, #db36a4 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cb60b3', endColorstr='#db36a4', GradientType=1 );
-	
 
 	background-attachment: fixed;
 	background-position-x: center;
 	background-size: 100%;
+	margin-bottom: 7vh;
 	width: 100%;
-	padding: 269px 0px;
-	margin:auto;
+	height: 70vh;
 	color: white;
-	margin-bottom: 77px;
 	text-align: center;
 	border-radius: 0px 0px 50% 0px;
-
 }
 
 hr{
