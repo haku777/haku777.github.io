@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOL</title>
+    <style>
+        *{margin: 0;padding: 0;box-sizing: border-box;}
+        header{padding: 20vh 30vw;background: url(../../img/akaliProfile.PNG);background-size: 100% 100%;}
+        h2,h3{color: white;}
+        main{background: turquoise;padding: 20px 300px;}
+        section div{background:teal; padding: 20px;}
+
+    </style>
+</head>
+<body>
+    <header>
+        <section>
+            <h2>summonerName: <b>haku777</b></h2>
+            <h3>nivel: <i>457</i> </h3>
+        </section>
+    </header>
+
+    <main>
+        <section>
+            <h2>Real Dates:</h2>
+            <input type="text" id="buscar" name="buscar" placeholder="japon" value="japon">
+            <p class="demo" id="demo"></p>
+        </section>
+        <section>
+            <div id="resultados" name="resultados">
+
+            </div>
+        </section>
+    </main>
+
+    
+
+
+    <script>
+        
+        let buscar = document.getElementById('buscar').addEventListener('change', buscarImagen);
+        function buscarImagen() {
+            let buscarValor = document.getElementById('buscar').value;
+            console.log(buscarValor);
+            const xhttp = new XMLHttpRequest();
+            xhttp.open("GET", `https://pixabay.com/api/?key=5782415-b3d87a084492871cc6157ae22&q=${buscarValor}&image_type=photo&per_page=50`, true);
+            xhttp.send();        
+
+        xhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+
+                console.log(xhttp);
+                let respuesta = JSON.parse(xhttp.responseText);
+                
+                let resultados = document.getElementById('resultados');
+                resultados.innerHTML ='';
+                buscarValor.innerHTML ='';
+                console.log(respuesta.hits);
+                for(let items of respuesta.hits){
+                    resultados.innerHTML +=(`<img src="${items.largeImageURL}" width="300" height="300">`);
+                }
+            };       
+        }
+    }
+    buscarImagen()
+    </script>
+
+</body>
+</html>

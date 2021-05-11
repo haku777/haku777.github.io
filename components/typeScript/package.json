@@ -6,6 +6,9 @@
   "scripts": {
     "start": "http-server -p 8084"
   },
-  "author": "",
-  "license": "ISC"
+  "author": "Haku",
+  "license": "ISC",
+  "dependencies": {
+    "http-server": "0.10.0"
+  }
 }
