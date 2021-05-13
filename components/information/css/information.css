@@ -10,49 +10,63 @@ body{
     font-family: Merge,serif;
 }
 .links{
-    padding: 20px !important;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .links a{
     display: inline-block;
     text-decoration: none;
-    background: #252525;
+    background: white;
     border-radius: 3px;
-    color: white;
-    padding: 10px;
+    color: black;
+    padding: 12px 20px;
+    transition-duration: .5s;
 }
+.links a:hover{
+    background: dodgerblue;
+    color: white;
+}
+
 section{
-    background: #e9e9e9;
-    padding: 40px 0px 170px 0px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    padding: 7vh;
 }
 section div{
-    background: white;
-    padding: 20px 40px;
-    width: 270px;
-    height: 470px;
+    /* background: salmon; */
+    width: 25%;
+    margin: 0px 40px;
+    height: 50vh;
     border-radius: 3px;
 }
-.section2,.section4,.section6,.section8,.section10{
+section:nth-child(odd){
     background: #252525;
 }
-/* -------------------------------------------- */
-.section1 div{
-    width: 27%;
-    padding: 0px !important;
+
+section:nth-child(even){
+    background: lightslategrey;
+    color: white;
 }
+
+
+/* -------------------------------------------- */
 .section1 table td{
     width: 50%;
-    height: 50vh;
 }
+
 .section1 table td img{
     width: 100%;
+    height: 49.8vh;
+}
+.section1 div:nth-child(3) > table img{
     height: 100%;
 }
+
 .section1 table td h2{
     text-align: center;
 }
+
 .section1 table td hr{
     background: #00404a;
 	background: -moz-linear-gradient(left, #00404a 0%, #00384a 17%, #ff4000 17%, #ff4000 17%, #ff4000 38%, #ff8800 38%, #ff8800 38%, #ff8800 59%, #ffb300 59%, #ffb300 59%, #ffd000 81%, #fffccc 81%, #fffccc 82%, #fffccc 100%);
@@ -78,7 +92,7 @@ section div{
     border-radius: 3px;
 }
 .img2 p{
-    padding: 20px;
+    padding: 30px;
 }
 .img2 img{
     margin: 0px 0px 0px -24px;
@@ -97,38 +111,42 @@ section div{
 }
 
 /* -------------------------------- */
+.img4{
+    background: white;
+}
+.img4 div{
+    padding: 10px;
+    width: 87%;
+    height: 47vh;
+}
+.img4 hr{
+    margin: 5px 0px;
+}
 .img4 h2{
     color: lightskyblue;
     text-align: center;
-    /* background: tomato; */
-    padding: 70px 0px 70px 0px;
     font-size: 120px;
-    letter-spacing: -12px;
 }
 .img4 p{
+    padding: 10px;
     text-align: center;
-    padding: 20px;
 }
 /* -------------------------------- */
+
 .img5{
-    margin: 0;
-    padding: 0;
-    width: 350px;
-    height: 510px;
-    box-shadow:
-    2px 2px 1px 0px #cdcdcd;
+    background: white;
 }
 .img5 h6{
-    background: linear-gradient(to right,darkblue,indigo,white);
-    padding: 7px;
+    background: linear-gradient(to right,red,orangered,white);
     border-radius: 3px 3px 0px 0px;
+    padding: 17px;
 }
 .img5 img{
-    margin-top: 70px;
-    margin-left: 27%;
+    margin-left: 5vw;
     border-radius: 70%;
-    width: 170px;
-    height: 170px;
+    width: 50%;
+    height: 20vh;
+    padding: 10px;
 }
 .img5 h2{
     margin-top: 20px;
@@ -139,20 +157,25 @@ section div{
     padding: 20px;
 }
 
-
 /* -------------------------------- */
+
 .img6{
-    background: black;
+    background: gray;
     color: white;
 }
 .img6 img{
-    width: 330px;
-    height: 360px;
+    width: 100%;
+    height: 32vh;
     border-radius: 3px;
-    margin: -10px 0px 0px -30px !important;
 }
+.img6 h2, .img6 p{
+    padding: 20px;
+}
+
+/* -------------------------------- */
+
 .img4:hover,.img5:hover,.img6:hover{
-    background: black;
+    background: #252525;
     color: white;
     box-shadow:
     -2px 2px 0px 0px lime,
@@ -163,17 +186,199 @@ section div{
     transition-duration: .7s;
 }
 /* -------------------------------- */
+.section3 div figure{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 7px;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.50);
+    cursor: pointer;
+}
+.section3 div figure{
+    width: 100%;
+    height: 100%;
+    transition: all 500ms ease-out;
+}
+.section3 div figure .capa{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(25,50,250,0.6);
+    transition: all 500ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+}
+.section3 div figure img{
+    transition: all .5s linear;
+}
+.section3 div figure:hover > img{
+    transform: scale(1.7);
+}
+.section3 div figure:hover > .capa{
+    opacity: 1;
+    visibility: visible;
+}
+
+.section3 div figure .capa h2{
+    color: white;
+    font-weight: 400;
+    margin-top: 30px;
+    margin-bottom: 120px;    
+    transition: all 500ms ease-out;
+}
+.section3 div figure:hover > .capa h2{
+    margin-top: 70px;
+    margin-bottom: 15px;    
+}
+
+.section3 div figure .capa p{
+    color: white;
+    font-size: 15px;
+    line-height: 1.5;
+    width: 100%;
+    max-width: 220px;
+    margin:auto;
+}
 /* -------------------------------- */
+/* -------------------------------- */
+.container1 div{
+    background: none;
+    /* padding: 0px !important; */
+}
+.container1 div .texto{
+    position: absolute;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: .7s;
+    width: 17vw;
+}
+.container1 div .texto:hover{
+    color: transparent;
+}
+.container1 div .texto h2, .container1 div .texto p{
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.container .cara{
+    display: flex;
+    position: absolute;
+    width: 22vw;
+    height: 50vh;
+}
+
+ .container .cara span{
+     background: linear-gradient(180deg, dodgerblue,cyan);
+    width: 100%;
+    height:100%;
+    transition: .5s;
+}
+
+ .container .cara1 span{
+     background-origin: top;
+     padding: 10px;
+    }
+    
+    .container:hover .cara1 span{
+        transform: rotateX(90deg) translateY(-50%);
+    }
+    .container .cara2 span{
+        background: linear-gradient(360deg, teal,cyan);
+    transform-origin:bottom;
+    padding: 10px;
+    transform: rotateX(90deg) translateY(50%);
+}
+ .container:hover .cara2 span{
+    transform: rotateX(0deg) translateY(0);
+}
+
+ .container .cara span:nth-child(1){
+    background-position-x: 0px;
+    transition-delay: 0s;
+}
+ .container .cara span:nth-child(2){
+    background-position-x: -200px;
+    transition-delay: .1s;
+} 
+
+.container .cara span:nth-child(3){
+    background-position-x: -400px;
+    transition-delay: .2s;
+} 
+.container .cara span:nth-child(4){
+    background-position-x: -600px;
+    transition-delay: .3s;
+}
 /* -------------------------------- */
 
+.section5 div{
+    background: seashell;
+    color: #555555;
+}
+.section5 div h2, .section5 div p{
+    padding: 20px;
+}
+
+/* -------------------------------- */
+
+.section6 div{
+    background: seashell;
+    color: black;
+}
+.section6 div h2, .section6 div p{
+    padding: 20px;
+}
+
+/* -------------------------------- */
+
+.section7 div{
+    background: seashell;
+    color: black;
+}
+.section7 div h2, .section7 div p{
+    padding: 20px;
+}
+
+/* -------------------------------- */
+
+.section8 div{
+    background: seashell;
+    color: orangered;
+}
+.section8 div h2, .section8 div p{
+    padding: 20px;
+}
+
+/* -------------------------------- */
+.up{
+    background: teal;
+    border-radius: 50%;
+    position: absolute;
+    right: 10px;
+}
+.up img{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+footer .footer{
+    background: url(../../../img/flowers.jpg) !important;
+    background-size: 100% !important;
+    width: 100%;
+    height: 50vh;
+}
 
 
 
 /* 
 utilizar los diferentes tipos de tarjetas en los diferentes modulos a realizar
-
 crear deplegable con las ciudades y departamentos de colombia
+*/
 
-dar efecto espejo a las targetas
-
-subdibidir por secciones */
