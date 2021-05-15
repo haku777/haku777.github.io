@@ -21,8 +21,8 @@ body{
     background-attachment: fixed;
 }
 .img3{
-    background: url(../../../img/pngFondo/rw2.png);
-    background-size: 110% 110%;
+    background: url(../../../img/gaugan/gaugan_output11.jpg);
+    background-size: 100% 100%;
     background-attachment: fixed;
 }
 
@@ -127,29 +127,29 @@ li:hover{
 }
 /* -------------------------- */
 
-.img3 div h3{
-    background: #0007;
-    border:2px solid cyan;
+.img3 div a{
     color: white;
-    width: 500px;
-    padding: 120px;
-    border-radius: 50%;
-    margin: auto;
-    font-size: 30px;
-    letter-spacing: 2px;
-    word-spacing: 4px;
-    height: 40vh;
-    background: linear-gradient(45deg,#fe0060,#ffed3d);
+    padding: 20px;
+    display: inline-block;
+    width: 100%;
+    font-size: 5rem;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    border-left: 7px solid dodgerblue;
+    transition-duration: .7s;
+}
+.img3 div a:hover{
+    background: dodgerblue;
+    animation: load .7s linear forwards;
+}
+@keyframes load {
+    from{
+        width: 50%;
+    }
+    to{
+        width: 100%;
+    }
 }
 
 
 /* .img1,.img2{display: none;} */
-
-.usar{
-    clip-path: circle(180vh at 50% -80vh);
-    clip-path: circle(80vh at 50% auto);
-    background: deepskyblue;
-    background: #fe0060;
-    background: #ffed3d;
-	/* transform: matrix(1px ,2px ,3px ,30px); */
-}

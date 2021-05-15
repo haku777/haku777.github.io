@@ -116,7 +116,7 @@ section:nth-child(even){
 }
 .img4 div{
     padding: 10px;
-    width: 87%;
+    width: 70%;
     height: 47vh;
 }
 .img4 hr{
@@ -125,7 +125,7 @@ section:nth-child(even){
 .img4 h2{
     color: lightskyblue;
     text-align: center;
-    font-size: 120px;
+    font-size: 7rem;
 }
 .img4 p{
     padding: 10px;
@@ -375,6 +375,27 @@ footer .footer{
     height: 50vh;
 }
 
+
+/* ---------------------------- */
+/* ---------------------------- */
+/* ---------------------------- */
+
+@media(max-width: 750px){
+     section{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    section div{
+        width: 90%;
+        height: 55vh;
+        padding: 5px;
+        margin: 10px 5px;
+    }
+    .container .cara{
+        width: 70%;
+    }
+}
 
 
 /* 
