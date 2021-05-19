@@ -15,7 +15,6 @@
 }
 body{
 	font-family: Merge,serif;
-	background-color: linen;
 }
 /* ------------------- */
 
@@ -27,7 +26,8 @@ main{
 	border-radius: 3px;
 }
 .links{
-	background:white;
+	text-align: center;
+	font-size: 20px;
 }
 
 /* ------------- */
@@ -45,18 +45,21 @@ a{
 	text-decoration: none;
 	display: inline-block;
 	border-radius: 3px;
-	padding: 7px;
-	width: 100px;
+	padding: 20px 10px;
+	width: 10%;
 	color: #f7f7f7;
+}
+a:hover{
+	background: crimson;
 }
 
 h2{
+	background: white;
     color: orangered;
 	display: inline-block;
 	width: 60%;
-	text-align: center;
-	padding: 4px;
-	/* background: indigo; */
+	padding: 15px;
+	/* line-height: 40px; */
     text-shadow:
     2px 1px 1px purple;
 }
@@ -99,7 +102,7 @@ h4{
 /* ----------------- */
 
 .container{
-	background: tomato;
+	background: rgba(100,200,200,0.9);
 	margin-bottom: 10px;
 	padding: 10px;
     width: 94%;
@@ -138,7 +141,7 @@ h2:hover::after{     /* despues */
     content: '';
     color: white;
     position: absolute;
-	margin: 5px 0px 0px -75px;
+	margin: 5px 0px 0px -87px;
 	border-top: 12px solid white;
 	border-right: 12px solid white;
 	border-bottom: 12px solid white;

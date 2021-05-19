@@ -2,23 +2,33 @@
     margin: 0;
     padding: 0;
 }
+@font-face{
+    font-family: Merge;
+    src: url(../.././../font/merge_light.otf);
+}
+
 body{
     background: white;
+    font-family: Merge,serif;
+    text-align: center;
 }
 
 section{
     background: #1277;
-    padding: 20px 70px;
+    padding: 20px 20%;
 }
 
 .links{
     background: black;
     text-align: center;
     display: flex;
-    justify-content: space-between;
+    font-size: 20px;
+    justify-content: space-evenly;
 }
 .links h2{
     color: white;
+    text-transform: uppercase;
+    line-height: 60px;
 }
 
 p{
@@ -30,12 +40,13 @@ a{
     background: crimson;
     color: white;
     width: 70px;
-    padding: 10px;
+    padding: 20px;
     border-radius: 3px;
     display: inline-block;
 }
 a:hover{
-    background:red;
+    transition-duration: 1s;
+    background:teal;
 
 }
 

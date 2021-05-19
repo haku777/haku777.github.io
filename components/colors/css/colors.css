@@ -7,28 +7,24 @@
     src: url("../../../font/merge_light.otf");
 }
 body{
-    background: #f1f1f1;
+    background: linear-gradient(180deg, lightcyan,lightblue);
     font-family: Merge;
 }
 main{
     background:white;
-    padding:20px 20px;
     width: 80%;
     margin: auto;
-    margin-top: 50px;
     border:2px solid #e9e9e9;
-    border-radius:3px;
-    box-shadow: 3px 3px 1px 1px gray;
 }
 
 section{
     background:#a7b7c7;
     font-family:Merge, serif;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
+    padding: 10px;
     color: white;
-    padding: 7px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 a{
@@ -40,11 +36,11 @@ a{
     font-size: 18px;
     color: white;
     padding: 10px;
-    width: 70px;
+    width: 10%;
 }
 
 a:hover{
-    background: tomato;
+    background: teal;
 }
 
 h2,p{
@@ -57,9 +53,9 @@ h2,p{
 /* ------------------ */
 
 p{ 
-    width: 18%;
-    padding: 10px;
-    margin: 10px;
+    width: 30%;
+    padding: 40px 10px;
+    margin: 5px;
     border:1px solid #acdc;
     display: inline-block;
 }

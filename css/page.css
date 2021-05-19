@@ -383,10 +383,10 @@ aside::-webkit-scrollbar-thumb{
 	/* background: tomato; */
 }
 
-.adds h2{
+.adds h2, .adds h4{
 	font-size: 7vh;
 	word-spacing: 17px;
-	letter-spacing: 24px;
+	letter-spacing: 7px;
 	color: white;
 }
 .adds img{

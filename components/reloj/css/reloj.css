@@ -14,11 +14,9 @@ body{
 }
 
 section{
-	background: #eaf0f6;
 	width: 60%;
 	margin: auto;
 	margin-top: 4%;
-	padding: 10px;
 	border-radius: 3px;
 }
 
@@ -28,17 +26,18 @@ section{
 }
 
 a{
-	background: tomato;
+	background: black;
 	display: inline-block;
-	border-radius: 3px;
+	border-radius: 7px;
 	text-align: center;
-	padding: 10px;
+	padding: 20px;
 	width: 70px;
+	font-size: 30px;
 }
 
 a:hover{
-	background: black;
-	transition:  1s ease;
+	background: tomato;
+	transition:  .5s ease;
 }
 
 .fecha{
