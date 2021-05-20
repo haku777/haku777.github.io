@@ -46,17 +46,20 @@ body::-webkit-scrollbar-thumb{
 }
 
 header{
-	background: linear-gradient(to right,skyblue,lightcyan,skyblue);
+	background:rgba(0,0,0,0);
 	width: 100%;
 	display: flex;
 	height: 70px;
 	justify-content: space-around;
 	overflow: hidden;
-	position: fixed;
-	padding: 7px;
+	position: absolute;
+	padding-top: 69px;
 	z-index: 7;
 	/* transform: skewY(-4deg); */
 
+}
+.reloj{
+	color: white;
 }
 
 h2{
@@ -83,11 +86,13 @@ section h2::selection{
 }
 
 .h2{
-	background: #252525;
+	background: rgba(77, 0, 77, 0.7);
 	width: 30vw;
-	padding: 40px 20px;
-	margin-top: 20vh;
-	margin-left: 10vw;
+	padding: 20px 10px;
+	margin-top: 25vh;
+	margin-left: 30%;
+	/* border-radius: -40deg 0deg 77deg 0deg; */
+	transform: skewx(-45deg);
 	
 
 	animation-name: move;
@@ -99,11 +104,11 @@ section h2::selection{
 	-webkit-box-reflect: below 1px linear-gradient(transparent,#0002);
 }
 @keyframes move {
-	0%{background:#0004;transform: translate(20vh);  margin-top : 20vh;}
-	25%{background:#cdc4;transform: translate(30vh); margin-top : 20vh;}
-	50%{background:#0004;transform: translate(50vh); margin-top : 20vh;}
-	75%{background:#cdc4;transform: translate(60vh); margin-top : 20vh;}
-	100%{background:#0004;margin-top: 20vh;margin-left: 10vw; }
+	0%{background:#0004;transform: translate(10vh);  margin-top : 25vh;}
+	25%{background:#cdc4;transform: translate(20vh); margin-top : 25vh;}
+	50%{background:#0004;transform: translate(30vh); margin-top : 25vh;}
+	75%{background:#cdc4;transform: translate(40vh); margin-top : 25vh;}
+	100%{background:#0004;margin-top: 25vh;margin-left: 30%; }
 }
 .h2:hover{
 	animation: two 0.3s linear 0s infinite !important;
@@ -188,23 +193,17 @@ li{
 }
 
 li a{
-	background: linear-gradient(to bottom,
-	white 10%,
-	skyblue 98%,
-	lightgray 100%);
 	text-decoration: none;
-	border: solid black 0px;
-	border-radius: 20px;
+	border-bottom:3px solid white;
 	padding: 10px;
-	color: black;
+	margin: 0px 10px;
+	color: white;
 	/* color:lightseagreen; */
 }
 
 .nav a:hover{
-	background: linear-gradient(to top,
-	white 1%,
-	skyblue 98% ,
-	white 1%);
+	background: linear-gradient(to bottom, transparent 70%,cyan 100%);
+	border-bottom: 3px solid black;
 }
 
 .nav a:active{
@@ -220,8 +219,7 @@ li a{
 	indigo 10%,
 	skyblue 20%,
 	lightblue,
-	lightcyan,
-	lightseagreen);
+	rgb(0, 79, 158));
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
@@ -357,14 +355,14 @@ aside::-webkit-scrollbar-thumb{
 /* --------------------- */
 .adds{
 	
-	background: #ff9263;
-	background: -moz-linear-gradient(-45deg, #ff9263 0%, #ff9263 37%, #ff6214 37%, #ff9263 49%, #ff6214 67%, #ff9263 67%, #ff6214 100%);
-	background: -webkit-gradient(left top, right bottom, color-stop(0%, #ff9263), color-stop(37%, #ff9263), color-stop(37%, #ff6214), color-stop(49%, #ff9263), color-stop(67%, #ff6214), color-stop(67%, #ff9263), color-stop(100%, #ff6214));
-	background: -webkit-linear-gradient(-45deg, #ff9263 0%, #ff9263 37%, #ff6214 37%, #ff9263 49%, #ff6214 67%, #ff9263 67%, #ff6214 100%);
-	background: -o-linear-gradient(-45deg, #ff9263 0%, #ff9263 37%, #ff6214 37%, #ff9263 49%, #ff6214 67%, #ff9263 67%, #ff6214 100%);
-	background: -ms-linear-gradient(-45deg, #ff9263 0%, #ff9263 37%, #ff6214 37%, #ff9263 49%, #ff6214 67%, #ff9263 67%, #ff6214 100%);
-	background: linear-gradient(135deg, #ff9263 0%, #ff9263 37%, #ff6214 37%, #ff9263 49%, #ff6214 67%, #ff9263 67%, #ff6214 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff9263', endColorstr='#ff6214', GradientType=1 );
+	background: dodgerblue;
+	background: -moz-linear-gradient(-45deg, dodgerblue 0%, dodgerblue 37%, skyblue 37%, dodgerblue 49%, skyblue 67%, dodgerblue 67%, skyblue 100%);
+	background: -webkit-gradient(left top, right bottom, color-stop(0%, dodgerblue), color-stop(37%, dodgerblue), color-stop(37%, skyblue), color-stop(49%, dodgerblue), color-stop(67%, skyblue), color-stop(67%, dodgerblue), color-stop(100%, skyblue));
+	background: -webkit-linear-gradient(-45deg, dodgerblue 0%, dodgerblue 37%, skyblue 37%, dodgerblue 49%, skyblue 67%, dodgerblue 67%, skyblue 100%);
+	background: -o-linear-gradient(-45deg, dodgerblue 0%, dodgerblue 37%, skyblue 37%, dodgerblue 49%, skyblue 67%, dodgerblue 67%, skyblue 100%);
+	background: -ms-linear-gradient(-45deg, dodgerblue 0%, dodgerblue 37%, skyblue 37%, dodgerblue 49%, skyblue 67%, dodgerblue 67%, skyblue 100%);
+	background: linear-gradient(135deg, dodgerblue 0%, dodgerblue 37%, skyblue 37%, dodgerblue 49%, skyblue 67%, dodgerblue 67%, skyblue 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='dodgerblue', endColorstr='skyblue', GradientType=1 );
 	background-attachment: fixed;
 	color: white;
 	display: flex;
