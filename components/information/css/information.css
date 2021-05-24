@@ -84,6 +84,11 @@ section:nth-child(even){
 .section1 table td ul{
     margin:10px 20px;
 }
+.section1 div:hover{
+    background:white;
+    color: black;
+}
+
 /* ------------------------------- */
 .img2 h2{
     background: orangered;
@@ -113,6 +118,7 @@ section:nth-child(even){
 /* -------------------------------- */
 .img4{
     background: white;
+    transition-duration: .7s;
 }
 .img4 div{
     padding: 10px;
@@ -135,6 +141,7 @@ section:nth-child(even){
 
 .img5{
     background: white;
+    transition-duration: .7s;
 }
 .img5 h6{
     background: linear-gradient(to right,red,orangered,white);
@@ -162,6 +169,7 @@ section:nth-child(even){
 .img6{
     background: gray;
     color: white;
+    transition-duration: .7s;
 }
 .img6 img{
     width: 100%;
@@ -183,7 +191,6 @@ section:nth-child(even){
     2px -2px 0px 0px red,
     7px -7px 50px 1px darkred;
     transition-property: box-shadow;
-    transition-duration: .7s;
 }
 /* -------------------------------- */
 .section3 div figure{
@@ -246,51 +253,52 @@ section:nth-child(even){
 /* -------------------------------- */
 .container1 div{
     background: none;
+    /* background: lightsalmon; */
     /* padding: 0px !important; */
 }
 .container1 div .texto{
     position: absolute;
     color: white;
     display: flex;
+    width: 70%;
+    padding: 20px;
     flex-direction: column;
     justify-content: center;
     transition: .7s;
-    width: 17vw;
 }
 .container1 div .texto:hover{
     color: transparent;
 }
 .container1 div .texto h2, .container1 div .texto p{
-    padding: 40px;
+    padding: 10px;
     display: flex;
     flex-direction: column;
-    width: 100%;
 }
 
 .container .cara{
     display: flex;
     position: absolute;
-    width: 22vw;
-    height: 50vh;
+    width: 21vw;
+    /* height: 50vh; */
 }
 
  .container .cara span{
-     background: linear-gradient(180deg, dodgerblue,cyan);
-    width: 100%;
-    height:100%;
+    background: linear-gradient(180deg, dodgerblue,cyan);
+    width: 100vw;
     transition: .5s;
 }
 
  .container .cara1 span{
      background-origin: top;
      padding: 10px;
-    }
+}
     
-    .container:hover .cara1 span{
-        transform: rotateX(90deg) translateY(-50%);
-    }
-    .container .cara2 span{
-        background: linear-gradient(360deg, teal,cyan);
+.container:hover .cara1 span{
+    transform: rotateX(90deg) translateY(-50%);
+}
+
+.container .cara2 span{
+    background: linear-gradient(360deg, teal,cyan);
     transform-origin:bottom;
     padding: 10px;
     transform: rotateX(90deg) translateY(50%);
@@ -317,62 +325,134 @@ section:nth-child(even){
     transition-delay: .3s;
 }
 /* -------------------------------- */
+.section5{
+    background: linear-gradient(-45deg ,dodgerblue,indigo,skyblue) !important;
+    background-repeat: no-repeat !important; 
+    background-position: center !important;
+    background-size: cover !important;
+    padding: 0;
+}
+.glass{
+    background: rgba(255,255,255,0.) !important;
+    padding: 10vh !important;
+    width: 100% !important;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    border: none !important;
+    border-radius: 0px !important;
+}
 
 .section5 div{
-    background: seashell;
-    color: #555555;
+    background: rgb(255, 255, 255,0.2);
+    color: white;
+    border-radius: 13px;
+    border: 1px solid rgba(255,255,255,0.5);
+    border-right: 1px solid rgba(255,255,255,0.2);
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+    box-shadow: 0px 5px 25px #2525;
+    transition-duration: 1s;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
 }
-.section5 div h2, .section5 div p{
-    padding: 20px;
+
+.section5 div:hover{
+    transform: translateY(-10px);
+}
+
+
+.section5 div h2,.section5 .glass div p{
+    background: rgba(255,255,255,0.2);
+    padding: 2vw;
+    position: relative;
+    margin: auto;
+    margin-top: 20px;
+    width: 70%;
+    font-size: 20px;
+    border: 1px solid rgba(255,255,255,0.5);
+    border-right: 1px solid rgba(255,255,255,0.2);
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+    border-radius: 7px;
+    transition-duration: .5s;
+    overflow: hidden !important;
+}
+
+.section5 div h2::before,.section5 div p::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100%;
+    background: rgba(255,255,255,0.4);
+    transform: skewX(45deg) translateX(-200px);
+    transition-duration: 1s;
+}
+
+.section5 div h2:hover::before,.section5 div p:hover::before{
+    transform: skewX(45deg) translateX(610px);
 }
 
 /* -------------------------------- */
 
 .section6 div{
-    background: seashell;
-    color: black;
+    background: dodgerblue;
+    border-radius: 7px;
+    padding: 20px;
+    color: white;
 }
 .section6 div h2, .section6 div p{
-    padding: 20px;
+    background: lightskyblue;
+    padding: 40px;
 }
 
 /* -------------------------------- */
 
 .section7 div{
-    background: seashell;
-    color: black;
+    background: dodgerblue;
+    border-radius: 7px;
+    padding: 20px;
+    color: white;
 }
 .section7 div h2, .section7 div p{
-    padding: 20px;
+    background: lightskyblue;
+    padding: 40px;
 }
 
 /* -------------------------------- */
 
 .section8 div{
-    background: seashell;
-    color: orangered;
+    background: dodgerblue;
+    border-radius: 7px;
+    padding: 20px;
+    color: white;
 }
 .section8 div h2, .section8 div p{
-    padding: 20px;
+    background: lightskyblue;
+    padding: 40px;
 }
 
 /* -------------------------------- */
-.up{
-    background: teal;
-    border-radius: 50%;
+.up a{
+    background: url(../../../img/fondo/back2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    border: 3px solid lime;
+    border-radius: 100%;
     position: absolute;
-    right: 10px;
-}
-.up img{
-    border-radius: 50%;
     width: 50px;
     height: 50px;
+    padding: 3px;
+    right: 10px;
 }
+/* -------------------------------- */
+
 footer .footer{
     background: url(../../../img/flowers.jpg) !important;
     background-size: 100% !important;
     width: 100%;
-    height: 50vh;
+    height: 60vh;
 }
 
 

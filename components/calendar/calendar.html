@@ -1,34 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF=-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script class="https://cdn.jsdelivr.net/npm/sweetalert2@10" src="../sweetAlerts/javascript/sweetAlertsTwo.js"></script>
-        <link rel="stylesheet" href="css/calendar.css">
 
+<head>
+    <meta charset="UTF=-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script class="https://cdn.jsdelivr.net/npm/sweetalert2@10" src="../sweetAlerts/javascript/sweetAlertsTwo.js"></script>
+    <link rel="shorcut icon" href="../../img/n.PNG">
+    <link rel="stylesheet" href="css/calendar.css">
+    <title>Calendar</title>
+</head>
 
-        <title>Calendar</title>
-    </head>
+<body>
 
-    <body>
-
-        <main>
+    <main>
+        <div class="wrapper">
+          <div>
             <h2>calendar 2021</h2>
             <h3>January 2021</h3>
             <a href="../components.html">back</a>
             <a href="../../page.html">menu</a>
+          </div>
  
-            <code>complementar con base de datos y dias festivos</code>
-           
-            <script>
-                let enero =document.getElementsByClassName("january");
-                enero.textContent= "<p>hi !!! </p>";
-                enero.innerHTML= "<p>hi !!! </p>";
+            <div>
+                <code>complementar con base de datos y dias festivos</code>
+            </div>
 
-                
-
-            </script>
-            
             <div class="calendar">
                 <div class="january">
                 </div>
@@ -75,9 +71,10 @@
                     <li>31</li>
                 </ol>
             </div>
+        </div>
+    </main>
 
-        </main>
-        <script src="js/calendar.js"></script> 
+<script src="js/calendar.js"></script> 
 
-    </body>
+</body>
 </html>
