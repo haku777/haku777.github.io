@@ -14,7 +14,7 @@
 
 @font-face {
 	font-family: Merge;
-	src: url('../font/merge_light.otf');
+	src: url(../font/merge_light.otf);
 }
 
 html{
@@ -66,6 +66,15 @@ h2{
 	color: white;
 }
 
+section{
+	transition-duration: .5s;
+}
+
+section:hover{
+	background: rgba(0,0,0,0.7);
+	border: 1px solid black;
+}
+
 section h2{
 	color:salmon;
 	text-align: center;
@@ -78,9 +87,9 @@ section h2::selection{
 }
 
 .time{
-	background: linear-gradient(to right,#1277,#005594,black,salmon);
+	background: linear-gradient(to right,#1277,#005594,black);
 	width: 100%;
-	border-radius: 40px;
+	border-radius: 7px;
 	color: white;
 	padding: 12px;
 }
@@ -119,34 +128,32 @@ section h2::selection{
 }
 
 p{
-	color:#005555; 
+	color:#d4d4d4;
+	font-size: 17px;
+	text-shadow: 1px 1px 2px #252525;
 }
 
 p::selection{
-	background:var(--color5);
-}
-
-button{
-	border: none;
-	margin: 2px 4px;
-	background: transparent;
+	background: lightsteelblue;
 }
 
 main a{
+	background: rgba(255,255,255,0.2);
 	text-decoration: none;
+	text-shadow: 1px 1px 2px #252525;
+	font-family: Merge, 'Serif';
 	display: inline-block;
-	font-family: 'merge','cambria';
-	border-radius: 20%;
-	background: black;
-	padding: 4px;
-	width: 100%;
-	color: #e1e1e1;
+	padding: 5px 10px;
+	margin: 5px;
+	color: white;
+	border: 1px solid rgba(255,255,255,0.5);
+	border-right: 1px solid rgba(255,255,255,0.2);
+	border-bottom: 1px solid rgba(255,255,255,0.2);
+	border-radius: 7px;
 }
 
 main a:hover{
-	background: crimson;
-	color: white;
-	transition: .2s;
+	background: rgba(255,255,255,0.5);
 }
 /*------------------*/
 
@@ -203,23 +210,17 @@ li a{
 
 .nav a:hover{
 	background: linear-gradient(to bottom, transparent 70%,cyan 100%);
-	border-bottom: 3px solid black;
+	border-bottom: 3px solid cyan;
 }
 
 .nav a:active{
-	background: linear-gradient(to top,
-	skyblue 98% ,
-	white 1%);
-	transition: .2s;
+	background: linear-gradient(to bottom, transparent 50%,cyan 100%);
 }
 /*------------------*/
 
 .wrapper{
-	background: linear-gradient(to bottom,
-	indigo 10%,
-	skyblue 20%,
-	lightblue,
-	rgb(0, 79, 158));
+	background: linear-gradient(-45deg,indigo,darkmagenta,indigo 100%);
+	/* background: dark; */
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
@@ -297,17 +298,21 @@ hr{
 	  }
 
 section{
-	  background: rgba(255,255,255,0.3);
+	  background: rgba(255,255,255,0.2);
+	  border: 1px solid rgba(255,255,255,0.5);
+	  border-right: 1px solid rgba(255,255,255,0.2);
+	  border-bottom: 1px solid rgba(255,255,255,0.2);
+	  box-shadow: 0px 5px 25px #0005;
 	  margin-bottom: 10px;
 	  border-radius: 3px;
 	  margin-top: 10px;
-	  padding: 7px;
+	  padding: 20px 77px;
 	  color: white;
+	  overflow: hidden;
   }
 
 aside{
-	/* background:rgba(0,0,0,0.7); */
-	/*background: linear-gradient(120deg , skyblue, white , blue);*/
+	background:rgba(0,0,0,0.5);
 	display: inline-block;
 	padding: 20px 20px;
 	position: sticky;
@@ -316,6 +321,10 @@ aside{
 	top: 77px;
 	width: 277px;
 	/* border-radius: 0px 5px 5px 0px; */
+}
+
+aside h2{
+	text-align: center;
 }
 
 aside::-webkit-scrollbar{
@@ -355,14 +364,15 @@ aside::-webkit-scrollbar-thumb{
 /* --------------------- */
 .adds{
 	
-	background: dodgerblue;
-	background: -moz-linear-gradient(-45deg, dodgerblue 0%, dodgerblue 37%, skyblue 37%, dodgerblue 49%, skyblue 67%, dodgerblue 67%, skyblue 100%);
-	background: -webkit-gradient(left top, right bottom, color-stop(0%, dodgerblue), color-stop(37%, dodgerblue), color-stop(37%, skyblue), color-stop(49%, dodgerblue), color-stop(67%, skyblue), color-stop(67%, dodgerblue), color-stop(100%, skyblue));
-	background: -webkit-linear-gradient(-45deg, dodgerblue 0%, dodgerblue 37%, skyblue 37%, dodgerblue 49%, skyblue 67%, dodgerblue 67%, skyblue 100%);
-	background: -o-linear-gradient(-45deg, dodgerblue 0%, dodgerblue 37%, skyblue 37%, dodgerblue 49%, skyblue 67%, dodgerblue 67%, skyblue 100%);
-	background: -ms-linear-gradient(-45deg, dodgerblue 0%, dodgerblue 37%, skyblue 37%, dodgerblue 49%, skyblue 67%, dodgerblue 67%, skyblue 100%);
-	background: linear-gradient(135deg, dodgerblue 0%, dodgerblue 37%, skyblue 37%, dodgerblue 49%, skyblue 67%, dodgerblue 67%, skyblue 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='dodgerblue', endColorstr='skyblue', GradientType=1 );
+	background: indigo;
+	background: -moz-linear-gradient(-45deg, indigo 0%, indigo 37%, dodgerblue 37%, indigo 49%, dodgerblue 67%, indigo 67%, dodgerblue 100%);
+	background: -webkit-gradient(left top, right bottom, color-stop(0%, indigo), color-stop(37%, indigo), color-stop(37%, dodgerblue), color-stop(49%, indigo), 
+	color-stop(67%, dodgerblue), color-stop(67%, indigo), color-stop(100%, dodgerblue));
+	background: -webkit-linear-gradient(-45deg, indigo 0%, indigo 37%, dodgerblue 37%, indigo 49%, dodgerblue 67%, indigo 67%, dodgerblue 100%);
+	background: -o-linear-gradient(-45deg, indigo 0%, indigo 37%, dodgerblue 37%, indigo 49%, dodgerblue 67%, indigo 67%, dodgerblue 100%);
+	background: -ms-linear-gradient(-45deg, indigo 0%, indigo 37%, dodgerblue 37%, indigo 49%, dodgerblue 67%, indigo 67%, dodgerblue 100%);
+	background: linear-gradient(135deg, indigo 0%, indigo 37%, dodgerblue 37%, indigo 49%, dodgerblue 67%, indigo 67%, dodgerblue 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='indigo', endColorstr='dodgerblue', GradientType=1 );
 	background-attachment: fixed;
 	color: white;
 	display: flex;
@@ -370,15 +380,11 @@ aside::-webkit-scrollbar-thumb{
 	padding: 70px 0px;
 	margin: 0;
 	text-align: center;
-	/* margin-bottom: 5px; */
 	/* box-shadow: 
 	inset 0px 2px 3px 0px #2525,
 	inset 0px 4px 3px 0px orangered,
 	0px 2px 7px 1px #2f0000,
 	0px 4px 7px 3px #252525; */
-}
-.adds div{
-	/* background: tomato; */
 }
 
 .adds h2, .adds h4{
@@ -386,12 +392,14 @@ aside::-webkit-scrollbar-thumb{
 	word-spacing: 17px;
 	letter-spacing: 7px;
 	color: white;
+	text-shadow: 2px 2px 2px #252525;
 }
+
 .adds img{
 	filter: blur(0px);
-	border:7px solid;
-	border-radius: 7px;
-	width: 20%;
+	border:4px solid;
+	border-radius: 50%;
+	width: 30%;
 }
 
 
@@ -401,8 +409,7 @@ footer{
 	background: #2d3e50;
 	color: white;
 
-	padding: 77px 0px;
-	width: 100%;
+	padding: 77px 0px 0px 0px;
 
 	box-shadow: 
 	inset 0px 2px 3px 0px #2525,
@@ -413,12 +420,23 @@ footer{
 
 footer section{
 	background: transparent;
-	justify-content: center;
-	display: flex;
+	border-radius: 40px 40px 0px 0px;
 	margin: auto;
-	width: 70%;
-	/* background: rgb(66, 91, 118); */
-	/* height: 200px; */
+	width: 60vw;
+}
+
+footer section .footer{
+	justify-content: space-around;
+	padding: 40px;
+	display: flex;
+}
+
+footer section article{
+	background: rgba(255,255,255,0.2);
+	margin-top: 20px;
+	border-radius: 7px;
+	text-align: center;
+	padding: 20px;
 }
 
 footer section h2{
@@ -432,31 +450,6 @@ footer section h2{
 	1px 1px 2px 2px lightslategray;
 }
 
-footer section img{
-	border: 3px solid white;
-}
-
-footer section div{
-	width: 20%;
-	padding: 0px 40px;
-	display: inline-block;
-	border-left: 4px solid #008394;
-}
-
-footer img{
-	border-radius: 50%;
-	width: 200px;
-	height: 200px;
-	margin: 0px 77px 0px 0px;
-}
-
-footer hr{
-	background: white; 
-	padding: 1px; 
-	width: 70%;
-	margin: auto;
-}
-
 footer p{
 	color: #7fffff;
 	font-size: 12px;
@@ -468,7 +461,7 @@ footer h3{
 	color: white;
 }
 
-
+/* ------------------------------------ */
 
 #go{
 	margin: auto;
@@ -497,6 +490,7 @@ footer h3{
 /* ----------------------------- */
 
 @media(max-width: 750px){
+
 	header h1{
 		display: flex;
 		justify-content: center;
@@ -513,6 +507,15 @@ footer h3{
 	.nav a{
 		border-radius: 0px;
 	}
+
+	.h2{
+		margin-top: 300px;
+		transform: skewx(0deg);
+		margin-left: 20%;
+		width: 60%;
+		font-size: 12px;
+	}
+
 	.representation{
 		background-repeat: no-repeat;
 		background-size: 100% 100%;
@@ -533,6 +536,10 @@ footer h3{
 		word-spacing: 0px;
 		letter-spacing: 0px;
 	}
+	footer section{
+		/* width: 90%; */
+	}
+
 	footer section h2{
 		padding: 0;
 	}
@@ -544,14 +551,19 @@ footer h3{
 	}
 }
 @media(max-width: 400px){
-	p{
-		font-size: 12px;
+	section{
+		overflow: hidden;
+		padding: 0;
 	}
 	footer{
 		width: 99%;
+		font-size: 10px;
 	}
 	footer div{
 		padding: 0;
+	}
+	p{
+		font-size: 12px;
 	}
 
 }
