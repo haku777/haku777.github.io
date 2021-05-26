@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pruebas</title>
+    <link rel="stylesheet" href="css">
+    <link rel="shortcut icon" href="../../img/akali.PNG">
+
+    <style>
+        *{margin: 0;padding: 0;}
+        section{
+            text-align: center;
+            height: 100vh;
+            padding: 20px;
+            font-size: 4rem;
+            text-transform: uppercase;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        section:nth-child(1){
+            background: #07252d;
+            color: white;
+        }
+        section:nth-child(1) h2{
+            -webkit-box-reflect: below 1px linear-gradient(transparent,#0004);
+            line-height: 0.70em;
+            outline:none;
+            animation: flour 5s linear 0s forwards;
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+        }
+        @keyframes flour{
+            0%,20%,40%,60%,80%{color: #0e3742; text-shadow: none;}
+            
+            10%,30%,50%,70%,90%,100%{
+            color: white;
+            text-shadow: 
+            0px 0px 25px #03bcf4,
+            0px 0px 50px #03bcf4,
+            0px 0px 100px #03bcf4,
+            0px 0px 300px #03bcf4;
+            }
+        }
+        /* ------------------------ */
+        section:nth-child(2){
+            background: url(../../img/year.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 100%;
+            font-size: 12rem;
+
+        }
+        section:nth-child(2) h2{
+            color: white;
+            text-shadow: 2px 2px 10px #252525;
+            backdrop-filter: blur(25px);
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <section>
+            <div>
+                <h2 contenteditable="true">Text light...</h2>
+            </div>
+        </section>
+
+        <section>
+            <div>
+                <h2>Focus</h2>
+            </div>
+            
+            <div></div>
+
+        </section>
+        <section></section>
+    </main>
+</body>
+</html>

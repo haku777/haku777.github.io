@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face{
+    font-family: Merge;
+    src: url(../../../font/merge_light.otf);
+}
+
+body{
+    font-family: Merge,serif;
+}
+
+header{
+    background: url(../../../img/place/computer3.jpg), #fff;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 30vh 20vw;
+}
+
+main{
+    background: linear-gradient(white,indigo 10%,black);
+}
+
+main section{
+    background: rgba(255,255,255,0.2);
+    padding: 70px 40px;
+    width: 70%;
+    margin: auto;
+}
+main section div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+main section div img{
+    border: 10px solid transparent;
+    border-radius: 20px;
+}
+
+h2{
+    text-align: center;
+    color: white;
+    text-shadow: 0px 1px 2px black;
+}
+input{
+    padding: 10px;
+    margin: 20px;
+    width: 90%;
+    outline: none;
+    color: #505050;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 100px;
+}
+
+a{
+    background: darkmagenta;
+    text-decoration: none;
+    border:2px solid darkmagenta;
+    border-radius: 30px;
+    padding: 10px 20px;
+    color: white;
+    transition-duration: .5s;
+}
+
+a:hover{
+    background:indigo;
+}
