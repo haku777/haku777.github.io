@@ -109,10 +109,10 @@
 
 										$consulta = "select * from " . $tbl_usuarios . " where active=1 limit " . $limits;
 										$resultado = $con -> query($consulta);
-
 										if ($resultado){
-
+											
 											while ($fila = mysqli_fetch_array($resultado)) {
+												echo $fila['usuario'];
 											?>
 												<tr>
 													<form action="<?php htmlspecialchars($_SERVER['PHP_SELF']) ?>" method="POST">

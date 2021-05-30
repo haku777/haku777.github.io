@@ -57,6 +57,26 @@
             text-shadow: 2px 2px 10px #252525;
             backdrop-filter: blur(25px);
         }
+
+        section:nth-child(3){
+            background: linear-gradient(to left, black, cyan),url(../../img/n.PNG);
+            font-size: 2em;
+        }
+
+        section:nth-child(3) h2 ~ p{
+            background: linear-gradient(#ffeb3d,#e91e63);
+            background: linear-gradient(#2196f3,#83d8ff);
+        }
+
+        
+        section:nth-child(4) {
+            background: darkslateblue;
+        }
+        section:nth-child(4) a{
+            text-decoration: none;
+            color: white;
+        }
+
     </style>
 </head>
 
@@ -76,7 +96,32 @@
             <div></div>
 
         </section>
-        <section></section>
+
+        <section>
+            <div>
+                <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ipsum maxime blanditiis officiis non architecto sint! Esse illum cumque laborum dolore consequuntur repudiandae, ratione, provident quis, labore magni nihil culpa.</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium modi odit aperiam nam alias nostrum dicta eligendi voluptate nobis ducimus enim dignissimos debitis, nisi rerum veniam temporibus porro esse possimus!</p>
+            </div>    
+        </section>
+
+        <section>
+            <div>
+                <a href="../components.html">Back</a>
+                <a href="../../page.html">Menu</a>
+            </div>
+        </section>
+
+
+
     </main>
+
+    <script>
+        const text_light = document.querySelector('h2');
+        window.onscroll = function() {
+            text_light.innerHTML = window.scrollY;
+            // text_light.textContent(window.scrollX);
+
+        };
+    </script>
 </body>
 </html>
