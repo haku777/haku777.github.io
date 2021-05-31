@@ -499,10 +499,12 @@ footer h3{
 	main,aside{
 		width:90%;
 	}
-	.daily{
-		padding: 10px;
-		height: auto;
+	main div .img{
+		animation: none;
+		width: 100%;
+		margin-bottom: 20px;
 	}
+
 	.nav{
 		width: 97%;
 		padding: 0;
