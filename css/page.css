@@ -88,7 +88,7 @@ section h2::selection{
 
 .time{
 	background: linear-gradient(to right,#1277,#005594,black);
-	width: 100%;
+	width: 95%;
 	border-radius: 7px;
 	color: white;
 	padding: 12px;
@@ -423,7 +423,6 @@ footer section{
 	background: transparent;
 	border-radius: 40px 40px 0px 0px;
 	margin: auto;
-	width: 60vw;
 }
 
 footer section .footer{
@@ -490,6 +489,12 @@ footer h3{
 
 /* ----------------------------- */
 
+@media(max-width: 1080px){
+	.daily{
+		font-size: 12px;
+	}
+}
+
 @media(max-width: 750px){
 
 	header h1{
@@ -544,9 +549,6 @@ footer h3{
 		word-spacing: 0px;
 		letter-spacing: 0px;
 	}
-	footer section{
-		/* width: 90%; */
-	}
 
 	footer section h2{
 		padding: 0;
@@ -559,12 +561,16 @@ footer h3{
 	}
 }
 @media(max-width: 400px){
+	.adds img{
+		width: 50%;
+		height: 170px !important;
+	}
 	section{
 		overflow: hidden;
 		padding: 0;
 	}
 	footer{
-		width: 99%;
+		box-shadow: none;
 		font-size: 10px;
 	}
 	footer div{
