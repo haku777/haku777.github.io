@@ -8,8 +8,10 @@
 }
 body{
 	background: #f1f1f1;
-	font-size: 20px;
 	font-family: Merge,serif;
+	font-weight: lighter !important;
+	letter-spacing: 1px;
+	font-size: 25px;
 }
 
 header{
@@ -48,8 +50,6 @@ main{
 	width: 70%;
 	display: flex;
 	justify-content: space-between;
-	font-family: Merge,serif !important;
-
 }
 
 /* ---------------------------- */

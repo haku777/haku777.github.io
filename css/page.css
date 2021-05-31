@@ -499,6 +499,10 @@ footer h3{
 	main,aside{
 		width:90%;
 	}
+	.daily{
+		padding: 10px;
+		height: auto;
+	}
 	.nav{
 		width: 97%;
 		padding: 0;
@@ -510,6 +514,7 @@ footer h3{
 	}
 
 	.h2{
+		animation: none;
 		margin-top: 300px;
 		transform: skewx(0deg);
 		margin-left: 20%;
