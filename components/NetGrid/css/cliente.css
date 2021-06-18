@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(45deg, darkslateblue, dodgerblue);
+    font-family:Tahoma,'serif';
+    height: 100vh;
+}
+
+header{
+    background: dodgerblue;
+}
+
+header nav{
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+}
+
+header nav img{
+    width: 70px;
+}
+
+header nav a{
+    background: blue;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    display: block;
+}
+header nav a:hover{
+    background: orangered;
+}
+
+/* -------------- */
+
+header nav ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav ul li{
+    list-style: none;
+}
+
+header nav ul{
+    position: relative;
+}
+
+header nav ul li ul{
+    width: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    display: none;
+}
+
+header nav ul li ul li ul{
+    position: relative;
+}
+
+header nav ul li:hover > ul{
+    display: block;
+}
+
+
+/* ------------- */
+main{
+    /* background: teal; */
+    margin-top: 50vh;
+    height: 80vh;
+    margin: auto;
+    width: 70%;
+}
+
+main section{
+    background: rgba(255,255,255,0.2);
+    height: 70vh;
+    margin: auto;
+    width: 70%;
+}
+
+main h2{
+    font-size: 30px;
+    color: white;
+}
+
+
+
+
+
+
+/* --------------- */
+
+footer{
+    background: darkslateblue;
+    padding: 40px;
+    color: white;
+}
+

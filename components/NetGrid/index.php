@@ -10,23 +10,28 @@
 </head>
 
 <body>
-
+<?php 
+$resultado ="";
+if(!empty($_GET)){
+    $resultado = $_GET['datos'];
+}
+?>
     <main>
         <section>
             <center>
                 <img src="img/clima.svg" width="50%" alt="clima">
                 <h1>APP CLIMA</h1>
                 <form action="conexion/validar.php" method="post">
-                    <label for="user">usuario<input type="text" name="user" required="required"></label><br>
-                    <label for="pass">clave<input type="password" name="pass" required="required"></label><br>
-                    <input type="submit" name="ingresar" value="Ingresar">
+                    <label for="user">usuario<input type="text" name="user" id="user" required="required"></label><br>
+                    <label for="pass">clave<input type="password" name="pass" id="pass" required="required"></label><br>
+                    <input type="submit" name="go" value="Ingresar">
                 </form> 
-                <a href="">Registrarse</a>
+                <h3><?php echo $resultado ?></h3>
+                <a href="registro.php">Registrarse</a>
                 <a href="">Olvidé la clave?</a>
-
+                <!-- <a href="http://haku777.herokuapp.com/components/NetGrid/">heroku app</a> -->
             </center>
         </section>
     </main>
-
 </body>
 </html>

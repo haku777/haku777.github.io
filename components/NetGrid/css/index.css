@@ -6,7 +6,7 @@
 
 body{
     background: darkslateblue;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family:Tahoma, sans-serif;
 }
 
 main{
@@ -65,7 +65,7 @@ main section form{
 
 main section form input{
     padding: 10px;
-    border-radius: 3px;
+    border-radius: 30px !important;
     outline: none;
 }
 
@@ -81,19 +81,41 @@ main section form label{
 }
 
 main section form input{
-    font-size: 16px;
+    box-shadow: inset 3px 3px 1px gray;
     text-align: center;
     border-radius: 3px;
+    font-size: 16px;
     border:none;
 }
 
 main section form input[type="submit"]{
     background: lightseagreen;
-    padding: 10px 20px !important;
+    padding: 20px 50px !important;
+    box-shadow:2px 2px 0px darkslateblue;
     border-radius: 3px;
-    font-size: 16px;
+    font-size: 20px;
     color: white;
     border:none;
+}
+
+main section form input[type="submit"]:hover{
+    background: darkturquoise;
+}
+
+
+main section form input[type="submit"]:active{
+    box-shadow:  inset 2px 2px 2px darkmagenta;
+}
+
+
+
+h3{
+    background: crimson;
+    margin-top: 10px;
+    border-radius: 7px;
+    color: white;
+    transition-duration: 2s;
+    transition-property: background;
 }
 
 a{
@@ -105,6 +127,7 @@ a{
     display: inline-block;
     /* background: tomato; */
 }
+
 a:hover{
     color: crimson;
     text-shadow: 1px 1px 1px salmon;
