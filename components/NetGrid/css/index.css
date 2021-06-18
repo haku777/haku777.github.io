@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: darkslateblue;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+main{
+    /* background: teal; */
+    margin-top: 10vh;
+    margin: auto;
+    width: 90%;
+    z-index: 1;
+}
+
+main::before{
+    content: "";
+    padding: 13vw;
+    position: absolute;
+    background: linear-gradient(180deg,yellow,tomato);
+    border-radius: 50%;
+    margin-top: -7vh;
+}
+
+main::after{
+    content: "";
+    padding: 13vw;
+    position: absolute;
+    background: linear-gradient(180deg,blue,skyblue);
+    border-radius: 50%;
+    right: 10%;
+    top: 40vh;
+    
+}
+
+main section{
+    background: rgba(255,255,255,0.2);
+    border-radius: 30px;
+    padding: 40px 0px;
+    width: 50%;
+    margin: auto;
+    margin-top: 10vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    backdrop-filter: blur(30px);
+    box-shadow: 2px 2px 0px rgba(255,255,255,0.2), -2px -2px 0px rgba(255,255,255,0.5);
+    z-index: 2;
+}
+
+h1{
+    color: white;
+    font-size: 3rem;
+}
+
+main section form{
+    margin-top: 40px;
+}
+
+main section form input{
+    padding: 10px;
+    border-radius: 3px;
+    outline: none;
+}
+
+main section form label{
+    /* background: tomato; */
+    display: inline-block;
+    font-size: 20px;
+    color: white;
+    /* padding: 10px; */
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+}
+
+main section form input{
+    font-size: 16px;
+    text-align: center;
+    border-radius: 3px;
+    border:none;
+}
+
+main section form input[type="submit"]{
+    background: lightseagreen;
+    padding: 10px 20px !important;
+    border-radius: 3px;
+    font-size: 16px;
+    color: white;
+    border:none;
+}
+
+a{
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    margin-top: 20px;
+    padding: 10px 20px;
+    display: inline-block;
+    /* background: tomato; */
+}
+a:hover{
+    color: crimson;
+    text-shadow: 1px 1px 1px salmon;
+}
+
+
+@media(max-width:700px){
+    h1{
+        font-size: 30px;
+    }
+    main section{
+        width: 100%;
+    }
+    form label{
+        display: flex;
+        flex-direction: column;
+        width: 80% !important;
+    }
+    a{
+        font-size: 12px;
+    }
+}

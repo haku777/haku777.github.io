@@ -118,8 +118,9 @@ input[type="submit"]{
 	}
 
 aside{
-	background: lightskyblue;
-	padding: 20px;
+	background: rgba(0,0,0,0.2);
+	padding: 20px 70px;
+	margin: 10px;
 	width: 30%;
 	color: #005555;
 	height: 60vh;
@@ -150,7 +151,9 @@ aside section input[type="submit"]:hover{
 }
 
 footer{
-	background: black;
+	background: gray;
+	padding: 20px;
+	margin-top: 10vh;
 }
 
 

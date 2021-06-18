@@ -111,9 +111,7 @@
 										$resultado = $con -> query($consulta);
 										if ($resultado){
 											
-											while ($fila = mysqli_fetch_array($resultado)) {
-												echo $fila['usuario'];
-											?>
+											while ($fila = mysqli_fetch_array($resultado)) { ?>
 												<tr>
 													<form action="<?php htmlspecialchars($_SERVER['PHP_SELF']) ?>" method="POST">
 														
