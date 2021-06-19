@@ -12,7 +12,7 @@ if(!empty($_POST)){
         $user = $_POST['user'];
         $pass = $_POST['pass'];
 
-        $sql = "select * from usuarios where usuario='".$user."' and clave='".$pass."'";
+        $sql = "select * from usuarios where usuario='".$user."' and clave='".$pass."' and active=1";
         $resultado = $con->query($sql);
         $datos = mysqli_fetch_array($resultado);
         
