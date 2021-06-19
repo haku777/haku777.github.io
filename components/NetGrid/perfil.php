@@ -23,10 +23,6 @@
 </head>
 
 <body>
-<audio controls loop autoplay style="display:none;">
-        <source src="img/wait.mp3" type="audio/mpeg">
-    </audio>
-
     <header>
         <nav>
         <h2><img src="img/clima.svg" alt="">APP CLIMA</h2>
