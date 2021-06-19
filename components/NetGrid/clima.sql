@@ -20,7 +20,3 @@ insert into `roles` (`rol`) values('cliente');
 
 insert into `usuarios` (`usuario`,`correo`,`clave`,`id_rol`) values('administrador','a@a.a','haku','1');
 insert into `usuarios` (`usuario`,`correo`,`clave`,`id_rol`) values('cliente','a@a.a','haku','2');
-
-
-drop table usuarios
-drop table roles
