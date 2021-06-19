@@ -33,7 +33,17 @@ if(!empty($_POST)){
         header("location: ../administrador.php");
     }
 
-
+    // actualizamos al cliente
+    if(isset($_POST['acperfil'])){
+        session_start();
+        $id = $_SESSION['id'];
+        $user = $_POST['user'];
+        $email = $_POST['email'];
+        $pass = $_POST['pass'];
+        $sql = "update usuarios set  usuario='".$user."',correo='".$email."',clave='".$pass."' where id=".$id."";
+        $resultado = $con->query($sql);
+        header("location: ../cliente.php");
+    }
 
 
 

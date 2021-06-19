@@ -1,8 +1,11 @@
 <?php
     session_start();
-    if( $_SESSION['user'] == false){
+    if( $_SESSION['user'] == false || $_SESSION['id_rol'] != 2){
         header("location: index.php");
     }else{
+        require "conexion/conexion.php";
+        $busqueda = $con->query("select usuario from usuarios where id=".$_SESSION['id']."");
+        $resultado = mysqli_fetch_array($busqueda);
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -22,7 +25,7 @@
     </audio>
     <header>
         <nav>
-            <img src="img/clima.svg" alt="">
+        <h2><img src="img/clima.svg" alt="">APP CLIMA</h2>
             <ul>
                 <li><a href="index.php">Inicio</a></li>
                 <li><a href="">Opciones</a>
@@ -43,7 +46,7 @@
         <section>
             <center>
                 <div class="titulo">
-                    <h2>Bienvenid@ <?= $_SESSION['user']; ?></h2>
+                    <h2>Bienvenid@ <strong><?= $resultado['usuario'] ?></strong></h2>
                     <p>APP CLIMA, busca tu ciudad y conoce el clima esperado para tu <strong>Día</strong></p>
                 </div>
 
@@ -85,6 +88,7 @@
     <aside>
         <center>
             <div class="chat">
+                <h2>Chat no Disponible por el momento...</h2>
                 <h2>Haku</h2>
                 <p>hola a todos</p>
                 <h2>Maria</h2>

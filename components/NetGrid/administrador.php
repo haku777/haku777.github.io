@@ -1,11 +1,11 @@
 <?php 
     session_start();
-    if ($_SESSION['user'] == false){
+    if ($_SESSION['user'] == false || $_SESSION['id_rol'] != 1){
         header("location: index.php");
     }else{
     require_once "conexion/conexion.php"; 
     require_once "conexion/acciones.php"; 
-    $sql=("select * from usuarios where active=1");
+    $sql=("select * from usuarios where active=1 LIMIT 10");
     $resultado = $con->query($sql);
 ?>
 
@@ -36,7 +36,7 @@
                 <li><a href="index.php">Inicio</a></li>
                 <li><a href="">Opiones &nbsp;<img src="img/opciones.svg" style="width:17px;background:white;border-radius:100%;" alt=""></a>
                     <ul>
-                        <li><a href="">opcines secundarias</a></li>
+                        <li><a href="registro.php">Agregar cliente</a></li>
                         <li><a href="conexion/cerrarConexion.php">Cerrar sesion</a></li>
                     </ul>
                 </li>

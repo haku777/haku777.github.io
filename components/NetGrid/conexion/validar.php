@@ -22,6 +22,9 @@ if(!empty($_POST)){
         if($datos > 0){
 
             $_SESSION['user']=$user;
+            $_SESSION['id_rol']=$datos['id_rol'];
+            $_SESSION['email']=$datos['correo'];
+            $_SESSION['id']=$datos['id'];
 
             if($datos['id_rol'] == 1){
                 echo "<br> administrador";
