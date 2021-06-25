@@ -1,0 +1,12 @@
+C:\Users\jimmy\Downloads\visualBasic\formLocal\crud\crud\bin\Debug\crud.exe.config
+C:\Users\jimmy\Downloads\visualBasic\formLocal\crud\crud\bin\Debug\crud.exe
+C:\Users\jimmy\Downloads\visualBasic\formLocal\crud\crud\bin\Debug\crud.pdb
+C:\Users\jimmy\Downloads\visualBasic\formLocal\crud\crud\bin\Debug\crud.xml
+C:\Users\jimmy\Downloads\visualBasic\formLocal\crud\crud\obj\Debug\crud.vbprojAssemblyReference.cache
+C:\Users\jimmy\Downloads\visualBasic\formLocal\crud\crud\obj\Debug\crud.vista.resources
+C:\Users\jimmy\Downloads\visualBasic\formLocal\crud\crud\obj\Debug\crud.Resources.resources
+C:\Users\jimmy\Downloads\visualBasic\formLocal\crud\crud\obj\Debug\crud.vbproj.GenerateResource.cache
+C:\Users\jimmy\Downloads\visualBasic\formLocal\crud\crud\obj\Debug\crud.vbproj.CoreCompileInputs.cache
+C:\Users\jimmy\Downloads\visualBasic\formLocal\crud\crud\obj\Debug\crud.exe
+C:\Users\jimmy\Downloads\visualBasic\formLocal\crud\crud\obj\Debug\crud.xml
+C:\Users\jimmy\Downloads\visualBasic\formLocal\crud\crud\obj\Debug\crud.pdb

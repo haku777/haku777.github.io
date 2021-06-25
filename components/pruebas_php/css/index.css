@@ -1,0 +1,179 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+nav{
+	background: black;
+	display: flex;
+	justify-content: space-around;
+	margin: auto;
+	padding: 10px;
+}
+
+img{
+	border-radius: 30%;
+}
+/*-------------------*/
+nav ul{
+	display: flex;
+	justify-content: space-between;
+	height: center;
+	list-style: none;
+}
+
+nav ul li ul{
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	width: 80px;
+	display: none;	
+
+}
+
+nav ul li ul li{
+	position: relative;
+}
+
+nav ul li ul li ul{
+	position: absolute;
+	left: 100%;
+	top: 0px;
+}
+
+nav ul li:hover> ul{
+	display: block;
+}
+
+/*---------------------*/
+a{
+	background: #255555;
+	color:white;
+	padding: 7px;
+	display: block;
+	text-decoration: none;
+}
+a:hover{
+	background: orangered;
+	color: white;
+}
+/*-----------------------------*/
+.wrapper{
+	display: flex;
+	justify-content: space-around;
+	width: 90%;
+	margin: auto;	
+}
+/*-----------------------------*/
+/*-----------------------------*/
+main{
+	padding: 20px;
+	width: 70%;
+	margin: auto;
+	color: #008495;
+}
+
+h2,p,ol{
+	color: #005555;
+}
+
+#actualizar{
+	 background:#255099;
+}
+
+#eliminar{
+	background:orangered;
+}
+
+input[type="submit"]{
+	color: white;
+}
+
+
+	table{
+		background: black;
+		color: white;
+		padding: 10px;
+	  	width: 100%;
+		border-collapse: collapse;
+	}
+
+	table thead {
+	  background: #444;
+	  color: white;
+	  font-size: 20px;
+	}
+	td,input{
+	  padding: 3px;
+	  border: none;
+	  border-radius: 3px;
+	}
+
+	table tbody tr:nth-child(odd) {
+		background: #f9f9;
+
+	}
+	table tbody tr:nth-child(even) {
+		background: #f1f9;
+	}
+
+aside{
+	background: rgba(0,0,0,0.2);
+	padding: 20px 70px;
+	margin: 10px;
+	width: 30%;
+	color: #005555;
+	height: 60vh;
+}
+aside section label{
+	background: #769; /*rojo verde azul*/
+}
+aside section input,label{
+	box-sizing: border-box;
+	font-size: 16px;
+	padding: 10px;
+	display: block;
+	color: white;
+	width: 100%;
+}
+aside section input{
+	color: black;
+	outline: none;
+}
+aside section input[type="submit"]{
+	background: seagreen;
+	margin-top: 10px;
+	text-align: center;
+	border-radius: 3px;
+}
+aside section input[type="submit"]:hover{
+	background: #2fdbb6;
+}
+
+footer{
+	background: gray;
+	padding: 20px;
+	margin-top: 10vh;
+}
+
+
+
+/*
+#169;
+#769;
+#969;
+#313;
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
