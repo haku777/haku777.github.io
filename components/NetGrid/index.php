@@ -7,6 +7,7 @@
     <title>NetGrid</title>
     <link rel="shortcut icon" href="img/clima.svg">
     <link rel="stylesheet" href="css/index.css">
+    <script src="js/validacionc.js" type="text/javascript"></script>
 </head>
 
 <body>
@@ -19,7 +20,7 @@ if(!empty($_GET)){
     <main>
         <section>
             <center>
-                <img src="img/clima.svg" width="50%" alt="clima">
+                <img src="img/clima.svg" alt="clima">
                 <h1>APP CLIMA</h1>
                 <form action="conexion/validar.php" method="post">
                     <label for="user">usuario<input type="text" name="user" id="user" required="required"></label><br>

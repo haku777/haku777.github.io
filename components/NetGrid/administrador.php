@@ -34,7 +34,7 @@
 
             <ul>
                 <li><a href="index.php">Inicio</a></li>
-                <li><a href="">Opiones &nbsp;<img src="img/opciones.svg" style="width:17px;background:white;border-radius:100%;" alt=""></a>
+                <li><span>Opiones</span>
                     <ul>
                         <li><a href="registro.php">Agregar cliente</a></li>
                         <li><a href="conexion/cerrarConexion.php">Cerrar sesion</a></li>
@@ -89,6 +89,10 @@
                             <?php } ?>
                         </tbody>
                     </table>
+                    <div class="pdf">
+                        <a href="generar_pdf.php" target="_blank">generar pdf de usuarios<img src="img/descarga.svg" width="20" alt=""></a>
+                        <a href="generar_word.php" target="_blank">generar doc de usuarios<img src="img/descarga.svg" width="20" alt=""></a>
+                    </div>
             </center>
         </section>
     </main>

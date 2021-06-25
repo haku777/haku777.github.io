@@ -4,8 +4,10 @@
         header("location: index.php");
     }else{
         require "conexion/conexion.php";
-        $busqueda = $con->query("select usuario from usuarios where id=".$_SESSION['id']."");
+        $busqueda = $con->query("select * from usuarios where id=".$_SESSION['id']."");
         $resultado = mysqli_fetch_array($busqueda);
+        $sql = "select * from mensajes where active=1 order by id desc";
+        $resultadom = $con->query($sql);
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -23,12 +25,13 @@
     <audio controls loop autoplay style="display:none;">
         <source src="img/wait.mp3" type="audio/mpeg">
     </audio>
-    <header>
+
+    <main>
         <nav>
         <h2><img src="img/clima.svg" alt="">APP CLIMA</h2>
             <ul>
                 <li><a href="index.php">Inicio</a></li>
-                <li><a href="">Opciones</a>
+                <li><span>Opciones</span>
                     <ul>
                         <li><a href="perfil.php">mi perfil</a></li>
                         <li><a href="conexion/cerrarConexion.php">Cerrar session</a></li>
@@ -37,16 +40,11 @@
                 </li>
             </ul>
         </nav>
-    </header>
 
-
-
-
-    <main>
         <section>
             <center>
                 <div class="titulo">
-                    <h2>Bienvenid@ <strong><?= $resultado['usuario'] ?></strong></h2>
+                    <h2>Bienvenid@ <strong><?= $resultado['usuario']; ?></strong></h2>
                     <p>APP CLIMA, busca tu ciudad y conoce el clima esperado para tu <strong>Día</strong></p>
                 </div>
 
@@ -77,9 +75,68 @@
                             </div>
                         </div>
                         <div id="estado">
-                            <img src="img/atardecer2.svg" width="300" alt="">
+                            <img src="img/atardecer2.svg" width="70%" alt="">
                         </div>
                     </div>
+                </div>
+            </center>
+        </section>
+        <section>
+            <center>
+                <div class="datosecundarios">
+                    <table class="ciudades">
+                        <thead>
+                            <tr>
+                                <th>Ciudades</th>
+                                <th>Temperatura</th>
+                                <th>Mayor temperatura</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Bogota</td>
+                                <td id="temperatura1"></td>
+                                <td id="ciudad1">Ciudad mas fria</td>
+                            </tr>
+                            <tr>
+                                <td>Kahoku</td>
+                                <td id="temperatura2"></td>
+                                <td id="ciudad2"></td>
+                            </tr>
+                            <tr>
+                                <td>Cali</td>
+                                <td id="temperatura3"></td>
+                                <td id="ciudad3"></td>
+                            </tr>
+                            <tr>
+                                <td>Cartagena</td>
+                                <td id="temperatura4"></td>
+                                <td id="ciudad4">Ciudad mas caliente</td>
+                            </tr>
+                            <tr>
+                                <td>Ciudad de mexico</td>
+                                <td id="temperatura5"></td>
+                                <td id="ciudad5"></td>
+                            </tr>
+                            <tr>
+                                <td>Madrid</td>
+                                <td id="temperatura6"></td>
+                                <td id="ciudad6"></td>
+                            </tr>
+                            <tr>
+                                <td>Nueva york</td>
+                                <td id="temperatura7"></td>
+                                <td id="ciudad7"></td>
+                            </tr>
+                            <tr>
+                                <td>Barcelona</td>
+                                <td id="temperatura8"></td>
+                                <td id="ciudad8"></td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                    <input type="submit" class="actualizarc" id="actualizar_ciudades" name="actualizar_ciudades" value="actualizar ciudades">
                 </div>
             </center>
         </section>
@@ -88,13 +145,23 @@
     <aside>
         <center>
             <div class="chat">
-                <h2>Chat no Disponible por el momento...</h2>
-                <h2>Haku</h2>
-                <p>hola a todos</p>
-                <h2>Maria</h2>
-                <p>saludos desde cali</p>
-                <h2>はく</h2>
-                <p>なに、こにちわ ときお</p>
+                <div class="mensajes">
+                    <?php 
+                        while($message = mysqli_fetch_array($resultadom)){                    
+                            $usuario_m = $message['id_usuario'];
+                            $consulta = "select * from usuarios where id=" . $usuario_m . " and active=1";
+                            $resultado_m = $con->query($consulta);
+                            $resultado_ma = mysqli_fetch_array($resultado_m); ?>
+                            <h2><?= $resultado_ma['usuario']; ?></h2>
+                            <p><?= $message['mensaje']; ?></p>
+                        <?php } ?>
+                </div>
+
+                 <form action="conexion/acciones.php" method="post">
+                    <input type="hidden" name="id" value="<?= $resultado['id']; ?>">
+                    <label for="user">mensaje <textarea id="message" name="message" required="required" placeholder="escribe algo..."></textarea></label><br>
+                    <input type="submit" name="enviarm" value="Enviar mensaje">
+                </form>
             </div>
         </center>
     </aside>
@@ -151,7 +218,7 @@ function buscarImagen() {
             
             let respuesta = JSON.parse(xhttp.responseText);
 
-            console.log(respuesta);
+            // console.log(respuesta);
             
             let ciudad = document.getElementById('city'),
             pais = document.getElementById('pais'),
@@ -165,9 +232,8 @@ function buscarImagen() {
             img = document.getElementById('estado');
             
 
-            console.log(respuesta.main.temp);
+            
             let grade = (respuesta.main.temp-273.15);
-            console.log(grade);
             
             
             ciudad.innerHTML = respuesta.name;
@@ -192,6 +258,225 @@ function buscarImagen() {
 }
 
 buscarImagen();
+
+// --------------------------------------------
+
+
+let ciudades = document.getElementById('actualizar_ciudades').addEventListener('click', buscarImagen);
+
+function ciudadT() {
+    let ciudad1 = "bogota",
+    ciudad2 = "kahoku",
+    ciudad3 = "cali",
+    ciudad4 = "cartagena",
+    ciudad5 = "ciudad de mexico",
+    ciudad6 = "madrid",
+    ciudad7 = "new york",
+    ciudad8 = "barcelona",
+    temperatura1 = document.getElementById("temperatura1"),
+    temperatura2 = document.getElementById("temperatura2"),
+    temperatura3 = document.getElementById("temperatura3"),
+    temperatura4 = document.getElementById("temperatura4"),
+    temperatura5 = document.getElementById("temperatura5"),
+    temperatura6 = document.getElementById("temperatura6"),
+    temperatura7 = document.getElementById("temperatura7"),
+    temperatura8 = document.getElementById("temperatura8");
+
+    const consultaCiudad1 = new XMLHttpRequest();
+
+    consultaCiudad1.open("GET", `https://api.openweathermap.org/data/2.5/weather?q=${ciudad1}&appid=7f4f88dae157e8fadee2e27967107f2c`, true);
+
+    consultaCiudad1.send();
+    let grados1 = 0;        
+    
+    consultaCiudad1.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+            
+            let res = JSON.parse(consultaCiudad1.responseText);
+            let grad = Math.round((res.main.temp-273.15));
+            let city = res.name;
+            console.log(city);
+            console.log(grad);
+            temperatura1.innerHTML=grad + " C";
+            grados1 =grad;
+                        
+        };       
+    }
+// ------------------------------------------------------------
+
+const consultaCiudad2 = new XMLHttpRequest();
+
+consultaCiudad2.open("GET", `https://api.openweathermap.org/data/2.5/weather?q=${ciudad2}&appid=7f4f88dae157e8fadee2e27967107f2c`, true);
+
+consultaCiudad2.send();
+let grados2 = 0;        
+
+consultaCiudad2.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+        
+        let res = JSON.parse(consultaCiudad2.responseText);
+        let grad = Math.round((res.main.temp-273.15));
+        let city = res.name;
+        console.log(city);
+        console.log(grad);
+        temperatura2.innerHTML=grad + " C";
+        grados2 =grad;
+                    
+    };       
+}
+
+// ------------------------------------------------------------
+
+const consultaCiudad3 = new XMLHttpRequest();
+
+consultaCiudad3.open("GET", `https://api.openweathermap.org/data/2.5/weather?q=${ciudad3}&appid=7f4f88dae157e8fadee2e27967107f2c`, true);
+
+consultaCiudad3.send();
+let grados3 = 0;        
+
+consultaCiudad3.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+        
+        let res = JSON.parse(consultaCiudad3.responseText);
+        let grad = Math.round((res.main.temp-273.15));
+        let city = res.name;
+        console.log(city);
+        console.log(grad);
+        temperatura3.innerHTML=grad + " C";
+        grados3 =grad;
+                    
+    };       
+}
+// ------------------------------------------------------------
+const consultaCiudad4 = new XMLHttpRequest();
+
+consultaCiudad4.open("GET", `https://api.openweathermap.org/data/2.5/weather?q=${ciudad4}&appid=7f4f88dae157e8fadee2e27967107f2c`, true);
+
+consultaCiudad4.send();
+let grados4 = 0;        
+
+consultaCiudad4.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+        
+        let res = JSON.parse(consultaCiudad4.responseText);
+        let grad = Math.round((res.main.temp-273.15));
+        let city = res.name;
+        console.log(city);
+        console.log(grad);
+        temperatura4.innerHTML=grad + " C";
+        grados4 =grad;
+                    
+    };       
+}
+
+// ------------------------------------------------------------
+
+const consultaCiudad5 = new XMLHttpRequest();
+
+consultaCiudad5.open("GET", `https://api.openweathermap.org/data/2.5/weather?q=${ciudad5}&appid=7f4f88dae157e8fadee2e27967107f2c`, true);
+
+consultaCiudad5.send();
+let grados5 = 0;        
+
+consultaCiudad5.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+        
+        let res = JSON.parse(consultaCiudad5.responseText);
+        let grad = Math.round((res.main.temp-273.15));
+        let city = res.name;
+        console.log(city);
+        console.log(grad);
+        temperatura5.innerHTML=grad + " C";
+        grados5 =grad;
+                    
+    };       
+}
+
+// ------------------------------------------------------------
+
+const consultaCiudad6 = new XMLHttpRequest();
+
+consultaCiudad6.open("GET", `https://api.openweathermap.org/data/2.5/weather?q=${ciudad6}&appid=7f4f88dae157e8fadee2e27967107f2c`, true);
+
+consultaCiudad6.send();
+let grados6 = 0;        
+
+consultaCiudad6.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+        
+        let res = JSON.parse(consultaCiudad6.responseText);
+        let grad = Math.round((res.main.temp-273.15));
+        let city = res.name;
+        console.log(city);
+        console.log(grad);
+        temperatura6.innerHTML=grad + " C";
+        grados6 =grad;
+                    
+    };       
+}
+
+// ------------------------------------------------------------
+
+const consultaCiudad7 = new XMLHttpRequest();
+
+consultaCiudad7.open("GET", `https://api.openweathermap.org/data/2.5/weather?q=${ciudad7}&appid=7f4f88dae157e8fadee2e27967107f2c`, true);
+
+consultaCiudad7.send();
+let grados7 = 0;        
+
+consultaCiudad7.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+        
+        let res = JSON.parse(consultaCiudad7.responseText);
+        let grad = Math.round((res.main.temp-273.15));
+        let city = res.name;
+        console.log(city);
+        console.log(grad);
+        temperatura7.innerHTML=grad + " C";
+        grados7 =grad;
+                    
+    };       
+}
+
+// ------------------------------------------------------------
+
+const consultaCiudad8 = new XMLHttpRequest();
+
+consultaCiudad8.open("GET", `https://api.openweathermap.org/data/2.5/weather?q=${ciudad8}&appid=7f4f88dae157e8fadee2e27967107f2c`, true);
+
+consultaCiudad8.send();
+let grados8 = 0;        
+
+consultaCiudad8.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+        
+        let res = JSON.parse(consultaCiudad8.responseText);
+        let grad = Math.round((res.main.temp-273.15));
+        let city = res.name;
+        console.log(city);
+        console.log(grad);
+        temperatura8.innerHTML=grad + " C";
+        grados8 =grad;
+                    
+    };       
+}
+
+// ------------------------------------------------------------
+//temperatura mas alta
+
+    console.log(temperatura1);
+    console.log("temperatura mas alta es de: " + TAlta);
+
+}
+
+ciudadT();
+
+
+
+
+
+
+
 
 </script>
 </body>

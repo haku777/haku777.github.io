@@ -9,61 +9,68 @@ body{
     font-family:Tahoma,'serif';
     height: 100vh;
     color: white;
+    font-size: 1rem;
 }
 
 strong{
     text-transform: capitalize;
 }
 
-header{
+nav{
     background: #252525;
 }
 
-header nav{
+nav{
     display: flex;
     justify-content: space-around;
     align-content: center;
     align-items: center;
 }
 
-header nav h2{
+nav h2{
     display: flex;
     justify-content: center;
     align-content: center;
     align-items: center;
 }
 
-header nav img{
+nav img{
     width: 70px;
 }
 
-header nav a{
+nav a{
     background: dodgerblue;
     text-decoration: none;
     color: white;
     padding: 10px;
     display: block;
 }
-header nav a:hover{
+nav a:hover{
     background: orangered;
+}
+
+nav li span{
+    background: dodgerblue;
+    display: block;
+    padding: 10px;
 }
 
 /* -------------- */
 
-header nav ul{
+nav ul{
     display: flex;
     justify-content: space-between;
 }
 
-header nav ul li{
+nav ul li{
     list-style: none;
 }
 
-header nav ul{
+nav ul{
     position: relative;
 }
 
-header nav ul li ul{
+nav ul li ul{
     width: 100%;
     position: absolute;
     display: flex;
@@ -71,11 +78,11 @@ header nav ul li ul{
     display: none;
 }
 
-header nav ul li ul li ul{
+nav ul li ul li ul{
     position: relative;
 }
 
-header nav ul li:hover > ul{
+nav ul li:hover > ul{
     display: block;
     z-index: 10;
 }
@@ -88,23 +95,21 @@ main{
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-
     margin-top: 50vh;
-    height: 80vh;
-    padding: 20px;
     margin: auto;
 }
 
 main section{
     padding: 20px;
     margin: auto;
-    width: 70%;
+    width: 90%;
 }
 
 .titulo{
     background: rgba(0,0,0,0.5);
     border-radius: 50px;
     padding: 10px 0px;
+    width: 60%;
     backdrop-filter: blur(20px);
 }
 .titulo h2{
@@ -148,12 +153,15 @@ main section{
     padding: 20px;
     width: 90%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 .datosecundarios, .datosprimarios{
     background: rgba(0,0,0,0.2);
-    padding: 40px;
+    padding: 20px;
+    width: 40%;
+    overflow: hidden;
+    margin-right: 10px;
     border-radius: 30px;
     box-shadow: -1px -1px 0px #dddddd,1px 1px 0px #eeeeee;
     backdrop-filter: blur(10px);
@@ -184,11 +192,67 @@ main section{
     font-size: 70px;
 }
 
+.ciudades{
+    text-align: center;
+}
+
+.ciudades th{
+    text-transform: uppercase;
+    padding: 10px;
+
+}
+
+.actualizarc{
+    background: rgb(77,189,151);
+    font-size: 17px;
+    color:white;
+    margin: auto;
+    width: 200px;
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 30px;
+}
+
+
+.actualizarc:hover{
+    background: rgb(105, 255, 205);
+    color: #555555;
+}
+
 /* -------------- */
 
 aside{
     /* background: lightsalmon; */
     padding: 40px;
+}
+
+.chat{
+    background: linear-gradient(0deg, white, dodgerblue);
+    width:70vw;
+}
+
+.mensajes{
+    margin-bottom:20px;
+}
+
+.chat label{
+    color: #555555;
+}
+
+.chat input{
+    outline:none;
+}
+
+.chat h2{
+    color: white;
+    text-shadow:1px 1px 0px black;
+    width: 20%;
+}
+.chat p{
+    color: gray;
+    text-shadow:1px 1px 0px blue;
+    width: 20%;
 }
 
 /* --------------- */
@@ -199,10 +263,20 @@ footer{
     color: white;
 }
 
+@media(max-width:1080px){
+    .datosecundarios, .datosprimarios{
+        width: 100%;
+    }
+}
+
+
 @media(max-width:800px){
     .contenedor{
         flex-direction: column;
         width: 90%;
+    }
+    .titulo h2{
+        font-size: 17px;
     }
     section{
         width: 100% !important;

@@ -23,8 +23,9 @@
 </head>
 
 <body>
-    <header>
-        <nav>
+
+    <main>
+    <nav>
         <h2><img src="img/clima.svg" alt="">APP CLIMA</h2>
             <ul>
                 <!-- <li><a href="">Clima</a></li> -->
@@ -32,23 +33,19 @@
                 <li><a href="conexion/cerrarConexion.php">Cerrar session</a></li>
             </ul>
         </nav>
-    </header>
-
-
-    <main>
+        
         <section>
             <center>
                 <div class="datosprimarios">
                 
-                    <h3>la opcion de guardar imagen no esta disponible aun...</h3>
                     <div id="estado">
-                        <img src="img/atardecer2.svg" width="200" alt="">
+                    <?php   echo '<img width="170" src="data:image/jpeg;base64,'.base64_encode($resultado['foto']) .' "/>'; ?>
                         <h2><?= $resultado['usuario']; ?></h2>
                     </div>
                     
-                    <form action="conexion/acciones.php" method="post"> <!--aqui falta algo XD-->
+                    <form action="conexion/acciones.php" method="post" enctype="multipart/form-data">
 
-                        <label for="">Buscar imagen<input type="file"></label>
+                        <label for="">Buscar imagen<input type="file" name="image"/></label>
                         <label for="user">Usuario<input type="text" id="user" name="user" required="required" value="<?= $resultado['usuario']; ?>"></label>
                         <label for="email">Correo<input type="email" id="email" name="email" required="required" value="<?= $resultado['correo']; ?>"></label>
                         <label for="pass">Clave<input type="password" id="pass" name="pass" required="required" value=""></label>

@@ -10,7 +10,12 @@
 
 
 </head>
-
+<?php 
+$resultado ="";
+if(!empty($_GET)){
+    $resultado = $_GET['datos'];
+}
+?>
 <body>
     <main>
         <section>
@@ -22,6 +27,7 @@
                     <label for="pass">Clave<input name="pass" id="pass" required="required" type="password"></label>
                     <input type="submit" name="add" value="Agregar">
                 </form>
+                <h3><?php echo $resultado ?></h3><br>
                 <a href="index.php">Login</a>
             </center>
         </section>
