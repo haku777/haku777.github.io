@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+cite{
+    font-size: 20px;
+    color: red;
+}
+
+section:nth-child(1){
+    background: skyblue;
+    margin: auto;
+    height: 100vh;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+section:nth-child(1) div:nth-child(1){
+    background: linear-gradient(45deg,indigo, darkmagenta);
+    padding: 20vh 20vw;
+    color:white;
+}
+
+section:nth-child(1) div:nth-child(2){
+    background: rgba(255,255,255,0.2);
+    width: 70%;
+    padding: 10vh 10vw;
+    margin: auto;
+}
+
+section:nth-child(1) div img{
+    border-radius: 50%;
+    position: absolute;
+    margin-top: -25vh;
+    right: 10vw;
+    width: 270px;
+}
+
+
+/* -------------------------- */
+
+section:nth-child(2){
+    background: #252525;
+}
+
+section:nth-child(2) div{
+    background: teal;
+    margin: auto;
+    width: 40%;
+}
+
+section:nth-child(2) div img{
+    border-radius: 50%;
+    width: 40vw;
+}
+
+

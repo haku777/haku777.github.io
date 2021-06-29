@@ -1,6 +1,6 @@
 <?php
 
-    $con = new mysqli("localhost","root","","netgrid");
+    $con = new mysqli("remotemysql.com","pOhNKfJQeh","sIoYOlO5z1","pOhNKfJQeh");
 
 
 // Server: remotemysql.com
