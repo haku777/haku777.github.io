@@ -4,13 +4,23 @@
     box-sizing: border-box;
 }
 
+@font-face{
+    font-family: Merge;
+    src:url(../../../font/merge_light.otf);
+}
+
+body{
+    font-family: 'Cambria','poppins',Merge,sans-serif;
+    font-size: 2rem;
+}
+
 cite{
     font-size: 20px;
     color: red;
 }
 
 section:nth-child(1){
-    background: skyblue;
+    background: linear-gradient(45deg,indigo 20%,dodgerblue 90%,skyblue 100%);
     margin: auto;
     height: 100vh;
     justify-content: space-between;
@@ -19,15 +29,34 @@ section:nth-child(1){
 
 section:nth-child(1) div:nth-child(1){
     background: linear-gradient(45deg,indigo, darkmagenta);
-    padding: 20vh 20vw;
     color:white;
+    max-height: 50vh;
+    overflow: hidden;
+}
+
+#up{
+    background: transparent;
+    position: absolute;
+    margin-top: 20vh;
+    margin-left: 20vw;
+    width: 50%;
+}
+
+#up h2{
+    font-size: 4rem;
+}
+
+#up h3{
+    font-size: 2rem;
 }
 
 section:nth-child(1) div:nth-child(2){
-    background: rgba(255,255,255,0.2);
-    width: 70%;
-    padding: 10vh 10vw;
+    background: rgba(255,255,255,0.3);
+    border-radius: 0px 0px 30px 30px;
+    padding: 10vh 10vw 20vh 10vw;
     margin: auto;
+    color: white;
+    width: 70%;
 }
 
 section:nth-child(1) div img{
@@ -38,15 +67,21 @@ section:nth-child(1) div img{
     width: 270px;
 }
 
+.down{
+    display: flex;
+    justify-content: center;
+    padding: 60px 0px 0px 0px;
+}
 
 /* -------------------------- */
 
 section:nth-child(2){
-    background: #252525;
+    background: radial-gradient(darkmagenta 30%,darkblue 100%);
+    padding: 70px;
+    height: 100vh;
 }
 
 section:nth-child(2) div{
-    background: teal;
     margin: auto;
     width: 40%;
 }
