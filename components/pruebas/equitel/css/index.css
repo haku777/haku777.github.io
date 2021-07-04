@@ -10,11 +10,45 @@ body{
     background-position: center;
     background-size: cover;
     color: #555555;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+header{
+    background: rgb(0,25,77);
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+}
+
+header div{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+}
+
+header div h2{
+    display: inline-block;
+}
+
+header img{
+    width: 77px;
+    height: 77px;
+    border-radius: 50%;
+}
+
+header a{
+    text-decoration: none;
+    color: white;
+    font-size: 2rem;
+    right: 0;
 }
 
 main{
-    background: rgba(0,0,0,0.2);
-    /* padding: 20px; */
     width: 90%;
     margin: auto;
     display: flex;
@@ -23,53 +57,34 @@ main{
     justify-content: center;
     align-content: center;
     align-items: center;
-    margin-top: 5vh;
-    z-index: 10;
 }
 
-/* main::before{
-    content: '';
-    background: rgba(0,0,0,0.2);
-    padding: 10vh;
-    top: 10vh;
-    left: 120px;
-    z-index: 9;
-    position: absolute;
+#tarjetas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
 }
-
-main::after{
-    content: '';
-    background: rgba(0,0,0,0.2);
-    padding: 10vh;
-    top: 10vh;
-    left: 100vh;
-    z-index: 8;
-    position: absolute;
-} */
 
 section{
-    background: dodgerblue;
-    display: inline-block;
+    padding: 4px;
+    margin: 5vh 2vh;
     overflow: hidden;
-    /* padding: 10px; */
-    margin: 10px;
-    /* width: 30%; */
-    border-radius: 3px;
-    box-shadow: 3px 3px 7px #cdcdcd;
+    display: inline-block;
+    box-shadow: 3px 3px 7px lightslategrey;
 }
 
 /* ---------------- */
 
 .hero{
-    background: skyblue;
+    /* background: skyblue; */
     /* padding: 10px; */
     display: flex;
     justify-content: space-between;
 }
 
 .foto{
-    /* background: teal; */
-    /* padding: 10px; */
     width: 100%;
     display: flex;
     justify-content: center;
@@ -79,20 +94,33 @@ section{
 
 .info{
     background: white;
-    /* padding: 10px; */
+    padding: 10px;
     width: 100%;
+}
+.foto, .voto img{
+    overflow: hidden;
+    cursor: pointer;
 }
 
 /* ----------------- */
-
 .foto img{
-    width: 15rem;
-    height: 17rem;
-    /* border-radius: 50%; */
+    width: 16rem;
+    height: 18rem;
+    transition-duration: .7s;
+}
+
+.foto img:hover{
+    transform: scale(1.7);
 }
 
 .info h3,.info .voto{
     display: block;
+}
+
+.info h3{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
 }
 
 .info b{
@@ -104,20 +132,58 @@ section{
     height: 50px;
 }
 
+/* --------------- */
 
+.voto, .likes, .dislikes{
+    /* background: #cdcdcd; */
+    padding: 10px 0px 0px 0px;
+    display: flex !important;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+}
 
+.voto img{
+    display: inline-block;
+}
 
+/* ----------------- */
+#paginas{
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+#paginas span{
+    background: radial-gradient(black,darkmagenta);
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+    padding: 0px 10px;
+    margin-left: 20px;
+    font-size: 2rem;
+    transition-duration: .3s;
+}
 
+#paginas span:hover{
+    background: radial-gradient(indigo,darkmagenta);
+}
+/* -------------- */
+.datos{
+    padding: 20px;
+}
+@media(max-width:1080px){
+    .page{
+        flex-direction: column;
+    }
+}
 
-
-
-
+/* ---------------------- */
 
 @media(max-width:750px){
     main{
-        background: red;
         padding: 20px;
-        width: 100% !important;
+        width: 90% !important;
     }
 
     section, .hero,main{
@@ -133,12 +199,6 @@ section{
     .hero{
         flex-direction: column;
     }
-    .foto, .info{
-        display: flex;
-        justify-content: center;
-    }
-
-
     .info{
         flex-direction: column;
         align-content: center;
