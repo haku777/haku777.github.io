@@ -44,6 +44,14 @@
                     <h3>weight: <b>"125 lb","80 kg"</b></h3>
                     <h3>eye-color: <b>Blue</b></h3>
                     <h3>hair-color: <b>No hair</b></h3>
+                    <div class="voto">
+                            <div class="likes">
+                                <img src="../../../img/svg/like.svg" alt="">
+                            </div>
+                            <div class="dislikes">
+                                <img src="../../../img/svg/dislike.svg" alt="">
+                            </div>
+                        </div>
                 </div>
             </div>
         </section>
