@@ -95,36 +95,28 @@ section h2::selection{
 }
 
 .h2{
-	background: rgba(77, 0, 77, 0.7);
+	background: rgba(255,255,255, 0.1);
 	width: 30vw;
 	padding: 20px 10px;
 	margin-top: 25vh;
 	margin-left: 30%;
-	/* border-radius: -40deg 0deg 77deg 0deg; */
 	transform: skewx(-45deg);
-	
-
 	animation-name: move;
 	animation-duration: 2s;
-	animation-iteration-count: 2;
-	animation-timing-function: linear;
-	animation-direction: alternate-reverse;
-	
-	-webkit-box-reflect: below 1px linear-gradient(transparent,#0002);
-}
-@keyframes move {
-	0%{background:#0004;transform: translate(10vh);  margin-top : 25vh;}
-	25%{background:#cdc4;transform: translate(20vh); margin-top : 25vh;}
-	50%{background:#0004;transform: translate(30vh); margin-top : 25vh;}
-	75%{background:#cdc4;transform: translate(40vh); margin-top : 25vh;}
-	100%{background:#0004;margin-top: 25vh;margin-left: 30%; }
-}
-.h2:hover{
-	animation: two 0.3s linear 0s infinite !important;
+	animation-delay: 1s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+	backdrop-filter: blur(30px);
+	animation-timing-function: cubic-bezier(3, 1, 3, 1);
+	-webkit-box-reflect: below 1px linear-gradient(transparent,#0001);
 }
 
-@keyframes two {
-	100%{transform: rotate(360deg);}
+@keyframes move {
+	0%{background:#0004; margin-top : 25vh;}
+	25%{background:#e7e4;margin-top : 27vh;}
+	50%{background:#0004; margin-top : 30vh;}
+	75%{background:#e7e4; margin-top : 40vh;}
+	100%{background: none; border:2px solid #fff1; margin-top: 30vh;transform: skewx(0deg);padding: 7vh 2vh;border-radius: 30px;}
 }
 
 p{
@@ -219,8 +211,8 @@ li a{
 /*------------------*/
 
 .wrapper{
-	background: linear-gradient(-45deg,indigo,darkmagenta,indigo 100%);
-	/* background: dark; */
+	/* background: linear-gradient(-45deg,#252555,darkmagenta,#252555 100%); */
+	background: #252555;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
@@ -229,12 +221,12 @@ li a{
 
 .representation{
 	background: #cb60b3;
-	background: -moz-linear-gradient(-45deg, #cb60b3 0%, #700050 11%, #c146a1 24%, #700050 27%, #a80077 30%, #700050 30%, #db36a4 100%);
-	background: -webkit-gradient(left top, right bottom, color-stop(0%, #cb60b3), color-stop(11%, #700050), color-stop(24%, #c146a1), color-stop(27%, #700050), color-stop(30%, #a80077), color-stop(30%, #700050), color-stop(100%, #db36a4));
-	background: -webkit-linear-gradient(-45deg, #cb60b3 0%, #700050 11%, #c146a1 24%, #700050 27%, #a80077 30%, #700050 30%, #db36a4 100%);
-	background: -o-linear-gradient(-45deg, #cb60b3 0%, #700050 11%, #c146a1 24%, #700050 27%, #a80077 30%, #700050 30%, #db36a4 100%);
-	background: -ms-linear-gradient(-45deg, #cb60b3 0%, #700050 11%, #c146a1 24%, #700050 27%, #a80077 30%, #700050 30%, #db36a4 100%);
-	background: linear-gradient(135deg, #cb60b3 0%, #700050 11%, #c146a1 24%, #700050 27%, #a80077 30%, #700050 30%, #db36a4 100%);
+	background: -moz-linear-gradient(-45deg, #cb60b3 0%, indigo 11%, #c146a1 24%, indigo 27%, black 30%, indigo 30%, #db36a4 100%);
+	background: -webkit-gradient(left top, right bottom, color-stop(0%, #cb60b3), color-stop(11%, indigo), color-stop(24%, #c146a1), color-stop(27%, indigo), color-stop(30%, black), color-stop(30%, indigo), color-stop(100%, #db36a4));
+	background: -webkit-linear-gradient(-45deg, #cb60b3 0%, indigo 11%, #c146a1 24%, indigo 27%, black 30%, indigo 30%, #db36a4 100%);
+	background: -o-linear-gradient(-45deg, #cb60b3 0%, indigo 11%, #c146a1 24%, indigo 27%, black 30%, indigo 30%, #db36a4 100%);
+	background: -ms-linear-gradient(-45deg, #cb60b3 0%, indigo 11%, #c146a1 24%, indigo 27%, black 30%, indigo 30%, #db36a4 100%);
+	background: linear-gradient(135deg, #cb60b3 0%, indigo 11%, #c146a1 24%, indigo 27%, black 30%, indigo 30%, #db36a4 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cb60b3', endColorstr='#db36a4', GradientType=1 );
 
 	background-attachment: fixed;
@@ -245,7 +237,9 @@ li a{
 	height: 70vh;
 	color: white;
 	text-align: center;
-	border-radius: 0px 0px 50% 0px;
+	overflow: hidden;
+
+	/* border-radius: 0px 0px 50% 0px; */
 }
 
 hr{
@@ -299,9 +293,6 @@ hr{
 
 section{
 	  background: rgba(255,255,255,0.2);
-	  border: 1px solid rgba(255,255,255,0.5);
-	  border-right: 1px solid rgba(255,255,255,0.2);
-	  border-bottom: 1px solid rgba(255,255,255,0.2);
 	  box-shadow: 0px 5px 25px #0005;
 	  margin-bottom: 10px;
 	  border-radius: 3px;
@@ -364,17 +355,17 @@ aside::-webkit-scrollbar-thumb{
 /* --------------------- */
 .adds{
 	
-	background: indigo;
-	background: -moz-linear-gradient(-45deg, indigo 0%, indigo 37%, dodgerblue 37%, indigo 49%, dodgerblue 67%, indigo 67%, dodgerblue 100%);
-	background: -webkit-gradient(left top, right bottom, color-stop(0%, indigo), color-stop(37%, indigo), color-stop(37%, dodgerblue), color-stop(49%, indigo), 
-	color-stop(67%, dodgerblue), color-stop(67%, indigo), color-stop(100%, dodgerblue));
-	background: -webkit-linear-gradient(-45deg, indigo 0%, indigo 37%, dodgerblue 37%, indigo 49%, dodgerblue 67%, indigo 67%, dodgerblue 100%);
-	background: -o-linear-gradient(-45deg, indigo 0%, indigo 37%, dodgerblue 37%, indigo 49%, dodgerblue 67%, indigo 67%, dodgerblue 100%);
-	background: -ms-linear-gradient(-45deg, indigo 0%, indigo 37%, dodgerblue 37%, indigo 49%, dodgerblue 67%, indigo 67%, dodgerblue 100%);
-	background: linear-gradient(135deg, indigo 0%, indigo 37%, dodgerblue 37%, indigo 49%, dodgerblue 67%, indigo 67%, dodgerblue 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='indigo', endColorstr='dodgerblue', GradientType=1 );
+	background: #e7e7e7;
+	background: -moz-linear-gradient(-45deg, #e7e7e7 0%, #e7e7e7 37%, lightslategray 37%, #e7e7e7 49%, lightslategray 67%, #e7e7e7 67%, lightslategray 100%);
+	background: -webkit-gradient(left top, right bottom, color-stop(0%, #e7e7e7), color-stop(37%, #e7e7e7), color-stop(37%, lightslategray), color-stop(49%, #e7e7e7), 
+	color-stop(67%, lightslategray), color-stop(67%, #e7e7e7), color-stop(100%, lightslategray));
+	background: -webkit-linear-gradient(-45deg, #e7e7e7 0%, #e7e7e7 37%, lightslategray 37%, #e7e7e7 49%, lightslategray 67%, #e7e7e7 67%, lightslategray 100%);
+	background: -o-linear-gradient(-45deg, #e7e7e7 0%, #e7e7e7 37%, lightslategray 37%, #e7e7e7 49%, lightslategray 67%, #e7e7e7 67%, lightslategray 100%);
+	background: -ms-linear-gradient(-45deg, #e7e7e7 0%, #e7e7e7 37%, lightslategray 37%, #e7e7e7 49%, lightslategray 67%, #e7e7e7 67%, lightslategray 100%);
+	background: linear-gradient(135deg, #e7e7e7 0%, #e7e7e7 37%, lightslategray 37%, #e7e7e7 49%, lightslategray 67%, #e7e7e7 67%, lightslategray 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e7e7e7', endColorstr='lightslategray', GradientType=1 );
 	background-attachment: fixed;
-	color: white;
+	color: #252555;
 	display: flex;
 	justify-content: space-evenly;
 	padding: 70px 0px;
@@ -397,7 +388,7 @@ aside::-webkit-scrollbar-thumb{
 
 .adds img{
 	filter: blur(0px);
-	border:4px solid;
+	border:2px solid;
 	border-radius: 50%;
 	width: 400px;
 	height: 40vh !important;
@@ -409,9 +400,6 @@ aside::-webkit-scrollbar-thumb{
 footer{
 	background: #2d3e50;
 	color: white;
-
-	padding: 77px 0px 0px 0px;
-
 	box-shadow: 
 	inset 0px 2px 3px 0px #2525,
 	inset 0px 4px 7px 0px black,
@@ -421,8 +409,12 @@ footer{
 
 footer section{
 	background: transparent;
-	border-radius: 40px 40px 0px 0px;
 	margin: auto;
+}
+
+footer section:hover{
+	background: #2d3e50;
+	border: none;
 }
 
 footer section .footer{

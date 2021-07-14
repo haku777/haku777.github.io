@@ -15,7 +15,7 @@ body{
 }
 
 header{
-	background: black;
+	background: rgb(69,84,170);
 	display: flex;
 	padding: 0px 20px;
 	text-align: center;
@@ -28,18 +28,18 @@ a{
 	border-radius: 3px;
 }
 header h2{
-	color: #ee7e57;
+	color: white;
 	padding: 10px;
 }
 header a{
 	text-decoration: none;
-	background: crimson;
+	background: rgb(44,69,270);
 	padding: 10px;
 	color:white;
 	transition-duration: 1s;
 }
 header a:hover{
-	background: teal;
+	background: #252555;
 }
 /*-------------------*/
 main{

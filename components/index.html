@@ -11,33 +11,12 @@
 				margin: 0;
 				padding: 0;
 			}
-			body{
-				animation-name: fondo;
-				animation-duration: 3s;
-				animation-iteration-count: infinite;
-				animation-timing-function: linear;
-			}
-			@keyframes fondo {
-				0%{
-					background: darkmagenta;
-				}
-				50%{
-					background: dodgerblue;
-				}
-				75%{
-					background: darkturquoise;
-					
-				}
-				100%{
-					background: indigo;
-				}
-			}
 			@font-face {
 				font-family: Merge;
 				src: url(../font/merge_light.otf);
 			}
 			main{
-				background: #e7e7e7;
+				background: rgb(222,240,255);
 				font-family: Merge,serif;
 				margin: auto;
 				width: 80%;
@@ -49,7 +28,6 @@
 			}
 
 			.link{
-				background: linear-gradient(to right, black 70%,#e7e7e7 100%);
 				text-align: center;
 				color: white;
 				padding: 20px;
@@ -58,9 +36,7 @@
 				margin-top: 10px;
 				margin-left: -10px;
 			}
-			.link:hover{
-				background: linear-gradient(to right, black 70%,#e7e7e7 100%);
-			}
+
 			.link::before{
 				content: '';
 				position: absolute;
@@ -70,7 +46,7 @@
 				transition-property: margin;
 				transition-duration: .2s;
 				transition-timing-function: linear;
-				border-top: 10px solid #252525;
+				border-top: 10px solid #445469;
 				border-right: 0px solid transparent;
 				border-bottom: 10px solid transparent;
 				border-left:  10px solid transparent;
@@ -86,7 +62,7 @@
 			}
 
 			a{
-				background: #252525;
+				background: #445469;
 				position: relative;
 				text-transform: uppercase;
 				text-decoration: none;
@@ -119,15 +95,15 @@
 			}
 
 			.success{
-				background: cyan;
+				background: rgb(68,183,253);
 			}
-
+			
 			.falta{
-				background: #ee7e57;
+				background: rgb(141,212,255);
 			}
 
 			.develop{
-				background:crimson;
+				background:#ff6961;
 			}
 
 			@media(max-width:750px){
