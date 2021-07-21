@@ -19,11 +19,11 @@
     </nav>
 </header>
 <main>
-    <h2>Source Image</h2>
+    <h2>Search Image</h2>
     <section>
         <div>
-            <input type="text" id="buscar" name="buscar" placeholder="eje: japón" value="japon">
-            <input type="submit" id="buscar" name="buscar" value="Buscar">
+            <input type="text" id="buscar" name="buscar" placeholder="example: reloj" value="">
+            <input type="submit" id="buscar" name="buscar" value="Search">
         </div>
         </section>
         <section>
@@ -41,7 +41,7 @@
             console.log(buscarValor);
             const xhttp = new XMLHttpRequest();
             xhttp.open("GET", `https://pixabay.com/api/?key=5782415-b3d87a084492871cc6157ae22&q=${buscarValor}&image_type=photo&per_page=50`, true);
-            xhttp.send();        
+            xhttp.send();
 
         xhttp.onreadystatechange = function() {
             if (this.readyState == 4 && this.status == 200) {

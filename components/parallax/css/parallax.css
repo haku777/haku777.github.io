@@ -21,7 +21,7 @@ body{
     background-attachment: fixed;
 }
 .img3{
-    background: url(../../../img/gaugan/gaugan_output11.jpg);
+    background: url(../../../img/fondo/circle.jpg);
     background-size: 100% 100%;
     background-attachment: fixed;
 }
@@ -30,7 +30,6 @@ section div{
     background:rgba(25,25,25,0.3);
     border-radius: 3px;
     padding: 70px 20px;
-    overflow: hidden;
     margin: auto;
     top: 0;
     bottom: 0;
@@ -39,6 +38,7 @@ section div{
     height: 60vh;
     width: 60%;
     position: absolute;
+    overflow: hidden;
 }
 .img1 div{
     display: flex;
@@ -52,7 +52,8 @@ section div{
 
 article h2{
     color: white;
-    font-size: 200px;
+    font-size: 10rem;
+    text-align: center;
 }
 
 article p{
@@ -69,6 +70,7 @@ a{
 nav ul{
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
 }
 nav ul li{
@@ -131,7 +133,7 @@ li:hover{
     color: white;
     padding: 20px;
     display: inline-block;
-    width: 100%;
+    width: 90%;
     font-size: 5rem;
     margin-bottom: 10px;
     text-transform: uppercase;
@@ -151,5 +153,26 @@ li:hover{
     }
 }
 
+@media(max-width:1200px){
+    h2{font-size: 7rem !important;}
+    a{font-size: 20px;}
+}
+
+
+@media(max-width:670px){
+    main,article,h2,p,a,section div,section{
+        font-size: 20px !important;
+        text-align: center;
+        padding: 0 !important;
+    }
+    article img{
+        display: none;
+    }
+    section div{
+        width: 100%;
+    }
+    h2{font-size: 5rem !important;}
+    a{padding: 20px !important;}
+}
 
 /* .img1,.img2{display: none;} */
