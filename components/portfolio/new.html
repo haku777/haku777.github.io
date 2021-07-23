@@ -5,12 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="shorcut icon" href="../../img/n.PNG">
+
     <link rel="stylesheet" media="screen" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="fullpage.css" />
     <link rel="stylesheet" href="css/portfolio.css">
+
 </head>
 <body>
-    <main>
-        <section>
+    <main id="fullpage">
+        <section class="section">
             <div id="particles-js">
                 <div id="up">
                     <h2>Welcome</h2>
@@ -25,8 +28,7 @@
             </div>
         </section>
 
-
-        <section>
+        <section class="section">
             <div class="div">
                 <img src="../../img/code.png" alt="">
                 
@@ -38,8 +40,8 @@
             </div>
         </section>
 
-        <section>
-            <div>
+        <section class="section">
+            <div class="container">
                 <h2>Proyects</h2>
                 <div>
                     <a href="../php/index.php">Api Wheader</a>
@@ -59,8 +61,7 @@
             </div>
         </section>
 
-    
-        <section>
+        <section class="section">
             <h2>Examples</h2>
             <div>
                 <a href="../carousel/index.html">Carousel</a>
@@ -74,7 +75,7 @@
             </div>
         </section>
 
-        <section>
+        <section class="section">
             <h2>Skills</h2>
             <div class="preview">
                 <img src="../../img/information/html5.png" alt="">
@@ -95,21 +96,19 @@
             </div>
         </section>
 
-        <section>
+        <section class="section">
+            <h2>Contact</h2>
             <div>
-                <h2>Contact</h2>
                 <form action="" method="POST">
-                    <label for="user">User<input type="text"></label>
-                    <label for="user">User<input type="text"></label>
-                    <label for="user">User<input type="text"></label>
+                    <label for="user">nombre<input type="text"></label>
+                    <label for="user">correo<input type="text"></label>
+                    <label for="user">Mensaje<textarea name="" id="" cols="30" rows="10"></textarea></label>
                     <input type="submit" value="Enviar">
                 </form>
-            </div>                
-            <div class="preview" id="preview">
-                <!-- <img src="../../img/flowers.jpg" alt=""> -->
+
+                    <img src="../../img/sun.jpg" alt="">
             </div>
         </section>
-    
     
     </main>
 
@@ -123,12 +122,12 @@
         document.body.appendChild(stats.domElement);
         count_particles = document.querySelector('.js-count-particles');
         update = function() {
-          stats.begin();
-          stats.end();
-          if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
+            stats.begin();
+            stats.end();
+            if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
             count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
-          }
-          requestAnimationFrame(update);
+            }
+            requestAnimationFrame(update);
         };
         requestAnimationFrame(update);
 
@@ -140,12 +139,25 @@
                 console.log("pso no")
             }
         };
-            
-        
+    </script>
+
+    <script src="js/particles.js"></script>
+    <script src="js/app.js"></script>
+
+    <script type="text/javascript" src="js/fullpage.js"></script>
+    <script type="text/javascript" src="js/examples.js"></script>
+    <script type="text/javascript">
 
 
-      </script>
-      <script src="particles.js"></script>
-      <script src="js/app.js"></script>
+var myFullpage = new fullpage('#fullpage', {
+        sectionsColor: [''],
+        anchors: [''],
+        navigation:true,
+        navigationTooltips: [''],
+        showActiveTooltip: true,
+        menu: '#menu'
+    });
+   </script>
+
 </body>
 </html>
