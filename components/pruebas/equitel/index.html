@@ -602,15 +602,19 @@
     </main>
 
     <script>
-        // let buscar = document.getElementById('buscar').addEventListener('click', buscarImagen);
 function Heros() {
 
     const xhttp = new XMLHttpRequest();    
         
-    xhttp.setRequestHeader('access-control-allow-credentials', false);
-    xhttp.setRequestHeader('Access-Control-Allow-Origin', '*');
-    xhttp.open("GET", `https://superheroapi.com/api/793211591386644/1`, true);    
     xhttp.withCredentials = false;
+    
+    xhttp.setRequestHeader('Access-Control-Allow-Methods', 'GET');
+    xhttp.setRequestHeader('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
+    xhttp.setRequestHeader('access-control-max-age', '86400');
+    xhttp.setRequestHeader('Access-Control-Allow-Origin', '*');
+    xhttp.setRequestHeader('Access-Control-Allow-Credentials', false);
+
+    xhttp.open("POST", `https://superheroapi.com/api/793211591386644/1/image`, false);
     xhttp.send();        
     xhttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {

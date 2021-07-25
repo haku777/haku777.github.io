@@ -1,18 +1,11 @@
-conocimientos
-
-Html 5 
-Css3
-Sass
-JavaScript
-SQL Server
-MySQL
-PHP
-Laravel
 visual basic
-asp.net
-
 Word
 Sublime text
 Photoshop
 Visual studio code
 Visual studio 2008 
+
+
+
+
+

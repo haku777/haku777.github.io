@@ -4,7 +4,7 @@ $(document).ready(()=>{
 
   // optenemos la cantidad desecciones
   let cantidadSecciones = secciones.length;
-  console.log(cantidadSecciones);
+  // console.log(cantidadSecciones);
 
   let siguiente = secciones.eq(0);
   // siguiente.css({position: 'abolute',left: '10px'});
