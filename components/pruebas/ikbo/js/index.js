@@ -1,7 +1,12 @@
 document.addEventListener("DOMContentLoaded", function() {
 
+
     let score = document.getElementById('score');
     score.innerHTML = document.cookie;
+    if (document.cookie == ""){
+        score.innerHTML = 0;
+        document.cookie = 0;
+    }
 
     let papper = document.getElementById('paper');
     let scissors = document.getElementById('scissors');
