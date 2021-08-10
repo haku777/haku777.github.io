@@ -1,7 +1,11 @@
 hoy
 
 
-revisar correo para prgrama de ingles en el sena
+
+crear app o api en la que me guarde tareas a realizar diariamente
+
+validar lo de httpAccess
+
 
 grupos conversacionales en ingles
 
@@ -9,31 +13,9 @@ https://cursosonlineyempleos.com/niveles-de-ingles/
 
 vallas de bayas
 
-<body onload="document.location.href='forms/general/inicio.aspx'">
-
- ingles sena
-
- hover a las letras 
 
  sistem de rejilla con grid
 
-	usar el archivo de js ya creado y usar js poo utilizar prompt y los arrays etc repaso de lo visto validar temas de.....
-
-	.net crud
-
-	targets
-
-	api
-
-	api lol
-
-	js
-
-    separa las secciones del portafoli como tematicas,css , leguajes  arreglar pagina de componentes con una previsualizacion de cada componente como tipo targeta
-
-	angular 
-
-	animacion  y transition
 
 	typeSript
 
@@ -865,6 +847,49 @@ videos
 
 
 
+
+
+patrones de diseno
+https://www.youtube.com/watch?v=6BHOeDL8vls
+
+
+
+patrones creacionales
+
+
+    -astract fatory
+    -factoy method
+    -builder
+    -singleton
+    -prototype
+patron estructural
+
+    -adapter
+    -bridge
+    -composite
+    -decorator
+    -facade
+    -flyweight
+    -proxy
+
+patrones de comportamiento
+
+    -command
+    -cadena de responsabilidad
+    -interprete
+    -iterator
+    -mediator
+    -memento
+    -observer
+    -state
+    -stategy
+    -template method
+    -vistor
+
+
+/////////////////////////
+
+patrones de arquitectura eje(MVC)
 
 
 
