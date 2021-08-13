@@ -71,8 +71,7 @@ section{
 }
 
 section:hover{
-	background: rgba(0,0,0,0.7);
-	border: 1px solid black;
+	background: #25255555;
 }
 
 section h2{
@@ -87,7 +86,7 @@ section h2::selection{
 }
 
 .time{
-	background: linear-gradient(to right,#1277,#005594,black);
+	background: linear-gradient(to right,#1277,#005594,#252555);
 	width: 95%;
 	border-radius: 7px;
 	color: white;
@@ -153,8 +152,8 @@ main a:hover{
 	background: linear-gradient(to right, 
 	white 0%,
 	white 50%,
-	black 50%,
-	black 100%);
+	#252555 50%,
+	#252555 100%);
 	font-size: 17px;
 	height: 42px;
 	border: solid red 0px;
@@ -165,8 +164,8 @@ main a:hover{
 
 h1{
 	background: linear-gradient(to right, 
-	black 0%, 
-	black 50%, 
+	#252555 0%, 
+	#252555 50%, 
 	white 50%, 
 	white 100%);
 	color:white;
@@ -211,7 +210,7 @@ li a{
 /*------------------*/
 
 .wrapper{
-	background: linear-gradient(45deg,black 40%,dodgerblue 40% 100%);
+	background: linear-gradient(45deg,#252555 40%,dodgerblue 40% 100%);
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
@@ -227,7 +226,7 @@ li a{
 	background: -ms-linear-gradient(-45deg, #cb60b3 0%, indigo 11%, #c146a1 24%, indigo 27%, black 30%, indigo 30%, #db36a4 100%);
 	background: linear-gradient(135deg, #cb60b3 0%, indigo 11%, #c146a1 24%, indigo 27%, black 30%, indigo 30%, #db36a4 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cb60b3', endColorstr='#db36a4', GradientType=1 ); */
-	background: linear-gradient(45deg,dodgerblue 50%,black 50% 100%);
+	background: linear-gradient(45deg,dodgerblue 50%,#252555 50% 100%);
 	background-attachment: fixed;
 	background-position-x: center;
 	background-size: 100%;
@@ -291,7 +290,7 @@ hr{
 .information{
 	background: radial-gradient(circle at 0%, white 10%, dodgerblue 60%,black 62% 70%);
 	background: radial-gradient(circle at 0%, white 10%, dodgerblue 60%);
-	border-bottom: 10vh solid #252555;
+	border-bottom: 2vh solid #252555;
 	/* background: linear-gradient(-45deg, dodgerblue 43.6%, white 43.6% 100%); */
 	padding: 10vh 0vw;
 }
@@ -306,6 +305,7 @@ hr{
 
 .information div img{
 	transition-duration: .5s;
+	border-radius: 7px;
 }
 
 .information div img:hover{
@@ -325,7 +325,7 @@ hr{
 	align-content: center;
 	align-items: center;
 	text-align: center;
-	background: blue;
+	background: #252555;
 	text-decoration: none;
 	margin-top: 1vh;
 	color: white;
@@ -404,23 +404,23 @@ aside::-webkit-scrollbar-thumb{
 .adds{
 	
 	background: dodgerblue;
-	background: -moz-linear-gradient(-45deg, dodgerblue 0%, dodgerblue 37%, black 37%, dodgerblue 49%, black 67%, dodgerblue 67%, black 100%);
-	background: -webkit-gradient(left top, right bottom, color-stop(0%, dodgerblue), color-stop(37%, dodgerblue), color-stop(37%, black), color-stop(49%, dodgerblue), 
-	color-stop(67%, black), color-stop(67%, dodgerblue), color-stop(100%, black));
-	background: -webkit-linear-gradient(-45deg, dodgerblue 0%, dodgerblue 37%, black 37%, dodgerblue 49%, black 67%, dodgerblue 67%, black 100%);
-	background: -o-linear-gradient(-45deg, dodgerblue 0%, dodgerblue 37%, black 37%, dodgerblue 49%, black 67%, dodgerblue 67%, black 100%);
-	background: -ms-linear-gradient(-45deg, dodgerblue 0%, dodgerblue 37%, black 37%, dodgerblue 49%, black 67%, dodgerblue 67%, black 100%);
-	background: linear-gradient(135deg, dodgerblue 0%, dodgerblue 37%, black 37%, dodgerblue 49%, black 67%, dodgerblue 67%, black 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='dodgerblue', endColorstr='black', GradientType=1 );
+	background: -moz-linear-gradient(-45deg, dodgerblue 0%, dodgerblue 37%, #252555 37%, dodgerblue 49%, #252555 67%, dodgerblue 67%, #252555 100%);
+	background: -webkit-gradient(left top, right bottom, color-stop(0%, dodgerblue), color-stop(37%, dodgerblue), color-stop(37%, #252555), color-stop(49%, dodgerblue), 
+	color-stop(67%, #252555), color-stop(67%, dodgerblue), color-stop(100%, #252555));
+	background: -webkit-linear-gradient(-45deg, dodgerblue 0%, dodgerblue 37%, #252555 37%, dodgerblue 49%, #252555 67%, dodgerblue 67%, #252555 100%);
+	background: -o-linear-gradient(-45deg, dodgerblue 0%, dodgerblue 37%, #252555 37%, dodgerblue 49%, #252555 67%, dodgerblue 67%, #252555 100%);
+	background: -ms-linear-gradient(-45deg, dodgerblue 0%, dodgerblue 37%, #252555 37%, dodgerblue 49%, #252555 67%, dodgerblue 67%, #252555 100%);
+	background: linear-gradient(135deg, dodgerblue 0%, dodgerblue 37%, #252555 37%, dodgerblue 49%, #252555 67%, dodgerblue 67%, #252555 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='dodgerblue', endColorstr='#252555', GradientType=1 );
 	/* background: linear-gradient(-45deg,black 40%,dodgerblue 40% 70%, white 70% 100%); */
 	background-attachment: fixed;
 	color: #252555;
 	display: flex;
 	justify-content: space-evenly;
-	padding: 70px 0px;
+	padding: 20vh 0px;
 	margin: 0;
 	text-align: center;
-	min-height: 50vh;
+	min-height: 70vh;
 	/* box-shadow: 
 	inset 0px 2px 3px 0px #2525,
 	inset 0px 4px 3px 0px orangered,
@@ -446,7 +446,7 @@ aside::-webkit-scrollbar-thumb{
 
 /*------------------*/
 footer{
-	background: black;
+	background: #252555;
 	min-height: 50vh;
 	color: white;
 	box-shadow: 
