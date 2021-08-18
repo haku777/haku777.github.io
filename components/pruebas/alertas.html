@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alertas</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        main{
+            background: #252555;
+            height: 100vh;
+            overflow: hidden;
+        }
+        section{
+            background: black;
+            width: 70%;
+            display: flex;
+            flex-wrap: wrap;
+            height: 70vh;
+            margin: auto;
+            margin-top: 10vh;overflow: hidden;
+            color: white;
+            padding: 20px;
+        }
+        .alert{
+            display: flex;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section>
+            <div class="alert" id="alert">
+            </div>
+        </section>
+    </main>
+
+<script>
+    
+    let alert = document.querySelector("#alert");
+    
+    function validarHora(){
+        let hora = new Date();
+        if(hora.getHours()== 11 && hora.getMinutes()==59){
+            alert.innerHTML = `
+            <audio autoplay="true" controls loop src="haku777.github.io/song/money_2.mp3"></audio>
+            `;
+        }else{
+            alert.innerHTML +=("<br><p>Aun no: " + hora.getHours() + ":" + hora.getMinutes() + ":" + hora.getSeconds() + "---</p>")
+        }
+    }
+    let interval=setInterval(validarHora,10000);
+</script>
+</body>
+</html>
