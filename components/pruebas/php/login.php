@@ -12,7 +12,7 @@
 
     function conectar(){
         throw new Exception("Fallo de conexion");
-        $con = new Mysqli("localhost","root","","preubas");
+        $con = new Mysqli("localhost","root","","pruebas");
         return $con;
     }
 
@@ -24,8 +24,12 @@
         //throw $th;
         echo "Error de:   " . $ex->getMessage() . "<br>";
     } finally {
-        echo "catch de conexion";
+        // echo "se valido la conexion";
     }
+
+
+gabriel
+1 semana
 
 
 ?>    
@@ -33,7 +37,9 @@
 <h2>hola</h2>
 
 
-
+<script>
+    console.error("fallo");
+</script>
 
 </body>
 </html>
