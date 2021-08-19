@@ -14,7 +14,7 @@ function agregar(){
             $correo = $_POST['correo'];
             $mensaje = $_POST['mensaje'];
             $mensajeC = $nombre . $correo . $mensaje;
-            $insertar = "insert into mensajes (mensaje) values('". $mensajeC ."')";
+            $insertar = "insert into mensajes (id_usuario,mensaje) values(3,'". $mensajeC ."')";
             $resultado = $conexion->query($insertar);
 
         }
