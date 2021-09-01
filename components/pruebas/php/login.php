@@ -19,20 +19,13 @@
     try {
         //code...
         conectar();
-        
+
     } catch (Exception $ex) {
         //throw $th;
         echo "Error de:   " . $ex->getMessage() . "<br>";
-    } finally {
-        // echo "se valido la conexion";
     }
 
-
-gabriel
-1 semana
-
-
-?>    
+?>
 
 <h2>hola</h2>
 

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap');
+
+body
+{
+    background: linear-gradient(27deg,#2ea527,#005380);
+    height: 100vh;
+    overflow: hidden;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+main {
+    background: rgba(255,255,255,0.2);
+    width: 400px;
+    min-height: 70vh;
+    margin: auto;
+    margin-top: 10vh;
+    padding: 10px;
+    color: white;
+    border-radius: 7px;
+    text-align: center;
+    box-shadow: 2px 2px 17px 2px #255555;
+    overflow: hidden;
+}
+
+h2 {
+    background: rgba(0,0,0,0.2);
+    padding: 20px 10px;
+    margin: auto;
+    margin-top: 7vh;
+    width: 300px;
+    box-shadow: -2px -2px 2px rgba(0,0,0,0.7);
+    inset 2px 2px rgba(0,0,0,0.2);
+    text-transform: uppercase;
+}
+
+
+
+form {
+    border: white;
+    padding: 10px 20px;
+    width: 300px;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 7px;
+}
+
+form span{
+    margin-top: 10px;
+    display: block;
+    width: 100%;
+    padding: 10px;
+}
+
+input {
+    background: rgba(0,0,0,0.3);
+    text-align: center;
+    padding: 10px;
+    color: white;
+    outline: none;
+    width: 100%;
+    border: none;
+    border-radius: 7px;
+    
+}
+
+input[type="submit"] {
+    background: rgba(0,0,0,0.2);
+    padding: 10px;
+    border: none;
+    color: white;
+    margin-top: 40px;
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.7),
+    -1px -1px 1px rgba(40,200,177,0.7);
+    text-transform: uppercase;
+}
+
+input[type="submit"]:hover {
+    box-shadow: -2px -2px 2px rgba(0,0,0,0.7),
+    inset -1px -1px 1px rgba(0,0,0,0.2);
+    text-shadow: 1px 1px 0px #252555;
+}
+
+a{
+    text-decoration: none;
+    margin-top: 10px;
+    display: block;
+    color: #555555;
+    transition-duration: .5s;
+}
+a:hover{
+    color: lime;
+}
+
+
+@media(max-width:750px){
+    body{
+        background: teal;
+    }
+    main{
+        width: 100%;
+    }
+}
+    </style>
+</head>
+<body>
+    <main>
+        <section>
+            <h2>Evolution Technologies Group</h2>
+
+
+
+            <form action="/" method="post">
+                <label for="user">Usuario</label>
+                <input type="text" name="name" value="" />
+
+                <label for="clave">Clave</label>
+                <input type="password" name="name" value="" />
+
+                <input type="submit" name="name" value="Ingresar" />
+                <a href="registro">Registrarse</a>
+            </form>
+
+        </section>
+    </main>
+</body>
+</html>
