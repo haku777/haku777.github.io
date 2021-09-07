@@ -47,15 +47,17 @@
     
     function validarHora(){
         let hora = new Date();
-        if(hora.getHours()== 11 && hora.getMinutes()==59){
+        if((hora.getHours()== 12 && hora.getMinutes() > 29 && hora.getMinutes() < 35) || (hora.getHours()== 8 && hora.getMinutes() > 29 && hora.getMinutes() < 35)){
+
             alert.innerHTML = `
-            <audio autoplay="true" controls loop src="haku777.github.io/song/money_2.mp3"></audio>
+            <audio autoplay="true" controls src="../../song/money_2.mp3"></audio>
             `;
+
         }else{
             alert.innerHTML +=("<br><p>Aun no: " + hora.getHours() + ":" + hora.getMinutes() + ":" + hora.getSeconds() + "---</p>")
         }
     }
-    let interval=setInterval(validarHora,10000);
+    let interval=setInterval(validarHora,30000);
 </script>
 </body>
 </html>
