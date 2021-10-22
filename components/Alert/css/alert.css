@@ -25,7 +25,7 @@ section{
 }
 
 .links a{
-	background: crimson;
+	background: #f55;
 	text-decoration: none;
 	font-size: 20px;
 	color: white;
@@ -42,12 +42,13 @@ section{
 
 /*-------------------*/
 .content{
-	padding: 10px 60px;
-	background:rgba(0,0,0,0.9);
+	padding: 10px 0px;
+	background:rgba(0,0,0,0.3);
+	backdrop-filter:  blur(30px);
 	border-radius: 7px;
 	color:#fff;
 	margin: auto;
-	width: 30%;
+	width: 50%;
 }
 .clase_cambiar {
 	background: #e1e1e1;
@@ -75,5 +76,5 @@ h2{
 }
 
 .content a:hover{
-	background: teal;
+	background: #55f;
 }

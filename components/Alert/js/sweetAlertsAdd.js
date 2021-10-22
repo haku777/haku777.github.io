@@ -93,7 +93,7 @@ function changeColor(){
   if (documento.style.cssText !== "background-color: lightslategray; color: white;"){
       documento.style.cssText= 'background-color: lightslategray; color: white;';
   }else{
-    documento.style.cssText='background-color: rgba(0,0,0,0.7);';
+    documento.style.cssText='background-color: rgba(0,0,0,0.3);';
   }
   console.log(documento.style.cssText)
 }

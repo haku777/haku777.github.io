@@ -21,15 +21,20 @@
             width: 70%;
             display: flex;
             flex-wrap: wrap;
-            height: 70vh;
+            height: 50vh;
             margin: auto;
             margin-top: 10vh;overflow: hidden;
             color: white;
             padding: 20px;
         }
         .alert{
-            display: flex;
-            flex-wrap: wrap;
+            font-size: 12rem;
+            text-align: center;
+            width: 100%;
+            margin: auto;
+        }
+        audio{
+            display: hide;
         }
     </style>
 </head>
@@ -47,17 +52,60 @@
     
     function validarHora(){
         let hora = new Date();
-        if((hora.getHours()== 12 && hora.getMinutes() > 29 && hora.getMinutes() < 35) || (hora.getHours()== 8 && hora.getMinutes() > 29 && hora.getMinutes() < 35)){
+        if ((hora.getHours()== 8 && hora.getMinutes() == 0) || 
+            (hora.getHours()== 8 && hora.getMinutes() == 0) || 
+            (hora.getHours()== 15 && hora.getMinutes() > 58) || 
+            (hora.getHours()== 18 && hora.getMinutes() == 0)){
 
             alert.innerHTML = `
-            <audio autoplay="true" controls src="../../song/money_2.mp3"></audio>
-            `;
-
+            <audio autoplay="true" src="../../song/drop-it-3-2-1-audiotrimmer.mp3">
+            </audio><br><p>Daily</p>`;
         }else{
-            alert.innerHTML +=("<br><p>Aun no: " + hora.getHours() + ":" + hora.getMinutes() + ":" + hora.getSeconds() + "---</p>")
+            alert.innerHTML =("<p>Wait... : " + hora.getHours() + ":" + hora.getMinutes() + ":" + hora.getSeconds() + "</p>")
         }
     }
-    let interval=setInterval(validarHora,30000);
+    
+    let interval = setInterval(validarHora,20000);
+
 </script>
 </body>
 </html>
+
+
+<!-- si ya son las 6 llenar y actualizar la infomacion de lo que realice en el dia
+
+llamar para retirarme del servicio de scotiabank
+
+retirar 8''
+
+https://www.tawk.to/?utm_source=visitor-widget&utm_medium=link&utm_campaign=referral&utm_term=6021317bc31c9117cb76f3e5
+
+
+c y c++
+
+
+java(multiplataforma)(poo)(1995)
+    polimorfismo(podemos llamar dos clases con el mismo nombre pero son difrentes su funcionalidad)(sobrecarga de metodos)
+   
+    extends (se herada tanto los atributos como los metodos   class nombre extends heredaDe{})
+    
+    implements (obliga a la clase a heredar los metodos definidos en esa clase interface heredada)
+    interface (astracta)(una interface se identifica por que solo contiene metodos y es necesario definirlos al momento de llamar la interfaz)
+
+
+.net(compilador a windows)
+
+    visual basic
+
+    c#(solo para windows)(2001)
+        admite mas caracteristicas que java
+        genericos de tiempos de ejecucion
+        la herencia en c# se usan  class nombre:heredaDe {}
+        los constructores se inicializan cuando se crean
+        interface (se implementan todos mienbros)
+        polimorfismo(de forma analoga)(cambiar a un nuevo objeto sin cambiar su escencia)
+
+
+
+
+reference   ? -->

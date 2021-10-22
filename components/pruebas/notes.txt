@@ -344,8 +344,6 @@ english y sql
         triggers o procedimientos almacenados sql
 
 
-        instalar uml
-
         --------------------
         ddl lenguage de definicion de datos
 
@@ -558,11 +556,6 @@ por hacer
         packman
         snake
 
-        //////////////
-
-        servidor web
-        se pede crear con el equipo viejo
-
 
         ///////////////////
 
@@ -578,18 +571,11 @@ por hacer
 
 
 
-        windos r shell:startup  aplicaciones que inician solas
-
-
-        vertices y matices de color
-        text-shadow: 7px 7px 2px black, 7px 0px 7px red, -4px -2px 2px green, 10px 11px 4px blue;
-
+        windos r shell:startup aplicaciones que inician solas
 
         crear api tipo wikipedia ejemplo: http://www.w3api.com/wiki/HTML5:CANVAS
 
         proyectos a largo plazo mediano y corto plazo
-
-
 
         etiqueta marquee y demas para textos
         arreglar la pagina de imagenes para que se vea tipo galeria  y ademas targetas personalizadas con animaciones
@@ -621,46 +607,15 @@ por hacer
 
         2000-4000 dolares
         programar e ingles b1 -b2
-        empresa que contrata que asu vez contrata estados unidos
-
-
-        raro:
-
-        graficos vectoriales
-        estudia portuges
-        cabello 1,27 por mes
-
-
-        game:
-        riven 
-        wukon
-        ezreal mid
-        irelia mid
-        taliya sup
+        empresa que contrata que a su vez contrata estados unidos
 
 
 
 
 
-        -------------------------------
+        --------------------------------------
 
 
-
-        </p>
-
-
-
-
-
-
-
-
-
-
-
-
-        <p>	
-        --------------------------------------------
         API
         tipos:
         rest(representacion de estado de transferencia)
