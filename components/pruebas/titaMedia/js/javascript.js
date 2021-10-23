@@ -15,6 +15,7 @@
         menu.classList.toggle("activar");
         close.style.display= "none";
         open.style.display= "block";
+        body.style.overflow= "scroll";
     })
 }())
 
