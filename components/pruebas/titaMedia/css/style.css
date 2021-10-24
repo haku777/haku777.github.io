@@ -160,6 +160,7 @@ main button:hover a{
 .icons i{
     color: var(--main_dark_color);
     margin-left: 20px;
+    cursor: pointer;
 }
 
 .container{
@@ -178,10 +179,21 @@ main button:hover a{
     width: auto;
     height: auto;
     max-width: 100%;
-    max-height: 700px;
+    /* max-height: 300px; */
     border: 2px solid var(--low_light_color);
     border-radius: 7px;
     margin-bottom: 1em;
+}
+
+.change{
+    padding: 10px;
+    columns: 1;
+    text-align: center;
+}
+
+.change img{
+    width: 40vw;
+    max-height: 700px;
 }
 
 .container button{
