@@ -175,16 +175,23 @@ main button:hover a{
     columns: 3 320px;
 }
 
-.grid img{
+.grid div{
+    overflow: hidden;
+}
+
+.grid div img{
     width: auto;
     height: auto;
     max-width: 100%;
-    /* max-height: 300px; */
+    transition-duration: .5s;
     border: 2px solid var(--low_light_color);
     border-radius: 7px;
     margin-bottom: 1em;
 }
 
+.grid img:hover{
+    transform: scale(1.07);
+}
 .change{
     padding: 10px;
     columns: 1;
@@ -199,11 +206,16 @@ main button:hover a{
 .container button{
     background: var(--main_dark_color);
     border: none;
+    cursor: pointer;
     padding: 15px 40px;
     letter-spacing: 2px;
     color: var(--light_color);
     display: block;
     margin: auto;
+}
+
+.container button:hover{
+    background: var(--main_color);
 }
 
 footer{
@@ -223,7 +235,7 @@ footer strong{
 }
 
 
-@media(max-width: 770px){
+@media(max-width: 750px){
     
     header nav{
         display: none;
