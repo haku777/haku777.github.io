@@ -288,11 +288,8 @@ hr{
 	  }
 
 .information{
-	background: radial-gradient(circle at 0%, white 10%, dodgerblue 60%,black 62% 70%);
-	background: radial-gradient(circle at 0%, white 10%, dodgerblue 60%);
-	border-bottom: 2vh solid #252555;
-	/* background: linear-gradient(-45deg, dodgerblue 43.6%, white 43.6% 100%); */
-	padding: 10vh 0vw;
+	background: radial-gradient(indigo 10%, #252555 70% 100%);
+	padding: 20vh 0vw;
 }
 
 .information div{
@@ -301,15 +298,14 @@ hr{
 	align-content: center;
 	align-items: center;
 	overflow: hidden;
+	margin-top: 7vh;
 }
 
 .information div img{
 	transition-duration: .5s;
 	border-radius: 7px;
-}
-
-.information div img:hover{
-	transform: scale(1.2);
+	width: 34vw;
+	height: 36vh;
 }
 
 .information h2{
@@ -325,17 +321,20 @@ hr{
 	align-content: center;
 	align-items: center;
 	text-align: center;
-	background: #252555;
+	background: indigo;
+	color: white;
+	border: 1px solid white;
+	transform: skewx(-27deg);
 	text-decoration: none;
 	margin-top: 1vh;
-	color: white;
 	padding: 20px;
-	width: 24vw;
+	width: 10vw;
 	display: block;
 }
 
 .information a:hover{
-	background: indigo;
+	background: aliceblue;
+	color: indigo;
 }
 
 
@@ -417,8 +416,6 @@ aside::-webkit-scrollbar-thumb{
 	color: #252555;
 	display: flex;
 	justify-content: space-evenly;
-	padding: 20vh 0px;
-	margin: 0;
 	text-align: center;
 	min-height: 70vh;
 	/* box-shadow: 
@@ -429,16 +426,24 @@ aside::-webkit-scrollbar-thumb{
 }
 
 .adds h2, .adds h4{
-	font-size: 7vh;
+	font-size: 4vh;
 	word-spacing: 17px;
 	letter-spacing: 7px;
 	color: white;
 	text-shadow: 2px 2px 2px #252525;
 }
 
-.adds img{
-	width: 600px;
-	height: 500px;
+.adds div{
+	margin-top: 10vh;
+}
+
+.adds div:nth-child(1){
+	padding-top: 10vh;
+}
+
+.adds div img{
+	width: 30vw;
+	height: 32vh;
 	border: 2px solid white
 }
 

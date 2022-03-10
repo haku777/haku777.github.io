@@ -1,0 +1,51 @@
+<style>
+  
+
+.element{
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border-radius:50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+#circle{
+  width:  90vw;
+  height: 90vh;
+  position: relative;
+  margin: auto;
+}
+</style>
+
+<div id="circle">
+  <div class='element' style="background:black"></div>
+  <div class='element' style="background:skyblue"></div>
+  <div class='element' style="background:darkslateblue;"></div>
+  <div class='element' style="background:blue"></div>
+  <div class='element' style="background:darkslategray;"></div>
+  <div class='element' style="background:darkmagenta"></div>
+  <div class='element' style="background:teal"></div>
+  <div class='element' style="background:orangered"></div>
+  <div class='element' style="background:crimson"></div>
+  <div class='element' style="background:darkviolet"></div>
+</div>
+
+<script>
+  const circles = document.querySelectorAll('.element')
+
+const n = 6;  // numero de circulos
+const r = 120 // radio
+
+let angulo = 0;
+let originX = circles[0].offsetLeft
+let originY = circles[0].offsetTop
+
+setInterval(() => {
+ angulo += 0.1
+ circles.forEach((element,i) =>{
+ element.style.left = `${originX + r*Math.cos(angulo + 0.7*Math.PI/n*i)}px`
+ element.style.top = `${originY + r*Math.sin(angulo + 2*Math.PI/n*i)}px`})
+},20)
+</script>
