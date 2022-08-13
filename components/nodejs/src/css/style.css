@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    overflow: hidden;
+    background: #000;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color:#f77;
+}
+
+header{
+    width: 70vw;
+    margin: auto;
+    font-size: 2.7rem;
+}
+
+.wrapper .main{
+    background: indigo;
+    box-shadow: 0px 0px 70px indigo;
+    margin: auto;
+    margin-top: 7%;
+    margin-bottom: 5ex;
+    width: 70vw;
+    padding: 1vw;
+}
+
+section{
+    height: 40vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+article{
+    background: #000027;
+    padding: 2ex;
+    width: 49.7%;
+    font-size: 42pt;
+    overflow: hidden;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    
+    display: flex;
+    justify-content: center;
+}
+
+h3{
+    scroll-behavior: auto;
+}
+
+footer{
+    text-align: center;
+}
