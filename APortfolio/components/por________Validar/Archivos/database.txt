@@ -1,0 +1,95 @@
+declare @licencia varchar(1000) =(SELECT uid FROM [seg_usuario] where id=1)
+
+declare @id_funcionalidadPadre integer = (select id from view_gui_funcionalidad where nombreControl = 'inc_contactosInternos' and id_tipoFuncionalidad = 1 and gui_funcionalidad_padre_url = '/forms/ter/ter_tercero.aspx' and gui_funcionalidad_padre_nombreControl = 'ter_tercero' and gui_funcionalidad_padre_id_tipoFuncionalidad = 3)
+select * from gui_funcionalidad where id_tipoFuncionalidad = 5 and id_funcionalidad = @id_funcionalidadPadre
+IF NOT EXISTS (select * from gui_funcionalidad where nombreComando = 'editarContacto' and id_tipoFuncionalidad = 5 and id_funcionalidad = @id_funcionalidadPadre and funcionalidad = 'Editar Contacto')
+begin
+	exec [ins_gui_funcionalidad] @licencia,'01',1,1,'Editar Contacto','','','','','','',0,'','editarContacto',0,@id_funcionalidadPadre,5
+end
+
+
+--- ASIGNACION DEL PERMISOS, TODOS LOS PERFILES
+declare @id_permisoaccion as int
+DECLARE @tabla TABLE (idfuncionalidad int, revisado int default 0)
+INSERT INTO @tabla (idfuncionalidad)
+(select id from gui_funcionalidad where active = 1 and 
+(nombreControl = 'inc_contactosInternos' and funcionalidad = 'Personal Asignado Cliente' and id_funcionalidad = @id_funcionalidadPadre and id_tipoFuncionalidad = 5))
+ 
+
+declare @cantidad int = (SELECT COUNT ( DISTINCT idfuncionalidad) from @tabla )
+declare @RT as integer = 0
+declare @id as integer = 0
+while @RT < @cantidad
+begin
+
+set @id = (select top 1 idfuncionalidad from @tabla where revisado = 0)
+set @id_permisoaccion =(select top 1 id from gui_funcionalidad where id = @id) 
+if not exists( select * from seg_perfil_funcionalidad where id_funcionalidad = @id_permisoaccion) 
+
+begin 
+INSERT INTO [seg_perfil_funcionalidad]
+([uid]
+,[eid]
+,[id_usuario_modifico]
+,[id_usuario_creo]
+,[fechaModificacion]
+,[fechaCreacion]
+,[active]
+,[perfil_funcionalidad]
+,[id_perfil]
+,[id_funcionalidad])
+
+select 
+@licencia,
+'01',
+1,
+1,
+getdate(),
+getdate(),
+1,
+'',
+id,
+@id_permisoaccion 
+from seg_perfil 
+
+end
+
+UPDATE @tabla set revisado = 1 where revisado = 0 and idfuncionalidad = @id
+SET @RT = @RT + 1
+end
+///////////////////////
+select * from ter_tercero where id= 1376
+
+select * from ter_contacto where id > 42230
+select * from ins_gui_funcionalidad
+/////////////////////
+select * from seg_usuario where id = 9
+select * from seg_perfil_funcionalidad  where id = 2797
+
+select * from gui_funcionalidad where id = 850
+select * from gui_funcionalidad where funcionalidad = 'Guardar'
+
+
+declare @id_permisoaccion as int
+DECLARE @tabla TABLE (idfuncionalidad int, revisado int default 0)
+
+declare @id_funcionalidadPadre integer = (select id from view_gui_funcionalidad where nombreControl = 'inc_contactosInternos' and id_tipoFuncionalidad = 1 and gui_funcionalidad_padre_url = '/forms/ter/ter_tercero.aspx' and gui_funcionalidad_padre_nombreControl = 'ter_tercero' and gui_funcionalidad_padre_id_tipoFuncionalidad = 3)
+(select id from gui_funcionalidad where active = 1 and (nombreControl = 'inc_contactosInternos' and funcionalidad = 'Personal Asignado Cliente' and id_funcionalidad = @id_funcionalidadPadre and id_tipoFuncionalidad = 5))
+
+ /////////////////////////
+declare @licencia varchar(1000) =(SELECT uid FROM [seg_usuario] where id=1)
+
+declare @id_funcionalidadPadre integer = (select id from gui_funcionalidad where nombreControl = 'inc_trabajosOt' and id_tipoFuncionalidad = 1)
+
+IF NOT EXISTS (select 1 from gui_funcionalidad where nombreComando = 'verCanalAtencion' and id_tipoFuncionalidad = 5 and id_funcionalidad = @id_funcionalidadPadre and funcionalidad = 'Ver Canal de Atencion')
+begin
+	exec [ins_gui_funcionalidad] @licencia,'01',1,1,'Ver Canal de Atencion','','','','','','',0,'','verCanalAtencion',0,@id_funcionalidadPadre,5
+end
+
+
+
+
+
+select * from ter_tercero where tercero ='ACRILINEA SAS'
+
+select * from ter_estadoTercero

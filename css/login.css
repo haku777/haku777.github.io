@@ -4,52 +4,24 @@
 }
 
 @font-face {
-  font-family: Merge,Serif;
-  src: url(../../font/merge_light.otf);
+  font-family: Merge;
+  src: url(../font/merge_light.otf);
 }
 
 body {
-  font-family: Merge,serif;
-  animation-name: fondo;
-  animation-duration: 1.7s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-}
-
-@keyframes fondo{
-  
-  from{
-
-    background: #ffffff;
-    background: -moz-linear-gradient(left, #ffffff 0%, #d8f8fc 50%, #252555 50%, #252555 50%, #00e6ff 100%);
-    background: -webkit-gradient(left top, right bottom, color-stop(0%, #ffffff), color-stop(50%, #d8f8fc), color-stop(50%, #252555), color-stop(50%, #252555), color-stop(100%, #00e6ff));
-    background: -webkit-linear-gradient(left, #ffffff 0%, #d8f8fc 50%, #252555 50%, #252555 50%, #00e6ff 100%);
-    background: -o-linear-gradient(left, #ffffff 0%, #d8f8fc 50%, #252555 50%, #252555 50%, #00e6ff 100%);
-    background: -ms-linear-gradient(left, #ffffff 0%, #d8f8fc 50%, #252555 50%, #252555 50%, #00e6ff 100%);
-    background: linear-gradient(to right, #ffffff 0%, #d8f8fc 50%, #252555 50%, #252555 50%, #00e6ff 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00e6ff', GradientType=1 );
-  }
-
-  to{  
-    background: #ffffff;
-    background: -moz-linear-gradient(left, #ffffff 0%, #d8f8fc 50%, #252555 50%, #252555 50%, rgb(107, 90, 255) 100%);
-    background: -webkit-gradient(left top, right bottom, color-stop(0%, #ffffff), color-stop(50%, #d8f8fc), color-stop(50%, #252555), color-stop(50%, #252555), color-stop(100%, rgb(107,90,255)));
-    background: -webkit-linear-gradient(left, #ffffff 0%, #d8f8fc 50%, #252555 50%, #252555 50%, rgb(107,90,255) 100%);
-    background: -o-linear-gradient(left, #ffffff 0%, #d8f8fc 50%, #252555 50%, #252555 50%, rgb(107,90,255) 100%);
-    background: -ms-linear-gradient(left, #ffffff 0%, #d8f8fc 50%, #252555 50%, #252555 50%, rgb(107,90,255) 100%);
-    background: linear-gradient(to right, #ffffff 0%, #d8f8fc 50%, #252555 50%, #252555 50%, rgb(107,90,255) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='rgb(107,90,255)', GradientType=1 );
-
-  }
+  font-family: Merge;
+  font-size: 16px;
+  background: linear-gradient(to bottom, darkviolet ,indigo 20%,black 77%);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  overflow: hidden;
 }
 
 main{
-  font-family: Merge,serif;
-  color: #005555;
+  color: white;
   margin-top: 10vh;
   height: 90vh;
   animation-duration: 2s;
-
 }
 
 .review iframe{
@@ -75,71 +47,60 @@ a{
   width: 100%;
   display: block;
 }
-.forgot{
-	padding: 20px;
-}
-
-.forgot a{
-	color: indigo;
-}
-
-.forgot a:hover{
-	color: crimson;
-}
-
-/* --------------------- */
-/* --------------------- */
 
 .login-div {
-  background: #fff;        /* sdaasdasd */
+  background: rgba(0,0,0,0.7);
+  backdrop-filter: blur(900px);
   border-radius: 7px;
   padding: 40px;
-  margin: auto;
-  /* box-sizing: border-box; */
-
   width: 270px;
-  
-  
+  margin: auto;
+  margin-top: 10vh;
   box-shadow: 
-  0px 0px 0px 3px #ecf0f3,
-  1px 5px 7px 0px rgba(0,0,255,0.2),
-  -2px -2px 1px 7px transparent,
-  1px 1px 1px 0px blue;
-
-  /* box-shadow: 
-  5px 7px 20px 1px black,
-  12px 12px 3px 1px rebeccapurple; */
-  
+  0px 0px 7px white,
+  0px 0px 70px indigo;
 }
 
 .logo {
-  background: url("../img/flower.jpg");
+  position: relative;
+  background: url("../img/srry.png");
+  background-position: center;
+  background-size: 100px;
   background-repeat: no-repeat;
-  background-size: 100% 100%;
   width: 70px;
   height: 70px;
+  margin: auto;
+  margin-bottom: 40px;
   border-radius: 50%;
-  /* background: white; */
-  margin: 0 auto;
-  box-shadow: 
-  3px 3px 3px 1px #5f5f5f,
-  0px 0px 0px 10px #ecf0f3,
-  22px 16px 16px #a7aaaf,
-  -5px -5px 20px #ffffff;
-  
-  /* opacity:50%; */
-  /* filter:blur(0.3px); */
-	/* x and y:-18px; */
-	/* #ecf0f3 */
+}
+
+.logo::after{
+  content: '';
+  top: -12px;
+  left: -12px;
+  width: 100px;
+  height: 100px;
+  position:absolute;
+  border-radius: 100%;
+  background: radial-gradient(transparent 0%,transparent 65%,darkmagenta 65%,darkmagenta 100%);
+  /* animation: rotate 1s linear infinite; */
+  z-index: -1;
+}
+
+@keyframes rotate{
+  0%{
+    background: crimson;
+  }
+  100%{
+    background: dodgerblue;
+  }
 }
 
 .titulo p{
   border-radius: 3px;
   text-align: center;
-  font-size: 28px;
   margin-top: 24px;
   padding: 7px;
-  
   font-weight: 700;
   letter-spacing: 1px;
   box-shadow: 2px 2px 5px 0px skyblue;
@@ -147,21 +108,19 @@ a{
 
 .subtitulo {
   text-align: center;
-  font-size: 16px;
   margin-top: 10px;
   letter-spacing: 7px;
 }
-/* ---------------- */
 
 .campos {
   margin-top: 55px;
 }
-/* imputs */
+
 .usuario,
 .contraseña {
   margin-bottom: 30px;
   border-radius: 7px;
-  background: #ecf0f3;
+  background: #fff;
   box-shadow: inset 1px 2px 3px 1px gray,2px 2px 1px 0px white;
 }
 
@@ -170,7 +129,6 @@ input {
   border: none;
   outline: none;
   background: none;
-  font-size: 14px;
   margin: 20px 10px;
 }
 
@@ -182,32 +140,21 @@ svg {
 button {
   outline: none;
   border: none;
-  cursor: pointer;
   width: 100%;
-  font-size: 20px;
-  font-weight: 700;
   color: #fff;
-  background: rgb(114,202,255);
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 17px;
+  background: indigo;
   border-radius: 7px;
-  box-shadow: 
-  2px 2px 2px rgb(68,183,253),
-  2px 2px 2px rgb(178,226,255);
-  transition: .5s;
+  box-shadow: 2px 2px 2px black;
+  transition: 0.5s;
 }
 
 button:hover {
-  background: rgb(68,183,253);
+  background: #000;
+  box-shadow: 0px 0px 0px 2px darkmagenta;
 }
-
-button:active {
-  background: rgba(25,25,255,0.2);
-}
-
-
-
-/* ------------------- */
-
-
 
 input:active{
 	border: none;
@@ -219,3 +166,10 @@ input:focus{
 	border: none;
 }
 
+.forgot a{
+	color: #fff;
+}
+
+.forgot a:hover{
+	color: dodgerblue;
+}

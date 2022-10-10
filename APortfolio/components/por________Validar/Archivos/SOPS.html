@@ -1,0 +1,528 @@
+SOPS
+▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄ 
+░░░░░ ░░░░▀█▄▀▄▀██████░▀█▄▀▄▀████▀
+░░░░ ░░░░░░░▀█▄█▄███▀░░░▀██▄█▄█▀
+
+▒█▀▀▀█ █▀▄▀█ █▀▀█ █░█ █▀▀
+░▀▀▀▄▄ █░▀░█ █░░█ █▀▄ █▀▀ 
+▒█▄▄▄█ ▀░░░▀ ▀▀▀▀ ▀░▀ ▀▀▀ 
+
+▒█░░▒█ █▀▀ █▀▀ █▀▀▄ 
+▒█▒█▒█ █▀▀ █▀▀ █░░█ 
+▒█▄▀▄█ ▀▀▀ ▀▀▀ ▀▀▀░ 
+
+▒█▀▀▀ ▀█░█▀ █▀▀ █▀▀█ █░░█ █▀▀▄ █▀▀█ █░░█ 　 █ 
+▒█▀▀▀ ░█▄█░ █▀▀ █▄▄▀ █▄▄█ █░░█ █▄▄█ █▄▄█ 　 ▀ 
+▒█▄▄▄ ░░▀░░ ▀▀▀ ▀░▀▀ ▄▄▄█ ▀▀▀░ ▀░░▀ ▄▄▄█ 　 ▄
+
+_______________________________________________________
+sop 701
+
+http://pruebas.softwaresamm.com/sw_pruebasv4/forms/general/formNuevo.aspx?nc=cat_catalogo_tempario
+
+_______________________________________________________
+sop 713
+
+color en los festivos el labe de los festivos de la programacion
+cat_catalogo.tempario_porcTropicalizacion
+
+_______________________________________________________
+sop 129
+
+requisicion proceso o aprobada
+campo buscador a la tabla seg_usuario solicitante usuario que recibe
+
+<tr>
+<td align='right'>
+</td>
+<td class='td_lblFormulario'>
+<asp:Label ID='lbl_solicitante' runat='server' CssClass='lbl'></asp:Label>
+</td>
+<td class='td_controlesFormulario'>
+<asp:TextBox ID='txt_solicitante' runat='server' MaxLength='300' CssClass='txt_multilinea'></asp:TextBox>
+</td>
+<td>
+</td>
+</tr>
+
+
+Me.lbl_solicitante.Text = Resources.res_metadata.doc_documento_salida_solicitante
+
+Dim t_obj_doc_documento_salida As doc_documento_salida
+Me.txt_solicitante.Text = t_obj_doc_documento_salida.a_str_solicitante
+txt_solicitante.Text = New seg_usuario(web.f_int_usuarioActual, web.f_int_usuarioActual).a_str_nombre
+
+update _columnas set mostrarEnGrilla=0 where columna='porcTropicalizacion'
+--update _columnas set porcGarantia=0, porcTropicalizacion=0   where porcGarantia=0, porcTropicalizacion=0 
+
+fecha a la variable
+
+_______________________________________________________
+sop 735 
+
+por que por javascript seria el evento de carga de archivo antes de dar click en aceptar
+multiples archivos validar con luis carlos
+
+            Dim a_str_Docx As String = Request.QueryString("tab")
+            ScriptManager.RegisterStartupcSript(Me, Me.Page.GetType, "myFuncionAlerta", "prac(" & a_str_Docx & ");", True)
+
+website\controles\general\archivos.ascx
+website\controles\general\archivos.ascx.vb
+website\controles\general\archivosBD.ascx
+website\controles\general\archivosBD.ascx.vb
+website\js\Documento\ValidArchivos.js
+
+documentos comerciales(cotizaciones)
+
+_______________________________________________________
+630
+
+-------------------https://docs.microsoft.com/es-es/dotnet/visual-basic/developing-apps/programming/computer-resources/how-to-download-a-file
+
+Archivos en base de datos en gen_config
+
+dar ruta por defecto con archivo base que se puede remplazar
+optener archivo
+
+ruta valor:
+@valor= nombre archivo subido
+
+D:\SAMM\SAMM\capadatos\tablas\gen_config.vb
+@ruta por defecto = ..\website\plantillas\otros\
+@ruta por defecto/@valor
+
+re-nombrar el archivo antes de subirlo
+if file is empy or null cargar variable con nombre ya de definido del archivo
+
+
+proteger:
+website\forms\gen\maestros.aspx.vb
+website\plantillas\otros\AvisoCoockies.htm
+App_GlobalResources\res_etiquetas_gen.cs
+
+_______________________________________________________
+
+779
+
+el heder de programacion fijo al top de la pagina
+
+_______________________________________________________
+
+695 -horometro invalido
+Tema trazas
+
+reporte tecnico en equipos "reporte tecnico es reporte diario"
+
+ort/variables
+formsV/equ_equipo
+res_etiquetas
+res_etiquetas_equ
+
+
+fecha puesta en marcha como la de la de ultima lectura:
+- no deben quedar en fechas futuras
+- no debe quedar la fecha ultima inferior al f puesta en marcha
+- visible si maneja horometro
+
+_______________________________________________________
+sop 798 Info basica equipo
+
+proteger:
+
+website\controles\formsV\equ_equipo.ascx
+website\controles\formsV\equ_equipo.ascx.vb
+website\App_GlobalResources\res_etiquetas_equ.resx
+website\controles\formsH\equ_equipo.ascx
+
+Al crear un equipo y marcar la fecha puesta en marcha superior a ultima Lectura esta permitiendo registrar el equipo, ademas toma la fecha puesta en marcha como ultima Lectura. no se evidencian los mensajes de advertencia, al modificar el horometro y la fecha ultima lectura no se ve reflejado en el horometro. 
+
+select * from equ_trazabilidad where id_equipo=2020
+select * from equ_equipo where id>2016 order by fechaModificacion desc
+
+revisar funcionamiento textos creados en App_GlobalResources\res_etiquetas_equ.resx
+
+_______________________________________________________
+
+sop 725 Ubicacion pop FormN
+
+css/samm.css
+
+--revisar js/interfaz/general.js
+--busquedaAvanzada.aspx.vb
+
+_______________________________________________________
+sop 786 
+
+Tab de ots (Info adicional) si son obligatorios solicitarlos con un mensaje
+- mestros
+	- detalle equipo
+		- atributo 
+
+
+website\forms\doc\doc_documento_ot.aspx
+website\controles\formsV\doc_documento_ot.ascx.vb
+
+_______________________________________________________
+sop 784
+
+Agregar permisos para los tab Constactos Tercero y en Personal Asignado cliente de la página de terceros. Estos permisos deben ser para cada tab de forma independiente y quitar la dependencia de los permisos que estan en formulario Contactos.
+
+
+website\controles\ter\inc_contactosInternos.ascx.vb
+
+
+
+_______________________________________________________
+sop 749
+
+traslados de los equipos
+
+select * from equ_trazabilidad order by fechaModificacion desc
+D:\haku\SAMM\SAMM\website\controles\doc\pop_moverEquipo.ascx
+D:\haku\SAMM\SAMM\website\controles\doc\pop_moverEquipo.ascx.vb
+D:\haku\SAMM\SAMM\website\controles\general\fechaAvanzada.ascx.vb
+
+_______________________________________________________
+sop 784
+
+Agregar permisos para los tab Constactos Tercero y en Personal Asignado cliente de la página de terceros.
+
+Estos permisos deben ser para cada tab de forma independiente y quitar la dependencia de los permisos que estan en formulario Contactos.
+
+
+
+Todos los campos marcados con * son obligatorios
+
+
+
+select * from gui_funcionalidad where funcionalidad = 'Nuevo Contactos'
+select * from gui_tipoFuncionalidad
+select * from gui_funcionalidad
+_______________________________________________________
+
+- 749 No se debe permitir la realización de un traslado más de una vez en una OT.
+(se creo la sop 807)
+
+
+sop 749
+D:\haku\SAMM\SAMM\website\controles\doc\pop_moverEquipo.ascx.vb
+
+_______________________________________________________
+- 789 botón gui_funcionalidad devolución, que llana al sp a creado.	
+Realizar SP que permita reversar una legalización de un gasto, 
+este gasto debe de quedar tal cual se encontraba antes de haberse legalizado el gasto.
+
+SELECT DISTINCT id_estadoTipoDocumento FROM gas_gasto
+
+sp creacion de procedimiento
+creación boton deslegalizar gastos
+creacion sp de procedimiento almacenado
+creacion de estado anulado en sp diferente llamando el procedimiento almacenado de incercion de estados (ins_doc_estadotipodocumento)
+
+--website\controles\gas\pop_deslegalizar.ascx
+--website\controles\gas\pop_deslegalizar.ascx.vb
+--website\forms\gas\gas_gasto.aspx.vb
+--\capadatos\tablas parciales\gas_gasto.vb
+--sp creacion de estado
+--sp creacion procedimiento almacenado
+imagenes 3: ubicaciones
+	-website\images\botones 	gas_deslegalizar.jpg --arriba brillo        gas_Deslegalizar
+	-website\images\botones 	gas_deslegalizar.png
+	-website\images\botones_dis gas_deslegalizar.jpg --disable       //
+	-website\images\botones_rol gas_deslegalizar.jpg --abajo
+
+_______________________________________________________
+- 620 Al cerrar una salida que tiene ítems sin una entrada, la salida está pidiendo 
+que asigne sucursales a los ítems, así los ítems ya tenga una sucursal. 
+Bloqueando la única forma de cerrar la salida.(SE CAMBIO POR 771)
+
+_______________________________________________________
+sop 771
+SOL-13083
+https://youtu.be/Pwbbdv3XjP0
+
+primera preliquidacion
+
+el sistema la esta tomando como prioridad aplicar a todas corte final
+
+alquiler
+	administrar
+	 equipos
+
+
+mostrar el coste final en el detalle del alquiler del equipo
+repuestos:	no serializados
+equipos:	serializados
+
+
+_______________________________________________________
+sop 789
+
+
+deslegalizar  (por linea)(reverso de gastos)(montacargas fernandes)(devolucion tangible)(altron esta lo de desegalizar)(lo eliminan y se deslegaliza)
+(que tal un valor negativo por que no lo permite)
+doc_estadotipodocumento id_tipodocumento = 0 codigo can (cancelado) 
+boton legalizar
+boton deslegalizar
+en cada linea el boton deslegalizar
+trigger si esta le galizado lo deslegaliza
+
+servicio
+	gastos
+		barra herramientas
+
+		app.softwaresamm.com/altron/bksamm.rar
+
+
+
+alquilar
+	boton administrar
+
+
+
+_______________________________________________________
+sop 803 preferencias de reporte clasico a dinamico
+
+
+website\controles\paginaInicio\tecnicos.ascx.vb
+
+_______________________________________________________
+
+
+As Soon As Possible(ASAP)
+tan pronto como sea posible
+
+iff (validacion , si , no)
+select * from INFORMATION_SCHEMA.COLUMNS where TABLE_NAME = 'view_cat_catalogo_tempario'
+
+
+_______________________________________________________
+
+para los recursos se añade una funcion ver en archivos.vb
+
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+}
+_______________________________________________________
+realizando:
+
+documento y cambio 752 login-validar diseño
+documento y cambio 777 bloque home responsive-validar espacio
+documento y cambio 811 menu desplegable-ajuste js de pantalla en navegadores
+
+Archivos:
+
+website\master\master\mas_grillaFormularioVertical.master
+website\master\master\mas_FormularioSinGrilla.master
+website\controles\general\menuFinal.ascx
+website\controles\general\menuFinal.ascx.vb
+website\controles\general\cabecera.ascx
+website\controles\general\cabecera.ascx.vb
+website\forms\publica\login.aspx
+
+menu con grilla
+D:\haku\SAMM\SAMM\website\master\master\mas_grillaFormularioVertical.master
+menu sin grilla
+D:\haku\SAMM\SAMM\website\master\master\mas_FormularioSinGrilla.master
+menu sin grilla reportes
+D:\haku\SAMM\SAMM\website\master\master\mas_FormularioAyuda.master
+menu con grilla Envio Correo
+D:\haku\SAMM\SAMM\website\master\master\mas_interfazNueva.master
+
+css:
+
+website\css\cabecera.css
+website\css\menuF.css
+website\css\login.css
+website\css\css.css
+
+js:
+
+website\js\Interfaz\menuF.js
+_______________________________________________________
+
+814 sop montacargas
+
+samm_logica\ItemDocumento.vb
+website\forms\doc\itemDocumento.aspx.vb
+website\controles\doc\pop_documentoCatalogos.ascx
+website\controles\doc\pop_documentoCatalogos.ascx.vb
+
+SOP_814.sql
+
+_______________________________________________________
+
+sop 855
+
+website\images\reporteUnificado\equipos.png
+website\interfaces\servicio\reporte.aspx
+website\interfaces\servicio\reporte.aspx.vb
+
+_______________________________________________________
+
+Sop 863
+
+solo debe mostrarse si el usuario elige un estado inactivo
+
+el cambio es sólo para la 5.5 y si el check queda activo, es llamar esta función:
+
+ samcore.IEquipo t_Consulta = samcore.FabricaEquipo.f_str_CrearEquipo(autenticacion.getIdUsuarioActual(), autenticacion.getEidActual());
+                p_str_rta = new samcore.Serializar().Serialize((Object)t_Consulta.f_dtt_InactivarEquipo(p_int_idEquipo));
+
+
+si el usuario selecciona la opcion estado equipo inactivo mostrar check y crear equipo
+
+act_inactivarEquipo
+
+_______________________________________________________
+Sop - 854
+
+website\controles\cnt\inc_equipos.ascx.vb
+
+
+En el tab equipos de los contratos el filtro equipo y sucursal solo deberia filtrar por el tercero del mismo contrato
+Ya se realizo el cambio de filtro en equipos basarse en el para realizar el de sucursal
+
+O
+bus_equipo.a_str_filtros = "id in (select id_equipo from cnt_contratoEquipo where id_contrato=" & a_int_idRegistro & " and active=1 group by id_equipo) **/**contrato**/**" '**/**contrato**/** caso especial para que permita ver todos los equipos en el filtro
+            bus_equipo.s_enlazar()
+
+
+_______________________________________________________
+
+sop 775
+
+se corrige en la version V4.20.26.
+
+_______________________________________________________
+
+sop 831
+
+crear nuevo permiso en el cual se tome la visualizacion de las listas de precio de los items
+
+actualmente existe uno llamado "Editar valor unitario planeado"
+
+la idea es tener dos permisos
+
+1- para la modificacion del valor unitario
+2- para la visualizacion de las listas de valores para los items "Mostrar valor unitario planeado"
+
+
+view_seg_perfil_funcionalidad el active es el del check de los permisos
+https://www.youtube.com/watch?v=mBPNlf7w4xI&feature=youtu.be
+
+
+\samm_logica\enumeraciones.vb
+\website\forms\doc\itemDocumento.aspx.vb
+\website\controles\doc\precioVentaItemDocumento.ascx.vb
+\website\App_Code\presentacion\precioVentaItemDocumento.vb
+
+_______________________________________________________
+
+Sop 844
+
+Requisición
+Orden de Trabajo(OT)
+Cotización
+salida
+Orden de Compra
+Traslado
+Alquiler
+Entrada
+Solicitud
+
+templatecontrol
+	a_int_idRegistro
+	a_int_valorseleccionado
+
+
+
+\capadatos\tablas\doc_subtipoLectura.vb
+\capadatos\tablas parciales\doc_subtipoLectura.vb
+
+\samm_logica\subtipoLectura.vb
+
+
+
+procedimientos.sql
+
+\website\controles\doc\pop_configSubtipos.ascx
+\website\controles\doc\pop_configSubtipos.ascx.vb
+
+\website\controles\doc\inc_subTipoDocumento.ascx
+\website\controles\doc\inc_subTipoDocumento.ascx.vb
+
+http://localhost:50795/website/forms/doc/doc_tipoDocumento.aspx
+
+_______________________________________________________
+
+
+sop 881
+
+\website\forms\gen\gen_envioCorreo.aspx.vb
+
+sop-881.sql
+\website\controles\formsV\gen_envioCorreo.ascx.vb
+\website\forms\general\formNuevo.aspx.vb
+
+
+<Funcionamiento actual:>
+PorelmenúavanzadoEnvíodeCorreo,sepuedenconfigurarreglasquepermitenalsistemaenviarcorreos electrónicos con algunas opciones del sistema.Sinembargo,noesposibleindicarlealsistemaqueconcadaenvíodecorreoseadjunteunarchivoconstante, es decir, que en todos los correos se envíe adjunto el mismo archivo.
+
+<Funcionamiento esperado:>
+Primero,se debe asegurar que exista la funcionalidad para adjuntar archivos al objeto envíodecorreo,mediante el uso del botón barra ‘Archivos’.<>
+
+Segundo,se debe garantizar que cuando se dispare un correo con la regla configurada con el archivo adjunto, este correo debe adjuntar el archivo que se cargó a dicha regla.
+
+Tercero,se requiere que mínimo funcione con las reglas de:
+	-nueva programación,<>
+	-cancela programación<>
+	-cambio de estado.<>
+
+<Fuera de alcance:>
+Noseconfiguraránexcepciones;esdecir,todoslosenvíosdecorreodeLAREGLACONFIGURADAenviarán adjunto los archivos cargadas por el botón archivos de la regla.Noseconfiguraráunavalidaciónadicionalaltamañodelarchivo(seseguirávalidandomedianteeltamaño configurado en el web.config)Encasoquelafuncionalidaddebeimplementarsereglaaregla,noseimplementaráparareglasdiferentes a nueva programación, cancela programación y cambio de estado.
+
+<Análisis de impacto.>
+Incremento potencial en el tamaño del correo de los archivos adjuntos.. Validación de funcionamiento de envío de correos en puntos donde no es requerido adjuntar archivosfios
+
+<Solicitudes relacionadas.>
+SOP 879 (envío de adjuntos al realizar la programación)
+
+<Casos de prueba1.>
+1.Validar funcionamiento esperado.
+2.Envío de correos con regla de cambio de estado con/sin adjuntos fijos.
+3.Envío de correos con regla de nueva programación con/sin adjuntos fijos.
+4.Envío de correos con regla de cancelación de programación con/sin adjuntos fijos.
+5.Envío de correos
+
+
+<correos al remitente>
+<p>
+	nombreComando = 'gen_envioArchivoCmd'
+	id_funcionalidad = 2807
+
+	para que los correos enviados por el remitente se debe tener:
+	-tanto el cargo
+	-activo la regla de envio activa para el cargo en el tab "Envio de Correos"
+
+
+
+
+	<falta>
+		<!--actualizar en sop-881.sql-->
+		<cuando funcione el cargue de archivos>
+		url =	/forms/general/formNuevo.aspx
+		<para que tome el _blank>
+		Url Formulario = -
+
+
+_______________________________________________________
+_______________________________________________________
+_______________________________________________________
+_______________________________________________________
+_______________________________________________________
+_______________________________________________________
+

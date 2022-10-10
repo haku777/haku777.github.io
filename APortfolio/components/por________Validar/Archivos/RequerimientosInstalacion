@@ -1,0 +1,988 @@
+Requerimentos para la instalación:
+
+1 - sql server management studio(ssms) Ultima versión dependiendo del sistema operativo.
+2 - sql server 2017 dependiendo de la version(si es igual o superior a server 2016, si es menor instalar sql server 2014).
+3 - instalar las configuraciones de iis(Internet Information Services) que vienen por defecto desactivadas en windows:
+
+	Panel de control\Programas\Programas y características
+		* Activar o desactivar las características de windows
+			. En la ventana que abre seleccionar:
+
+				- .Windows PowerShell 2.0(dependiendo de la versión de windows)
+				- .NET Famework 3.5(incluye .NET 2.0 y 3.0)
+				- .Internet Information Services
+					- .Caracteristicas de desarrollo de apliaciones
+						*ASP
+						*ASP.NET 3.5
+						*Extencibilidad .NET 3.5
+						*Extenciones ISAPI
+						*Filtros ISAPI
+					- .Caracteristicas HTTP comunes
+
+
+4 - Tener un disco diferente al del sistema.
+5 - espacio en disco de minimo 3gb.
+7 - Crear una carpeta en el disco de nombre SAMM, en el que va quedar samm(paso '4').
+
+6- Desde la pagina de samm Instalar:
+
+	ruta:   http://www.idaesoluciones.com/posv/descargas.aspx
+
+		Descargar:      Instalador Express(Almacenar el archivo descargado en la ruta del paso '7')
+		Instalar:		Report viewer SP1
+		Instalar:		Access Database Engine
+
+
+		personal:
+			despues de descargar el sitio remplazar la carpeta de reportes por la que envio luis carlos
+			modulos de licencia:
+				- CONFIGURACION
+				- MAESTROS
+
+		Procedimiento:
+			- crear las carpetas
+			- pegar el sitio
+			- dar permisos a las carpetas
+			- restaurar la base de datos con mdf y ldf en la carpeta backup
+			- crear las aplicaciones en iis y las aplicaciones
+			- ejecutarlas
+			- licencia
+			- backup a la base de datos para el sitio de pruebas
+			- actualizar los datos del cliente en samm
+			- enviar correo con lo siguiente:
+
+
+
+
++ENVIAR EN EL CORREO+
+    1-Licencia corporativa.
+    2-Acta de licencia.
+    3-Reporte técnico.
+    4-Procedimiento de backup.
+
+
+_____________________________________________________________________________________________
+
+ot-1320 SECAR (Instalacion a hosting)
+
+se toma el backup de la base de datos para pasar a hosting de samm
+
+
+__________________________________________________________________________
+
+Plataformas y herramientas PYH(Instalacion) 1376
+
+
+Datos Acceso
+
+Productivo http://192.168.0.17:81/forms/seg/seg_usuario.aspx
+Pruebas http://192.168.0.17:82/forms/seg/seg_usuario.aspx
+
+usuario: admin
+contraseña: admin 
+
+plataformas y herramientas s.a "P&H"
+
+contacto: 3138184915
+julian roios
+
+510370515
+2ybp14
+v1p9i5
+
+liberada
+_____________________________________________________________________________________
+
+agencia alemana(Migracion de servidor)  ot 1076
+
+angela.manning@jungheinrich.co
+angela 3102083968
+jungheinrich
+
+aerorental
+problema con alquileres en estado cerrado cerrado, cambio de estado
+milena rojas
+
+anydesk
+993865733
+543083408
+169833772
+
+sql pass
+X2012.AgeAle!
+
+teamviewer
+1238757826
+gv1g38    
+7r52nm
+f4sc18
+
+anydesk anterior server
+115968124
+
+_________________________________________________________________________
+
+CMA INGENIERIA & CONSTRUCCION S A S 1401
+
+
+instalacion de sql 2017  de 3:15 a 4:40 8:07 a 9:30    
+1:43min
+pasar samm
+afecta:
+	iis
+	webconfig
+
+
+_________________________________________________________________________
+
+instalacion("Traslado de hosting a server") multivac:
+
+http://idaesoluciones.com/_entregar/multivac2/bkmultivac.zip
+http://idaesoluciones.com/_entregar/multivac2/sitiomultivac.zip
+
+http://idaesoluciones.com/_entregar/multivac/bd.zip
+http://idaesoluciones.com/_entregar/multivac/sitio.zip
+
+teamviewer
+1168357549
+342meh
+
+547 5241
+3002927602 carlos lozano
+
+andres carranza
+
+faltaban configuraciones de iis asp
+sql server 2014
+http://app.softwaresamm.com/multivac/
+
+
+http://23.254.184.60:81/forms/publica/login.aspx
+http://23.254.184.60:82/forms/publica/login.aspx
+
+2019_18_Herma.bak
+
+_________________________________________________________________________
+Actualizacion Montacargas Fernandez y lozano
+
+102 072 44 18 844 (en cali) - jhoana
+para actualizar primero confirmar con jhoana
+
+anydesk
+
+
+
+301 255 33 72-gustavo
+
+
+_________________________________________________________________________
+Actualizacion sitio de pruebas Herma
+
+
+Andres Barrios 305 422 88 22
+Server sebastian 
+
+teamViever
+_________________________________________________________________________
+
+Actualizacion solars v4.j.b sol 13337
+
+Gabriela - 3184429005 
+
+instalacion de sql server 2014 y ssms 2014 por el tema de la version del sistema operativo
+
+anydesk 973023704
+
+192.160.1.101
+
+
+
+revisio caso , despues a atendido
+
+dejar los 15 primeros en acceso activo filtrar por base de datos ultimo acceso
+
+________________________________________________________________________
+
+
+Herma actualizacion miercoles 15 de mayo
+_________________________________________________________________________
+
+
+EXCOMIN - ot 1399        stone
+
+Programada el lunes 29 de abril, se realizo el 23 de mayo de 9:30 a 12:30
+
+Instalación SAMM 
+Contacto: 311 8831926 Erwin Galindo y preguntar por Pedro ortega ING de sistemas 3166262235
+nicolas gomez:
+32gb de ram y 34 de gb el storm rack
+servidor de aplicacines y otro de base de datos
+conexion de bd de un server a otro
+
+anydesk
+474530779
+Data Source=192.168.1.16;Initial Catalog=sw_Excomin; user id=saexcomin; pwd=Excst2019
+
+http://200.6.166.19:81/forms/publica/login.aspx?ReturnUrl=%2fforms%2fgeneral%2finicio.aspx
+http://200.6.166.19:82/forms/publica/login.aspx?ReturnUrl=%2fforms%2fgeneral%2finicio.aspx
+
+nota:
+la instalacion se realiza fuera de los dias programados por tema de instalacion de stone
+
+
+
+________________________________________________________________________
+
+- Instalacion Byotron en Ecuador
+
+se planeo para jueves 23 de mayo, se realizó el lunes 27 de mayo 2019 de 8:40 a 10:00am
+
+	Instalacion IX BIOTRON DEL ECUADOR CIA LTDA
+
+
+- Verificacion de los requerimientos
+- instalacion
+- serial
+- correo de instalacion
+- actualzacion samm con datos de acceso
+
+ip publica  200.124.229.54
+
+
+Productivo:     http://200.124.229.54/sw_Biotron
+Pruebas:         http://200.124.229.54/sw_Biotron_pruebas
+
+
+ip local   192.168.1.27
+enmascarado 255.255.255.192
+
+
+
+
+sa
+B10tr0m*2019
+
+jorgesuasnavas@ixbiotron.com.ec
+
+http://192.168.1.27/sw_Biotron/forms/publica/login.aspx
+http://192.168.1.27/sw_Biotron_pruebas/forms/publica/login.aspx
+
+_________________________________________________________________________
+
+autobackup Avamedical 
+
+30 min para el auto backup ya que querian una ruta distinta a la predefinida por SAMM
+Data Source=WIN-S4T6KQNGTUH\SAMMAVAMED;Initial Catalog=SammWeb; user id=sa; pwd=SammWeb2019
+
+_________________________________________________________________________
+
+restauracion de la base de datos a la empresa delllano 
+
+30 de mayo 8:00am
+
+
+_________________________________________________________________________
+
+abcontrol instalacion a nuetro hostin ultima semana de mayo
+
+	- presenta lentitud
+
+Data Source=vm-sammweb\ABCONTROL;Initial Catalog=sw_abcontrol;User ID=sa; pwd=ABcontrol2013.
+
+escritorio remoto  190.184.204.44:6389
+
+usuario:	administrator
+contraseña: Adminabc13
+
+
+_________________________________________________________________________
+
+Instalacion Colcranes programada primera semana de junio ot 1423
+
+Plataforma actual process
+
+MAESTROS
+ATRIBUTOS
+CAMPO OBLIGATORIO SI
+
+
+
+modulos servicio
+usuarios: 7 mas admin = 8
+
+
+adalbertoecheverria@gmail.com
+_________________________________________________________________________
+
+Actualización de recursos Ingenierias ITT 
+
+Se envió correo a jorge(ing.deSistemas encargado del servifor) con instrucciones de actualizacion de recursos
+
+ingenierias itt  3451992
+operadora anguie 3012399398
+erika Ext:1236 de soporte de ingenierias
+jorge.rodriguz
+
+
+_________________________________________________________________________
+Necsys
+
+--necsys------303------- enviar correo
+
+se envió correo programando la instalacion el dia lunes 17 en la tarde alos siguientes correos:
+luis.garces@necsys.com.co
+Encargado serv:  soporte@necsys.com.co
+
+
+
+juan david 3287363 ext 7021
+anydesk
+
+juan.echeverry@necsys.com.co
+faltaron algunos de los requerimientos
+
+
+Data Source=WIN-UN0KFH7L3KH\SQLEXPRESS;Initial Catalog=sw_Necsys; user id=sa; pwd=Samm2019
+AutoBackup programado para las 10:00pm
+
+192.168.215.248/sw_Necsys/forms/publica/login.aspx
+192.168.215.248/sw_Necsys_pruebas/forms/publica/login.aspx
+
+Instalación SAMM desde Hosting a servidor de cliente
+
+link porductivo:    192.168.215.248/sw_Necsys/forms/publica/login.aspx
+link de pruebas:   192.168.215.248/sw_Necsys_pruebas/forms/publica/login.aspx
+
+harder faster wasp
+_________________________________________________________________________
+
+instalacion hdo
+
+--hbo---------1437------- instalación miercoles 2:00pm
+
+2016 standad
+ip 10.0.20.5.169.254.78.84
+
+softwaresamm.com/versiones/V4/201906/V4.K.0/actualizacionV4.zip
+softwaresamm.com/versiones/V4/201906/V4.K.0/sammweb.zip
+softwaresamm.com/versiones/V4/201906/V4.K.0/sitio.zip
+
+
+HDOSERVER\SQLEXPRESS
+
+diskmgmt.msc
+
+
+ip 10.0.20.5
+ip plubica 190.128.82.200
+autobackup
+licencia
+correo:
+
+	1 licencia
+	2 acta de licencia
+	3 reporte tecnico
+	4 auto backup
+
+links de acceso
+
+autobackup 12:30 pm
+
+http://190.128.82.200/sw_HDO/forms/publica/login.aspx
+http://190.128.82.200/sw_HDO_PRUEBAS/forms/publica/login.aspx
+
+
+_________________________________________________________________________
+toxement--------------- realizar backup de prductivo al pruebas
+
+
+el de la conexion primera 10.10.10.9
+productivo 10.10.10.
+pruebas 10.10.10.23
+
+
+_________________________________________________________________________
+COSECHAR  
+
+--COSECHAR SAS--299------ llamar para coordinar instalación SAMM
+ip publico 
+instalación en limpio
+
+son dos servidores uno de aplicaciones y otro de base de datos
+el de aplicaciones esta en una maquina virtual
+el de base de datos se encuentra en el mismo equipo que la maquina virtual
+
+Alexander gerrero
+3123146822
+
+sistemas@comercialmotors
+
+SERVIDOR DE BASES DE DATOS
+ DIRECCION IP: 138.128.168.58:1157
+USUARIO: ADMINISTRATOR
+PWS: ypw17a*.
+
+SERVIDOR DE APLICACIONES WEB
+DIRECCION IP: 138.128.168.59:1157
+USUARIO: ADMINISTRADOR
+PWS: ypw17a*.
+
+
+DIRECCION IP: 138.128.168.61:1157
+USUARIO: SAM
+PWS: ABC1234.
+
+sa
+lizarazo4022.
+
+Data Source=138.128.168.58:1157/SERVER,2030;Initial Catalog=sw_Cosechar; user id=sa; pwd=lizarazo4022.
+
+se realizo la instalacion de SAMM a la empresa COSECHAR.
+Links de acceso:
+
+productivo:  138.128.168.61/sw_Cosechar
+pruebas:     138.128.168.61/sw_Cosechar_pruebas
+usuario:     admin
+contraseña:  admin
+
+.- orden de trabajo
+.- correo
+
+
+
+
+_________________________________________________________________________
+--ingenierias itt --287---- actualizacion de recursos
+se envio correo de como realizar la actualizacion
+
+_________________________________________________________________________
+colcranes instalación en limpio
+--colcranes-----1423-----se realizó 5 de julio
+
+para la conexion se contacta a Jaime por whatsapp
+v 20.5
+adalbero
+3001535 5 jaime musholn    se llamo por whatsapp
+
+teamviewer
+1170415750
+pass:86fq7d
+
+anydesk
+752558076
+
+Data Source=DancoSql;Initial Catalog=SW_Colcranes;User ID=samm; pwd=Samm2019
+http://remote.dancosteel.com/SW_Colcranes
+
+pass admin SCranes1941
+
+Jaime Schmulson <Jaime@AdvancedApplications.com>
+
+	sitio
+	conexion en el grupo de aplicaciones
+	correr
+    --base de  datos sp
+	licencia
+	copiar sition en el de pruebas
+	manejan ip publica
+
+
+froiland
+emilse hernandez
+	auto backup ya no
+_________________________________________________________________________
+BACKUP DE DEVISDAB LLAMAR A CARLOS
+
+anydesk
+788854194
+
+_________________________________________________________________________
+
+Instalacion con backup de la informacion Astro servicios 
+
+
+Alvaro Rodriguez encargado del servidor 3013719455
+adriana
+
+
+anydesk
+557628481/astroservicios/administrador
+
+Data Source=ASTROSERVICIOS;Initial Catalog=sw_Astroservicios; user id=sa; pwd=A@tro1971$
+
+alejandro.sarria@astroservicios.com
+
+productivo:   http://190.144.27.66/sw_Astroservicios
+Pruebas:      http://190.144.27.66/sw_Astroservicios_pruebas
+
+usuario:      admin
+contraseña:   admin
+
+ASTROSERVICIOS
+E:\SAMM\BACKUP
+
+
+24 de julio instalacion en limpio
+de 8 a 9 se realiza la validacion de la informacion anterior sin validacion de usuario
+
+__________________________________________________________________________
+astroequipos
+
+
+457040279
+
+
+
+5.3.25.0 version
+
+201.184.116.178
+
+
+http://201.184.116.178:8050/sw_astroequipos
+
+usuario:      angie.guerrero
+contraseña:   astroequipos
+
+http://201.184.116.178:8050/sw_pruebas
+
+usuario:      Jeniffer.Hidalgo
+contraseña:   astroequipos
+
+
+ver. 5.3.25.0 [5.3.25.0]-
+
+freddy
+
+
+
+
+Sitio productivo:
+
+	http://201.184.116.178:8050/sw_astroequipos
+
+	usuario:         angie.guerrero
+	contraseña:   astroequipos
+	perfil:             Administrador
+
+Sitio pruebas:
+
+	http://201.184.116.178:8050/sw_pruebas
+
+	usuario:      Jeniffer.Hidalgo
+	contraseña:   astroequipos
+	perfil:       Administrador
+__________________________________________________________________________
+
+rent industrial sitio de pruebas 01/08/19
+
+anydesk
+rentserver-2@ad
+sisadmin11
+
+Data Source=RENTSERVER\SQL2008R2;Initial Catalog=sw_rentindustrial;User ID=sa; pwd=rentindustrial2012.
+
+http://192.168.0.4/sammweb
+http://192.168.0.4/sw_rentindustrial_pruebas/
+
+__________________________________________________________________________
+
+--legrand colombia la realizó Luis Carlos para nuestro hosting
+--biotron---------------- ip publica
+--toxement--------------- realizar backup de prductivo al pruebas
+
+__________________________________________________________________________
+--puerta de oro .hoy 3 9 de agosto 2019 de la tarde instalación desde 0
+
+teamViewer
+
+por whasapp
+https://190.182.53.62/sw_PuertaDeOro
+http://190.182.53.62/sw_PuertaDeOro_pruebas
+
+192.168.1.152
+
+ip servidor 192.168.1.3
+
+ip publica 190.182.53.62
+
+usuario:		admin
+contraseña: 	admin
+
+
+pass sql sw_Puertadeoro2019
+
+Falta:
+-base de datos para el sitio de pruebas
+.- hora del auto backup y la tarea programada
+-usuarios en ambos sitios(pruebas y prductivo)
+-auto backup
+-actualizar información en el samm sobre el sitio de pruebas del cliente
+.-enviar correo con los 4 datos:
+	1-acta
+	2-licencia
+	3-reporte tecnico
+	4-auto backup
+
+pass de sql('sa y samm'):   Integrasoft2011               --- no usar
+
+
+
+
+
+
+puerta de oro terminar el martes a las 3:00pm
+__________________________________________________________________________
+--junhenrich sabado 10 de agosto a las 9:00 am migracion de servidor jungheinrich
+
+9 am a 1 pm
+escribir al skype a Eder peña Fiel
+
+-remoto por el programa que enviaron esta en el escritorio:
+	solicitar el numero de acceso para la aplicacion
+
+
+
+´nota: ´actualmente
+está en nuestro servidor local hacia el servidor de casa matriz, ambos
+servidores físicamente se encuentra en mi DataCenter.
+´
+10:21 hora de inicio
+-servidor locar
+664060805
+26193
+
+768557919
+
+-servidor de casa matriz
+por el programa fastviewer
+
+other
+656773827
+
+eder.penafiel@jungheinrich.ec
+
+Do
+.-server local datos de ambos
+.-aplicaciones necesarias en el servidor al que se va pasar
+.-backup de la informacion
+.-instalacion
+.-verificacion de acceso desde interno y por ip publica
+
+1-orden de trabajo
+
+Thanks & Best Regards
+
+Lunes 7:00 am
+
+istalacion de base de datos de junhenrich
+conexion y funcionamiento y si quieren el auto BACKUP?
+
+localhost\sw_AAE
+localhost\sw_pruebasAE
+inicio 11:20 am lunes 12 de agosto
+Tp_0jRglol21gAkz9NBDPSrxNs0NGb
+
+10.164.32.13/sw_JH-EC
+10.164.32.13/sw__pruebasAE
+
+ip del server de base de datos nuevo 10.164.32.16    1
+
+instancia base de datos=  GYE1S00004\BUSINESSONE_EC
+
+Data Source=10.164.32.16\BUSINESSONE_EC;Initial Catalog=AgenciaAE;User ID=sa; pwd=Tp_0jRglol21gAkz9NBDPSrxNs0NGb
+
+10.164.32.13\sw__AAE
+
+
+
+Data Source=10.164.32.16\BUSINESSONE_EC;Initial Catalog=AgenciaAE;User ID=sa; pwd=Tp_0jRglol21gAkz9NBDPSrxNs0NGb
+Data Source=10.164.32.16\BUSINESSONE_EC;Initial Catalog=AgenciaAE_pruebas;User ID=sa; pwd=Tp_0jRglol21gAkz9NBDPSrxNs0NGb
+
+79B7-SW-WA11-3M5S
+79B7-SW-WA11-3M5S
+
+10.164.32.13
+
+0992281545001
+
+ConsuSamm
+
+localhost/sw_samm/forms/sadmin/keys.aspx
+formato  un año superior a la actual 9/9/2020
+
+__________________________________________________________________________
+--hospital san jose 15 de agosto 8:00 am
+
+OT- 1444
+
+V5.3.20.16
+
+321 424 08 61 Edwin Torres soporte
+323 212 39 09 Fredy pachon
+
+__________________________________________________________________________
+
+sinMaritima cambio de servidor por tema de virus 28/8/2019 9:40 am
+ot 1480
+SERVICIOS INTEGRALES MARITIMOS
+
+Jhon Galindo cel. (3136011129)
+
+revisas conexion a samm
+server 2008 --- server 2016
+
+ip aplicaciones =  190.143.114.214/sw_sim
+ip aplicaciones =  190.143.114.214/sw_pruebas
+
+base de datos esta en el 1   ip =  190.143.114.212
+
+karen.quinones@Simaritima.com encargada de revision de SAMM
+john.galindo@Simaritima.com sistemas
+
+y dar links
+
+
+__________________________________________________________________________
+-biored
+
+Anydesk:
+	servidor@ad/biored-servidor/administrador
+	backup de base de datos
+	alejandra garay
+__________________________________________________________________________
+4/9/2019 SERRVICESTELL
+
+Actualización samm
+instalacion sql server 2008
+migracion base de datos
+
+anydesk
+743002909
+__________________________________________________________________________
+San jose   inicio 12/09/2019-2:30 pm
+Carlos Diaz
+Anydesk
+
+luis eduardo Administrador
+Data Source=HSJSAMM;Initial Catalog=samm_pruebas;User ID=sa; pwd=hsjsamm.2013       -nueva:   Samm2019
+
+productiva: ver. 5.3.20.16 [5.3.20.16]- 
+pruebas:    5.2.36.3           5.2.35.1            5.2.21.1
+
+
+--Migración hospital san jose martes 20 de agosto 8:00 am    ot 1444, el ingreso es por ip ver correo
+	nota: se pospone por falla en el fairewall de la empresa,ellos indican cuando continuar.
+
+se tendrá listo el escenario para la migración del servidor el próximo Jueves 12 de Septiembre de 2019.
+
+172.20.0.44/sammweb
+172.20.0.44/samm_pruebas
+
+
+
+
+
+__________________________________________________________________________
+-- Instalacion de cero ttp en la mañana 21 de agosto 8:00 am 
+
+Gualberto Alarcón
+Tel: 316 5237690
+
+productivo:   http://10.10.20.100:81/forms/publica/login.aspx?ReturnUrl=%2fforms%2fgeneral%2finicio.aspx
+Pruebas:      http://10.10.20.100:82/forms/publica/login.aspx?ReturnUrl=%2fforms%2fgeneral%2finicio.aspx
+
+
+Data Source=SERVTTP-DATOS\MANTSAMM;Initial Catalog=sw_TTP; user id=sa; pwd=TTPWell2012
+
+gualberto.alarcon@ttpwellservices.com.co
+Subgerencia sandra.bulla@ttpwellservices.com.co
+omar.pantano@ttpwellservices.com.co
+Gerencia  general juan.moreno@ttpwellservices.com.co
+
+
+    1-Licencia corporativa.----
+    2-Acta de licencia.
+    3-Reporte técnico.---
+    4-Procedimiento de backup.----
+
+Duracion: 1.30 min
+__________________________________________________________________________
+
+--Incomedica instalacion con backup   OT - 1334
+
+	Elkin 
+	julian Encargado de soporte sistemas 
+
+http://190.145.37.2/sw_Imcolmedica/forms/publica/login.aspx?ReturnUrl=%2fsw_imcolmedica%2fforms%2fgeneral%2finicio.aspx
+http://190.145.37.2/sw_Imcolmedica_pruebas/forms/publica/login.aspx?ReturnUrl=%2fsw_imcolmedica%2fforms%2fgeneral%2finicio.aspx
+
+1353982386
+
+__________________________________________________________________________
+-- Biored Actualizacion sitio de pruebas a 5.4.20.27
+
+Jane Alejandra 3203495409
+2:30pm 
+
+<alejandra.g@bioredingenieria.com> 
+
+anydesk
+biored-servidor@ab/biored-serbidor/administrador
+
+
+teamviewer
+520212677
+
+__________________________________________________________________________
+-- CMA ip publica
+
+Andreina 350 580 56 27
+
+http://181.45.94.162/
+
+ip publica  181.48.94.165
+
+ip local 192.168.1.113
+
+ip de etb 192.168.0.15
+
+dmz (70:4C:A5:EF:A2:8E)
+10.10.10.1/255.255.255.0
+
+172.16.1.1/255.255.255.0
+
+__________________________________________________________________________
+-- instalacion aromamarketing viernes desde las 15:40
+ot-1502 para reportar la instalacion de aromamarketing
+
+Karen parra 316 694 69 97
+
+ip publica 190.24.45.92
+
+ip servidor 192.168.0.42
+
+teamViewer
+id    1239531681
+pass  k94h1c
+
+Data Source=AROMASERVER\SQLEXPRESS;Initial Catalog=sw_AromaMarketing; user id=sa; pwd=Samm2019
+
+C:\SAMM\
+
+Productivo:   190.24.45.92/sw_AromaMarketing
+Pruebas:      190.24.45.92/sw_AromaMarketing_pruebas
+	
+
+Productivo:   192.168.0.42/sw_AromaMarketing
+Pruebas:      192.168.0.42/sw_AromaMarketing_pruebas
+
+usuario:      admin
+contraseñra:  admin
+
+correos:
+financiera@aromamarketing.com.co
+pvidaller@yahoo.es
+sistemas@sterlingjoyeros.com
+*******
+Solicitar una cuenta de administrador para instalar los roles de windows
+*******
+
+Finalizo el lunes 7 de Octubre a las 12:00 pm 
+
+
+C:\SAMM\Aplicaciones\Nueva_carpeta\actualizacionV4\scripts\V4.H.0\SOP_656.sql 
+Cannot insert the value NULL into column 'id_funcionalidad', table 'sw_AromaMarketing.dbo.gui_funcionalidad'; column does not allow nulls. INSERT fails.
+The statement has been terminated.
+The 'ins_gui_funcionalidad' procedure attempted to return a status of NULL, which is not allowed. A status of 0 will be returned instead.
+
+__________________________________________________________________________
+
+--instalacion OUTSOURCING DOCUMENT: aplazado asta confirmacion de pagos consultar con maira
+
+--Macrosoft a la espera de confirmacion de los requerimientos para la instalacion
+
+Edison ip publica
+
+lina
+
+
+--outsoursing envio de datos para la instalación
+
+anydesk
+270023347
+__________________________________________________________________________
+
+makrosoft  inicio 9:00am 15/10/2019 a 10:00 mientras generaba la licencia
+
+Data Source=SRV-SAMM;Initial Catalog=sw_Makrosoft; user id=sa; pwd=Mn25Tc43Sql
+
+ip server 192.168.1.16
+
+Prductivo:   192.168.1.16/sw_Makrosoft
+Pruebas:     192.168.1.16/sw_Makrosoft_pruebas
+
+usuario:     admin
+contraseña:  admin
+
+ip publica idae 186.82.45.249
+
+
+lilia makrosoft
+
+ip publica 181.57.174.90/29
+
+wiliam Encargado de red
+
+
+3183885238 moreno
+
+ANYDESK
+135039593
+
+pass inicio sesion: Mn25Tc43mkro
+pass sa sql:        Mn25Tc43Sql
+
+__________________________________________________________________________
+
+Out sourcing Brayan la realizo en cliente
+
+192.168.0.200/sw_Outsourcing
+192.168.0.200/sw_Outsourcing_pruebas
+
+
+__________________________________________________________________________
+
+Prodeca Reinstalacion
+
+Sw_prodeca
+
+Data Source=ESTRELLA2-1;Initial Catalog=sw_prodeca;User ID=SA; pwd=Prodeca123
+
+Sw_pruebas
+
+Data Source=ESTRELLA2-1;Initial Catalog=sw_ProdecaJunio2;User ID=SA; pwd=Prodeca123
+
+
+__________________________________________________________________________
+
+
+Aromamarketing
+
+
+192.168.0.23/sw_AromaMarketing
+
+ip publica 190.146.154.54
+mi ip      190.146.154.1
+
+1121544777
+
+wca221
+
+
+__________________________________________________________________________
+__________________________________________________________________________
+__________________________________________________________________________
+__________________________________________________________________________
+__________________________________________________________________________
+__________________________________________________________________________
+__________________________________________________________________________

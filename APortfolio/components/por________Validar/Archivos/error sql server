@@ -1,0 +1,5 @@
+https://www.youtube.com/watch?v=HbbjUJgnrlI
+cd/686fda2ed571af4d51  --- ruta donde se descromprimio el instalador de sql server
+
+
+setup.exe /ACTION=install /SKIPRULES=PerfMonCounterNotCorruptedCheck

@@ -39,17 +39,14 @@ body::-webkit-scrollbar{
 }
 
 body::-webkit-scrollbar-thumb{
-	background: #ee7e57;
-	border-radius: 10px;
-	border-right: 2px solid rgb(255, 218, 201);
-	border-left: 2px solid darkorange;
+	background: indigo;
+	border: 0.7px solid black;
 }
 
 header{
 	background:rgba(0,0,0,0);
 	width: 100%;
 	display: flex;
-	height: 70px;
 	justify-content: space-around;
 	overflow: hidden;
 	position: absolute;
@@ -62,6 +59,14 @@ header{
 	color: white;
 }
 
+tbody, tfoot{
+	text-align: center;
+}
+
+tbody{
+	font-size: 27px;
+}
+
 h2{
 	color: white;
 }
@@ -70,12 +75,12 @@ section{
 	transition-duration: .5s;
 }
 
-section:hover{
+main section:hover{
 	background: #25255555;
 }
 
 section h2{
-	color:salmon;
+	color: darkmagenta;
 	text-align: center;
 	text-shadow: 2px 2px 7px black;
 	padding-bottom: 16px;
@@ -149,11 +154,7 @@ main a:hover{
 /*------------------*/
 
 .myPage{
-	background: linear-gradient(to right, 
-	white 0%,
-	white 50%,
-	#252555 50%,
-	#252555 100%);
+	background: linear-gradient(to right, white 0%, white 50%, indigo 50%, indigo 100%);
 	font-size: 17px;
 	height: 42px;
 	border: solid red 0px;
@@ -163,14 +164,9 @@ main a:hover{
 }
 
 h1{
-	background: linear-gradient(to right, 
-	#252555 0%, 
-	#252555 50%, 
-	white 50%, 
-	white 100%);
-	color:white;
-	-webkit-background-clip:text;
+	background: linear-gradient(to right, indigo 0%, indigo 50%, white 50%, white 100%);
 	background-clip: text;
+	-webkit-background-clip:text;
 	-webkit-text-fill-color:transparent;
 
 }
@@ -200,34 +196,27 @@ li a{
 }
 
 .nav a:hover{
-	background: linear-gradient(to bottom, transparent 70%,cyan 100%);
-	border-bottom: 3px solid cyan;
+	background: linear-gradient(to bottom, transparent 70%,darkmagenta 100%);
+	border-bottom: 3px solid black;
 }
 
 .nav a:active{
-	background: linear-gradient(to bottom, transparent 50%,cyan 100%);
+	background: linear-gradient(to bottom, transparent 50%,darkmagenta 100%);
 }
 /*------------------*/
 
 .wrapper{
-	background: linear-gradient(45deg,#252555 40%,dodgerblue 40% 100%);
+	background: linear-gradient(45deg, indigo 11%, #c146a1 24%, indigo 27%, black 28%, indigo 29%, #000 100%);
+	background: radial-gradient(circle, indigo 7%,black 60%,indigo 70%,black 80%, black 100%);
+	background-attachment: fixed;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	padding-bottom: 20vh;
+	padding-bottom: 40vh;
 }
 
 .representation{
-	/* background: #cb60b3;
-	background: -moz-linear-gradient(-45deg, #cb60b3 0%, indigo 11%, #c146a1 24%, indigo 27%, black 30%, indigo 30%, #db36a4 100%);
-	background: -webkit-gradient(left top, right bottom, color-stop(0%, #cb60b3), color-stop(11%, indigo), color-stop(24%, #c146a1), color-stop(27%, indigo), color-stop(30%, black), color-stop(30%, indigo), color-stop(100%, #db36a4));
-	background: -webkit-linear-gradient(-45deg, #cb60b3 0%, indigo 11%, #c146a1 24%, indigo 27%, black 30%, indigo 30%, #db36a4 100%);
-	background: -o-linear-gradient(-45deg, #cb60b3 0%, indigo 11%, #c146a1 24%, indigo 27%, black 30%, indigo 30%, #db36a4 100%);
-	background: -ms-linear-gradient(-45deg, #cb60b3 0%, indigo 11%, #c146a1 24%, indigo 27%, black 30%, indigo 30%, #db36a4 100%);
-	background: linear-gradient(135deg, #cb60b3 0%, indigo 11%, #c146a1 24%, indigo 27%, black 30%, indigo 30%, #db36a4 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cb60b3', endColorstr='#db36a4', GradientType=1 ); */
-	background: linear-gradient(45deg,dodgerblue 50%,#252555 50% 100%);
-	background-attachment: fixed;
+	/* background: linear-gradient(-45deg, indigo 11%, #c146a1 24%, indigo 27%, black 28%, indigo 29%, #000 100%); */
 	background-position-x: center;
 	background-size: 100%;
 	width: 100%;
@@ -239,115 +228,46 @@ li a{
 	/* border-radius: 0px 0px 50% 0px; */
 }
 
-hr{
 
-	background: #00404a;
-	background: -moz-linear-gradient(left, #00404a 0%, #00384a 17%, #ff4000 17%, #ff4000 17%, #ff4000 38%, #ff8800 38%, #ff8800 38%, #ff8800 59%, #ffb300 59%, #ffb300 59%, #ffd000 81%, #fffccc 81%, #fffccc 82%, #fffccc 100%);
-	background: -webkit-gradient(left top, right top, color-stop(0%, #00404a), color-stop(17%, #00384a), color-stop(17%, #ff4000), color-stop(17%, #ff4000), color-stop(38%, #ff4000), color-stop(38%, #ff8800), color-stop(38%, #ff8800), color-stop(59%, #ff8800), color-stop(59%, #ffb300), color-stop(59%, #ffb300), color-stop(81%, #ffd000), color-stop(81%, #fffccc), color-stop(82%, #fffccc), color-stop(100%, #fffccc));
-	background: -webkit-linear-gradient(left, #00404a 0%, #00384a 17%, #ff4000 17%, #ff4000 17%, #ff4000 38%, #ff8800 38%, #ff8800 38%, #ff8800 59%, #ffb300 59%, #ffb300 59%, #ffd000 81%, #fffccc 81%, #fffccc 82%, #fffccc 100%);
-	background: -o-linear-gradient(left, #00404a 0%, #00384a 17%, #ff4000 17%, #ff4000 17%, #ff4000 38%, #ff8800 38%, #ff8800 38%, #ff8800 59%, #ffb300 59%, #ffb300 59%, #ffd000 81%, #fffccc 81%, #fffccc 82%, #fffccc 100%);
-	background: -ms-linear-gradient(left, #00404a 0%, #00384a 17%, #ff4000 17%, #ff4000 17%, #ff4000 38%, #ff8800 38%, #ff8800 38%, #ff8800 59%, #ffb300 59%, #ffb300 59%, #ffd000 81%, #fffccc 81%, #fffccc 82%, #fffccc 100%);
-	background: linear-gradient(to right, #00404a 0%, #00384a 17%, #ff4000 17%, #ff4000 17%, #ff4000 38%, #ff8800 38%, #ff8800 38%, #ff8800 59%, #ffb300 59%, #ffb300 59%, #ffd000 81%, #fffccc 81%, #fffccc 82%, #fffccc 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00404a', endColorstr='#fffccc', GradientType=1 );
-	
-	padding: 3px 0px;
-	margin: 16px;
-	border: none;
-
-}
-
-/*------------------*/
-
-	main{
-		padding: 20px 20px;
-		width: 50%;
-		display: flex;
-		margin-top: 50vh;
-		flex-direction: column;
-	}
-
-	main div .img{
-		background: url(../img/earth.jpg);
-		height: 270px;
-		width: 270px;
-		float: left;
-		margin-right: 17px;
-		border-radius: 50%;
-		background-size: cover;
-		animation: earht 17s linear infinite;
-		box-shadow:
-		1px 1px 0.7px 0px #121212,
-		2px 2px 7px 0px #272727,
-		inset 1px 0.7px 1px 0px white,
-		inset 7px 1px 7.7px 0px gray;
-	}
-
-	@keyframes earht{
-		0%   {background-position: 0;}
-		100% {background-position: 167%;}
-	  }
-
-.information{
-	background: radial-gradient(indigo 10%, #252555 70% 100%);
-	padding: 20vh 0vw;
-}
-
-.information div{
+main{
+	padding: 20px 20px;
+	width: 50%;
 	display: flex;
-	justify-content: space-around;
-	align-content: center;
-	align-items: center;
-	overflow: hidden;
-	margin-top: 7vh;
+	margin-top: 30vh;
+	flex-direction: column;
 }
 
-.information div img{
-	transition-duration: .5s;
-	border-radius: 7px;
-	width: 34vw;
-	height: 36vh;
+main div .img{
+	background: url(../img/earth.jpg);
+	height: 270px;
+	width: 270px;
+	float: left;
+	margin-right: 17px;
+	border-radius: 50%;
+	background-size: cover;
+	animation: earht 17s linear infinite;
+	box-shadow:
+	1px 1px 0.7px 0px #121212,
+	2px 2px 7px 0px #272727,
+	inset 1px 0.7px 1px 0px white,
+	inset 7px 1px 7.7px 0px gray;
 }
 
-.information h2{
-	text-align: center;
-	margin-bottom: 10vh;
-	font-size: 4vh;
-	text-shadow: 2px 2px 2px #252525;
-}
-.information p{
-	font-size: 1rem;
-}
-.information a{
-	align-content: center;
-	align-items: center;
-	text-align: center;
-	background: indigo;
-	color: white;
-	border: 1px solid white;
-	transform: skewx(-27deg);
-	text-decoration: none;
-	margin-top: 1vh;
-	padding: 20px;
-	width: 10vw;
-	display: block;
-}
-
-.information a:hover{
-	background: aliceblue;
-	color: indigo;
-}
-
-
-section{
-	  background: rgba(255,255,255,0.2);
-	  box-shadow: 0px 5px 25px #0005;
-	  margin-bottom: 10px;
-	  border-radius: 3px;
-	  margin-top: 10px;
-	  padding: 20px 77px;
-	  color: white;
-	  overflow: hidden;
+@keyframes earht{
+	0%   {background-position: 0;}
+	100% {background-position: 167%;}
   }
+
+main section{
+	background: rgba(255,255,255,0.2);
+	box-shadow: 0px 5px 25px #0005;
+	margin-bottom: 10px;
+	border-radius: 3px;
+	margin-top: 10px;
+	padding: 20px 77px;
+	color: white;
+	overflow: hidden;
+}
 
 aside{
 	background:rgba(0,0,0,0.5);
@@ -357,7 +277,7 @@ aside{
 	overflow-y: scroll;
 	max-height: 40vh;
 	width: 277px;
-	margin-top: 50vh;
+	margin-top: 30vh;
 	/* border-radius: 0px 5px 5px 0px; */
 }
 
@@ -373,7 +293,7 @@ aside::-webkit-scrollbar{
 }
 
 aside::-webkit-scrollbar-thumb{
-	background: #ee7e57;
+	background: purple;
 	width: 10px;
 	border-radius: 5px;
 }
@@ -401,34 +321,20 @@ aside::-webkit-scrollbar-thumb{
 
 /* --------------------- */
 .adds{
-	
-	background: dodgerblue;
-	background: -moz-linear-gradient(-45deg, dodgerblue 0%, dodgerblue 37%, #252555 37%, dodgerblue 49%, #252555 67%, dodgerblue 67%, #252555 100%);
-	background: -webkit-gradient(left top, right bottom, color-stop(0%, dodgerblue), color-stop(37%, dodgerblue), color-stop(37%, #252555), color-stop(49%, dodgerblue), 
-	color-stop(67%, #252555), color-stop(67%, dodgerblue), color-stop(100%, #252555));
-	background: -webkit-linear-gradient(-45deg, dodgerblue 0%, dodgerblue 37%, #252555 37%, dodgerblue 49%, #252555 67%, dodgerblue 67%, #252555 100%);
-	background: -o-linear-gradient(-45deg, dodgerblue 0%, dodgerblue 37%, #252555 37%, dodgerblue 49%, #252555 67%, dodgerblue 67%, #252555 100%);
-	background: -ms-linear-gradient(-45deg, dodgerblue 0%, dodgerblue 37%, #252555 37%, dodgerblue 49%, #252555 67%, dodgerblue 67%, #252555 100%);
-	background: linear-gradient(135deg, dodgerblue 0%, dodgerblue 37%, #252555 37%, dodgerblue 49%, #252555 67%, dodgerblue 67%, #252555 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='dodgerblue', endColorstr='#252555', GradientType=1 );
-	/* background: linear-gradient(-45deg,black 40%,dodgerblue 40% 70%, white 70% 100%); */
-	background-attachment: fixed;
+	background: radial-gradient(indigo 1%,black 99%);
 	color: #252555;
 	display: flex;
+	margin-top: 20vh;
 	justify-content: space-evenly;
 	text-align: center;
-	min-height: 70vh;
-	/* box-shadow: 
-	inset 0px 2px 3px 0px #2525,
-	inset 0px 4px 3px 0px orangered,
-	0px 2px 7px 1px #2f0000,
-	0px 4px 7px 3px #252525; */
+	min-height: 50vh;
+	width: 100%;
 }
 
-.adds h2, .adds h4{
-	font-size: 4vh;
-	word-spacing: 17px;
-	letter-spacing: 7px;
+.adds h2{
+	font-size: 7vh;
+	word-spacing: 7px;
+	letter-spacing: 2px;
 	color: white;
 	text-shadow: 2px 2px 2px #252525;
 }
@@ -447,43 +353,34 @@ aside::-webkit-scrollbar-thumb{
 	border: 2px solid white
 }
 
-
-
-/*------------------*/
 footer{
-	background: #252555;
-	min-height: 50vh;
+	background: linear-gradient(to top, indigo 1%,black 17%,#230343 99%);
+	min-height: 40vh;
 	color: white;
-	box-shadow: 
-	inset 0px 2px 3px 0px #2525,
-	inset 0px 4px 7px 0px black,
-	0px 2px 7px 1px #2f0000,
-	0px 4px 7px 3px #252525;
 }
 
 footer section{
+	padding-top: 10vh;
 	background: transparent;
 	margin: auto;
-	padding-top: 17vh;
 }
 
-footer section:hover{
-	border: none;
+footer article{
+	margin-top: 20px;
+	/* background: rgba(255,255,255,0.07); */
+	border-radius: 7px;
+	text-align: center;
+	padding: 20px;
+
 }
 
-footer section .footer{
+.footer{
 	justify-content: space-around;
+	font-size: 1.5vh;
 	padding: 40px;
 	display: flex;
 }
 
-footer section article{
-	background: rgba(255,255,255,0.2);
-	margin-top: 20px;
-	border-radius: 7px;
-	text-align: center;
-	padding: 20px;
-}
 
 footer section h2{
 	padding: 10px;
@@ -497,7 +394,7 @@ footer section h2{
 }
 
 footer p{
-	color: #7fffff;
+	color: white;
 	font-size: 12px;
 }
 
