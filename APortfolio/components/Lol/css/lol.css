@@ -14,7 +14,7 @@ body{
 }
 
 header{
-    background: url(../../../img/place/computer3.jpg), #fff;
+    background: url(../../../../img/place/computer3.jpg), linear-gradient(crimson,white);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

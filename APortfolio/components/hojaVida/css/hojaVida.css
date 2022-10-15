@@ -4,7 +4,7 @@
 }
 @font-face{
 	font-family: Merge;
-	src: url(../../../font/merge_light.otf);
+	src: url(../../../../font/merge_light.otf);
 }
 body{
 	background: #f1f1f1;
@@ -41,7 +41,7 @@ header a{
 header a:hover{
 	background: #252555;
 }
-/*-------------------*/
+
 main{
 	border-top: 20px solid dodgerblue;
 	background:#ffffff;
@@ -50,10 +50,8 @@ main{
 	width: 70%;
 	display: flex;
 	justify-content: space-between;
+	overflow: hidden;
 }
-
-/* ---------------------------- */
-
 
 .personalInformation{
 	border-top: 20px solid dodgerblue;
@@ -64,44 +62,38 @@ main{
 	width: 30%;
 }
 
-
-.generalInformation{
-	background:#ffffff;
-	color: black;
-	padding: 50px 7vw;
-	width: 70%;
-}
-
-/* ---------------------------- */
 .personalInformation div a{
 	color: blue !important;
 }
 
 .personalInformation div h5{
-	color: #c9c9ff;
+	white-space: normal;
+	Word-wrap: break-Word;
 }
 
 .personalInformation img{
-	width: 100%;
-	max-width: 270px;
-	height: 300px;
+	width: 20vw;
+	height: 34vh;
 	border-radius: 50%;
 	margin-bottom: 10vh;
 	margin-left: 1vw;
 }
 
-.generalInformation h2{
-	text-align: right;
+.generalInformation{
+	padding: 40px;
+}
+
+.generalInformation div h5{
+	white-space: normal;
+	Word-wrap: break-Word;
 }
 
 footer{
 	margin-top: 70px;
-	background: teal;
+	background: #252555;
 	padding: 20px 60px;
 	color: white;
 }
-
-/* ---------------- */
 
 @media(max-width:1200px){
 	body{
