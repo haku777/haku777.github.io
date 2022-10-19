@@ -12,7 +12,7 @@ let proyect3 = document.querySelector("#proyect3").addEventListener("mousemove",
     preview.innerHTML = `<img src="../../img/examples/parallax.PNG" alt="">`;
 });
 let proyect4 = document.querySelector("#proyect4").addEventListener("mousemove", function(){
-    preview.innerHTML = `<img src="../../img/srry.PNG" alt="">`;
+    preview.innerHTML = `<img src="../img/develop.jpg" alt="">`;
 });
 let proyect5 = document.querySelector("#proyect5").addEventListener("mousemove", function(){
     preview.innerHTML = `<img src="../../img/examples/weather.PNG" alt="">`;

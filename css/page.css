@@ -281,6 +281,10 @@ aside{
 	/* border-radius: 0px 5px 5px 0px; */
 }
 
+aside div{
+	filter: blur(2px);
+}
+
 aside h2{
 	text-align: center;
 }
