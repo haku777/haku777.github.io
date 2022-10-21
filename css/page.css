@@ -28,6 +28,7 @@ body{
 	background: #e9e9e9;
 	overflow-y: auto;
 	box-sizing: border-box;
+    scroll-behavior: smooth;
 	/* cursor: url('../img/'); */
 }
 
@@ -238,7 +239,7 @@ main{
 }
 
 main div .img{
-	background: url(../img/earth.jpg);
+	background: url(../img/utilities/earth.jpg);
 	height: 270px;
 	width: 270px;
 	float: left;
