@@ -359,7 +359,7 @@ aside::-webkit-scrollbar-thumb{
 }
 
 footer{
-	background: linear-gradient(to top, indigo 1%,black 17%,#230343 99%);
+	background: linear-gradient(to top, black 1%,#2e007d 17%,black 99%);
 	min-height: 40vh;
 	color: white;
 }
@@ -381,11 +381,14 @@ footer article{
 
 .footer{
 	justify-content: space-around;
-	font-size: 1.5vh;
+	font-size: 2vh;
 	padding: 40px;
 	display: flex;
 }
 
+footer article p{
+	font-size: 2vh;
+}
 
 footer section h2{
 	padding: 10px;
