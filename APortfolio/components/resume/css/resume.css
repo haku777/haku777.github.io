@@ -7,7 +7,7 @@
 	src: url(../../../../font/merge_light.otf);
 }
 body{
-	background: #f1f1f1;
+	background: #f7f7f7;
 	font-family: Merge,serif;
 	font-weight: lighter !important;
 	letter-spacing: 1px;
@@ -15,7 +15,7 @@ body{
 }
 
 header{
-	background: #252555;
+	background: #272777;
 	display: flex;
 	padding: 0px 20px;
 	text-align: center;
@@ -33,17 +33,17 @@ header h2{
 }
 header a{
 	text-decoration: none;
-	background: rgb(44,69,270);
+	background: crimson;
 	padding: 10px;
 	color:white;
 	transition-duration: 1s;
 }
 header a:hover{
-	background: #252555;
+	background: #272777;
 }
 
 main{
-	border-top: 20px solid dodgerblue;
+	border-top: 20px solid #272777;
 	background:#ffffff;
 	box-shadow: 0px 0px 3px gray;
 	margin: auto;
@@ -54,16 +54,14 @@ main{
 }
 
 .personalInformation{
-	border-top: 20px solid dodgerblue;
-	border-bottom: 70px solid dodgerblue;
+	background: #272777;
 	padding: 0vh 2vw;
-	background:dodgerblue;
 	color:white;
 	width: 30%;
 }
 
 .personalInformation div a{
-	color: blue !important;
+	color: crimson;
 }
 
 .personalInformation div h5{
@@ -90,7 +88,7 @@ main{
 
 footer{
 	margin-top: 70px;
-	background: #252555;
+	background: #272777;
 	padding: 20px 60px;
 	color: white;
 }

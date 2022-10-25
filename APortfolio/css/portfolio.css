@@ -271,6 +271,13 @@ section:nth-child(3) .container:after {
   overflow: hidden;
 }
 
+.preview:after {
+  background: lightgreen;
+  content: 'Preview';
+  width: 10px;
+  height: 10px;
+}
+
 .proyects a {
   text-decoration: none;
   text-align: left;
