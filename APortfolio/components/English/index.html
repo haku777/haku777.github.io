@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vocabulary</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>VOCABULARY</h1>
+        <fieldset>
+            <legend>
+                <code>Remember Words</code>
+            </legend>
+            <h2>These words change automatically every five seconds</h2>
+        </fieldset>
+    </header>
+    
+    <div class="wrapper">
+        <div class="main">
+            <div class="data">
+                <section>
+                    <article>
+                        <h3 id="id" hidden></h3>
+                        <h3 id="word">WORD</h3>
+                    </article>
+
+                    <article>
+                        <h3 id="definition">MEANING</h3>
+                    </article>
+                </section>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <u>CREATE BY HAKU BISHAMON</u>
+    </footer>
+</body>
+
+<script src="js/index.js"></script>
+<script>
+    
+    (() =>{ 
+        let Word = document.querySelector("#word");
+        let Meaning = document.querySelector("#definition");
+
+        fetch('database/english.json')
+        .then(response => response.json())
+        .then(data => Asignacion(data));
+
+        let Data = null;
+        let count = 0;
+
+        function Asignacion(data){
+            Data = data;
+            console.log(Data.Vocabulary.length);
+        }
+
+        function Intervalo(){
+            if (count < Data.Vocabulary.length){
+                    let word = Data.Vocabulary[count].word;
+                    Word.innerHTML = word;
+
+                    let meaning = Data.Vocabulary[count].meaning;
+                    Meaning.innerHTML = meaning;
+                    count++;
+                }else{
+                    count = 0;
+                }
+            }
+        const interval = setInterval(Intervalo,5000);
+    })(); 
+
+</script>
+</html>

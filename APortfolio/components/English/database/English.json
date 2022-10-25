@@ -1,0 +1,4348 @@
+{
+	"Vocabulary":[
+
+		{"word":"due ","meaning":" vencer (sobre la fecha )/ como caducado/previsto"},
+
+		{"word":"seek ","meaning":" buscar"},
+
+		{"word":"search ","meaning":"la busqueda"},
+
+		{"word":"Junk","meaning":"la chatarra/porqueria"},
+
+		{"word":"garbage","meaning":"la basura"},
+
+		{"word":"poor ","meaning":" pobre"},
+
+		{"word":"provide ","meaning":" proveer / aportar"},
+
+		{"word":"following ","meaning":" siguiente / proximo"},
+
+		{"word":"discuss ","meaning":" hablar de"},
+
+		{"word":"above ","meaning":" sobre / encima /arriba de"},
+
+		{"word":"bellow ","meaning":" debajo de"},
+
+		{"word":"beside ","meaning":" junto a/ al lado de"},
+
+		{"word":"setting ","meaning":" marco / ajuste/ establecer /arreglo "},
+
+		{"word":"hired ","meaning":" rentado / alquilado"},
+
+		{"word":"which ","meaning":" cual"},
+
+		{"word":"while ","meaning":" mietras"},
+
+		{"word":"hiring ","meaning":" contratacion"},
+
+		{"word":"peer ","meaning":" par / colega / su igual"},
+
+		{"word":"incivility ","meaning":" incivilidad"},
+
+		{"word":"each one of us ","meaning":" cada uno de nosotros"},
+
+		{"word":"sign ","meaning":" senal / indicion /presagio"},
+
+		{"word":"jerks ","meaning":" idiotas"},
+
+		{"word":"rot ","meaning":" purirse"},
+
+		{"word":"sight ","meaning":" vista /mira(mirilla)"},
+
+		{"word":"subject ","meaning":" tema (libro) / asignatura"},
+
+		{"word":"wide ","meaning":" amplio / ancho"},
+
+		{"word":"reason ","meaning":" razon / motivo"},
+
+		{"word":"cosntantly ","meaning":" constantemente"},
+
+		{"word":"development ","meaning":" progreso / desarrollo"},
+
+		{"word":"itself ","meaning":" en si / si mismo"},
+
+		{"word":"i got to know ","meaning":" llegue a conocer"},
+
+		{"word":"allies ","meaning":" aliados"},
+
+		{"word":"thought ","meaning":" idea / opinion / pensamiento"},
+
+		{"word":"although ","meaning":" aunque"},
+
+		{"word":"dominate ","meaning":" dominar"},
+
+		{"word":"PERKS ","meaning":" beneficios"},
+
+		{"word":"plateau ","meaning":" meseta"},
+
+		{"word":"laughable ","meaning":" ridiculo / absurdo"},
+
+		{"word":"instead ","meaning":" encambio"},
+
+		{"word":"Newsletter ","meaning":" boletin informativo/ noticias"},
+
+		{"word":"flat ","meaning":" plano"},
+
+		{"word":"flag ","meaning":" bandera"},
+
+		{"word":"whenever ","meaning":" cuando sea"},
+
+		{"word":"slaughter ","meaning":" sacrificio"},
+
+		{"word":"source ","meaning":" fuente"},
+
+		{"word":"robbed ","meaning":" robado"},
+
+		{"word":"peaceful ","meaning":" tranquilo / en paz / pacifico"},
+
+		{"word":"good / better / best ","meaning":" good / superlativos"},
+
+		{"word":"payment ","meaning":" pago"},
+
+		{"word":"whole ","meaning":" entero"},
+
+		{"word":"raw ","meaning":" crudo"},
+
+		{"word":"insolation ","meaning":" aislar / estar aislado"},
+
+		{"word":"stumble ","meaning":" tropezar / traspie"},
+
+		{"word":"belittling ","meaning":" menospreciar"},
+
+		{"word":"worthless ","meaning":" no vale la pena"},
+
+		{"word":"awarness ","meaning":" conciencia"},
+
+		{"word":"belong ","meaning":" pertenecer"},
+
+		{"word":"raise ","meaning":" levantar / subir"},
+
+		{"word":"charity ","meaning":" caridad"},
+
+		{"word":"fundraiser ","meaning":" recaudacion de fondos"},
+
+		{"word":"helpful ","meaning":" util"},
+
+		{"word":"defend ","meaning":" defender"},
+
+		{"word":"genre ","meaning":" genero musical"},
+
+		{"word":"idiom ","meaning":" modismo / dialecto"},
+
+		{"word":"curious ","meaning":" curioso"},
+
+		{"word":"hobbies ","meaning":" pasatiempos / aficiones"},
+
+		{"word":"10 days left ","meaning":" faltan 10 dias"},
+
+		{"word":"rectify ","meaning":" rectificar"},
+
+		{"word":"check again ","meaning":" volver a revisar"},
+
+		{"word":"relly ","meaning":" de verdad"},
+
+		{"word":"entire ","meaning":" entero"},
+
+		{"word":"as ","meaning":" como"},
+
+		{"word":"how ","meaning":" como?"},
+
+		{"word":"own ","meaning":" propio / de si mismo"},
+
+		{"word":"automatically (auromarikli) ","meaning":" automaticamnte"},
+
+		{"word":"site ","meaning":" lugar / sitio"},
+
+		{"word":"discuss ","meaning":" discutir"},
+
+		{"word":"blame ","meaning":" culpa"},
+
+		{"word":"fault ","meaning":" culpa"},
+
+		{"word":"get rid of ","meaning":" deshacerse de"},
+
+		{"word":"below ","meaning":" debajo / debajo de"},
+
+		{"word":"track ","meaning":" via / huella / pista"},
+
+		{"word":"Achieve ","meaning":" lograr / conseguir"},
+
+		{"word":"reference ","meaning":" fuente / mencion"},
+
+		{"word":"almost ","meaning":" casi"},
+
+		{"word":"entrance ","meaning":" entrada"},
+
+		{"word":"pleasant ","meaning":" placentero / agradable"},
+
+		{"word":"scuttle ","meaning":" escabullirse"},
+
+		{"word":"shuttle ","meaning":" lanzadera / transbordator"},
+
+		{"word":"struggle ","meaning":" prueba / lucha / costarle"},
+
+		{"word":"debris ","meaning":" restos / escombros"},
+
+		{"word":"garbage ","meaning":" basura"},
+
+		{"word":"surgeon ","meaning":" cirujano"},
+
+		{"word":"melt ","meaning":" derretirse"},
+
+		{"word":"head ","meaning":" cabeza / a la cabeza(liderando)"},
+
+		{"word":"lying ","meaning":" mentiroso / embustero"},
+
+		{"word":"chilly ","meaning":" frio/a  /helado/a"},
+
+		{"word":"dawn ","meaning":" alba / amanecer"},
+
+		{"word":"approach ","meaning":" acercarse / aproximarse"},
+
+		{"word":"loyal ","meaning":" leal / fiel"},
+
+		{"word":"beneath ","meaning":" debajo de"},
+
+		{"word":"frightening (fraining) ","meaning":" aterrador"},
+
+		{"word":"bring ","meaning":" levar / traer / mover / transportar"},
+
+		{"word":"mayor ","meaning":" gran / carrera , especializacion"},
+
+		{"word":"i guess so ","meaning":" supongo que si"},
+
+		{"word":"i hope so ","meaning":" eso espero"},
+
+		{"word":"truth ","meaning":" verdad (es verdad)"},
+
+		{"word":"forgiveness ","meaning":" perdon /disculpas"},
+
+		{"word":"darling ","meaning":" querido"},
+
+		{"word":"kindness ","meaning":" bondad / amabilidad"},
+
+		{"word":"gap ","meaning":" hueco / espacio / intervalo"},
+
+		{"word":"actually ","meaning":" en realidad"},
+
+		{"word":"currently ","meaning":" actualmete"},
+
+		{"word":"shelving ","meaning":" estanteria"},
+
+		{"word":"Bookshelf ","meaning":" estante para libros"},
+
+		{"word":"landscape ","meaning":" panorama / paisaje"},
+
+		{"word":"poplulate ","meaning":" poblar"},
+
+		{"word":"forward ","meaning":" adelante / hacia adelante"},
+
+		{"word":"drafts ","meaning":" borradores"},
+
+		{"word":"shies ","meaning":" timido"},
+
+		{"word":"hold down ","meaning":" sostener"},
+
+		{"word":"harbor ","meaning":" puerto"},
+
+		{"word":"wonders ","meaning":" maravillas"},
+
+		{"word":"override(overide) ","meaning":" anular / invalidar"},
+
+		{"word":"overwrite(overit) ","meaning":" sobrescribir"},
+
+		{"word":"facts ","meaning":" hechos / ya acontecidos / o es una realidad"},
+
+		{"word":"done ","meaning":" hecho / terminado / concluido"},
+
+		{"word":"reef ","meaning":" arrecife de coral"},
+
+		{"word":"above ","meaning":" sobre / encima"},
+
+		{"word":"below ","meaning":" abajo / por debajo"},
+
+		{"word":"fair ","meaning":" justo / equitativo"},
+
+		{"word":"someone else ","meaning":" alguien mas"},
+
+		{"word":"recognize ","meaning":" reconocer"},
+
+		{"word":"miracle ","meaning":" milagro"},
+
+		{"word":"perhaps ","meaning":" quizas / tal vez"},
+
+		{"word":"assessment ","meaning":" evaluacion /valoracion"},
+
+		{"word":"climb  ","meaning":" subir / escalar"},
+
+		{"word":"get ","meaning":" optener"},
+
+		{"word":"get a job ","meaning":" consigue un trabajo"},
+
+		{"word":"get into a shape ","meaning":" estar en forma"},
+
+		{"word":"award ","meaning":" otorgar"},
+
+		{"word":"goning ","meaning":" van"},
+
+		{"word":"tone ","meaning":" tono"},
+
+		{"word":"daytime ","meaning":" tiempo de luz / dia"},
+
+		{"word":"rafting ","meaning":" canotaje"},
+
+		{"word":"staring at you ","meaning":" mirandote"},
+
+		{"word":"since ","meaning":" desde"},
+
+		{"word":"until ","meaning":" hasta"},
+
+		{"word":"salied ","meaning":" salado"},
+
+		{"word":"teenage ","meaning":" adolecente"},
+
+		{"word":"wimp ","meaning":" flojo / debil"},
+
+		{"word":"scope ","meaning":" alcance"},
+
+		{"word":"stainless steel ","meaning":" acero inoxidable"},
+
+		{"word":"sea level ","meaning":" nivel del mar"},
+
+		{"word":"surrounds ","meaning":" rodea (alrededor)"},
+
+		{"word":"wide ","meaning":" amplio"},
+
+		{"word":"properly ","meaning":" correctamente"},
+
+		{"word":"withdraw ","meaning":" retirarse / irse de"},
+
+		{"word":"withdrawls ","meaning":" retiros"},
+
+		{"word":"badge ","meaning":" insignia"},
+
+		{"word":"Trench ","meaning":" zanja / trinchera"},
+
+		{"word":"entire ","meaning":" entero / todo"},
+
+		{"word":"roadmap ","meaning":" mapa de ruta"},
+
+		{"word":"features ","meaning":" caracteristicas"},
+
+		{"word":"own ","meaning":" propio / de si mismo"},
+
+		{"word":"surface ","meaning":" superficie/ exterior"},
+
+		{"word":"reazon ","meaning":" razon"},
+
+		{"word":"temeperatures ","meaning":" temperaturas"},
+
+		{"word":"heat ","meaning":" calor"},
+
+		{"word":"released ","meaning":" liberados"},
+
+		{"word":"handle ","meaning":" soportar"},
+
+		{"word":"shrinking ","meaning":" reduciendo"},
+
+		{"word":"reefs ","meaning":" arrecifes"},
+
+		{"word":"rise ","meaning":" incremento"},
+
+		{"word":"land ","meaning":" tierra"},
+
+		{"word":"greenhouse ","meaning":" efecto invernadero"},
+
+		{"word":"confront ","meaning":" enfrentar / afrontar"},
+
+		{"word":"growth ","meaning":" crecimiento"},
+
+		{"word":"bringing down ","meaning":" acabando"},
+
+		{"word":"threat ","meaning":" amenaza"},
+
+		{"word":"grow ","meaning":" crecer"},
+
+		{"word":"growth ","meaning":" crecimiento"},
+
+		{"word":"grandchildren"},
+
+		{"word":"save ","meaning":" salvar / rescatar / ahorrar"},
+
+		{"word":"keep ","meaning":" guardar"},
+
+		{"word":"hope ","meaning":" esperar que"},
+
+		{"word":"avoid ","meaning":" esquivar / evitar"},
+
+		{"word":"guest ","meaning":" huesped/visita /invitado"},
+
+		{"word":"performance ","meaning":" presentacion/ desempeno"},
+
+		{"word":"acquired ","meaning":" adquirido"},
+
+		{"word":"snoring ","meaning":" ronkidos"},
+
+		{"word":"since ","meaning":" desde"},
+
+		{"word":"even ","meaning":" aun / todavia/ hasta"},
+
+		{"word":"risk ","meaning":" riesgo / exponer"},
+
+		{"word":"good enought"},
+
+		{"word":"rest ","meaning":" descanso"},
+
+		{"word":"mood ","meaning":" humor / estado de animo"},
+
+		{"word":"dizzy ","meaning":" mareado"},
+
+		{"word":"drowsy ","meaning":" sonoliento"},
+
+		{"word":"fizz ","meaning":" burbuja"},
+
+		{"word":"bless you ","meaning":" salud (despues de un estornudo)"},
+
+		{"word":"depends on ","meaning":" depende de"},
+
+		{"word":"hauled ","meaning":" arrastrar"},
+
+		{"word":"jug ","meaning":" jarra"},
+
+		{"word":"painkiller ","meaning":" nalgesico / calmante"},
+
+		{"word":"ailment ","meaning":" enfermedad"},
+
+		{"word":"leaf ","meaning":" hoja de arbol"},
+
+		{"word":"drop ","meaning":" gota (de agua puede ser)"},
+
+		{"word":"bones ","meaning":" huesos"},
+
+		{"word":"graveyard ","meaning":" cementerio"},
+
+		{"word":"shift ","meaning":" mover / turno"},
+
+		{"word":"on top me ","meaning":" sobre me"},
+
+		{"word":"couple ","meaning":" par / pareja"},
+
+		{"word":"leisure ","meaning":" ocio"},
+
+		{"word":"pleasure ","meaning":" palcer"},
+
+		{"word":"de-stress ","meaning":" desestresarse"},
+
+		{"word":"took ","meaning":" tomo (pasado de take)"},
+
+		{"word":"otherwise ","meaning":" de otra manera / de lo contrario"},
+
+		{"word":"fool ","meaning":" tonto"},
+
+		{"word":"fan ","meaning":" administrador"},
+
+		{"word":"effort ","meaning":" esfuerzo"},
+
+		{"word":"whole ","meaning":" entero"},
+
+		{"word":"manually ","meaning":" manualmente"},
+
+		{"word":"wireless ","meaning":" inalambrico"},
+
+		{"word":"enterprise  ","meaning":" iniciativa"},
+
+		{"word":"company ","meaning":" empresa"},
+
+		{"word":"sails ","meaning":" vela/ navegar"},
+
+		{"word":"sail ","meaning":" navegar"},
+
+		{"word":"harbors ","meaning":" puertos"},
+
+		{"word":"baloon ","meaning":" globo"},
+
+		{"word":"nonstop ","meaning":" constante"},
+
+		{"word":"avoid ","meaning":" evitar"},
+
+		{"word":"Wildlife ","meaning":" fauna silvestre"},
+
+		{"word":"bother ","meaning":" molestar"},
+
+		{"word":"depth ","meaning":" profundidad"},
+
+		{"word":"land ","meaning":" tierra"},
+
+		{"word":"Although ","meaning":" a pesar de queda"},
+
+		{"word":"worm ","meaning":" gusano"},
+
+		{"word":"host ","meaning":" anfitrion"},
+
+		{"word":"being ","meaning":" siendo(hoy no siempre)"},
+
+		{"word":"sled ","meaning":" trineo"},
+
+		{"word":"ranger ","meaning":" guardabosques"},
+
+		{"word":"even ","meaning":" incluso"},
+
+		{"word":"willing ","meaning":" dispuesto"},
+
+		{"word":"handle ","meaning":" resover / manejar"},
+
+		{"word":"beings ","meaning":" seres"},
+
+		{"word":"common ","meaning":" comun"},
+
+		{"word":"suffer ","meaning":" sufrir"},
+
+		{"word":"wonder ","meaning":" preguntarse"},
+
+		{"word":"we're ","meaning":" nosotros somos"},
+
+		{"word":"hopefully ","meaning":" con suerte / ojala / optimismo"},
+
+		{"word":"statements ","meaning":" declaraciones / afirmaciones"},
+
+		{"word":"further ","meaning":" mas lejos"},
+
+		{"word":"investing ","meaning":" invertir"},
+
+		{"word":"soak ","meaning":" remojar / mojar"},
+
+		{"word":"were ","meaning":"(estar)pasado de: we,you,they"},
+
+		{"word":"ware ","meaning":" mercancia"},
+
+		{"word":"wedding ","meaning":" boda"},
+
+		{"word":"fifth ","meaning":" quinto"},
+
+		{"word":"dove ","meaning":" paloma / pacifista"},
+
+		{"word":"sons ","meaning":" hijo"},
+
+		{"word":"uncle ","meaning":" tio"},
+
+		{"word":"aunt tia"},
+
+		{"word":"cousin ","meaning":" primo"},
+
+		{"word":"nephes ","meaning":" sobrinos"},
+
+		{"word":"niece ","meaning":" sobrina"},
+
+		{"word":"oldersister ","meaning":" hermana mayor"},
+
+		{"word":"would ","meaning":" podria / iria"},
+
+		{"word":"preset ","meaning":" prestablecido"},
+
+		{"word":"hug ","meaning":" abrazar"},
+
+		{"word":"bold ","meaning":" valiente / audaz"},
+
+		{"word":"dude ","meaning":" bro"},
+
+		{"word":"upon ","meaning":" sobre / luego de/tras"},
+
+		{"word":"waterfall ","meaning":" cascada"},
+
+		{"word":"noisy ","meaning":" ruidoso/ escandaloso"},
+
+		{"word":"right now ","meaning":" en este momento"},
+
+		{"word":"doubt ","meaning":" duda"},
+
+		{"word":"wish ","meaning":" deseo"},
+
+		{"word":"themselves ","meaning":" si mismos / ellos mismos"},
+
+		{"word":"worst ","meaning":" el peor"},
+
+		{"word":"vow ","meaning":" juramento / promesa"},
+
+		{"word":"bond ","meaning":" lazo / vinculo / atadura"},
+
+		{"word":"wonder ","meaning":" preguntarse/ querer saber"},
+
+		{"word":"coach ","meaning":" entrenador"},
+
+		{"word":"mess ","meaning":" desorden"},
+
+		{"word":"it dont work ","meaning":" no funciona"},
+
+		{"word":"contempt ","meaning":" desprecio / desden"},
+
+		{"word":"content ","meaning":" contenido / contento (depende del contexto)"},
+
+		{"word":"Recently ","meaning":" recientemente"},
+
+		{"word":"niece ","meaning":" sobrina"},
+
+		{"word":"quite ","meaning":" bastante"},
+
+		{"word":"Attempt ","meaning":" intentar"},
+
+		{"word":"i guess ","meaning":" creo"},
+
+		{"word":"i hope ","meaning":" espero"},
+
+		{"word":"well done ","meaning":" bien hecho"},
+
+		{"word":"done ","meaning":" hecho / realizado"},
+
+		{"word":"buddy ","meaning":" colega / cuate"},
+
+		{"word":"trends ","meaning":" tendencias"},
+
+		{"word":"meat ","meaning":" carne"},
+
+		{"word":"leading ","meaning":" principal"},
+
+		{"word":"sourdought ","meaning":" de masa fermentada"},
+
+		{"word":"4 of you ","meaning":" cuatro de ustedes"},
+
+		{"word":"middlewares ","meaning":" programas intermedios"},
+
+		{"word":"films ","meaning":" peliculas"},
+
+		{"word":"jungle ","meaning":" selva"},
+
+		{"word":"trend ","meaning":" tendencia"},
+
+		{"word":"jolt ","meaning":" sacudida/ golpe"},
+
+		{"word":"to jolt ","meaning":" sacudir / unir"},
+
+		{"word":"contempt ","meaning":" desprecio / desden"},
+
+		{"word":"temper ","meaning":" temperamento"},
+
+		{"word":"whole ","meaning":" entero"},
+
+		{"word":"until ","meaning":" hasta / hasta que"},
+
+		{"word":"payment ","meaning":" pago"},
+
+		{"word":"odd ","meaning":" impar/ sin pareja"},
+
+		{"word":"mistress ","meaning":" amante"},
+
+		{"word":"worthless ","meaning":" sin valor / inutil"},
+
+		{"word":"struggle ","meaning":" prueba/ lucha /costarle"},
+
+		{"word":"bull's-eye ","meaning":" diana "},
+
+		{"word":"tame ","meaning":" domesticado/ aburrido/soso"},
+
+		{"word":"shatter ","meaning":" hacerse anicos/destruir"},
+
+		{"word":"grim reaper ","meaning":" parca"},
+
+		{"word":"nasty ","meaning":" asqueroso"},
+
+		{"word":"getting ","meaning":" consiguiendo"},
+
+		{"word":"relationship ","meaning":" relacion"},
+
+		{"word":"out of confort ","meaning":" fuera de control"},
+
+		{"word":"habits ","meaning":" habitos"},
+
+		{"word":"bruise ","meaning":" moreton"},
+
+		{"word":"bruiser ","meaning":" maton"},
+
+		{"word":"sadness ","meaning":" tristeza"},
+
+		{"word":"tackling ","meaning":" equipo"},
+
+		{"word":"clouds ","meaning":" nube/ mata / sombra"},
+
+		{"word":"blade ","meaning":" culpar alguien"},
+
+		{"word":"farther ","meaning":" lejos de"},
+
+		{"word":"catch ","meaning":" atrapar"},
+
+		{"word":"reward ","meaning":" recompensar / premio"},
+
+		{"word":"keep in mind ","meaning":" tener en cuenta"},
+
+		{"word":"achivement ","meaning":" logro/ azana"},
+
+		{"word":"achieving ","meaning":" lograr / conseguir"},
+
+		{"word":"perhaps ","meaning":" quizas / talvez"},
+
+		{"word":"other hand ","meaning":" por otro lado"},
+
+		{"word":"furthermore ","meaning":" es mas/ ademas"},
+
+		{"word":"attempt ","meaning":" intentar / tratar de"},
+
+		{"word":"awarded ","meaning":" premio / galardon"},
+
+		{"word":"avenue ","meaning":" avenida"},
+
+		{"word":"queue ","meaning":" fila / cola"},
+
+		{"word":"advance ","meaning":" avanzar / promover"},
+
+		{"word":"overflow ","meaning":" resbalar / derramarse/ desbordar "},
+
+		{"word":"flooding ","meaning":" inundacion"},
+
+		{"word":"birth ","meaning":" nacimiento"},
+
+		{"word":"dumb ","meaning":" mudo "},
+
+		{"word":"acera ","meaning":" path"},
+
+		{"word":"deft ","meaning":" habil / diestro"},
+
+		{"word":"blind ","meaning":" ciego"},
+
+		{"word":"humor ","meaning":" humor"},
+
+		{"word":"mood ","meaning":" estado de animo"},
+
+		{"word":"lack ","meaning":" falta / estacasez"},
+
+		{"word":"eyelid ","meaning":" parpado "},
+
+		{"word":"ecuation ","meaning":" ecuacion"},
+
+		{"word":"fisic sientific ","meaning":" fisical sientifico"},
+
+		{"word":"stuff ","meaning":" cosas"},
+
+		{"word":"disabled ","meaning":" discapacitado "},
+
+		{"word":"invalid ","meaning":" invalido(o sea que no permitido)"},
+
+		{"word":"worse ","meaning":" peor"},
+
+		{"word":"somewhat ","meaning":" en cieto modo/ de alguna manera"},
+
+		{"word":"unlucky ","meaning":" desafortunado"},
+
+		{"word":"sense ","meaning":" sentido / juicio"},
+
+		{"word":"creepy ","meaning":" siniestro"},
+
+		{"word":"how ever ","meaning":" sin embargo"},
+
+		{"word":"did you just ","meaning":" acabas de..."},
+
+		{"word":"i gotta go ","meaning":" me tengo que ir"},
+
+		{"word":"sudden ","meaning":" repentino"},
+
+		{"word":"allowance ","meaning":" tolerancia"},
+
+		{"word":"i wonder ","meaning":" me pregunto (si tal cosa)"},
+
+		{"word":"have fun ","meaning":" que te diviertas"},
+
+		{"word":"weird ","meaning":" extrano (de sentirse extrano)"},
+
+		{"word":"stayed up ","meaning":" quedado despierto"},
+
+		{"word":"shame ","meaning":" verguenza"},
+
+		{"word":"shall ","meaning":" debera (deberia)"},
+
+		{"word":"curfew ","meaning":" toque de queda"},
+
+		{"word":"kinda ","meaning":" un tanto"},
+
+		{"word":"something just came up ","meaning":" acaba de surjir algo"},
+
+		{"word":"came up ","meaning":" surjir / presentarse algo "},
+
+		{"word":"odd ","meaning":" extrano (que raro)"},
+
+		{"word":"its annoying ","meaning":" es molesto"},
+
+		{"word":"mind if i come over ","meaning":" importa si voy?"},
+
+		{"word":"mess ","meaning":" desorden"},
+
+		{"word":"glance ","meaning":" vistazo"},
+
+		{"word":"slip ","meaning":" deslizar"},
+
+		{"word":"lean ","meaning":" inclinarse"},
+
+		{"word":"pills ","meaning":" pastillas"},
+
+		{"word":"fondle ","meaning":" acariciar"},
+
+		{"word":"flinch ","meaning":" retroceder"},
+
+		{"word":"slurp ","meaning":" sorber"},
+
+		{"word":"suck ","meaning":" chupar"},
+
+		{"word":"moaning ","meaning":" gimiendo"},
+
+		{"word":"soaking ","meaning":" remojo"},
+
+		{"word":"soaking wet ","meaning":" empapado"},
+
+		{"word":"huff ","meaning":" suspiro"},
+
+		{"word":"drip ","meaning":" goteo"},
+
+		{"word":"hall ","meaning":" salon"},
+
+		{"word":"footage ","meaning":" metraje"},
+
+		{"word":"tape ","meaning":" cinta"},
+
+		{"word":"chart ","meaning":" grafica"},
+
+		{"word":"memory ","meaning":" recuerdo"},
+
+		{"word":"unfortunately ","meaning":" lamentablemente/ desafortunadamente"},
+
+		{"word":"maybe it matters ","meaning":" cacaso importa"},
+
+		{"word":"pride ","meaning":" orgullo / amor propio"},
+
+		{"word":"awkward ","meaning":" incomodo"},
+
+		{"word":"by de way ","meaning":" de paso ( tal cosa)"},
+
+		{"word":"sigh ","meaning":" suspiro"},
+
+		{"word":"taught ","meaning":" enseno(ensenar profesor)"},
+
+		{"word":"chitter ","meaning":" chillido"},
+
+		{"word":"chatter ","meaning":" charla"},
+
+		{"word":"rub ","meaning":" frotar"},
+
+		{"word":"sort of ","meaning":" algo asi como..."},
+
+		{"word":"you suck ","meaning":" eres un inutil"},
+
+		{"word":"pissed ","meaning":" molesto / (te ves molesto)"},
+
+		{"word":"creak ","meaning":" crujir"},
+
+		{"word":"dude ","meaning":" amigo / entre amigos"},
+
+		{"word":"startled ","meaning":" sorprendido"},
+
+		{"word":"that was out of nowhere ","meaning":" eso fue de la nada"},
+
+		{"word":"clench ","meaning":" apretar"},
+
+		{"word":"giggle ","meaning":" risilla"},
+
+		{"word":"where were you ","meaning":" donde estabas"},
+
+		{"word":"you hate each other ","meaning":" se odian"},
+
+		{"word":"shouting  ","meaning":" gritando"},
+
+		{"word":"glad ","meaning":" contento"},
+
+		{"word":"weird taste ","meaning":" sabor extrano"},
+
+		{"word":"grab ","meaning":" tomar / beber"},
+
+		{"word":"stare ","meaning":" mirar fijamente"},
+
+		{"word":"felt ","meaning":" sintio"},
+
+		{"word":"met ","meaning":" reunio (pasado)"},
+
+		{"word":"dangle ","meaning":" colgar (como una )"},
+
+		{"word":"afraid ","meaning":" tener miedo / asustado"},
+
+		{"word":"freedom ","meaning":" libertad"},
+
+		{"word":"against ","meaning":" encontra / estar en contra"},
+
+		{"word":"slot ","meaning":" ranura / tragaperras"},
+
+		{"word":"divide ","meaning":" dividir / separar"},
+
+		{"word":"dodge ","meaning":" esquivar / evitar (finta /accion)"},
+
+		{"word":"avoid ","meaning":" esquivar / evitar"},
+
+		{"word":"void ","meaning":" nulo / sin validez"},
+
+		{"word":"single ","meaning":" uno solo / soltero"},
+
+		{"word":"measure ","meaning":" medir / calibrar"},
+
+		{"word":"summon ","meaning":" citar a / convocar a / llamando"},
+
+		{"word":"Sprinter ","meaning":" velocista"},
+
+		{"word":"caress ","meaning":" acariciar"},
+
+		{"word":"peak ","meaning":" cima / cumbre"},
+
+		{"word":"dust ","meaning":" polvo"},
+
+		{"word":"cloud ","meaning":" nube"},
+
+		{"word":"went ","meaning":" irse / partir"},
+
+		{"word":"huge ","meaning":" enorme / jigante"},
+
+		{"word":"depth ","meaning":" profundidad"},
+
+		{"word":"its got some ","meaning":" tiene algo"},
+
+		{"word":"fishy ","meaning":" sospechoso"},
+
+		{"word":"grasp ","meaning":" soplido / sujetar"},
+
+		{"word":"naming ","meaning":" nombre / llamarse "},
+
+		{"word":"feet ","meaning":" pie"},
+
+		{"word":"feed ","meaning":" alimentar a"},
+
+		{"word":"delay ","meaning":" retrasar / demorar"},
+
+		{"word":"swagger ","meaning":" arrogancia"},
+
+		{"word":"truth ","meaning":" verdad  / hecho real"},
+
+		{"word":"trust ","meaning":" confiar"},
+
+		{"word":"praud ","meaning":" orgulloso"},
+
+		{"word":"wealthy ","meaning":" acaudalado / adinerado"},
+
+		{"word":"agency ","meaning":" agencia / voluntad"},
+
+		{"word":"seek ","meaning":" buscar"},
+
+		{"word":"deprive ","meaning":" privar a alguien de"},
+
+		{"word":"shrouded ","meaning":" envuelto"},
+
+		{"word":"whereabouts ","meaning":" localizacion"},
+
+		{"word":"span ","meaning":" abarcar"},
+
+		{"word":"untangle ","meaning":" densredar"},
+
+		{"word":"garner ","meaning":" consegir"},
+
+		{"word":"painstakinly ","meaning":" meticulosamente/ cuidadosamente"},
+
+		{"word":"defiance ","meaning":" resistencia"},
+
+		{"word":"defiance ","meaning":" desfio"},
+
+		{"word":"perhaps ","meaning":" quizas / tal vez"},
+
+		{"word":"boldness ","meaning":" audacia / valentia"},
+
+		{"word":"freedom ","meaning":" libertad"},
+
+		{"word":"spam ","meaning":" correo basura"},
+
+		{"word":"topic","meaning":"tema"},
+
+		{"word":"before","meaning":"antes"},
+
+		{"word":"after","meaning":"despues"},
+
+		{"word":"there is","meaning":"hay (plural)"},
+
+		{"word":"there are","meaning":"singular"},
+
+		{"word":"raw","meaning":"crudo"},
+
+		{"word":"when i was a child","meaning":"cuando era nino"},
+
+		{"word":"take care","meaning":"cuidate"},
+
+		{"word":"few","meaning":"poco"},
+
+		{"word":"find out","meaning":"descubrir"},
+
+		{"word":"forget","meaning":"olvidar"},
+		
+		{"word":"forgive","meaning":"perdonar"},
+
+		{"word":"fork","meaning":"tenedores"}, 
+		
+		{"word":"garbage","meaning":"basura"},
+		
+		{"word":"gets better","meaning":"mejora"},
+		
+		{"word":"improvement","meaning":"mejora"},
+
+		{"word":"i agree","meaning":"estoy de acuedo"},
+
+		{"word":"behaviors","meaning":"comportamientos"},
+		
+		{"word":"I have a cough","meaning":"tengo tos"}, 
+
+		{"word":"relationship","meaning":"relacion"},
+
+		{"word":"goals","meaning":"metas"},
+
+		{"word":"peak","meaning":"cima"},
+
+		{"word":"reword","meaning":"reescribir"},
+
+		{"word":"share","meaning":"compartir"},
+
+		{"word":"rruins","meaning":"ruina"},
+
+		{"word":"habits","meaning":"habitos"},
+
+		{"word":"there","meaning":"ahi"},
+
+		{"word":"over there","meaning":"por ahi"},
+
+		{"word":"a long time ago","meaning":"hace mucho tiempo"},
+
+		{"word":"cover everithin","meaning":"cubrir todo"},
+
+		{"word":"most be","meaning":"deben ser"},
+
+		{"word":"how cares","meaning":"como se preocupa"},
+
+		{"word":"hold on","meaning":"espera"},
+
+		{"word":"i got it","meaning":"lo tengo"},
+
+		{"word":"since i wake up","meaning":"desde que melevanto"},
+
+		{"word":"paragraph","meaning":"parrafo"},
+
+		{"word":"i dont now","meaning":"no se"},
+
+		{"word":"I will be grateful to you","meaning":"estaré agradecido contigo"},
+
+		{"word":"trought","meaning":"atravesar"},
+
+		{"word":"groceries","meaning":"comestibles"},
+
+		{"word":"twice","meaning":"dos veces"},
+
+		{"word":"stuff","meaning":"cosas"},
+
+		{"word":"word","meaning":"palabra"},
+
+		{"word":"sentence","meaning":"oracion"},
+
+		{"word":"paragraph","meaning":"parrafo"},
+
+		{"word":"staff","meaning":"personal"},
+		
+		{"word":"stuff","meaning":"cosas"},
+
+		{"word":"particular","meaning":"especial"},
+		
+		{"word":"exclusive","meaning":"esclusivo"},
+		
+		{"word":"army","meaning":"ejercito"},
+
+		{"word":"once own","meaning":"Propio (igualdad, referente a su entorno)"},
+
+		{"word":"my onw army","meaning":"mi propio ejercito"},
+		
+		{"word":"scrumptious","meaning":"de chuparse los dedos"},
+
+		{"word":"exhausted","meaning":"exahusto"},
+
+		{"word":"still","meaning":"todavia"},
+
+		{"word":"i still working","meaning":"sigo trabajando"},
+
+		{"word":"dumbass","meaning":"idiota"},
+
+		{"word":"fuckwit","meaning":"idiota"},
+
+		{"word":"insane","meaning":"loco / loca"},
+
+		{"word":"concern","meaning":"preocuparse"}, 
+
+		{"word":"yourself","meaning":"si mismo"},
+
+		{"word":"cunt","meaning":"coño"},
+
+		{"word":"i have my ways","meaning":"tengo mis maneras"},
+
+		{"word":"you implied it goose fucker","meaning":"lo insinuo(pasado) cabron"},
+
+		{"word":"kinky","meaning":"rizado"},
+
+		{"word":"much better","meaning":"mucho mejor"},
+
+		{"word":"but not all at the same time","meaning":"pero no todos al tiempo"},
+
+		{"word":"Ourselves","meaning":"nosotros mismos"},
+
+		{"word":"over weight","meaning":"sobrepeso"},
+
+		{"word":"even more","meaning":"aun mas"},
+
+		{"word":"day work","meaning":"dia de trabajo"},
+
+		{"word":"ride bike","meaning":"montar bicicleta"},
+
+		{"word":"windy","meaning":"ventoso"},
+
+		{"word":"weader","meaning":"clima"},
+
+		{"word":"town","meaning":"pueblo"},
+
+		{"word":"children","meaning":"nino"},
+
+		{"word":"asembly","meaning":"(asamblea - montaje)"},
+
+		{"word":"evil mine","meaning":"mente malvada"},
+
+		{"word":"genetyc","meaning":"genetica"},
+
+		{"word":"junk","meaning":"basura"},
+
+		{"word":"twice","meaning":"dos"},
+
+		{"word":"twin","meaning":"mellizo"},
+
+		{"word":"thing","meaning":"cosa"},
+
+		{"word":"mad","meaning":"enojado"},
+
+		{"word":"also","meaning":"tambien"},
+
+		{"word":"illness","meaning":"enfermedad"},
+
+		{"word":"diseases","meaning":"enfermedades (desis)"},
+
+		{"word":"cell","meaning":"celula"},
+
+		{"word":"few","meaning":"poco"},
+
+		{"word":"cause","meaning":"causa / cause del rio"},
+
+		{"word":"pumpkins","meaning":"calabazas"},
+
+		{"word":"skate","meaning":"patinar"},
+
+		{"word":"scate","meaning":"escala"},
+
+		{"word":"so","meaning":"asi que"},
+
+		{"word":"almost","meaning":"casi"},
+
+		{"word":"to size","meaning":"medir"},
+
+		{"word":"feet","meaning":"pie"},
+
+		{"word":"flip flops","meaning":"chanclas"},
+
+		{"word":"crops","meaning":"cultivos"},
+		
+		{"word":"cosecha","meaning":"harvest"},
+
+		{"word":"cards","meaning":"tarjetas"},
+
+		{"word":"meat","meaning":"carne"},
+
+		{"word":"bread","meaning":"pan"},
+
+		{"word":"heater","meaning":"calentador"},
+
+		{"word":"tied","meaning":"atado"},
+
+		{"word":"roots","meaning":"raíces"},
+
+		{"word":"wealt lies","meaning":"mentiras ricas"},
+
+		{"word":"heritage","meaning":"herencia"},
+
+		{"word":"settlers","meaning":"colonos"},
+
+		{"word":"seeking","meaning":"buscando"},
+
+		{"word":"send","meaning":"enviar"},
+
+		{"word":"sent","meaning":"enviado"},
+
+		{"word":"shipping","meaning":"Envío"},
+
+		{"word":"chill","meaning":"enfriar"},
+		
+		{"word":"poppies","meaning":"amapolas"},
+		
+		{"word":"spike","meaning":"pico"},
+		
+		{"word":"misunderstanding","meaning":"malentendido"},
+		
+		{"word":"fooling","meaning":"engañando"},
+		
+		{"word":"suddenly","meaning":"de repente"},
+		
+		{"word":"swear","meaning":"jurar"},
+		
+		{"word":"retreat","meaning":"retirada"},
+		
+		{"word":"guts","meaning":"vísceras"},
+		
+		{"word":"wobble","meaning":"tambalearse"},
+		
+		{"word":"mess","meaning":"desorden"},
+		
+		{"word":"huge","meaning":"enorme"},
+		
+		{"word":"weird","meaning":"extraño"},
+		
+		{"word":"trash","meaning":"basura"},
+		
+		{"word":"melting","meaning":"derritiendo"},
+		
+		{"word":"snobby","meaning":"snob"},
+		
+		{"word":"tease","meaning":"fastidiar"},
+		
+		{"word":"anyway","meaning":"de todos modos"},
+		
+		{"word":"bucks","meaning":"dólares"},
+		
+		{"word":"care","meaning":"cuidado"},
+		
+		{"word":"bump","meaning":"bulto"},
+		
+		{"word":"waste","meaning":"desperdicio"},
+		
+		{"word":"peck","meaning":"picotear"},
+		
+		{"word":"tongue","meaning":"lengua"},
+		
+		{"word":"despise","meaning":"despreciar"},
+		
+		{"word":"against","meaning":"contra"},
+		
+		{"word":"tease","meaning":"fastidiar"},
+		
+		{"word":"screw","meaning":"tornillo"},
+		
+		{"word":"spurt","meaning":"esfuerzo supremo"},
+		
+		{"word":"son","meaning":"hijo"},
+		
+		{"word":"bulge","meaning":"bulto"},
+		
+		{"word":"shake","meaning":"sacudir"},
+		
+		{"word":"stunning","meaning":"impresionante"},
+		
+		{"word":"flop","meaning":"fracaso"},
+		
+		{"word":"coke","meaning":"Coca"},
+		
+		{"word":"bothering","meaning":"molesto"},
+		
+		{"word":"hiding","meaning":"ocultación"},
+		
+		{"word":"bow","meaning":"arco"},
+		
+		{"word":"slip","meaning":"deslizar"},
+		
+		{"word":"flinch","meaning":"retroceder"},
+		
+		{"word":"stomp","meaning":"pisar muy fuerte"},
+
+		{"word":"half","meaning":"mitad"},
+		
+		{"word":"glimpse","meaning":"vistazo"},
+		
+		{"word":"annoyed","meaning":"molesto"},
+		
+		{"word":"snap","meaning":"siesta"},
+		
+		{"word":"fwop","meaning":"fwop"},
+		
+		{"word":"gasp","meaning":"jadear"},
+		
+		{"word":"sneak","meaning":"furtivo"},
+		
+		{"word":"dash","meaning":"estrellarse"},
+		
+		{"word":"snatch","meaning":"arrebatar"},
+		
+		{"word":"hold","meaning":"mantener"},
+		
+		{"word":"nap","meaning":"siesta"},
+		
+		{"word":"onto","meaning":"sobre"},
+		
+		{"word":"fondle","meaning":"acariciar"},
+		
+		{"word":"grabbed","meaning":"agarró"},
+		
+		{"word":"trained","meaning":"entrenado"},
+		
+		{"word":"rub","meaning":"frotar"},
+		
+		{"word":"slippery","meaning":"resbaladizo"},
+		
+		{"word":"sticky","meaning":"pegajoso"},
+		
+		{"word":"glare","meaning":"destello"},
+		
+		{"word":"drop","meaning":"soltar"},
+		
+		{"word":"sake","meaning":"motivo"},
+		
+		{"word":"weird","meaning":"extraño"},
+		
+		{"word":"tisk","meaning":"tisk"},
+		
+		{"word":"pull","meaning":"jalar"},
+		
+		{"word":"grin","meaning":"sonrisa"},
+		
+		{"word":"fuckstard","meaning":"cabrón"},
+
+		{"word":"fought","meaning":"luchado"},
+		
+		{"word":"either","meaning":"o (esto o aquello)"},
+
+		{"word":"neither","meaning":"ni (ni esto ni aquello)/ forma negativa de either"},
+		
+		{"word":"cheers","meaning":"salud"},
+		
+		{"word":"stagger","meaning":"tambalear"},
+		
+		{"word":"prey","meaning":"presa"},
+		
+		{"word":"chitter","meaning":"chillido"},
+		
+		{"word":"chatter","meaning":"charla"},
+		
+		{"word":"shall","meaning":"deberá"},
+		
+		{"word":"totter","meaning":"tambalearse"},
+		
+		{"word":"aodi","meaning":"aodi"},
+		
+		{"word":"flirt","meaning":"Ligar"},
+		
+		{"word":"sign","meaning":"señal"},
+		
+		{"word":"giddy up","meaning":"arre"},
+		
+		{"word":"puke","meaning":"vómito"},
+		
+		{"word":"are you done","meaning":"Ya terminaste"},
+		
+		{"word":"uderwear","meaning":"ropa interior"},
+		
+		{"word":"careful","meaning":"Cuidado"},
+		
+		{"word":"moaning","meaning":"gimiendo"},
+		
+		{"word":"lock","meaning":"cerrar"},
+		
+		{"word":"so what","meaning":"Y qué"},
+		
+		{"word":"wipes","meaning":"toallitas"},
+		
+		{"word":"did you just","meaning":"acabas de"},
+		
+		{"word":"sneak","meaning":"furtivo"},
+
+		{"word":"since","meaning":"ya que"},
+
+		{"word":"draft","meaning":"reclutar"},
+
+		{"word":"dating","meaning":"citas / personal"},
+		
+		{"word":"quotes","meaning":"citas / de un libro"},
+		
+		{"word":"atcually","meaning":"realmente"},
+		
+		{"word":"waste of time","meaning":"perdida de tiempo"},
+
+		{"word":"sender","meaning":"remitente"},
+
+		{"word":"gather","meaning":"recolectar"},
+
+		{"word":"urge","meaning":"urgir"},
+
+		{"word":"jeopardized","meaning":"en peligro"},
+
+		{"word":"congratulation","meaning":"felicitaciones"},
+
+		{"word":"altogether","meaning":"del todo, por completo"}, 
+
+		{"word":"increase","meaning":"aumento"},
+
+		{"word":"i dont care","meaning":"no me importa"},
+
+		{"word":"furniture","meaning":"muebles"},
+
+		{"word":"in fact","meaning":"de hecho"},
+
+		{"word":"nephews","meaning":"sobrino"},
+
+		{"word":"niece","meaning":"sobrina"},
+
+		{"word":"these (near) those(far)","meaning":"objetos incontable no tiene plural o sea"},
+
+		{"word":"flea","meaning":"pulga"},
+
+		{"word":"face mask","meaning":"tapabocas"},
+
+		{"word":"blanket","meaning":"manta (cobija)"},
+
+		{"word":"furniture","meaning":"mueble"},
+
+		{"word":"even","meaning":"incluso"},
+
+		{"word":"toiletries","meaning":"articulos de aseo para el bano"}, 
+
+		{"word":"coach","meaning":"entrenador"},
+
+		{"word":"dia tras dia","meaning":"day after day (day by day)"},
+
+		{"word":"keep us","meaning":"mantenernos"},
+
+		{"word":"what","meaning":"que de pregunta"},
+
+		{"word":"that","meaning":"que preposicion"},
+
+		{"word":"than","meaning":"que (se usa para comparar) comparativo"},
+
+		{"word":"at least","meaning":"por lo menos"},
+
+		{"word":"avoid","meaning":"evitar"},
+
+		{"word":"thus","meaning":"por lo tanto"},
+
+		{"word":"no way","meaning":"de ninguna manera"},
+
+		{"word":"self love","meaning":"amor propio"},
+
+		{"word":"dust","meaning":"polvo"},
+
+		{"word":"sneezing","meaning":"estornudos"},
+
+		{"word":"half","meaning":"mitad"},
+
+		{"word":"serum","meaning":"suero"},
+
+		{"word":"mother-in-law","meaning":"suegra"},
+
+		{"word":"almost","meaning":""},
+
+		{"word":"slang","meaning":"jerga"},
+
+		{"word":"stare","meaning":"mirar fijamente"},
+
+		{"word":"Sun tanning","meaning":"bronceado"},
+		
+		{"word":"skin","meaning":"piel"},
+
+		{"word":"sat","meaning":"se sento"},
+
+		{"word":"beside","meaning":"junto a"},
+
+		{"word":"beside me","meaning":" a mi lado"},
+
+		{"word":"get","meaning":"optener"},
+
+		{"word":"mad","meaning":"enojado"},
+
+		{"word":"mood","meaning":"estado de animo"},
+
+		{"word":"insole","meaning":"plantilla"},
+
+		{"word":"draft","meaning":"reclutar"},
+
+		{"word":"squash","meaning":"calabaza"},
+
+		{"word":"THIGHS","meaning":"muslo"},
+
+		{"word":"hips","meaning":"caderas"},
+
+		{"word":"licks","meaning":"lamer"},
+
+		{"word":"boner","meaning":"erection"},
+
+		{"word":"What a pity","meaning":"que pena"},
+		
+		{"word":"it is a pity","meaning":"es una pena"},
+
+		{"word":"pain","meaning":"dolor"},
+
+		{"word":"wound","meaning":"herida"},
+
+		{"word":"hurt","meaning":"herida"},
+
+		{"word":"weet","meaning":"mojado"},
+
+		{"word":"sweet","meaning":"dulce"},
+
+		{"word":"shine","meaning":"brillar"},
+
+		{"word":"done","meaning":"hecho (chulito de realizado xd)"},
+
+		{"word":"swam","meaning":"nado (pasado de nadar)"},
+
+		{"word":"bones","meaning":"huesos"},
+
+		{"word":"dry","meaning":"seco"},
+
+		{"word":"self-confidence","meaning":"auto confianza"},
+
+		{"word":"self-esteem","meaning":"auto estima"},
+
+		{"word":"arrogance","meaning":"arrogancia"},
+		
+		{"word":"while","meaning":"mientras"},
+
+		{"word":"psicology","meaning":"sicologia"},
+
+		{"word":"point of view","meaning":"punto de vista"},
+
+		{"word":"self-pity","meaning":"autocompasion"},
+
+		{"word":"hardly ever","meaning":"casi nunca"},
+
+		{"word":"guess","meaning":"adivinar"},
+
+		{"word":"frugal","meaning":"suficiente (parte economica - intercambio comercial)"},
+
+		{"word":"environment","meaning":"medioambiente"},
+
+		{"word":"swap","meaning":"intercambio"},
+
+		{"word":"swapping","meaning":"intercambio"},
+
+		{"word":"btw","meaning":"bay the way (por cierto)"},
+
+		{"word":"coworker","meaning":"companeros de trabajo"},
+
+		{"word":"yet","meaning":"todavia"},
+
+		{"word":"chose","meaning":"eligio"},
+
+		{"word":"carol","meaning":"villancico"},
+
+		{"word":"afraid","meaning":"temerosa"},
+
+		{"word":"creepy","meaning":"espeluznante"},
+
+		{"word":"what are those noises","meaning":"que son esos ruidos"},
+
+		{"word":"gift","meaning":"regalo"},
+
+		{"word":"sentence","meaning":"frace ,oracion"},
+
+		{"word":"thief","meaning":"ladron"},
+
+		{"word":"miracle","meaning":"milagro"},
+
+		{"word":"the only one","meaning":"la unica"},
+
+		{"word":"hang over","meaning":"resaca"},
+
+		{"word":"meddle","meaning":"entrometerse"},
+
+		{"word":"right there","meaning":"justo ahi"},
+
+		{"word":"i did not expect","meaning":"no lo esperaba"},
+
+		{"word":"cousin","meaning":"primo"},
+
+		{"word":"uncle","meaning":"tio"},
+
+		{"word":"even","meaning":"incluso"},
+
+		{"word":"enought","meaning":"suficiente"},
+
+		{"word":"naps","meaning":"siestas"},
+
+		{"word":"fool","meaning":"tonto / bruto"},
+
+		{"word":"trust","meaning":"confianza"},
+
+		{"word":"brain","meaning":"cerebro"},
+
+		{"word":"mind","meaning":"mente"},
+
+		{"word":"bitter","meaning":"amargo"},
+
+		{"word":"mood","meaning":"animo"},
+
+		{"word":"contract","meaning":"contrato"},
+
+		{"word":"known","meaning":"conocido"},
+
+		{"word":"shape","meaning":"forma"},
+
+		{"word":"my Goodness","meaning":"dios mio"},
+
+		{"word":"temperature","meaning":"temperatura"},
+
+		{"word":"bones","meaning":"huesos"},
+
+		{"word":"season","meaning":"temporada"},
+
+		{"word":"carol","meaning":"villancicos"},
+
+		{"word":"fireworks","meaning":"fuejos artificiales"},
+
+		{"word":"candles","meaning":"velas"},
+
+		{"word":"adds","meaning":"anuncios"},
+
+		{"word":"uderwear","meaning":"ropa interior"},
+
+		{"word":"skills","meaning":"habilidades"},
+
+		{"word":"guest","meaning":""},
+
+		{"word":"enviroment","meaning":""},
+
+		{"word":"fires","meaning":"incendios"},
+
+		{"word":"sunny","meaning":"soleado"},
+
+		{"word":"floods","meaning":"inundaciones"},
+
+		{"word":"landslide","meaning":"deslizamiento de tierra"},
+		
+		{"word":"greenhouse effect","meaning":"efecto invernador"},
+
+		{"word":"Health","meaning":"salud"},
+		
+		{"word":"sunshine","meaning":"brillo solar"},
+
+		{"word":"scope","meaning":"alcance"},
+
+		{"word":"smoke","meaning":"humo"},
+
+		{"word":"human race","meaning":"raza humana"},
+
+		{"word":"few years","meaning":"algunos anos"},
+
+		{"word":"recover","meaning":"recuperar"},
+
+		{"word":"i agree","meaning":"estoy de acuerdo"},
+
+		{"word":"adaptable","meaning":"adaptable"},
+
+		{"word":"population","meaning":"poblacion"},
+
+		{"word":"weather","meaning":"clima"},
+
+		{"word":"climate","meaning":"cambio climatico"},
+
+		{"word":"sience","meaning":"desde (tiempo)(year days)"},
+
+		{"word":"from","meaning":"desde (inicio y fin)(from --- to)"},
+
+		{"word":"awareness","meaning":"conciencia"},
+
+		{"word":"last","meaning":"ultimo"},
+
+		{"word":"dusk","meaning":"obscuridad"},
+
+		{"word":"bare","meaning":"desnudo"},
+
+		{"word":"naugthy","meaning":"travieso"},
+
+		{"word":"huge","meaning":"enorme"},
+
+		{"word":"deep","meaning":"profunda"},
+
+		{"word":"wish","meaning":"deseo"},
+
+		{"word":"miss","meaning":"extranar"},
+
+		{"word":"doubts","meaning":"dudas"},
+
+		{"word":"own","meaning":"propio"},
+
+		{"word":"delivery","meaning":"entrega"},
+
+		{"word":"pretty","meaning":"bonito"},
+
+		{"word":"pretty dangerous","meaning":"bastante peligroso"},
+
+		{"word":"dam","meaning":"presa / represa"},
+
+		{"word":"messy","meaning":"sucio"},
+
+		{"word":"sake","meaning":"motivo"},
+
+		{"word":"pepper","meaning":"pimienta"},
+
+		{"word":"beyond","meaning":"mas alla de"},
+
+		{"word":"matters","meaning":"asuntos"},
+
+		{"word":"matter","meaning":"importa"},
+
+		{"word":"by the way","meaning":"por cierto"},
+
+		{"word":"increase","meaning":"aumentar"},
+
+		{"word":"purchase","meaning":"compra"},
+
+		{"word":"poor","meaning":"pobre"},
+
+		{"word":"waelthy","meaning":"rico"},
+
+		{"word":"happyness","meaning":"felicidad"},
+
+		{"word":"born","meaning":"nacido"},
+
+		{"word":"bored","meaning":"aburrido"},
+
+		{"word":"guest","meaning":"invitado"},
+
+		{"word":"shrine","meaning":"santuario"},
+
+		{"word":"bright","meaning":"brillante"},
+
+		{"word":"shy","meaning":"timido"},
+
+		{"word":"countryside","meaning":"campo"},
+
+		{"word":"donate","meaning":"donar"},
+
+		{"word":"necklace","meaning":"collar"},
+
+		{"word":"bracelet","meaning":"pulcera"},
+
+		{"word":"portrait","meaning":"retrato"},
+
+		{"word":"older brother","meaning":"hermano mayor"},
+
+		{"word":"partner","meaning":"companer"},
+
+		{"word":"well off","meaning":"acomodado"},
+
+		{"word":"matter","meaning":"importar"},
+
+		{"word":"matters","meaning":"asuntos"},
+
+		{"word":"it doesnt matter","meaning":"no hay problema"},
+
+		{"word":"worse off","meaning":"en peor situación"},
+
+		{"word":"filthy","meaning":"asqueroso"},
+
+		{"word":"wealthy","meaning":"adinerado"},
+
+		{"word":"street","meaning":"calle"},
+
+		{"word":"background","meaning":"antecedentes"},
+
+		{"word":"laundry","meaning":"lavanderia"},
+
+		{"word":"dishes","meaning":"platos"},
+
+		{"word":"inprove","meaning":"mejorar"},
+
+		{"word":"envy","meaning":"envidia"},
+
+		{"word":"resting","meaning":"descansando"},
+
+		{"word":"thats it","meaning":"eso es todo"},
+
+		{"word":"i hope","meaning":"ojala"},
+
+		{"word":"almost","meaning":"casi"},
+		
+		{"word":"also","meaning":"tambien"},
+
+		{"word":"procrastination","meaning":"procrastination"},
+
+		{"word":"blancket","meaning":"cobija"},
+
+		{"word":"scold","meaning":"regano"},
+
+		{"word":"cold","meaning":"frio"},
+
+		{"word":"are you cold","meaning":"tienes frio"},
+
+		{"word":"targets","meaning":"objetivos"},
+
+		{"word":" secondhand","meaning":"segunda mano"},
+
+		{"word":"Which","meaning":"cual (con opciones limitadas)"},
+
+		{"word":"what","meaning":"cual (cuando es mas general)"},
+
+		{"word":"is there","meaning":"hay ?"},
+
+		{"word":"such as","meaning":"tal como , semejante a"},
+
+		{"word":"look like","meaning":"parece"},
+
+		{"word":"seems","meaning":"parece"},
+
+		{"word":"vase","meaning":"jarron"},
+
+		{"word":"hygiene (jayjin)","meaning":"higiene"},
+
+		{"word":"flea markets","meaning":"mercado de pulgas"},
+
+		{"word":"wide","meaning":"ancho"},
+
+		{"word":"Discuss","meaning":"discutir"},
+
+		{"word":"parner","meaning":"companero"},
+
+		{"word":"swaping","meaning":"permutar"},
+
+		{"word":"easier","meaning":"mas facil"},
+
+		{"word":"swap","meaning":"intercambio (acuerdo mutuo)"},
+
+		{"word":"exchange","meaning":"intercambio (cambiar) (mas general)"},
+
+		{"word":"busy","meaning":"ocupado"},
+
+		{"word":"tired","meaning":"cansado"},
+
+		{"word":"knowledge","meaning":"conocimiento"},
+
+		{"word":"known","meaning":"conocido"},
+
+		{"word":"creepy","meaning":"espeluznante"},
+
+		{"word":"coworkers","meaning":"companeros de trabajo"},
+
+		{"word":"coreworkers","meaning":"trabajadores principales"},
+
+		{"word":"breathe","meaning":"respirar"},
+
+		{"word":"early","meaning":"temprano"},
+
+		{"word":"spend","meaning":"gastar"},
+
+		{"word":"coint","meaning":"moneda"},
+
+		{"word":"cash","meaning":"dinero"},
+
+		{"word":"lunch","meaning":"almuerzo"},
+
+		{"word":"warthog","meaning":"jabali"},
+
+		{"word":"otherwise","meaning":"de lo contrario"},
+
+		{"word":"rum","meaning":"ron"},
+
+		{"word":"bite","meaning":"morder"},
+
+		{"word":"Wishing you the very best!","meaning":"¡Te deseo lo mejor!"},
+
+		{"word":"Kind regards","meaning":"Atentamente"},
+
+		{"word":" seal","meaning":"sello"},
+		
+		{"word":" faith","meaning":"fe"},
+		
+		{"word":" care","meaning":"cuidado"},
+
+		{"word":" where else","meaning":"dónde mas"},
+		
+		{"word":" ward","meaning":"sala"},
+		
+		{"word":"since","meaning":"ya que"},
+		
+		{"word":" lovely","meaning":"encantador"},
+		
+		{"word":" courage","meaning":"valor"},
+		
+		{"word":" knowledge","meaning":"conocimiento"},
+		
+		{"word":" endless","meaning":"sin fin"},
+		
+		{"word":" stroggle","meaning":"estropear"},
+		
+		{"word":" starry","meaning":"estrellado"},
+		
+		{"word":" ache","meaning":"dolor"},
+		
+		{"word":"felt","meaning":"sintió"},
+		
+		{"word":"had","meaning":"tenido"},
+		
+		{"word":"melted","meaning":"Derretido"},
+		
+		{"word":"away","meaning":"lejos"},
+		
+		{"word":"underage","meaning":"menor de edad"},
+		
+		{"word":"ahead","meaning":"adelante"},
+		
+		{"word":"worth","meaning":"valor"},
+		
+		{"word":"bridge","meaning":"puente"},
+		
+		{"word":"such","meaning":"tal"},
+		
+		{"word":"grab","meaning":"agarrar"},
+		
+		{"word":"loud","meaning":"ruidoso"},
+		
+		{"word":"guess","meaning":"adivinar"},
+		
+		{"word":"bond","meaning":"enlace"},
+
+		{"word":"by the way","meaning":"por cierto"},
+		
+		{"word":"it mean","meaning":"significa"},
+
+		{"word":"all i can grab","meaning":"todo lo que puedo agarrar"},
+		
+		{"word":"couple","meaning":"Pareja"},
+		
+		{"word":"plenty","meaning":"mucho"},
+		
+		{"word":"agree","meaning":"de acuerdo"},
+		
+		{"word":"silly","meaning":"tonto"},
+		
+		{"word":"darling","meaning":"querido"},
+		
+		{"word":"to be blunt","meaning":"Para ser honestos"},
+		
+		{"word":"we barely","meaning":"nosotros a penas"},
+		
+		{"word":"figured","meaning":"figurado"},
+		
+		{"word":"smug look","meaning":"mirada presumida"},
+		
+		{"word":"fair","meaning":"justa"},
+		
+		{"word":"felt","meaning":"sintió"},
+		
+		{"word":"foam","meaning":"espuma"},
+		
+		{"word":"wings","meaning":"alas"},
+		
+		{"word":"spend","meaning":"gastar"},
+		
+		{"word":"pick","meaning":"recoger"},
+		
+		{"word":"stuff","meaning":"cosas"},
+		
+		{"word":"even underwear","meaning":"incluso ropa interior"},
+		
+		{"word":"held","meaning":"retenida"},
+		
+		{"word":"bride","meaning":"novia"},
+		
+		{"word":"beside","meaning":"junto a"},
+		
+		{"word":"darker","meaning":"mas oscuro"},
+		
+		{"word":"entire","meaning":"todo"},
+		
+		{"word":"pushy","meaning":"molesto"},
+		
+		{"word":"bear","meaning":"oso"},
+		
+		{"word":"deep","meaning":"profundo"},
+		
+		{"word":"sloppy","meaning":"descuidado"},
+		
+		{"word":"plot","meaning":"trama"},
+		
+		{"word":"any good","meaning":"ningún bien"},
+		
+		{"word":"besides","meaning":"además"},
+		
+		{"word":"sake","meaning":"motivo"},
+		
+		{"word":"gross","meaning":"bruto"},
+		
+		{"word":"wives","meaning":"esposas"},
+		
+		{"word":"stuff","meaning":"cosas"},
+		
+		{"word":"jewelry","meaning":"joyería"},
+		
+		{"word":"lake","meaning":"lago"},
+		
+		{"word":"smooching","meaning":"besos"},
+		
+		{"word":"mad","meaning":"enojado"},
+		
+		{"word":"dummy","meaning":"tonto"},
+		
+		{"word":"ease","meaning":"facilitar"},
+		
+		{"word":"weird","meaning":"extraño"},
+		
+		{"word":"wedding","meaning":"Boda"},
+		
+		{"word":"waste","meaning":"residuos"},
+		
+		{"word":"everlasting","meaning":"eterno"},
+		
+		{"word":"badly","meaning":"mal"},
+		
+		{"word":"simmer down","meaning":"calmarse"},
+
+		{"word":"less lonley","meaning":"menos solitario"},
+
+		{"word":"sake","meaning":"motivo"},
+		
+		{"word":"beat","meaning":"golpear"},
+		
+		{"word":"fade","meaning":"desvanecerse"},
+
+		{"word":"sneeze","meaning":"estornudar"},
+
+		{"word":"spelling","meaning":"ortografia"},
+
+		{"word":"shape","meaning":"forma"},
+
+		{"word":"seem","meaning":"parece"},
+
+		{"word":"seems","meaning":"parece"},
+
+		{"word":"we heart it","meaning":"lo escuchamos"},
+
+		{"word":"journalist","meaning":"periodista"},
+
+		{"word":"took","meaning":"coji"},
+
+		{"word":"took off","meaning":"despego"},
+
+		{"word":"leather","meaning":"cuero"},
+
+		{"word":"leatherette","meaning":"cuerina"},
+
+		{"word":"either","meaning":"cualquiera"},
+
+		{"word":"everybody","meaning":"todos / group"},
+		
+		{"word":"everyone","meaning":"todo el mundo / more formal"},
+
+		{"word":"somebody","meaning":"alguien (no conocido)"},
+
+		{"word":"someone","meaning":"alguien (no conocido)"},
+
+		{"word":"anybody","meaning":"alguien / cualquiera / negative sentences"},
+
+		{"word":"anyone","meaning":"alguien / cualquiera / negative sentences"},
+
+		{"word":"test","meaning":"prueba (simple)"},
+
+		{"word":"proof","meaning":"prueba (tipo quiz)(mas importante que test)"},
+
+		{"word":"movement","meaning":"movimiento"},
+
+		{"word":"land","meaning":"tierra"},
+
+		{"word":"sand","meaning":"arena"},
+
+		{"word":"earth","meaning":"tierra"},
+
+		{"word":"what else","meaning":"que mas..."},
+
+		{"word":"weapons","meaning":"armas"},
+
+		{"word":"guns","meaning":"pistolas"},
+
+		{"word":"raw","meaning":"crudo"},
+
+		{"word":"assessment","meaning":"evaluacion"},
+
+		{"word":"several","meaning":"varios"},
+
+		{"word":"proposes","meaning":"propone"},
+
+		{"word":"between this and this","meaning":"entre esto y esto"},
+
+		{"word":"landed","meaning":"aterrizado"},
+
+		{"word":"safely","meaning":"sin peligro"},
+
+		{"word":"when do you use this","meaning":"cuando usas esto?"},
+
+		{"word":"wildlife","meaning":"fauna silvestre"},
+
+		{"word":"took","meaning":"tomo (capturar una imagen)"},
+
+		{"word":"conducted","meaning":"realizado"},
+
+		{"word":"can look like","meaning":"puedo parecer"},
+
+		{"word":"shaking","meaning":"temblando"},
+
+		{"word":"able","meaning":"poder"},
+
+		{"word":"is it not able","meaning":"no es capaz?"},
+
+		{"word":"is able","meaning":"es capaz"},
+
+		{"word":"is learning","meaning":"está aprendiendo"},
+
+		{"word":"isn't able","meaning":"no es capaz"},
+
+		{"word":"waves","meaning":"ondas olas"},
+
+		{"word":"mistaken","meaning":"equibocado"},
+
+		{"word":"leave","meaning":"salir"},
+
+		{"word":"i leave then","meaning":"me voy entonces"},
+
+		{"word":"i leave them","meaning":"los dejo"},
+		
+		{"word":"and then","meaning":"y luego"},
+
+		{"word":"im going","meaning":"me voy"},
+
+		{"word":"i have to go","meaning":"debo irme"},
+
+		{"word":"meet","meaning":"reunirse"},
+
+		{"word":"I have a deadline","meaning":"tengo una fecha limite"},
+
+		{"word":"keep people safe","meaning":"mantener la gente a salvo"},
+
+		{"word":"Research","meaning":"investigar"},
+
+		{"word":"tough","meaning":"duro (arduo dificil trabajo)"},
+
+		{"word":"charity worker","meaning":"voluntariado"},
+
+		{"word":"survey","meaning":"encuesta"},
+
+		{"word":"what kind","meaning":"que tipo"},
+
+		{"word":"summary","meaning":"resumen"},
+
+		{"word":"downtown","meaning":"centro"},
+
+		{"word":"below","meaning":"debajo"},
+
+		{"word":"struggle","meaning":"lucha"},
+
+		{"word":"advice","meaning":"consejo"},
+
+		{"word":"devil","meaning":"demonio"},
+
+		{"word":"résumé","meaning":"curriculum"},
+
+		{"word":"i won't","meaning":"no lo hare = will not"},
+
+		{"word":"craving","meaning":"antojo"},
+
+		{"word":"awareness","meaning":"conciencia"},
+
+		{"word":"discussion","meaning":"discucion"},
+
+		{"word":"nowhere","meaning":"en ningun lugar"},
+
+		{"word":"because","meaning":"porque (cause)"},
+
+		{"word":"owe","meaning":"deber"},
+
+		{"word":"much obliged","meaning":"muy agradecido"},
+
+		{"word":"much obliged with the one above","meaning":"muy agradecido con el de arriba"},
+
+		{"word":"much obliged with the one up","meaning":"muy agradecido con el que esta arriba"},
+
+		{"word":"instead of","meaning":"en vez de"},
+
+		{"word":"similar","meaning":"similar"},
+
+		{"word":"it's the opposite","meaning":"es lo contrario"},
+
+		{"word":"compromiso","meaning":"compromiso"},
+
+		{"word":"lazy","meaning":"perezoso"},
+
+		{"word":"Burn out","meaning":"consumirse"}, 
+
+		{"word":"moody","meaning":"malhumorado"},
+
+		{"word":"overworked","meaning":"exceso de trabajo"},
+
+		{"word":"concern","meaning":"preocupacion"},
+
+		{"word":"worry","meaning":"preocuparse"},
+
+		{"word":"leadership","meaning":"liderazgo"},
+
+		{"word":"abroad","meaning":"en el extranjero"},
+
+		{"word":"signed","meaning":"firmado"},
+
+		{"word":"almost","meaning":"casi"},
+
+		{"word":"quit","meaning":"renunciar"},
+
+		{"word":"employed","meaning":"empleado"},
+
+		{"word":"thought","meaning":"penso"},
+
+		{"word":"struggle lucha (esfuerzo)","meaning":""},
+
+		{"word":"go get it","meaning":"ve a buscarlo"},
+
+		{"word":"blame","meaning":"culpar"},
+
+		{"word":"dammit","meaning":"maldita sea"},
+
+		{"word":"hunger","meaning":"hambre"},
+
+		{"word":"close-ish","meaning":"mas o menos cerca (ish (grande pequeno lejano))"},
+
+		{"word":"succeed","meaning":"triunfar"},
+
+		{"word":"accent","meaning":"acento"},
+
+		{"word":"sarcasmo","meaning":"sarcasm"},
+
+		{"word":"retorica","meaning":"rhetoric"},
+
+		{"word":"achivement","meaning":"logro"},
+
+		{"word":"assessment","meaning":"evaluacion"},
+
+		{"word":"joy","meaning":"alegria"},
+
+		{"word":"their","meaning":"su"},
+
+		{"word":"responsiveness","meaning":"sensibilidad"},
+
+		{"word":"shall","meaning":"debera"},
+
+		{"word":"Him","meaning":"él"},
+
+		{"word":"his","meaning":"su"},
+
+		{"word":"afraid","meaning":"temeroso"},
+
+		{"word":"lead","meaning":"dirigir"},
+
+		{"word":"sighting","meaning":"observaciones"},
+
+		{"word":"the new world order","meaning":"el nuevo orden mundial"},
+
+		{"word":"over us","meaning":"sobre nosotros"},
+
+		{"word":"flat","meaning":"plana plano"},
+
+		{"word":"get used","meaning":"acostumbrarse"},
+
+		{"word":"hang out","meaning":"pasar el rato"},
+
+		{"word":"hold up","meaning":"sostenerse"},
+
+		{"word":"kind of music (general)","meaning":"type categoria subdiviciones (espesific category)"},
+
+		{"word":"hold up","meaning":"sostener"},
+
+		{"word":"hold on","meaning":"aguantar / resistir"},
+
+		{"word":"wait","meaning":"esperar"},
+
+		{"word":"chill up","meaning":"enfriar / fresco"},
+
+		{"word":"joke","meaning":"broma"},
+
+		{"word":"kiding","meaning":"bromeando"},
+
+		{"word":"advice","meaning":"concejo"},
+
+		{"word":"hang out","meaning":"pasar el rato"},
+
+		{"word":"would","meaning":"haría"},
+
+		{"word":"offers","meaning":"ofertas"},
+
+		{"word":"dig","meaning":"cavar"},
+
+		{"word":"advice","meaning":"consejos"},
+
+		{"word":"liar","meaning":"mentiroso"},
+
+		{"word":"give advice","meaning":"dar consejos"},
+
+		{"word":"coach","meaning":"entrenador"},
+
+		{"word":"someone missing","meaning":"alguien  falto?"},
+
+		{"word":"wet","meaning":"mojado"},
+
+		{"word":"dry","meaning":"seco"},
+
+		{"word":"Assessment","meaning":"evaluacion"},
+
+		{"word":"first thing's first","meaning":"primero es lo primero"},
+
+		{"word":"achieve","meaning":"lograr"},
+
+		{"word":"from my point of view","meaning":"desde mi punto de vista"},
+
+		{"word":"baker","meaning":"panadero"},
+
+		{"word":"often happens","meaning":"suele pasar"},
+
+		{"word":"breakdown","meaning":"fracaso"},
+
+		{"word":"against","meaning":"encontra"},
+
+		{"word":"wisdom","meaning":"sabiduria"},
+
+		{"word":"besides","meaning":"ademas"},
+		
+		{"word":"side","meaning":"lado"},
+
+		{"word":"very unfortunate","meaning":"muy desafortunado"},
+
+		{"word":"something else","meaning":"algo mas"},
+
+		{"word":"this once","meaning":"esta vez"},
+
+		{"word":"sense","meaning":"sentido"},
+
+		{"word":"wonder","meaning":"preguntarse"},
+
+		{"word":"degree","meaning":"licenciatura"},
+
+		{"word":"hire","meaning":"contratar"},
+
+		{"word":"advertisement","meaning":"anuncio publicitario"},
+
+		{"word":"chances","meaning":"posibilidades"},
+
+		{"word":"entire","meaning":"completo"},
+
+		{"word":"still","meaning":"todavia (aun esta en ello)"},
+
+		{"word":"yet","meaning":"todavia"},
+
+		{"word":"even","meaning":"incluso"},
+
+		{"word":"actuallity","meaning":"realidad"},
+
+		{"word":"currently","meaning":""},
+
+		{"word":"interview","meaning":"entrevista"},
+
+		{"word":"noon","meaning":"medio dia"},
+
+		{"word":"go ahead","meaning":"avanzar / continuar"},
+
+		{"word":"boring","meaning":"aburrid@"},
+
+		{"word":"burning","meaning":"quemando"},
+
+		{"word":"helper","meaning":"ayudante"},
+
+		{"word":"do you thing that","meaning":"crees que"},
+
+		{"word":"you think so","meaning":"tu crees que si"},
+
+		{"word":"judge","meaning":"juez"},
+
+		{"word":"cattle","meaning":"vacas"},
+
+		{"word":"cowgirl","meaning":"vaquera"},
+
+		{"word":"became","meaning":"se convirtio"},
+
+		{"word":"raise","meaning":"aumentar"},
+
+		{"word":"injury","meaning":"lesion"},
+
+		{"word":"hub","meaning":"centro"},
+
+		{"word":"reverb","meaning":"reverberacion (eco)"},
+
+		{"word":"old-fashioned","meaning":"anticuado"},
+
+		{"word":"to get better","meaning":"mejorar"}, 
+
+		{"word":"newer","meaning":"mas nuevo"},
+
+		{"word":"wearable","meaning":"usable"},
+
+		{"word":"worn","meaning":"gasta/usado"},
+
+		{"word":"tech","meaning":"tecnologia"},
+
+		{"word":"useful","meaning":"util"},
+
+		{"word":"useless","meaning":"inutil"},
+
+		{"word":"damage","meaning":"dano"},
+
+		{"word":"scam","meaning":"estafa (engano)"},
+
+		{"word":"sincere","meaning":"sincero"},
+
+		{"word":"unwrapped","meaning":"desenvuelto"},
+
+		{"word":"fairness","meaning":"justicia"},
+
+		{"word":"forgiveness","meaning":"perdon"},
+
+		{"word":"enterprise","meaning":"empresa"},
+
+		{"word":"actuality","meaning":"realidad"},
+
+		{"word":"currently","meaning":"actualmente"},
+
+		{"word":"shape of think","meaning":"forma de pensar"},
+
+		{"word":"besides","meaning":"besides"},
+
+		{"word":"i was starting to miss you","meaning":"estaba empezando a extrañarte"},
+
+		{"word":"trust","meaning":"confiar"},
+
+		{"word":"deeper thoughts","meaning":"pensamientos mas profundos"},
+
+		{"word":"passions","meaning":"pasiones"},
+
+		{"word":"light","meaning":"ligero"},
+
+		{"word":"thin","meaning":"delgado"},
+
+		{"word":"selfish","meaning":"egoista"},
+
+		{"word":"taught","meaning":"enseño"},
+
+		{"word":"talkactive","meaning":"hablador/ habla demasiado"},
+
+		{"word":"thick","meaning":"grueso"},
+
+		{"word":"weak","meaning":"debil"},
+
+		{"word":"own","meaning":"propio"},
+
+		{"word":"opposite","meaning":"opuesto"},
+
+		{"word":"heat","meaning":"calor"},
+
+		{"word":"measure","meaning":"la medida"},
+
+		{"word":"survey","meaning":"encuesta"},
+
+		{"word":"poll","meaning":"encuesta"},
+
+		{"word":"how are you doing","meaning":"como  estas?"},
+
+		{"word":"it can","meaning":"(cosa) puede"},
+
+		{"word":"can","meaning":"(people) puede"},
+
+		{"word":"mood","meaning":"estado de animo"},
+
+		{"word":"pretty intensive (informal)","meaning":"bastante intenso"},
+
+		{"word":"won","meaning":"ganar"},
+
+		{"word":"quite","meaning":"intensidad"},
+
+		{"word":"quite a lot","meaning":"mucho de algo"},
+
+		{"word":"fancy","meaning":"elegante"},
+
+		{"word":"device","meaning":"dispositivo"},
+
+		{"word":"beyond","meaning":"mas alla de"},
+
+		{"word":"almost","meaning":"casi"},
+
+		{"word":"wipe","meaning":"pasar un trapo"},
+
+		{"word":"untie","meaning":"desatar"},
+
+		{"word":"getting","meaning":"consigiendo"},
+
+		{"word":"giving","meaning":"donacion"},
+
+		{"word":"mere","meaning":"mero"},
+
+		{"word":"rather","meaning":"bastante"},
+
+		{"word":"sides","meaning":"lados"},
+
+		{"word":"shades","meaning":"sombras"},
+
+		{"word":"once","meaning":"una vez"},
+
+		{"word":"such","meaning":"tal"},
+
+		{"word":"forward","meaning":"hacia adelante"},
+
+		{"word":"althrought","meaning":"aunque"},
+
+		{"word":"features","meaning":"caracteristicas"},
+
+		{"word":"somewhere","meaning":"algun lado"},
+
+		{"word":"booked","meaning":"reservado"},
+
+		{"word":"quarter","meaning":"trimestre"},
+
+		{"word":"vicinity","meaning":"vecindad"},
+
+		{"word":"regress","meaning":"regreso"},
+
+		{"word":"drop","meaning":"soltar"},
+
+		{"word":"dropped","meaning":"caido"},
+
+		{"word":"you about to","meaning":"estas apunto de"},
+
+		{"word":"hike","meaning":"caminta"},
+
+		{"word":"law","meaning":"ley"},
+
+		{"word":"toward","meaning":"hacia"},
+
+		{"word":"hoop","meaning":"aro"},
+
+		{"word":"encourage","meaning":"alentar"},
+
+		{"word":"step","meaning":"paso"},
+
+		{"word":"beam","meaning":"haz"},
+
+		{"word":"weapon","meaning":"arma"},
+
+		{"word":"i dont care","meaning":""},
+
+		{"word":"than that","meaning":"que eso"},
+
+		{"word":"i dont care","meaning":"no me importa"},
+
+		{"word":"care","meaning":"cuidado"},
+
+		{"word":"soap","meaning":"jabon"},
+
+		{"word":"spread","meaning":"untado"},
+
+		{"word":"flu","meaning":"gripe"},
+
+		{"word":"diseases","meaning":"enfermedades"},
+
+		{"word":"half medio (medio del pastel","meaning":"pantalla)(cantidad)"},
+
+		{"word":"middle","meaning":"medio (camino)(posicion)(punto)"},
+
+		{"word":"occur","meaning":"ocurrir"},
+
+		{"word":"lack","meaning":"carecer"},
+
+		{"word":"poorer","meaning":"más pobre"},
+
+		{"word":"partly","meaning":"parcialmente"},
+
+		{"word":"atoms","meaning":"átomos"},
+
+		{"word":"joined","meaning":"Unido"},
+
+		{"word":"since","meaning":"ya que"},
+
+		{"word":"held","meaning":"sostuvo"},
+
+		{"word":"against","meaning":"en contra"},
+
+		{"word":"leaders","meaning":"lideres"},
+
+		{"word":"closer","meaning":"más cerca"},
+
+		{"word":"achieve","meaning":"lograr"},
+
+		{"word":"which","meaning":"cual"},
+
+		{"word":"fewer","meaning":"menos"},
+
+		{"word":"whole","meaning":"entero"},
+
+		{"word":"aims","meaning":"objetivos"},
+
+		{"word":"increase","meaning":"aumento"},
+
+		{"word":"sarcasm","meaning":"sarcasmo"},
+
+		{"word":"reply","meaning":"respuesta (reaccion)"},
+
+		{"word":"response","meaning":"respuesta (pregunta)"},
+
+		{"word":"I hope I could solve it","meaning":"espero poder solucionarlo"},
+
+		{"word":"able","meaning":"poder"},
+
+		{"word":"slap","meaning":"bofetada"},
+
+		{"word":"held","meaning":"sostuvo"},
+
+		{"word":"confuse","meaning":"confuso"},
+
+		{"word":"analyzing","meaning":"analizando"},
+
+		{"word":"ambiguous","meaning":"ambiguo (se puede entender de varias maneras)"},
+
+		{"word":"bit by bit","meaning":"poco a poco"},
+
+		{"word":"step by step","meaning":"paso a paso"},
+
+		{"word":"it happens to me all the time","meaning":"me pasa todo el tiempo"},
+
+		{"word":"I swear","meaning":"te lo juro"},
+
+		{"word":"beware","meaning":"cuidado"},
+
+		{"word":"worse","meaning":"peor"},
+
+		{"word":"gates","meaning":"puertas"},
+
+		{"word":"giving advice","meaning":"dando consejos"},
+
+		{"word":"heat","meaning":"calor"},
+
+		{"word":"it was dirt","meaning":"era suciedad"},
+
+		{"word":"it was nopthing","meaning":"no fue nada"},
+
+		{"word":"outstanding","meaning":"sobresaliente"},
+
+		{"word":"marvelous","meaning":"maravilloso"},
+
+		{"word":"nurturing mother","meaning":"madre cariñosa"},
+
+		{"word":"we tricked it out","meaning":"Lo engañamos"},
+
+		{"word":"got","meaning":"tiene"},
+
+		{"word":"brought","meaning":"traer"},
+
+		{"word":"grade","meaning":"calificar"},
+
+		{"word":"start over","meaning":"comenzar de nuevo"},
+
+		{"word":"looking for","meaning":"buscando"},
+
+		{"word":"Essay","meaning":"ensayo"},
+
+		{"word":"nearby","meaning":"cercano"},
+
+		{"word":"dish","meaning":"plato"},
+
+		{"word":"Suggestions","meaning":"Sugerencias"},
+
+		{"word":"soggy","meaning":"empapado"},
+
+		{"word":"nephews","meaning":"sobrinos"},
+
+		{"word":"come true","meaning":"hacerse realidad"},
+
+		{"word":"foster","meaning":"fomentar"},
+
+		{"word":"swam","meaning":"nado"},
+
+		{"word":"swum","meaning":"nadado"},
+
+		{"word":"has seen","meaning":"ha visto"},
+
+		{"word":"thing","meaning":"cosa"},
+
+		{"word":"tears","meaning":"lagrimas"},
+
+		{"word":"meaningful","meaning":"significativo"},
+
+		{"word":"tough","meaning":"duro (pesado)(taf)"},
+
+		{"word":"trash","meaning":"basura"},
+
+		{"word":"melt","meaning":"derretir"},
+
+		{"word":"i'd (I would)","meaning":"me gustaria"},
+
+		{"word":"I had","meaning":"tuve"},
+
+		{"word":"I should","meaning":"yo deberia"},
+
+		{"word":"ate","meaning":"comio"},
+
+		{"word":"both","meaning":"ambos"},
+
+		{"word":"she has visited the united states","meaning":"ella ha visitado los EEUU"},
+
+		{"word":"messy","meaning":"sucio"},
+
+		{"word":"grove","meaning":"arboleda"},
+
+		{"word":"groove","meaning":"ranura"},
+
+		{"word":"agreeing","meaning":"estar deacuerdo"},
+
+		{"word":"missing one","meaning":"falta uno"},
+
+		{"word":"teacher","meaning":"school hightschool"},
+
+		{"word":"professor","meaning":"university"},
+
+		{"word":"out there","meaning":"fuera / afuera"},
+
+		{"word":"coach","meaning":"entrnador"},
+
+		{"word":"well","meaning":"bien"},
+
+		{"word":"role model","meaning":"modelo a seguir"},
+
+		{"word":"arch","meaning":"arco"},
+
+		{"word":"comfy","meaning":"confortable"},
+
+		{"word":"plot","meaning":"trama"},
+
+		{"word":"starred","meaning":"destacado, protagonizado"},
+
+		{"word":"on my way","meaning":"estoy en camino"},
+
+		{"word":"a little bit","meaning":"un poquito"},
+
+		{"word":"absent","meaning":"ausente"},
+
+		{"word":"bat","meaning":"murcielago"},
+
+		{"word":"nasty","meaning":"desagradable"},
+
+		{"word":"disgusting","meaning":"asqueroso"},
+
+		{"word":"wings","meaning":"alas"},
+
+		{"word":"steer","meaning":"dirijir"},
+
+		{"word":"land","meaning":"safe"},
+
+		{"word":"dive","meaning":"bucear"},
+
+		{"word":"shoulder","meaning":"hombro"},
+
+		{"word":"seems","meaning":"parece"},
+
+		{"word":"inch","meaning":"pulgada"},
+
+		{"word":"depth","meaning":"profundidad"},
+
+		{"word":"length","meaning":"longitud"},
+
+		{"word":"long","meaning":"largo"},
+
+		{"word":"rather than","meaning":"en vez de"},
+
+		{"word":"natterers","meaning":"charlatanes"},
+
+		{"word":"cuddle","meaning":"abrazo"},
+
+		{"word":"undergo","meaning":"someterse"},
+
+		{"word":"bald","meaning":"calvo"},
+
+		{"word":"scabs","meaning":"costras"},
+
+		{"word":"released back","meaning":""},
+
+		{"word":"delighted","meaning":"contento"},
+
+		{"word":"setup","meaning":"configurar"},
+
+		{"word":"rate","meaning":"calificar"},
+
+		{"word":"cages","meaning":"jaulas"},
+
+		{"word":"hang","meaning":"colgar"},
+
+		{"word":"winged","meaning":"que tiene alas"},
+
+		{"word":"injured","meaning":"herido"},
+
+		{"word":"batty","meaning":"chalado"},
+
+		{"word":"wound","meaning":"herida"},
+
+		{"word":"delight","meaning":"deleite"},
+
+		{"word":"blanket","meaning":"manta"},
+
+		{"word":"release","meaning":"liberar"},
+
+		{"word":"hop","meaning":"brincar"},
+
+		{"word":"hint","meaning":"insinuación"},
+
+		{"word":"soccer match","meaning":"partido de futbol"},
+
+		{"word":"used to","meaning":"acostumbrado"},
+
+		{"word":"hike","meaning":"caminata"},
+
+		{"word":"e-book","meaning":"libro electronico"},
+
+		{"word":"weak","meaning":"debil"},
+
+		{"word":"candle","meaning":"vela"},
+
+		{"word":"surrounded","meaning":"rodeado"},
+
+		{"word":"hiking","meaning":"senderismo"},
+
+		{"word":"wildlife","meaning":"fauna silvestre"},
+
+		{"word":"keep an eye out","meaning":"Estar atento"},
+
+		{"word":"go hiking","meaning":"practicar senderismo"},
+
+		{"word":"jellyfish","meaning":"Medusa"},
+
+		{"word":"been diving","meaning":"estado buceando"},
+
+		{"word":"spot","meaning":"lugar"},
+
+		{"word":"hopefully","meaning":"Ojalá"},
+
+		{"word":"deer","meaning":"ciervo"},
+
+		{"word":"breathtaking","meaning":"asombroso"},
+
+		{"word":"life","meaning":"vida"},
+
+		{"word":"live","meaning":"vivir"},
+
+		{"word":"them","meaning":"ell@s"},
+
+		{"word":"bind","meaning":"unir"},
+
+		{"word":"light","meaning":"encender/ prender(verbo - sustantivo((cosa) , luz)"},
+
+		{"word":"i lit it","meaning":"la encendi"},
+
+		{"word":"the light was off","meaning":"la luz estaba apagada"},
+
+		{"word":"peace","meaning":"paz"},
+
+		{"word":"god bless","meaning":"dios los bendiga"},
+
+		{"word":"bullshit","meaning":"mentira (pura mier**)"},
+
+		{"word":"asshole","meaning":"carecu**"},
+
+		{"word":"statement in the batch","meaning":"declaracion en el lote"},
+
+		{"word":"reamining","meaning":"restante"},
+
+		{"word":"avoid it","meaning":"evitarlo"},
+
+		{"word":"avoid","meaning":"evitar / esquivar"},
+
+		{"word":"slaughter","meaning":"sacrificio"},
+
+		{"word":"pressure","meaning":"presion"},
+
+		{"word":"deal","meaning":"trato"},
+
+		{"word":"care about you","meaning":"me importas"},
+
+		{"word":"care","meaning":"cuidado"},
+
+		{"word":"cope","meaning":"afrontar"},
+
+		{"word":"pals","meaning":"amigos"},
+
+		{"word":"go for a walk","meaning":"ir a caminar"},
+
+		{"word":"buddies","meaning":"amigos"},
+
+		{"word":"being","meaning":"siendo"},
+
+		{"word":"lit","meaning":"iluminado"},
+
+		{"word":"i hope so","meaning":"eso espero"},
+
+		{"word":"after","meaning":"después"},
+		
+		{"word":"before","meaning":"antes de"},
+
+		{"word":"pretty","meaning":"bonito"},
+		
+		{"word":"sunshine","meaning":"Brillo Solar"},
+		
+		{"word":"worst","meaning":"peor"},
+
+		{"word":"minerals","meaning":"minerales"},
+		
+		{"word":"extract","meaning":"extraer"},
+
+		{"word":"coworkers","meaning":"compañeros de trabajo"},
+
+		{"word":"company","meaning":"empresa"},
+
+		{"word":"companions","meaning":"compañeros"},
+
+		{"word":"social cultire","meaning":"cultura social"},
+
+		{"word":"caos","meaning":"chaos"},
+
+		{"word":"mejorar","meaning":"improve"},
+
+		{"word":"me neither","meaning":"yo tampoco"},
+
+		{"word":"pepper","meaning":"pimienta"},
+
+		{"word":"face challenges","meaning":"enfrentar retos"},
+
+		{"word":"happier","meaning":"mas feliz"},
+
+		{"word":"earn","meaning":"ganar"},
+
+		{"word":"few","meaning":"pocas/ pocos (comer pocas cosas etc)"},
+
+		{"word":"cope","meaning":"afrontar"},
+
+		{"word":"manage","meaning":"administrar"},
+
+		{"word":"improve","meaning":"mejorar"},
+
+		{"word":"deep","meaning":"profundo"}, 
+
+		{"word":"miracle","meaning":"milagro"},
+
+		{"word":"sender","meaning":"remitente"},
+
+		{"word":"liable","meaning":"responsable"},
+
+		{"word":"vowel","meaning":"vocal"},
+
+		{"word":"essay","meaning":"ensayo"},
+
+		{"word":"have you ever","meaning":"alguna vez has"},
+
+		{"word":"away","meaning":"fuera"},
+
+		{"word":"out","meaning":"fuera / afuera"},
+
+		{"word":"laundry (loundri)","meaning":"lavanderia"},
+
+		{"word":"I got up","meaning":"me levante ..."},
+
+		{"word":"shed","meaning":"cobertizo (una casa afuera xd)"},
+
+		{"word":"might","meaning":"podria"},
+
+		{"word":"nearby","meaning":"cercano"},
+
+		{"word":"dry","meaning":"seco"},
+
+		{"word":"roof","meaning":"techo"},
+
+		{"word":"envy","meaning":"envidia"},
+
+		{"word":"shave","meaning":"afeitar"},
+
+		{"word":"scar","meaning":"sicatriz"},
+
+		{"word":"fence","meaning":"valla"},
+
+		{"word":"razor","meaning":"maquina de afeitar"},
+
+		{"word":"restless","meaning":"inquieto"},
+
+		{"word":"pain","meaning":"dolor"},
+
+		{"word":"spikes","meaning":"picos"},
+
+		{"word":"how was it","meaning":"como estuvo"},
+
+		{"word":"pool","meaning":"piscina"},
+
+		{"word":"Skylight","meaning":"tragaluz"},
+
+		{"word":"tissue","meaning":"tejido (del cuerpo)"},
+
+		{"word":"environment","meaning":"ambiente"},
+
+		{"word":"dummy","meaning":"tonta"},
+
+		{"word":"till then","meaning":"hasta entonces"},
+
+		{"word":"cloak","meaning":"capa"},
+
+		{"word":"climb","meaning":"escalada"},
+
+		{"word":"shoulders","meaning":"espalda"},
+
+		{"word":"knives","meaning":"cuchillos"},
+
+		{"word":"hooks","meaning":"manos"},
+
+		{"word":"stuffy","meaning":"cargado"},
+
+		{"word":"guess","meaning":"adivinar"},
+
+		{"word":"that way","meaning":"de esa manera"},
+
+		{"word":"own","meaning":"propio"},
+
+		{"word":"such","meaning":"tal"},
+
+		{"word":"switch","meaning":"cambiar"},
+
+		{"word":"despite","meaning":"a pesar de"},
+
+		{"word":"concerns","meaning":"preocupaciones"},
+
+		{"word":"attached","meaning":"adjunto"},
+
+		{"word":"nails","meaning":"uñas"},
+
+		{"word":"over me","meaning":"sobre mi"},
+
+		{"word":"haunted palces","meaning":"lugares embrujados"},
+
+		{"word":"spooky","meaning":"escalofriante"},
+
+		{"word":"environment","meaning":"medio ambiente"},
+
+		{"word":"breathing","meaning":"respiracion"},
+
+		{"word":"issues","meaning":"problemas"},
+
+		{"word":"polution","meaning":"contaminacion"},
+
+		{"word":"roar","meaning":"rugido"},
+
+		{"word":"cause","meaning":"causa"},
+
+		{"word":"stuff","meaning":"cosa"},
+
+		{"word":"stressful","meaning":"estresante"},
+
+		{"word":"getting","meaning":"consiguiendo"},
+
+		{"word":"smooth","meaning":"liso"},
+
+		{"word":"since","meaning":"desde"},
+
+		{"word":"mad","meaning":"enojado"},
+
+		{"word":"great","meaning":"genial"},
+
+		{"word":"pretty good","meaning":"muy bien"},
+
+		{"word":"Steal","meaning":"robar"},
+
+		{"word":"robber","meaning":"ladron"},
+
+		{"word":"inmates","meaning":"presos"},
+
+		{"word":"whereby","meaning":"por lo cual"},
+
+		{"word":"behead","meaning":"decapitar"},
+
+		{"word":"which","meaning":"cual"},
+
+		{"word":"while","meaning":"mientras"},
+
+		{"word":"although","meaning":"aunque"},
+
+		{"word":"court","meaning":"corte"},
+
+		{"word":"whether","meaning":"ya sea"},
+
+		{"word":"chamber","meaning":"camara"},
+
+		{"word":"guess","meaning":"adivinar"},
+
+		{"word":"pray","meaning":"orar"},
+
+		{"word":"murders","meaning":"asesinatos"},
+
+		{"word":"lack","meaning":"carencia"},
+
+		{"word":"gallows","meaning":"horca"},
+
+		{"word":"niece","meaning":"sobrina"},
+
+		{"word":"nephew","meaning":"sobrino"},
+
+		{"word":"furthest","meaning":"más lejos"},
+
+		{"word":"worst","meaning":"el peor"}, 
+
+		{"word":"worse","meaning":"peor"},
+
+		{"word":"grill","meaning":"parrilla"},
+
+		{"word":"done","meaning":"hecho"},
+
+		{"word":"wondering","meaning":"preguntarse"},
+
+		{"word":"trainers","meaning":"entrenadores"},
+
+		{"word":"took","meaning":"tomó"},
+
+		{"word":"encourage","meaning":"animar"},
+
+		{"word":"behavior","meaning":"comportamiento"},
+
+		{"word":"fist","meaning":"puño"},
+
+		{"word":"void","meaning":"vacio"},
+
+		{"word":"desserts","meaning":"postre"},
+
+		{"word":"I guess","meaning":"supongo"},
+
+		{"word":"staying up late","meaning":"quedarse hasta tarde"},
+
+		{"word":"sense","meaning":"sentidos"},
+
+		{"word":"sight","meaning":"vision"},
+
+		{"word":"to listen","meaning":"escuchar"},
+
+		{"word":"hearing","meaning":"audicion"},
+
+		{"word":"taste","meaning":"gusto"},
+
+		{"word":"hug","meaning":"abrazar"},
+
+		{"word":"dont give up","meaning":"no te rindas"},
+
+		{"word":"keep on traing","meaning":"sigue entrenando"},
+
+		{"word":"keep","meaning":"mantenerse"},
+
+		{"word":"confidence","meaning":"believe in your self / confianza"},
+
+		{"word":"self steem","meaning":"autoestima"},
+
+		{"word":"sences","meaning":"sentidos"},
+
+		{"word":"physical aspect","meaning":"aspecto fisico"},
+
+		{"word":"envy","meaning":"envidia"},
+
+		{"word":"lately","meaning":"ultimamente"},
+
+		{"word":"one mising","meaning":"falta uno"},
+
+		{"word":"discipline","meaning":"disciplina"},
+
+		{"word":"who is mising","meaning":"quien falta"},
+
+		{"word":"i guess","meaning":"creo"},
+
+		{"word":"i hope","meaning":"espero / ojala"},
+
+		{"word":"i hope so","meaning":"eso espero"},
+
+		{"word":"failure","meaning":"falla"},
+
+		{"word":"phrase","meaning":"frase"},
+
+		{"word":"perhaps","meaning":"quizas"},
+
+		{"word":"wide","meaning":"ancho"},
+
+		{"word":"pep talk","meaning":"charla"},
+
+		{"word":"speech","meaning":"discurso (habla)"},
+
+		{"word":"improvement","meaning":"mejora"},
+
+		{"word":"against","meaning":"contra"},
+
+		{"word":"quit","meaning":"dejar"},
+
+		{"word":"earn","meaning":"ganar"},
+
+		{"word":"earned","meaning":"ganado"},
+
+		{"word":"until","meaning":"hasta"},
+
+		{"word":"shedule","meaning":"calendario"},
+
+		{"word":"achievement","meaning":"logro"},
+
+		{"word":"track","meaning":"pista (para correr)"},
+
+		{"word":"assess","meaning":"evaluar"},
+
+		{"word":"peers","meaning":"comapaneros"},
+
+		{"word":"fix","meaning":"arreglar"},
+
+		{"word":"leam","meaning":"aprender"},
+
+		{"word":"trade-offs","meaning":"compensaciones"},
+
+		{"word":"from scratch","meaning":"desde cero"},
+
+		{"word":"ensure","meaning":"asegurar"},
+
+		{"word":"cross","meaning":"equis"},
+
+		{"word":"occurs","meaning":"ocurre"},
+
+		{"word":"must fill in","meaning":"debe completar"},
+
+		{"word":"inside edge","meaning":"borde inferior"},
+
+		{"word":"witch","meaning":"bruja"},
+
+		{"word":"which of the following","meaning":"cual de los siguientes"},
+
+		{"word":"hiding","meaning":"ocultacion"},
+
+		{"word":"handler","meaning":"manipulador"},
+
+		{"word":"mature","meaning":"mature"},
+
+		{"word":"gonna / goin to","meaning":"informal voy a"},
+
+		{"word":"stuff","meaning":"cosa"},
+
+		{"word":"rewind","meaning":"rebobinar"},
+
+		{"word":"tears","meaning":"lagrimas"},
+
+		{"word":"still","meaning":"aun"},
+
+		{"word":"purposely","meaning":"a proposito"},
+
+		{"word":"regarding","meaning":"con respecto a"},
+
+		{"word":"what were her throughs","meaning":"cuales fueron sus pasos"},
+
+		{"word":"farewell","meaning":"despedida"},
+
+		{"word":"give yourself","meaning":"date a ti mismo"},
+
+		{"word":"single","meaning":"soltero"},
+
+		{"word":"wasting","meaning":"debilitante"},
+
+		{"word":"unpaved","meaning":"sin asfaltar"},
+
+		{"word":"roads","meaning":"carreteras"},
+
+		{"word":"wizard","meaning":"mago"},
+
+		{"word":"to get up","meaning":"levantarse"},
+
+		{"word":"wake up","meaning":"despertarse"},
+
+		{"word":"snooze","meaning":""},
+
+		{"word":"oversleep","meaning":"dormir mucho"},
+
+		{"word":"nap","meaning":""},
+
+		{"word":"weird","meaning":""},
+
+		{"word":"nightmare","meaning":"pesadillas"},
+
+		{"word":"to fall asleep","meaning":"quedarse dormido"},
+
+		{"word":"apricot","meaning":""},
+
+		{"word":"sweet","meaning":""},
+
+		{"word":"groovy","meaning":""},
+
+		{"word":"going steady","meaning":""},
+
+		{"word":"not!","meaning":"ok no (mentira)"},
+
+		{"word":"bona fide","meaning":"genuino verdadero"}, 
+
+		{"word":"vice versa","meaning":"vise versa"},
+
+		{"word":"alma mater","meaning":""}, 
+
+		{"word":"carpe diem","meaning":""},
+
+		{"word":"by the way","meaning":"(incidentalmente)"},
+
+		{"word":"as a matter of fact","meaning":""},
+
+		{"word":"shadowing","meaning":""},
+
+		{"word":"pissed off","meaning":""},
+
+		{"word":"ticked off","meaning":""},
+
+		{"word":"shoot","meaning":""},
+
+		{"word":"fool","meaning":""},
+
+		{"word":"jerk","meaning":""},
+
+		{"word":"wimp","meaning":""},
+
+		{"word":"how have you been?","meaning":"como has estado"},
+
+		{"word":"how are you doing","meaning":"como estas?"},
+
+		{"word":"how's it going","meaning":"como estas?"},
+
+		{"word":"i dunno (dont know)","meaning":"no se"},
+		
+		{"word":"which","meaning":"cual"},
+
+		{"word":"grain","meaning":"grano (de algo como sal etc)"},
+		
+		{"word":"go for it","meaning":"a por ello"},
+
+		{"word":"gosh","meaning":"dios mio"},
+
+		{"word":"nod","meaning":"asentir"}, 
+
+		{"word":"i could be","meaning":"yo podria ser"},
+
+		{"word":"shrug","meaning":"encogimiento de hombros"},
+
+		{"word":"anyway","meaning":"de todas formas"},
+
+		{"word":"creep","meaning":"asqueroso"},
+
+		{"word":"done","meaning":"hecho"},
+
+		{"word":"regardless","meaning":"independientemente"},
+
+		{"word":"keep goin","meaning":"continua"},
+
+		{"word":"advice","meaning":"consejo"},
+
+		{"word":"wise","meaning":"sabio (de conocimiento)"},
+
+		{"word":"temperamental","meaning":"temperamental"},
+
+		{"word":"moody","meaning":"malhumorado"},
+
+		{"word":"myth","meaning":"mito"},
+
+		{"word":"debilidad","meaning":"weakness"},
+
+		{"word":"diminish","meaning":"disminuir"},
+
+		{"word":"suicidal thoughts","meaning":"pensamientos suicidas"},
+
+		{"word":"skills","meaning":"abilidad destakada"},
+
+		{"word":"survey","meaning":"encuesta"},
+
+		{"word":"jewish","meaning":"judio"},
+
+		{"word":"lovely","meaning":"precioso"},
+
+		{"word":"trail","meaning":"camino"},
+
+		{"word":"trait","meaning":"rasgo"},
+
+		{"word":"threat","meaning":"amenaza"},
+
+		{"word":"garlic","meaning":"ajo"},
+
+		{"word":"savvy","meaning":"comprension"},
+
+		{"word":"missunderstanding","meaning":"malentendidos"},
+
+		{"word":"Wild","meaning":"salvaje"},
+
+		{"word":"teel","meaning":"acero"},
+
+		{"word":"fear","meaning":"miedo"},
+
+		{"word":"have you ever had some fear about for something","meaning":""},
+
+		{"word":"rise","meaning":""},
+
+		{"word":"marry","meaning":""},
+
+		{"word":"paintint","meaning":""},
+
+		{"word":"fell","meaning":""},
+
+		{"word":"ilution","meaning":""},
+
+		{"word":"optical ilutions","meaning":""},
+
+		{"word":"pupil","meaning":""},
+
+		{"word":"loophole","meaning":""},
+
+		{"word":"divorce","meaning":""},
+
+		{"word":"half","meaning":""},
+
+		{"word":"deeper","meaning":""},
+
+		{"word":"blow","meaning":""},
+
+		{"word":"hatred","meaning":""},
+
+		{"word":"praise","meaning":""},
+
+		{"word":"wedge","meaning":""},
+
+		{"word":"still","meaning":""},
+
+		{"word":"grudge","meaning":""},
+
+		{"word":"angry","meaning":""},
+
+		{"word":"ahead","meaning":""},
+
+		{"word":"feuds","meaning":""},
+
+		{"word":"stuck","meaning":""},
+
+		{"word":"shift","meaning":""},
+
+		{"word":"attempt","meaning":""},
+
+		{"word":"spreads","meaning":""},
+
+		{"word":"schedule","meaning":""},
+
+		{"word":"budget","meaning":""},
+
+		{"word":"funding","meaning":""},
+
+		{"word":"announcement","meaning":""},
+
+		{"word":"assess","meaning":""},
+
+		{"word":"figure","meaning":""},
+
+		{"word":"reckon","meaning":""},
+
+		{"word":"staff","meaning":""},
+
+		{"word":"seeming","meaning":""},
+
+		{"word":"appearing","meaning":""},
+
+		{"word":"risk","meaning":""},
+
+		{"word":"statement","meaning":""},
+
+		{"word":"bachelor's","meaning":""},
+
+		{"word":"degree","meaning":""},
+
+		{"word":"income","meaning":""},
+
+		{"word":"lack","meaning":""},
+
+		{"word":"poorer","meaning":""},
+
+		{"word":"flu","meaning":""},
+
+		{"word":"sidibe","meaning":""},
+
+		{"word":"huge","meaning":""},
+
+		{"word":"avarage","meaning":""},
+
+		{"word":"delay","meaning":""},
+
+		{"word":"shall","meaning":""},
+
+		{"word":"hope","meaning":""},
+
+		{"word":"planty","meaning":""},
+
+		{"word":"bought","meaning":""},
+
+		{"word":"till","meaning":""},
+
+		{"word":"almost","meaning":""},
+
+		{"word":"get","meaning":""},
+
+		{"word":"arrive","meaning":""},
+
+		{"word":"reach","meaning":""},
+
+		{"word":"frustating","meaning":""},
+
+		{"word":"achieve","meaning":""},
+
+		{"word":"idk","meaning":""},
+
+		{"word":"I'm still","meaning":""}, 
+
+		{"word":"story","meaning":""}, 
+
+		{"word":"history","meaning":""}, 
+
+		{"word":"there are many moments","meaning":""},
+
+		{"word":"smells","meaning":""}, 
+		
+		{"word":"pipistrelle","meaning":"murcielago comun"}, 
+
+		{"word":"its nice to see you","meaning":""},
+
+		{"word":"beholder","meaning":""},
+
+		{"word":"dude","meaning":""}, 
+
+		{"word":"ovens","meaning":""},
+
+		{"word":"penny","meaning":""},
+
+		{"word":"chuck","meaning":""},
+
+		{"word":"issue","meaning":""},
+		
+		{"word":"very kind and frendly","meaning":""},
+
+		{"word":"try a quick fix","meaning":""},
+
+		{"word":"improbe","meaning":""},
+
+		{"word":"woodchuck","meaning":""},
+
+		{"word":"give up","meaning":""},
+
+		{"word":"irish","meaning":"irlandes"},
+		
+		{"word":"wristwatch","meaning":"reloj de pulsera"},
+
+		{"word":"fearlessly","meaning":""},
+
+		{"word":"shrug","meaning":""}, 
+
+		{"word":"weirtest","meaning":""},
+
+		{"word":"giggle","meaning":""},
+
+		{"word":"my either","meaning":""},
+
+		{"word":"huge","meaning":""},
+
+		{"word":"dare","meaning":"atrevimiento"},
+
+		{"word":"meek","meaning":"manso"},
+
+		{"word":"stubborn","meaning":"testarudo"},
+
+		{"word":"industrious","meaning":"industrioso"},
+
+		{"word":"threat","meaning":"amenaza"},
+
+		{"word":"harm","meaning":"dañar"},
+
+		{"word":"diggin your crush","meaning":""},
+
+		{"word":"trying","meaning":"dificil"},
+
+		{"word":"advices","meaning":"consejos"},
+
+		{"word":"cause","meaning":"causa"},
+
+		{"word":"getting","meaning":"deep"},
+
+		{"word":"desire","meaning":"deseo"},
+
+		{"word":"got mad","meaning":"se enojo"},
+
+		{"word":"pass","meaning":"pasar"},
+
+		{"word":"fail","meaning":"fallar"},
+
+		{"word":"shy","meaning":"timid@"},
+		
+		{"word":"friendly","meaning":"amigable"},
+		
+		{"word":"proficient","meaning":"competente"},
+
+		{"word":"trends","meaning":"tendencias"},
+
+		{"word":"pleasure-seking","meaning":"busqueda de placer"},
+
+		{"word":"brands","meaning":"marcas"},
+
+		{"word":"hesitant","meaning":"dudoso"},
+
+		{"word":"hesitation","meaning":"vacilacion"},
+
+		{"word":"concerned","meaning":"preocupado"},
+
+		{"word":"deterred","meaning":"disuadido"},
+
+		{"word":"cons","meaning":"contras"},
+
+		{"word":"postpone","meaning":"posponer"},
+
+		{"word":"risk-taker","meaning":"tomador de riegos"},
+
+		{"word":"say","meaning":"(short) decir"},
+
+		{"word":"tell","meaning":"long  decir"},
+
+		{"word":"subject","meaning":"asunto"},
+
+		{"word":"shake","meaning":"sacudir"},
+
+		{"word":"shaking","meaning":"temblando"},
+		
+		{"word":"badly","meaning":"gravement"},
+		
+		{"word":"ring","meaning":"anillo"},
+		
+		{"word":"highlighted","meaning":"resaltado"},
+		
+		{"word":"inner","meaning":"interno"},
+
+		{"word":"whenever","meaning":"en cualquier momento"},
+
+		{"word":"overload","meaning":"sobrecarga"},
+
+		{"word":"feathers","meaning":"plumas"},
+
+		{"word":"wind","meaning":"viento"},
+
+		{"word":"wings","meaning":"alas"},
+
+		{"word":"deliveries","meaning":"entregas"},
+
+		{"word":"suit","meaning":"traje"},
+
+		{"word":"wizard","meaning":"mago"},
+
+		{"word":"surroundings","meaning":"alrededores"},
+
+		{"word":"trouble","meaning":"problema"},
+
+		{"word":"preasure","meaning":"presion"},
+
+		{"word":"breeze","meaning":"brisa"},
+
+		{"word":"clown","meaning":"payaso"},
+
+		{"word":"take avantage of","meaning":"aprovechar, tomar ventaja"},
+
+		{"word":"trekking","meaning":"senderismo"},
+
+		{"word":"themselves","meaning":"ellos mismos"},
+
+		{"word":"bound","meaning":"vinculado"},
+
+		{"word":"delivered","meaning":"entregado"},
+
+		{"word":"arriving","meaning":"llegando"},
+
+		{"word":"sort","meaning":"clasificar"},
+
+		{"word":"sorting","meaning":"clasificacion"},
+
+		{"word":"slums","meaning":"barrios bajos o pobres"},
+
+		{"word":"trends","meaning":"tendencias"},
+
+		{"word":"theaters","meaning":"teatros"},
+
+		{"word":"markets","meaning":""},
+
+		{"word":"then","meaning":"entonces"},
+
+		{"word":"awake","meaning":"despierto"},
+		
+		{"word":"wake up","meaning":"despierta"},
+		
+		{"word":"get up","meaning":"levantarse"},
+		
+		{"word":"give up","meaning":"abandonar"},
+		
+		{"word":"bow","meaning":"arco"},
+		
+		{"word":"spendthrift","meaning":"derrochador"},
+		
+		{"word":"join","meaning":"unirse"},
+		
+		{"word":"homeless","meaning":"Vagabundo"},
+		
+		{"word":"stockbroking","meaning":"corredor de bolsa"},
+		
+		{"word":"gets up","meaning":"se levanta"},
+		
+		{"word":"juggle","meaning":"hacer juegos malabares"},
+		
+		{"word":"thickness","meaning":"espesor"},
+		
+		{"word":"prize","meaning":"premio"},
+		
+		{"word":"flip","meaning":"dar lavuelta"},
+
+		{"word":"foldable","meaning":"plegable"},
+		
+		{"word":"worth","meaning":"valor"},
+		
+		{"word":"deal","meaning":"acuerdo"},
+		
+		{"word":"tough","meaning":"pese"},
+				
+		{"word":"ward","meaning":"pabellón"},
+		
+		{"word":"wild","meaning":"salvaje"},
+		
+		{"word":"waterfall","meaning":"cascada"},
+		
+		{"word":"copper","meaning":"cobre"},
+		
+		{"word":"plateau","meaning":"meseta"},
+		
+		{"word":"untamed","meaning":"salvaje"},
+		
+		{"word":"tamed","meaning":"domado"},
+		
+		{"word":"clever","meaning":"inteligente"},
+		
+		{"word":"avoid","meaning":"evitar"},
+		
+		{"word":"withdraw","meaning":"retirar"},
+		
+		{"word":"surgery","meaning":"cirugía"},
+		
+		{"word":"achievement","meaning":"logro"},
+		
+		{"word":"climb","meaning":"subida"},
+		
+		{"word":"milestones","meaning":"hitos"},
+		
+		{"word":"melt","meaning":"derretir"},
+		
+		{"word":"threatens","meaning":"amenaza"},
+		
+		{"word":"claim","meaning":"reclamar"},
+		
+		{"word":"beneath","meaning":"debajo"},
+		
+		{"word":"affordable","meaning":"asequible"},
+		
+		{"word":"frame","meaning":"cuadro"},
+		
+		{"word":"spoil","meaning":"arruinar"},
+		
+		{"word":"shuffle","meaning":"barajar"},
+		
+		{"word":"flashcards","meaning":"tarjetas didácticas"},
+		
+		{"word":"assignments","meaning":"asignaciones"},
+		
+		{"word":"choose","meaning":"elegir"},
+		
+		{"word":"submit","meaning":"enviar"},
+		
+		{"word":"b1 list","meaning":"b1 lista"},
+		
+		{"word":"witness","meaning":"testigo"},
+		
+		{"word":"footrace","meaning":"Carrera a pie"},
+		
+		{"word":"barefoot","meaning":"descalzo"},
+		
+		{"word":"stunned","meaning":"aturdido"},
+		
+		{"word":"embrace","meaning":"abrazar"},
+		
+		{"word":"overwhelming","meaning":"agobiante"},
+		
+		{"word":"wandering","meaning":"errante"},
+		
+		{"word":"wellbeing","meaning":"bienestar"},
+		
+		{"word":"desire","meaning":"deseo"},
+		
+		{"word":"struck","meaning":"golpeado"},
+		
+		{"word":"craft","meaning":"artesanía"},
+		
+		{"word":"queries","meaning":"consultas"},
+		
+		{"word":"tiny","meaning":"diminuto"},
+		
+		{"word":"straightforward","meaning":"directo"},
+		
+		{"word":"fade","meaning":"desteñir"},
+		
+		{"word":"poverty","meaning":"pobreza"},
+		
+		{"word":"plenty","meaning":"mucho"},
+		
+		{"word":"fullness","meaning":"plenitud"},
+		
+		{"word":"brick","meaning":"ladrillo"},
+		
+		{"word":"plaster","meaning":"yeso"},
+		
+		{"word":"crew","meaning":"tripulación"},
+		
+		{"word":"approach","meaning":"Acercarse"},
+		
+		{"word":"insofar","meaning":"en la medida en que"},
+		
+		{"word":"tackling","meaning":"abordar"},
+		
+		{"word":"scared","meaning":"asustado"},
+		
+		{"word":"mesh","meaning":"malla"},
+		
+		{"word":"weight","meaning":"peso"},
+		
+		{"word":"novelty","meaning":"novedad"},
+		
+		{"word":"faddish","meaning":"caprichoso"},
+		
+		{"word":"banished","meaning":"alejado"},
+		
+		{"word":"fads","meaning":"manía"},
+		
+		{"word":"worrisome","meaning":"inquietante"},
+		
+		{"word":"slangy","meaning":"jerga"},
+		
+		{"word":"devoid","meaning":"vacío"},
+		
+		{"word":"intimacy","meaning":"intimidad"},
+		
+		{"word":"subtle","meaning":"sutil"},
+		
+		{"word":"slimmed down","meaning":"Adelgazado"},
+		
+		{"word":"wearable","meaning":"usable"},
+		
+		{"word":"binge eating","meaning":"atracones"},
+		
+		{"word":"guilt","meaning":"culpa"},
+		
+		{"word":"self-condemnation","meaning":"autocondena"},
+		
+		{"word":"stream","meaning":"corriente"},
+		
+		{"word":"ruthless","meaning":"implacable"},
+		
+		{"word":"dormant","meaning":"latente"},
+		
+		{"word":"deprived","meaning":"privado"},
+		
+		{"word":"brag","meaning":"jactarse"},
+		
+		{"word":"upmanship","meaning":"superioridad"},
+		
+		{"word":"shut","meaning":"cerrado"},
+		
+		{"word":"caregiver","meaning":"cuidador"},
+		
+		{"word":"footage","meaning":"imágenes"},
+		
+		{"word":"so far","meaning":"hasta ahora/hasta el momento/ hasta la fecha"},
+
+		{"word":"mine","meaning":"mí@"},
+		
+		{"word":"more late","meaning":"mas tarde"},
+			
+		{"word":"later","meaning":"luego / despues"},
+		
+		{"word":"browse","meaning":"navegar"},
+		
+		{"word":"skim","meaning":"desnatar"},
+		
+		{"word":"trustworthy","meaning":"confiable"},
+		
+		{"word":"timeless","meaning":"eterno"},
+		
+		{"word":"recruits","meaning":"reclutas"},
+		
+		{"word":"accomplishment","meaning":"logro"},
+		
+		{"word":"pedestrians","meaning":"peatones"},
+		
+		{"word":"brand","meaning":"marca"},
+		
+		{"word":"loyalty","meaning":"lealtad"},
+		
+		{"word":"literacy","meaning":"literatura"},
+		
+		{"word":"mortgage","meaning":"hipoteca"},
+		
+		{"word":"leisure","meaning":"ocio"},
+		
+		{"word":"stuck","meaning":"atascado"},
+		
+		{"word":"sneaky","meaning":"furtivo"},
+		
+		{"word":"convey","meaning":"transmitir"},
+		
+		{"word":"proof","meaning":"prueba"},
+		
+		{"word":"banned","meaning":"prohibido"},
+		
+		{"word":"b2 english","meaning":"b2 lista"},
+
+		{"word":"glance","meaning":"vistazo"},
+		
+		{"word":"relationships","meaning":"relaciones"},
+		
+		{"word":"inherently","meaning":"inherentemente"},
+		
+		{"word":"startup","meaning":"puesta en marcha"},
+		
+		{"word":"embedded","meaning":"incrustado"},
+		
+		{"word":"commiserated","meaning":"compadecido"},
+		
+		{"word":"hack","meaning":"cortar a tajos"},
+		
+		{"word":"blame","meaning":"culpa"},
+		
+		{"word":"doodge","meaning":"esquivar"},
+		
+		{"word":"doogles","meaning":"perros"},
+		
+		{"word":"doodles","meaning":"garabatos"},
+		
+		{"word":"trustful","meaning":"confiado"},
+		
+		{"word":"untruth","meaning":"mentira"},
+		
+		{"word":"delay","meaning":"demora"},
+		
+		{"word":"contestant","meaning":"concursante"},
+		
+		{"word":"outcomes","meaning":"resultados"},
+		
+		{"word":"shareholder","meaning":"accionista"},
+		
+		{"word":"surgeon","meaning":"cirujano"},
+		
+		{"word":"ratio","meaning":"relación / proporcion"},
+		
+		{"word":"launching","meaning":"lanzamiento"},
+		
+		{"word":"wealthy","meaning":"saludable"},
+		
+		{"word":"mindset","meaning":"mentalidad"},
+		
+		{"word":"overdue","meaning":"atrasado"},
+		
+		{"word":"sustainable","meaning":"sostenible"},
+		
+		{"word":"trends","meaning":"tendencias"},
+		
+		{"word":"staggering","meaning":"asombroso"},
+		
+		{"word":"stuff","meaning":"cosas"},
+		
+		{"word":"staff","meaning":"personal"},
+		
+		{"word":"drop","meaning":"soltar"},
+		
+		{"word":"throw","meaning":"lanzar"},
+		
+		{"word":"judge","meaning":"juez"},
+		
+		{"word":"cartridge","meaning":"cartucho"},
+		
+		{"word":"gauge","meaning":"medir"},
+		
+		{"word":"against","meaning":"contra"},
+		
+		{"word":"scary","meaning":"aterrador"},
+		
+		{"word":"odd","meaning":"extraño"},
+		
+		{"word":"doable","meaning":"realizable"},
+		
+		{"word":"disease","meaning":"enfermedad"},
+		
+		{"word":"breast","meaning":"seno"},
+		
+		{"word":"overcome","meaning":"superar"},
+		
+		{"word":"sponsor","meaning":"patrocinador"},
+		
+		{"word":"sponsorship","meaning":"patrocinio"},
+		
+		{"word":"invoice","meaning":"factura"},
+		
+		{"word":"century","meaning":"siglo"},
+		
+		{"word":"consumerrism","meaning":"consumismo"},
+		
+		{"word":"sunset","meaning":"puesta de sol"},
+		
+		{"word":"downward","meaning":"hacia abajo"},
+		
+		{"word":"plummet","meaning":"plomada"},
+		
+		{"word":"prosthetic","meaning":"protésico"},
+		
+		{"word":"strain","meaning":"presion"},
+		
+		{"word":"wrap","meaning":"envolver"},
+		
+		{"word":"nock","meaning":"culatin / parte tracera del arma"},
+		
+		{"word":"hotspot","meaning":"punto de acceso"},
+		
+		{"word":"buff","meaning":"fuerte"},
+		
+		{"word":"techie","meaning":"aficionado a la tecnología"},
+		
+		{"word":"workforce","meaning":"personal"},
+		
+		{"word":"thorny","meaning":"espinoso"},
+		
+		{"word":"struggle","meaning":"dificil"},
+		
+		{"word":"enlighten","meaning":"iluminar"},
+		
+		{"word":"crunch","meaning":"crujido"},
+		
+		{"word":"upheaval","meaning":"convulsión"},
+		
+		{"word":"boost","meaning":"impulsar"},
+		
+		{"word":"swindle","meaning":"estafa"},
+		
+		{"word":"averse","meaning":"contrario"},
+		
+		{"word":"crowd","meaning":"multitud"},
+
+		{"word":"bark","meaning":"ladrar"},
+		
+		{"word":"rejected","meaning":"rechazada"},
+		
+		{"word":"broadcasting","meaning":"radiodifusión"},
+		
+		{"word":"reverberation","meaning":"reverberación"},
+		
+		{"word":"desesitized","meaning":"desesitizado"},
+		
+		{"word":"moan","meaning":"gemir"},
+
+		{"word":"dutch","meaning":"holandés"},
+
+		{"word":"certain","meaning":"cierto"},
+
+		{"word":"certainly","meaning":"definitivamente/ por supuesto"},
+
+		{"word":"renaissance","meaning":"Renacimiento"},
+
+		{"word":"cuisine","meaning":"cocina"},
+
+		{"word":"must","meaning":"deber"},
+
+		{"word":"laid back","meaning":"despreocupado / relajado"},
+
+		{"word":"handsome","meaning":"guapo / for males"},
+
+		{"word":"catch my atention","meaning":"llamo mi atencion"},
+
+		{"word":"complex","meaning":"complejo"},
+
+		{"word":"crows","meaning":"cuervos"},
+
+		{"word":"cope","meaning":"afrontar"},
+
+		{"word":"too much","meaning":"demaciado"},
+
+		{"word":"deal","meaning":"acuerdo"},
+
+		{"word":"to make someone do something","meaning":"hacer que alguien haga algo"},
+
+		{"word":"review","meaning":"repasar"},
+
+		{"word":"instead","meaning":"en camino"},
+
+		{"word":"face challenges","meaning":"afrontar retos"},
+
+		{"word":"may","meaning":"poder / probabilidad"},
+		
+		{"word":"might","meaning":""},
+
+		{"word":"sell","meaning":"vender"},
+
+		{"word":"more or less","meaning":"mas o menos"},
+		
+		{"word":"as","meaning":"como"},
+		
+		{"word":"incapable","meaning":"incapaz"},
+
+		{"word":"freedom","meaning":"libertad"},
+
+		{"word":"laughed","meaning":"se río"},
+
+		{"word":"blast","meaning":"explosión"},
+
+		{"word":"build-up","meaning":"construir"},
+
+		{"word":"melting pot","meaning":"crisol"},
+
+		{"word":"skyscrapers","meaning":"rascacielos"},
+
+		{"word":"wide","meaning":"amplio"},
+
+		{"word":"cloack","meaning":"capa"},
+
+		{"word":"stroll","meaning":"paseo"},
+
+		{"word":"attractions as well","meaning":"atracciones también"},
+
+		{"word":"grunt","meaning":"grunido"},
+		
+		{"word":"doom","meaning":"condenar"},
+
+		{"word":"posted back","meaning":"publicado de nuevo"},
+
+		{"word":"postback","meaning":"devolución de datos"},
+
+		{"word":"hardbouring","meaning":"duro"},
+
+		{"word":"hiccups","meaning":"hipo"},
+
+		{"word":"template","meaning":"Modelo"},
+		
+		{"word":"swort","meaning":"espada"},
+		
+		{"word":"sword","meaning":"espada"},
+		
+		{"word":"blade","meaning":"espada"},
+		
+		{"word":"idle","meaning":"inactivo"},
+		
+		{"word":"puffy","meaning":"hinchado"},
+		
+		{"word":"streaks","meaning":"manchas"},
+		
+		{"word":"traits","meaning":"rasgos"},
+		
+		{"word":"stubborn","meaning":"testarudo"},
+		
+		{"word":"outgoing","meaning":"extrovertido"},
+		
+		{"word":"naive","meaning":"ingenuo"},
+		
+		{"word":"cranck","meaning":"grieta"},
+		
+		{"word":"fetch","meaning":"buscar"},
+		
+		{"word":"bilk","meaning":"engañar"},
+		
+		{"word":"insightful","meaning":"perspicaz"},
+		
+		{"word":"cheeful","meaning":"alegre"},
+		
+		{"word":"knitting","meaning":"tejido de punto"},
+		
+		{"word":"commute","meaning":"viajar diariamente"},
+
+		{"word":"leisure","meaning":"ocio"},
+
+		{"word":"I care","meaning":"me importa"},
+
+		{"word":"take care","meaning":"cuidate"},
+
+		{"word":"hopes","meaning":"esperanzas"},
+
+		{"word":"stand","meaning":"pararse"},
+
+		{"word":"handstand","meaning":"pararse de manos"},
+
+		{"word":"i sick of you","meaning":"estoy arto de ti"},
+
+		{"word":"fit","meaning":"adaptar"},
+
+		{"word":"frame","meaning":"cuadro"},
+
+		{"word":"wealt","meaning":"riqueza"},
+
+		{"word":"queue","meaning":"fila / cola"},
+
+		{"word":"reach out","meaning":"alcanzar"},
+
+		{"word":"nasty","meaning":"despreciable/cruel/repugnante"},
+
+		{"word":"FAQs","meaning":"preguntas frecuentes"},
+
+		{"word":"although(aldou)","meaning":"aunque/ apesar de"},
+
+		{"word":"gauge","meaning":"medir calibrar"},
+
+		{"word":"approach","meaning":"acercarse / aproximarse"},
+
+		{"word":"hesitate","meaning":"dudar/vacilar/titubear"},
+
+		{"word":"guess","meaning":"adivinar/suponer"},
+
+		{"word":"bullshit","meaning":"mentiras/ pura mier**"},
+		
+		{"word":"we'll be in touch","meaning":"estaremos en contato"},
+
+		{"word":"stone","meaning":"piedra/roca"},
+
+		{"word":"variations","meaning":"variaciones/variantes"},
+
+		{"word":"tomb","meaning":"tumba"},
+
+		{"word":"bright","meaning":"radiante/brillante"},
+
+		{"word":"pleasure","meaning":"placer / gusto"},
+
+		{"word":"interrupt","meaning":"interrumpir"},
+		
+		{"word":"should, shall, ought","meaning":"deberia/deberá"},
+
+		{"word":"untie","meaning":"desatar/liberar"},
+
+		{"word":"glad","meaning":"contento/alegre"},
+		
+		{"word":"sticky","meaning":"engomado/pegajoso"},
+		
+		{"word":"on and off","meaning":"intermittenly/intervals"},
+
+		{"word":"shore","meaning":"costa"},
+
+		{"word":"off shore","meaning":"mar abierto/lejos de la costa"},
+
+		{"word":"reliable","meaning":"fiable"},
+
+		{"word":"certain ","meaning":"inegable/seguro/cierto"},
+
+		{"word":"dawn","meaning":"amanecer/ incios"},
+
+		{"word":"proud","meaning":"orgulloso"},
+
+		{"word":"tenses","meaning":"tenso/nervioso"},
+
+		{"word":"abcent","meaning":"no estar/ ausente"},
+
+		{"word":"classmate","meaning":"classmate"},
+
+		{"word":"polite","meaning":"respetuoso/educado"},
+
+		{"word":"rude","meaning":"irrespetuoso/maleducado"},
+
+		{"word":"wage","meaning":"salario/sueldo"},
+
+		{"word":"fasilities","meaning":"fasilidades"},
+	
+		{"word":"gave (past give)","meaning":"pasar/ dar/ alcanzar"},
+
+		{"word":"cumbersome","meaning":"voluminoso/ engorroso"},
+
+		{"word":"brief","meaning":"breve/corto/rapido"},
+		
+		{"word":"is round","meaning":"es redondo"},
+
+		{"word":"there is","meaning":"hay (plural uncontable)"},
+		
+		{"word":"feasible","meaning":"factible"},
+
+		{"word":"concise","meaning":"consiso"},
+
+		{"word":"thin","meaning":"delgado"},
+
+		{"word":"scratch","meaning":"rascar"},
+
+		{"word":"overcome","meaning":"superar?"},
+
+		{"word":"I'm begging you","meaning":"te lo ruego"},
+
+		{"word":"lousy","meaning":"repugnante/asqueroso"},
+
+		{"word":"brat","meaning":"mocoso mimado/maleducado"},
+
+		{"word":"defeated","meaning":"derrotado"},
+
+		{"word":"forgive","meaning":"perdonar / olvidar"},
+
+		{"word":"mentality / mindset","meaning":"mentalidad"},
+
+		{"word":"sturdy","meaning":"robusto/fuerte"},
+
+		{"word":"flavor","meaning":"sabor"},
+
+		{"word":"homeless","meaning":"sin hogar/vagabundo"},
+
+		{"word":"cheerful","meaning":"alegre/feliz"},
+		
+		{"word":"glad","meaning":"alegre / contento"},
+
+		{"word":"kind","meaning":"amable/bueno"},
+
+		{"word":"their (is possession mostly)","meaning":"ellos"},
+
+		{"word":"them (is about people)","meaning":"ellos"},
+
+		{"word":"aware","meaning":"conciente"},
+
+		{"word":"rise","meaning":"crecer"},
+
+		{"word":"lightning","meaning":"rayo"},
+		
+		{"word":"smooth","meaning":"liso"},
+		
+		{"word":"greatness","meaning":"grandeza/exelencia"},
+
+		{"word":"hang on","meaning":"aguarda en linea/mantenerse a la espera"},
+
+		{"word":"taste","meaning":""},
+		
+		{"word":"weird","meaning":"raro/extraño"},
+
+		{"word":"spread","meaning":"estenderce/difundir"},
+
+		{"word":"apologise","meaning":"pedir disculpas"},
+
+		{"word":"duty","meaning":"deber/obligacion"},
+		
+		{"word":"","meaning":"homicida"},
+		
+		{"word":"farewell","meaning":"despedida/adios"},
+
+		{"word":"besides","meaning":"ademas"},
+
+		{"word":"","meaning":""},
+		{"word":"","meaning":""},
+		{"word":"","meaning":""},
+		{"word":"","meaning":""},
+		{"word":"","meaning":""},
+		{"word":"","meaning":""},
+		{"word":"","meaning":""}
+	]
+}

@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    overflow: hidden;
+    background: #000;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+header{
+    width: 70vw;
+    margin: auto;
+    font-size: 2.7rem;
+}
+
+.wrapper .main{
+    background: indigo;
+    box-shadow: 0px 0px 70px indigo;
+    margin: auto;
+    margin-top: 7%;
+    margin-bottom: 5ex;
+    width: 70vw;
+    padding: 1vw;
+}
+
+section{
+    height: 40vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+article{
+    background: #000;
+    padding: 2ex;
+    width: 49.7%;
+    font-size: 42pt;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+}
+
+h1,h2,code{
+    color: crimson;
+    text-shadow: 1px 1px white;
+}
+
+h3:nth-child(2){
+    color: dodgerblue;
+    text-shadow: 1px 1px white;
+    font-size: 7rem;
+    word-wrap: break-all;
+    word-wrap: break-word;
+}
+
+h3:nth-child(1){
+    color: slateblue;
+    text-shadow: 1px 1px white;
+    font-size: 2.7rem;
+}
+
+footer{
+    text-align: center;
+}
