@@ -40,14 +40,13 @@
     </footer>
 </body>
 
-<script src="js/index.js"></script>
 <script>
     
     (() =>{ 
         let Word = document.querySelector("#word");
         let Meaning = document.querySelector("#definition");
 
-        fetch('database/english.json')
+        fetch('https://haku-api-nodejs.herokuapp.com/api/getwords')
         .then(response => response.json())
         .then(data => Asignacion(data));
 
