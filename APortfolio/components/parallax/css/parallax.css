@@ -5,30 +5,30 @@
 }
 @font-face{
     font-family: Merge;
-    src: url(../../../font/merge_light.otf);
+    src: url(../../../../font/merge_light.otf);
 }
 body{
     background: #252525;
     font-family: Merge, Serif;
 }
 .img1,.img2,.img3{
-    background: url(../../../img/fondo/fondo3.png);background-attachment: fixed;
-    background-size: 100% 100%; filter: blur(0.3px); height: 100vh; 
+    background: url(../../../../img/utilities/tr.png);background-attachment: fixed;
+    background-size: 100% 100%; filter: blur(0.3px); height: 100vh;
 }
 .img2{
-    background: url(../../../img/fondo/fondo4.jpg);
+    background: url(../../../../img/utilities/year.jpg);
     background-size: 110% 110%;
     background-attachment: fixed;
 }
 .img3{
-    background: url(../../../img/fondo/circle.jpg);
+    background: url(../../../../img/utilities/particles.PNG);
     background-size: 100% 100%;
     background-attachment: fixed;
 }
 
 section div{
-    background:rgba(25,25,25,0.3);
-    border-radius: 3px;
+    background:rgba(77,77,77, 0.7);
+    border-radius: 7px;
     padding: 70px 20px;
     margin: auto;
     top: 0;
@@ -108,7 +108,7 @@ li:hover{
     padding: 20px;
     border-radius: 4px;
     display: block;
-    width: 24vh;
+    width: 17vw;
     text-align: center;
     margin: auto;
     margin-top: 40px;
@@ -131,10 +131,10 @@ li:hover{
 
 .img3 div a{
     color: white;
-    padding: 20px;
+    padding: 17px;
     display: inline-block;
     width: 90%;
-    font-size: 5rem;
+    font-size: 3rem;
     margin-bottom: 10px;
     text-transform: uppercase;
     border-left: 7px solid dodgerblue;
