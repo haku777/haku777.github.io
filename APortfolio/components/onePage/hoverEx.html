@@ -14,7 +14,7 @@
     #wrapper-personalizado{
       position: absolute;
       width:100%;
-      min-height:100vh;1
+      min-height:100vh;
       overflow: hidden;
     }
 
@@ -43,10 +43,11 @@
 
     .layer img{
       position: absolute;
-      width:100%;
-      top:50%;
-      left: 50%;
-      transform:translate(-50%, -50%);
+      object-fit: fill;
+      width:100vw;
+      top:50vh;
+      left: 50vw;
+      transform:translate(-50%, -40%);
     }
 
     .layer h1{
@@ -74,8 +75,7 @@
     }
 
     .bottom h1{
-      color:#FDAB00;
-      color: red;
+      color: crimson;
     }
 
     .top{
@@ -86,8 +86,9 @@
 
     a{
       text-decoration: none;
-      color: indigo;
-      text-shadow: 1px 1px 1px #fff;
+      color: #fff;
+      font-size: 20px;
+      text-shadow: 0px 0px 1px #000;
     }
 
     .top .content-body{
@@ -99,7 +100,7 @@
       transform: skew(-20deg);
       margin-left:-1000px;
       width: calc(50vw + 1000px);
-      border-right: 10px solid crimson;
+      border-right: 7px solid crimson;
       transition: all 1000ms cubic-bezier(0.63, 0.04, 0.69, 1.01) 
     }
 
@@ -137,7 +138,7 @@
                     <h1>LOL</h1>
                     <a href="<?php echo the_field('boton_hero'); ?>" class="theme-btn">Conoce más</a>
                 </div>
-                <img src="../../img/pexelFree/girl_light.jpg" alt="">
+                <img src="../../../img/pexelFree/girl_like.jpg" alt="">
             </div>
         </div>
         <div class="layer top" id="two">
@@ -146,7 +147,7 @@
                     <h1>DEVELOP</h1>
                     <a href="<?php echo the_field('boton__hero_2'); ?>" class="theme-btn">Conoce más</a>
                 </div>
-                <img src="../../img/pexelFree/girl_wonderful.jpg" alt="">
+                <img src="../../../img/pexelFree/code.jpg" alt="">
             </div>
         </div>
     </section>

@@ -14,7 +14,7 @@ function loadImagen(){
 	Swal.fire({
     title: 'Flowers!?',
     text: '!hi i"m a image',
-	  imageUrl: '../../img/flowers.jpg',
+	  imageUrl: '../../../../img/pexelFree/yellow_sheets.jpg',
     imageWidth: 400,
 	  imageHeight: 300,
 	  imageAlt: 'A tall image'
@@ -90,8 +90,8 @@ function changeColor(){
   let documento = document.getElementsByClassName('content')[0];
 
 
-  if (documento.style.cssText !== "background-color: lightslategray; color: white;"){
-      documento.style.cssText= 'background-color: lightslategray; color: white;';
+  if (documento.style.cssText !== "background-color: crimson;"){
+      documento.style.cssText= 'background-color: crimson;';
   }else{
     documento.style.cssText='background-color: rgba(0,0,0,0.3);';
   }
