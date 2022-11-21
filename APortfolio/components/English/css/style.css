@@ -5,24 +5,24 @@
 }
 
 body{
+    background: radial-gradient(#f1f1f1,#fff);
     height: 100vh;
     overflow: hidden;
-    background: #000;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 header{
     width: 70vw;
     margin: auto;
-    font-size: 3vw;
+    font-size: 1.7vw;
 }
 
 .wrapper .main{
-    background: indigo;
-    box-shadow: 0px 0px 70px indigo;
+    background: #fff;
+    box-shadow: 0px 0px 17px #ddd;
     margin: auto;
     margin-top: 10vh;
-    width: 60vw;
+    width: 80vw;
     padding: 3px;
 }
 
@@ -31,9 +31,10 @@ section{
 }
 
 article{
-    background: #000;
+    background: #f1f1f1;
     display: flex;
-    font-size: 5vw;
+    padding: 2vh 0vh;
+    font-size: 7vw;
     justify-content: center;
     overflow: hidden;
     text-align: center;
@@ -56,13 +57,17 @@ h3:nth-child(1){
 }
 
 footer{
-    color: teal;
+    padding-top: 20px;
+    color: gray;
     text-align: center;
 }
 
 @media (max-width: 750px){
     .wrapper .main{
         width: 100%;
-        font-size: 12px !important;
+        font-size: 12px;
+    }
+    article{
+        font-size: 14vw;
     }
 }
