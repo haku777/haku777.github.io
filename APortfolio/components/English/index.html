@@ -51,24 +51,20 @@
         .then(data => Asignacion(data));
 
         let Data = null;
-        let count = 0;
-
+        
         function Asignacion(data){
             Data = data;
             console.log(Data.Vocabulary.length);
         }
-
+        
         function Intervalo(){
-            if (count < Data.Vocabulary.length){
-                    let word = Data.Vocabulary[count].word;
-                    Word.innerHTML = word;
+                let random = Math.floor(Math.random() * Data.Vocabulary.length);
+                console.log(random);
+                let word = Data.Vocabulary[random].word;
+                Word.innerHTML = word;
 
-                    let meaning = Data.Vocabulary[count].meaning;
-                    Meaning.innerHTML = meaning;
-                    count++;
-                }else{
-                    count = 0;
-                }
+                let meaning = Data.Vocabulary[random].meaning;
+                Meaning.innerHTML = meaning;
             }
         const interval = setInterval(Intervalo,5000);
     })(); 
