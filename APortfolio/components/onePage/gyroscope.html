@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>gyroscope</title>
+
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,300;1,400&display=swap');
+
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			font-family: 'Josefin Sans', sans-serif;
+		}
+
+		.wrapper{
+			background: #000;
+			height: 100vh;
+			overflow: hidden;
+		}
+		
+		main{
+			background: indigo;
+			margin: auto;
+			height: 17vw;
+			width: 1vw;
+		}
+
+		main div{
+			background: radial-gradient(transparent,rgba(65, 6, 114,0.7)70%, rgba(248, 62, 172,0.9));
+			background: linear-gradient(135deg, #f83eac99 25%, transparent 50%, #214aff99 75%);
+			margin: auto;
+			width: calc(var(--i) * 30vw);
+			height: calc(var(--i) * 30vw);
+			border: 7px solid #fff;
+			border-radius: 50%;
+		}
+
+		main div:nth-child(1){
+			background: crimson;
+			margin-top: 30vh;
+			height: 70px;
+			border: 7px solid tan;
+			animation: gyroscope_main 7s alternate infinite;
+		}
+
+		main div:nth-child(2){
+			margin-top: -40vh;
+			background: transparent;
+			border:7px solid crimson;
+			animation: gyroscope_second 7s linear infinite;
+		}
+
+		@keyframes gyroscope_main {
+			0%{transform: rotateZ(180deg) skewY(30deg);}
+		}
+
+		@keyframes gyroscope_second {
+			0%{transform: rotateY(180deg);}
+		}
+
+
+
+	</style>
+
+</head>
+<body>
+	<div class="wrapper">
+		<main>
+			<div style="--i:1"></div>
+			<div style="--i:1.1"></div>
+			<div style="--i:1.2"></div>
+			<div style="--i:1.3"></div>
+		</main>
+	</div>
+</body>
+
+<script>
+
+</script>
+</html>
