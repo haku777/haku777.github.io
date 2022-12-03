@@ -16,18 +16,19 @@
 		}
 
 		.wrapper{
-			background:#160345;
+			background:radial-gradient(indigo,#170747,#000 80%,indigo);
 			height: 100vh;
 			overflow: hidden;
 		}
 
 		main{
 			/* background: #270027; */
-			width: 70vw;
-			height: 100vh;
+			width: 100vw;
+			height:100vh;
 			margin: auto;
 			padding: 7px;
 			display: flex;
+			/* -webkit-box-reflect: below -400px; */
 			justify-content: center;
 			align-content: center;
 			align-items: center;
@@ -37,20 +38,20 @@
 		span{
 			position: absolute;
 			height: 300px;
-			width: calc((var(--i) * 90vw));
+			width: calc((var(--i) * 100vw));
 			border-radius: 50%;
-			border:1px solid #fff;
-			animation: waves 1s alternate infinite;
+			border:1px solid darkmagenta;
+			animation: waves 2s alternate infinite;
 			animation-delay: calc(var(--i) * 1s);
-			box-shadow: 0px 0px 7px 1px #fff;
+			box-shadow: 0px 0px 17px 0px darkmagenta;
 		}
 		span:nth-child(1){
 			background: url(../../../img/utilities/yo4.jpeg);
 			background-position: center;
 			background-size: cover;
-			height: 17vh;
+			height: 20vh;
 			box-shadow:
-			inset 7px 7px 17px #f83eac, 
+			inset 7px 7px 17px #f83eac,
 			inset -7px -7px 17px #214aff,
 			inset 0px 0px 7px 2px #fff,
 			0px 0px 7px 2px #fff,
@@ -62,10 +63,19 @@
 			17px 17px 27px #214aff60,
 			27px 27px 77px #214aff77,
 			77px 77px 77px #214aff30;
+			animation: main 0.3s alternate infinite;
+			z-index: 7;
+		}
+		@keyframes main {
+			0%{transform:scale(1.2);
+
+			}
 		}
 
+
 		@keyframes waves {
-			0%{transform: rotateX(calc(var(--i) * 360deg)) scale(calc(0.7 - var(--i)));}
+			0%{transform: rotateX(calc(var(--i) * 360deg)) scale(calc(1 - var(--i)));}
+			100%{border:1px solid purple;box-shadow: 0px 0px 77px 0px indigo;}
 		}
 
 	</style>
@@ -85,6 +95,7 @@
 			<span style="--i:0.9;"></span>
 			<span style="--i:1;"></span>
 		</main>
+		<audio src="../../../song/wait7.mp3" autoplay loop></audio>
 	</div>
 </body>
 
