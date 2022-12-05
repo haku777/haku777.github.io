@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Listen</title>
+	<title>files</title>
 
 	<style>
 		@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,300;1,400&display=swap');
@@ -16,7 +16,7 @@
 		}
 
 		.wrapper{
-			background:radial-gradient(indigo,#170747,#000 80%,indigo);
+			background:radial-gradient(circle,#03223f,#000);
 			height: 100vh;
 			overflow: hidden;
 		}
@@ -37,46 +37,34 @@
 
 		span{
 			position: absolute;
-			height: 300px;
-			width: calc((var(--i) * 100vw));
+			height: calc((var(--i) * 50vh));
+			width: calc((var(--i) * 50vh));
 			border-radius: 50%;
-			border:1px solid darkmagenta;
+			border:1px solid #cdf3fb;
 			animation: waves 2s alternate infinite;
 			animation-delay: calc(var(--i) * 1s);
-			box-shadow: 0px 0px 17px 0px darkmagenta;
+			box-shadow: 0px 0px 17px 0px #cdf3fb;
 		}
 		span:nth-child(1){
-			background: url(../../../img/utilities/yo4.jpeg) #000;
+			background: url(../../../img/utilities/srry.png) #0004;
 			background-position: center;
 			background-size: cover;
-			width: 27vh;
-			height: 27vh;
+			width: 17vh;
+			height: 17vh;
 			box-shadow:
-			inset 7px 7px 17px #f83eac,
-			inset -7px -7px 17px #214aff,
-			inset 0px 0px 7px 2px #fff,
-			0px 0px 7px 2px #fff,
-			-7px -7px 7px #e50f9e,
-			-17px -17px 27px #e50f9e60,
-			-27px -27px 77px #e50f9e77,
-			-77px -77px 77px #e50f9e30,
-			7px 7px 7px #214aff,
-			17px 17px 27px #214aff60,
-			27px 27px 77px #214aff77,
-			77px 77px 77px #214aff30;
-			animation: main 0.3s alternate infinite;
+			0px 0px 17px 2px #fff,
+			0px 0px 777px purple;
+			animation: main 7s linear infinite;
 			z-index: 7;
 		}
 		@keyframes main {
-			0%{transform:scale(1.2);
-
-			}
+			0%{transform:rotatez(-360deg);}
 		}
 
 
 		@keyframes waves {
-			0%{transform: rotateX(calc(var(--i) * 360deg)) scale(calc(1 - var(--i)));}
-			100%{border:1px solid purple;box-shadow: 0px 0px 77px 0px indigo;}
+			0%{transform:scale(calc(2.7 - var(--i)));}
+			100%{background: #7074; border:1px solid #fa95fd;box-shadow: 0px 0px 77px 0px #7d31fa;}
 		}
 	</style>
 
@@ -95,20 +83,19 @@
 			<span style="--i:0.9;"></span>
 			<span style="--i:1;"></span>
 		</main>
-		<audio id="audio" src="../../../song/wait7.mp3" loop autoplay></audio>
 	</div>
 </body>
-
 <script>
-	document.body.addEventListener("click", function () {
-		audio.play();
-		audio.volume = audio.volume + 0.1;
-		if(audio.volume > 0.9){
-			audio.volume = 0;
-		}
-	})
-	const audio = document.getElementById('audio');
-	audio.volume = 0.1;
+
+	// document.body.addEventListener("click", function () {
+	// 	audio.play();
+	// 	audio.volume = audio.volume + 0.1;
+	// 	if(audio.volume > 0.9){
+	// 		audio.volume = 0;
+	// 	}
+	// })
+	// const audio = document.getElementById('audio');
+	// audio.volume = 0.04;
 
 //  const globalStream = null;
   
