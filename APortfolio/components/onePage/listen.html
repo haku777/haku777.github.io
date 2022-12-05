@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Bouble</title>
+	<title>Listen</title>
 
 	<style>
 		@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,300;1,400&display=swap');
@@ -95,11 +95,21 @@
 			<span style="--i:0.9;"></span>
 			<span style="--i:1;"></span>
 		</main>
-		<audio src="../../../song/wait7.mp3" autoplay loop></audio>
+		<audio id="audio" src="../../../song/wait7.mp3" loop autoplay></audio>
 	</div>
 </body>
 
 <script>
-
+	document.body.addEventListener("click", function () {
+    	audio.play()
+	})
+	
+//  const globalStream = null;
+  
+//   navigator.mediaDevices
+//     .getUserMedia({ audio: true, video: true })
+//     .then((stream) => { 
+//       globalStream = stream;
+//     });
 </script>
 </html>
