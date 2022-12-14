@@ -47,14 +47,21 @@
         let Meaning = document.querySelector("#definition");
 
         fetch('https://haku-api-nodejs.herokuapp.com/api/getwords')
-        .then(response => response.json())
-        .then(data => Asignacion(data));
+            .then(response => response.json())
+            .then(data => Asignacion(data));
 
         let Data = null;
         
         function Asignacion(data){
             Data = data;
             console.log(Data.Vocabulary.length);
+        }
+
+        if (Data == null){
+            console.log("datos en: " + Data);
+            fetch('database/english.json')
+            .then(response => response.json())
+            .then(data => Asignacion(data));
         }
         
         function Intervalo(){

@@ -26,14 +26,17 @@
 			margin: auto;
 			height: 17vw;
 			width: 1vw;
+			transform-style: preserve-3d;
+			border-left: 3px solid magenta;
+			animation: column 2s linear infinite; 
 		}
 
 		main div{
 			background: radial-gradient(transparent,rgba(65, 6, 114,0.7)70%, rgba(248, 62, 172,0.9));
 			background: linear-gradient(135deg, #f83eac99 25%, transparent 50%, #214aff99 75%);
 			margin: auto;
-			width: calc(var(--i) * 30vw);
-			height: calc(var(--i) * 30vw);
+			width: calc(var(--i) * 20vw);
+			height: calc(var(--i) * 20vw);
 			border: 7px solid #fff;
 			border-radius: 50%;
 		}
@@ -41,9 +44,11 @@
 		main div:nth-child(1){
 			background: crimson;
 			margin-top: 30vh;
-			height: 70px;
+			height: 250px;
 			border: 7px solid tan;
-			animation: gyroscope_main 7s alternate infinite;
+			box-shadow: 10px 10px 7px tan,
+			-10px -10px dodgerblue;
+			animation: gyroscope_main 7s linear infinite;
 		}
 
 		main div:nth-child(2){
@@ -51,6 +56,10 @@
 			background: transparent;
 			border:7px solid crimson;
 			animation: gyroscope_second 7s linear infinite;
+		}
+
+		@keyframes column {
+			0%{transform: rotatey(360deg);}
 		}
 
 		@keyframes gyroscope_main {
