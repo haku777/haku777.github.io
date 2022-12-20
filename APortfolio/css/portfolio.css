@@ -419,8 +419,10 @@ section:nth-child(4) div a:hover {
 }
 
 .examples {
-  height: 70vh;
+  height: 60vh;
+  padding: 17px;
   overflow-y: scroll;
+  border: 1px solid rebeccapurple;
 }
 
 /* ------------------------ / */

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>dayNight</title>
+
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,300;1,400&display=swap');
+
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			font-family: 'Josefin Sans', sans-serif;
+		}
+
+		.wrapper{
+			background: radial-gradient(#3c0877 50%,#160345);
+			height: 100vh;
+			overflow: hidden;
+		}
+
+		main{
+			background: #000;
+			margin: auto;
+			width: 70vw;
+			height: 80vh;
+			border-radius: 50%;
+		}
+		@keyframes round {
+			0%{transform: scale(1.5);}
+		}
+		
+		.wrapper .bottom{
+			background: crimson;
+			margin: auto;
+			width: 50vw;
+			height: 70px;
+			border-radius: 40%;
+			animation: round 2s alternate infinite;
+		}
+
+	</style>
+
+</head>
+<body>
+	<div class="wrapper">
+		<main>
+			<div class="gallery">
+				<!-- leer por js -->
+
+				<img src="https://www.leagueoflegends.com/static/logo-1200-589b3ef693ce8a750fa4b4704f1e61f2.png" alt="">
+			</div>
+		</main>
+		<div class="bottom"></div>
+	</div>
+</body>
+
+<script>
+
+</script>
+</html>
