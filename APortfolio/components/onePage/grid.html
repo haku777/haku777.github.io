@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        main{
+            background: #000;
+            background: #fefefe;
+        }
+        .wrapper {
+            width: 40vw;
+            height: 77vh;
+            margin: auto;
+            margin-top: 5vh;
+            display: grid;
+        }
+        .wrapper div{
+            background: #0bfcff;
+            animation: rad 3s linear;
+        }
+        
+        @keyframes rad{
+            50%{transform: rotatez(360deg);background: #770077;}
+        }
+        
+        .one {
+            grid-column: 1 / 4;
+            grid-row: 1 / 4;
+        }
+        .two {
+            grid-column: 5 / 6;
+            grid-row: 1 / 2;
+        }
+        .three {
+            grid-column: 9/12;
+            grid-row: 1 / 4;
+        }
+        .four {
+            grid-column: 1 / 3;
+            grid-row: 5 / 8;
+        }
+        .five {
+            grid-column: 5/8;
+            grid-row: 5/8;
+        }
+        .six {
+            grid-column: 9/11;
+            grid-row: 5/6;
+        }
+        .seven {
+            grid-column: 1/2;
+            grid-row: 9/10;
+        }
+        .eight {
+            grid-column: 5/8;
+            grid-row: 9/11;
+        }
+        .nine {
+            grid-column: 9/12;
+            grid-row: 9/12;
+        }
+    </style>
+</head>
+<body>
+
+<main>
+    <div class="ss"></div>
+    <div class="wrapper">
+        <div class="one"></div>
+        <div class="two"></div>
+        <div class="three"></div>
+        <div class="four"></div>
+        <div class="five"></div>
+        <div class="six"></div>
+        <div class="seven"></div>
+        <div class="eight"></div>
+        <div class="nine"></div>
+    </div>
+</main>  
+</body>
+</html>
+
+<!-- https://www.tawk.to/?utm_source=visitor-widget&utm_medium=link&utm_campaign=referral&utm_term=6021317bc31c9117cb76f3e5 -->
+
+

@@ -110,7 +110,7 @@ section:nth-child(1) div img {
 
 /* -------------------------- * */
 section:nth-child(2) {
-  background: url("../../../img/utilities/white.jpg");
+  background: url("../../img/utilities/white.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   color: #252555;
@@ -180,7 +180,7 @@ section:nth-child(2) a {
   color: white;
   text-align: center;
   border-radius: 3px;
-  width: 400px;
+  width: 17vw;
   margin: auto;
   margin-top: 20px;
 }
@@ -236,19 +236,6 @@ section:nth-child(3) .container {
       -ms-flex-pack: justify;
           justify-content: space-between;
   overflow: hidden;
-}
-
-section:nth-child(3) .container:after {
-  content: 'please use scroll manually on the proyects';
-  position: relative;
-  background: crimson;
-  font-size: 14pt !important;
-  padding: 10px 20px;
-  border-radius: 10px;
-  width: 27vw;
-  top: -10vh;
-  left: 0vw;
-  z-index: 1;
 }
 
 .proyects, .preview {
@@ -381,12 +368,12 @@ section:nth-child(3) .container::before {
   }
 }
 
-/* ---------------------- * */
+/* ------------Examples---------- * */
 section:nth-child(4) {
-  background: -webkit-gradient(linear, left top, left bottom, from(#4b2d83), color-stop(#a1a1ff), color-stop(#e4fdff), to(white));
-  background: linear-gradient(to bottom, #4b2d83, #a1a1ff, #e4fdff, white);
+  background: -webkit-gradient(linear, left top, left bottom, from(#4b2d83), color-stop(#a1a1ff), to(#e4fdff));
+  background: linear-gradient(to bottom, #4b2d83, #a1a1ff, #e4fdff);
   font-size: 2rem;
-  padding: 5vh 10vh;
+  padding: 3vh 7vh;
   color: white;
   text-align: center;
 }
@@ -395,21 +382,26 @@ section:nth-child(4) h2 {
   margin-bottom: 10vh;
 }
 
-section:nth-child(4) div a {
-  background: #ffffff22;
-  text-decoration: none;
-  border-radius: 30px;
-  font-size: 20px;
-  width: 200px;
-  margin-top: 10px;
-  padding: 10px 0px;
-  color: #252555;
-  display: inline-block;
-  -webkit-box-shadow: 2px 2px 1px #252555;
-          box-shadow: 2px 2px 1px #252555;
+section:nth-child(4) div .examples {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[8];
+      grid-template-columns: repeat(8, 1fr);
+  grid-auto-rows: 30px;
+  gap: 10px;
 }
 
-section:nth-child(4) div a:hover {
+section:nth-child(4) div .examples a {
+  background: #7797;
+  text-decoration: none;
+  font-size: 20px;
+  color: #fff;
+  display: inline-block;
+  -webkit-box-shadow: 1px 1px 1px #252555;
+          box-shadow: 1px 1px 1px #252555;
+}
+
+section:nth-child(4) div .examples a:hover {
   background: rgba(0, 0, 0, 0.2);
   color: white;
 }
@@ -419,17 +411,30 @@ section:nth-child(4) div a:hover {
 }
 
 .examples {
-  height: 60vh;
-  padding: 17px;
+  height: 70vh;
   overflow-y: scroll;
-  border: 1px solid rebeccapurple;
 }
 
 /* ------------------------ / */
 section:nth-child(5) {
-  background: url("../../../img/utilities/white.jpg");
+  background: url("../../img/utilities/white.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: center;
   font-size: 2rem;
   color: #252555;
@@ -439,6 +444,10 @@ section:nth-child(5) {
 
 section:nth-child(5) h2 {
   margin-top: 7vh;
+}
+
+section:nth-child(5) div {
+  width: 80%;
 }
 
 section:nth-child(5) div div {
@@ -457,7 +466,7 @@ section:nth-child(5) div img {
   height: 17vh;
 }
 
-/* ------------------- * */
+/* --------Contact----------- * */
 section:nth-child(6) {
   background: -webkit-gradient(linear, left bottom, left top, from(#81adc6), to(#fff));
   background: linear-gradient(to top, #81adc6, #fff);
@@ -470,30 +479,41 @@ section:nth-child(6) h2 {
   text-shadow: 1px 1px 1px white;
 }
 
-section:nth-child(6) div div {
-  padding-top: 7vh;
+section:nth-child(6) div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 17px;
 }
 
-section:nth-child(6) div div img {
-  width: 30vw;
+section:nth-child(6) div img {
+  border-radius: 50%;
+  width: 500px;
   height: 70vh;
-  border-radius: 7px;
-  -webkit-box-shadow: 2px 2px 5px gray, 1px 1px 2px black;
-          box-shadow: 2px 2px 5px gray, 1px 1px 2px black;
 }
 
 section:nth-child(6) div form {
-  display: inline-block;
   width: 50%;
-  padding: 7vh 5vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 section:nth-child(6) div form label, section:nth-child(6) div form input {
@@ -518,8 +538,9 @@ section:nth-child(6) div form label input, section:nth-child(6) div form label t
 }
 
 section:nth-child(6) div form input[type="submit"] {
-  background: #5050ff;
+  background: dodgerblue;
   border-radius: 3px;
+  cursor: not-allowed;
   text-shadow: none;
   font-size: 1rem;
   border: none;
@@ -532,7 +553,7 @@ section:nth-child(6) div form input[type="submit"] {
 }
 
 section:nth-child(6) div form input[type="submit"]:hover {
-  background: dodgerblue;
+  background: blue;
 }
 
 @media (max-width: 750px) {
