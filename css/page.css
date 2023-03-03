@@ -358,32 +358,28 @@ aside::-webkit-scrollbar-thumb{
 	border: 2px solid white
 }
 
+/* ----------------------------------------------- */
+
 footer{
 	background: linear-gradient(to top, black 1%,#2e007d 17%,black 99%);
-	min-height: 40vh;
+	overflow: hidden;
 	color: white;
 }
 
 footer section{
-	padding-top: 10vh;
-	background: transparent;
-	margin: auto;
-}
-
-footer article{
-	margin-top: 20px;
-	/* background: rgba(255,255,255,0.07); */
-	border-radius: 7px;
-	text-align: center;
-	padding: 20px;
-
+	padding-top: 7vh;
 }
 
 .footer{
-	justify-content: space-around;
+	display: flex;
 	font-size: 2vh;
 	padding: 40px;
-	display: flex;
+	justify-content: space-around;
+}
+
+footer article{
+	text-align: center;
+	padding: 40px 20px;
 }
 
 footer article p{
@@ -392,13 +388,8 @@ footer article p{
 
 footer section h2{
 	padding: 10px;
-	/* cursor: wait; */
-
-	box-shadow:
-	inset 0px 2px 3px 0px #2525,
-	inset 0px 4px 4px 0px black,
-	-1px -1px 1px 1px #252525,
-	1px 1px 2px 2px lightslategray;
+	color: tomato;
+	text-shadow: 1px 1px 1px #000;
 }
 
 footer p{
@@ -434,8 +425,6 @@ footer h3{
 #go a:hover svg{
 	border:2px solid cornflowerblue;
 }
-
-
 
 
 /* ----------------------------- */
@@ -488,10 +477,12 @@ footer h3{
 		background-repeat: no-repeat;
 		background-size: 100% 100%;
 	}
+
 	header{
 		height: 210px;
 		flex-direction: column;
 	}
+
 	.reloj table{
 		width: 70%;
 		margin: auto;
@@ -511,14 +502,12 @@ footer h3{
 		letter-spacing: 0px;
 	}
 
-	footer section h2{
-		padding: 0;
+	.footer{
+		flex-direction: column;
 	}
-	footer img{
-		display: none;
-		width: 16%;
-		height: 100px;
-		margin-left: 16px;
+
+	.footer div div{
+		padding: 20px;
 	}
 }
 @media(max-width: 400px){

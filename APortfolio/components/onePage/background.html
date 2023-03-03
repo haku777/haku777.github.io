@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>background</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		body{
+			/* background: rgb(222,226,232); */
+			background: #333;
+			height: 100vh;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			overflow: hidden;
+		}
+
+		.whrapper{
+			background: #111;
+			position: absolute;
+			border: 1px solid #fff;
+			display: flex;
+			justify-content: center;
+			width: 470px;
+			height: 570px;
+			color:#fff;
+		}
+
+		.whrapper form{
+			display: flex;
+			justify-content: center;
+			flex-direction: column;
+			align-items: center;
+		}
+
+		.whrapper form input{
+			text-align: center;
+			margin: 7px;
+			width: 200px;
+			height: 37px;
+		}
+
+		.whrapper form input[type=submit]{
+			background: #333;
+			color: #fff;
+			border: none;
+		}
+
+		.whrapper form input[type=submit]:hover{
+			background: crimson;
+		}
+
+		main{
+			background: #0001;
+			height: 100vh;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			align-items: center;
+			margin: auto;
+		}
+		main .box{
+			background: #000;
+			display: inline-block;
+			margin: 2px;
+			width: 4vw;
+			height: 4vw;
+		}
+
+		main .box:hover{
+			background: #ddd;
+		}
+
+		section{
+			background: lime;box-shadow: 0px 0px 77px lime;
+			position: absolute;
+			width: 100%;
+			height: 40vh;
+			box-shadow: 0px 0px 77px lime;
+			animation: load 3s linear infinite;
+			z-index: -1;
+		}
+
+		@keyframes load {
+			0%{transform: translateY(-100%); }			
+			100%{transform: translateY(300%); }			
+		}
+
+	</style>
+</head>
+<body>
+	<section></section>
+	<div class="whrapper">
+			<form action="">
+				<label for="">Usuario</label>
+				<input type="text">
+
+				<label for="">Clave</label>
+				<input type="password">
+
+				<input type="submit" value="Ingresar">
+			</form>
+	</div>
+	<main id="container">
+	</main>
+</body>
+
+<script>
+	const container = document.getElementById('container');
+	let count = 400;
+	for (let i = 0; i < count; i++) {
+		container.innerHTML += '<div class=box></div>';
+	}
+</script>
+</html>

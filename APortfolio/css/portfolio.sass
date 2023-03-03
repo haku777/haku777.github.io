@@ -5,7 +5,7 @@
 
 @font-face
     font-family: Merge
-    src:url(../../../font/merge_light.otf)
+    src: url(../../../font/merge_light.otf)
 
 body
     font-family: 'Cambria','poppins',Merge,sans-serif
@@ -17,13 +17,11 @@ body
         border-radius: 3px
 
 h2
-    /* background: teal */
-    font-size: 2em
+    color: #fff
+    font-size: 7vw
+    text-align: center
     text-transform: uppercase
-
-p,a,h3
-    font-size: 1em
-    // text-transform: capitalize
+    text-shadow: 0px 2px 2px #252555
 
 cite
     font-size: 20px
@@ -33,28 +31,32 @@ section
     height: 100vh
     overflow: hidden
 
-
 /* ------------------- *
 
 section:nth-child(1)
     justify-content: space-between
 
+section:nth-child(1) h2
+    text-align: left
+
+section:nth-child(1) h3
+    font-size: 3rem
+
+section:nth-child(1) h4
+    font-size: 1.2rem
 
 section:nth-child(1) div:nth-child(1)
     background: linear-gradient(45deg,indigo, darkmagenta)
-    color:white
+    color: white
     max-height: 50vh
-
 
 #up
     background: transparent
     position: absolute
-    color: white
-    font-size: 2vw
+    color: #fff
     margin-top: 20vh
     margin-left: 20vw
     width: 50%
-
 
 section:nth-child(1) div:nth-child(2)
     background: linear-gradient(to top, white,indigo,transparent)
@@ -69,20 +71,19 @@ section:nth-child(1) div:nth-child(2)
     align-items: center
     font-size: 3rem
 
-
 section:nth-child(1) div img
     border-radius: 50%
     right: 10vw
     top: 35vh
-    width: 270px
+    width: 27vh
     position: absolute !important
-    height: 300px
+    height: 27vh
 
 @media(max-width: 750px)
+    section:nth-child(1) div h2,h3,h4
+        z-index: 2
     section:nth-child(1) div img
-        width: 20vw
-        height: 20vh
-
+        z-index: 1
 
 /* -------------------------- *
 
@@ -90,12 +91,11 @@ section:nth-child(2)
     background: url("../../img/utilities/white.jpg")
     background-repeat: no-repeat
     background-size: cover
-    color: #252555
     font-size: 2vw
+    color: #555555
     padding-top: 70px
     height: 100vh
     overflow: hidden
-
 
 section:nth-child(2) .div
     background: rgba(77,177,255, 0.1)
@@ -104,9 +104,10 @@ section:nth-child(2) .div
     width: 90%
     height: 80vh
     display: flex
+    justify-content: center
+    align-items: center
     overflow: hidden
     border-radius: 30px
-    justify-content: space-between
     box-shadow: 1px 1px 7px 1px rgb(200,200,255)
 
 section:nth-child(2) .div div
@@ -121,24 +122,15 @@ section:nth-child(2) div img
     -webkit-box-reflect: below 17px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.4))
     box-shadow: 2px 10px 1px 2px #252525,0px 0px 5px white,0px 0px 25px dodgerblue,0px 0px 50px dodgerblue
 
-
-section:nth-child(2) div h2
-    text-align: center
-    text-transform: uppercase
-    margin-bottom: 10vh
-
-
 section:nth-child(2) div p
     text-align: center
-    width: 40vw
-    font-size: 3vw
-    // text-transform: capitalize
-    margin-bottom: 10vh
-
+    padding: 4vw
+    font-size: 2.7rem
 
 section:nth-child(2) a
     background: dodgerblue
     padding: 20px 40px
+    font-size: 1.2rem
     display: block
     text-decoration: none
     transition-duration: .5s
@@ -148,16 +140,13 @@ section:nth-child(2) a
     border-radius: 3px
     width: 17vw
     margin: auto
-    margin-top: 20px
-
 
 section:nth-child(2) div a:hover
-    background: rgb(0, 0, 177)
+    background: rgb(30, 30, 177)
 
 @media(max-width: 1060px)
     section:nth-child(2) div img
         width: 20vw
-
 
 @media(max-width: 750px)
     section:nth-child(2) div a
@@ -176,14 +165,6 @@ section:nth-child(3)
     padding: 10vh
     overflow: hidden
 
-section:nth-child(3) h2
-    width: 100%
-    padding-bottom: 2vh
-    font-size: 2em
-    text-align: center
-    text-shadow: 2px 2px 2px #252555
-    z-index: 2
-
 section:nth-child(3) .container
     width: 100%
     height: 100vh
@@ -192,21 +173,10 @@ section:nth-child(3) .container
     justify-content: space-between
     overflow: hidden
 
-// section:nth-child(3) .container:after
-//     content: 'please use scroll manually on the proyects'
-//     position: relative
-//     background: crimson
-//     font-size: 14pt !important
-//     padding: 10px 20px
-//     border-radius: 10px
-//     width: 27vw
-//     top: -10vh
-//     left: 0vw
-//     z-index: 1
-
 .proyects, .preview
     width: 50%
     height: 70vh
+    z-index: 70
 
 .proyects
     background: rgba(25,25,55,0.4)
@@ -220,19 +190,7 @@ section:nth-child(3) .container
 
 .preview
     border-radius: 0px 30px 30px 0px
-    z-index: 2
     overflow: hidden
-
-section:nth-child(3) .preview:after
-    background: #7a7cf527
-    content: 'Preview'
-    text-align: center
-    text-shadow: 0px 0px 3px #000
-    position: absolute
-    width: 140px
-    height: 40px
-    left: 70vw
-
 
 .proyects a
     text-decoration: none
@@ -242,7 +200,6 @@ section:nth-child(3) .preview:after
     color: white
     padding: 10px
     margin: auto
-    // transition-property: padding
     transition-duration: .7s
 
 .proyects a:hover
@@ -255,6 +212,10 @@ section:nth-child(3) img
     height: 100%
     transition-duration: .7s
 
+section:nth-child(3) h2
+    position: relative
+    z-index: 20 !important
+
 section:nth-child(3) img:hover
     transform: scale(1.2)
 
@@ -263,29 +224,27 @@ section:nth-child(3) .container::before
     content: ''
     position: absolute
     border-radius: 17px
-    padding: 20vh 30vh
-    // top: 210vh
+    width: 30vw
+    height: 40vh
     left: 3vw
-    z-index: 0
+    z-index: 1
     animation-name: XD
-    animation-duration: 7s
+    animation-duration: 4s
     animation-iteration-count: infinite
     animation-timing-function: linear
 
-
 @keyframes XD
-    0%
-        transform: translateY(-10vh)
-    20%
-        transform: translateY(15vh)
-    40%
-        transform: translateY(30vh)
-    80%
-        transform: translateY(15vh)
-    100%
-        transform: translateY(-10vh)
+    0% ,100%
+        transform: translateY(-3vw)
+    50%
+        transform: translateY(15vw)
 
-/* ------------Examples---------- *
+@media(max-width: 750px)
+    section:nth-child(3) .container::before
+        border-radius: 0px
+        left: 0
+        width: 50vw
+    /* ------------Examples---------- *
 
 section:nth-child(4)
     background: linear-gradient(to bottom,rgb(75,45,131),#a1a1ff,#e4fdff)
@@ -293,8 +252,6 @@ section:nth-child(4)
     padding: 3vh 7vh
     color: white
     text-align: center
-    h2
-        margin-bottom: 10vh
     div
         .examples
             display: grid
@@ -329,103 +286,100 @@ section:nth-child(5)
     align-content: center
     align-items: center
     text-align: center
-    font-size: 2rem
-    color: #252555
+    color: #fff
     height: 100vh
     overflow: hidden
-    h2
-        margin-top: 7vh
 
-section:nth-child(5) div
-    width: 80%
+section:nth-child(5) .preview
+    width: 80vw
+    height: 60vh
+    display: flex
+    justify-content: center
+    align-content: center
+    align-items: center
+    flex-wrap: wrap
+    img
+        padding: 2px
+        margin: 2px
+        width: 10vw
+        height: 8vw
 
-section:nth-child(5) div div
-    width: 80%
-    margin: auto
-    margin-top: 7vh
-    .preview
-        background: dodgerblue
-
-section:nth-child(5) div img
-    display: inline-block
-    width: 12vw
-    height: 17vh
+@media (max-width: 900px)
+    section:nth-child(5) .preview
+        border-radius: 0px
+        width: 100vw
+        img
+            width: 15vw
+            height: 15vw
 
 
 /* --------Contact----------- *
 
 section:nth-child(6)
-    background: linear-gradient(to top,rgb(129,173,198), #fff)
-    font-size: 2rem
-    text-align: center
-    color: #252555
-    h2
-        text-shadow: 1px 1px 1px white
-
-
-section:nth-child(6) div
+    background: linear-gradient(-45deg, #f7f7f7 47%,#efefef 47% 100%)
     display: flex
+    flex-direction: column
     justify-content: space-evenly
     align-content: center
     align-items: center
-    padding: 17px
+    font-size: 1.7rem
+    text-align: center
+    color: #252555
+
+section:nth-child(6) div
+    display: flex
+    flex-direction: row
+    align-content: center
+    align-items: center
+    justify-content: space-between
     img
         border-radius: 50%
-        width: 500px
+        width: 40vw
         height: 70vh
     form
-        width: 50%
+        width: 40vw
+        height: 60vh
         display: flex
         flex-direction: column
+        justify-content: space-evenly
         align-content: center
         align-items: center
         label,input
             width: 70%
             display: inline-block
-            text-transform: uppercase
             text-shadow: 0px 0px 1px white
             input, textarea
-                display: inline-block
                 text-align: center
                 outline: none
                 color: #252555
-                font-size: 12px
-                padding: 10px
+                font-size: 2rem
+                padding: 7px 0px
                 border: none
                 width: 100%
-                border-radius: 7px
-                box-shadow: 2px 2px 5px gray,
-                1px 1px 2px black,
-                -1px -1px 2px #cdcdcd,
-                -2px -2px 2px #f5f5f5
 
         input[type="submit"]
             background: dodgerblue
-            border-radius: 3px
+            text-transform: uppercase
             cursor: not-allowed
             text-shadow: none
-            font-size: 1rem
+            font-size: 1.7rem
             border: none
             color: white
-            margin-top: 20px
-            padding: 10px
-            width: 270px
-            box-shadow: 2px 2px 5px gray,
-            1px 1px 2px black,
-            -1px -1px 2px #cdcdcd,
-            -2px -2px 2px #f5f5f5
+            padding: 7px 0px
+            width: 17vw
             &:hover
-                background: blue
+                background: tomato
 
 @media(max-width: 750px)
     section:nth-child(6) div
-        width: 100%
+        width: 100vw
         padding: 0px
         form
             width: 100%
+            input[type="submit"]
+                width: 40vw
         img
             display: none
-            width: 100% !important
 
     section:nth-child(3) img
         display: none
@@ -433,12 +387,3 @@ section:nth-child(6) div
     .proyects
         width: 100%
         border-radius: 7px
-
-// section:nth-child(1),
-// section:nth-child(2),
-// section:nth-child(3),
-// section:nth-child(4),
-// section:nth-child(5)
-    // display: none
-
-

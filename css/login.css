@@ -62,24 +62,23 @@ a{
 }
 
 .logo {
-  position: relative;
   background: url("../img/utilities/kevin-bhagat.jpg");
-  background-position: center;
-  background-size: 100px;
   background-repeat: no-repeat;
-  width: 70px;
-  height: 70px;
+  background-position-x: 92%;
+  background-size: 300px;
+  width: 140px;
+  height: 140px;
   margin: auto;
+  border: 7px solid #770077;
   margin-bottom: 40px;
   border-radius: 50%;
 }
 
 .logo::after{
+  position: absolute;
   content: '';
-  top: -12px;
-  left: -12px;
-  width: 100px;
-  height: 100px;
+  width: 140px;
+  height: 140px;
   position:absolute;
   border-radius: 100%;
   background: radial-gradient(transparent 0%,transparent 65%,darkmagenta 65%,darkmagenta 100%);

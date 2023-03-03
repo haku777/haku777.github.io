@@ -22,7 +22,7 @@
 		}
 
 		main{
-			/* background: #270027; */
+			position: relative;
 			width: 70vw;
 			height: 100vh;
 			margin: auto;
@@ -31,9 +31,10 @@
 			justify-content: center;
 			align-content: center;
 			align-items: center;
-			overflow: hidden;
+			transform-style:preserve-3d;
+			transform: perspective(500px) rotateX(360deg);
 		}
-
+		
 		span{
 			position: absolute;
 			height: 40px;

@@ -15,32 +15,49 @@
 			font-family: 'Josefin Sans', sans-serif;
 		}
 
-		.wrapper{
-			background: radial-gradient(#505090,#202077,#000);
+		body{
+			background: radial-gradient(circle,#202077,#000);
+			background-position: 0px -100px;
 			height: 100vh;
 			overflow: hidden;
 		}
 
 		main{
 			background: #0007;
+			display: flex;
 			margin: auto;
-			margin-top: 20%;
-			width: 100vw;
-			height: 30vh;
-			overflow: hidden;
-		}
-		@keyframes round {
-			0%{transform: scale(1.5);}
+			margin-top: 30vh;
+			align-items: center;
+			overflow-x: hidden;
+			-webkit-box-reflect: below -12% linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.4));;
 		}
 		
-		.wrapper .bottom{
-			background: #252525;
-			margin: auto;
-			width: 50vw;
-			height: 70px;
-			border-radius: 50%;
-			animation: rounda 2s alternate infinite;
+		main div{
+			width: 100%;
+			height: 300px;
+			display: flex;
+			flex-direction: row;
+			/* justify-content: space-evenly; */
+			align-content: center;
+			align-items: center;
+			animation: img 10s linear -10s infinite;
 		}
+		main div:nth-child(2){
+			animation: imgR 10s linear 10s infinite;
+		}
+		@keyframes img{
+			0%{transform: translateX(100%);}
+			100%{transform: translateX(-130%);}
+		}
+		@keyframes imgR{
+			0%{transform: translateX(100%);}
+			100%{transform: translateX(-130%);}
+		}
+		
+		main div img{
+			width: 200px;
+		}
+
 
 		img{
 			width: 50%;
@@ -50,24 +67,36 @@
 
 </head>
 <body>
-	<div class="wrapper">
 		<main>
 			<div class="gallery">
 				<!-- leer por js -->
-
 				<img src="https://www.leagueoflegends.com/static/logo-1200-589b3ef693ce8a750fa4b4704f1e61f2.png" alt="">
+				<img src="../../../img/lol/ranked-emblems/Emblem_Iron.png" alt="">
+				<img src="../../../img/lol/ranked-emblems/Emblem_Bronze.png" alt="">
+				<img src="../../../img/lol/ranked-emblems/Emblem_Silver.png" alt="">
+				<img src="../../../img/lol/ranked-emblems/Emblem_Gold.png" alt="">
+				<img src="../../../img/lol/ranked-emblems/Emblem_Platinum.png" alt="">
+				<img src="../../../img/lol/ranked-emblems/Emblem_Diamond.png" alt="">
+				<img src="../../../img/lol/ranked-emblems/Emblem_Master.png" alt="">
+				<img src="../../../img/lol/ranked-emblems/Emblem_Grandmaster.png" alt="">
+				<img src="../../../img/lol/ranked-emblems/Emblem_Challenger.png" alt="">
+			</div>
+			<div>
+				<!-- leer por js -->
 				<img src="https://www.leagueoflegends.com/static/logo-1200-589b3ef693ce8a750fa4b4704f1e61f2.png" alt="">
-				<img src="https://www.leagueoflegends.com/static/logo-1200-589b3ef693ce8a750fa4b4704f1e61f2.png" alt="">
-				<img src="https://www.leagueoflegends.com/static/logo-1200-589b3ef693ce8a750fa4b4704f1e61f2.png" alt="">
-				<img src="https://www.leagueoflegends.com/static/logo-1200-589b3ef693ce8a750fa4b4704f1e61f2.png" alt="">
-				<img src="https://www.leagueoflegends.com/static/logo-1200-589b3ef693ce8a750fa4b4704f1e61f2.png" alt="">
+				<img src="../../../img/lol/ranked-emblems/Emblem_Iron.png" alt="">
+				<img src="../../../img/lol/ranked-emblems/Emblem_Bronze.png" alt="">
+				<img src="../../../img/lol/ranked-emblems/Emblem_Silver.png" alt="">
+				<img src="../../../img/lol/ranked-emblems/Emblem_Gold.png" alt="">
+				<img src="../../../img/lol/ranked-emblems/Emblem_Platinum.png" alt="">
+				<img src="../../../img/lol/ranked-emblems/Emblem_Diamond.png" alt="">
+				<img src="../../../img/lol/ranked-emblems/Emblem_Master.png" alt="">
+				<img src="../../../img/lol/ranked-emblems/Emblem_Grandmaster.png" alt="">
+				<img src="../../../img/lol/ranked-emblems/Emblem_Challenger.png" alt="">
 			</div>
 		</main>
-		<div class="bottom"></div>
-	</div>
 </body>
 
 <script>
-
 </script>
 </html>
