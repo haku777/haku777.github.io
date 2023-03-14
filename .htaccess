@@ -1,0 +1,1 @@
+RewriteRule ^(.*)\.html$ /index.php [L,R=301]

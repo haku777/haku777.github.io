@@ -6,30 +6,38 @@
 
 @font-face{
     font-family: Merge;
-    src: url(../../../font/merge_light.otf);
+    src: url(../../../../font/merge_light.otf);
 }
 
 body{
+    background: #000;
     font-family: Merge,serif;
 }
 
 header{
-    background: url(../../../../img/utilities/computer3.jpg), linear-gradient(crimson,white);
+    background: url(../../../../img/utilities/computer3.jpg),#000;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 30vh 20vw;
+    width: 100vw;
+    height: 70vh;
 }
-header nav ul{
-    list-style: none;
+
+.header{
+    transition-duration: 3s;
+    margin-top: -70vh;
 }
 
 main{
-    background: linear-gradient(white,indigo 10%,black);
+    background: linear-gradient(#000 1%,indigo 10%,black);
+    transition-duration: 13s;
+    animation-duration: 12s;
+    min-height: 30vh;
 }
 
 main section{
-    background: rgba(255,255,255,0.2);
+    background: #ddd3;
+    padding: 7px;
     width: 90%;
     margin: auto;
     overflow: hidden;
@@ -79,6 +87,8 @@ input[type="submit"]:hover{
 
 a{
     background: #252525;
+    font-size: 17px;
+    margin: 0px 7px;
     text-decoration: none;
     border-radius: 3px;
     padding: 10px 20px;

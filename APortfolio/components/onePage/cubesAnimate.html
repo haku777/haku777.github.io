@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>cubesAnimate</title>
+
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		body{
+			background: #000;
+			height: 100vh;
+			display: flex;
+			justify-content: center;
+			align-content: center;
+			align-items: center;
+			overflow: hidden;
+		}
+		main{
+			/* background: #70e; */
+			display: flex;
+			flex-wrap: wrap;
+			flex-direction: row;
+			justify-content: center;
+			align-content: center;
+			align-items: center;
+			-webkit-box-reflect: below 2px linear-gradient(transparent, #0007);
+		}
+
+		div{
+			background: linear-gradient(45deg, #00f3f6 10%, transparent 10%, transparent 50%,#00f3f6 50%, #00f3f6 60%, transparent 60%, transparent 100%);
+			background-size: 40px 40px;
+			width: 300px;
+			height: 300px;
+			margin: 0.7vw;
+			transform: rotate(calc(var(--i) * 90deg));
+			filter: hue-rotate(calc(var(--i) * 90deg));
+			animation: move 0.7s linear infinite;
+		}
+		@keyframes move {
+			0%{background-position: 0px;}
+			100%{background-position: 40px;}
+		}
+	</style>
+
+</head>
+<body>
+	<main>
+		<div style="--i:0;"></div>
+		<div style="--i:1;"></div>
+		<div style="--i:2;"></div>
+		<div style="--i:3;"></div>
+	</main>
+</body>
+</html>

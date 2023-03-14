@@ -10,7 +10,7 @@
 }
 
 body{
-	background: #000;
+	background: linear-gradient(180deg, #000 10%,indigo 20%,#000 30%, indigo 100%);
 	font-family: Merge,serif;
 	font-weight: lighter !important;
 	letter-spacing: 1px;
@@ -18,7 +18,7 @@ body{
 }
 
 header{
-	background: #252525;
+	background: #0004;
 	display: flex;
 	width: 77%;
 	margin: auto;
@@ -54,8 +54,6 @@ header a:hover{
 }
 
 .wrapper{
-	box-shadow: 0px 0px 27px #eee,
-	0px 0px 200px darkorchid;
 	width: 77%;
 	margin: auto;
 }
