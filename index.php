@@ -1,8 +1,19 @@
 <?php
-    $uri = $_SERVER['REQUEST_URI'];
-    if (substr($uri, -5) == '.html') {
-        header("Location: " . substr($uri, 0, -5));
-        exit();
+$requestedPath = $_SERVER['REQUEST_URI'];
+$filePath = '';
+
+    echo $requestedPath;
+
+    switch ($requestedPath) {
+        case 'new':
+            $filePath = 'new.html';
+            break;
+        default:
+            $filePath = 'index.html';
+            break;
     }
-    header("Location: page");
+
+    if ($filePath !== '') {
+        include $filePath;
+    }
 ?>

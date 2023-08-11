@@ -28,7 +28,7 @@
     <header>
         <nav>
             <div>
-                <img src="img/clima.svg" alt="logo">
+                <img src="../../../img/weather/clima.png" alt="logo">
                 <h2>APP CLIMA</h2>
             </div>
 

@@ -23,7 +23,9 @@
 }
 
 .sb-slider img {
-	max-width: 100%;
+	margin: auto;
+	width: 60vh;
+	height: 50vh;
 	display: block;
 }
 

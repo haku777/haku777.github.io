@@ -28,7 +28,7 @@
 			justify-content: center;
 			width: 370px;
 			height: 400px;
-			color:#fff;
+			color:#0f0;
 		}
 		
 		.whrapper form{
@@ -40,14 +40,22 @@
 		}
 
 		.whrapper form input{
+			background: #000;
+			outline: none;
+			font-size: 1.2rem;
+			margin: 17px 0px;
+			border: none;
+			border-bottom: 3px solid #0f0;
 			text-align: center;
-			margin: 7px;
+			color: #fff;
 			width: 200px;
 			height: 37px;
 		}
-
+		
 		.whrapper form input[type=submit]{
 			background: #333;
+			outline: none;
+			margin-top: 27px;
 			font-size: 1.2rem;
 			color: #fff;
 			border: none;
@@ -69,21 +77,21 @@
 		main .box{
 			background: #000;
 			display: inline-block;
-			transition-duration: .5s;
-			margin: 2px;
+			transition: .7s;
+			margin: 1px;
 			width: 3vw;
 			height: 3vw;
 		}
 		
 		main .box:hover{
-			background: #000;
-			border-radius: 50%;
+			background: #0f0;
+			transition: 0s;
 		}
-
+		
 		main .box:active{
 			background: crimson;
-			border-radius: 0%;
-			transform: rotate(90deg);
+			transition: .7s;
+			transform: rotate(135deg);
 		}
 
 		section{

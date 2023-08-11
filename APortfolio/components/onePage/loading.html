@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="../../../img/information/c.png" type="image/x-icon">
+	<title>loading</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+
+		body{
+			background: 
+			linear-gradient(50deg, red 27%, transparent 27% 100%),
+			linear-gradient(100deg, blue 27%, transparent 27% 100%),
+			linear-gradient(150deg, #000 27%, transparent 27% 100%),
+			linear-gradient(200deg, yellow 27%, transparent 27% 100%),
+			linear-gradient(250deg, green 27%, transparent 27% 100%),
+			linear-gradient(300deg, magenta 27%, transparent 27% 100%),
+			linear-gradient(350deg, purple 27%, transparent 27% 100%),
+			linear-gradient(365deg, dodgerblue 27%, transparent 27% 100%);
+			width: 100vw;
+			height: 100vh;
+			display: flex;
+			justify-content: center;
+			align-content: center;
+			align-items: center;
+			flex-wrap: wrap;
+			overflow: hidden;
+		}
+
+		body:before{
+			background: #77007777;
+			position: absolute;
+			content: '';
+			width: 100vw;
+			height: 100vh;
+			backdrop-filter: blur(27px);
+			overflow: hidden;
+		}
+
+		main{
+			background: #000;
+			width: 77vh;
+			height: 77vh;
+			border-radius: 30px;
+			backdrop-filter: blur(27px);
+			box-shadow: 
+			2px 2px 0px #ffffff27, 
+			-2px -2px 0px #ffffff77;
+		}
+
+		main div{
+			background-image: conic-gradient(at 50% 27%, transparent 27%, #fff 77%);
+			margin: auto;
+			margin-top: 100px;
+			width: 27vw;
+			height: 27vw;
+			border-radius: 50%;
+			animation: rotate 4s linear infinite;
+		}
+		
+		main div:before{
+			background: #fff;
+			position: absolute;
+			content: '';
+			left: 48%;
+			top: -12px;
+			width: 1.7vw;
+			height: 1.7vw;
+			z-index: 7;
+			border-radius: 50%;
+			box-shadow:
+			0px 0px 77px #fff,
+			0px 0px 177px #fff,
+			0px 0px 777px #fff;
+		}
+		
+		main div:after{
+			background: #000;
+			position: absolute;
+			content: '';
+			top: 1vh;
+			left: 0.7vw;
+			width: 26vw;
+			height: 26vw;
+			border-radius: 50%;
+			z-index: 6;
+		}
+
+		@keyframes rotate{
+			0%{
+				/* filter: hue-rotate(360deg); */
+				transform: rotate(-360deg);
+			}
+		}
+
+		@media (max-width: 750px) {
+			main{
+				width: 70vw;
+				height: 50vh;
+			}
+			main div:before{
+				top: 0px;
+				width: 3vw;
+				height: 3vw;
+			}
+		}
+	</style>
+</head>
+<body>
+	<main>
+		<div></div>
+	</main>
+</body>
+</html>

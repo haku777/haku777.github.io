@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200&display=swap" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<img src="https://200lab-blog.imgix.net/2021/07/7f420b1b3389c7d79e98.jpg" alt="Alternate Text" /><br>
+	<h2 id="alarma">Tiempo restante para daily</h2>
+
+<script type="text/javascript">
+
+		var alarma = document.getElementById("alarma");
+
+		function reloj(){
+            
+            let hora = new Date();
+            let horaActual= hora.getHours();
+            let minutos = hora.getMinutes();
+            let segundos = hora.getSeconds();
+            let minutosFaltantes = 60 - minutos;
+            let horaFinal = 8;
+            let diferencia = horaFinal - horaActual;
+
+            let faltan = 331 - hora.getDate();
+
+
+			if (horaActual >= 12){
+				horaActual = 24 - horaActual;
+				diferencia = horaActual + horaFinal - 1;
+            	alarma.innerHTML =	"Hora actual: " + hora.getHours() + " : " + hora.getMinutes() + " : " + hora.getSeconds()
+            						+ "<br>Hora final: " + horaFinal + " : 00 : 00"
+            						+ "<br>Diferencia: " + diferencia + " : " + minutosFaltantes + " : " + segundos
+            						+ "<br>hoy " + hora.getDate() + " de enero faltan " + faltan + " Dias fin curso MYELT"
+            						+ "<br>Salir del programa de Colpatria antes de 11 de Nov"
+            						+ "<br>1 de noviembre de 2021 ingreso a la empresa EVOLUTION OUTSOURCING S.A.S."
+            						+ "<br>2018 inicio en lol"
+            }else{
+				if(horaActual > 8){
+					diferencia = horaFinal + horaActual + 1;
+	        		alarma.innerHTML =	"Hora actual: " + hora.getHours() + " : " + hora.getMinutes() + " : " + hora.getSeconds()
+        						+ "<br>Hora final: " + horaFinal + " : 00 : 00"
+        						+ "<br>Diferencia: " + diferencia + " : " + minutosFaltantes + " : " + segundos
+								+ "<br>hoy " + hora.getDate() + " de enero faltan " + faltan + " Dias fin curso MYELT"
+								+ "<br>Salir del programa de Colpatria antes de 11 de Nov"
+            					+ "<br>1 de noviembre de 2021 ingreso a la empresa EVOLUTION OUTSOURCING S.A.S."
+        						+ "<br>2018 inicio en lol"
+
+				}else{
+					diferencia = horaFinal - horaActual - 1;
+	        		alarma.innerHTML =	"Hora actual: " + hora.getHours() + " : " + hora.getMinutes() + " : " + hora.getSeconds()
+        						+ "<br>Hora final: " + horaFinal + " : 00 : 00"
+        						+ "<br>Diferencia: " + diferencia + " : " + minutosFaltantes + " : " + segundos
+        						+ "<br>hoy " + hora.getDate() + " de enero faltan " + faltan + " Dias fin curso MYELT"
+        						+ "<br>Salir del programa de Colpatria antes de 11 de Nov"
+            					+ "<br>1 de noviembre de 2021 ingreso a la empresa EVOLUTION OUTSOURCING S.A.S."
+            					+ "<br>2018 inicio en lol"
+				}
+
+            }
+		}
+			var interval = setInterval(reloj, 1000);
+</script>
+</body>
+</html>

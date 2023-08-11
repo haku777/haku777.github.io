@@ -47,33 +47,3 @@
 .nav-arrows a:hover {
 	opacity: 1;
 }
-
-/* -------------------- */
-
-
-.links{
-	margin: auto;
-	margin-top: 10px;
-	width: 300px;
-	display: flex;
-	width: 20vw;
-	justify-content: space-evenly;
-}
-
-.links a{
-	background: rgba(255,255,255,0.5);
-	display: block;
-	color: #555555;
-	padding: 10px 20px;
-	border: 1px solid lightgray;
-	border-radius: 30px;
-}
-
-.links a:hover{
-	background: rgba(0,0,0,0.7);
-	display: block;
-	color: white;
-	padding: 10px 20px;
-	border: 1px solid lightgray;
-	border-radius: 30px;
-}

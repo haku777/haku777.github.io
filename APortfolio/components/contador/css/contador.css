@@ -4,11 +4,11 @@
 }
 
 body{
-    background: #e1e1e1;
+    background: #07003a;
 }
 
 main{
-    background: lightslategray;
+    background: rgb(45, 202, 110);
     padding: 40px 70px;
     margin: auto;
     margin-top: 70px;
@@ -18,16 +18,16 @@ main{
 }
 
 p{
-    background: cyan;
+    background: #000;
     text-align: center;
-    color: black;
+    color: #fff;
     margin: auto;
     width: 50%;
-    padding: 10px;
+    padding: 170px 10px;
     font-size: 20px;
 }
 a{
-    background: #008493;
+    background: crimson;
     text-decoration: none;
     display: inline-block;
     margin: 20px;
@@ -36,7 +36,7 @@ a{
     width: 50px;
 }
 a:hover{
-    background: lightseagreen;
+    background: #000;
 }
 a::selection{
     background: none;
@@ -44,11 +44,10 @@ a::selection{
 }
 
 .queBoton input{
-    background: darkcyan;
+    background: #252525;
     margin: 20px;
     border: none;
     padding: 20px;
     color: white;
-    border-radius: 30px;
     
 }

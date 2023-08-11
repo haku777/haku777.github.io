@@ -1,0 +1,37 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background: linear-gradient(0deg,#fff 3%,hsla(261, 100%, 77%, 0.6)),linear-gradient(90deg,crimson,indigo 50%,magenta);
+	background: linear-gradient(0deg,#fff 3%,hsla(0,0%,100%,0)),linear-gradient(-257deg,#aaf2e1,#93edf5 50%,#dbebff);
+	background-repeat: no-repeat;
+	color: lightsteelblue;
+	text-shadow: 1px 1px 2px darkblue,-1px -1px 2px lightgray;
+	font-family: 'Mukta', Sans-serif;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+div{
+	background: red;
+	margin: auto;
+	width: 37%;
+	height: 70vh;
+	text-align: center;
+}
+
+img{
+	margin-top: 10px;
+	width: 10%;
+	height: 10%;
+	border-radius: 7px;
+	box-shadow: 2px 2px 2px gray,-2px -2px 2px gray;
+}
+
+h2{
+	width: 100%;
+	text-align: center;
+	font-size: 60px;
+}

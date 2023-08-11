@@ -1,11 +1,15 @@
 <?php
     session_start();
+
     if( $_SESSION['user'] == false || $_SESSION['id_rol'] != 2){
         header("location: index.php");
     }else{
         require "conexion/conexion.php";
         $busqueda = $con->query("select * from usuarios where id=".$_SESSION['id']."");
         $resultado = mysqli_fetch_array($busqueda);
+        if(!$resultado){
+            $resultado['usuario'] = $_SESSION['user'];
+        }
         $sql = "select * from mensajes where active=1 order by id desc";
         $resultadom = $con->query($sql);
 ?>
@@ -15,20 +19,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cliente</title>
-    <link rel="shortcut icon" href="img/clima.svg">
+    <link rel="shortcut icon" href="../../../img/weather/clima.png">
     <link rel="stylesheet" href="css/cliente.css">
+    <title>Cliente</title>
 
 </head>
 
 <body>
-    <audio controls loop autoplay style="display:none;">
-        <source src="img/wait.mp3" type="audio/mpeg">
+    <audio id="audio" controls loop autoplay style="display:none;">
+        <source src="../../../song/wait.mp3" type="audio/mpeg">
     </audio>
 
     <main>
         <nav>
-        <h2><img src="img/clima.svg" alt="">APP CLIMA</h2>
+        <h2><img src="../../../img/weather/clima.png" alt="">APP CLIMA</h2>
             <ul>
                 <li><a href="index.php">Inicio</a></li>
                 <li><span>Opciones</span>
@@ -42,7 +46,6 @@
         </nav>
 
         <section>
-            <center>
                 <div class="titulo">
                     <h2>Bienvenid@ <strong><?= $resultado['usuario']; ?></strong></h2>
                     <p>APP CLIMA, busca tu ciudad y conoce el clima esperado para tu <strong>Día</strong></p>
@@ -70,19 +73,17 @@
                     <div class="datosprimarios">
                         <div class="grados">
                             <h2 id="grados"></h2>
-                            <img src="img/grados.svg" width="50" alt="">
+                            <img src="../../../img/weather/grados.png" width="70" height="70" alt="">
                             <div id="temperatura">
                             </div>
                         </div>
                         <div id="estado">
-                            <img src="img/atardecer2.svg" width="70%" alt="">
+                            <img src="../../../img/weather/mundo.png" width="70%" alt="">
                         </div>
                     </div>
                 </div>
-            </center>
         </section>
         <section>
-            <center>
                 <div class="datosecundarios">
                     <table class="ciudades">
                         <thead>
@@ -136,15 +137,14 @@
 
                         </tbody>
                     </table>
-                    <input type="submit" class="actualizarc" id="actualizar_ciudades" name="actualizar_ciudades" value="actualizar ciudades">
+                    <input type="submit" class="updateCity" id="actualizar_ciudades" name="actualizar_ciudades" value="actualizar ciudades">
                 </div>
-            </center>
         </section>
     </main>
 
     <aside>
-        <center>
-            <div class="chat">
+        <div class="chat">
+                <h3>Chat</h3>
                 <div class="mensajes">
                     <?php 
                         while($message = mysqli_fetch_array($resultadom)){                    
@@ -156,49 +156,52 @@
                             <p><?= $message['mensaje']; ?></p>
                         <?php } ?>
                 </div>
-
-                 <form action="conexion/acciones.php" method="post">
-                    <input type="hidden" name="id" value="<?= $resultado['id']; ?>">
-                    <label for="user">mensaje <textarea id="message" name="message" required="required" placeholder="escribe algo..."></textarea></label><br>
+                <form action="conexion/acciones.php" method="post">
+                    <input type="hidden" name="id" value="<?= $_SESSION['id']; ?>">
+                    <label for="user">Mensaje</label>
+                        <textarea id="message" name="message" required="required" placeholder="escribe algo..."></textarea><br>
                     <input type="submit" name="enviarm" value="Enviar mensaje">
                 </form>
             </div>
-        </center>
     </aside>
 
 <!-- ------------------ -->
-            <section>
-                <center>
-                    <img src="img/clima.svg" width="100" alt="">
-                    <img src="img/atardecer2.svg" width="100" alt="">
-                    <img src="img/ciudad.svg" width="100" alt="">
-                    <img src="img/pais.svg" width="100" alt="">
-                    <img src="img/cool.svg" width="100" alt="">
-                    <img src="img/cool2.svg" width="100" alt="">
-                    <img src="img/hot.svg" width="100" alt="">
-                    <img src="img/night.svg" width="100" alt="">
-                    <img src="img/rain.svg" width="100" alt="">
-                    <img src="img/soleadoAtardecer.svg" width="100" alt="">
-                    <img src="img/startday.svg" width="100" alt="">
-                    <img src="img/storm.svg" width="100" alt="">
-                    <img src="img/windclounds.svg" width="100" alt="">
-                    <img src="img/winspeed.svg" width="100" alt="">
-
-                </center>
-            </section>
+    <section>
+        <div class="examples">
+            <img src="../../../img/weather/clima.png" width="100" alt="">
+            <img src="../../../img/weather/mundo.png" width="100" alt="">
+            <img src="../../../img/weather/nublado.png" width="100" alt="">
+            <img src="../../../img/weather/lluvia.png" width="100" alt="">
+            <img src="../../../img/weather/aguanieve.png" width="100" alt="">
+            <img src="../../../img/weather/snow.png" width="100" alt="">
+            <img src="../../../img/weather/nieve.png" width="100" alt="">
+            <img src="../../../img/weather/trueno.png" width="100" alt="">
+            <img src="../../../img/weather/noche.png" width="100" alt="">
+            <img src="../../../img/weather/nube.png" width="100" alt="">
+            <img src="../../../img/weather/nubes.png" width="100" alt="">
+            <img src="../../../img/weather/hot.png" width="100" alt="">
+            <img src="../../../img/weather/cold.png" width="100" alt="">
+            <img src="../../../img/weather/centigrado.png" width="100" alt="">
+            <img src="../../../img/weather/termometro.png" width="100" alt="">
+            <img src="../../../img/weather/sol.png" width="100" alt="">
+        </div>
+    </section>
   
 
 <footer>
         <section>
-            <center>
                 <h2>&copy; Creado por Haku 2021 v1.0</h2>
-            </center>
         </section>
 
 </footer>
 
 
 <script>
+
+const audio = document.getElementById('audio');
+	audio.volume = 0.02;
+
+
     
 let buscar = document.getElementById('buscar').addEventListener('click', buscarImagen);
 function buscarImagen() {
@@ -231,10 +234,7 @@ function buscarImagen() {
             temperatura = document.getElementById('temperatura'),
             img = document.getElementById('estado');
             
-
-            
             let grade = (respuesta.main.temp-273.15);
-            
             
             ciudad.innerHTML = respuesta.name;
             pais.innerHTML = respuesta.sys.country;
@@ -247,11 +247,10 @@ function buscarImagen() {
             grados.innerHTML = Math.round(grade);
 
             if(grade > 17){
-                temperatura.innerHTML = "<img src='img/hot.svg' width='50' alt=''>";
+                temperatura.innerHTML = "<img src='../../../img/weather/hot.png' width='50' alt=''>";
             }else{
-                temperatura.innerHTML = "<img src='img/cool.svg' width='50' alt=''>";
+                temperatura.innerHTML = "<img src='../../../img/weather/cold.png' width='50' alt=''>";
             };
-
             
         };       
     }
@@ -260,7 +259,6 @@ function buscarImagen() {
 buscarImagen();
 
 // --------------------------------------------
-
 
 let ciudades = document.getElementById('actualizar_ciudades').addEventListener('click', buscarImagen);
 
@@ -460,23 +458,11 @@ consultaCiudad8.onreadystatechange = function() {
                     
     };       
 }
-
-// ------------------------------------------------------------
-//temperatura mas alta
-
     console.log(temperatura1);
     console.log("temperatura mas alta es de: " + TAlta);
 
 }
-
 ciudadT();
-
-
-
-
-
-
-
 
 </script>
 </body>

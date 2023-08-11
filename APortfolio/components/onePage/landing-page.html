@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="../../../img/information/c.png" type="image/x-icon">
+	<title>Landing Page</title>
+
+	<style>
+
+		*{
+			margin: 0;
+			padding: 0;
+			color:#fff;
+			box-sizing: border-box;
+		}
+		body{
+			background: #ebebeb;
+			width: 100vw;
+			height: 100vh;
+			font-size: 17px;
+		}
+
+		header{
+			background: linear-gradient(45deg,#26c5eb ,#7d5af5);
+			width: 100vw;
+			height: 60vh;
+		}
+
+		nav{
+				/* background: #7071; */
+				width: 70vw;
+				margin: auto;
+				padding-top: 10vh;			
+		}
+
+		nav ul{
+			display: flex;
+			flex-direction: row;
+		}
+
+		ul li{
+			list-style: none;
+		}
+
+		ul li a{
+			display: block;
+			padding: 40px 20px 20px 20px;
+			font-size: 1.4vw;
+			font-family: 'Courier New', Courier, monospace;
+			font-weight: 400;
+			text-transform: uppercase;
+			transition-duration: .7s;
+			text-decoration: none;
+		}
+
+		ul li a:hover{
+			background: linear-gradient(transparent 94%,#fff 94% 100%);
+		}
+
+		h1{
+			letter-spacing: 2px;
+			padding-left: 20px;
+			font-size: 2.7vw;
+			font-family: Georgia, 'Times New Roman', Times, serif;
+			background-image: 
+			linear-gradient(90deg, #fff 67%, #cccccc 70% 100%);
+			display: inline-block;
+			background-clip: text;
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			-webkit-box-decoration-break: clone;
+		}
+
+		.title{
+			/* background: #e10e1017; */
+			display: flex;
+			flex-wrap: wrap;
+			flex-direction: row;
+			justify-content: space-between;
+			align-content: center;
+			align-items: center;
+		}
+
+		.search{
+			display: inline-block;
+		}
+
+		.search input{
+			background: transparent;
+			padding: 10px;
+			width: 20vw;
+			border:3px solid #fff;
+		}
+
+		main{
+			background: #fdfdfd;
+			margin: auto;
+			margin-top: -16vw;
+			width: 70vw;
+			min-height: 62vh;
+			padding: 20px;
+			display: flex;
+			justify-content: space-around;
+		}
+
+		main section{
+			width: 40%;
+			overflow: hidden;
+		}
+
+		main section iframe{
+			width: 100%;
+			height: 100%;
+			margin: 0;
+			padding: 0;
+			pointer-events: none;
+    		overflow: hidden;
+		}
+
+		main section h2{
+			padding: 20px 0px;
+		}
+
+		section h2, p{
+			color: #51555e !important;
+		}
+		
+		button{
+			background: #fff;
+			margin: 40px;
+			padding: 10px 20px;
+			border: none;
+			color: #12ade6;
+			font-size: 1.4rem;
+			border: 3px solid #12ade6;
+		}
+
+		button:hover{
+			background: #12ade6;
+			color: #fff;
+			cursor: pointer;
+		}
+
+		@media(max-width: 750px){
+			main{
+				flex-direction: column;
+			}
+			main section{
+				width: 100%;
+			}
+			main section iframe{
+				height: 30vw;
+			}
+			h1, ul li a{
+				font-size: 6vw;
+				width: 100%;
+				text-align: center;
+			}
+			nav ul{
+				flex-direction: column;
+				text-align: center;
+			}
+		}
+
+	</style>
+</head>
+<body>
+	<header>
+		<nav>
+			<div class="title">
+				<h1>LANDING PAGE</h1>
+				<div class="search">
+					<input type="text" placeholder="SEARCH">
+					
+				</div>
+			</div>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">services</a></li>
+				<li><a href="#">suport</a></li>
+				<li><a href="#">contact</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main>
+		<section>
+			<h2>Title landing page</h2>
+			<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci ea itaque sit porro sapiente laudantium perferendis atque quia saepe hic, illum ducimus! Beatae dolore vel repudiandae tempora iure. Necessitatibus sunt ratione veritatis aliquid fugiat soluta cupiditate! Vitae aliquam tempore, ut vero quidem velit perferendis odit quisquam, doloremque non magni tenetur earum nesciunt repellat rerum similique perspiciatis odio voluptate ipsa architecto? Quod quibusdam fugit, cum distinctio eaque rerum iste quidem nihil fugiat beatae velit iusto error, id harum perspiciatis sapiente, accusamus obcaecati nemo? At neque asperiores magnam tempore, consectetur totam deleniti vero doloribus, labore perspiciatis esse nisi eum incidunt sit!</p>
+			<button>Read more</button>
+		</section>
+		<section>
+			<iframe src="round.html" frameborder="0"></iframe>
+		</section>
+	</main>
+
+
+
+
+	<!-- <header class="logo">
+		<img src="../../../img/utilities/yo4.avif" alt="landing page logo">
+	</header>
+
+	<header class="header">
+		<h1>Landing Page</h1>
+		<video width="700px" height="300px" autoplay loop>
+			<source src="../../../img/video/binaryCode.mp4" type="video/mp4">
+			<source src="movie.ogg" type="video/ogg">
+		  Your browser does not support the video tag.
+		  </video> 
+	</header> -->
+
+</body>
+
+<script>
+</script>
+</html>
+
+
+

@@ -2,6 +2,12 @@
 
 require_once "conexion.php";
 
+session_start();
+if($_SESSION['user'] == null || $_SESSION['user'] != null){
+    session_destroy();
+    header("location: ../index.php");
+}
+
 if(session_status()){
     session_start();
     $id_ingreso = $_SESSION['id'];
@@ -15,6 +21,6 @@ if(session_status()){
     setcookie(session_name(), 0, 1 , ini_get("session.cookie_path"));//borramos las cookies
     session_destroy();
     header("location: ../index.php");
+    exit();
 }
-
 ?>

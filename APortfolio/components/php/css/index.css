@@ -47,6 +47,7 @@ main section{
     margin: auto;
     position: relative;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-content: center;
     align-items: center;
@@ -61,81 +62,81 @@ h1{
 }
 
 main section form{
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
 main section form input{
     padding: 10px;
-    border-radius: 30px !important;
     outline: none;
 }
 
 main section form label{
-    /* background: tomato; */
     display: inline-block;
     font-size: 20px;
     color: white;
-    /* padding: 10px; */
     width: 300px;
     display: flex;
     justify-content: space-between;
 }
 
 main section form input{
-    box-shadow: inset 3px 3px 1px gray;
+    border-radius: 4px;
     text-align: center;
-    border-radius: 3px;
     font-size: 16px;
     border:none;
 }
 
 main section form input[type="submit"]{
-    background: lightseagreen;
-    padding: 20px 50px !important;
+    background: #772777;
+    padding: 10px 20px;
     box-shadow:2px 2px 0px darkslateblue;
     border-radius: 3px;
     font-size: 20px;
     color: white;
     border:none;
+    margin: auto;
+    display: block;
 }
 
 main section form input[type="submit"]:hover{
-    background: darkturquoise;
+    background: #770077;
+    cursor: pointer;
 }
 
-
-main section form input[type="submit"]:active{
-    box-shadow:  inset 2px 2px 2px darkmagenta;
+main section form a{
+    text-align: center;
+    display: block;
+    margin: auto;
 }
-
-
 
 h3{
-    background: crimson;
-    margin-top: 10px;
-    border-radius: 7px;
+    display: none;
+    background: #c12343;
+    margin-top: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: white;
-    transition-duration: 2s;
     transition-property: background;
 }
 
 a{
     font-size: 20px;
     text-decoration: none;
+    transition-duration: .7s;
     color: white;
     margin-top: 20px;
     padding: 10px 20px;
     display: inline-block;
-    /* background: tomato; */
 }
 
 a:hover{
-    color: crimson;
-    text-shadow: 1px 1px 1px salmon;
+    font-weight: 500;
+    letter-spacing: 1px;
 }
 
 img{
-    width: 30%;
+    width: 100px;
 }
 
 
