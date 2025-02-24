@@ -1,0 +1,190 @@
+<!-- eventos js (Platzi) -->
+
+<style>
+		.parent {
+			width: 300px;
+			height: 300px;
+			background-color: #cccccc;
+			text-align: center;
+		}
+</style>
+
+<body>
+	<div class="parent" id="parent">
+		<h1>Parent</h1>
+	</div>
+</body>
+
+<script>
+let parent = document.getElementById('parent');
+</script>
+
+<!-- 
+    mouseenter
+    Reacciona cuando el ratón pasa sobre el elemento. Solo afecta al contenedor al que se le añadio el evento, no afecta a los elementos hijo.
+
+parent.addEventListener('mouseenter', function() {
+		parent.style.background = 'blue';
+}
+ -->
+
+
+
+ <!-- 
+    mouseover
+    Este evento resulta muy parecido a mouseenter, la diferencia es que reacciona aún cuando el mouse se encuentra dentro de los elementos hijo.
+
+parent.addEventListener('mouseover', function() {
+		parent.style.background = 'red';
+}
+ -->
+
+
+
+ <!-- 
+    mousemove
+    Este evento es activado cuando el ratón se mueve dentro del elemento.
+
+parent.addEventListener('mousemove', function() {
+		parent.style.background = 'red';
+		console.log('El raton se esta moviendo');
+}
+ -->
+
+
+
+
+
+
+ <!-- 
+    mousedown y mouseup
+    Mosedown detecta cuando un botón del ratón está siendo presionado, de forma contraria, mouseup detecta cuando el botón se ha dejado de presionar.
+
+parent.addEventListener('mousedown', function() {
+		parent.style.background = 'red';
+		console.log('El raton se esta presionando');
+		parent.addEventListener('mouseup', function() {
+			parent.style.background = "blue";
+			console.log('El raton NO se esta presionando');
+		});
+	});
+ -->
+
+
+
+
+
+
+ <!-- 
+    auxclick
+    Detecta cuando un botón (cualquier botón NO primario) ha sido presionado y liberado en un elemento.
+
+parent.addEventListener('auxclick', function() {
+		parent.style.background = 'green';
+		console.log('Click derecho ha sido presionado y/o liberado');
+	});
+ -->
+
+
+
+
+ <!-- 
+    click
+    Uno de los eventos mas utilizados, reacciona cuando se hace un click en el elemento.
+
+parent.addEventListener('click', function() {
+		parent.style.background = 'skyblue';
+		console.log('Click');
+	});
+ -->
+
+
+
+
+
+ <!-- 
+    dblclick
+    Este evento se activa cuando se hace doble click en el elemento.
+
+parent.addEventListener('dblclick', function() {
+		parent.style.background = 'violet';
+		console.log('Doble Click');
+	});
+ -->
+
+
+
+
+
+ <!-- 
+    contextmenu
+    El boton derecho del ratón ha sido presionado (antes de que el menú contextual es mostrado).
+
+parent.addEventListener('contextmenu', function() {
+		parent.style.background = '#c82c45';
+		console.log('Se ha presionado el boton derecho');
+	});
+ -->
+
+
+
+
+
+ <!-- 
+    wheel
+    Es activado cuando el botón intermedio o rueda del ratón ha sido activado.
+
+parent.addEventListener('wheel', function() {
+		parent.style.background = '#c82555';
+		console.log('El boton intermedio (rueda) del ratón ha sido activado');
+	});
+ -->
+
+
+
+ 
+<!-- 
+    mouseleave
+    El ratón ha sido movido fuera del elemento, primero hay que poner el ratón dentro para que el evento sea activado.
+
+parent.addEventListener('mouseleave', function() {
+		parent.style.background = '#00f5f5';
+		console.log('El ratón está afuera del elemento');
+	});
+ -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

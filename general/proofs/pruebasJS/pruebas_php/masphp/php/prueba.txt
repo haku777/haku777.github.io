@@ -1,0 +1,117 @@
+    <h2>prueba gradiWeb</h2>
+    <p>
+    Fecha de entrega: Sabado 15 de Mayo
+
+    Parqueaderos 4 ruedas
+        
+    necesita construir un sistema que le permita generar insights
+    
+    para empezar a conocer más un poco acerca de sus usuarios recurrentes, como nos gustan
+    los retos, les vamos a ayudar ;).
+
+    Repartiremos el sistema de 2 partes.
+
+    /////
+    
+    Parte número 1 (Construyendo con Laravel):
+    Requerimos crear un sistema que permita registrar y administrar propietarios de vehículos
+    y sus vehículos indicando información relacionada con este como:
+
+    la placa, la marca y el tipo de vehículo.
+    
+    ////
+
+    El sistema debe permitir hacer búsquedas por placa de vehículo, nombre o
+    cédula del propietario. 
+    
+    
+() La aplicación debe ser web, con una base de datos PostgreSQL o
+    MySQL y debe desarrollarse con Laravel:
+
+    1. Debes crear un endpoint que permita crear un vehículo y en la misma petición sea
+    asociado a un nuevo propietario.
+    
+    Dicho endpoint deberá garantizar la información de forma
+    tal que en caso de generarse un error no se almacenen datos 
+
+    <!-- &quot;    esto es una comilla simple-->
+    &quot;basura&quot; en la base de datos.
+    
+
+    
+    2. Crear una consulta que liste la cantidad de vehículos existentes por cada marca,
+    
+    donde se modifiquen los nombres de dichas marcas 
+
+    para que siempre se muestren únicamente con la primer letra en mayúscula y las demás en minúscula.
+
+
+    3. Hacer uso de Test Driven Development (Usando PHP Unit preferiblemente ).
+
+    4. Construir una UI para consumir los endpoints (Usa toda tu creatividad y frameworks o
+    tecnologías front que prefieras).
+
+    Nota: La implementación de la UI tiene un 20% de importancia en la prueba.
+
+// segunda parte
+
+    Parte numero 2 (Un poco de lógica):
+
+    En una parte de la UI, queremos mostrarle a nuestro cliente un DEMO de una nueva funcionalidad, 
+
+    para ello se debe construir una función JS que recibe un arreglo con un conjunto de arreglos, 
+
+    y debe agrupar en el primer nivel por la fecha y en el segundo nivel con la franja horaria.
+
+
+P.E Dado el arreglo:
+
+// nota crearlo mediante objetos
+
+let arreglo =[
+    [​'​2018-12-01​'​,​'​AM​'​,​'​ID123​',​ ​5000​],
+    [​'​2018-12-01​'​,​'​AM​'​,​'​ID545​',​ ​7000​],
+    [​'​2018-12-01​'​,​'​PM​'​,​'​ID545​',​ ​3000​],
+    [​'​2018-12-02​'​,​'​AM​'​,​'​ID545​',​ ​7000​]
+]
+
+Generar el objeto:
+
+{
+
+    ​ '​2018-12-01​'​: {
+        ​ '​AM​'​: ​12000​,
+        ​ '​PM​'​: ​3000
+        },
+        ​ '​2018-12-02​'​: {
+        '​AM​'​: ​7000​,
+        }
+        }
+
+
+        Donde se debe consolidar (acumular el valor de la franja) en caso de que se repita como:
+
+            '​2018-12-01​' “AM”
+            
+
+
+
+
+
+
+
+
+
+
+Debes compartir el repositorio del proyecto y desplegarlo en un servicio gratuito como
+heroku.
+¡Muchos éxitos!!!
+
+- loic.blancher@gradiweb.com
+- fernanda@gradiweb.com
+- miguel@gradiweb.com
+
+<!--  -->
+<!-- subir a git y enviar link del repositorio al los correos anteriores -->
+
+</p>

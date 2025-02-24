@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shorcut icon" href="../../../img/utilities/yo4.avif" />
+    <title>Emojis</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background: #000;
+            font-family: 'Noto Sans JP', sans-serif;
+        }
+        main {
+            font-size: 2vw;
+            text-align: center;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            overflow: hidden;
+        }
+        #main{
+            padding: 7px 0;
+            text-align: center;
+            font-size: 2vw;
+            width: 90%;
+            margin: auto;
+            color: #a7a7a7;
+        }
+        .header{
+            color: #f3f3f3;
+            background: #7074;
+            display: flex;
+            justify-content: center;
+        }
+        span{
+            background: dodgerblue;
+            padding: 0 10px;
+            font-size: 1.7vw;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <span id="before"><</span>
+        <strong>0-1117</strong>
+        <span id="after">></span>
+    </div>
+    <main id="main"></main>
+</body>
+
+<script>
+    (()=>{
+        var before = document.getElementById("before");
+        var after = document.getElementById("after");
+        var main = document.getElementById("main");
+        var from = 0;
+        var to = 777;
+        var sum = 777;
+
+        before.addEventListener("click", ()=>{
+            if(from != 0){
+                from = from - sum;
+                to = to - sum;
+            }
+            load();
+        });
+
+        after.addEventListener("click", ()=>{
+            from = from + sum;
+            to = to + sum;
+            load();
+        });
+
+        function load(){ 
+            main.innerHTML = "";
+            for(var i = from; i < to; i++){
+                main.innerHTML += "<div class='"+ i +"'>&#" + i + " </div>";
+            }
+        };
+        load();
+    })();
+</script>
+</html>

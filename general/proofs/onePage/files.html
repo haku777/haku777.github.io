@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>files</title>
+
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,300;1,400&display=swap');
+
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			font-family: 'Josefin Sans', sans-serif;
+		}
+
+		.wrapper{
+			background:radial-gradient(circle,#03223f,#000);
+			height: 100vh;
+			overflow: hidden;
+		}
+
+		main{
+			/* background: #270027; */
+			width: 100vw;
+			height:100vh;
+			margin: auto;
+			padding: 7px;
+			display: flex;
+			/* -webkit-box-reflect: below -400px; */
+			justify-content: center;
+			align-content: center;
+			align-items: center;
+			overflow: hidden;
+		}
+
+		span{
+			position: absolute;
+			height: calc((var(--i) * 50vh));
+			width: calc((var(--i) * 50vh));
+			border-radius: 50%;
+			border:1px solid #cdf3fb;
+			animation: waves 2s alternate infinite;
+			animation-delay: calc(var(--i) * 1s);
+			box-shadow: 0px 0px 17px 0px #cdf3fb;
+		}
+		span:nth-child(1){
+			background: url(../../../img/utilities/srry.png) #0004;
+			background-position: center;
+			background-size: cover;
+			width: 17vh;
+			height: 17vh;
+			box-shadow:
+			0px 0px 17px 2px #fff,
+			0px 0px 777px purple;
+			animation: main 7s linear infinite;
+			z-index: 7;
+		}
+		@keyframes main {
+			0%{transform:rotatez(-360deg);}
+		}
+
+
+		@keyframes waves {
+			0%{transform:scale(calc(2.7 - var(--i)));}
+			100%{background: #7074; border:1px solid #fa95fd;box-shadow: 0px 0px 77px 0px #7d31fa;}
+		}
+	</style>
+
+</head>
+<body>
+	<div class="wrapper">
+		<main>
+			<span style="--i:0.1;"></span>
+			<span style="--i:0.2;"></span>
+			<span style="--i:0.3;"></span>
+			<span style="--i:0.4;"></span>
+			<span style="--i:0.5;"></span>
+			<span style="--i:0.6"></span>
+			<span style="--i:0.7;"></span>
+			<span style="--i:0.8;"></span>
+			<span style="--i:0.9;"></span>
+			<span style="--i:1;"></span>
+		</main>
+	</div>
+</body>
+<script>
+
+	// document.body.addEventListener("click", function () {
+	// 	audio.play();
+	// 	audio.volume = audio.volume + 0.1;
+	// 	if(audio.volume > 0.9){
+	// 		audio.volume = 0;
+	// 	}
+	// })
+	// const audio = document.getElementById('audio');
+	// audio.volume = 0.04;
+
+//  const globalStream = null;
+  
+//   navigator.mediaDevices
+//     .getUserMedia({ audio: true, video: true })
+//     .then((stream) => { 
+//       globalStream = stream;
+//     });
+</script>
+</html>

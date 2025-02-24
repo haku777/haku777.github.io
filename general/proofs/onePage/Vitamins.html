@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listado de Vitaminas y Alimentos</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body{
+            background-color: #e1dbe7;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Tahoma, Cambria, Arial;
+            color: #fff !important;
+            font-size: 17px;
+        }
+        .container {
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+        .align{
+            width: 100%;
+            display: flex;
+            justify-content: left;
+            padding: 10px;
+        }
+        .vitamin-list {
+            background-color: #34008d;
+            padding: 40px;
+            box-shadow: 0px 0px 7px #ddd;
+        }
+
+        .vitamin-list h2 {
+            margin-top: 0;
+        }
+
+        .vitamin-list ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .vitamin-list ul li {
+            padding: 10px;
+            cursor: pointer;
+            transition-duration: .7s;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .vitamin-list ul li:hover {
+            background-color: #9a0082;
+        }
+
+
+        .food-list {
+            background-color: #6956ae;
+            width: 55%;
+            height: 70vh;
+            padding: 40px;
+            margin-left: 20px;
+            box-shadow: 0px 0px 7px #ddd;
+            overflow: hidden;
+            overflow-y: scroll;
+        }
+
+        .food-list> p{
+            background-color: #770077;
+            display: inline-block;
+            text-transform: capitalize;
+            padding: 7px;
+            margin: 1px;
+            border: 2px solid #000;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="align">
+            
+            <div class="vitamin-list">
+                <h2>Vitaminas y Minerales</h2><br>
+                <ul>
+                    <li onclick="showFoods('A')">Vitamina A</li>
+                    <li onclick="showFoods('B')">Vitamina B</li>
+                    <li onclick="showFoods('C')">Vitamina C</li>
+                    <li onclick="showFoods('D')">Vitamina D</li>
+                    <li onclick="showFoods('E')">Vitamina E</li>
+                    <li onclick="showFoods('Calcio')">Calcio</li>
+                    <li onclick="showFoods('Hierro')">Hierro</li>
+                    <li onclick="showFoods('Magnesio')">Magnesio</li>
+                    <li onclick="showFoods('Potasio')">Potasio</li>
+                    <li onclick="showFoods('Zinc')">Zinc</li>
+                    <li onclick="showFoods('Colageno')">Colageno</li>
+                </ul>
+            </div>
+            <div class="food-list" id="food-list">
+                <h2>Alimentos</h2><br>
+                <p>Selecciona una vitamina o mineral para ver los alimentos correspondientes.</p>
+            </div>
+            </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+<script>
+const foods = {
+    'A': ['Zanahorias', 'Espinacas', 'Batata', 'Pimientos'],
+    'B': ['Carne', 'Pescado', 'Huevos', 'Legumbres'],
+    'C': ['Naranjas', 'Fresas', 'Kiwi', 'Pimientos'],
+    'D': ['huevos','sardina','salmon','Pescado graso', 'Hígado', 'Queso', 'Yemas de huevo'],
+    'E': ['Aceites vegetales', 'Nueces', 'Semillas', 'Espinacas'],
+    'K': ['Col rizada', 'Espinacas', 'Brócoli', 'Coles de Bruselas'],
+    'Calcio': ['acelga','espinaca','col rizada','brocoli','leche de soya','higos','tofu' ,'almendras','leche', 'yogurt', 'queso duro', 'coco' ,'Leche', 'Queso', 'Yogur', 'Tofu', 'Almendras'],
+    'Hierro': ['Carne roja', 'Hígado', 'Espinacas', 'Lentejas', 'Frijoles'],
+    'Magnesio': ['Nueces', 'Semillas', 'Espinacas', 'Arroz integral', 'Aguacate'],
+    'Potasio': ['Plátanos', 'Naranjas', 'Patatas', 'Tomates', 'Espinacas'],
+    'Zinc': ['Carne', 'Mariscos', 'Semillas de calabaza', 'Garbanzos', 'Cereales integrales'],
+    'Colageno': [a]
+
+let a = 
+"El colágeno es una proteína que se encuentra en muchos alimentos, especialmente en aquellos de origen animal. Aquí te dejo una lista de alimentos clasificados desde los que más contienen colágeno o promueven su producción hasta los que menos:
+- 1. __Caldo de huesos__
+   - __Descripción:__ El caldo de huesos, especialmente de res o pollo, es rico en colágeno natural. Al hervir los huesos, el colágeno se descompone en gelatina, que es fácilmente absorbida por el cuerpo.
+   - __Beneficio adicional:__ Contiene aminoácidos como glicina y prolina, esenciales para la producción de colágeno.
+
+- 2. __Piel de pollo__
+   - __Descripción:__ La piel de pollo es una fuente rica en colágeno.
+   - __Beneficio adicional:__ Además de colágeno, también contiene elastina, otra proteína importante para la salud de la piel.
+
+- 3. __Pescados (especialmente pescados con piel)__
+   - __Descripción:__ Los pescados como el salmón y el atún, especialmente cuando se consume la piel, son ricos en colágeno.
+   - __Beneficio adicional:__ Los pescados también contienen ácidos grasos omega-3, que ayudan a mantener la piel hidratada y saludable.
+
+- 4. __Carnes rojas__
+   - __Descripción:__ Las carnes rojas como la carne de res son fuentes ricas en colágeno.
+   - __Beneficio adicional:__ Aportan hierro, que es crucial para la salud general y la producción de colágeno.
+
+- 5. __Gelatina__
+   - __Descripción:__ La gelatina es básicamente colágeno cocido y descompuesto. Es común en postres y algunas preparaciones saladas.
+   - __Beneficio adicional:__ Aporta aminoácidos como prolina y glicina.
+
+- 6. __Claras de huevo__
+   - __Descripción:__ Las claras de huevo contienen prolina, un aminoácido que es clave para la producción de colágeno.
+   - __Beneficio adicional:__ Son ricas en proteínas y bajas en calorías.
+
+- 7. __Frutas cítricas__
+   - __Descripción:__ Aunque no contienen colágeno, son ricas en vitamina C, que es crucial para la síntesis de colágeno.
+   - __Ejemplos:__ Naranjas, limones, pomelos.
+   - __Beneficio adicional:__ La vitamina C también es un antioxidante que ayuda a proteger la piel.
+
+- 8. __Bayas (fresas, moras, arándanos)__
+   - __Descripción:__ Las bayas son ricas en antioxidantes y vitamina C, lo que promueve la producción de colágeno.
+   - __Beneficio adicional:__ Ayudan a combatir el daño de los radicales libres.
+
+- 9. __Vegetales de hoja verde__
+   - __Descripción:__ Verduras como la espinaca, la col rizada y el kale contienen clorofila, que puede aumentar la producción de colágeno en la piel.
+   - __Beneficio adicional:__ Son ricas en antioxidantes y fibras.
+
+- 10. __Aguacate__
+   - __Descripción:__ Contiene grasas saludables y vitamina E, que ayuda a proteger el colágeno de la piel.
+   - __Beneficio adicional:__ Es una fuente rica de antioxidantes.
+
+- 11. __Frutos secos y semillas__
+   - __Descripción:__ Almendras, nueces, y semillas de chía son ricas en zinc y vitamina E, que ayudan a mantener el colágeno.
+   - __Beneficio adicional:__ Aportan ácidos grasos omega-3.
+
+- 12. __Tomates__
+   - __Descripción:__ Ricos en licopeno, un antioxidante que protege el colágeno.
+   - __Beneficio adicional:__ También contienen vitamina C.
+
+### 13. __Ajo__
+   - __Descripción:__ El ajo contiene azufre, que es necesario para la producción de colágeno.
+   - __Beneficio adicional:__ Contiene taurina, que ayuda a reparar fibras dañadas de colágeno.
+
+### 14. __Pimientos__
+   - __Descripción:__ Especialmente los pimientos rojos son ricos en vitamina C.
+   - __Beneficio adicional:__ Contienen capsaicina, que puede ayudar a reducir la inflamación.
+
+Estos alimentos te ayudarán a mantener niveles saludables de colágeno en tu cuerpo, promoviendo la salud de la piel, las articulaciones y otros tejidos."
+};
+
+function showFoods(nutrient) {
+    const foodListDiv = document.getElementById('food-list');
+    foodListDiv.innerHTML = `<h2>Alimentos ricos en ${nutrient}</h2>
+    <p>${foods[nutrient].map(food => `${food}`).join('</p><p>')}</p>`;
+}
+showFoods('Calcio');
+
+/* falta por agregar:
+
+
+nueces
+nueces de brasil - ojos
+nueces de macadamia
+las abellanas
+pistachos
+almendras
+
+arandanos azules - ojos
+huevos
+espinacas
+
+arandanos rojos
+
+platano verde
+aguacate
+
+no comer:
+  los pinones
+  los anacardos
+
+frutos secos
+  ajonjoli
+
+1h minimo entre cada una
+
+aguacate
+
+mazorca
+
+--------------------------------------------================----------------------------------
+
+evitar
+    azucar
+    carne
+    leche
+    pan
+
+comer
+    miso japones
+    pezcado
+    agua
+    leche de avena
+
+desayuno
+    poco
+
+---------------
+
+
+ojos
+
+omega 3
+vitamina c
+vitamina a
+vitamina e
+
+https://www.youtube.com/shorts/FFSY4T3iEuw
+
+-------------------------------------------------
+cerebro
+    glucosa
+
+    arandanos
+    aguacate
+    nueces
+    almendras
+    legumbres
+    frutas
+    chocolate amargo
+
+    curcuma
+    azafran
+    jengibre
+
+    magnesio
+    verduras de hojas verdes(espinaca, acelgas, pepino de guiso, brocoli)
+    respirtacion
+    agua
+    dormir
+    ejercicio
+    kinua?
+---------------
+tal vez?? / alimentos por dias
+    toronja/sandia/melon/fresa/mandarina
+    pina/papaya(c)
+    naranjas/ no jugo
+    zanahoria
+    cascaras de limon
+    pera
+    kiwi
+    guanabana
+    hojas de guanabana
+    asguaganda
+    vinagre de cidra de manzana
+evitar():
+    alcohol
+    cafe
+------------------------------------------
+magnesio
+    aguacate
+    nueces, almendras
+    chocolate negro cacao
+    legumbre
+        frijoles
+        garbanzos
+        lentejas
+        alberjas
+    tofu
+    semillas
+        calabaza
+        lino
+    cereales
+        trigo
+    pez
+        salmon
+        caballa
+    platanos
+    verduras
+        hoja verda
+            espinacas
+            acelgas
+            col rizada
+    abichuelas
+crema de verduras
+    ahuyama
+    espinacas
+    alberjas
+
+------------------------------------------
+Glucosa
+    jugos de verduras
+NO
+    sushi
+
+------------------------------------------
+otros
+    ajo
+    cebolla roja
+
+
+--------------
+
+agua
+zanahoria
+almendras
+lumify
+
+*/
+</script>
+</html>

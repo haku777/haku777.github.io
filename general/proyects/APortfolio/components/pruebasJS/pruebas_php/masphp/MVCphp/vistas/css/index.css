@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: lightsteelblue;
+}
+
+main section{
+    background:rgba(255,255,255,0.5);
+    width: 70%;
+    margin: auto;
+    margin-top: 20px;
+    padding: 40px 200px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 7px gray;
+}

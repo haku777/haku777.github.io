@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js</title>
+    <style>body{background:#cccccc} section{padding: 20px 77px;}</style>
+</head>
+<body>
+    <main>
+        <section class="links">
+            <a href="../index.html">Back</a>
+            <a href="../../page.html">Menu</a><br><br>
+            <a href="https://youtu.be/z95mZVUcJ-E?t=18772" target="_blank">javaScript_1</a><br>
+            <a href="https://www.youtube.com/watch?v=xOinGb2MZSk" target="_blank">javaScript_2</a><br>
+            <a href="https://parzibyte.me/blog/2019/07/18/javascript-acceder-microfono-camara/" target="_blank">js con el harware</a>
+            <hr>
+        </section>
+        <section>
+            
+            <h2>faltan mas links</h2>
+            
+        
+            <script>
+                var a = 1
+                let b = 77
+                const c = 3
+        
+                let d = `sumar los "siguientes"
+                numeros ${a} 'con' ${b}`
+        
+                document.write(String(a) + String(b) + String(c) + "<br>");
+        
+                let array = ["arrayObjetoCero","arrayObjetoUno"];
+        
+        
+                let arrayAsoc = {
+                    arrayAsoc:"array asociativo", 
+                    otroDato:"otro dato"
+                }
+        
+                document.write(array[0] + "<br>")
+                document.write(arrayAsoc['otroDato'] + "<br>");
+        
+                optenerDato = prompt("nombre de usuario");
+
+                document.write("<br>su nombre de usuario es: <b>" + optenerDato.toUpperCase() + "</b><br>");
+        
+                document.write("<b>break</b> es para finalizar bucles en su totalidad es decir si el bucle es de 100 lo podemos detener al 10" + "<br>");
+                document.write("<b>continue</b> es para saltarse un valor del bucle por su id etc " + "<br>");
+        
+                document.write("<b>label</b> es nombrar el bucle para finalizarlo dentro de otro" + "<br>");
+        
+                document.write("<b>return</b> en funciones, si ejecuto o muestro datos despues del return o no se mostrara pero se ejecutara internamente validar" + "<br>");
+        
+                document.write("<b>scoop</b> es regional se refiere a donde se pueden ver los datos definidos , es como llamar una variable que esta definida en una funcion si la variable esta definida como let esta solo se ve reflejada en el scoop de la funcion y si esta definida como var el valor de la variable va ha ser igual a lo que esta en la funcion independientemente de que se llame la funcion o no asi que no podremos por ejemplo crear otra variable fuera de la funcion con el mismo nombre");
+        
+                document.write("las funciones flecha se ejecutan segun la cantidad de parametros y de que se va mostrar en pantalla eje: revisa el codigo");
+        
+        
+                const funcion = ()=>{}
+                // si es solo un parametro el que recibe sepuede hacer asi:
+                const funcion2 = parametro => {}
+                // si es solo un resultado siempre se puede mostrar asi:
+                // ya que el return es automatico
+                const funcion3 = parametro => document.write(ejemplo);
+        
+        
+                document.write("un array dentro de otro array es una matriz bidimencional eje array[1][0]");
+                document.write("en un for in pasa la posicion del valor eje: ver codigo");
+                //  for(alumno in alumnostotales){}
+                document.write("en un for of pasaria el valor");
+        
+                 document.write("pfuncional pestructurada porientadaO pDefensiva");
+                 document.write("Conceptos basicos de POO: ");
+                 document.write("clases,obejetos,constructores : son aquellos que usamos para definir los atributos que va tener nuestra clase objeto,atributos,metodos,instanciacion");
+                 document.write("caracteristias POO: ");
+        
+                 // se trabaja mas por concepto
+                 document.write("abstraccion: reduccion de complejidad del objeto ");
+                 
+                 document.write("modularidad: dividir un problema en partes");
+                 
+                 document.write("encapsulamiento: datos privados que el usuario no pueda acceder ellos");
+                
+                 document.write("polimorfismo: comportamiento distinto de un objeto por sus propiedades eje: en una clase animal creamos un metodo ladrar que no todos los animales puede pero lo definimos cuando el animal sea perro, lobo etc");
+                
+                 document.write("jerarquia: ");
+        
+                // se trabaja mas con funciones de js
+                 document.write("herencia: (extends) creacion de una funcion diferente pero que contenga los datos de un clase inicial por eje: de la clase perro extendido de clase animal y a gregamos las variaciones para el perro");
+        
+                 document.write("metodos estaticos: (static) se pueden usar sin instaciar la clase con el metodo es decir si llamo un metodo static de una clase que no ha sido instanciada se mostrara");
+                 
+                 document.write(`metodos accesores(getters,setters): 
+                 getters:obtener un valor. 
+                 setters modificarlo o definir un valor ejemplo si tenemos una clase con un atributo en null o vacio lo podemos modificar mediante un metodo eje: set setMetodo (newName){this.tipo=newName} y despues instanciamos la clase o sub clase y despues llamamos al metodo dandole el valor al clase con el metodo a utilizar. y para los get getMetodo (){return this.atributo};  pdt:primero definir el atributo antes de llamarlo es decir usar set antes de get`);
+        
+                 document.write("crear uno con innerHTML y un try catch");
+                 
+                 document.write("<hr>");
+                 
+                 
+                 // nota las clases se definen con const eje: const car = new car(rojo,4 , carbono)
+                 class celulares{
+                     constructor(resolucion,peso,mRam,tieneSim){
+                        this.resolution = resolucion;
+                        this.weight = peso;
+                        this.memoriaRam = mRam;
+                        this.tieneSim = null;
+        
+                     }
+        
+                     encendido(){
+                        document.write("<br />telefono <b>encendido</b> UWU<br /><br />");
+                    }
+                    apagado(){ 
+                        document.write("<br />telefono <b>apagado</b> UWU<br />");
+                     }
+        
+                        get getMetodo(){
+                            // esto es para otener un valor
+                            return this.tieneSim;
+                        }
+        
+                        set setMetodo(sim){
+                            // esto es para modificar un valor
+                            this.tieneSim= sim;
+                        }
+        
+                 }
+        
+                let movil =new celulares("5.5'","50gm","4G");
+        
+                movil.encendido();
+                document.write(`Resolucion: <b> ${movil.resolution} </b><br>`);
+                document.write(`Peso: <b> ${movil.weight} </b><br>`);
+                document.write(`memoria Ram: <b> ${movil.memoriaRam} </b><br>`);
+                
+                document.write('Marca Actual de la Sim: <b>' + movil.getMetodo + "</b><br>");
+
+                let sim = prompt("la marca de la sim es nula cual es el proveedor");
+                movil.setMetodo=sim;
+                
+                document.write(`el telefono tiene sim: <b> ${movil.tieneSim} </b><br>`);
+
+                movil.apagado();
+            </script>
+
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ExampleAnimate</title>
+
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,300;1,400&display=swap');
+
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			font-family: 'Josefin Sans', sans-serif;
+		}
+
+		body{
+			background: radial-gradient(#3c0877 50%,#160345);
+			height: 100vh;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			overflow: hidden;
+		}
+
+		main{
+			background: #000;
+			position: absolute;
+			width: 400px;
+			height: 400px;
+			display: flex;
+			flex-wrap: wrap;
+			border-radius: 50%;
+			justify-content: center;
+			align-items: center;
+			animation: rounds 2s alternate infinite;
+			overflow: hidden;
+			z-index: -1;
+		}
+
+		main .inside{
+			background: #000;
+			position: absolute;
+			justify-content: center;
+			align-items: center;
+			display: flex;
+			border-radius: 50%;
+			width: 97%;
+			height: 97%;
+			font-size: 47px;
+			color: #fff;
+			text-align: center;
+			z-index: 10000;
+		}
+
+		main .road{
+			background: #000;
+			position: absolute;
+			margin: auto;
+			width: 40vw;
+			height: 40vw;
+			border-radius: 50%;
+			animation: round 7s linear infinite;
+			z-index: 10;
+		}
+
+		main .road div{
+			background: linear-gradient(45deg,crimson 50%,transparent 50% 100%);
+			display: inline-block;
+			margin: auto;
+			width: 49%;
+			height: 49%;
+			/* border-radius: 50%; */
+			z-index: 12;
+		
+		}
+
+		/* main .road span:nth-child(2){
+			background: linear-gradient(-225deg,magenta 50%,transparent 50% 100%);
+		} */
+
+		main .road div:nth-child(2){
+			background: linear-gradient(-225deg,magenta 50%,transparent 50% 100%);
+		}
+		
+		main .road div:nth-child(3){
+			background: linear-gradient(-45deg,dodgerblue 50%,transparent 50% 100%);
+			animation-delay: -3s;
+		}
+
+		main .road div:nth-child(4){
+			background: linear-gradient(-135deg,tan 50%,transparent 50% 100%);
+			animation-delay: -5s;
+		}
+
+		@keyframes round {
+			0%{transform: rotateZ(-360deg);}
+		}
+
+	</style>
+
+</head>
+<body>
+	<main>
+		<div class="road">
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
+		<div class="inside">What means?</div>
+	</main>
+</body>
+
+<script>
+
+</script>
+</html>

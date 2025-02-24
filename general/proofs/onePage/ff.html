@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alarmas Programadas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        #alarm-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        #alarm-list li {
+            background-color: #fff;
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Mis Alarmas Diarias</h1>
+    <ul id="alarmlist">
+        <!-- Las alarmas se mostrarán aquí -->
+    </ul>
+
+    <audio id="alarm-sound" src="https://haku777.com/song/a_HSMXsiW.mp3" preload="auto"></audio>
+</body>
+<script>
+    (()=>{
+        
+    const alarms = [
+    { time: '06:00', task: 'Despertar y rutina matutina' },
+    { time: '07:00', task: 'Estudio de inglés' },
+    { time: '08:00', task: 'Inicio del trabajo' },
+    { time: '12:00', task: 'Almuerzo y tiempo libre' },
+    { time: '14:00', task: 'Regreso al trabajo' },
+    { time: '18:00', task: 'Descanso' },
+    { time: '19:00', task: 'Proyectos de desarrollo' },
+    { time: '21:00', task: 'Tiempo libre' },
+    { time: '22:00', task: 'Hora de dormir' }
+];
+
+const alarmList = document.getElementById('alarmlist');
+const alarmSound = document.getElementById('alarm-sound');
+
+function checkAlarms() {
+    const now = new Date();
+    const currentTime = now.toTimeString().slice(0, 5);
+
+    alarms.forEach(alarm => {
+        if (currentTime === alarm.time) {
+            triggerAlarm(alarm.task);
+        }
+    });
+}
+
+function triggerAlarm(task) {
+    alarmSound.play();
+    alert(`¡Es hora de: ${task}!`);
+    speakTask(task);
+}
+
+function speakTask(task) {
+    if ('speechSynthesis' in window) {
+        const utterance = new SpeechSynthesisUtterance(`Es hora de ${task}`);
+        window.speechSynthesis.speak(utterance);
+    } else {
+        console.warn('Speech synthesis no es compatible con este navegador.');
+    }
+}
+
+function displayAlarms() {
+    alarms.forEach(alarm => {
+        const listItem = document.createElement('li');
+        listItem.textContent = `${alarm.time} - ${alarm.task}`;
+        alarmList.appendChild(listItem);
+    });
+}
+
+displayAlarms();
+setInterval(checkAlarms, 1000);
+
+    })()
+</script>
+</html>

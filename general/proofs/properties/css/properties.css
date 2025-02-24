@@ -1,0 +1,209 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html{
+	scroll-behavior: smooth;
+}
+
+@font-face{
+	font-family: Merge;
+	src: url(../../../../files/font/merge_light.otf);
+}
+a {
+	text-decoration: none;
+	outline: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+body {
+    font-family:Merge, 'Noto Sans JP', sans-serif;	
+	font-size: 20px;
+	background: #f2f2f2;
+}
+
+/* * ============================== */
+/* * ============ HEADER ========== */
+/* * ============================== */
+
+header {
+	background: url(https://haku777.com/files/img/pexelFree/code.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 70vh;
+}
+
+.navbar{
+	background: #0077ff2d;
+	position: sticky;
+	top: 0;
+	height: 100px;
+	display: flex;
+	justify-content: center;
+	backdrop-filter: blur(7px);
+}
+
+.navbar a {
+	align-self: center;
+	color: #fff;
+	padding: 7px;
+	margin: 4px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	transition: .7s ease-out all;
+}
+
+.navbar a:hover {
+	font-size: 27px;
+	box-shadow: inset 0px 0px 0px 4px dodgerblue;
+}
+
+.contenedor {
+	max-width: 1000px;
+	width: 90%;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+/* * ============================== */
+/* * ===== CONTENEDOR IMAGEN ====== */
+/* * ============================== */
+
+.contenedor-imagen {
+	height: 100vh;
+}
+
+.contenedor-imagen img {
+	width: 100%;
+	height: 100%;
+	vertical-align: top;
+	object-fit: cover;
+	object-position: 0 bottom;
+}
+
+/* * ============================== */
+/* * ============ MAIN ============ */
+/* * ============================== */
+
+main {
+	background: #dcd8df;
+	min-height: 100vh;
+}
+
+h2{
+	color: #0070c5;
+}
+
+main .contenido p {
+	margin-bottom: 20px;
+	line-height: 30px;
+	color: #515152;
+}
+
+main .contenido .titulo {
+    font-family: 'Montserrat', sans-serif;
+	font-weight: normal;
+	padding-top: 40px;
+}
+
+main .contenido .fecha {
+	font-size: 14px;
+	color: #949494;
+}
+
+/* * ============================== */
+/* * ============ ASIDE =========== */
+/* * ============================== */
+
+aside {
+	min-width: 17vw;
+	margin: 40px 20px 20px 0;
+	height: 100%;
+	background: #0070c5;
+	padding: 20px;
+	border-radius: 3px;
+	position: sticky;
+	top: 20px;
+}
+
+aside .titulo {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: normal;
+	font-size: 24px;
+	margin-bottom: 20px;
+	color: #f2f2f2;
+}
+
+aside .indice a {
+	display: block;
+	margin-bottom: 10px;
+	color: #FFCD48;
+}
+
+/* * ============================== */
+/* * ========== FOOTER ============ */
+/* * ============================== */
+
+
+footer{
+	background: url(https://haku777.com/files/img/pexelFree/yellow_sheets.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 27vh;
+}
+
+/* * ============================== */
+/* * ====== MEDIA QUERIES ========= */
+/* * ============================== */
+@media screen and (max-width: 900px){
+	.navbar .contenedor {
+		flex-wrap: wrap;
+		margin: 0;
+		width: 100%;
+	}
+
+	.navbar a {
+		width: auto;
+		flex: 1;
+	}
+
+	.contenedor-imagen {
+		height: 50vh;
+	}
+
+	main .contenedor {
+		flex-direction: column;
+	}
+}
+
+/* ================ */
+
+::view-transition-new(root) {
+	mask: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40"><circle cx="20" cy="20" r="20" fill="white"/></svg>')
+	  center / 0 no-repeat;
+	animation: scale 1s;
+  }
+  
+  ::view-transition-old(root),
+  .dark::view-transition-old(root) {
+	animation: none;
+	z-index: -1;
+  }
+  .dark::view-transition-new(root) {
+	animation: scale 1s;
+  }
+  
+  @keyframes scale {
+	to {
+	  mask-size: 200vmax;
+	}
+  }
+
+
+  }

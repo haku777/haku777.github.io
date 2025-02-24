@@ -1,0 +1,72 @@
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+body
+    background: #252555
+    overflow: hidden
+
+header
+    background: black
+    min-height: 10vh
+    nav
+        display: flex
+        justify-content: space-around
+        align-content: center
+        align-items: center
+        min-height: 10vh
+        img
+           width: 70px
+           height: 70px
+           border-radius: 50%
+        ul
+            li
+                list-style: none
+                display: inline-block
+                a
+                    background: indigo
+                    padding: 7px
+                    font-size: 1.5rem
+                    text-decoration: none
+                    color: white
+                    &:hover
+                        background: #00ccff
+
+
+main
+    section
+        background: linear-gradient(45deg,
+        #ccffee 0% 7%,
+        #252555 30% 60%,
+        #00ccff 90% 100%)
+        width: 72vw
+        margin: auto
+        margin-top: 10vh
+        padding: 1vw
+        div
+            background: linear-gradient(45deg, 
+            #ff0077 1% 7%, 
+            rgb(170,0,177) 50% 60%, 
+            indigo 90% 100%)
+            padding: 7vw
+            color: white
+            width: 70vw
+            height: 70vh
+            margin: auto
+            overflow: hidden
+            z-index: 10
+            h2
+                text-align: center
+                font-size: 4rem
+                padding: 10px 0px
+                text-transform: uppercase
+            
+            p
+                font-size: 1.5rem
+
+
+
+@media(max-width:750px)
+    h2,p
+        font-size: 1rem !important

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="https://haku777.com/files/img/utilities/yo.ico" >
+	<title>Listen</title>
+
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,300;1,400&display=swap');
+
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			font-family: 'Josefin Sans', sans-serif;
+		}
+		.song{
+			position: absolute;
+			background-color: transparent;
+			color: lime;
+			border:none;
+			top: 0;
+			z-index: 10000;
+		}
+		.play{
+			font-size: 7vw;
+			left: 44vw;
+		}
+		.down{
+			font-size: 5vw;
+			left: 0vw;
+		}
+		.mute{
+			font-size: 5vw;
+			top: 9vh;
+			left: 0vw;
+		}
+		.wrapper{
+			background:radial-gradient(indigo,#170747,#000 80%,indigo);
+			height: 100vh;
+			overflow: hidden;
+		}
+
+		main{
+			/* background: #270027; */
+			width: 100vw;
+			height:100vh;
+			margin: auto;
+			padding: 7px;
+			display: flex;
+			/* -webkit-box-reflect: below -400px; */
+			justify-content: center;
+			align-content: center;
+			align-items: center;
+			overflow: hidden;
+		}
+
+		span{
+			position: absolute;
+			height: 300px;
+			width: calc((var(--i) * 100vw));
+			border-radius: 50%;
+			border:1px solid darkmagenta;
+			animation: waves 2s alternate infinite;
+			animation-delay: calc(var(--i) * 1s);
+			box-shadow: 0px 0px 17px 0px darkmagenta;
+		}
+		span:nth-child(1){
+			background: url(../../../files/img/utilities/yo4.avif) #000;
+			background-position: center;
+			background-size: cover;
+			width: 27vh;
+			height: 27vh;
+			box-shadow:
+			inset 7px 7px 17px #f83eac,
+			inset -7px -7px 17px #214aff,
+			inset 0px 0px 7px 2px #fff,
+			0px 0px 7px 2px #fff,
+			-7px -7px 7px #e50f9e,
+			-17px -17px 27px #e50f9e60,
+			-27px -27px 77px #e50f9e77,
+			-77px -77px 77px #e50f9e30,
+			7px 7px 7px #214aff,
+			17px 17px 27px #214aff60,
+			27px 27px 77px #214aff77,
+			77px 77px 77px #214aff30;
+			animation: main 0.3s alternate infinite;
+			z-index: 7;
+		}
+		@keyframes main {
+			0%{transform:scale(1.2);
+
+			}
+		}
+
+
+		@keyframes waves {
+			0%{transform: rotateX(calc(var(--i) * 360deg)) scale(calc(1 - var(--i)));}
+			100%{border:1px solid purple;box-shadow: 0px 0px 77px 0px indigo;}
+		}
+	</style>
+
+</head>
+<body>
+	<button class="song play" id="play" title="play">&#128266</button>
+	<button class="song down" id="down" title="down">&#128265</button>
+	<button class="song mute" id="mute" title="mute">&#128263</button>
+	<div class="wrapper" id="wrapper">
+		<main>
+			<span style="--i:0.1;"></span>
+			<span style="--i:0.2;"></span>
+			<span style="--i:0.3;"></span>
+			<span style="--i:0.4;"></span>
+			<span style="--i:0.5;"></span>
+			<span style="--i:0.6"></span>
+			<span style="--i:0.7;"></span>
+			<span style="--i:0.8;"></span>
+			<span style="--i:0.9;"></span>
+			<span style="--i:1;"></span>
+		</main>
+		<audio id="audio" src="../../../files/music/songs/wait7.mp3" loop autoplay></audio>
+	</div>
+</body>
+
+<script>
+	document.getElementById('play').addEventListener("click", function () {
+		audio.play();
+		audio.volume = 0.999;
+	})
+	document.getElementById('down').addEventListener("click", function () {
+		audio.play();
+		if(audio.volume > 0.89){
+			audio.volume = 0;
+		}
+		audio.volume = audio.volume + 0.1;
+	})
+	document.getElementById('mute').addEventListener("click", function () {
+		audio.volume = 0;
+	})
+	// document.body.addEventListener("click", function () {
+	// 	audio.play();
+	// 	if(audio.volume > 0.9){
+	// 		audio.volume = 0;
+	// 	}
+	// 	audio.volume = audio.volume + 0.1;
+	// })
+	const audio = document.getElementById('audio');
+	audio.volume = 0.1;
+
+//  const globalStream = null;
+  
+//   navigator.mediaDevices
+//     .getUserMedia({ audio: true, video: true })
+//     .then((stream) => { 
+//       globalStream = stream;
+//     });
+</script>
+</html>

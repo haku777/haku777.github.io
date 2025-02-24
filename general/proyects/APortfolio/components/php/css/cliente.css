@@ -1,0 +1,322 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: url(../../../../img/weather/back.jpg);
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family:Tahoma,'serif';
+    font-size: 1rem;
+    height: 100vh;
+    color: white;
+}
+
+strong{
+    text-transform: capitalize;
+}
+
+nav{
+    background: #252525;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+}
+
+nav h2{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+nav img{
+    width: 47px;
+}
+
+nav a{
+    background: dodgerblue;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    display: block;
+}
+nav a:hover{
+    background: orangered;
+}
+
+nav li span{
+    background: dodgerblue;
+    display: block;
+    padding: 10px;
+}
+
+/* -------------- */
+
+nav ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul li{
+    list-style: none;
+}
+
+nav ul{
+    position: relative;
+}
+
+nav ul li ul{
+    width: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    display: none;
+}
+
+nav ul li ul li ul{
+    position: relative;
+}
+
+nav ul li:hover > ul{
+    display: block;
+    z-index: 10;
+}
+
+
+/* ------------- */
+section{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+
+}
+
+.titulo{
+    background: rgba(0,0,0,0.5);
+    border-radius: 50px;
+    padding: 10px 0px;
+    text-align: center;
+    width: 60vw;
+    backdrop-filter: blur(20px);
+}
+.titulo h2{
+    font-size: 40px;
+}
+
+
+.search input{
+    padding: 20px;
+    text-align: center;
+    border:none;
+    margin-top: 10px;
+    border-radius: 30px;
+    font-size: 20px;
+    outline: none;
+    color: #555555;
+    box-shadow: 1px 1px 0px gray,-1px -1px 2px #eeeeee;
+}
+
+.search input[type="submit"]{
+    background: darkturquoise;
+    color: white;
+}
+
+.search input[type="submit"]:hover{
+    background: lightskyblue;
+    color: white;
+}
+
+.search input[type="submit"]:active{
+    box-shadow: inset 2px 2px 0px black;
+    text-shadow: 1px 1px 1px black;
+}
+
+/* ---------- */
+
+.contenedor{
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.datosecundarios, .datosprimarios{
+    background: rgba(0,0,0,0.2);
+    padding: 20px;
+    width: 40%;
+    overflow: hidden;
+    margin-right: 10px;
+    border-radius: 30px;
+    box-shadow: -1px -1px 0px #dddddd,1px 1px 0px #eeeeee;
+    backdrop-filter: blur(10px);
+}
+
+.datosecundarios{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.datosecundarios div{
+    /* background: teal; */
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+}
+
+.datosecundarios span{
+    color: black;
+    text-shadow: 1px 1px 2px white;
+}
+
+.datosprimarios .grados{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 70px;
+}
+
+.ciudades{
+    text-align: center;
+}
+
+.ciudades th{
+    text-transform: uppercase;
+    padding: 10px;
+
+}
+
+.updateCity{
+    background: #2d8a6b;
+    transition-duration: .7s;
+    font-size: 17px;
+    color:white;
+    margin: auto;
+    width: 200px;
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 30px;
+}
+
+.updateCity:hover{
+    background: #4dc29b;
+}
+
+/* -------------- */
+
+.chat{
+    background: #66503275;
+    backdrop-filter: blur(10px);
+    text-align: center;
+    width:70vw;
+    margin: auto;
+    padding: 20px;
+    border-radius: 30px;
+    box-shadow: -1px -1px 0px #dddddd,1px 1px 0px #eeeeee;
+}
+
+.mensajes{
+    margin-bottom:20px;
+}
+
+.chat label{
+    color: #555555;
+}
+
+.chat input{
+    outline:none;
+}
+
+.chat h2{
+    padding-left: 27vw;
+    text-align: left;
+    color: white;
+    text-shadow:1px 1px 0px black;
+}
+.chat p{
+    font-size: 20px;
+    color: #cccccc;
+}
+
+.chat form{
+    color: #fff;
+    padding: 20px 0px;
+}
+
+.chat form label{
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.chat form textarea{
+    font-size: 20px;
+    padding: 7px;
+}
+
+.chat form input[type="submit"]{
+    background: #2d8a6b;
+    margin-top: 7px;
+    color: #fff;
+    font-size: 17px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+}
+
+.examples{
+    background: #00000022;
+    padding: 40px;
+    width: 70vw;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    border-radius: 30px;
+    backdrop-filter: blur(7px);
+    box-shadow: -1px -1px 0px #dddddd,1px 1px 0px #eeeeee;
+}
+
+/* --------------- */
+
+footer{
+    background: darkslateblue;
+    padding: 20px;
+    margin-top: 70px;
+    color: white;
+}
+
+@media(max-width:1080px){
+    .datosecundarios, .datosprimarios{
+        width: 100%;
+    }
+}
+
+
+@media(max-width:800px){
+    .contenedor{
+        flex-direction: column;
+        width: 90%;
+    }
+    .titulo h2{
+        font-size: 17px;
+    }
+    section{
+        width: 100% !important;
+    }
+    main{
+        height: initial;
+    }
+}
+

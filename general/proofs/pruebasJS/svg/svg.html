@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SVG</title>
+  <style>
+    svg a{
+      background: #005555 !important;
+       color: white !important;
+       padding: 20px;
+    }
+  </style>
+</head>
+<body>
+  <!-- text -->
+  <svg width="270" height="170" style="background: lightslategray"
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+    
+      <a href="../index.html"><text x="40" y="35" fill="white">Back</text></a>
+      <a href="../../page.html"><text x="100" y="35" fill="white">Menu</text></a>
+  
+  </svg> 
+  <!-- rectangle -->
+  <svg width="270" height="170" style="background: lightslategray">
+    <rect x="30" y="10" rx="77" ry="30" width="200" height="150"
+    style="fill:white;stroke:pink;stroke-width:5;opacity:0.5" />
+  </svg>
+  <!-- circle -->
+  <svg width="270" height="170" style="background: lightslategray">
+    <circle cx="130" cy="77" r="69" stroke="black" stroke-width="3" fill="cyan" />
+  </svg>
+ <!-- ellipse -->
+  <svg width="370" height="170" style="background: lightslategray">
+    <ellipse cx="190" cy="50" rx="170" ry="30" style="fill:black" />
+    <ellipse cx="170" cy="50" rx="110" ry="20" style="fill:white" />
+  </svg>
+  <!-- line -->
+  <svg width="270" height="170" style="background: lightslategray">
+    <line x1="0" y1="0" x2="200" y2="200" style="stroke:rgb(0,0,0);stroke-width:7" />
+  </svg> 
+  <!-- polygon -->
+  <svg width="270" height="170" style="background: lightslategray">
+    <polygon points="100,10 40,198 190,78 10,78 160,198"
+    style="fill:white;stroke:purple;stroke-width:5;fill-rule:evenodd;" />
+  </svg>
+  <!-- polyline -->
+  <svg width="270" height="170" style="background: lightslategray">
+    <polyline points="0,40 40,40 40,80 80,80 80,120 120,120 120,160"
+    style="fill:white;stroke:black;stroke-width:4" />
+  </svg>
+
+  <svg width="270" height="170" style="background: lightslategray">
+    <path d="M150 0 L75 200 L225 200 Z" />
+  </svg>
+
+  <svg width="270" height="170"  fill="lightseagreen" viewBox="0 0 20 20" style="background: lightslategray">
+    <path
+    d="M12.075,10.812c1.358-0.853,2.242-2.507,2.242-4.037c0-2.181-1.795-4.618-4.198-4.618S5.921,4.594,5.921,6.775c0,1.53,0.884,3.185,2.242,4.037c-3.222,0.865-5.6,3.807-5.6,7.298c0,0.23,0.189,0.42,0.42,0.42h14.273c0.23,0,0.42-0.189,0.42-0.42C17.676,14.619,15.297,11.677,12.075,10.812 M6.761,6.775c0-2.162,1.773-3.778,3.358-3.778s3.359,1.616,3.359,3.778c0,2.162-1.774,3.778-3.359,3.778S6.761,8.937,6.761,6.775 M3.415,17.69c0.218-3.51,3.142-6.297,6.704-6.297c3.562,0,6.486,2.787,6.705,6.297H3.415z"
+      ></path>
+    </svg>
+    
+    <svg width="270" height="170" fill="#005555" viewBox="0 0 110 110"
+    style="background: lightslategray">
+      <text x="0" y="69" fill="white">
+        M = moveto
+        L = lineto
+        H = horizontal lineto
+        V = vertical lineto
+        C = curveto
+        S = smooth curveto
+        Q = quadratic Bézier curve
+        T = smooth quadratic Bézier curveto
+        A = elliptical Arc
+        Z = closepath
+      </text>
+    </svg>
+  
+    <svg width="270" height="170" style="background: lightslategray">
+      <g fill="none">
+        <!-- stroke-dasharray=long,distance,interval,cantidad -->
+        <path stroke="black" stroke-width="2" stroke-linecap="butt" stroke-dasharray="10,7" d="M5 20 l215 0" />
+        <path stroke="white" stroke-width="4" stroke-linecap="round" stroke-dasharray="20,10,1" d="M5 40 l215 0" />
+        <path stroke="blue" stroke-width="7" stroke-linecap="square" stroke-dasharray="2,10,5,5,5,10" d="M5 60 l215 0" />
+
+        <!-- d= m(left)(top)l(long)(inclination)-->
+        <path stroke="green" stroke-width="9" stroke-linecap="square" stroke-dasharray="2,20,5,10" d="M7 80 l215 69" />
+      </g>
+    </svg> 
+
+    <p>
+        filter elements
+    <feBlend> - filter for combining images
+      <feColorMatrix> - filter for color transforms
+      <feComponentTransfer>
+      <feComposite>
+      <feConvolveMatrix>
+      <feDiffuseLighting>
+      <feDisplacementMap>
+      <feFlood>
+      <feGaussianBlur>
+      <feImage>
+      <feMerge>
+      <feMorphology>
+      <feOffset> - filter for drop shadows
+      <feSpecularLighting>
+      <feTile>
+      <feTurbulence>
+      <feDistantLight> - filter for lighting
+      <fePointLight> - filter for lighting
+      <feSpotLight> - filter for lighting  
+    </p>
+
+    <svg width="270" height="170" style="background: lightslategray">
+      <defs>
+        <filter id="f1" x="0" y="0">
+          <feGaussianBlur in="SourceGraphic" stdDeviation="15" />
+        </filter>
+      </defs>
+      <rect width="90" height="90" stroke="black" stroke-width="3"
+      fill="blue" filter="url(#f1)" />
+    </svg> 
+
+    <svg width="270" height="170" style="background: lightslategray">
+      <defs>
+        <linearGradient id="grad2" x1="0%" y1="0%" x2="0%" y2="100%">
+          <stop offset="0%" style="stop-color:rgb(255,0,0);stop-opacity:1" />
+          <stop offset="100%" style="stop-color:rgb(255,255,0);stop-opacity:1" />
+        </linearGradient>
+      </defs>
+      <ellipse cx="100" cy="70" rx="85" ry="55" fill="url(#grad2)" />
+    </svg> 
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

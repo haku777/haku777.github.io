@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: #252555;
+  overflow: hidden;
+}
+
+header {
+  background: black;
+  min-height: 10vh;
+}
+
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 10vh;
+}
+
+header nav img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+
+header nav ul li {
+  list-style: none;
+  display: inline-block;
+}
+
+header nav ul li a {
+  background: indigo;
+  padding: 7px;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: white;
+}
+
+header nav ul li a:hover {
+  background: #00ccff;
+}
+
+main section {
+  background: linear-gradient(45deg, #ccffee 0% 7%, #252555 30% 60%, #00ccff 90% 100%);
+  width: 72vw;
+  margin: auto;
+  margin-top: 10vh;
+  padding: 1vw;
+}
+
+main section div {
+  background: linear-gradient(45deg, #ff0077 1% 7%, #aa00b1 50% 60%, indigo 90% 100%);
+  padding: 7vw;
+  color: white;
+  width: 70vw;
+  height: 70vh;
+  margin: auto;
+  overflow: hidden;
+  z-index: 10;
+}
+
+main section div h2 {
+  text-align: center;
+  font-size: 4rem;
+  padding: 10px 0px;
+  text-transform: uppercase;
+}
+
+main section div p {
+  font-size: 1.5rem;
+}
+
+@media (max-width: 750px) {
+  h2, p {
+    font-size: 1rem !important;
+  }
+}
+/*# sourceMappingURL=tematics.css.map */

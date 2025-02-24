@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://haku777.com/files/img/utilities/yo.ico">
+    <title>Payment Records</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-size: 2vh !important;
+        }
+        body {
+            font-family: Cambria, arial;
+            background: #ddefee;
+        }
+        header{
+            background: #14a79fbe;
+        }
+        header nav {
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+        header nav ul li{
+            list-style: none;
+        }
+
+        .container {
+            background: #9bc7da;
+            margin: auto;
+            margin-top: 10vh;
+            width: 90vw;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .payment-record {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background: #f9f9f9;
+        }
+
+        .payment-record a {
+            color: #007BFF;
+            text-decoration: none;
+            margin-right: 10px;
+        }
+
+        .payment-record a:hover {
+            text-decoration: underline;
+        }
+
+        .status {
+            padding: 5px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .status.unpaid {
+            background: #e74c3c;
+            color: #fff;
+        }
+
+        .status.paid {
+            background: #2ecc71;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Pays</h1>
+            <ul>
+                <li>inicio</li>
+            </ul>
+        </nav>
+    </header>
+    <div class="wrapper">
+        
+    <div class="container">
+        <div class="payment-record">
+            <h2>Internet</h2>
+            <a href="https://movistar.recaudo.epayco.co/?tipo_servicio=movil&canal=mailfactura&tipo_pago=movistar&ref_pago=60631888221" target="_blank">Pay Internet Now</a>
+            <span class="status unpaid" onclick="toggleStatus(this)">Unpaid</span>
+        </div>
+
+        <div class="payment-record">
+            <h2>Lux</h2>
+            <a href="......" target="_blank">Pay Lux Now</a>
+            <span class="status unpaid" onclick="toggleStatus(this)">Unpaid</span>
+        </div>
+
+        <div class="payment-record">
+            <h2>Water</h2>
+            <a href="......" target="_blank">Pay Water Now</a>
+            <span class="status unpaid" onclick="toggleStatus(this)">Unpaid</span>
+        </div>
+
+        <div class="payment-record">
+            <h2>Gas</h2>
+            <a href="......" target="_blank">Pay Gas Now</a>
+            <span class="status unpaid" onclick="toggleStatus(this)">Unpaid</span>
+        </div>
+
+        <div class="payment-record">
+            <h2>Rent</h2>
+            <a href="......" target="_blank">Pay Rent Now</a>
+            <span class="status unpaid" onclick="toggleStatus(this)">Unpaid</span>
+        </div>
+
+        <div class="payment-record">
+            <h2>Apto</h2>
+            <a href="......" target="_blank">Pay Apto Now</a>
+            <span class="status unpaid" onclick="toggleStatus(this)">Unpaid</span>
+        </div>
+    </div>
+</div>
+
+
+    <script>
+        function toggleStatus(element) {
+            if (element.classList.contains('unpaid')) {
+                element.classList.remove('unpaid');
+                element.classList.add('paid');
+                element.textContent = 'Paid';
+            } else {
+                element.classList.remove('paid');
+                element.classList.add('unpaid');
+                element.textContent = 'Unpaid';
+            }
+        }
+    </script>
+</body>
+</html>

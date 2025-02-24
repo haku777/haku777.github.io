@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>banner</title>
+
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,300;1,400&display=swap');
+
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			font-family: 'Josefin Sans', sans-serif;
+		}
+
+		.wrapper{
+			background: radial-gradient(#3c0877 50%,#160345);
+			height: 100vh;
+			overflow: hidden;
+		}
+
+		main{
+			background: #000;
+			padding-top: 17px;
+			margin: auto;
+			display: flex;
+			justify-content: space-around;
+			width: 70vw;
+			height: 100vh;
+			animation: rounds 2s alternate infinite;
+		}
+
+		main div{
+			width: 20vw;
+			height: 40vw;
+			padding-top: 17px;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-content: center;
+			align-items: center;
+		}
+		
+		main div section{
+			background: linear-gradient(to top,#430a6b,#7800de);
+			margin: auto;
+			width: 90%;
+			height: 90%;
+			border-left: 7px solid #f8c51e;
+			border-right: 7px solid #f8c51e;
+			animation: round 7s linear 2s infinite;
+		}
+
+		main div span{
+			width: 100px;
+			height: 100px;
+			border-top: 5vw solid #430a6b;
+			border-left: 5vw solid transparent;
+			border-right: 5vw solid transparent;
+			border-bottom: 5vw transparent transparent;
+		}
+
+	</style>
+
+</head>
+<body>
+	<div class="wrapper">
+		<main>
+			<div><section></section><span></span></div>
+			<div><section></section><span></span></div>
+		</main>
+	</div>
+</body>
+
+<script>
+
+</script>
+</html>

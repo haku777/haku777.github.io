@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shorcut icon" href="../../../img/utilities/yo4.avif" />
+    <title>BackgroudCode</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background: #000;
+            font-family: 'Noto Sans JP', sans-serif;
+            width: 100vw;
+            height: 100vh;
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+        main{
+            width: 70%;
+            height: 80%;
+            overflow: hidden;
+        }
+        #main {
+            font-size: 4vh;
+            color: #3a9fff;
+            color: #11bf11;
+
+        }
+        h2{
+            color: #f3f3f3;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <h2>BackgroundCode</h2>
+        <div id="main"></div>
+    </main>
+    
+</body>
+
+<script>
+    var main = document.getElementById("main");
+    (()=>{
+        var generateCode = function(){
+            main.innerHTML = "";
+            for(var i = 0; i < 777; i++){
+            let random = Math.round(Math.random(0,1));
+            main.innerHTML += random + " ";
+        }
+        };
+        let r = setInterval(generateCode,177); 
+
+
+
+    })();
+</script>
+</html>

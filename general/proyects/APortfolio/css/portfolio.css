@@ -1,0 +1,372 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Merge;
+  src: url(../../font/merge_light.otf);
+  font-display: swap;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Cambria", "poppins", Merge, sans-serif;
+  font-weight: 900;
+  font-size: 1vw;
+}
+body::-webkit-scrollbar {
+  background: #000000;
+  width: 7px;
+}
+body::-webkit-scrollbar-thumb {
+  background: #770077;
+  border: 1px solid #000000;
+  border-radius: 7px;
+}
+
+main {
+  background: #000;
+  padding-bottom: 4vh;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  color: #fff;
+  font-size: 7vw;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 0px 2px 2px #252555;
+}
+
+section {
+  margin: 0 0 30vh 0;
+}
+
+.start #particles-js {
+  height: 50vh;
+}
+.start #particles-js h2 {
+  position: absolute;
+  color: #fff;
+  margin-top: 20vh;
+  margin-left: 20vw;
+  width: 50%;
+}
+.start .subhead {
+  background: linear-gradient(to top, transparent, #4b0082, #000);
+  margin: auto;
+  color: white;
+  height: 50vh;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  font-size: 3rem;
+}
+.start .subhead img {
+  border-radius: 50%;
+  right: 10vw;
+  top: 40vh;
+  width: 17vh;
+  position: absolute !important;
+  height: 17vh;
+}
+.start .subhead h3 {
+  font-size: 2.7vw;
+  color: #00ffb3;
+}
+.start .subhead .media a {
+  padding: 7px;
+  color: #00ff88;
+  font-size: 2vw;
+  border-bottom: 2px solid #00ffff;
+  border-radius: 2px;
+  transition-duration: 0.7s;
+}
+.start .subhead .media :hover {
+  color: #222;
+  background: #00ffff;
+  box-shadow: 0px 0px 7px 1px #00ffff;
+}
+
+.proyects {
+  width: 100%;
+  height: 70vh;
+  top: 20px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  overflow: hidden;
+  z-index: 0;
+}
+.proyects .card {
+  background: rgba(0, 46, 133, 0.6);
+  position: absolute;
+  width: 27vw;
+  height: 70vh;
+  transition: 0.5s;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #00ffff;
+  border-radius: 7px;
+  overflow: hidden;
+  z-index: 10;
+}
+.proyects .card .img {
+  width: 100%;
+  height: 68%;
+  overflow: hidden;
+}
+.proyects .card .img img {
+  width: 100%;
+  height: 100%;
+  transition-duration: 1s;
+}
+.proyects .card img:hover {
+  transform: scale(1.2);
+}
+.proyects .card .desc {
+  height: 30%;
+  padding: 7px;
+  color: #fff;
+}
+.proyects .card .desc a {
+  width: 70%;
+  margin: auto;
+  display: block;
+  color: #fff;
+  padding: 10px;
+  font-size: 2vw;
+  text-align: center;
+  border: 1px solid #00ffff;
+  border-radius: 7px;
+  text-shadow: 1px 1px 1px #252555;
+  transition-duration: 0.7s;
+}
+.proyects .card .desc a:hover {
+  background: #00ffff;
+  box-shadow: 0px 0px 7px 1px #00ffff;
+}
+.proyects .card .desc p {
+  text-align: center;
+  padding: 7px;
+  color: #00ecc5;
+  height: 50%;
+  overflow: hidden;
+}
+.proyects .card .desc .tools {
+  padding: 7px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+.proyects .card .desc .tools span {
+  margin: 2px;
+  padding: 7px;
+  color: #fff;
+  background: #00ffff;
+  text-shadow: 0px 0px 2px #000b72;
+  border-radius: 3px;
+}
+.proyects #prev, .proyects #next {
+  position: absolute;
+  width: 5vw;
+  height: 5vw;
+  color: #fff;
+  cursor: pointer;
+  font-size: 4vw;
+  line-height: 4vw;
+  text-align: center;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  transition-duration: 1s;
+  z-index: 10000;
+}
+.proyects #prev:hover, .proyects #next:hover {
+  background: #00c7c7;
+}
+.proyects #prev {
+  left: 4vw;
+}
+.proyects #prev::before {
+  content: "<";
+}
+.proyects #next {
+  right: 4vw;
+}
+.proyects #next::before {
+  content: ">";
+}
+
+.uncomplete {
+  background-color: crimson;
+}
+
+.missing {
+  background-color: salmon;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  padding: 100px;
+}
+.skills img {
+  border-radius: 17px;
+  padding: 10px;
+  margin: 7px;
+  width: 20%;
+  height: 10vw;
+}
+
+.contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-content: center;
+  align-items: center;
+}
+.contact img {
+  border-radius: 50%;
+  width: 40vw;
+  height: 70vh;
+  filter: invert(100%) brightness(40%);
+}
+.contact form {
+  width: 40vw;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+.contact form textarea {
+  text-align: center;
+  outline: none;
+  color: #252555;
+  font-size: 2rem;
+  padding: 7px 0px;
+  border: none;
+  width: 70%;
+}
+.contact form label, .contact form input {
+  margin: 7px 0;
+  width: 70%;
+  color: #fff;
+  font-size: 1.7rem;
+  text-align: center;
+  display: inline-block;
+}
+.contact form label input, .contact form input input {
+  text-align: center;
+  outline: none;
+  color: #252555;
+  font-size: 2rem;
+  padding: 7px 0px;
+  border: none;
+  width: 100%;
+}
+.contact form input[type=submit] {
+  background: crimson;
+  text-transform: uppercase;
+  cursor: pointer;
+  text-shadow: none;
+  font-size: 1.7rem;
+  border: none;
+  color: white;
+  padding: 7px 0px;
+  width: 17vw;
+  transition-duration: 0.7s;
+}
+.contact form input[type=submit]:hover {
+  background: #00c0a0;
+}
+
+.h3 {
+  margin-top: -30vh;
+  color: #fff;
+  text-align: center;
+  font-size: 1.2rem;
+  word-break: normal;
+}
+
+#go {
+  margin: auto;
+  font-size: 7px;
+  text-align: center;
+  cursor: pointer;
+  position: fixed;
+  bottom: 1vh;
+  right: 1vh;
+  z-index: 1000;
+}
+
+svg {
+  width: 4vh;
+  height: 4vh;
+  box-shadow: 0px 0px 10px 2px lime;
+}
+
+@media (max-width: 900px) {
+  .proyects .card {
+    width: 70vw;
+  }
+  h1 {
+    font-size: 9vw;
+  }
+  .start .subhead img {
+    right: 25vw;
+  }
+}
+@media (max-width: 750px) {
+  .contact img {
+    display: none;
+  }
+  .contact {
+    width: 100vw;
+    padding: 0px;
+  }
+  .contact form {
+    width: 100%;
+  }
+  .contact form input[type=submit] {
+    width: 40vw;
+  }
+  .proyects .desc a {
+    width: 77vw;
+    border-radius: 7px;
+  }
+  .skills {
+    padding: 0;
+  }
+  .skills img {
+    width: 20vh;
+    height: 20vh;
+  }
+}
+@media (max-width: 350px) {
+  .start .subhead img {
+    top: 37vh;
+    width: 47vw;
+    height: 47vw;
+  }
+}/*# sourceMappingURL=portfolio.css.map */

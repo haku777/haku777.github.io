@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>TextAnimate</title>
+
+	<style>
+		@import url('https://fonts.googleapis.com/css?family=Poppins,100,200.300,400,500,600,700,800,900');
+
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			font-family: 'Poppins', sans-serif;
+		}
+
+		.wrapper{
+			background: #000;
+			overflow: hidden;
+			height: 100vh;
+		}
+
+		main{
+			min-height: 100vh;
+			margin: auto;
+			margin-top: -20vh;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			transform: rotateX(65deg) rotateZ(-25deg);
+		}
+
+		h2{
+			font-size: 7vw;
+			color: transparent;
+			letter-spacing: 1vw;
+			text-transform: uppercase;
+			-webkit-text-stroke: 1px #f00;
+			animation: t 2.7s linear infinite;
+			animation-delay: calc(var(--i)*0.25s);
+		}
+		
+		@keyframes t{
+			0%, 10%{color: #f00; filter: hue-rotate(0deg); text-shadow: 0px 0px 12px #ff0077;}
+			10.0001%{color: transparent;}
+			100%{color: transparent; filter: hue-rotate(777deg); }
+		}
+
+	</style>
+
+</head>
+<body>
+	<div class="wrapper">
+		<main>
+			<h2 style="--i:0;">Awesome</h2>
+			<h2 style="--i:1;">Awesome</h2>
+			<h2 style="--i:2;">Awesome</h2>
+			<h2 style="--i:3;">Awesome</h2>
+			<h2 style="--i:4;">Awesome</h2>
+			<h2 style="--i:5;">Awesome</h2>
+			<h2 style="--i:6;">Awesome</h2>
+			<h2 style="--i:7;">Awesome</h2>
+		</main>
+	</div>
+</body>
+
+<script>
+
+</script>
+</html>

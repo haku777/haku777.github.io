@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>F reflect</title>
+
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,300;1,400&display=swap');
+
+
+		body{
+			background: #000;
+			display: flex;
+			justify-content: center;
+			align-content: center;
+			align-items: center;
+		}
+
+		.imagen-con-reflejo {
+		position: relative;
+		display: inline-block;
+		}
+
+		.imagen-con-reflejo::after {
+		content: "";
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		opacity: 0.5;
+		transform: scaleY(-1);
+		transform-origin: bottom;
+		background-image: linear-gradient(to top, gray 1%, transparent 50% 100%);
+		z-index: -1;
+		height: 50%;
+		}
+
+		.imagen-con-reflejo{
+		background: url(../../../img/pexelFree/girl_learn.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		width: 300px;
+		height: 400px;
+	}
+	img{
+		width: 200px;
+	}
+	</style>
+
+</head>
+<body>
+		<div class="imagen-con-reflejo">
+		</div>
+</body>
+
+<script>
+</script>
+</html>

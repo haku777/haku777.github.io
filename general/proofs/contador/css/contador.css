@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: #07003a;
+}
+
+main{
+    background: rgb(45, 202, 110);
+    padding: 40px 70px;
+    margin: auto;
+    margin-top: 70px;
+    text-align: center;
+    box-sizing: border-box;
+    width: 70%;
+}
+
+p{
+    background: #000;
+    text-align: center;
+    color: #fff;
+    margin: auto;
+    width: 50%;
+    padding: 170px 10px;
+    font-size: 20px;
+}
+a{
+    background: crimson;
+    text-decoration: none;
+    display: inline-block;
+    margin: 20px;
+    color: #e1e1e1;
+    padding: 10px;
+    width: 50px;
+}
+a:hover{
+    background: #000;
+}
+a::selection{
+    background: none;
+    outline: none;
+}
+
+.queBoton input{
+    background: #252525;
+    margin: 20px;
+    border: none;
+    padding: 20px;
+    color: white;
+    
+}

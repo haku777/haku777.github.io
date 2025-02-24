@@ -1,0 +1,415 @@
+:root{
+	--c1:#ffffff;
+	--c2:#000000;
+	--c3t:#000000dd;
+	--c4t:#ce274777;
+	--c5:#4b0082;
+	--c6:#00a1ca;
+	--c7t:#25255555;
+	--c8:#f74727;
+	--c9:#27f7b2;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	background: linear-gradient(-125deg, 
+    #ffffff 1%, 
+    #cecece 7%,
+    var(--c6) 7%,
+    var(--c6) 17%,
+    #00314d 47%,  
+    var(--c6) 47%,  
+    var(--c6) 50%,  
+    #0053a0 72%,  
+    #000000 72%,
+    #270047 77% 100%);
+	background-size: 100% 100%;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	width: 100vw;
+	height: 100vh;
+	font-size: 1vw;
+	font-weight: 700;
+	font-family: Merge, sans-serif, serif;
+	overflow: hidden;
+}
+
+/* --------------------------- */
+
+header{
+	width: 100%;
+	padding-top: 4vh;
+	display: flex;
+	justify-content: space-around;
+	align-content: center;
+	align-items: start;
+	z-index: 7;
+	transform: skewY(4deg);
+}
+
+header h1{
+	text-shadow: -3px 0px 2px var(--c3t);
+	color: var(--c1);
+	max-width: 17vw;
+	font-size: 1.7rem;
+	text-transform: uppercase;
+}
+
+header h1 a{
+	color: var(--c1);
+	font-size: 2vw;
+	border: none;
+	text-decoration: none;
+}
+
+header h1 a:hover{
+	background: none;
+	color: var(--c1);
+	border: none;
+}
+
+header nav a{
+	text-transform: uppercase;
+	text-decoration: none;
+	border:3px solid transparent;
+	border-bottom: 3px solid var(--c1);
+	transition-duration: .5s;
+	padding: 10px;
+	color: var(--c1);
+	text-shadow: 2px 2px 2px var(--c7t);
+}
+
+header nav a:hover{
+	border: 3px solid var(--c1);
+	background: var(--c1);
+	color: var(--c2);
+}
+
+.reloj{
+	color: var(--c1);
+	font-size: 1.2rem;
+	text-align: center;
+	text-shadow: 2px 2px 2px var(--c7t);
+}
+
+.reloj .hora{
+	font-size: 1.7rem !important;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+header .title{
+	background: linear-gradient(to right, var(--c1) 0%, var(--c1) 50%, var(--c6) 50%, var(--c6) 100%);
+	margin: auto;
+	font-size: 1.1rem;
+	border-radius: 2px;
+}
+
+header .title h2{
+	background: linear-gradient(to right, var(--c6) 0%, var(--c6) 50%, var(--c1) 50%, var(--c1) 100%);
+	text-align: center;
+	background-clip: text;
+	-webkit-background-clip:text;
+	-webkit-text-fill-color:transparent;
+}
+
+/* ------------------------------------- */
+.wrapper{
+	width: 100vw;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.wrapper video{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	z-index: -1;
+}
+
+@media (min-aspect-ratio: 16/9){
+	.wrapper video{
+		width: 100%;
+		height: auto;
+	}
+}
+
+@media (max-aspect-ratio: 16/9){
+	.wrapper video{
+		width: auto;
+		height: 100%;
+	}
+}
+
+/* ------------------------------------- */
+section{
+	background: var(--c7t);
+	border-radius: 3px;
+	backdrop-filter: blur(27px);
+	width: 100%;
+	padding: 4vw;
+	margin-top: 7vw;
+	color: var(--c1);
+	overflow: hidden;
+	transition-duration: .5s;
+}
+
+section .daily .contact{
+	display: flex;
+	padding-top: 10px;
+	flex-direction: row;
+}
+
+section .daily a{
+	margin: 2px;
+	padding: 7px 4px;
+	text-decoration: none;
+	border-radius: 3px;
+	transition-duration: .7s;
+	background: var(--c6);
+	color: var(--c1);
+}
+
+section .daily a:hover{
+	background: var(--c5);
+}
+
+
+main{
+	width: 60%;
+}
+
+section .daily{
+	margin-top: 10%;
+}
+
+h2::selection{
+	background: var(--c2);
+}
+
+section p{
+	text-align: left;
+	color: var(--c1);
+	padding: 7px 0px;
+}
+
+p::selection{
+	background: var(--c5);
+}
+
+.img{
+	background: url(https://haku777.com/img/utilities/earth.avif);
+	background-size: cover;
+	width: 27vw;
+	height: 27vw;
+	float: left;
+	margin-right: 17px;
+	border-radius: 50%;
+	background-size: cover;
+	animation: earht 47s linear infinite;
+	box-shadow:
+	1px 1px 0.7px 0px #121212,
+	2px 2px 7px 0px #272727,
+	inset 1px 0.7px 1px 0px var(--c1),
+	inset 7px 1px 7.7px 0px gray;
+}
+
+@keyframes earht{
+	0%   {background-position: 0;}
+	100% {background-position: 167%;}
+  }
+
+/* ------------------------------------- */
+
+aside{
+	background: var(--c7t);
+	transition-duration: .7s;
+	width: 20vw;
+	border-radius: 3px;
+	position: sticky;
+	color: var(--c1);
+	height: 40vh;
+	overflow: hidden;
+	margin-top: 7vw;
+	margin-left: 40px;
+}
+
+aside div{
+	background: var(--c5);
+	filter: blur(27px);
+	height: 40vh;
+	cursor: none;
+	user-select: none;
+	overflow-y: scroll;
+}
+
+aside div h2::selection {
+	background: none;
+}
+aside div h2::-moz-selection {
+	background: none;
+}
+
+aside h2{
+	text-align: center;
+}
+
+aside::-webkit-scrollbar{
+
+	background: var(--c1);
+	border-radius: 5px;
+	width: 4px;
+}
+
+aside::-webkit-scrollbar-thumb{
+	background: purple;
+	width: 10px;
+	border-radius: 5px;
+}
+
+/* ------------------------------------- */
+#go{
+	margin: auto;
+	font-size: 7px;
+	text-align: center;
+	font-family: Merge, sans-serif, serif;
+	border-radius: 100%;
+	cursor: pointer;
+	position: fixed;
+	bottom: 1vh;
+	right: 1vh;
+	z-index: 1000;
+}
+svg{
+	width: 4vh;
+	height: 4vh;
+}
+/* ------------------------------------- */
+h6{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	color: #f1f1f1;
+	text-align: center;
+	font-size: 1.4rem;
+	padding: 20px;
+	text-shadow: -3px 0px 2px var(--c3t);
+}
+
+code{
+	background: #fff9;
+	border-radius: 10px;
+	color: var(--c5);
+	text-shadow: none;
+}
+
+/* /////////////// */
+
+@media(max-width: 750px){
+	html,body{
+		font-size: 2vw !important;
+		overflow: scroll;
+	}
+	.swal2-popup{
+		width: 70vw !important;
+		height: 70vh !important;
+	}
+
+	.alert{
+		font-size: 0.7rem;
+	}
+
+	.alert img{
+		width: 370px;
+		height: 300px;
+	}
+
+	header{
+		transform: none;
+		flex-direction: column;
+		width: 100%;
+		height: auto;
+		justify-content: center;
+		align-items: center;
+		margin: 0;
+		padding: 0;
+	}
+
+	header h1{
+
+	text-shadow: -3px 0px 2px var(--c3t);
+		max-width: none;
+	}
+
+	header nav{
+		margin-top: 7vw;
+		display: flex;
+		justify-content: space-evenly;
+		flex-direction: row;
+	}
+
+	header nav a{
+		width: 27vw;
+		margin: auto;
+		border-radius: 0px;
+	}
+
+	.wrapper{
+		padding-top: 10vh;
+	}
+	.img{
+		animation: none;
+	}
+
+	main,aside{
+		animation: none;
+		width: 100%;
+		margin: 0;
+		padding: 0;
+	}
+	main section{
+		display: flex;
+		flex-direction: column;
+		margin: auto;
+	}
+
+	main section{
+		flex-direction: column !important;
+	}
+
+	section{
+		background: none;
+		backdrop-filter: none;
+		width: 70%;
+	}
+
+	nav{
+		width: 100%;
+		padding: 0;
+		text-align: center;
+	}
+
+	a{
+		font-size: 1.4rem;
+		width: 100%;
+		display: block;
+	}
+
+}
+
+@media(max-width: 450px){
+	.alert img{
+		width: 170px;
+		height: 220px;
+	}
+}

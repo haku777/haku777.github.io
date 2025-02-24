@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>rotate</title>
+
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=poppins:wght@300:400:500:600:700:800:900&display=swap');
+
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			font-family: 'Poppins' sans-serif;
+		}
+
+		body{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			min-height: 100vh;
+			background: #23242a;
+		}
+
+		.box{
+			position: relative;
+			width: 380px;
+			height: 420px;
+			background: #1c1c1c;
+			border-radius: 8px;
+			overflow: hidden;
+			box-shadow: 0px 0px 999px crimson;
+			/*box-shadow: 0px 0px 999px #45f3ff;*/
+		}
+
+		.box::before{
+			content: '';
+			top: -50%;
+			left: -50%;
+			transform-origin: bottom right;
+			position: absolute;
+			width: 380px;
+			height: 420px;
+			background: linear-gradient(0deg, transparent, #ff008c,#ff008c);
+			animation: animate 6s linear infinite;
+			animation-delay: -3s;
+		}
+
+		.box::after{
+			content: '';
+			top: -50%;
+			left: -50%;
+			transform-origin: bottom right;
+			position: absolute;
+			width: 380px;
+			height: 420px;
+			background: linear-gradient(0deg, transparent,#ffcd00, #ffcd00);
+			animation: animate 6s linear infinite;
+		}
+
+		@keyframes animate {
+			0%{
+				transform: rotate(0deg);
+			}
+			100%{
+				transform: rotate(360deg);
+			}
+		}
+
+		.form{
+			background: url(../../../img/pexelFree/code.jpg) #000;
+			background-position: center;
+			background-size: cover;
+			position: absolute;
+			border-radius: 8px;
+			inset: 2px;
+			z-index: 10;
+		}
+
+	</style>
+
+</head>
+<body>
+	<div class="box">
+		<div class="form">
+		</div>
+	</div>
+</body>
+</html>

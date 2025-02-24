@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title>Slice box</title>
+	<link rel="stylesheet" type="text/css" href="css/slicebox.css" />
+	<link rel="stylesheet" type="text/css" href="css/demo.css" />
+	<link rel="stylesheet" type="text/css" href="css/custom.css" />
+	<script type="text/javascript" src="js/modernizr.custom.46884.js"></script>
+	
+
+</head>
+<body>
+	<div class="container">
+
+			<h1>Caroucel <span>A fresh 3D image slider with graceful fallback</span></h1>
+
+			<div class="wrapper">
+
+				<ul id="sb-slider" class="sb-slider">
+					<li>
+						<a href="#" target="_blank"><img src="../../../img/pexelFree/black_woman.jpg" alt="image1"/></a>
+						<div class="sb-description">
+							<h3>Bleach</h3>
+						</div>
+					</li>
+					<li>
+						<a href="#" target="_blank"><img src="../../../img/pexelFree/code.jpg" alt="image1"/></a>
+						<div class="sb-description">
+							<h3>Flor de cerezo</h3>
+						</div>
+					</li>
+					<li>
+						<a href="#" target="_blank"><img src="../../../img/pexelFree/girl_learn.jpg" alt="image1"/></a>
+						<div class="sb-description">
+							<h3>un sueño</h3>
+						</div>
+					</li>
+					<li>
+						<a href="#" target="_blank"><img src="../../../img/pexelFree/girl_like.jpg" alt="image1"/></a>
+						<div class="sb-description">
+							<h3>Musica - Violinista</h3>
+						</div>
+					</li>
+					<li>
+						<a href="#" target="_blank"><img src="../../../img/pexelFree/girl_red.jpg" alt="image1"/></a>
+						<div class="sb-description">
+							<h3>Atardecer en el mar</h3>
+						</div>
+					</li>
+					<li>
+						<a href="#" target="_blank"><img src="../../../img/pexelFree/yellow_sheets.jpg" alt="image1"/></a>
+						<div class="sb-description">
+							<h3>Toca con el corazon</h3>
+						</div>
+					</li>
+					<li>
+						<a href="#" target="_blank"><img src="../../../img/pexelFree/hit_with_words.jpg" alt="image1"/></a>
+						<div class="sb-description">
+							<h3>Acompañamiento</h3>
+						</div>
+					</li>
+				</ul>
+
+				<div id="shadow" class="shadow"></div>
+
+				<div id="nav-arrows" class="nav-arrows">
+					<a href="#">Next</a>
+					<a href="#">Previous</a>
+				</div>
+
+			</div><!-- /wrapper -->
+			
+
+			<p class="info"><strong>Example 3:</strong> Random orientation and number of slices</p>
+
+		</div>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery.slicebox.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				
+				var Page = (function() {
+
+					var $navArrows = $( '#nav-arrows' ).hide(),
+						$shadow = $( '#shadow' ).hide(),
+						slicebox = $( '#sb-slider' ).slicebox( {
+							onReady : function() {
+
+								$navArrows.show();
+								$shadow.show();
+
+							},
+							orientation : 'r',
+							cuboidsRandom : true
+						} ),
+						
+						init = function() {
+
+							initEvents();
+							
+						},
+						initEvents = function() {
+
+							// add navigation events
+							$navArrows.children( ':first' ).on( 'click', function() {
+
+								slicebox.next();
+								return false;
+
+							} );
+
+							$navArrows.children( ':last' ).on( 'click', function() {
+								
+								slicebox.previous();
+								return false;
+
+							} );
+
+						};
+
+						return { init : init };
+
+				})();
+
+				Page.init();
+
+			});
+		</script>
+		
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@600&display=swap" rel="stylesheet">
+    <title>textShadow</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background: linear-gradient(75deg, crimson, dodgerblue);
+            font-family: 'Noto Sans JP', sans-serif;
+            background: #5eff89;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 7vw;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        .text{
+            color: #333;
+            position: relative;
+            display: inline-block;
+        }
+
+        .text::after{
+            content: 'WELCOME';
+            position: absolute;
+            left: -4.7vw;
+            color: #0004;
+            transform: skewx(60deg);
+            z-index: -1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p class="text">WELCOME</p>
+    </div>
+</body>
+</html>

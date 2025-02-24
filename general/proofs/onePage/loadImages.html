@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="https://haku777.com/files/img/utilities/yo.ico">
+    <title>Galería de Imágenes</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            background-color: #333;
+            font-family: Tahoma, Cambria, Arial;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .slider {
+            position: relative;
+            width: 80%;
+            max-width: 600px;
+            overflow: hidden;
+            border: 5px solid #ddd;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .slides {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+        .slides img {
+            width: 100%;
+            display: block;
+        }
+        .navigation {
+            position: absolute;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        .prev, .next {
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            padding: 10px;
+            cursor: pointer;
+            user-select: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="slider">
+        <div class="slides" id="slides-container"></div>
+        <div class="navigation">
+            <span class="prev" onclick="moveSlide(-1)">&#10094;</span>
+            <span class="next" onclick="moveSlide(1)">&#10095;</span>
+        </div>
+    </div>
+
+<script>
+    // Ruta del backend donde se hace la petición para obtener las imágenes
+const imageFolderUrl = '../../../files/img/ordenar/ordenar.json';  // Cambia a la ruta de tu backend
+
+// Función para cargar las imágenes desde el servidor
+async function loadImages() {
+    try {
+        // Petición al backend para obtener la lista de archivos
+        const response = await fetch(imageFolderUrl);
+        if (!response.ok) {
+            throw new Error('Error al obtener las imágenes del servidor');
+        }else{
+            console.log(await response.json());
+        }
+        
+        // Convertir la respuesta en JSON
+        const imageFiles = await response.json();
+
+        // Verificar si hay imágenes disponibles
+        if (imageFiles.length === 0) {
+            console.log('No se encontraron imágenes en la carpeta.');
+            return;
+        }
+
+        // Crear elementos img y añadirlos al DOM, uno por uno
+        const slidesContainer = document.getElementById('slides-container');
+        imageFiles.forEach(file => {
+            const img = document.createElement('img');
+            img.src = imageFolderUrl + file;  // Cambia la ruta según tu carpeta de imágenes
+            slidesContainer.appendChild(img);
+        });
+
+        console.log('Imágenes cargadas:', imageFiles);
+    } catch (error) {
+        console.error('Error al cargar las imágenes:', error);
+    }
+}
+// Llamar a la función para cargar las imágenes al iniciar la página
+loadImages();
+
+// Función para mover las diapositivas
+function moveSlide(direction) {
+    currentSlide = (currentSlide + direction + imageCount) % imageCount;
+    slidesContainer.style.transform = 'translateX(' + (-currentSlide * 100) + '%)';
+}
+
+// Cambiar diapositivas automáticamente cada 3 segundos
+setInterval(() => moveSlide(1), 30000);
+
+</script>
+</body>
+</html>

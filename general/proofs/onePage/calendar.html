@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="https://unpkg.com/js-year-calendar@latest/dist/js-year-calendar.min.css" />
+	<title>https://github.com/year-calendar/js-year-calendar</title>
+	
+	<style type="text/css">
+		html{font-family: arial;}
+		.calendar{ height: calc(100vh - 30px); }
+		table.month td.day .day-content:hover{
+			background: #f75c90;
+			color: white;
+		}
+		.months-container{
+			justify-content: center;
+			gap: 40px;
+		}
+
+		.calendar .months-container .month-container{
+			background: white;
+			padding: 20px;
+			min-width: 280px;
+			box-shadow: 15px 15px 40px rgba(0,0,0,0.15);
+		}
+
+		.calendar table.month th.month-title{
+			color: #f75c90;
+		}
+
+		table.month td:first-child,
+		table.month td:last-child{
+			color: #f75c90;
+		}
+	</style>
+</head>
+<body>
+	<div data-provide="calendar"></div>
+<script src="https://unpkg.com/js-year-calendar@latest/dist/js-year-calendar.min.js"></script>
+</body>
+</html>

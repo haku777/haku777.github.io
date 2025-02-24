@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="UTF-8">
+  <meta name="title" content="Portfolio | Jimmy Yahir Gutierrez">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore the web development portfolio of Jimmy Yahir Gutierrez haku haku777 haku bishamon. Discover showcased projects and skills in front-end and back-end development.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://haku777.com/index.html">
+  <meta property="title" content="Web Developer Portfolio - Jimmy Yahir Gutierrez">
+  <meta property="image" content="https://haku777.com/img/versiones/v7.avif">
+  <meta property="og:image" content="https://haku777.com/img/versiones/v7.avif">
+  <meta property="og:title" content="Web Developer Portfolio - Jimmy Yahir Gutierrez">
+  <meta property="og:description" content="Explore the web development portfolio of Jimmy Yahir Gutierrez haku haku777 haku bishamon. Discover showcased projects and skills in front-end and back-end development.">
+  <meta name="twitter:card" content="https://haku777.com/img/versiones/v77.avif">
+  <meta name="twitter:site" content="@haku777">
+  <meta name="twitter:title" content="Web Developer Portfolio - Jimmy Yahir Gutierrez">
+  <meta name="twitter:description" content="Explore the web development portfolio of Jimmy Yahir Gutierrez haku haku777 haku bishamon. Discover showcased projects and skills in front-end and back-end development.">
+  <meta name="twitter:image" content="https://haku777.com/img/versiones/v7.avif">
+  <link rel="stylesheet" media="screen" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="fullpage.css">
+  <link rel="stylesheet" href="css/portfolio.css">
+	<link rel="icon" href="https://haku777.com/img/utilities/yo.ico">
+  <link rel="alternate" lang="en" href="https://haku777.com/index.html">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="theme-color" content="#4b0082" />
+  <title>Portfolio | Jimmy Yahir Gutierrez</title>
+</head>
+<body>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        main{
+            background: linear-gradient(to right,#40205a ,#000);
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: row;
+        }
+        .componentList{
+            background: #0009;
+            padding-top: 7vh;
+            width: 30vw;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+            overflow-y: scroll;
+        }
+        .componentList::-webkit-scrollbar{
+            background: #000;
+            width: 7px;
+        }
+        .componentList::-webkit-scrollbar-thumb{
+            background: indigo;
+        }
+        .componentList p{
+            color: #fff;
+            font-size: 1.7vw;
+            margin: 1px;
+            padding: 10px;
+            width: 70%;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 7px;
+        }
+        .componentList p:hover{
+            box-shadow: 0px 0px 0px 1px #fff;
+        }
+        /* ------------------ */
+        .component{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+        }
+        .description{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+            height: 23vh;
+            padding-left: 10px;
+        }
+        .description h2{
+            color: #fff;
+            font-size: 2.7rem;            
+        }
+        .description h3{
+            color: #cdcdcd;
+            font-size: 1.7rem;            
+        }
+        .description p{
+            color: #d1d1d1;
+            cursor: pointer;
+            font-size: 1.7rem;            
+        }
+        .description .skills span{
+            color: #fff;
+            margin: 0 2px;
+            border: 1px solid #fff;
+        }
+        .preview{
+            background-color: #40205a;
+            height: 77vh;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+        }
+        iframe{
+            width: 100%;
+            height: 100%;
+        }
+        .disponsed{
+            display: none;
+        }
+        .menu{
+                position: absolute;
+                background-color: transparent;
+                transform: rotateZ(90deg);
+                font-size: 47px;
+                margin-left: 17px;
+                display: block;
+                color: #fff;
+                border: none;
+                z-index: 10000;
+            }
+        @media(max-width: 1300px){
+            .componentList{
+                position: absolute !important;
+            }
+        }
+        @media(max-width: 900px){
+            .componentList, .preview, h2,h3,span,p{
+                font-size: calc(1vw + 1vh) !important;
+            }
+        }
+        @media (max-width:750px) {
+            .componentList{
+                width: 100%;
+                position: absolute !important;
+            }
+        }
+    </style>
+    <main>
+        <button class="menu" onclick="hidemenu()">&#42262</button>
+        <section class="componentList" id="componentList">
+            <p id="cube" style="background: dodgerblue">Rotate cube</p>
+            <p id="cubesAnimate">cubesAnimate</p>
+            <p id="English" style="background: crimson;">English</p>
+            <p id="WorldTime">World Time</p>
+            <p id="backgroundLogin">background</p>
+            <p id="landing-page-video">landing-page-video</p>
+            <p id="landing">Landing page</p>
+            <p id="loading">Loading page</p>
+            <p id="backgroundHexagon">Background-hexagon</p>
+            <p id="rainingLetter">rainingLetter</p>
+            <p id="loginAnimate">loginAnimate</p>
+            <p id="cardVideo">cardVideo</p>
+            <p id="BackgroudCode">BackgroudCode</p>
+            <p id="card">Card</p>
+            <p id="focus">Focus</p>
+            <p id="TextShadow">TextShadow</p>
+            <p id="loadPage">Load</p>
+            <p id="Light">Light</p>
+            <p id="Listen">Listen</p>
+            <p id="lightText">lightText</p>
+            <p id="AAProofs">eclipse</p>
+            <p id="Emojis">Emojis</p>
+            <p id="TextAnimate">TextAnimate</p>
+            <p id="waves">waves</p>
+            <p id="bouble">bouble</p>
+            <p id="atom">atom</p>
+            <p id="W">W</p>
+            <p id="banner">banner</p>
+            <p id="dayNight">dayNight</p>
+            <p id="halo">HALO</p>
+            <p id="files">files</p>
+            <p id="F_Reflect">F_Reflect</p>
+            <p id="gyroscope">gyroscope</p>
+            <p id="fondo">Colorful</p>
+            <p id="exampleAnimate">ExampleAnimate</p>
+            <p id="IluminationTest">Ilumination</p>
+            <p id="cat">Cat</p>
+            <p id="display">cardLoad</p>
+            <p id="imgBackground">imgBackground</p>
+            <p id="calendar">calendar</p>
+            <p id="Neumorfismo">neumorfism</p>
+            <p id="alertas">alerts</p>
+            <p id="pruebacss">somePieces</p>
+            <p id="caroucel">carousel</p>
+            <p id="hoverEx">slashPage</p>
+            <p id="lol">LOL</p>
+            <p id="login">Login</p>
+            <p id="mix">under</p>
+            <p id="mixMode">mixMode</p>
+            <p id="mvc">enterpriceExample</p>
+            <p id="poc">nope</p>
+            <p id="pruebaBOX">box</p>
+            <p id="rotate">worm</p>
+            <p id="hexagon">hexagon</p>
+            <p id="prueba_puntero">pointer</p>
+            <p id="vid">vid</p>
+            <p id="grid">grid</p>
+            <p id="Galery">Galery</p>
+            <p id="compass">compass</p>
+            <p id="round">round</p>
+            <p id="heart">heart</p>
+            <p id="alert">Alert</p>
+            <p id="tematics">Tematics</p>
+            <p id="overload">overload</p>
+            <p id="calendar">Calendario</p>
+            <p id="canvas">Cambas analogic</p>
+            <p id="colors">Colors</p>
+            <p id="carousel">Carousel</p>
+            <p id="carousel2">Carousel2</p>
+            <p id="bootstrap">bootstrap</p>
+            <p id="contador">contador</p>
+            <p id="pruebasJS">eventos-js</p>
+            <p id="onePage">IA</p>
+            <p id="information">General information</p>
+            <p id="jquery">jquery</p>
+            <p id="menu">menu</p>
+            <p id="reproductor">reproductor</p>
+            <p id="properties">properties</p>
+            <p id="reloj">Digital Reloj</p>
+            <p id="sass">sass</p>
+            <p id="text">text</p>
+            <p id="pruebas">pruebas...</p>
+            <p id="pruebas_php">pruebas_php</p>
+            <p id="pseudoElemento">pseudoElemento</p>
+            <p id="python">python</p>
+            <p id="something">something</p>
+            <p id="svg">svg</p>
+            <!-- 31 son de otras paginas diferentes a onePage-->
+      </section>
+      <section class="component">
+        <div class="description">
+            <h2>component tittle</h2>
+            <h3>description...</h3>
+            <div class="skills">
+                <span>HTML5</span>
+                <span>CSS3</span>
+                <span>JAVASCRIPT</span>
+            </div>
+        </div>
+        <div class="preview">
+            <iframe id="iframe" src="onePage/listen.html" frameborder="0"></iframe>
+        </div>
+      </section>
+    </main>
+    <script>
+        function hidemenu(){
+            let componentList = document.getElementById('componentList');
+            componentList.classList.toggle('disponsed');
+        }
+        document.querySelectorAll("p").forEach((p) => {
+            p.addEventListener("click", () => {
+                p.style.background = "gray";
+                let iframe = document.getElementById("iframe");
+                switch (p.id) {
+                    case 'cube':
+                    iframe.src = "onePage/cube.html";
+                    break;
+                    case 'cubesAnimate':
+                    iframe.src = "onePage/cubesAnimate.html";
+                    break;
+                    case 'English':
+                    iframe.src = "../../APINodeJS/src/index.html";
+                    break;
+                    case 'WorldTime':
+                    iframe.src = "onePage/WorldTime.html";
+                    break;
+                    case 'backgroundLogin':
+                    iframe.src = "onePage/background.html";
+                    break;
+                    case 'landing-page-video':
+                    iframe.src = "onePage/landing-page-video.html";
+                    break;
+                    case 'landing':
+                    iframe.src = "onePage/landing-page.html";
+                    break;
+                    case 'loading':
+                    iframe.src = "onePage/loading.html";
+                    break;
+                    case 'backgroundHexagon':
+                    iframe.src = "onePage/Backgroundhex.html";
+                    break;
+                    case 'rainingLetter':
+                    iframe.src = "onePage/raining.html";
+                    break;
+                    case 'loginAnimate':
+                    iframe.src = "onePage/loginAnimate.html";
+                    break;
+                    case 'cardVideo':
+                    iframe.src = "onePage/cardVideo.html";
+                    break;
+                    case 'BackgroudCode':
+                    iframe.src = "onePage/BackgroudCode.html";
+                    break; 
+                    case 'card':
+                    iframe.src = "onePage/card.html";
+                    break;
+                    case 'focus':
+                    iframe.src = "onePage/focus.html";
+                    break;
+                    case 'TextShadow':
+                        iframe.src = "onePage/TextShadow.html";
+                    break;
+                    case 'loadPage':
+                    iframe.src = "onePage/loadPage.html";
+                    break;
+                    case 'Light':
+                    iframe.src = "onePage/Light.html";
+                    break;
+                    case 'Listen':
+                    iframe.src = "onePage/listen.html";
+                    break;
+                    case 'lightText':
+                    iframe.src = "onePage/lightText.html";
+                    break;
+                    case 'AAProofs':
+                    iframe.src = "onePage/AAProofs.html";
+                    break;
+                    case 'Emojis':
+                    iframe.src = "onePage/Emojis.html";
+                    break;
+                    case 'TextAnimate':
+                    iframe.src = "onePage/TextAnimate.html";
+                    break;
+                    case 'waves':
+                    iframe.src = "onePage/waves.html";
+                    break; 
+                    case 'bouble':
+                    iframe.src = "onePage/bouble.html";
+                    break;
+                    case 'atom':
+                    iframe.src = "onePage/atom.html";
+                    break;
+                    case 'W':
+                    iframe.src = "onePage/W.html";
+                    break;
+                    case 'banner':
+                    iframe.src = "onePage/banner.html";
+                    break;
+                    case 'dayNight':
+                    iframe.src = "onePage/dayNight.html";
+                    break;
+                    case 'halo':
+                    iframe.src = "onePage/halo.html";
+                    break;
+                    case 'files':
+                    iframe.src = "onePage/files.html";
+                    break;
+                    case 'F_Reflect':
+                    iframe.src = "onePage/F_Reflect.html";
+                    break;
+                    case 'gyroscope':
+                    iframe.src = "onePage/gyroscope.html";
+                    break;
+                    case 'fondo':
+                    iframe.src = "onePage/fondo.html";
+                    break;
+                    case 'exampleAnimate':
+                    iframe.src = "onePage/exampleAnimate.html";
+                    break;
+                    case 'IluminationTest':
+                    iframe.src = "onePage/IluminationTest.html";
+                    break;
+                    case 'cat':
+                    iframe.src = "onePage/cat.html";
+                    break;
+                    case 'display':
+                    iframe.src = "onePage/display.html";
+                    break;
+                    case 'imgBackground':
+                    iframe.src = "onePage/imgBackground.html";
+                    break;
+                    case 'calendar':
+                    iframe.src = "onePage/calendar.html";
+                    break;
+                    case 'Neumorfismo':
+                    iframe.src = "onePage/Neumorfismo.html";
+                    break;
+                    case 'alertas':
+                    iframe.src = "onePage/alertas.html";
+                    break;
+                    case 'pruebacss':
+                    iframe.src = "onePage/pruebacss.html";
+                    break;
+                    case 'caroucel':
+                    iframe.src = "onePage/caroucel.html";
+                    break;
+                    case 'hoverEx':
+                    iframe.src = "onePage/hoverEx.html";
+                    break;
+                    case 'lol':
+                    iframe.src = "onePage/lol.html";
+                    break;
+                    case 'login':
+                    iframe.src = "onePage/login.html";
+                    break;
+                    case 'mix':
+                    iframe.src = "onePage/mix.html";
+                    break;
+                    case 'mixMode':
+                    iframe.src = "onePage/mixMode.html";
+                    break;
+                    case 'mvc':
+                    iframe.src = "onePage/mvc.html";
+                    break;
+                    case 'poc':
+                    iframe.src = "onePage/poc.html";
+                    break;
+                    case 'pruebaBOX':
+                    iframe.src = "onePage/pruebaBOX.html";
+                    break;
+                    case 'rotate':
+                    iframe.src = "onePage/rotate.html";
+                    break;
+                    case 'hexagon':
+                    iframe.src = "onePage/hexagon.html";
+                    break;
+                    case 'prueba_puntero':
+                    iframe.src = "onePage/prueba_puntero.html";
+                    break;
+                    case 'vid':
+                    iframe.src = "onePage/vid.html";
+                    break;
+                    case 'grid':
+                    iframe.src = "onePage/grid.html";
+                    break;
+                    case 'Galery':
+                    iframe.src = "onePage/Galery.html";
+                    break;
+                    case 'compass':
+                    iframe.src = "onePage/compass.html";
+                    break;
+                    case 'round':
+                    iframe.src = "onePage/round.html";
+                    break;
+                    case 'heart':
+                    iframe.src = "heart/heart.html";
+                    break;
+                    case 'alert':
+                    iframe.src = "alert/alert.html";
+                    break;
+                    case 'tematics':
+                    iframe.src = "tematics/index.html";
+                    break;
+                    case 'overload':
+                    iframe.src = "overload/index.html";
+                    break;
+                    case 'calendar':
+                    iframe.src = "calendar/calendar.html";
+                    break;
+                    case 'canvas':
+                    iframe.src = "canvas/canvas.html";
+                    break;
+                    case 'colors':
+                    iframe.src = "colors/colors.html";
+                    break;
+                    case 'carousel':
+                    iframe.src = "carousel/index.html";
+                    break;
+                    case 'carousel2':
+                    iframe.src = "carousel/c2/index.html";
+                    break;
+                    case 'bootstrap':
+                    iframe.src = "bootstrap/bootstrap.html";
+                    break;
+                    case 'contador':
+                    iframe.src = "contador/contador.html";
+                    break;
+                    case 'pruebasJS':
+                    iframe.src = "pruebasJS/eventos-Js/eventos-js.html";
+                    break;
+                    case 'onePage':
+                    iframe.src = "onePage/round.html";
+                    break;
+                    case 'information':
+                    iframe.src = "information/information.html";
+                    break;
+                    case 'jquery':
+                    iframe.src = "jquery/jquery.html";
+                    break;
+                    case 'menu':
+                    iframe.src = "menu/menu.html";
+                    break;
+                    case 'reproductor':
+                    iframe.src = "Neumorfismo/reproductor.html";
+                    break;
+                    case 'properties':
+                    iframe.src = "properties/properties.html";
+                    break;
+                    case 'reloj':
+                    iframe.src = "reloj/reloj.html";
+                    break;
+                    case 'sass':
+                    iframe.src = "sass/sass.html";
+                    break;
+                    case 'text':
+                    iframe.src = "text/text.html";
+                    break;
+                    case 'pruebas':
+                    iframe.src = "onePage/round.html";
+                    break;
+                    case 'pruebas_php':
+                    iframe.src = "onePage/round.html";
+                    break;
+                    case 'pseudoElemento':
+                    iframe.src = "onePage/round.html";
+                    break;
+                    case 'python':
+                    iframe.src = "onePage/round.html";
+                    break;
+                    case 'something':
+                    iframe.src = "onePage/round.html";
+                    break;
+                    case 'svg':
+                    iframe.src = "onePage/round.html";
+                    break;
+                    default:
+                        iframe.src = "https://haku777.com/APortfolio/components/resume/resume.html";
+            }
+
+
+                
+
+                // if (p.id === "English") {
+                //     iframe.src = "onePage/bouble.html";
+                // }else{
+                //     iframe.src =  "titaMedia/index.html";
+                // }
+            });
+        });
+    </script>
+
+    
+</body>
+</html>

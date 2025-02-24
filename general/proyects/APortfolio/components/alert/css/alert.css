@@ -1,0 +1,87 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+@font-face{
+	font-family:Merge;
+	src:url(../../../../font/merge_light.otf)
+
+}
+
+body{
+	font-family: Merge,serif;
+}
+
+main{
+	background:url(../../../../img/pexelFree/code.jpg);
+	background-size: 100% 100%;
+	height: 100vh;
+}
+
+section{
+	text-align: center;
+}
+
+.links{
+	padding: 10vh 0px 0px 0px;
+}
+
+.links a{
+	background: #f55;
+	text-decoration: none;
+	font-size: 20px;
+	color: white;
+	padding: 20px 27px;
+	border-radius: 3px;
+}
+
+.links a:hover{
+	background: black;
+}
+
+.content{
+	background:rgba(0,0,0,0.3);
+	backdrop-filter:  blur(30px);
+	border-radius: 7px;
+	color:#fff;
+	margin: auto;
+	font-size: 17px;
+	margin-top: 17vh;
+	padding: 5vh 0px;
+	width: 50vw;
+}
+.clase_cambiar {
+	background: #e1e1e1;
+	color:#000;
+}
+
+h2{
+	text-align: center;
+}
+
+.content a{
+	background: indigo;
+	text-decoration: none;
+	display: block;
+	color: white;
+	padding: 20px;
+	width: 17vw;
+	border:none;
+	margin: auto;
+	margin-bottom: 20px;
+	border-radius: 3px;
+}
+
+.content a:hover{
+	background: #55f;
+}
+
+@media (max-width: 750px){
+	.content{
+		width: 100vw;
+	}
+	.content a{
+		width: 70vw;
+	}
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>dayNight</title>
+
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,300;1,400&display=swap');
+
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			font-family: 'Josefin Sans', sans-serif;
+		}
+
+		.wrapper{
+			background: radial-gradient(#3c0877 50%,#160345);
+			height: 100vh;
+			overflow: hidden;
+		}
+
+		main{
+			/* background: linear-gradient(sandybrown 50%, #214aff 50%); */
+			padding-top: 10vh;
+			position: absolute;
+			width: 100vw;
+			height: 100vh;
+			animation: rounds 2s alternate infinite;
+		}
+
+		main div{
+			margin: auto;
+			width: 20vw;
+			height: 20vw;
+			border: 7px solid #fff;
+			border-radius: 50%;
+			color: #fff;
+			box-shadow:
+			0px 77px 77px #214aff;
+			animation: round 2s alternate infinite;
+		}
+		@keyframes round {
+			0%{transform: rotateZ(360deg);}
+		}
+
+	</style>
+
+</head>
+<body>
+	<div class="wrapper">
+		<main>
+			<div>uncopmpleted</div>
+		</main>
+	</div>
+</body>
+
+<script>
+
+</script>
+</html>

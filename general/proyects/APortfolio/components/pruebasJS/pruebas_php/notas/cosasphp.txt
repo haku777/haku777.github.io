@@ -1,0 +1,60 @@
+<?php
+// cosas de php
+// variables a tener en cuenta php
+
+echo "";
+print "";
+printf("");
+printf("Falló la conexión: %s\n", mysqli_connect_error());  #  "%s (%s)\n
+
+
+count() - contador de registros
+strlen() - Obtiene la longitud de un string
+
+
+fetch_array()
+	array asociativo que suplanta los resultados iguales
+fetch_assoc()
+	array asociativo
+
+var_dump($resultado);muestra el valor de un array
+
+strval(); #cpnvertir valor a string
+ $_SERVER["PHP_SELF"] # enviar valores sobre el mismo archivo
+
+require ('index.php');
+require 'index.php';
+				require detiene el proceso en caso de fallo a diferencia del include
+
+include 'index.php';
+				include slo muestra un mensaje en caso de error pero no detiene la ejecucion
+
+
+include_once();
+		siendo la única diferencia de que si el código del fichero ya ha sido incluido, no se volverá a incluir, e include_once devolverá true. Como su nombre indica, el fichero será incluido solamente una vez. 
+
+require_once();
+		es idéntica a require excepto que PHP verificará si el archivo 
+		ya ha sido incluido y si es así, no se incluye (require) de nuevo. 
+
+
+
+mysqli_free_result($resultado);
+
+#error con respecto a ejecuciones sobre la base de datos
+echo "\nPDO::errorCode(): ", $dbh->errorCode();
+
+#para leer que campos trae un array
+	$numero = count($_POST);
+	echo "<br>" . $numero . "<br>";
+	$tags = array_keys($_POST); // obtiene los nombres de las varibles
+	$valores = array_values($_POST);// obtiene los valores de las varibles
+
+	// crea las variables y les asigna el valor
+	for($i=0;$i<$numero;$i++){
+	$tags[$i]=$valores[$i];
+	echo $tags[$i] . "<br>";
+	}
+
+ ?>
+ 

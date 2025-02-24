@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@600&display=swap" rel="stylesheet">
+    <title>Movies</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background: url(../../../files/img/movies/poster.jpg) #252525;
+            background-position: right;
+            background-repeat: no-repeat;
+            font-family: 'Noto Sans JP', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 7vw;
+            color: #fff;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .container{
+            background: linear-gradient(to right, #293f68, transparent);
+            width: 100vw;
+            height: 100vh;
+        }
+
+        .nab{
+            background: #2727275e;
+            width: 100vw;
+            height: 10vh;
+        }
+
+        .nab{
+            display: flex;
+            justify-content: space-between;
+            font-size: 1rem;
+        }
+
+        .menu{
+            width: 70%;
+            height: 10vh;
+            padding: 7px;
+            display: flex;
+            align-content: center;
+            align-items: center;
+        }
+
+        .menu .logo{
+            background: crimson;
+            padding: 17px;
+            font-size: 2rem;
+            text-shadow: 1px 1px #777;
+            text-transform: uppercase;
+        }
+        
+        ul{
+            position: relative;
+            display: flex;
+        }
+
+        ul li{
+            margin: 10px;
+            padding: 10px;
+            list-style: none;
+            cursor: pointer;
+            transition-duration: .7s;
+        }
+        ul li:hover{
+            background: linear-gradient(to top, dodgerblue 7%, transparent 27%);
+        }
+        ul li > ul{
+            display: none;
+            margin: 10px;
+            background: #000;
+        }
+        ul li:hover > ul{
+            position: absolute;
+            display: block;
+            z-index: 1000;
+        }
+
+        .text{
+            width: 100vw;
+            height: 90vh;
+            display: flex;
+            padding: 7vw;
+            flex-direction: column;
+            justify-content: center;
+            align-items: left;
+            text-align: left;
+        }
+
+        .text button{
+            background: #fd0050;
+            font-size: 1.7rem;
+            color: #fff;
+            border: none;
+            width: 27vh;
+            height: 7vh;
+        }
+
+        .h2 {
+            text-align: center;
+        }
+        code{
+            margin-top: 7vh;
+            font-size: 2rem;
+            color: crimson;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <div class="nab">
+                <div class="menu">
+                    <h2 class="logo">HFLIX</h2>
+                    <nav>
+                        <ul>
+                            <li>Home</li>
+                            <li>Movies &#127917
+                                <ul>
+                                    <li>&#128286Terror</li>
+                                    <li>Fantasy</li>
+                                    <li>Accion</li>
+                                </ul>
+                            </li>
+                            <li>old series</li>
+                            <li>animes</li>
+                            <li><a href="https://haku777.com/APortfolio/new.html">about</a></li>
+                            <li>&#11088<a href="https://haku777.com/APortfolio/new.html">contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="search">
+                    <ul>
+                        <li>&#128269</li>
+                        <li>&#128276</li>
+                        <li>language</li>
+                        <li>&#128526</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="text">
+                <h2>Movies</h2>
+                <p>series, animes</p>
+                <p> and more</p>
+                <button>Watch Trailer</button>
+                <code style="color: lime; font-size: 1.3vw; margin: 20px 0px 0px;">Updated 05/01/2025</code>
+                <code style="color: salmon; font-size: 1.3vw; margin: 0px">Next Update 17/01/2025</code>
+                <code>In Develop</code>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

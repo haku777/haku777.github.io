@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pruebas</title>
+    <link rel="stylesheet" href="css">
+    <link rel="shortcut icon" href="../../img/akali.PNG">
+
+    <style>
+        *{margin: 0;padding: 0;}
+        section{
+            text-align: center;
+            height: 80vh;
+            padding: 20px;
+            font-size: 4rem;
+            /* text-transform: uppercase; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        section:nth-child(1){
+            background: #07252d;
+            color: white;
+        }
+        section:nth-child(1) h2{
+            -webkit-box-reflect: below 1px linear-gradient(transparent,#0004);
+            padding: 20px 20px 0px 20px;
+            line-height: 0.70em;
+            outline:none;
+            animation: flour 2s linear 0s forwards;
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+        }
+        @keyframes flour{
+            0%{color: #0e3742; text-shadow: none;}
+            100%{
+            color: white;
+            text-shadow:
+            0px 0px 5px #03bcf4,
+            0px 0px 25px #03bcf4,
+            0px 0px 50px #03bcf4,
+            0px 0px 250px #03bcf4;
+            }
+        }
+        /* ------------------------ */
+        section:nth-child(2){
+            background: url(../../../files/img/utilities/year.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            font-size: 12rem;
+
+        }
+        section:nth-child(2) h2{
+            background: rgba(0,0,0,0.1);
+            font-size: 7rem;
+            color: white;
+            padding: 5vh 10vw;
+            border-radius: 30px;
+            backdrop-filter: blur(30px);
+            text-shadow: 4px 4px 2px salmon;
+        }
+
+        /* --------------------- */
+
+        section:nth-child(3){
+            background: linear-gradient(90deg, dodgerblue,indigo);
+        }
+
+        section:nth-child(3) div{
+            background: rgba(255,255,255,0.2);
+            box-shadow: 
+            1px 1px 2px #252525,
+            5px 5px 12px darkblue,
+            -1px -1px 2px white,
+            -2px -2px 7px lightskyblue;
+            backdrop-filter: blur(30px);
+            border-radius: 30px;
+            font-size: 20px;
+            color: white;
+            padding: 10vh 10vw;
+            overflow: hidden;
+            z-index: 10;
+        }
+
+        section:nth-child(3)::before{
+            background: linear-gradient(#ffeb3d,#e91e63);
+            position: relative;
+            content: '';
+            padding: 10vw;
+            top: -20vh;
+            left: 10vw;
+            border-radius: 50%;
+            z-index: 1;
+        }
+
+        section:nth-child(3)::after{
+            background: linear-gradient(#2196f3,#83d8ff);
+            position:relative;
+            content: '';
+            padding: 10vw;
+            top: 20vh;
+            right: 10vh;
+            border-radius: 50%;
+            z-index: 2;
+        }
+        
+        /* ------------------------------------- */
+
+        section:nth-child(4){
+            background: darkslateblue;
+            overflow: hidden;
+        }
+
+        .btn{
+            font-family: 'Rajdhani','Metrophobic',serif;
+            background: dodgerblue;
+            position: relative;
+            display: inline-flex;
+            text-decoration: none;
+            border-radius: 3px;
+            font-size: 4rem;
+            padding: 5vh 5vw;
+            margin: 20px;
+            color: white;
+            overflow: hidden;
+            box-shadow: 2px 2px 0px #252552;
+        }
+
+        .btn span{
+            position: relative;
+            font-family: Poppins,arial;
+            letter-spacing: 10px;
+            z-index: 1;
+        }
+
+        .btn::before{
+            content: '';
+            position: absolute;
+            top: var(--y);
+            left: var(--x);
+            overflow: hidden;
+            transform: translate(-50%, -50%);
+            width: 0;
+            height: 0;
+            border-radius: 50%;
+            background: tomato;
+            transition-property: (width),(heignt);
+            transition-duration: .5s;
+        }
+
+        section:nth-child(4) a:hover::before{
+            width: 900px;
+            height: 900px;
+        }
+
+    </style>
+</head>
+
+
+<body>
+    <main>
+        <section>
+            <div>
+                <h2 contenteditable="true">Text light...</h2>
+            </div>
+        </section>
+
+        <section>
+            <div>
+                <h2>Focus</h2>
+            </div>
+            
+            <div></div>
+
+        </section>
+
+        <section>
+            <div>
+                <h2>Pruebas</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus eius illo adipisci odit cupiditate mollitia odio nobis hic, tempore molestias, quis corporis deleniti maxime. Error nemo repudiandae laborum saepe. Quam rerum aperiam labore architecto et, aut aliquam quibusdam. Et ad consectetur hic non id natus quidem velit quam porro repellat deleniti, eaque tenetur, cumque deserunt magni ipsa culpa, itaque animi at tempora dolore quod cum maxime distinctio. Aut, officiis architecto. Fugiat exercitationem quidem neque laborum a deserunt?</p>
+            </div>    
+        </section>
+
+        <section>
+            <div>
+                <a class="btn" href="../index.html"><span>Back</span></a>
+                <a class="btn" href="../../page.html"><span>Menu</span></a>
+            </div>
+        </section>
+
+
+
+    </main>
+
+    <script>
+        const text_light = document.querySelector('h2');
+        window.onscroll = function() {
+            text_light.innerHTML = window.scrollY * 99;
+            // text_light.textContent(window.scrollX);
+
+        };
+
+
+
+        const btn = document.querySelector('.btn');
+
+        btn.onmousemove = function(e){
+            const x = e.pageX - btn.offsetLeft;
+            const y = e.pageY - btn.offsetTop;
+
+            btn.style.setProperty('--x', x + 'px');
+            btn.style.setProperty('--y', y + 'px');
+        }
+
+    </script>
+</body>
+</html>

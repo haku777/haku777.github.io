@@ -1,0 +1,73 @@
+create database pruebas
+
+use pruebas
+
+create table usuarios(
+	id int identity primary key,
+	fecha_creacion smalldatetime not null default(getdate()),
+	fecha_modificacion smalldatetime not null default(getdate()),
+	usuario varchar(70) not null,
+	edad int null,
+	telefono int null
+)
+
+select * from usuarios
+
+insert into usuarios (usuario) values('Catlyn')
+
+select * from INFORMATION_SCHEMA.columns where TABLE_NAME='usuarios'
+
+select * from usuarios
+
+create table rol(
+	id int identity primary key,
+	rol varchar(70) not null
+)
+
+insert into rol (rol)values ('superadministrador')
+insert into rol (rol)values ('dministrador')
+insert into rol (rol)values ('usuario')
+insert into rol (rol)values ('cliente')
+
+
+create table tbl__relacion_usuario_rol(
+	id int identity primary key,
+	id_usuario int,
+	id_rol int
+)
+
+
+--------------------------------------------------
+------------------Mysql---------------------------
+
+
+drop table usuarios
+
+create table usuarios(
+	id int auto_increment primary key,
+	fecha_creacion datetime not null default(NOW()),
+	fecha_modificacion datetime not null default(NOW()),
+	active bit not null default(1),
+	usuario varchar(70) unique not null,
+	password varchar(50) not null,
+	edad int null,
+	telefono int null
+)
+
+
+insert into usuarios (usuario,edad,password) values('Haku',23,'123');
+insert into usuarios (usuario,edad) values('Akali',24);
+insert into usuarios (usuario,edad) values('Violet',19);
+
+insert into usuarios (usuario,edad) values('Milena',24);
+insert into usuarios (usuario,edad) values('Liszet',22);
+insert into usuarios (usuario,edad) values('Baxter',25);
+
+insert into usuarios (usuario,edad) values('Jessica',24);
+insert into usuarios (usuario,edad) values('Lee',37);
+insert into usuarios (usuario,edad) values('Ahri',24);
+
+insert into usuarios (usuario,edad) values('Katarina',25);
+insert into usuarios (usuario,edad) values('Kalista',26);
+
+

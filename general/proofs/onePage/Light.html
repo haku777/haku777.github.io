@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="../../../img/information/c.png" type="image/x-icon">
+	<title>Light</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			font-family: 'Josefin Sans', sans-serif;
+		}
+		body{
+			background: #000;
+			width: 100vw;
+			height: 100vh;
+			display: flex;
+			justify-content: center;
+			align-content: center;
+			align-items: center;
+			overflow: hidden;
+		}
+		main
+		{
+			position: absolute;
+			width: 17vw;
+			height: 17vw;
+			background: #fff;
+			box-shadow: 0px 0px 7px 7px #fff,
+			0px 0px 77px 7px #fff,
+			0px 0px 250px 7px #fff;
+			border-radius: 50%;
+			animation: booble 1.7s linear infinite;
+		}
+		main:active{
+			background: crimson;
+			border:none;
+			box-shadow: 
+			0px 0px 7px 7px crimson,
+			0px 0px 77px 7px crimson,
+			0px 0px 250px 7px crimson;
+		}
+		@keyframes booble {
+			0% ,100%{transform: scale(7%);}			
+			50%{transform: scale(100%);}			
+		}
+	</style>
+</head>
+<body>
+		<main id="main">
+		</main>
+</body>
+<script>
+	document.addEventListener("mousemove",function(e){
+		const main = document.getElementById("main");
+		const radio = main.offsetWidth;
+		let x = event.pageX;
+		let y = event.pageY;
+		let ancho = main.offsetWidth;
+		let alto = main.offsetHeight;
+		main.style.left = (x - ancho/2) + 'px';
+		main.style.top = (y - alto/2) + 'px';
+	});
+</script>
+</html>
+
+
+

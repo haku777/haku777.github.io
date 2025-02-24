@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>background</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		body{
+			/* background: rgb(222,226,232); */
+			background: #3d3d3d;
+			height: 100vh;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			overflow: hidden;
+		}
+
+		.whrapper{
+			background: #000;
+			position: absolute;
+			display: flex;
+			border: 1px solid #70e;
+			justify-content: center;
+			width: 370px;
+			height: 400px;
+			color:#0f0;
+		}
+		
+		.whrapper form{
+			display: flex;
+			font-size: 2rem;
+			justify-content: center;
+			flex-direction: column;
+			align-items: center;
+		}
+
+		.whrapper form input{
+			background: #000;
+			outline: none;
+			font-size: 1.2rem;
+			margin: 17px 0px;
+			border: none;
+			border-bottom: 3px solid #0f0;
+			text-align: center;
+			color: #fff;
+			width: 200px;
+			height: 37px;
+		}
+		
+		.whrapper form input[type=submit]{
+			background: #333;
+			outline: none;
+			margin-top: 27px;
+			font-size: 1.2rem;
+			color: #fff;
+			border: none;
+		}
+
+		.whrapper form input[type=submit]:hover{
+			background: crimson;
+		}
+
+		main{
+			background: #0001;
+			height: 100vh;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			align-items: center;
+			margin: auto;
+		}
+		main .box{
+			background: #000;
+			display: inline-block;
+			transition: .7s;
+			margin: 1px;
+			width: 3vw;
+			height: 3vw;
+		}
+		
+		main .box:hover{
+			background: #0f0;
+			transition: 0s;
+		}
+		
+		main .box:active{
+			background: crimson;
+			transition: .7s;
+			transform: rotate(135deg);
+		}
+
+		section{
+			background: lime;box-shadow: 0px 0px 77px lime;
+			position: absolute;
+			width: 100%;
+			height: 40vh;
+			box-shadow: 
+			0px 0px 25px lime,
+			0px 0px 50px lime,
+			0px 0px 250px lime;
+			animation: load 3s linear infinite;
+			z-index: -1;
+		}
+
+		@keyframes load {
+			0%{transform: translateY(-100vh); }			
+			100%{transform: translateY(300%); }			
+		}
+
+	</style>
+</head>
+<body>
+	<section></section>
+	<div class="whrapper">
+			<form action="">
+				<label for="">User</label>
+				<input type="text">
+
+				<label for="">Password</label>
+				<input type="password">
+
+				<input type="submit" value="Login">
+			</form>
+	</div>
+	<main id="container">
+	</main>
+</body>
+
+<script>
+	const container = document.getElementById('container');
+	let count = 1111;
+	for (let i = 0; i < count; i++) {
+		container.innerHTML += '<div class=box></div>';
+	}
+</script>
+</html>

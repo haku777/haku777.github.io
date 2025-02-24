@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>imgBackground</title>
+
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,300;1,400&display=swap');
+
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			font-family: 'Josefin Sans', sans-serif;
+		}
+
+		body{
+			background: linear-gradient(-45deg,dodgerblue 20%,transparent 50%,indigo);
+			display: flex;
+			justify-content: center;
+			height: 100vh;
+			overflow: hidden;
+		}
+
+		main{
+			background: #7074;
+			width: 70vw;
+			height: 70vh;
+			margin: auto;
+			display: flex;
+			justify-content: center;
+			align-content: center;
+			align-items: center;
+			overflow: hidden;
+		}
+
+		main div{
+			position: absolute;
+		}
+
+		main div:nth-child(1){
+			background: url(../../../img/pexelFree/girl_like.jpg);
+			background-position-y: -150px;
+			background-size: cover;
+			top: 27vh;
+			left: 24vw;
+			width: 16vw;
+			height: 8vw;
+			clip-path: polygon(50% 0, 100% 100%, 0 100%);
+		}
+
+		main div:nth-child(2){
+			background: url(../../../img/pexelFree/girl_forest.jpg);
+			background-position-y: -150px;
+			background-size: cover;
+			top: 27vh;
+			left: 33vw;
+			width: 16vw;
+			height: 8vw;
+			clip-path: polygon(50% 100%, 0 0, 100% 0);
+		}
+
+		main div:nth-child(3){
+			background: url(../../../img/pexelFree/girl_beautiful.jpg);
+			background-position: center;
+			background-size: cover;
+			top: 27vh;
+			width: 16vw;
+			height: 16vw;
+			clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+		}
+
+		main div:nth-child(4){
+			background: url(../../../img/pexelFree/girl_red_two.jpg);
+			background-position: 70px -77px;
+			background-size: cover;
+			top: 27vh;
+			right: 33vw;
+			margin: auto;
+			width: 16vw;
+			height: 8vw;
+			clip-path: polygon(50% 100%, 0 0, 100% 0);
+		}
+		
+		main div:nth-child(5){
+			background: url(../../../img/pexelFree/girl_pink.jpg);
+			background-position: 70px -77px;
+			background-size: cover;
+			top: 27vh;
+			right: 24vw;
+			margin: auto;
+			width: 16vw;
+			height: 8vw;
+			clip-path: polygon(50% 0, 100% 100%, 0 100%);
+		}
+
+	</style>
+</head>
+<body>
+	<main>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+	</main>
+</body>
+</html>

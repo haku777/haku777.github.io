@@ -1,0 +1,485 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@font-face{
+    font-family: Merge;
+    src: url("../../../font/merge_light.otf");
+}
+body{
+    font-family: Merge,serif;
+}
+.links{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.links a{
+    display: inline-block;
+    text-decoration: none;
+    background: white;
+    border-radius: 3px;
+    color: black;
+    padding: 12px 20px;
+    transition-duration: .5s;
+}
+.links a:hover{
+    background: dodgerblue;
+    color: white;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    padding: 7vh;
+}
+section div{
+    /* background: salmon; */
+    width: 25%;
+    margin: 0px 40px;
+    height: 50vh;
+    border-radius: 3px;
+}
+section:nth-child(odd){
+    background: #252525;
+}
+
+section:nth-child(even){
+    background: lightslategrey;
+    color: white;
+}
+
+
+/* -------------------------------------------- */
+.section1 table td{
+    width: 50%;
+}
+
+.section1 table td img{
+    width: 100%;
+    height: 49.8vh;
+}
+.section1 div:nth-child(3) > table img{
+    height: 100%;
+}
+
+.section1 table td h2{
+    text-align: center;
+}
+
+.section1 table td hr{
+    background: #00404a;
+	background: -moz-linear-gradient(left, #00404a 0%, #00384a 17%, #ff4000 17%, #ff4000 17%, #ff4000 38%, #ff8800 38%, #ff8800 38%, #ff8800 59%, #ffb300 59%, #ffb300 59%, #ffd000 81%, #fffccc 81%, #fffccc 82%, #fffccc 100%);
+	background: -webkit-gradient(left top, right top, color-stop(0%, #00404a), color-stop(17%, #00384a), color-stop(17%, #ff4000), color-stop(17%, #ff4000), color-stop(38%, #ff4000), color-stop(38%, #ff8800), color-stop(38%, #ff8800), color-stop(59%, #ff8800), color-stop(59%, #ffb300), color-stop(59%, #ffb300), color-stop(81%, #ffd000), color-stop(81%, #fffccc), color-stop(82%, #fffccc), color-stop(100%, #fffccc));
+	background: -webkit-linear-gradient(left, #00404a 0%, #00384a 17%, #ff4000 17%, #ff4000 17%, #ff4000 38%, #ff8800 38%, #ff8800 38%, #ff8800 59%, #ffb300 59%, #ffb300 59%, #ffd000 81%, #fffccc 81%, #fffccc 82%, #fffccc 100%);
+	background: -o-linear-gradient(left, #00404a 0%, #00384a 17%, #ff4000 17%, #ff4000 17%, #ff4000 38%, #ff8800 38%, #ff8800 38%, #ff8800 59%, #ffb300 59%, #ffb300 59%, #ffd000 81%, #fffccc 81%, #fffccc 82%, #fffccc 100%);
+	background: -ms-linear-gradient(left, #00404a 0%, #00384a 17%, #ff4000 17%, #ff4000 17%, #ff4000 38%, #ff8800 38%, #ff8800 38%, #ff8800 59%, #ffb300 59%, #ffb300 59%, #ffd000 81%, #fffccc 81%, #fffccc 82%, #fffccc 100%);
+	background: linear-gradient(to right, #00404a 0%, #00384a 17%, #ff4000 17%, #ff4000 17%, #ff4000 38%, #ff8800 38%, #ff8800 38%, #ff8800 59%, #ffb300 59%, #ffb300 59%, #ffd000 81%, #fffccc 81%, #fffccc 82%, #fffccc 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00404a', endColorstr='#fffccc', GradientType=1 );
+	padding: 2px 0px;
+    margin: 0px 20px;
+	border: none;
+}
+
+.section1 table td ul{
+    margin:10px 20px;
+}
+.section1 div:hover{
+    background:white;
+    color: black;
+}
+
+/* ------------------------------- */
+.img2 h2{
+    background: orangered;
+    color: white;
+    padding: 20px;
+    border-radius: 3px;
+}
+.img2 p{
+    padding: 30px;
+}
+.img2 img{
+    margin: 0px 0px 0px -24px;
+    transform: matrix(1,0,-0.1,1,0,0);
+}
+/* -------------------------------- */
+.img1,.img2,.img3{
+    box-shadow: 1px 1px 2px 0px #252525;
+}
+.img3 p{
+    padding: 20px;
+}
+.img3 table tr td{
+    height: 232px;
+    /* background: teal; */
+}
+
+/* -------------------------------- */
+.img4{
+    background: white;
+    transition-duration: .7s;
+}
+.img4 div{
+    padding: 10px;
+    width: 70%;
+    height: 47vh;
+}
+.img4 hr{
+    margin: 5px 0px;
+}
+.img4 h2{
+    color: lightskyblue;
+    text-align: center;
+    font-size: 7rem;
+}
+.img4 p{
+    padding: 10px;
+    text-align: center;
+}
+/* -------------------------------- */
+
+.img5{
+    background: white;
+    transition-duration: .7s;
+}
+.img5 h6{
+    background: linear-gradient(to right,red,orangered,white);
+    border-radius: 3px 3px 0px 0px;
+    padding: 17px;
+}
+.img5 img{
+    margin-left: 5vw;
+    border-radius: 70%;
+    width: 50%;
+    height: 20vh;
+    padding: 10px;
+}
+.img5 h2{
+    margin-top: 20px;
+    text-align: center;
+}
+.img5 p{
+    text-align: center;
+    padding: 20px;
+}
+
+/* -------------------------------- */
+
+.img6{
+    background: gray;
+    color: white;
+    transition-duration: .7s;
+}
+.img6 img{
+    width: 100%;
+    height: 32vh;
+    border-radius: 3px;
+}
+.img6 h2, .img6 p{
+    padding: 20px;
+}
+
+/* -------------------------------- */
+
+.img4:hover,.img5:hover,.img6:hover{
+    background: #252525;
+    color: white;
+    box-shadow:
+    -2px 2px 0px 0px lime,
+    -7px 7px 40px 0px limegreen,
+    2px -2px 0px 0px red,
+    7px -7px 50px 1px darkred;
+    transition-property: box-shadow;
+}
+/* -------------------------------- */
+.section3 div figure{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 7px;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.50);
+    cursor: pointer;
+}
+.section3 div figure{
+    width: 100%;
+    height: 100%;
+    transition: all 500ms ease-out;
+}
+.section3 div figure .capa{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(25,50,250,0.6);
+    transition: all 500ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+}
+.section3 div figure img{
+    transition: all .5s linear;
+}
+.section3 div figure:hover > img{
+    transform: scale(1.7);
+}
+.section3 div figure:hover > .capa{
+    opacity: 1;
+    visibility: visible;
+}
+
+.section3 div figure .capa h2{
+    color: white;
+    font-weight: 400;
+    margin-top: 30px;
+    margin-bottom: 120px;    
+    transition: all 500ms ease-out;
+}
+.section3 div figure:hover > .capa h2{
+    margin-top: 70px;
+    margin-bottom: 15px;    
+}
+
+.section3 div figure .capa p{
+    color: white;
+    font-size: 15px;
+    line-height: 1.5;
+    width: 100%;
+    max-width: 220px;
+    margin:auto;
+}
+/* -------------------------------- */
+/* -------------------------------- */
+.container1 div{
+    background: none;
+    /* background: lightsalmon; */
+    /* padding: 0px !important; */
+}
+.container1 div .texto{
+    position: absolute;
+    color: white;
+    display: flex;
+    width: 70%;
+    padding: 20px;
+    flex-direction: column;
+    justify-content: center;
+    transition: .7s;
+}
+.container1 div .texto:hover{
+    color: transparent;
+}
+.container1 div .texto h2, .container1 div .texto p{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.container .cara{
+    display: flex;
+    position: absolute;
+    width: 21vw;
+    /* height: 50vh; */
+}
+
+ .container .cara span{
+    background: linear-gradient(180deg, dodgerblue,cyan);
+    width: 100vw;
+    transition: .5s;
+}
+
+ .container .cara1 span{
+     background-origin: top;
+     padding: 10px;
+}
+    
+.container:hover .cara1 span{
+    transform: rotateX(90deg) translateY(-50%);
+}
+
+.container .cara2 span{
+    background: linear-gradient(360deg, teal,cyan);
+    transform-origin:bottom;
+    padding: 10px;
+    transform: rotateX(90deg) translateY(50%);
+}
+ .container:hover .cara2 span{
+    transform: rotateX(0deg) translateY(0);
+}
+
+ .container .cara span:nth-child(1){
+    background-position-x: 0px;
+    transition-delay: 0s;
+}
+ .container .cara span:nth-child(2){
+    background-position-x: -200px;
+    transition-delay: .1s;
+} 
+
+.container .cara span:nth-child(3){
+    background-position-x: -400px;
+    transition-delay: .2s;
+} 
+.container .cara span:nth-child(4){
+    background-position-x: -600px;
+    transition-delay: .3s;
+}
+/* -------------------------------- */
+.section5{
+    background: linear-gradient(-45deg ,dodgerblue,indigo,skyblue) !important;
+    background-repeat: no-repeat !important; 
+    background-position: center !important;
+    background-size: cover !important;
+    padding: 0;
+}
+.glass{
+    background: rgba(255,255,255,0.) !important;
+    padding: 10vh !important;
+    width: 100% !important;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    border: none !important;
+    border-radius: 0px !important;
+}
+
+.section5 div{
+    background: rgb(255, 255, 255,0.2);
+    color: white;
+    border-radius: 13px;
+    border: 1px solid rgba(255,255,255,0.5);
+    border-right: 1px solid rgba(255,255,255,0.2);
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+    box-shadow: 0px 5px 25px #2525;
+    transition-duration: 1s;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.section5 div:hover{
+    transform: translateY(-10px);
+}
+
+
+.section5 div h2,.section5 .glass div p{
+    background: rgba(255,255,255,0.2);
+    padding: 2vw;
+    position: relative;
+    margin: auto;
+    margin-top: 20px;
+    width: 70%;
+    font-size: 20px;
+    border: 1px solid rgba(255,255,255,0.5);
+    border-right: 1px solid rgba(255,255,255,0.2);
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+    border-radius: 7px;
+    transition-duration: .5s;
+    overflow: hidden !important;
+}
+
+.section5 div h2::before,.section5 div p::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100%;
+    background: rgba(255,255,255,0.4);
+    transform: skewX(45deg) translateX(-200px);
+    transition-duration: 1s;
+}
+
+.section5 div h2:hover::before,.section5 div p:hover::before{
+    transform: skewX(45deg) translateX(610px);
+}
+
+/* -------------------------------- */
+
+.section6 div{
+    background: dodgerblue;
+    border-radius: 7px;
+    padding: 20px;
+    color: white;
+}
+.section6 div h2, .section6 div p{
+    background: lightskyblue;
+    padding: 40px;
+}
+
+/* -------------------------------- */
+
+.section7 div{
+    background: dodgerblue;
+    border-radius: 7px;
+    padding: 20px;
+    color: white;
+}
+.section7 div h2, .section7 div p{
+    background: lightskyblue;
+    padding: 40px;
+}
+
+/* -------------------------------- */
+
+.section8 div{
+    background: dodgerblue;
+    border-radius: 7px;
+    padding: 20px;
+    color: white;
+}
+.section8 div h2, .section8 div p{
+    background: lightskyblue;
+    padding: 40px;
+}
+
+/* -------------------------------- */
+.up a{
+    background: url(../../../img/fondo/back2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    border: 3px solid lime;
+    border-radius: 100%;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    padding: 3px;
+    right: 10px;
+}
+/* -------------------------------- */
+
+footer .footer{
+    background: url(../../../img/flowers.jpg) !important;
+    background-size: 100% !important;
+    width: 100%;
+    height: 60vh;
+}
+
+
+/* ---------------------------- */
+/* ---------------------------- */
+/* ---------------------------- */
+
+@media(max-width: 750px){
+     section{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    section div{
+        width: 90%;
+        height: 55vh;
+        padding: 5px;
+        margin: 10px 5px;
+    }
+    .container .cara{
+        width: 70%;
+    }
+}
+
+
+/* 
+utilizar los diferentes tipos de tarjetas en los diferentes modulos a realizar
+crear deplegable con las ciudades y departamentos de colombia
+*/
+

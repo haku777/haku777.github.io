@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>w</title>
+
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,300;1,400&display=swap');
+
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			font-family: 'Josefin Sans', sans-serif;
+		}
+
+		.wrapper{
+			background:#160345;
+			height: 100vh;
+			overflow: hidden;
+		}
+
+		main{
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: 70% 70%;
+			padding-top: 20vh;
+			width: 100vw;
+			height: 100vh;
+		}
+
+		main div{
+			background: url(../../../img/utilities/computer3.jpg);
+			background-size: cover;
+			margin: auto;
+			width: 30vw;
+			height: 30vw;
+			border: 7px solid #fff;
+			border-radius: 50%;
+			box-shadow:
+			inset 7px 7px 17px #f83eac, 
+			inset -7px -7px 17px #214aff,
+			inset 0px 0px 7px 2px #fff,
+			0px 0px 7px 2px #fff,
+			-7px -7px 7px #e50f9e,
+			-17px -17px 27px #e50f9e60,
+			-27px -27px 77px #e50f9e77,
+			-77px -77px 77px #e50f9e30,
+			7px 7px 7px #214aff,
+			17px 17px 27px #214aff60,
+			27px 27px 77px #214aff77,
+			77px 77px 77px #214aff30;
+			animation: round 2s alternate infinite;
+		}
+		@keyframes round {
+			0%{transform: 
+				rotateX(20deg) 
+				rotateY(20deg) 
+				skewy(30deg)
+				skewx(-40deg);}
+		}
+
+	</style>
+
+</head>
+<body>
+	<div class="wrapper">
+		<main>
+			<div></div>
+		</main>
+	</div>
+</body>
+
+<script>
+
+</script>
+</html>

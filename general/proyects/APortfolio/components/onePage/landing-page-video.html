@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="../../../img/information/c.png" type="image/x-icon">
+	<title>Landing Page - video background</title>
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,300;1,400&display=swap');
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			font-family: 'Josefin Sans', sans-serif;
+			font-size: 1.2rem;
+			font-weight: 700;	
+		}
+		body{
+			background: #000;
+			width: 100vw;
+			height: 100vh;
+			overflow: hidden;
+		}
+		.wrapper{
+			background: #0e0e77af;
+			width: 100vw;
+			height: 100vh;
+			overflow: hidden;
+		}
+
+		header{
+			position: absolute;
+			top: 0;
+			width: 100vw;
+			overflow: hidden;
+			z-index: 10;
+		}
+
+		header nav{
+			background: #0007;
+			display: flex;
+			height: 70px;
+			padding: 0px 7vw;
+			justify-content: space-between;
+			align-items: center;
+		}
+		
+		header nav ul{
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+		}
+
+		header nav li{
+			list-style: none;
+		}
+
+		header nav li a{
+			text-decoration: none;
+			color: #fff;
+			padding: 17px;
+		}
+
+		header nav li a:hover{
+			transition-duration: 1s;
+			background: linear-gradient(to top,#fff 1%,transparent 27% 100%);
+		}
+
+		header img{
+			width: 3vw;
+			height: 3vw;
+			border-radius:50%;
+		}
+
+		section{
+			position: absolute;
+			top: 60vh;
+			width: 100vw;
+		}
+
+		section a{
+			border: 3px solid #fff;
+			border-radius: 30px;
+			display: block;
+			padding: 20px;
+			transition: .7s;
+			margin: auto;
+			width: 217px;
+			color: #fff;
+			text-decoration: none;
+			text-align: center;
+		}
+
+		section a:hover{
+			background: #fefefe;
+			color: #252525;
+			cursor: pointer;
+		}
+
+		/* --- */
+
+		.wrapper video{
+			position: fixed;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			z-index: -1;
+		}
+
+		@media (min-aspect-ratio: 16/9){
+			.wrapper video{
+				width: 100%;
+				height: auto;
+			}
+		}
+
+		@media (max-aspect-ratio: 16/9){
+			.wrapper video{
+				width: auto;
+				height: 100%;
+			}
+		}
+
+	</style>
+</head>
+<body>
+	<div class="wrapper">
+		<video autoplay loop muted playsinline id="myVideo" width="600" poster="https://haku777.com/img/utilities/particles.png">
+			<source src="https://haku777.com/img/video/binaryCode.mp4" type="video/mp4">
+			Your browser does not support HTML5.
+		</video>
+		<header>
+			<nav>
+				<img src="../../../img/utilities/yo4.avif" alt="landing page logo">
+				<ul>
+					<li><a lang="en" title="my resume (cv)" target="_blank" href="https://haku777.com/APortfolio/components/resume/resume.html">CV</a></li>
+					<li><a lang="en" title="my portfolio" target="_blank" href="https://haku777.com/APortfolio/new.html" target="_blank">Portfolio</a></li>
+					<li><a lang="en" title="the proyects" target="_blank" href="https://haku777.com/APortfolio/new.html#proyects">Proyects</a></li>
+					<li><a lang="en" title="the skills" target="_blank" href="https://haku777.com/APortfolio/new.html#skills">Skills</a></li>
+					<li><a lang="en" title="the contact" target="_blank" href="https://haku777.com/APortfolio/new.html#us">Contact</a></li>
+				</ul>
+			</nav>
+		</header>
+		<section>
+			<h1><a href="https://haku777.com/APortfolio/new.html">Landing Page</a></h1>
+		</section>
+	</div>
+	<script>
+		var video = document.getElementById('myVideo');
+    	video.playbackRate = 0.4;
+	</script>
+</body>
+</html>

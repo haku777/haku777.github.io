@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://haku777.com/files/img/utilities/yo.ico">
+    <link rel="stylesheet" href="css/birthday.css">
+    <title>Birthday</title>
+</head>
+<body>
+    <div class="wrapper">
+        <h1>Family Galery</h1>
+        <h2 class="date" id="date"></h2>
+        <main>
+            <div class="next" class="change"><</div>
+            <div class="card">
+                <div class="img">
+                    <img src="../../../../files/img/Family/J/j.jpg" alt="">
+                </div>
+            </div>
+            <div class="information">
+                <fieldset>
+                    <legend id="name">
+                        SARA
+                    </legend>
+                    <p>Age: 11</p>
+                    <p>Zodiac: pound(Libra)</p>
+                    <p>Element: Air(Aire)</p>
+                    <p>Birthday: oct 03</p>
+                    <p>days left: 365</p>
+                    <a href="#" onclick="Show()">Show Photos</a>
+                </fieldset>
+            </div>
+            <div class="next" class="change">></div>
+        </main>
+        <div class="Photos" id="Photos">
+            <div class="close"><a href="#" onclick="Close()">Close</a></div>
+            <p id="previewPhoto" class="change"><</p>
+            <img id="photo" src="../../../../files/img/Family/Sara/sara1.jpg" alt="">
+            <p id="nextPhoto" class="change">></p>
+        </div>
+    </div>
+
+    <aside>
+        <h2>2023</h2>
+        <section>
+            <div class="dates">
+                <p>16 de junio mom = 47 1976-2023</p>
+                <p>03 de octubre sara = 10 2023</p>
+                <p>04 de febrero ktha = 26 2023</p>
+                <p>05 de mayo dad = 49 2023</p>
+                <p>16 de mayo jorge = 47 2023</p>
+                <p>02 de abril Ximena = 15 2023</p>
+                <p>01 de junio tio raul = 50 2023</p>
+                <p>11 de julio nancy = ? 2023</p>
+                <p>26 de agosto valentina = 19? 2023</p>
+                <p>16 de julio = maria 83 1940?-2023</p>
+                <p>30 de Marzo Milena = 30 2023</p>
+                <p>20 de Julio maribel = 32 2023</p>
+                <p>21 de Mayo nixon = 29 2023</p>
+                <p>21 de Mayo nixon = 29 2023</p>
+                <p>16 de dic humberto = 60 2024</p>
+
+                <p>21 de diciembre Wendy = 25 2023</p> 
+                <hr>
+                <p> Aries: del 21 de marzo al 19 de abril</p>
+                <p> Tauro: del 20 de abril al 20 de mayo</p>
+                <p> Géminis: del 21 de mayo al 20 de junio</p>
+                <p> Cáncer: del 21 de junio al 22 de julio</p>
+                <p> Leo: del 23 de julio al 22 de agosto</p>
+                <p> Virgo: del 23 de agosto al 22 de septiembre</p>
+                <p> Libra: del 23 de septiembre al 22 de octubre</p>
+                <p> Escorpio: del 23 de octubre al 21 de noviembre</p>
+                <p> Sagitario: del 22 de noviembre al 21 de diciembre</p>
+                <p> Capricornio: del 22 de diciembre al 19 de enero</p>
+                <p> Acuario: del 20 de enero al 18 de febrero</p>
+                <p> Piscis: del 19 de febrero al 20 de marzo</p>
+                <hr>
+                <p> Signos de Fuego: Aries, Leo y Sagitario.</p>
+                <p> Signos de Tierra: Tauro, Virgo y Capricornio.</p>
+                <p> Signos de Aire: Géminis, Libra y Acuario.</p>
+                <p> Signos de Agua: Cáncer, Escorpio y Piscis.</p>
+            </div>
+            
+            <div class="year">
+                <h2>Year percent</h2>
+                <div class="percent" id="percent"></div>
+            </div>
+        </section>
+    </aside>
+    <script>
+        (()=>{
+            let now = document.getElementById("date");
+            function upDate(){
+                let date = new Date();
+                now.innerHTML = date.getFullYear() +"..."+ date.getHours() +":"+ date.getMinutes() +":<code>"+ date.getMilliseconds()+"</code>";
+            }
+
+            setInterval(upDate,100);
+            function show(){
+                let now = document.getElementById("name");
+                now.innerHTML = "????";
+                prompt('fotos');
+            }
+            
+        })()
+        function Show(){
+            let botton = document.getElementById('Photos');
+            botton.classList.add("showPhotos");
+            document.body.style.overflow = 'hidden';
+        }
+        function Close(){
+            let botton = document.getElementById('Photos');
+            botton.classList.remove("showPhotos");
+            document.body.style.overflow = '';
+        }
+        ////////////////////////////////////////
+        const basePath = '../../../../files/img/Family/Sara/sara'; // Ruta base sin el número
+    const extension = '.jpg'; // Extensión de la imagen
+    let currentIndex = 1; // Inicia en la imagen 'sara1'
+    const totalImages = 99; // Número total de imágenes (hasta 'sara99')
+
+    const imgElement = document.getElementById('photo');
+    const previewBtn = document.getElementById('previewPhoto');
+    const nextBtn = document.getElementById('nextPhoto');
+
+    // Función para validar si la imagen existe
+    function validateImage(path, callback) {
+        const img = new Image();
+        img.onload = () => callback(true);
+        img.onerror = () => callback(false);
+        img.src = path;
+    }
+
+    // Función para cambiar la extensión de la imagen si no existe
+    function changeExtension(path) {
+        const extensions = ['png', 'jpg', 'jpeg'];
+        let basePath = path.replace(/\.(png|jpg|jpeg)$/i, ''); // Elimina la extensión actual
+
+        function tryNextExtension(index) {
+            if (index >= extensions.length) {
+                return; // No se encontró una imagen válida
+            }
+            const newPath = basePath + '.' + extensions[index];
+            validateImage(newPath, (exists) => {
+                if (exists) {
+                    imgElement.src = newPath;
+                } else {
+                    tryNextExtension(index + 1); // Intentar la siguiente extensión
+                }
+            });
+        }
+
+        tryNextExtension(0); // Iniciar con 'png'
+    }
+
+    // Función para actualizar la imagen
+    function updateImage(index) {
+        const imagePath = `${basePath}${index}${extension}`;
+        validateImage(imagePath, (exists) => {
+            if (exists) {
+                imgElement.src = imagePath;
+            } else {
+                changeExtension(imagePath); // Cambia la extensión si la imagen no existe
+            }
+        });
+    }
+
+    // Manejador para el botón de "Next"
+    nextBtn.addEventListener('click', () => {
+        console.log(currentIndex)
+        currentIndex = (currentIndex % totalImages) + 1; // Aumentar el índice, vuelve a 1 si llega a 34
+        updateImage(currentIndex);
+    });
+
+    // Manejador para el botón de "Preview"
+    previewBtn.addEventListener('click', () => {
+        console.log(currentIndex)
+        currentIndex = (currentIndex - 1 + totalImages - 1) % totalImages + 1; // Disminuye el índice, vuelve a 34 si llega a 1
+        updateImage(currentIndex);
+    });
+
+    // Inicializar la imagen al cargar la página
+    updateImage(currentIndex);
+    </script>
+<script type="text/javascript" src="js/birthday.js"></script>
+</body>
+</html>

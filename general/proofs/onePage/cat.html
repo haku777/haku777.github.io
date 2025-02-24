@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>cat</title>
+
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,300;1,400&display=swap');
+
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			font-family: 'Josefin Sans', sans-serif;
+		}
+
+		.wrapper{
+			background: #fff;
+			padding-top: 10vw;
+			height: 100vh;
+			overflow: hidden;
+		}
+
+		.object{
+			position: absolute;
+			width: 100vw;
+		}
+		.object:before{
+			background: #770077;
+			position: absolute;
+			content: 'Only HTML & CSS';
+			font-size: 3rem;
+			color: #fff;
+			right: 0;
+		}
+		/* .object:after{
+			position: absolute;
+			background: #e9e9e9;
+			content: '';
+			width: 60vw;
+			left: 20vw;
+			border-radius: 50% 50% 30% 30%;
+			height: 80vh;
+			bottom: -100vh;
+		} */
+
+		main{
+			background: #e9e9e9;
+			position: absolute;
+			padding-top: 10vh;
+			left: 29vw;
+			width: 42vw;
+			transform: translate(50% -50%);
+			height: calc(27vh + 17vw);
+			border-radius: 50% 50% 40% 40%;
+			box-shadow: 0px 0px 20px 10px #f1f1f1;
+			z-index: 300;
+		}
+
+		.ear-l{
+			background: #e8e8e8;
+			position: absolute;
+			width: 12vw;
+			height: 14vw;
+			top: -7vw;
+			left: 32vw;
+			border-top: 0px solid transparent;
+			border-left: 40px solid transparent;
+			border-right:40px solid transparent;
+			border-bottom: 120px solid #e1e1e1;
+			border-radius: 50% 50% 40% 40%;
+			box-shadow: 0px 0px 17px 12px #f1f1f1;
+			z-index: 100;
+		}
+
+		.ear-r{
+			background: #e8e8e8;
+			position: absolute;
+			width: 12vw;
+			height: 14vw;
+			top: -7vw;
+			right: 32vw;
+			border-top: 0px solid transparent;
+			border-left: 40px solid transparent;
+			border-right:40px solid transparent;
+			border-bottom: 120px solid #e1e1e1;
+			border-radius: 50% 50% 40% 40%;
+			box-shadow: 0px 0px 17px 12px #f1f1f1;
+			z-index: 2;
+		}
+
+		main div{
+			background: none;
+			width: 100%;
+			padding: 17px;
+			display: flex;
+			flex-direction: row;
+			justify-content: space-around;
+		}
+
+		main div .eye{
+			background: #770077;
+			background: #463c3b;
+			border-radius: 50%;
+			width: 7vw;
+			height: 7vw;
+		}
+
+		.cheek{
+			background: #f77085;
+			border-radius: 50%;
+			width: 6vw;
+			height: 3vw;
+		}
+
+		.container{
+			min-height: 7vw;
+			width: 17vw;
+			display: flex;
+			flex-wrap: wrap;
+			overflow: hidden;
+		}
+
+		.nouse{
+			background: #e5627f;
+			width: 37px;
+			height: 20px;
+			padding: 0;
+			border-radius: 50%;
+		}
+
+		.mouth{
+			overflow: hidden;
+		}
+
+		.mouth div{
+			border: 4px solid #463c3b;
+			border-radius: 0px 0px 50% 50%;
+			width: 100%;
+			height: 4vw;
+			margin-top: -30px;
+		}
+		.feet-l{
+			background: #f1f1f1;
+			position: absolute;
+			width: 14vw;
+			height: 14vw;
+			left: 27vw;
+			box-shadow: 0px 0px 17px 10px #fff;
+			border-radius: 44%;
+			z-index: 400;
+		}
+
+		.feet-l:after{
+			background: #f1f1f1;
+			position: absolute;
+			content: '';
+			width: 7vw;
+			height: 12vw;
+			bottom: -1vw;
+			border-radius: 40%;
+			box-shadow: 0px 10px 4px 1px #ccc;
+		}
+
+		.feet-r{
+			background: #f1f1f1;
+			position: absolute;
+			width: 14vw;
+			height: 14vw;
+			right: 27vw;
+			box-shadow: 0px 0px 17px 10px #fff;
+			border-radius: 44%;
+			z-index: 400;
+		}
+
+		.feet-r:after{
+			background: #f1f1f1;
+			position: absolute;
+			content: '';
+			width: 7vw;
+			height: 12vw;
+			bottom: -1vw;
+			border-radius: 40%;
+			box-shadow: 0px 10px 4px 1px #ccc;
+		}
+
+		@media (max-width: 750px){
+			main{
+				left: 0;
+				top: 10vh;
+				margin: auto;
+				width: 70vw;
+				height: 60vh;
+				position: relative;
+			}
+			.container{
+				width: 170px;
+			}
+			.ear-l,.ear-r{
+				top: 2vh;
+			}
+			.feet-l{
+				bottom: -27px;
+				left: 10vw;
+			}
+			.feet-r{
+				bottom: -27px;
+				right: 10vw;
+			}
+		}
+
+	</style>
+
+</head>
+<body>
+	<div class="wrapper">
+		<div class="object">
+			<div class="ear-l"></div>
+			<div class="ear-r"></div>
+			<main>
+				<div>
+					<div class="eye"></div>
+					<div class="eye"></div>
+				</div>
+				<div>
+					<div></div>
+					<div>
+						<div class="cheek"></div>
+						<div class="container">
+							<div class="nouse"></div>
+							<div class="mouth">
+								<div></div>
+								<div></div>
+							</div>
+						</div>
+						<div class="cheek"></div>
+					</div>
+					<div></div>
+				</div>
+				<div class="feet-l"></div>
+				<div class="feet-r"></div>
+			</main>
+		</div>
+	</div>
+</body>
+</html>

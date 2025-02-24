@@ -1,0 +1,177 @@
+*, *::before, *::after {
+  box-sizing: border-box;  
+}
+header{
+  background: #000;
+  text-align: center;
+  height: 30px;
+}
+a{
+  text-decoration: none;
+  list-style: none;
+  color: white;
+  background:#333;
+  padding: 7px;
+  font-size: 20px;
+}
+.container{
+  width: 100vw;
+  height: 100vh;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: flex-end;
+  position: relative;
+  margin: 0;
+  overflow: hidden;
+}
+
+.layer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  filter: contrast(20);
+}
+
+h1 {
+  position: absolute;
+  z-index: 10000;
+  text-align: center;
+  top: 0;
+  left: 50%;
+  transform: translatex(-50%);
+  font-size: 4em;
+  color: #282D31;
+}
+
+img {
+  position: absolute;
+  bottom: 2em;
+  left: 50%;
+  transform: translate(-50%);
+  width: 20vw;
+}
+
+.ball {
+  border-radius: 50%;
+  background: red;
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  will-change: transform;
+}
+
+.balls {
+  padding: 20px;
+  background: white;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 5em;
+}
+
+.heart {
+  --rotate: -45deg;
+  --translate: -50%,-50%;
+  --scale: 1;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -30%) rotate(-45deg) scale(1);
+  background: crimson;
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  /* z-index: 100; */
+  filter: blur(5px);
+  animation: ball 77s cubic-bezier(.32,7,.69,7) infinite;
+}
+  .ribbon {
+    position: absolute;
+    width: 150%;
+    /* height: 10%; */
+    background:white;
+    top: 40%;
+    z-index: 100;
+  }
+  
+  .heart::before,
+  .heart::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: crimson;
+  }
+  
+  .heart::before {
+    left: 50%;
+  }
+  
+  .heart::after {
+    top: -50%;
+  }
+  
+  @keyframes ball {
+    
+    0%, 3%   { transform: translate(-50%, -30%) rotate(-45deg)  scale(0.5) }
+    50%      { transform: translate(-50%, -30%) rotate(-45deg)  scale(0.6) }
+    94%, 98% { transform: translate(-50%, -30%) rotate(-45deg)  scale(0.7) } 
+  }
+
+
+.ball-1, .ball-2, .ball-3, .ball-4 {
+  width: 170px;
+  height: 170px;
+  z-index: 2;
+  filter: blur(17px);
+}
+
+.ball-1 {
+  top: 0;
+  left: 0;
+  animation: ball-1 7s infinite cubic-bezier(.17,.177,.17,.200);}
+  @keyframes ball-1 {
+    to {
+      transform: translate(50vw, 50vh);
+    }   
+  }
+
+
+.ball-2 {
+  top: 0;
+  right: 0;
+  
+  animation: ball-2 7s infinite cubic-bezier(.17,.177,.17,.200);}
+  @keyframes ball-2 {
+    to {
+      transform: translate(-50vw, 50vh);
+    }   
+  }
+
+
+.ball-3 {
+  bottom: 0;
+  right: 0;
+  
+  animation: ball-3 7s infinite cubic-bezier(.17,.177,.17,.200);}
+  @keyframes ball-3 {
+    to {
+      transform: translate(-50vw, -50vh);
+    }   
+  }
+
+
+.ball-4 {
+  left: 0;
+  bottom: 0;
+  
+  animation: ball-4 7s infinite cubic-bezier(.17,.177,.17,.200);}
+  @keyframes ball-4 {
+    100% {
+      transform: translate(50vw, -50vh);
+    }   
+  }

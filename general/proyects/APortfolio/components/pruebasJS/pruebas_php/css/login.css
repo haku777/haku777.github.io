@@ -1,0 +1,85 @@
+*{
+	margin: 0;
+	padding: 0;	
+}
+
+main{
+	background: dodgerblue;
+	width: 90%;
+	margin: auto;
+	height: 90vh;
+	overflow: hidden;
+	border-radius: 7px;
+	box-shadow: 0px 0px 20px lightslategray;
+	margin-top: 3vh;
+}
+
+section{
+	background: rgba(255,255,255,0.5);
+	border-radius: 50%;
+	width: 90%;
+	height: 150vh;
+	margin: auto;
+	margin-top: -30vh;
+	box-shadow: 
+	inset 4px 2px 1px rgb(0, 121, 241);
+	overflow: hidden;
+}
+
+.login{
+	background: rgba(255,255,255,0.5);
+	margin: auto;
+	width: 50%;
+	height: 80vh;
+	overflow: hidden;
+	/* padding: 0px; */
+	margin-top: 32vh;
+	display: flex;
+	align-content: center;
+	align-items: center;
+	justify-content: center;
+	box-shadow: 
+	2px 2px 0px rgba(0,0,0,0.1),
+	-2px -2px 0px rgba(255,255,255,0.1);
+	border-radius: 50%;
+	color: dodgerblue;
+	text-shadow: 1px 1px 2px black;
+}
+
+label{
+	font-size: 27px;
+	padding: 20px;
+	width: 300px;
+	display: block;
+	text-align: center;
+	align-content: center;
+	text-transform: uppercase;
+}
+
+input{
+	width: 80%;
+	padding: 20px;
+	text-align: center;
+	font-size: 20px;
+	color: darkcyan;
+	border: none;
+	outline: none;
+	margin-top: 10px;
+	border-radius: 3px;
+}
+
+input[type="submit"]{
+	background: rgb(0, 202, 158);
+	margin: auto !important;
+	width: 100%;
+	color: white;
+	font-size: 20px;
+	text-shadow: 1px 1px 2px gray;
+	border: 2px solid white;
+	border-radius: 10px;
+	transition-duration: .5s;
+}
+
+input[type="submit"]:hover{
+	background: lightskyblue;
+}

@@ -1,0 +1,43 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+main{
+	background: #d1d1d1;
+}
+
+img{
+	width: 33%;
+	height: 400px;
+	border: 1px solid white;
+}
+
+div{
+	padding: 20px;
+	width: 200px;
+	margin:auto;
+}
+
+a{
+	background:white;
+	color: #005555;
+	padding: 7px;
+	text-decoration: none;
+	border-radius: 3px;
+	margin: 10px;
+	width: 77px;
+}
+
+a:hover{
+	background:crimson;
+	transition-duration: .3s;
+	color: white;
+}
+
+@media(Max-width:750px){
+	img{
+		width: 97%;
+	}
+
+}

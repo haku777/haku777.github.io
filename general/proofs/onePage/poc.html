@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		
+		body{
+			height: 100vh;
+		}
+		@font-face{
+			font-family: ram;
+			src: url(../../../files/font/magneto-bold/magneto-bold.ttf);			
+		}
+
+		main{
+			background: linear-gradient(#03a9f4 50%,white 50% 100%);
+			justify-content: space-evenly;
+			height: 100vh;
+			padding-top: 10vh;
+		}
+
+		section{
+			margin-top: 7vh;
+			width: 100vw;
+			display: flex;
+			justify-content: space-evenly;
+		}
+
+		div{
+			background-position: center;
+			padding: 20px;
+			width: 25vw;
+			height: 60vh;
+			border-radius: 10px;
+			backdrop-filter:  blur(15px);
+			border-top: 1px solid rgba(255,255,255,0.5);
+			box-shadow: 0px 15px 25px rgba(0,0,0,0.1);
+		}
+
+		
+		div div:nth-child(1){
+			background: url(../../../files/img/pexelFree/girl_beautiful.jpg);
+			background-position: center;
+			background-size: cover;
+			background-repeat: no-repeat;
+			width: 22vw;
+			height: 55vh;
+		}
+
+		div:nth-child(2) div:nth-child(1){
+			background: url(../../../files/img/information/css3.png);
+			background-position: center;
+			background-size: 17vw;
+			background-repeat: no-repeat;
+		}
+		div:nth-child(3) div:nth-child(1){
+			background: url(../../../files/img/utilities/yo4.avif);
+			background-size: cover;
+			background-repeat: no-repeat;
+			padding-top: 35px;
+			
+		}
+		
+		div:nth-child(3) div:nth-child(1) h2{
+			padding-top: 37vh;
+			font-size: 3vw;
+		}
+
+		h2{
+			font-family: ram,serif;
+			text-align: center;
+			color: dodgerblue;
+			text-shadow: 0px 0px 7px black;
+			letter-spacing: 17px;
+		}
+
+	</style>
+</head>
+<body>
+	<main>
+		<section>
+			<div>
+				<div></div>
+			</div>
+			<div>
+				<div>		
+				</div>
+			</div>
+			<div>
+				<div>
+					<h2>HAKU</h2>
+				</div>
+			</div>
+		</section>
+	</main>
+</body>
+</html>

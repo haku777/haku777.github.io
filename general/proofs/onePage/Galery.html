@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>dayNight</title>
+
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,300;1,400&display=swap');
+
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			font-family: 'Josefin Sans', sans-serif;
+		}
+
+		body{
+			background: radial-gradient(circle,#202077,#000);
+			background-position: 0px -100px;
+			height: 100vh;
+			overflow: hidden;
+		}
+
+		main{
+			background: #0007;
+			display: flex;
+			margin: auto;
+			margin-top: 30vh;
+			align-items: center;
+			overflow-x: hidden;
+			-webkit-box-reflect: below -12% linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.4));;
+		}
+		
+		main div{
+			width: 100%;
+			height: 300px;
+			display: flex;
+			flex-direction: row;
+			/* justify-content: space-evenly; */
+			align-content: center;
+			align-items: center;
+			animation: img 10s linear -10s infinite;
+		}
+		main div:nth-child(2){
+			animation: imgR 10s linear 10s infinite;
+		}
+		@keyframes img{
+			0%{transform: translateX(100%);}
+			100%{transform: translateX(-130%);}
+		}
+		@keyframes imgR{
+			0%{transform: translateX(100%);}
+			100%{transform: translateX(-130%);}
+		}
+		
+		main div img{
+			width: 200px;
+		}
+
+
+		img{
+			width: 50%;
+		}
+
+	</style>
+
+</head>
+<body>
+		<main>
+			<div class="gallery">
+				<!-- leer por js -->
+				<img src="https://www.leagueoflegends.com/static/logo-1200-589b3ef693ce8a750fa4b4704f1e61f2.png" alt="">
+				<img src="../../../files/img/lol/ranked-emblems/Emblem_Iron.png" alt="">
+				<img src="../../../files/img/lol/ranked-emblems/Emblem_Bronze.png" alt="">
+				<img src="../../../files/img/lol/ranked-emblems/Emblem_Silver.png" alt="">
+				<img src="../../../files/img/lol/ranked-emblems/Emblem_Gold.png" alt="">
+				<img src="../../../files/img/lol/ranked-emblems/Emblem_Platinum.png" alt="">
+				<img src="../../../files/img/lol/ranked-emblems/Emblem_Diamond.png" alt="">
+				<img src="../../../files/img/lol/ranked-emblems/Emblem_Master.png" alt="">
+				<img src="../../../files/img/lol/ranked-emblems/Emblem_Grandmaster.png" alt="">
+				<img src="../../../files/img/lol/ranked-emblems/Emblem_Challenger.png" alt="">
+			</div>
+			<div>
+				<!-- leer por js -->
+				<img src="https://www.leagueoflegends.com/static/logo-1200-589b3ef693ce8a750fa4b4704f1e61f2.png" alt="">
+				<img src="../../../files/img/lol/ranked-emblems/Emblem_Iron.png" alt="">
+				<img src="../../../files/img/lol/ranked-emblems/Emblem_Bronze.png" alt="">
+				<img src="../../../files/img/lol/ranked-emblems/Emblem_Silver.png" alt="">
+				<img src="../../../files/img/lol/ranked-emblems/Emblem_Gold.png" alt="">
+				<img src="../../../files/img/lol/ranked-emblems/Emblem_Platinum.png" alt="">
+				<img src="../../../files/img/lol/ranked-emblems/Emblem_Diamond.png" alt="">
+				<img src="../../../files/img/lol/ranked-emblems/Emblem_Master.png" alt="">
+				<img src="../../../files/img/lol/ranked-emblems/Emblem_Grandmaster.png" alt="">
+				<img src="../../../files/img/lol/ranked-emblems/Emblem_Challenger.png" alt="">
+			</div>
+		</main>
+</body>
+
+<script>
+</script>
+</html>

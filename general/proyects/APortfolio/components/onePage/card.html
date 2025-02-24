@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="../../../img/information/c.png" type="image/x-icon">
+	<title>Card</title>
+
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,300;1,400&display=swap');
+
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			font-family: 'Josefin Sans', sans-serif;
+		}
+		
+		body{
+			background: radial-gradient(indigo, #000);
+			background-position-x: 70vw;
+			background-position-y: 70vw;
+			background-size: cover;
+			height: 100vh;
+			overflow: hidden;
+		}
+		
+		main{
+			margin: auto;
+			width: 70vw;
+			height: 100vh;
+		}
+
+		main div{
+			background: #000;
+			position: absolute;
+			overflow: hidden;
+			border-radius: 7px;
+			display: flex;
+			padding: 7px;
+			font-size: 4rem;
+			margin: auto;
+			width: 27vw;
+			height: 70vh;
+			inset: 0;
+			color: #fff;
+			justify-content: center;
+			align-items: center;
+		}
+		img{
+			position: absolute;
+			filter: blur(0px) grayscale(7%) contrast(77%);
+			width: 30vw;
+			z-index: -1;
+		}
+	</style>
+</head>
+<body>
+	<main>
+		<div class="div">
+			<img src="../../../img/utilities/yo4.avif" alt="">
+			<p>Touch any edge, of the image.</p>
+		</div>
+	</main>
+</body>
+
+<script src="../../../js/window.js"></script>
+<script type="text/javascript">
+	VanillaTilt.init(document.querySelector(".div"), {
+		max: 17,
+		speed: 1777
+	});
+</script>
+</html>

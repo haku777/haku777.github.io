@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vocabulary</title>
+    <link rel="shortcut icon" href="https://haku777.com/files/img/utilities/yo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>VOCABULARY</h1>
+        <fieldset>
+            <legend>
+                <code>Remember Words</code>
+            </legend>
+            <h4>These words change automatically every five seconds</h4>
+            <input type="checkbox" name="light" id="light"><label for="light">Dark Mode</label>
+        </fieldset>
+    </header>
+    
+    <div class="wrapper">
+        <div class="main">
+            <div class="data">
+                <section>
+                    <article>
+                        <h3 id="id" hidden></h3>
+                        <h3 id="word">WORD</h3>
+                    </article>
+
+                    <article>
+                        <h3 id="definition">MEANING</h3>
+                    </article>
+                </section>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <code>CREATE BY JIMMY YAHIR GUTIERREZ (HAKU BISHAMON)</code>
+    </footer>
+</body>
+
+<script>
+    
+    (() =>{ 
+        let Word = document.querySelector("#word");
+        let Meaning = document.querySelector("#definition");
+
+        let Data = null;
+        let count = 0;
+
+        // fetch('/api/getwords')
+        // fetch('http://localhost:777/api/getwords')
+        fetch('../../APINodeJS/database/English.json')
+        .then(response => response.json())
+        .then(data => Asignacion(data))
+        .then(data => findDuplicates(data))
+        .catch(error => console.log("error API: " + error));
+
+        function Asignacion(data){
+            Data = data;
+            console.log(Data.Vocabulary.length);
+        }
+
+        function findDuplicates() {
+            var duplicates = [];
+            var unique = {};
+                for (var i = 0; i < Data.Vocabulary.length; i++) {
+                    var word = Data.Vocabulary[i].word;
+                    if (unique[word]) {
+                    if (duplicates.indexOf(word) === -1) {
+                        duplicates.push(word);
+                    }
+                    } else {
+                    unique[word] = true;
+                    }
+                }
+                return console.log("repeted words: " + duplicates);
+            }
+
+        function Intervalo(){
+                let random = Math.floor(Math.random() * Data.Vocabulary.length);
+                let word = Data.Vocabulary[random].word;
+                Word.innerHTML = word;
+
+                let meaning = Data.Vocabulary[random].meaning;
+                Meaning.innerHTML = meaning;
+            }
+        const interval = setInterval(Intervalo,5000);
+        //////////////////////////////////////////////////////////
+        
+        const light = document.getElementById("light");
+        const savedMode = localStorage.getItem('darkMode');
+        if (savedMode === 'true') {
+            document.body.classList.add('dark-mode');
+            light.checked = true;
+        }
+
+        light.addEventListener('change', function () {
+            document.body.classList.toggle('dark-mode', this.checked);
+            localStorage.setItem('darkMode', this.checked);
+        });
+    })();
+
+</script>

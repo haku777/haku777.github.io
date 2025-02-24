@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>IluminationTest</title>
+
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,300;1,400&display=swap');
+
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			font-family: 'Josefin Sans', sans-serif;
+		}
+
+		.wrapper{
+			background: #fc892c;
+			display: flex;
+			justify-content: center;
+			flex-direction: column;
+			align-content: center;
+			align-items: center;
+			height: 100vh;
+			overflow: hidden;
+		}
+
+		main{
+			background: #fc892c;
+			width: 60vh;
+			height: 60vh;
+			margin: auto;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			border-radius: 50%;
+			box-shadow: -2px -2px 7px #ffa835, /*#ffa835*/
+			-7px -7px 17px #ffa835,
+			3px 3px 17px #e86316,
+			27px 27px 17px #ea732e;
+		}
+
+		main div{
+			width: 50vh;
+			height: 50vh;
+			display: flex;
+			color: white;
+			font-size: 0.7vw;
+			align-items: center;
+			flex-direction: column;
+			justify-content: center;
+			text-transform: uppercase;
+			letter-spacing: 10px;
+			border-radius: 50%;
+			box-shadow:inset -3px -3px 7px #ffa835,
+			inset -7px -7px 17px #ffa835,
+			inset 3px 3px 7px #e86316,
+			inset 17px 17px 17px #e86316;
+		}
+
+
+		section{
+			background: #ee7717;
+			height: 20vh;
+			width: 100vw;
+		}
+
+	</style>
+
+</head>
+<body>
+	<div class="wrapper">
+		<main>
+			<div>
+				<h3>Minimal</h3>
+				<h2>Podium</h2>
+				<h4>place your text here</h4>
+			</div>
+		</main>
+		<section></section>
+	</div>
+</body>
+</html>

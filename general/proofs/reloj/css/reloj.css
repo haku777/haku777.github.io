@@ -1,0 +1,99 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+@font-face{
+	font-family: Merge;
+	src: url(../../../font/merge_light.otf);
+}
+
+body{
+	background: linear-gradient(to left,indigo 2%,skyblue 98%);
+	font-family: Merge,serif;
+}
+
+section{
+	width: 60%;
+	margin: auto;
+	margin-top: 4%;
+	border-radius: 3px;
+}
+
+.links{
+	display: flex;
+	justify-content: space-around;
+}
+
+a{
+	background: black;
+	display: inline-block;
+	border-radius: 7px;
+	text-align: center;
+	padding: 20px;
+	width: 70px;
+	font-size: 30px;
+}
+
+a:hover{
+	background: tomato;
+	transition:  .5s ease;
+}
+
+.fecha{
+	background:steelblue;
+	margin-bottom: 10px;
+	text-align: center;
+	font-size: 16px;
+	color:white;
+	padding: 20px;
+}
+
+h2{	
+	display: inline-block;
+}
+
+/*--------------------*/
+
+.date{
+	background:skyblue;
+	text-align: center;
+	font-size: 70px;
+	padding: 10px;
+}
+
+.am-pm{
+	position: absolute;
+	display: inline-block;
+	font-size: 37px;
+}
+
+#ampm{
+	font-size: 40px;
+}
+
+/*--------------------*/
+
+h2{
+	text-align: center;
+}
+
+button{
+	background: crimson;
+	padding: 10px;
+	margin: 10px;
+	border-radius: 3px;
+	border:none;
+}
+
+a{
+	text-decoration: none;
+	color: white;
+}
+/* ------------- */
+
+@media(max-width:700px){
+	section{
+		width: auto;
+	}
+}

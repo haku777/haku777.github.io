@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="https://haku777.com/img/utilities/yo.ico" >
+    <title>drag and drop</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        :root{
+            --0: #000;
+            --1: #fff;
+            --2: tan;
+            --3: crimson;
+            --4: indigo;
+            --5: #333;
+        }
+        body{
+            background-color: var(--5);
+            place-content: center;
+            color: var(--1);
+        }
+        header{
+            background-color: tan;
+            height: 200px;
+            padding-block: 7px;
+            overflow: hidden;
+            & img{
+                width: 700px;
+            }
+            & h1{
+                top: 0;
+                position: absolute;
+                z-index: 10000;
+            }
+        }
+        p{
+            color: #fff;
+        }
+        main{
+            user-select: none;
+        }
+        .row{
+            width: 500px;
+            margin: 10px auto;
+            & aside{
+                padding: 20px;
+                background-color: var(--0);
+            }
+            & span{
+                padding: 20px;
+                background-color: var(--color, crimson);
+            }
+        }
+        .buttons{
+            padding: 20px;
+            margin: auto;
+            width: 200px;
+            & label{
+                margin: 2px;
+                border: 2px solid var(--3);
+            }
+        }
+        .selector{
+            background-color: var(--0);
+            margin: auto;
+            width: 500px;
+            height: 200px;
+        }
+        .img-loaded ,.selector img{
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            cursor: grab;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="../../../img/gif/200.gif" alt="">
+        <h1>Drag and Drop</h1>
+    </header>
+    <main>
+        <h2 contenteditable="true">tier list animals</h2>
+        
+        <div class="row">
+            <aside style="--color: var(--3)">
+                <span contenteditable="true">Fast</span>
+            </aside>
+        </div>
+        <div class="row">
+            <aside style="--color: var(--4)">
+                <span contenteditable="true">Slow</span>
+            </aside>
+        </div>
+        <div class="buttons">
+            <label>
+                FILE
+                <input type="file" id="file" hidden>
+            </label>
+            <label>
+                RELOAD
+                <input type="file" accept="image/*" id="reload" hidden>
+            </label>
+        </div>
+        <div class="selector" id="imgs">
+            <img src="../../../img/pexelFree/girl_beautiful.jpg" alt="">
+        </div>
+    </main>
+</body>
+<script>
+    (()=>{
+    const Doc = doc => document.querySelector(doc);
+    const Docs = docs => document.querySelector(docs);
+
+    const imgInput = Doc('#file');
+    console.log(imgInput)
+    const imgBox = Doc('#imgs');
+    imgInput.addEventListener('change', (event)=>{
+        const [file] = event.target.files
+        if(file ){
+            const reader = new FileReader()
+            reader.onload = (eventReader) =>{
+                const imgElement = document.createElement('img')
+                imgElement.draggable = true
+                console.log(eventReader.target.result)
+                imgElement.src = eventReader.target.result
+                imgElement.className = 'img-loaded'
+                imgBox.appendChild(imgElement)
+            }
+            reader.readAsDataURL(file)
+        }
+    })
+    })()
+</script>
+</html>

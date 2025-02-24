@@ -1,0 +1,207 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(to top,white,skyblue);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: #555555;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+header{
+    background: rgb(0,25,77);
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+}
+
+header div{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+}
+
+header div h2{
+    display: inline-block;
+}
+
+header img{
+    width: 77px;
+    height: 77px;
+    border-radius: 50%;
+}
+
+header a{
+    text-decoration: none;
+    color: white;
+    font-size: 2rem;
+    right: 0;
+}
+
+main{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    backdrop-filter: blur(30px);
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+#tarjetas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+section{
+    padding: 4px;
+    margin: 5vh 2vh;
+    overflow: hidden;
+    display: inline-block;
+    box-shadow: 3px 3px 7px lightslategrey;
+}
+
+/* ---------------- */
+
+.hero{
+    /* background: skyblue; */
+    /* padding: 10px; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.foto{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.info{
+    background: white;
+    padding: 10px;
+    width: 100%;
+}
+.foto, .voto img{
+    overflow: hidden;
+    cursor: pointer;
+}
+
+/* ----------------- */
+.foto img{
+    width: 16rem;
+    height: 18rem;
+    transition-duration: .7s;
+}
+
+.foto img:hover{
+    transform: scale(1.7);
+}
+
+.info h3,.info .voto{
+    display: block;
+}
+
+.info h3{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.info b{
+    color: tomato;
+}
+
+.info img{
+    width: 50px;
+    height: 50px;
+}
+
+/* --------------- */
+
+.voto, .likes, .dislikes{
+    /* background: #cdcdcd; */
+    padding: 10px 0px 0px 0px;
+    display: flex !important;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+}
+
+.voto img{
+    display: inline-block;
+}
+
+/* ----------------- */
+#paginas{
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+#paginas span{
+    background: radial-gradient(black,darkmagenta);
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+    padding: 0px 10px;
+    margin-left: 20px;
+    font-size: 2rem;
+    transition-duration: .3s;
+}
+
+#paginas span:hover{
+    background: radial-gradient(indigo,darkmagenta);
+}
+/* -------------- */
+.datos{
+    padding: 20px;
+}
+@media(max-width:1080px){
+    .page{
+        flex-direction: column;
+    }
+}
+
+/* ---------------------- */
+
+@media(max-width:750px){
+    main{
+        padding: 20px;
+        width: 90% !important;
+    }
+
+    section, .hero,main{
+        padding: 0;
+        width:100%;
+    }
+}
+
+
+/* ---------------------------- */
+
+@media(max-width:600px){
+    .hero{
+        flex-direction: column;
+    }
+    .info{
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+    }
+}

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="../../../img/information/c.png" type="image/x-icon">
+	<title>banner</title>
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,300;1,400&display=swap');
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			font-family: 'Josefin Sans', sans-serif;
+			transition: .7s;
+		}
+		body{
+			background: #dadada;
+			width: 100vw;
+			height: 100vh;
+			display: flex;
+			justify-content: center;
+			align-content: center;
+			align-items: center;
+			overflow: hidden;
+		}
+		main
+		{
+			background: #aaa;
+			border-radius: 30px;
+			position: relative;
+			width: 30vw;
+			height: 80vh;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-evenly;
+			align-items: center;
+			box-shadow: 
+			inset -3px -3px 4px #fff,
+			inset 3px 3px 7px #555;
+		}
+
+		main div{
+			background: #fff;
+			padding: 2vw;
+			width: 90%;
+			height: 20vh;
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			align-items: center;
+			border-radius: 30px;
+			overflow: hidden;
+		}
+
+		main div div{
+			flex-direction: column;
+			font-size: 1vw;
+		}
+
+		main:hover > div{
+			filter:blur(5px);
+			opacity: 0.25;
+		}
+
+		main div:hover{
+			filter:blur(0px);
+			opacity: 1;
+		}
+
+		h2{
+			text-align: center;
+			width: 100%;
+			color: #252525;
+		}
+
+		h3{
+			color: #7a7a7a;
+		}
+
+		main div img{
+			width: 7vw;
+			border-radius: 10%;
+		}
+	</style>
+</head>
+<body>
+	<main>
+		<div>
+			<img src="../../../img/utilities/yo4.avif" alt="imajen de Jimmy Yahir Gutierrez">
+			<div>
+				<h2>Hover me</h2>
+				<h3>in develop</h3>
+			</div>
+		</div>
+		<div>
+			<img src="../../../img/utilities/yo4.avif" alt="imajen de Jimmy Yahir Gutierrez">
+			<div>
+				<h2>Jimmy Yahir Gutierrez</h2>
+				<h3>developer</h3>
+			</div>
+		</div>
+		<div>
+			<img src="../../../img/utilities/yo4.avif" alt="imajen de Jimmy Yahir Gutierrez">
+			<div>
+				<h2>Jimmy Yahir Gutierrez</h2>
+				<h3>developer</h3>
+			</div>
+		</div>
+	</main>
+</body>
+</html>
+
+
+

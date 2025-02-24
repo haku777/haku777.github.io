@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #d9d9d9;
+}
+
+header {
+  background: slateblue;
+}
+
+img {
+  border-radius: 50%;
+  width: 77px;
+  height: 77px;
+  border: 3px solid white;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 17px;
+  padding: 10px;
+  display: block;
+  width: 69px;
+  /* ------------ */
+}
+a:hover {
+  background: lightseagreen;
+}
+
+nav {
+  padding: 10px 0px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  background: indigo;
+}
+
+nav ul li ul {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  display: none;
+}
+
+nav ul li ul li {
+  position: relative;
+}
+
+nav ul li ul li ul {
+  position: absolute;
+  left: 100%;
+  top: 0;
+}
+
+nav ul li:hover > ul {
+  display: block;
+}/*# sourceMappingURL=sass.css.map */

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>body{background: #eeccff;}.container{background:white;
+        width: 700px;height: 700px;margin:auto;margin-top: 10vh;box-shadow: 2px 2px 7px gray;}p{font-weight: 700;font-size: 1rem;}</style>
+</head>
+<body>
+    <main>
+        <!-- akshan -->
+
+        <section class="container" id="container">
+            <p id="sucesion">sucesion de fubonacci</p>
+            <p id="perfectos">numeros perfectos</p>
+            <p id="gemelos">string gemelos(que tienen las mismas letras diferente orden)</p>
+        </section>
+    </main>
+    <script>
+        let container = document.querySelector("#container");
+        let sucesionDom = document.querySelector("#sucesion");
+        let perfectos = document.querySelector("#perfectos");
+        let gemelos = document.querySelector("#gemelos");
+
+
+        function sucesionF(n){
+            // 0,1,1,2,3,5,8,13,21,34,55,89,144,233,377,610,987,1597
+            let sucesion = 0;
+            let sucesion_actual = 0;
+            let sucesion_anterior = 0;
+            
+            for(let i = 0; i < n; i++){
+                if (sucesion_actual == 0){
+                    sucesion_actual = 1;
+                }
+                // console.log(sucesion);
+                sucesion_actual = sucesion_actual + sucesion_anterior;
+                sucesion_anterior = sucesion_actual - sucesion_anterior;
+                sucesion +="," + sucesion_anterior;
+                sucesionDom.innerHTML = `sucesion_fubonacci:  ${sucesion}`;
+            }
+            return sucesion;
+        }
+        sucesionF(12);
+
+        // ------------------------------------------------------------------ 
+
+        function numerosPerfectos(n){
+            //  6,28,496,8128,33550336,8589869056
+            
+            let numerosP;
+            
+            for(let i = 0; i <= n; i++){
+                let resultado = i % n
+                if((n % i) == 0){
+                    console.log("es perfecto" + i)
+                    numerosP += i;
+                }
+            }
+            
+            return "que paso?  " + numerosP;
+        }
+
+        console.log(numerosPerfectos(30));
+     </script>
+</body>
+</html>

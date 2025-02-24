@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+<style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    #wrapper-personalizado{
+      position: absolute;
+      width:100%;
+      min-height:100vh;
+      overflow: hidden;
+    }
+
+    .layer{
+      position: absolute;
+      width:100vw;
+      min-height: 100vh;
+      overflow: hidden;
+    }
+
+    .layer .content-wrap{
+      position: absolute;
+      width:100vw;
+      min-height: 100vh;
+    }
+
+    .layer .content-body{
+      width:25%;
+      position:absolute;
+      top:50%;
+      text-align: center;
+      transform:translateY(-50%);
+      color:#fff;
+      z-index:1
+    }
+
+    .layer img{
+      position: absolute;
+      object-fit: fill;
+      width:100vw;
+      top:50vh;
+      left: 50vw;
+      transform:translate(-50%, -40%);
+    }
+
+    .layer h1{
+      font-size:2em;
+    }
+
+    .bottom{
+      background:#222;
+      z-index:1;
+      transition: all 1000ms cubic-bezier(0.63, 0.04, 0.69, 1.01);
+    }
+
+    .bottom:hover ~ .top {
+        width: calc(5vw + 1150px);
+    }
+
+    .bottom .content-body{
+      right:5%;
+      transition: all 1000ms cubic-bezier(0.63, 0.04, 0.69, 1.01);
+    }
+
+    .bottom:hover .content-body {
+      right: 50%;
+      transform: translateX(50%)
+    }
+
+    .bottom h1{
+      color: crimson;
+    }
+
+    .top{
+      background:#eee;
+      color:#222;
+      z-index:2;
+    }
+
+    a{
+      text-decoration: none;
+      color: #fff;
+      font-size: 20px;
+      text-shadow: 0px 0px 1px #000;
+    }
+
+    .top .content-body{
+      left: 5%;
+      transition: all 1000ms cubic-bezier(0.63, 0.04, 0.69, 1.01) 
+    }
+
+    .skewed .top{
+      transform: skew(-20deg);
+      margin-left:-1000px;
+      width: calc(50vw + 1000px);
+      border-right: 7px solid crimson;
+      transition: all 1000ms cubic-bezier(0.63, 0.04, 0.69, 1.01) 
+    }
+
+    .skewed .top:hover {
+      width: calc(100vw + 750px);
+    }
+
+    .skewed .top:hover .content-body {
+      left: 50%;
+      transform: translateX(-50%)
+    }
+
+    .skewed .top .content-wrap{
+      transform: skew(20deg);
+      margin-left:1000px;
+    }
+
+    @media(max-width:1023px){
+      
+      body{
+        font-size:75%;
+      }
+      
+      .skewed{
+        display: none;
+      }
+    }
+</style>
+</head>
+<body>
+  <section class="skewed flex" id="wrapper-personalizado">
+        <div class="layer bottom" id="one">
+            <div class="content-wrap">
+                <div class="content-body">
+                    <h1>LOL</h1>
+                    <a href="<?php echo the_field('boton_hero'); ?>" class="theme-btn">Conoce más</a>
+                </div>
+                <img src="../../../files/img/pexelFree/girl_like.jpg" alt="">
+            </div>
+        </div>
+        <div class="layer top" id="two">
+            <div class="content-wrap">
+                <div class="content-body">
+                    <h1>DEVELOP</h1>
+                    <a href="<?php echo the_field('boton__hero_2'); ?>" class="theme-btn">Conoce más</a>
+                </div>
+                <img src="../../../files/img/pexelFree/code.jpg" alt="">
+            </div>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #cecece;
+  font-size: 1rem;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-align: center;
+  font-weight: 100;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+main {
+  background-color: #ddd;
+  padding: 17px;
+  width: 80vw;
+  height: 80vh;
+  color: #070707;
+  overflow: hidden;
+}
+
+main section{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.dates{
+  text-align: left;
+  padding: 17px;
+  width: 50%;
+  height: 70vh;
+  overflow-y: scroll;
+}
+
+.year{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-content: center;
+  align-items: center;
+  width: 50%;
+  border-left: 1px solid #000;
+}
+.percent{
+  background-color: salmon;
+  width: 27vw;
+  height: 27vw;
+  border-radius: 50%;
+}

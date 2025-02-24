@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <!-- <h2>numero perfecto</h2> -->
+        <h2>sucesion de fibonacci</h2>
+    </main>
+
+<script>
+
+
+    // let url = ("GET","prueba_api.json", true);
+    // let api = new XMLHttpRequest(url);
+    // api.send();
+    // api.open();
+    // console.log(api)
+
+
+//sucesion de fibonacci
+// 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55
+
+// //si la función recibe el número 5 el resultado de la misma debe ser =   
+// 0, 1, 1, 2, 3
+
+// function fibonacci(n){
+//     let sucesion = 0;
+//     let valor_anterior = sucesion;
+    
+//     for(let i = 0; i <= n; i++){
+    
+//         if (sucesion == 0){
+//             document.write(sucesion + ",");
+//             sucesion = sucesion + 1;
+//             continue;
+//         }
+//         sucesion = sucesion + valor_anterior;
+//         valor_anterior =sucesion -valor_anterior;
+//         document.write(sucesion + ",");
+//     }
+//     return true
+// }
+// fibonacci(prompt("valor para crear la sucesion"));
+
+// ----------------------------------------------------
+
+
+// validar numero perfecto    
+    function validar(n){
+        let contador = 0;
+        let perfecto = 0;
+        let numero = parseInt(n);
+        // mientras que numero sea mayor que el valor a dividir retorne el valor de la suma de los dividendos
+        while (contador < numero){
+            let valido = (numero % contador)
+            if (valido == 0){
+                console.log(valido)
+                perfecto += contador
+            }else{
+                console.log(valido)
+            }
+            contador += 1
+        }
+        console.log(contador)
+        // validamos si la suma de los divisores es igual al numero dado
+        if (perfecto == numero){
+            document.write("es perfecto " + numero);
+        }else{     
+            document.write("no es " + numero);
+        }
+    }
+    validar(prompt("ingrese un numero"));
+
+</script>
+
+
+</body>
+</html>
+
+
+
+

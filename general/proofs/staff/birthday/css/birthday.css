@@ -1,0 +1,217 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  width: 100vw;
+  height: 100vh;
+}
+.wrapper {
+  background: #cdcdcd;
+  font-family: Cambria, Tahoma ,Arial;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+h1{
+  text-align: center;
+  padding: 40px;
+  color: #333;
+}
+h2{
+  padding: 20px;
+  color: #333;
+}
+
+main {
+  background-color: #ddd;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 100;
+  padding: 17px;
+  color: #333;
+}
+
+.date{
+  max-height: 70px;
+  aspect-ratio: 1/1;
+}
+
+.card{
+  width: 40%;
+  height: 500px;
+  padding: 10px;
+  /* overflow: hidden; */
+}
+
+.information{
+  width: 40%;    
+  height: 500px;
+  padding: 10px;
+}
+.next{
+  font-size: 27px;
+  padding: 7px;
+  color: #fff;
+  background-color: #333;
+  cursor: pointer;
+  /* writing-mode: vertical-lr; */
+}
+
+main .card .img{
+  border: 2px solid #333;
+  border-radius: 7px;
+  padding: 10px;
+  width: 100%;
+  height: 100%;
+}
+
+main .card .img::before{
+  background: hsla(0, 0%, 18%, 0.819);
+  color: #fff;
+  position: absolute;
+  content: 'Photos';
+  padding: 2px;
+  z-index: 10000;
+}
+
+main .card img{
+  box-shadow: 0px 0px 4px 1px #333;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 1/1;
+}
+
+fieldset{
+  border: 2px solid #333;
+  border-radius: 7px;
+  padding: 10px;
+  & p{
+    text-align: left;
+    font-size: 3ch;
+  }
+}
+
+legend{
+  font-size: 70px;
+}
+
+code{
+  background-color: #999;
+  color: #fff;
+  width: 200px;
+  height: 100px;
+  aspect-ratio: 1/1;
+  border-radius: 7px;
+}
+
+.dates{
+  text-align: left;
+  padding: 17px;
+  width: 50%;
+  height: 70vh;
+  overflow-y: scroll;
+}
+
+.year{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-content: center;
+  align-items: center;
+  width: 50%;
+  border-left: 1px solid #000;
+}
+.percent{
+  background-color: salmon;
+  width: 27vw;
+  height: 27vw;
+  border-radius: 50%;
+}
+
+aside{
+  display: none;
+}
+
+a{
+  background-color: crimson;
+  text-decoration: none;
+  display: block;
+  color: #fff;
+  width: 200px;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  padding: 7px;
+  border-radius: 3px;
+}
+
+.Photos{
+  background: #000;
+  position: absolute;
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  z-index: 20000;
+  overflow: hidden;
+  & img{
+    max-height: 94vh;
+  }
+  & p{
+    position: absolute;
+    background: green;
+    font-size: 27px;
+    margin: 10px;
+    color: #fff;
+    top: 50vh;
+    width: 20px;
+    border-radius: 3px;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    z-index: 40000;
+    padding: 4px;
+    padding-right: 30px !important;
+  }
+}
+
+.Photos p:nth-child(4){
+  right: 0;
+}
+
+.showPhotos{
+  display: block;
+}
+
+.change{
+  cursor: pointer;
+}
+
+@media(max-width:750px){
+  .card,.information{
+    width: 100%;
+    height: 100%;
+  }
+  main{
+    flex-direction: column;
+  }
+  .card, .information{
+    width: 70%;
+  }
+
+  .Photos{
+    display: none;
+    & img{
+      max-width: 90vw;
+      object-fit: cover;
+    }
+  }
+}

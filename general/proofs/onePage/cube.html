@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Cube</title>
+
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,300;1,400&display=swap');
+
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+
+		body{
+			background: #000;
+			height: 100vh;
+			display: flex;
+			justify-content: center;
+			align-content: center;
+			align-items: center;
+		}
+
+		main{
+			/* background: salmon; */
+			width: 230px;
+			height: 230px;
+			transform-style: preserve-3d;
+			animation: animate 7s linear infinite;
+		}
+
+		@keyframes animate{
+			from{transform: rotateX(-20deg) rotateY(360deg);}
+			to{transform: rotateX(-20deg) rotateY(0deg);}
+		}
+
+		main:hover div span{background: #0007 !important;border:1px solid white;height: 200px;}
+
+		.block{
+			position: absolute;
+			inset: 0;
+			transform-style: preserve-3d;
+		}
+
+		.block span{
+			position: absolute;
+			left: calc(50% - 100px);
+			width: 200px;
+			height: 100px;
+			transform: rotateY(calc(90deg * var(--i))) translateZ(100px);
+		}
+
+		span{
+			display: flex;
+			justify-content: center;
+			align-content: center;
+			align-items: center;
+			font-size: 2.7rem;
+			color: #fff;
+			transition: .7s;
+			text-transform: uppercase;
+		}
+
+		.light{
+			position: absolute;
+			margin-top: -570px;
+			width: 70px;
+			height: 70px;
+			border-radius: 50%;
+			/* transform: rotateX(90deg) rotateY(360deg); */
+			background: #fff;
+			box-shadow: 0px 0px 25px violet,
+			0px 0px 50px violet,
+			0px 0px 77px violet,
+			0px 0px 100px violet,
+			0px 0px 177px violet,
+			0px 0px 250px violet,
+			0px 0px 300px violet,
+			0px 0px 500px violet;
+		}
+
+		div .top{
+			width: 200px;
+			height: 200px;
+			margin-top: -100px;
+			background: #000;
+			transform: rotatex(90deg);
+		}
+
+		.bottom{
+			position: absolute;
+			width: 377px;
+			height: 120px;
+			margin-top: 377px;
+			border-radius: 50%;
+			transform: rotatez(2deg);
+			background: purple;
+			box-shadow: 0px 0px 77px purple,
+			0px 0px 777px purple;
+		}
+
+	</style>
+
+</head>
+<body>
+	<div class="light"></div>
+	<main class="box">
+		<div class="block">
+			<span class="top"></span>
+			<span style="--i:0; background: #ee5e90;">nort</span>
+			<span style="--i:1; background: #ff3c00;">east</span>
+			<span style="--i:2; background: #403077;">south</span>
+			<span style="--i:3; background: #20ee8d;">west</span>
+		</div>
+	</main>
+	<div class="bottom"></div>
+</body>
+
+<script>
+
+</script>
+</html>

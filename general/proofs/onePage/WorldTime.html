@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en" data-website-id="1" data-oe-company-name="haku777" xml:lang="en" xmlns="https://www.w3.org/1999/xhtml/">
+<head>
+	<meta charset="UTF-8">
+	<meta name="title" content="World Time | Jimmy Yahir Gutierrez">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Explore the web development portfolio of Jimmy Yahir Gutierrez haku haku777 haku bishamon. Discover time in the world.">
+	<meta name="robots" content="index, follow">
+	<meta name="theme-color" content="#4b0082"/>
+	<link rel="canonical" href="https://haku777.com/">
+	<meta property="title" content="World Time - Jimmy Yahir Gutierrez">
+	<meta property="image" content="https://haku777.com/img/versiones/v7.avif">
+	<meta property="og:image" content="https://haku777.com/img/versiones/v7.avif">
+	<meta property="og:title" content="World Time - Jimmy Yahir Gutierrez">
+	<meta property="og:description" content="Explore the web development portfolio of Jimmy Yahir Gutierrez haku haku777 haku bishamon. Discover showcased projects and skills in front-end and back-end development.">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="@exampledeveloper">
+	<meta name="twitter:title" content="World Time - Jimmy Yahir Gutierrez">
+	<meta name="twitter:description" content="Explore the web development portfolio of Jimmy Yahir Gutierrez haku haku777 haku bishamon. Discover showcased projects and skills in front-end and back-end development.">
+	<meta name="twitter:image" content="https://haku777.com/img/versiones/v7.avif">
+	<link rel="shortcut icon" href="https://haku777.com/img/utilities/yo.avif">
+	<link rel="icon" href="https://haku777.com/img/utilities/yo.ico">
+	<link rel="alternate" lang="en" href="https://haku777.com/index_es.html">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>World Time | Jimmy Yahir Gutierrez</title>
+
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		body{
+			background: #ebebeb;
+			width: 100vw;
+			height: 100vh;
+			font-size: 17px;
+			display: flex;
+			text-align: center;
+			justify-content: center;
+			overflow: hidden;
+		}
+
+		main{
+			background: #fdfdfd;
+			margin: auto;
+			padding: 7px;
+			width: 90vw;
+			min-height: 70vh;
+			display: flex;
+			justify-content: space-around;
+		}
+		
+		h1, h2{
+			letter-spacing: 2px;
+			font-size: 2.7vw;
+			display: inline-block;
+			width: 100%;
+			text-transform: uppercase;
+			font-family: Georgia, 'Times New Roman', Times, serif;
+			background-image: 
+			linear-gradient(90deg, #1e90ff 47%, #770077 60% 100%);
+			background-clip: text;
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			-webkit-box-decoration-break: clone;
+		}
+
+		h2{
+			background-image: 
+			linear-gradient(90deg, #f77777 47%, #4c4c4c 60% 100%);
+			text-transform: capitalize;
+			font-weight: 100;
+		}
+
+		main section{
+			background-color: #77007704;
+			padding: 17px;
+			margin: 7px;
+			width: 40%;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-around;
+			align-content: center;
+			align-items: center;
+			overflow: hidden;
+			transition-duration: .7s;
+		}
+
+		main section:hover{
+			background-color: #fff;
+			box-shadow: 0px 0px 17px #cecece27;
+		}
+
+		p{
+			color: #51555e;
+		}
+		
+		a{
+			background: #fff;
+			text-decoration: none;
+			margin: 40px;
+			padding: 10px 20px;
+			border: none;
+			color: #12ade6;
+			font-size: 1.4rem;
+			border: 3px solid #12ade6;
+		}
+
+		a:hover{
+			background: #12ade6;
+			color: #fff;
+			cursor: pointer;
+		}
+
+		/* -------------- */
+
+		.year{
+			display: flex;
+			flex-direction: column;
+			justify-content: space-evenly;
+			align-content: center;
+			align-items: center;
+		}
+		.percent{
+			background-color: #f77;
+			width: 27vw;
+			height: 27vw;
+			border-radius: 50%;
+		}
+
+		.dates p{
+			font-size: 3.7vw;
+		}
+
+		@media(max-width: 750px){
+			main{
+				flex-direction: column;
+				width: 100vw;
+			}
+			main section{
+				margin: 0;
+				width: 100%;
+			}
+		}
+
+	</style>
+</head>
+<body>
+	<main>
+		<section>
+			<h1>World Time</h1>
+			<h2>Our time in another part in the world</h2>
+			<a href="https://haku777.com/">Web Page</a>
+		</section>
+		<section class="timer"></section>
+		<section>
+			<h2 class="year">Year percent</h2>
+			<div>
+                <div class="percent" id="percent"></div>
+            </div>
+		</section>
+
+	</main>
+
+	<script>
+		(()=>{
+			let places = ["UTC","Colombia","日本","France"];
+			let dates = document.querySelector(".timer");
+			function updateTime(){
+				dates.innerHTML =""; 
+				let date = new Date();
+				for(let i = 0; i < places.length; i++){
+					var dateTime = date.getHours();
+					switch (places.length != 0) {
+						case places[i] == "UTC":
+							dateTime = dateTime + 5;
+							break;
+						case places[i] == "Colombia":
+							dateTime = dateTime;
+							break;
+						case places[i] == "日本":
+							dateTime = dateTime + 14;
+							break;
+						case places[i] == "French":
+							dateTime = dateTime + 7;
+							break;
+						default:
+					}
+					let ampm = " am";
+					if(dateTime > 12){
+						ampm = " pm";
+						dateTime = dateTime - 12;
+						if(dateTime > 12 || dateTime > 24){
+							ampm = " am";
+							dateTime = dateTime -12;
+						}
+					}
+
+
+					dates.innerHTML += 
+					"<div class='dates'>" 
+					+ "<h2>" + places[i] + "</h2>"
+					+ "<p>" + 
+					+ dateTime + ":"
+					+ date.getMinutes() + ":" 
+					+ date.getSeconds()
+					+ ampm
+					+ "</p>" 
+					+ "</div>";
+				}
+			}
+			updateTime();
+			let timer = setInterval(updateTime,1000);
+			
+		})();
+
+
+		function time(){
+			let ahora = new Date();
+			let comienzo = new Date(ahora.getFullYear(), 0);
+			var dif = ahora - comienzo;
+			var unDia = 1000 * 60 * 60 * 24; // 60.000= 1seg / 1 min / 1hour / 1day
+			var dias = Math.round(dif / unDia);
+			let diasFaltantes = 365 - dias;
+			let porcentaje = 100 / 365;
+			let seconds = ahora.getSeconds();
+			segPor = 100/60;
+			seconds = seconds * segPor;
+			let consumidos = dias * porcentaje;
+			let percent = document.getElementById("percent");
+			let year = document.querySelector(".year");
+			year.innerHTML = "<h2>Year: " 
+				+ ahora.getFullYear() 
+				+ "</h2>"
+				+ "passed: " + dias + " days <br>"
+				+ "left: " + diasFaltantes + " days"
+				+ "</p>";
+			percent.style.background = 
+			`conic-gradient(#e73e73 ${consumidos}%,#1e90ff47 ${consumidos}% 100%)`;
+		}
+		time();
+	</script>
+</body>
+</html>
+
+
+

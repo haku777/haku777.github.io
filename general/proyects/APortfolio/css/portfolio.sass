@@ -1,0 +1,339 @@
+
+$c1:#ffffff
+$c2:#000000
+$c3:#e10e47
+$c4:#770077
+
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+@font-face
+    font-family: Merge
+    src: url(../../font/merge_light.otf)
+    font-display: swap
+
+html
+    scroll-behavior: smooth
+
+body
+    font-family: 'Cambria','poppins',Merge,sans-serif
+    font-weight: 900
+    font-size: 1vw
+    &::-webkit-scrollbar
+        background: $c2
+        width: 7px
+    &::-webkit-scrollbar-thumb
+        background: $c4
+        border: 1px solid $c2 
+        border-radius: 7px
+
+main
+    // background: url(../../img/utilities/white.jpg)
+    // background-attachment: fixed
+    // background-size: cover
+    background: #000
+    padding-bottom: 4vh
+
+h1
+    font-size: 3rem
+
+h2
+    color: #fff
+    font-size: 7vw
+    text-align: center
+    text-transform: uppercase
+    text-shadow: 0px 2px 2px #252555
+
+section
+    margin: 0 0 30vh 0
+
+.start
+    #particles-js
+        height: 50vh
+        h2
+            position: absolute
+            color: #fff
+            margin-top: 20vh
+            margin-left: 20vw
+            width: 50%
+
+    .subhead
+        background: linear-gradient(to top, transparent, #4b0082, #000)
+        margin: auto
+        color: white
+        height: 50vh
+        padding: 20px
+        display: flex
+        justify-content: center
+        flex-direction: column
+        align-content: center
+        align-items: center
+        font-size: 3rem
+        img
+            border-radius: 50%
+            right: 10vw
+            top: 40vh
+            width: 17vh
+            position: absolute !important
+            height: 17vh
+        h3
+            font-size: 2.7vw
+            color: #00ffb3
+        .media
+            a
+                padding: 7px
+                color: #00ff88
+                font-size: 2vw
+                border-bottom: 2px solid #00ffff
+                border-radius: 2px
+                transition-duration: .7s
+            :hover
+                color: #222
+                background: #00ffff
+                box-shadow: 0px 0px 7px 1px #00ffff
+
+.proyects
+    width: 100%
+    height: 70vh
+    top: 20px
+    position: relative
+    display: flex
+    justify-content: center
+    align-content: center
+    align-items: center
+    overflow: hidden
+    z-index: 0
+    .card
+        background: #002e8599
+        position: absolute
+        width: 27vw
+        height: 70vh
+        transition:  0.5s
+        display: flex
+        flex-direction: column
+        border: 1px solid #00ffff
+        border-radius: 7px
+        overflow: hidden
+        z-index: 10
+        .img
+            width: 100%
+            height: 68%
+            overflow: hidden
+            img
+                width: 100%
+                height: 100%
+                transition-duration: 1s
+        img:hover
+            transform: scale(1.2)
+        .desc
+            height: 30%
+            padding: 7px
+            color: #fff
+            a
+                width: 70%
+                margin: auto
+                display: block
+                color: #fff
+                padding: 10px
+                font-size: 2vw
+                text-align: center
+                border: 1px solid #00ffff
+                border-radius: 7px
+                text-shadow: 1px 1px 1px #252555
+                transition-duration: .7s
+            a:hover
+                background: #00ffff
+                box-shadow: 0px 0px 7px 1px #00ffff
+            p
+                text-align: center
+                padding: 7px
+                color: #00ecc5
+                height: 50%
+                overflow: hidden
+            .tools
+                padding: 7px
+                width: 100%
+                height: auto
+                display: flex
+                flex-wrap: wrap
+                justify-content: center
+                align-content: center
+                align-items: center
+                span
+                    margin: 2px
+                    padding: 7px
+                    color: #fff
+                    background: #00ffff
+                    text-shadow: 0px 0px 2px #000b72
+                    border-radius: 3px
+
+    #prev, #next
+        position: absolute
+        width: 5vw
+        height: 5vw
+        color: #fff
+        cursor: pointer
+        font-size: 4vw
+        line-height: 4vw
+        text-align: center
+        border: 3px solid #fff
+        border-radius: 50%
+        transition-duration: 1s
+        z-index: 10000
+    #prev:hover, #next:hover
+        background: #00c7c7
+    #prev  
+        left: 4vw
+    #prev::before  
+        content: '<'
+    #next  
+        right: 4vw
+    #next::before  
+        content: '>'
+
+
+
+.uncomplete
+    background-color: crimson
+
+.missing
+    background-color: salmon
+
+.skills
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    align-content: center
+    align-items: center
+    padding: 100px
+    img
+        border-radius: 17px
+        padding: 10px
+        margin: 7px
+        width: 20%
+        height: 10vw
+
+.contact
+    display: flex
+    flex-direction: row
+    justify-content: space-evenly
+    align-content: center
+    align-items: center
+    img
+        border-radius: 50%
+        width: 40vw
+        height: 70vh
+        filter: invert(100%) brightness(40%)
+    form
+        width: 40vw
+        height: 60vh
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-content: center
+        align-items: center
+        textarea
+            text-align: center
+            outline: none
+            color: #252555
+            font-size: 2rem
+            padding: 7px 0px
+            border: none
+            width: 70%
+        label,input
+            margin: 7px 0
+            width: 70%
+            color: #fff
+            font-size: 1.7rem
+            text-align: center
+            display: inline-block
+            input
+                text-align: center
+                outline: none
+                color: #252555
+                font-size: 2rem
+                padding: 7px 0px
+                border: none
+                width: 100%
+
+        input[type="submit"]
+            background: crimson
+            text-transform: uppercase
+            cursor: pointer
+            text-shadow: none
+            font-size: 1.7rem
+            border: none
+            color: white
+            padding: 7px 0px
+            width: 17vw
+            transition-duration: .7s
+            &:hover
+                background: #00c0a0
+                // background: tomato
+
+.h3
+    margin-top: -30vh
+    color: #fff
+    text-align: center
+    font-size: 1.2rem
+    word-break: normal
+
+#go
+    margin: auto
+    font-size: 7px
+    text-align: center
+    cursor: pointer
+    position: fixed
+    bottom: 1vh
+    right: 1vh
+    z-index: 1000
+svg 
+    width: 4vh
+    height: 4vh
+    box-shadow: 0px 0px 10px 2px lime
+
+// -----------------
+@media(max-width: 900px)
+    .proyects
+        .card
+            width: 70vw
+    h1
+        font-size: 9vw
+
+    .start .subhead img
+        right: 25vw
+
+
+@media(max-width: 750px)
+    .contact
+        img
+            display: none
+    .contact
+        width: 100vw
+        padding: 0px
+        form
+            width: 100%
+            input[type="submit"]
+                width: 40vw
+
+    .proyects 
+        .desc
+            a
+                width: 77vw
+                border-radius: 7px
+    
+    .skills
+        padding: 0
+        img
+            width: 20vh
+            height: 20vh
+
+@media(max-width: 350px)
+    .start
+        .subhead
+            img
+                top: 37vh
+                width: 47vw
+                height: 47vw

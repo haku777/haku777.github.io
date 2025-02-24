@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shorcut icon" href="../../../img/utilities/yo4.avif" />
+    <title>cardVideo</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Noto Sans JP', sans-serif;
+        }
+        :root{
+            --gray: #000;
+        }
+        body {
+            background: var(--gray);
+            color: #252525;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        main {
+            position: relative;
+            display: grid;
+            gap: 20px;
+        }
+        .box{
+            background: crimson;
+            width: 500px;
+            height: 300px;
+            border-radius: 17px;
+        }
+        .box:nth-child(1){
+            overflow: hidden;
+        }
+
+        .box:nth-child(1) video{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .box:nth-child(1)::before{
+            position: absolute;
+            background: transparent;
+            content: '';
+            top: 168.1px;
+            left: -0.2px;
+            width: 40px;
+            height: 40px;
+            border-bottom-left-radius: 100%;
+            box-shadow: -17px 3px var(--gray);
+            z-index: 10000;
+        }
+
+        .box:nth-child(1)::after{
+            position: absolute;
+            background: transparent;
+            content: '';
+            top: 263px;
+            left: 101.6px;
+            width: 40px;
+            height: 40px;
+            border-bottom-left-radius: 100%;
+            box-shadow: -8px 9px var(--gray);
+            transform: rotate(-9deg);
+            z-index: 1000;
+        }
+
+        .box:nth-child(2){
+            background: #00a2ff;
+            width: 450px;
+            display: flex;
+            flex-direction: row;
+            overflow: hidden;
+        }
+
+        .box:nth-child(2)::before{
+            position: absolute;
+            background: transparent;
+            content: '';
+            bottom: 165.4px;
+            left: -2px;
+            width: 40px;
+            height: 40px;
+            border-top-left-radius: 100%;
+            box-shadow: -13px -7px 0px 5px var(--gray);
+            transform: rotate(-6deg);
+            z-index: 1000;
+        }
+
+        .box:nth-child(2)::after{
+            position: absolute;
+            background: transparent;
+            content: '';
+            bottom: 262.4px;
+            left: 101px;
+            width: 40px;
+            height: 40px;
+            border-top-left-radius: 100%;
+            box-shadow: -7px -9px var(--gray);
+            transform: rotate(7deg);
+            z-index: 1000;
+        }
+
+        .circle{
+            position: absolute;
+            background: #000;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 217px;
+            height: 217px;
+            left: -110px;
+            border-radius: 50%;
+            border: 17px solid var(--gray);
+        }
+        
+        .circle img{
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        
+        code{
+            background: crimson;
+            color: #fff;
+            font-size: 1.2rem;
+            writing-mode: vertical-lr;
+            text-orientation: upright;
+            padding-top: 120px;
+            padding-left: 17px;
+            width: 17%;
+            height: 100%;
+            inset: 20px 50px 30px 10px;
+        }
+        
+        h2{
+            text-transform: uppercase;
+            padding: 47px 0px 27px 77px;
+            color: #fff;
+        }
+
+        p, h3{
+            background: #003cff;
+            text-align: center;
+            padding: 12px 0px;
+            color:#fff;
+        }
+
+        a{
+            position: absolute;
+            background: dodgerblue;
+            text-decoration: none;
+            border: 7px solid var(--gray);
+            transition-duration: 1s;
+            border-radius: 30px;
+            text-align: center;
+            padding: 17px 0px;
+            font-size: 1.4rem;
+            color: #fff;
+            width: 220px;
+            margin-top: 60px;
+            left: 100px;
+        }
+        a:hover{
+            width: 240px;
+            background: crimson;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="box">
+            <video src="../../../img/video/binaryCode.mp4" autoplay loop muted></video>
+        </div>
+        <div class="box">
+            <code>Developer</code>
+            <div class="text">
+                <h2>Jimmy Yahir Gutierrez</h2>
+                <h3>Skills</h3>
+                <p>
+                    Full stack, Html5, Css3, Javascript, C#, .Net, sqlServer, Git, GitHub, GitLab
+                </p>
+                <a href="../../components/resume/resume.html">RESUME&nbsp&nbsp&#10140</a>
+            </div>
+        </div>
+        <div class="circle"><img src="../../../img/utilities/yo4.avif" alt=""></div>
+    </main>
+</body>
+</html>
+
+
+
+
