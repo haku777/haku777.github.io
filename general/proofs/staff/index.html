@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            height: 100vh;
+            background-color: #000;
+        }
+        main{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+        }
+        .dashboard{
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+            margin: 10px;
+            background-color: salmon;
+        }
+        section{
+            background: teal;
+            width: 100%;
+            height: 100vh;
+        }
+        button{
+            background-color: #000;
+            color: #fff;
+            padding: 20px;
+            width: 120px;
+            border: none;
+            cursor: pointer;
+        }
+        iframe{
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="dashboard">
+            <button onclick="changeiframe('pays')">pays</button>
+            <button onclick="changeiframe('links')">links</button>
+            <button onclick="changeiframe('date')">date</button>
+            <button onclick="changeiframe('birthday')">birthday</button>
+        </div>
+        <section>
+            <iframe src="" frameborder="0"></iframe>
+        </section>
+    </main>
+</body>
+<script>
+
+    let iframe = document.querySelector("iframe");
+    function changeiframe(link){
+        
+        switch(link){
+            case "pays":
+                iframe.src = "pays/pays.html";
+                break;
+            case "links":
+                iframe.src = "links/links.html";
+            break;
+            case "date":
+                iframe.src = "date/date.html";
+                break;
+            case "birthday":
+                iframe.src = "birthday/index.html";
+                break;
+        }
+    }
+</script>
+</html>

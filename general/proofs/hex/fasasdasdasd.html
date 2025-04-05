@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Letter Glitch</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            background: black;
+        }
+        canvas {
+            display: block;
+            width: 100vw;
+            height: 100vh;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="glitchCanvas"></canvas>
+    <script>
+        const canvas = document.getElementById("glitchCanvas");
+        const ctx = canvas.getContext("2d");
+
+        const glitchColors = ['purple', 'magenta', 'indigo'];
+        const fontSize = 17;
+        const charWidth = 10;
+        const charHeight = 20;
+        const glitchSpeed = 0.01;
+        const lettersAndSymbols = "ABCDEFGHIJKLMNOPQRSTUVWXYZ!@#$&*()-_+=/[]{};:<>,0123456789".split("");
+        let grid = { columns: 0, rows: 0 };
+        let letters = [];
+
+        function getRandomChar() {
+            return lettersAndSymbols[Math.floor(Math.random() * lettersAndSymbols.length)];
+        }
+
+        function getRandomColor() {
+            return glitchColors[Math.floor(Math.random() * glitchColors.length)];
+        }
+
+        function calculateGrid(width, height) {
+            return { columns: Math.ceil(width / charWidth), rows: Math.ceil(height / charHeight) };
+        }
+
+        function initializeLetters() {
+            grid = calculateGrid(canvas.width, canvas.height);
+            letters = Array.from({ length: grid.columns * grid.rows }, () => ({
+                char: getRandomChar(),
+                color: getRandomColor()
+            }));
+        }
+
+        function resizeCanvas() {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+            initializeLetters();
+            drawLetters();
+        }
+
+        function drawLetters() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            ctx.font = `${fontSize}px monospace`;
+            ctx.textBaseline = "top";
+            letters.forEach((letter, index) => {
+                const x = (index % grid.columns) * charWidth;
+                const y = Math.floor(index / grid.columns) * charHeight;
+                ctx.shadowColor = letter.color;//lo podriamos comentar XD
+                ctx.shadowBlur = 4; // Nivel de difuminado de la sombra
+                ctx.fillStyle = letter.color;
+                ctx.fillText(letter.char, x, y);
+            });
+        }
+
+
+                
+
+        function updateLetters() {
+            for (let i = 0; i < Math.max(1, letters.length * 0.05); i++) {
+                const index = Math.floor(Math.random() * letters.length);
+                letters[index] = { char: getRandomChar(), color: getRandomColor() };
+            }
+        }
+
+        function animate() {
+            updateLetters();
+            drawLetters();
+            setTimeout(() => requestAnimationFrame(animate), glitchSpeed);
+        }
+
+        window.addEventListener("resize", resizeCanvas);
+        resizeCanvas();
+        animate();
+    </script>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de Tiempo</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      margin: 0;
+      background-color: #f4f4f4;
+    }
+    h1 {
+      margin: 10px;
+    }
+    .current-time {
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+    input, button {
+      padding: 10px;
+      font-size: 1em;
+    }
+    .result {
+      font-size: 1.2em;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <h1>Calculadora de Tiempo</h1>
+  <div class="current-time" id="currentTime">Hora actual: --:--:--</div>
+  <div class="row">
+    <input type="number" id="year" placeholder="Año" min="1900" max="2100">
+    <input type="number" id="month" placeholder="Mes" min="1" max="12">
+    <input type="number" id="day" placeholder="Día" min="1" max="31">
+    <input type="number" id="hour" placeholder="Hora" min="0" max="23">
+    <input type="number" id="minute" placeholder="Minuto" min="0" max="59">
+  </div>
+  <div class="row">
+    <button onclick="calculateTime('future')">Futuro</button>
+    <button onclick="calculateTime('past')">Pasado</button>
+  </div>
+  <div class="result" id="result"></div>
+
+  <script>
+    function updateCurrentTime() {
+      const currentTimeElement = document.getElementById('currentTime');
+      const now = new Date().toLocaleString('en-US', { timeZone: 'America/Bogota' });
+      currentTimeElement.textContent = `Hora actual: ${now}`;
+    }
+
+    function calculateTime(direction) {
+      const year = document.getElementById('year').value || new Date().getFullYear();
+      const month = (document.getElementById('month').value || new Date().getMonth() + 1) - 1; // Meses en JS son 0-11
+      const day = document.getElementById('day').value || new Date().getDate();
+      const hour = document.getElementById('hour').value || new Date().getHours();
+      const minute = document.getElementById('minute').value || new Date().getMinutes();
+
+      const inputDate = new Date(year, month, day, hour, minute);
+      const now = new Date();
+      const resultElement = document.getElementById('result');
+
+      if (isNaN(inputDate.getTime())) {
+        resultElement.textContent = 'Por favor, ingresa una fecha y hora válidas';
+        return;
+      }
+
+      let difference = inputDate - now;
+      const absDifference = Math.abs(difference);
+      const days = Math.floor(absDifference / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((absDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((absDifference % (1000 * 60 * 60)) / (1000 * 60));
+
+      if (direction === 'future') {
+        if (difference < 0) {
+          resultElement.textContent = 'La fecha ingresada ya pasó';
+        } else {
+          resultElement.textContent = `Faltan ${days} días, ${hours} horas y ${minutes} minutos para la fecha ingresada.`;
+        }
+      } else if (direction === 'past') {
+        if (difference > 0) {
+          resultElement.textContent = 'La fecha ingresada está en el futuro';
+        } else {
+          resultElement.textContent = `Han pasado ${days} días, ${hours} horas y ${minutes} minutos desde la fecha ingresada.`;
+        }
+      }
+    }
+
+    setInterval(updateCurrentTime, 1000);
+    updateCurrentTime();
+  </script>
+</body>
+</html>

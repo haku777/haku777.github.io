@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lluvia de Letras</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            background: black;
+        }
+        canvas {
+            /*position: absolute;*/
+            width: 50%;
+            height: 50vh;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="matrixCanvas"></canvas>
+    <canvas id="matrixCanvasBack"></canvas>
+    <script>
+        function createMatrixEffect(canvasId, color, direction = 1, speedFactor = 1, columnCount = null) {
+            const canvas = document.getElementById(canvasId);
+            const ctx = canvas.getContext("2d");
+            
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+            
+            const characters = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+            const fontSize = 16;
+            const columns = columnCount || Math.floor(canvas.width / fontSize);
+            const drops = Array(columns).fill(direction === 1 ? canvas.height : 0);
+            
+            function drawMatrix() {
+                ctx.fillStyle = "rgba(0, 0, 0, 0.1)";
+                ctx.fillRect(0, 0, canvas.width, canvas.height);
+                
+                ctx.fillStyle = color;
+                ctx.font = `${fontSize}px monospace`;
+                
+                for (let i = 0; i < drops.length; i++) {
+                    const text = characters[Math.floor(Math.random() * characters.length)];
+                    const x = i * fontSize;
+                    const y = drops[i] * fontSize;
+                    
+                    ctx.fillText(text, x, y);
+                    
+                    if ((direction === 1 && y <= 0 && Math.random() > 0.975) ||
+                        (direction === -1 && y >= canvas.height && Math.random() > 0.975)) {
+                        drops[i] = direction === 1 ? canvas.height / fontSize : 0;
+                    } else {
+                        drops[i] -= direction * speedFactor;
+                    }
+                }
+            }
+            
+            function animateMatrix() {
+                drawMatrix();
+                requestAnimationFrame(animateMatrix);
+            }
+            
+            animateMatrix();
+            
+            window.addEventListener("resize", () => {
+                canvas.width = window.innerWidth;
+                canvas.height = window.innerHeight;
+            });
+        }
+        
+        createMatrixEffect("matrixCanvasBack", "#00FF00", -1, 1, 77); // Cascada inversa en lime
+        createMatrixEffect("matrixCanvas", "#A020F0", 1, 0.5, 77); // Cascada normal en púrpura neón
+    </script>
+</body>
+</html>
