@@ -50,10 +50,11 @@
 <body>
     <main>
         <div class="dashboard">
+            <button onclick="changeiframe('birthday')">birthday</button>
             <button onclick="changeiframe('pays')">pays</button>
             <button onclick="changeiframe('links')">links</button>
             <button onclick="changeiframe('date')">date</button>
-            <button onclick="changeiframe('birthday')">birthday</button>
+            <button onclick="changeiframe('vitamins')">Vitamins</button>
         </div>
         <section>
             <iframe src="" frameborder="0"></iframe>
@@ -77,6 +78,9 @@
                 break;
             case "birthday":
                 iframe.src = "birthday/index.html";
+                break;
+            case "vitamins":
+                iframe.src = "../onePage/Vitamins.html";
                 break;
         }
     }
