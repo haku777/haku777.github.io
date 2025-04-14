@@ -96,6 +96,10 @@
                     <li onclick="showFoods('Potasio')">Potasio</li>
                     <li onclick="showFoods('Zinc')">Zinc</li>
                     <li onclick="showFoods('Colageno')">Colageno</li>
+                    <li onclick="showFoods('Globulos_rojos')">Globulos rojos</li>
+                    <li onclick="showFoods('Globulos_blancos')">Globulos blancos</li>
+                    <li onclick="showFoods('Medula_osea')">Medula osea</li>
+                    <li onclick="showFoods('frutos_secos')">frutos secos</li>
                 </ul>
             </div>
             <div class="food-list" id="food-list">
@@ -107,7 +111,7 @@
     <script src="script.js"></script>
 </body>
 <script>
-    let a = ["1","2"];
+    let frutos_secos = ['nueces de brasil','nueces pecan','nueces de macadamia', 'abellanas','pistachos','almendras','arandanos azules','arandanos rojos'];
 const foods = {
     'A': ['Zanahorias', 'Espinacas', 'Batata', 'Pimientos'],
     'B': ['Carne', 'Pescado', 'Huevos', 'Legumbres'],
@@ -120,72 +124,13 @@ const foods = {
     'Magnesio': ['Nueces', 'Semillas', 'Espinacas', 'Arroz integral', 'Aguacate'],
     'Potasio': ['Plátanos', 'Naranjas', 'Patatas', 'Tomates', 'Espinacas'],
     'Zinc': ['Carne', 'Mariscos', 'Semillas de calabaza', 'Garbanzos', 'Cereales integrales'],
-    'Colageno': [a],
-    'Medula osea': ['(hierro, vitamina B12, ácido fólico, zinc)']
+    'Colageno': ['Caldo de huesos(en ayunas mejor)','Gelatina natural sin azúcar','Pescado (con piel)','Claras de huevo','Carnes magras (res, pollo)','Patas de pollo o cerdo','Frutas cítricas(Vitamin c)','Pimientos rojos','Semillas y frutos secos','Té verde'],
+    'Globulos_rojos': ['hemoglobina y otros componentes clave como el hierro, el ácido fólico, la vitamina B12 y el cobre','Carne roja (res, cerdo)','Hígado (de pollo o res)','Espinacas','Frijoles y lentejas','Pechuga de pollo','Pescado (atún, sardinas)','Almejas y mejillones','Verduras de hoja verde (col rizada, acelga)','Frutas cítricas (naranjas, pomelos)','Nueces y semillas','Aguacate'],
+    'Globulos_blancos': ['Cítricos (naranja, limón, toronja)','Yogurt natural o kefir','ajo','espinaca y acelga','zanahoria','pescado graso(salmon,atun)','nueces y almendras','semillas de calabaza y girasol','carne magra(pollo, pavo)','huevo','Brocoli','hongos(shitake,portobello)','jengibre'],
+    'Medula_osea': ['hierro', 'vitamina B12', 'ácido fólico', 'zinc'],
+    'frutos_secos': [frutos_secos]
 };
 
-/*
-let a = 
-"El colágeno es una proteína que se encuentra en muchos alimentos, especialmente en aquellos de origen animal. Aquí te dejo una lista de alimentos clasificados desde los que más contienen colágeno o promueven su producción hasta los que menos:
-- 1. __Caldo de huesos__
-   - __Descripción:__ El caldo de huesos, especialmente de res o pollo, es rico en colágeno natural. Al hervir los huesos, el colágeno se descompone en gelatina, que es fácilmente absorbida por el cuerpo.
-   - __Beneficio adicional:__ Contiene aminoácidos como glicina y prolina, esenciales para la producción de colágeno.
-
-- 2. __Piel de pollo__
-   - __Descripción:__ La piel de pollo es una fuente rica en colágeno.
-   - __Beneficio adicional:__ Además de colágeno, también contiene elastina, otra proteína importante para la salud de la piel.
-
-- 3. __Pescados (especialmente pescados con piel)__
-   - __Descripción:__ Los pescados como el salmón y el atún, especialmente cuando se consume la piel, son ricos en colágeno.
-   - __Beneficio adicional:__ Los pescados también contienen ácidos grasos omega-3, que ayudan a mantener la piel hidratada y saludable.
-
-- 4. __Carnes rojas__
-   - __Descripción:__ Las carnes rojas como la carne de res son fuentes ricas en colágeno.
-   - __Beneficio adicional:__ Aportan hierro, que es crucial para la salud general y la producción de colágeno.
-
-- 5. __Gelatina__
-   - __Descripción:__ La gelatina es básicamente colágeno cocido y descompuesto. Es común en postres y algunas preparaciones saladas.
-   - __Beneficio adicional:__ Aporta aminoácidos como prolina y glicina.
-
-- 6. __Claras de huevo__
-   - __Descripción:__ Las claras de huevo contienen prolina, un aminoácido que es clave para la producción de colágeno.
-   - __Beneficio adicional:__ Son ricas en proteínas y bajas en calorías.
-
-- 7. __Frutas cítricas__
-   - __Descripción:__ Aunque no contienen colágeno, son ricas en vitamina C, que es crucial para la síntesis de colágeno.
-   - __Ejemplos:__ Naranjas, limones, pomelos.
-   - __Beneficio adicional:__ La vitamina C también es un antioxidante que ayuda a proteger la piel.
-
-- 8. __Bayas (fresas, moras, arándanos)__
-   - __Descripción:__ Las bayas son ricas en antioxidantes y vitamina C, lo que promueve la producción de colágeno.
-   - __Beneficio adicional:__ Ayudan a combatir el daño de los radicales libres.
-
-- 9. __Vegetales de hoja verde__
-   - __Descripción:__ Verduras como la espinaca, la col rizada y el kale contienen clorofila, que puede aumentar la producción de colágeno en la piel.
-   - __Beneficio adicional:__ Son ricas en antioxidantes y fibras.
-
-- 10. __Aguacate__
-   - __Descripción:__ Contiene grasas saludables y vitamina E, que ayuda a proteger el colágeno de la piel.
-   - __Beneficio adicional:__ Es una fuente rica de antioxidantes.
-
-- 11. __Frutos secos y semillas__
-   - __Descripción:__ Almendras, nueces, y semillas de chía son ricas en zinc y vitamina E, que ayudan a mantener el colágeno.
-   - __Beneficio adicional:__ Aportan ácidos grasos omega-3.
-
-- 12. __Tomates__
-   - __Descripción:__ Ricos en licopeno, un antioxidante que protege el colágeno.
-   - __Beneficio adicional:__ También contienen vitamina C.
-
-### 13. __Ajo__
-   - __Descripción:__ El ajo contiene azufre, que es necesario para la producción de colágeno.
-   - __Beneficio adicional:__ Contiene taurina, que ayuda a reparar fibras dañadas de colágeno.
-
-### 14. __Pimientos__
-   - __Descripción:__ Especialmente los pimientos rojos son ricos en vitamina C.
-   - __Beneficio adicional:__ Contienen capsaicina, que puede ayudar a reducir la inflamación.
-
-Estos alimentos te ayudarán a mantener niveles saludables de colágeno en tu cuerpo, promoviendo la salud de la piel, las articulaciones y otros tejidos."
-};*/
 
 function showFoods(nutrient) {
     const foodListDiv = document.getElementById('food-list');
@@ -194,22 +139,9 @@ function showFoods(nutrient) {
 }
 showFoods('Calcio');
 
-/* falta por agregar:
-
-
-nueces
-nueces de brasil - ojos
-nueces de macadamia
-las abellanas
-pistachos
-almendras
-
-arandanos azules - ojos
+/*
 huevos
 espinacas
-
-arandanos rojos
-
 platano verde
 aguacate
 
@@ -225,8 +157,7 @@ frutos secos
 aguacate
 
 mazorca
-
---------------------------------------------================----------------------------------
+-----------------------------------------------
 
 evitar
     azucar
