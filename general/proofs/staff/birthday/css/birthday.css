@@ -208,7 +208,6 @@ a{
   }
 
   .Photos{
-    display: none;
     & img{
       max-width: 90vw;
       object-fit: cover;

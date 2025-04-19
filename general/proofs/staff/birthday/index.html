@@ -14,24 +14,24 @@
         <h2 class="date" id="date"></h2>
         <main>
             <div class="next" class="change"><</div>
-            <div class="card">
-                <div class="img">
-                    <img src="../../../../files/img/Family/J/j.jpg" alt="">
+                <div class="card">
+                    <div class="img">
+                        <img src="../../../../files/img/Family/J/j.jpg" alt="">
+                    </div>
                 </div>
-            </div>
-            <div class="information">
-                <fieldset>
-                    <legend id="name">
-                        SARA
-                    </legend>
-                    <p>Age: 11</p>
-                    <p>Zodiac: pound(Libra)</p>
-                    <p>Element: Air(Aire)</p>
-                    <p>Birthday: oct 03</p>
-                    <p>days left: 365</p>
-                    <a href="#" onclick="Show()">Show Photos</a>
-                </fieldset>
-            </div>
+                <div class="information">
+                    <fieldset>
+                        <legend id="name">
+                            SARA
+                        </legend>
+                        <p>Age: 11</p>
+                        <p>Zodiac: pound(Libra)</p>
+                        <p>Element: Air(Aire)</p>
+                        <p>Birthday: oct 03</p>
+                        <p>days left: 365</p>
+                        <a href="#" onclick="Show()">Show Photos</a>
+                    </fieldset>
+                </div>
             <div class="next" class="change">></div>
         </main>
         <div class="Photos" id="Photos">
@@ -106,11 +106,13 @@
             
         })()
         function Show(){
+            console.log("show");
             let botton = document.getElementById('Photos');
             botton.classList.add("showPhotos");
             document.body.style.overflow = 'hidden';
         }
         function Close(){
+            console.log("close");
             let botton = document.getElementById('Photos');
             botton.classList.remove("showPhotos");
             document.body.style.overflow = '';
@@ -184,7 +186,35 @@
     // Inicializar la imagen al cargar la página
     updateImage(currentIndex);
     </script>
-<script type="text/javascript" src="js/birthdayJs.js"></script>
-<script type="text/javascript" src="birthday/js/birthdayJs.js"></script>
+    
+    
+    
+    <script>
+    //script para el porcentaje de año
+    function time(){
+
+    let percent = document.getElementById("percent");
+    let ahora = new Date();
+    let comienzo = new Date(ahora.getFullYear(), 0);
+    var dif = ahora - comienzo;
+    var unDia = 1000 * 60 * 60 * 24;
+    var dia = Math.round(dif / unDia);
+    let diasFaltantes = 365 - dia;
+    let porcentaje = 100 / 365;
+
+    let seconds = ahora.getSeconds();
+    segPor = 100/60;
+    seconds = seconds * segPor;
+    let consumidos = dia * porcentaje;
+
+        percent.style.background = `conic-gradient(crimson ${consumidos}%,white ${consumidos}% 100%)`;
+
+        console.log(diasFaltantes);
+        console.log(consumidos);
+        console.log("ya pasaron 24 horas revisar a las 11:41");
+    }
+    time();
+    </script>
+<!-- <script type="text/javascript" src="js/birthdayJs.js"></script> -->
 </body>
 </html>
