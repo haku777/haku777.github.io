@@ -117,7 +117,7 @@
         // Array con los datos de los pagos
         const paymentRecords = [
             { name: "Internet", link: "https://movistar.recaudo.epayco.co/?tipo_servicio=movil&canal=mailfactura&tipo_pago=movistar&ref_pago=60631888221" },
-            { name: "Lux",number:"7700492-6", link: "https://www.enel.com.co/es.html" },
+            { name: "Lux",number:"7700492-6", limit:"FechaLimite:dia15", link: "https://www.enel.com.co/es.html" },
             { name: "Water",number:"10451142", link: "https://epz.gov.co/wp/" },
             { name: "Gas", number: "63641057", link: "https://www.grupovanti.com/" },
             { name: "Rent", link: "https://..." },  // Aquí deberías agregar el enlace correcto
@@ -140,6 +140,10 @@
             const hn = document.createElement('h2');
             hn.textContent = record.number;
             div.appendChild(hn);
+
+            const limit = document.createElement('h2');
+            limit.textContent = record.limit;
+            div.appendChild(limit);
 
             // Crear un enlace para el pago
             const link = document.createElement('a');

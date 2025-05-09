@@ -55,6 +55,8 @@
             <button onclick="changeiframe('links')">links</button>
             <button onclick="changeiframe('date')">date</button>
             <button onclick="changeiframe('vitamins')">Vitamins</button>
+            <button onclick="changeiframe('dinner')">Dinner</button>
+            </button>
         </div>
         <section>
             <iframe src="" frameborder="0"></iframe>
@@ -81,6 +83,9 @@
                 break;
             case "vitamins":
                 iframe.src = "../onePage/Vitamins.html";
+                break;
+            case "dinner":
+                iframe.src = "Dinner/Dinner.html";
                 break;
         }
     }
