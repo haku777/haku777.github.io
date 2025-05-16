@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="https://haku777.com/files/img/utilities/yo.ico">
-    <title>Payment Records</title>
+    <title>Routine</title>
     <style>
         * {
             margin: 0;
@@ -102,7 +102,7 @@
 <body>
     <header>
         <nav>
-            <h1>Pays</h1>
+            <h1>Routine</h1>
             <ul>
                 <li>Inicio</li>
             </ul>
@@ -116,12 +116,14 @@
     <script>
         // Array con los datos de los pagos
         const paymentRecords = [
-            { name: "Internet", link: "zuma whatsapp" },/*https://movistar.recaudo.epayco.co/?tipo_servicio=movil&canal=mailfactura&tipo_pago=movistar&ref_pago=60631888221*/
-            { name: "Lux",number:"7700492-6", limit:"FechaLimite:dia15", link: "https://www.enel.com.co/es.html" },
-            { name: "Water",number:"10451142", link: "https://epz.gov.co/wp/" },
-            { name: "Gas", number: "63641057", link: "https://www.grupovanti.com/" },
-            { name: "Rent", link: "https://..." },  // Aquí deberías agregar el enlace correcto
-            { name: "Apto", link: "https://..." }   // Aquí también el enlace correspondiente
+            { name: "Water", link: "" },
+            { name: "Daily Lux", link: "https://www.enel.com.co/es.html" },
+            { name: "Excercise", link: "https://epz.gov.co/wp/" },
+            { name: "Feeding(fruits, lunch, dinner)", link: "" },
+            { name: "Good sleep(before 11:00pm)", link: "" },
+            { name: "Remind things:(did id,need to do)", link: "" },
+            { name: "organize link", link: "http://127.0.0.1:5500/haku777.github.io/general/proofs/onePage/Ordenar.html" },
+            
         ];
 
         // Función para crear los divs dinámicamente
@@ -137,25 +139,17 @@
             h2.textContent = record.name;
             div.appendChild(h2);
 
-            const hn = document.createElement('h2');
-            hn.textContent = record.number;
-            div.appendChild(hn);
-
-            const limit = document.createElement('h2');
-            limit.textContent = record.limit;
-            div.appendChild(limit);
-
             // Crear un enlace para el pago
             const link = document.createElement('a');
             link.href = record.link;
             link.target = "_blank";
-            link.textContent = `Pay ${record.name} Now`;
+            link.textContent = `Do ${record.name} Now`;
             div.appendChild(link);
 
             // Crear un span para el estado de pago
             const status = document.createElement('span');
             status.classList.add('status', 'unpaid');
-            status.textContent = 'Unpaid';
+            status.textContent = 'Do it';
             status.onclick = () => toggleStatus(status);
             div.appendChild(status);
 
@@ -168,11 +162,11 @@
             if (element.classList.contains('unpaid')) {
                 element.classList.remove('unpaid');
                 element.classList.add('paid');
-                element.textContent = 'Paid';
+                element.textContent = 'Done';
             } else {
                 element.classList.remove('paid');
                 element.classList.add('unpaid');
-                element.textContent = 'Unpaid';
+                element.textContent = 'Do it';
             }
         }
     </script>
