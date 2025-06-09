@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Círculos que Crecen</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #111;
+      margin: 0;
+    }
+    .container {
+      position: relative;
+      background: #fff2;
+      width: 500px;
+      height: 500px;
+      overflow: hidden;
+    }
+    .circle {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border: 7px solid crimson;
+      border-radius: 50%;
+      pointer-events: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="container" id="container"></div>
+
+  <script>
+    const container = document.getElementById('container');
+    const maxSize = 700;
+    const growRate = 1;
+    const spawnInterval = 7000; // ms entre un círculo y otro
+
+    function createCircle() {
+      const circle = document.createElement('div');
+      circle.className = 'circle';
+      container.appendChild(circle);
+
+      let size = 0;
+      circle.style.width = `${size}px`;
+      circle.style.height = `${size}px`;
+
+      function grow() {
+        size += growRate;
+        if (size >= maxSize) {
+          container.removeChild(circle); // Elimina el círculo
+          return;
+        }
+        circle.style.width = `${size}px`;
+        circle.style.height = `${size}px`;
+        requestAnimationFrame(grow);
+      }
+
+      grow();
+    }
+
+    // Crear el primer círculo inmediatamente
+    createCircle();
+
+    // Crear un nuevo círculo cada X milisegundos
+    setInterval(createCircle, spawnInterval);
+  </script>
+</body>
+</html>

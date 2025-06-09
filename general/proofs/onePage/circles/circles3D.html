@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Esfera de Letras</title>
+  <style>
+    body {
+      background: #000;
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      perspective: 1000px;
+      overflow: hidden;
+    }
+
+    .sphere {
+      width: 300px;
+      height: 300px;
+      position: relative;
+      transform-style: preserve-3d;
+      animation: spin 20s linear infinite;
+    }
+
+    .letter {
+      color: white;
+      font-size: 20px;
+      font-family: Arial, sans-serif;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    @keyframes spin {
+      0% {
+        transform: rotateX(0deg) rotateY(0deg);
+      }
+      100% {
+        transform: rotateX(360deg) rotateY(360deg);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="sphere" id="sphere"></div>
+
+  <script>
+    const sphere = document.getElementById('sphere');
+    const letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
+    const total = letters.length;
+
+    // Distribuir las letras en una esfera
+    letters.forEach((letter, i) => {
+      const el = document.createElement('div');
+      el.className = 'letter';
+      el.textContent = letter;
+
+      const phi = Math.acos(-1 + (2 * i) / total);
+      const theta = Math.sqrt(total * Math.PI) * phi;
+
+      const x = 120 * Math.cos(theta) * Math.sin(phi);
+      const y = 120 * Math.sin(theta) * Math.sin(phi);
+      const z = 120 * Math.cos(phi);
+
+      el.style.transform = `translate3d(${x}px, ${y}px, ${z}px)`;
+
+      sphere.appendChild(el);
+    });
+  </script>
+</body>
+</html>

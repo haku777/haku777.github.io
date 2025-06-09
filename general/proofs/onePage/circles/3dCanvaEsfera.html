@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Esfera Punteada 3D</title>
+  <style>
+    body { margin: 0; background: black; }
+    canvas { display: block; margin: auto; }
+  </style>
+</head>
+<body>
+<canvas id="canvas"></canvas>
+<script>
+const canvas = document.getElementById("canvas");
+const ctx = canvas.getContext("2d");
+canvas.width = innerWidth;
+canvas.height = innerHeight;
+
+const dots = [];
+const R = 200;
+const rings = 30;
+const pointsPerRing = 60;
+
+for (let i = 1; i < rings; i++) {
+  const theta = Math.PI * i / rings; // latitud
+  const y = R * Math.cos(theta);
+  const r = R * Math.sin(theta);
+
+  for (let j = 0; j < pointsPerRing; j++) {
+    const phi = (Math.PI * 2 * j) / pointsPerRing;
+    const x = r * Math.cos(phi);
+    const z = r * Math.sin(phi);
+    dots.push({x, y, z});
+  }
+}
+
+let angleY = 0;
+
+function draw() {
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+  const cx = canvas.width / 2;
+  const cy = canvas.height / 2;
+
+  angleY += 0.00142; // 30% más lento de 0.007
+
+  for (const dot of dots) {
+    // rotación Y
+    const x = dot.x * Math.cos(angleY) - dot.z * Math.sin(angleY);
+    const z = dot.x * Math.sin(angleY) + dot.z * Math.cos(angleY);
+    const scale = 300 / (300 + z); // perspectiva
+    const x2d = x * scale + cx;
+    const y2d = dot.y * scale + cy;
+
+    ctx.beginPath();
+    ctx.arc(x2d, y2d, 0.77 * scale, 0, Math.PI * 2); // más pequeños aún
+    ctx.fillStyle = "cyan";
+
+    // Brillo
+    ctx.shadowBlur = 4;
+    ctx.shadowColor = "cyan";
+    ctx.fill();
+
+    // Limpieza del brillo para el siguiente frame
+    ctx.shadowBlur = 0;
+  }
+
+  requestAnimationFrame(draw);
+}
+
+draw();
+</script>
+</body>
+</html>

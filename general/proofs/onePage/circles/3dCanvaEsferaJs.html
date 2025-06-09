@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Esfera Punteada 3D (sin canvas)</title>
+  <style>
+    body {
+      margin: 0;
+      background: black;
+      overflow: hidden;
+    }
+
+    .scene {
+      width: 100vw;
+      height: 100vh;
+      perspective: 1000px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .sphere {
+      position: relative;
+      transform-style: preserve-3d;
+      transform: rotateX(90deg); /* ← inclinación base */
+      animation: rotateY 42s linear infinite;
+    }
+
+    .dot {
+      position: absolute;
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      background: cyan;
+    }
+
+    @keyframes rotateY {
+      from { transform: rotateX(-45deg) rotateY(0deg); }
+      to   { transform: rotateX(-45deg) rotateY(360deg); }
+    }
+  </style>
+</head>
+<body>
+  <div class="scene">
+    <div class="sphere" id="sphere"></div>
+  </div>
+
+  <script>
+    const sphere = document.getElementById("sphere");
+    const radius = 420;
+    const rings = 24; // Aumentado para evitar colapsos
+    const pointsPerRing = 42;
+
+    for (let i = 1; i < rings; i++) {
+      const theta = Math.PI * i / rings;
+      const y = radius * Math.cos(theta);
+      const r = radius * Math.sin(theta);
+
+      for (let j = 0; j < pointsPerRing; j++) {
+        const phi = 2 * Math.PI * j / pointsPerRing;
+        const x = r * Math.cos(phi);
+        const z = r * Math.sin(phi);
+
+        const dot = document.createElement("div");
+        dot.className = "dot";
+        dot.style.transform = `translate3d(${x}px, ${y}px, ${z}px)`;
+        sphere.appendChild(dot);
+      }
+    }
+  </script>
+</body>
+</html>

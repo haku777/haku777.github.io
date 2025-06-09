@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Anillos 3D óvalo tipo oOo</title>
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden;
+      background: #000;
+    }
+    canvas {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+<canvas id="canvas"></canvas>
+<script>
+const canvas = document.getElementById('canvas');
+const ctx = canvas.getContext('2d');
+let w, h;
+
+function resize() {
+  w = canvas.width = window.innerWidth;
+  h = canvas.height = window.innerHeight;
+}
+resize();
+window.addEventListener('resize', resize);
+
+// Parámetros
+const totalRings = 60;
+const pointsPerRing = 80;
+let angle = 0;
+
+function getDepthScale(ringIndex) {
+  const mid = totalRings / 2;
+  const d = Math.abs(ringIndex - mid);
+  const maxScale = 1.2;
+  const minScale = 0.1;
+  return maxScale - (d / mid) * (maxScale - minScale);
+}
+
+function animate() {
+  ctx.clearRect(0, 0, w, h);
+  angle += 0.01;
+
+  for (let r = 0; r < totalRings; r++) {
+    const radius = r * 12;
+    const scale = getDepthScale(r);
+    const perspective = 500 / (500 + r * 10);
+
+    for (let i = 0; i < pointsPerRing; i++) {
+      const theta = (i / pointsPerRing) * Math.PI * 2 + angle;
+
+      // Coordenadas ovaladas
+      const x = Math.cos(theta) * radius * scale;
+      const y = Math.sin(theta) * radius;
+
+      // Proyección a pantalla
+      const screenX = x * perspective + w / 2;
+      const screenY = y * perspective + h / 2;
+      const size = perspective * 3;
+
+      ctx.beginPath();
+      ctx.fillStyle = "#0ff";
+      ctx.arc(screenX, screenY, size, 0, Math.PI * 2);
+      ctx.fill();
+    }
+  }
+
+  requestAnimationFrame(animate);
+}
+
+animate();
+</script>
+</body>
+</html>

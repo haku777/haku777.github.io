@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Esfera de Letras 2D</title>
+  <style>
+    body {
+      background: #111;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    .circle {
+      position: relative;
+      width: 300px;
+      height: 300px;
+      animation: rotate 10s linear infinite;
+    }
+
+    .letter {
+      position: absolute;
+      color: white;
+      font-size: 20px;
+      font-family: sans-serif;
+      transform-origin: center center;
+    }
+
+    @keyframes rotate {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+  </style>
+</head>
+<body>
+  <div class="circle" id="circle"></div>
+
+  <script>
+    const container = document.getElementById('circle');
+    const text = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    const radius = 120;
+    const angleStep = 360 / text.length;
+
+    for (let i = 0; i < text.length; i++) {
+      const letter = document.createElement('div');
+      letter.className = 'letter';
+      letter.textContent = text[i];
+
+      const angle = i * angleStep;
+      const x = radius * Math.cos(angle * Math.PI / 180);
+      const y = radius * Math.sin(angle * Math.PI / 180);
+
+      letter.style.left = `${150 + x}px`;
+      letter.style.top = `${150 + y}px`;
+   	  letter.style.transform = `translate(-50%, -50%) rotate(${angle}deg)`;
+
+      container.appendChild(letter);
+    }
+  </script>
+</body>
+</html>
