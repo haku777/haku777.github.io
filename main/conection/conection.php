@@ -64,8 +64,6 @@
     }
 
 
-
-
     //supabase API
     // $url = 'https://icsldpuppeglkuedwzpg.supabase.co/rest/v1/contact';
     // $api_key = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imljc2xkcHVwcGVnbGt1ZWR3enBnIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDk1MDk1ODUsImV4cCI6MjA2NTA4NTU4NX0.ftFsaStOqqrFRvTbLAiACA9c0zdMxMXQB6ZjYatBY-0';
