@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cuadro Giratorio</title>
+  <style>
+    body {
+      background: radial-gradient(#000084, #000);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+   .circle {
+      position: absolute;
+      width: 700px;
+      height: 700px;
+      border-radius: 50%;
+      border:3px solid #ae2bff;
+      animation: rotate_scale 27s linear infinite;
+    }
+    .textContainer {
+      position: absolute;
+      width: 700px;
+      height: 700px;
+      position: absolute;
+      animation: rotate_scale 27s linear infinite;
+    }
+    .letter {
+      position: absolute;
+      color: #ae2bff;
+      font-size: 16px;
+      font-family: sans-serif;
+    }
+    .circleMiddle {
+      position: absolute;
+      width: 642px;
+      height: 642px;
+      border-radius: 50%;
+      border:3px solid #ae2bff;
+      animation: rotate_scale 27s linear infinite;
+    }
+    .circleInside {
+      position: absolute;
+      width: 442px;
+      height: 442px;
+      border-radius: 50%;
+      border:3px solid #ae2bff;
+    }
+    .square {
+      position: absolute;
+      width: 317px;
+      height: 317px;
+      border:3px solid #ae2bff;
+      animation: rotate_scale 27s linear infinite;
+    }
+    .squareInside {
+      position: absolute;
+      width: 142px;
+      height: 142px;
+      border:3px solid #ff2b2b;
+      animation: rotate_scale 7s linear infinite;
+    }
+
+    @keyframes rotate_scale {
+      0% {
+          transform: scale(1) rotate(0deg); 
+      }
+      25% {
+          transform: scale(1.2) rotate(90deg); 
+      }
+      50% {
+          transform: scale(1.2) rotate(180deg);
+      }
+      75% {
+          transform: scale(1.2) rotate(270deg);
+      }
+      100% {
+          transform: scale(1) rotate(360deg);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="circle"></div>
+  <div class="textContainer"></div>
+  <div class="circleMiddle"></div>
+  <div class="circleInside"></div>
+  <div class="square"></div>
+  <div class="squareInside"></div>
+</body>
+  <script>
+    const container = document.querySelector('.textContainer');
+    const text = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    const radius = 342;
+    const angleStep = 360 / text.length;
+
+    for (let i = 0; i < text.length; i++) {
+      const letter = document.createElement('div');
+      letter.className = 'letter';
+      letter.textContent = text[i];
+
+      let angle = i * angleStep;
+      const rad = angle * Math.PI / 180;
+      const x = radius * Math.cos(rad);
+      const y = radius * Math.sin(rad);
+
+      letter.style.left = `${344 + x}px`;
+      letter.style.top = `${342 + y}px`;
+      angle = angle +90;
+      // Rotación contraria para que se vean derechas
+      letter.style.transform = `rotate(${angle}deg)`;
+
+      container.appendChild(letter);
+    }
+  </script>
+</html>
