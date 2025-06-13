@@ -19,8 +19,11 @@
 			height: 100vh;
 			margin: 0;
 		}
-
-		.solid, .definition{
+		h1 {
+			text-align: center;
+			margin-bottom: 20px;
+		}
+		.solid{
 			text-align: center;
 			display: flex;
 			flex-direction: row;
@@ -28,23 +31,17 @@
 				background-color: #007bff;
 				padding: 10px;
 				word-break: 2px;
-				width: 150px;
 				color: #fff;;
 				border-radius: 4px;
 				margin: 0 10px;
 			}
 			p{
-				background-color: salmon;
+				background-color: #00eaff;
 				margin: 10px 10px;
-				color: #fff;
-				width: 150px;
+				max-width: 300px;
+				color: #333;
+				font-size: 27px;;
 			}
-		}
-
-		h1 {
-			text-align: center;
-			color: #333;
-			margin-bottom: 20px;
 		}
 	</style>
 </head>
@@ -52,18 +49,26 @@
 	<main>
 		<h1>SOLID</h1>
 		<div class="solid">
-			<h2>Single</h2>
-			<h2>Open/Close</h2>
-			<h2>Lisvok</h2>
-			<h2>Interfaces</h2>
-			<h2>Dependencys</h2>
-		</div>
-		<div class="definition">
-			<p>singles responsability</p>
-			<p>singles responsability</p>
-			<p>singles responsability</p>
-			<p>singles responsability</p>
-			<p>singles responsability</p>
+			<div class="single">
+				<h2>Single</h2>
+				<p>El Principio de responsabilidad única <br>(Single Responsibility Principle)</p>
+			</div>
+			<div class="openClose">
+				<h2>Open/Close</h2>
+				<p>El Principio Abierto-Cerrado <br>(Open-Closed Principle)</p>
+			</div>
+			<div class="Lisvok">
+				<h2>Lisvok</h2>
+				<p>El Principio de sustitución de Liskov <br>(Liskov Substitution Principle)</p>
+			</div>
+			<div class="Interfaces">
+				<h2>Interfaces</h2>
+				<p>El Principio de segregación de interfaz <br>(Interface Segregation Principle)</p>
+			</div>
+			<div class="dependencys">
+				<h2>Dependencys</h2>
+				<p>El Principio de inversión de dependencia <br>(Dependency Inversion Principle)</p>
+			</div>
 		</div>
 	</main>
 </body>
