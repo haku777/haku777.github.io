@@ -9,6 +9,7 @@
 			box-sizing: border-box;
 			margin: 0;
 			padding: 0;
+			font-size: 1.2vh;
 		}
 		body {
 			background-color: #f0f0f0;
@@ -19,35 +20,57 @@
 			height: 100vh;
 			margin: 0;
 		}
-		h1 {
+		h2 {
 			text-align: center;
 			margin-bottom: 20px;
 		}
-		.solid{
+		.solid,.poo{
 			text-align: center;
 			display: flex;
 			flex-direction: row;
 			h2{
-				background-color: #007bff;
+				background-color: #0091b9;
 				padding: 10px;
 				word-break: 2px;
-				color: #fff;;
+				color: #fff;
 				border-radius: 4px;
 				margin: 0 10px;
 			}
 			p{
-				background-color: #00eaff;
+				background-color: #007eb0;
 				margin: 10px 10px;
+				padding: 10px;
 				max-width: 300px;
-				color: #333;
-				font-size: 27px;;
+				color: #fff;
 			}
+		}
+		.poo p,.poo div h2{
+			background-color: hsl(280, 100%, 30%);
 		}
 	</style>
 </head>
 <body>
 	<main>
-		<h1>SOLID</h1>
+		<h2>POO</h2>
+		<div class="poo">
+			<div class="abstraccion">
+				<h2>Abstracción</h2>
+				<p>Ocultar los detalles de implementación y mostrar solo las características esenciales.</p>
+			</div>
+			<div class="encapsulacion">
+				<h2>Encapsulación</h2>
+				<p>Proteger los datos y métodos de una clase, permitiendo el acceso controlado.</p>
+			</div>
+			<div class="herencia">
+				<h2>Herencia</h2>
+				<p>Permite que una clase herede propiedades y comportamientos de otra clase.</p>
+			</div>
+			<div class="polimorfismo">
+				<h2>Polimorfismo</h2>
+				<p>Permite que diferentes clases implementen el mismo método de diferentes maneras.</p>
+			</div>
+		</div>
+		<h2>SOLID</h2>
 		<div class="solid">
 			<div class="single">
 				<h2>Single</h2>
@@ -55,19 +78,19 @@
 			</div>
 			<div class="openClose">
 				<h2>Open/Close</h2>
-				<p>El Principio Abierto-Cerrado <br>(Open-Closed Principle)</p>
+				<p>El Principio Abierto-Cerrado extender clases sin modificar la original<br>(Open-Closed Principle)</p>
 			</div>
 			<div class="Lisvok">
 				<h2>Lisvok</h2>
-				<p>El Principio de sustitución de Liskov <br>(Liskov Substitution Principle)</p>
+				<p>El Principio de sustitución de Liskov evitar modificar los metodos heredados en una clase para evitar complicaciones<br>(Liskov Substitution Principle)</p>
 			</div>
 			<div class="Interfaces">
 				<h2>Interfaces</h2>
-				<p>El Principio de segregación de interfaz <br>(Interface Segregation Principle)</p>
+				<p>El Principio de segregación de interfaz, clase principal con clases heredas con las cosas que cambian con interfaces especificas, si hay methodos que no se usaran se rompe el concepto<br>(Interface Segregation Principle)</p>
 			</div>
 			<div class="dependencys">
 				<h2>Dependencys</h2>
-				<p>El Principio de inversión de dependencia <br>(Dependency Inversion Principle)</p>
+				<p>El Principio de inversión de dependencia basicamente no tratamos directamente con los modelos<br>(Dependency Inversion Principle)</p>
 			</div>
 		</div>
 	</main>
