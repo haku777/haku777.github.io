@@ -39,8 +39,11 @@ section{
     margin: auto;
 }
 
-article:nth-child(2){
-    background: #3fbf7f !important;
+.section2 h3{
+    font-size: 4vh !important;
+}
+.section2 article:nth-child(2){
+    background: crimson !important;
 }
 
 article{
