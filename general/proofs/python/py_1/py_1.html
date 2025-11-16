@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Frontend con Python Backend</title>
+</head>
+<body>
+  <h1>Frontend</h1>
+  <button onclick="saludar()">Saludar</button>
+  <p id="respuesta"></p>
+
+  <script>
+    async function saludar() {
+      const res = await fetch("/api/saludo?nombre=Jimmy");
+      const data = await res.json();
+      document.getElementById("respuesta").innerText = data.mensaje;
+    }
+  </script>
+</body>
+</html>
