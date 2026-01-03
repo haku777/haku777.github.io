@@ -1,0 +1,12 @@
+{
+  "name": "proyecto-contacto-neon",
+  "version": "1.0.0",
+  "description": "Formulario de contacto con Vercel y Neon",
+  "main": "api/contact.js",
+  "dependencies": {
+    "@neondatabase/serverless": "^0.10.4"
+  },
+  "scripts": {
+    "start": "vercel dev"
+  }
+}

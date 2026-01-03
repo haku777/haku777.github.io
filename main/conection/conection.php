@@ -31,13 +31,14 @@
 
 
     // Datos de Neon (Cópialos de tu dashboard)
-    $host = getenv('PGHOST');
-    $db   = getenv('PGDATABASE');
-    $user = getenv('PGUSER');
-    $pass = getenv('PGPASSWORD');
-    $port = '5432';
+    $host = getenv('PGHOST')     ?: 'ep-steep-hat-ad3atyfi-pooler.c-2.us-east-1.aws.neon.tech';
+    $db   = getenv('PGDATABASE') ?: 'neondb';
+    $user = getenv('PGUSER')     ?: 'neondb_owner$ep-steep-hat-ad3atyfi-pooler';
+    $pass = getenv('PGPASSWORD') ?: 'npg_NUzu8F4KSToW';
 
-    $dsn = "pgsql:host=$host;port=$port;dbname=$db;sslmode=require";
+    $dsn  = "pgsql:host=$host;port=5432;dbname=$db;sslmode=require";
+
+    $pdo = new PDO($dsn, $user, $pass);
 
     try {
         $pdo = new PDO($dsn, $user, $pass, [
@@ -53,6 +54,7 @@
                 $name    = $_POST['name'];
                 $email   = $_POST['email'];
                 $message = $_POST['message'];
+                echo $name . "<br>" . $email . "<br>" . $message . "<br>"  . date("D-d-M-m-Y T H:i:s a \\G\\M\\T") . "<br>";
 
                 // 4. Preparar la consulta (Evita Inyecciones SQL)
                 $query = "INSERT INTO contact (name, email, message) VALUES (:name, :email, :message)";
@@ -66,14 +68,14 @@
                 ]);
 
                 if ($result) {
-                    header("Location: ../../index.html");
+                    header("Location: ../index.html");
                     exit();
                 } else {
                     echo "Error al insertar datos.";
                 }
             }
         } else {
-            echo "No se recibieron datos (failure)";
+            echo "No se recibieron datos.";
         }
 
     } catch (PDOException $e) {
