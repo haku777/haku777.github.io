@@ -29,40 +29,98 @@
     //     print("failure");
     // }
 
-    //supabase
-    $SERVER = 'db.icsldpuppeglkuedwzpg.supabase.co';
-    $port = "5432";
-    $DATABASE = 'postgres';
-    $USER = 'postgres';
-    $PASSWORD = 'supabasejimmyred775';
 
-    //posgres
-    $con = pg_connect("host=$SERVER port=$port dbname=$DATABASE user=$USER password=$PASSWORD sslmode=require");
+    // Datos de Neon (Cópialos de tu dashboard)
+    $host = getenv('PGHOST');
+    $db   = getenv('PGDATABASE');
+    $user = getenv('PGUSER');
+    $pass = getenv('PGPASSWORD');
+    $port = '5432';
 
-    date_default_timezone_set('America/Bogota'); 
-    $date = date('Y-m-d h:i:s', time());
-    if(!empty($_POST)){
-        if(!isset($_POST['Enviar'])){
+    $dsn = "pgsql:host=$host;port=$port;dbname=$db;sslmode=require";
 
-            $name = $_POST['name'];
-            $email = $_POST['email'];
-            $message = $_POST['message'];
+    try {
+        $pdo = new PDO($dsn, $user, $pass, [
+            PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION
+        ]);
 
-            $query = "INSERT INTO contact(name, email, message) VALUES ($1, $2, $3)";
-            $result = pg_query_params($con, $query, array($name, $email, $message));
+        echo "¡Conexión exitosa a Neon!";
+        date_default_timezone_set('America/Bogota');
+        if (!empty($_POST)) {
+            // Validación básica: que los campos existan
+            if (isset($_POST['name'], $_POST['email'], $_POST['message'])) {
+                
+                $name    = $_POST['name'];
+                $email   = $_POST['email'];
+                $message = $_POST['message'];
 
+                // 4. Preparar la consulta (Evita Inyecciones SQL)
+                $query = "INSERT INTO contact (name, email, message) VALUES (:name, :email, :message)";
+                $stmt  = $pdo->prepare($query);
 
-           if ($result) {
-                header("Location: ../../index.html");
-                exit();
-            } else {
-                echo "Error al insertar datos.";
+                // 5. Ejecutar pasando los valores
+                $result = $stmt->execute([
+                    ':name'    => $name,
+                    ':email'   => $email,
+                    ':message' => $message
+                ]);
+
+                if ($result) {
+                    header("Location: ../../index.html");
+                    exit();
+                } else {
+                    echo "Error al insertar datos.";
+                }
             }
+        } else {
+            echo "No se recibieron datos (failure)";
         }
-    }else{
-        print("failure");
+
+    } catch (PDOException $e) {
+        // Si hay un error de conexión o de base de datos, lo verás aquí
+        die("Error en la base de datos: " . $e->getMessage());
     }
 
+
+
+
+
+    //----------------------------------------------------------
+
+    //supabase
+        // $SERVER = 'db.icsldpuppeglkuedwzpg.supabase.co';
+        // $port = "5432";
+        // $DATABASE = 'postgres';
+        // $USER = 'postgres';
+        // $PASSWORD = 'supabasejimmyred775';
+
+        // //posgres
+        // $con = pg_connect("host=$SERVER port=$port dbname=$DATABASE user=$USER password=$PASSWORD sslmode=require");
+
+        // date_default_timezone_set('America/Bogota'); 
+        // $date = date('Y-m-d h:i:s', time());
+        // if(!empty($_POST)){
+        //     if(!isset($_POST['Enviar'])){
+
+        //         $name = $_POST['name'];
+        //         $email = $_POST['email'];
+        //         $message = $_POST['message'];
+
+        //         $query = "INSERT INTO contact(name, email, message) VALUES ($1, $2, $3)";
+        //         $result = pg_query_params($con, $query, array($name, $email, $message));
+
+
+        //     if ($result) {
+        //             header("Location: ../../index.html");
+        //             exit();
+        //         } else {
+        //             echo "Error al insertar datos.";
+        //         }
+        //     }
+        // }else{
+        //     print("failure");
+        // }
+    //----------------------------------------------------------
 
     //supabase API
     // $url = 'https://icsldpuppeglkuedwzpg.supabase.co/rest/v1/contact';

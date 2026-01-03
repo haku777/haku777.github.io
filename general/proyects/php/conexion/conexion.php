@@ -1,14 +1,20 @@
 <?php
-    $Server = "localhost";
-    $Database = "u380261347_DBHaku";
-    $Username = "u380261347_HAKU";
-    $Password = "@IB+V0/?$7r";
-    // $Server = "localhost";
-    // $Database = "netgrid";
-    // $Username = "root";
-    // $Password = "";
-    $con = new mysqli($Server, $Username, $Password, $Database);
+
+// $host = getenv('PGHOST');
+// $db   = getenv('PGDATABASE');
+// $user = getenv('PGUSER');
+// $pass = getenv('PGPASSWORD');
+// $port = '5432';
+
+$dsn = "pgsql:host=$host;port=$port;dbname=$db;sslmode=require";
+
+try {
+    $pdo = new PDO($dsn, $user, $pass, [
+        PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION
+    ]);
+
+    echo "¡Conexión exitosa a Neon!";
+} catch (PDOException $e) {
+    echo "Error de conexión: " . $e->getMessage();
+}
 ?>
-
-
-
