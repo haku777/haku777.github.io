@@ -11,15 +11,22 @@ export default async function handler(req, res) {
   const sql = neon('postgresql://neondb_owner:npg_NUzu8F4KSToW@ep-steep-hat-ad3atyfi-pooler.c-2.us-east-1.aws.neon.tech/neondb?sslmode=require');
 
   try {
-    const { name, email, message } = req.body;
+    const name = req.body.name;
+    const email = req.body.email;
+    const message = req.body.message;
 
-    // Insertar datos de forma ultra sencilla
+    if (!name || !email) {
+        throw new Error("Faltan campos: name o email están vacíos");
+    }
+
     await sql('INSERT INTO contact (name, email, message) VALUES ($1, $2, $3)', [name, email, message]);
 
-    // Redirigir al éxito
-    return res.redirect(303, '../index.html');
+    return res.redirect(303, '/index.html?success=true');
   } catch (error) {
-    console.error(error);
-    return res.status(500).json({ error: 'Error al guardar en la base de datos' });
+    // ESTO ES CLAVE: Ahora el error te dirá EXACTAMENTE qué pasó
+    return res.status(500).json({ 
+        error: 'Error de base de datos', 
+        details: error.message 
+    });
   }
 }
