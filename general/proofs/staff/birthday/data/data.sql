@@ -23,3 +23,6 @@ create table family (
 -- 21 de Mayo nixon = 29 2023
 -- 16 de dic humberto = 60 2024
 -- 21 de diciembre Wendy = 25 2023 
+
+
+

@@ -9,7 +9,7 @@ body{
   height: 100vh;
 }
 .wrapper {
-  background: #ffd5ae;
+  background: #fff1eb;
   font-family: Cambria, Tahoma ,Arial;
   width: 100vw;
   height: 100vh;
@@ -28,7 +28,7 @@ h2{
 }
 
 main {
-  background-color: #ff8080;
+  background-color: #ffdddd;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -45,12 +45,6 @@ main {
   aspect-ratio: 1/1;
 }
 
-.card{
-  width: 40%;
-  height: 500px;
-  padding: 10px;
-  /* overflow: hidden; */
-}
 
 .information{
   width: 40%;    
@@ -66,7 +60,7 @@ main {
   /* writing-mode: vertical-lr; */
 }
 
-main .card .img{
+main .card .percentage{
   border: 2px solid #333;
   border-radius: 7px;
   padding: 10px;
@@ -74,22 +68,6 @@ main .card .img{
   height: 100%;
 }
 
-main .card .img::before{
-  background: hsla(0, 0%, 18%, 0.819);
-  color: #fff;
-  position: absolute;
-  content: 'Photos';
-  padding: 2px;
-  z-index: 10000;
-}
-
-main .card img{
-  box-shadow: 0px 0px 4px 1px #333;
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-  aspect-ratio: 1/1;
-}
 
 fieldset{
   border: 2px solid #333;
@@ -105,41 +83,24 @@ legend{
   font-size: 70px;
 }
 
-code{
-  background-color: #999;
-  color: #fff;
-  width: 200px;
-  height: 100px;
-  aspect-ratio: 1/1;
-  border-radius: 7px;
-}
-
-.dates{
-  text-align: left;
-  padding: 17px;
-  width: 50%;
-  height: 70vh;
-  overflow-y: scroll;
+.info{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 
 .year{
   display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-content: center;
   align-items: center;
-  width: 50%;
-  border-left: 1px solid #000;
 }
 .percent{
-  background-color: salmon;
-  width: 4vw;
-  height: 4vw;
+  width: 50vw;
+  height: 50vw;
   border-radius: 50%;
 }
 
-aside{
-  /* display: none; */
+legend,span{
+  color: crimson
 }
 
 a{
@@ -168,7 +129,7 @@ a{
   }
   & p{
     position: absolute;
-    background: green;
+    border: 0.5px solid crimson;
     font-size: 27px;
     margin: 10px;
     color: #fff;

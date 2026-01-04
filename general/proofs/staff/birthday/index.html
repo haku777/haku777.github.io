@@ -15,25 +15,28 @@
         <main>
             <div class="next" class="change"><</div>
                 <div class="card">
-                    <div class="img">
-                        <img src="../../../../files/img/Family/J/j.jpg" alt="">
+                    <div class="percentage">
+                        <div class="year">
+                            <div class="percent" id="percent"></div>
+                        </div>
                     </div>
                 </div>
                 <div class="information">
                     <fieldset>
-                        <legend id="name">
-                            SARA
-                        </legend>
-                        <p>Age: 11</p>
-                        <p>Zodiac: pound(Libra)</p>
-                        <p>Element: Air(Aire)</p>
-                        <p>Birthday: oct 03</p>
-                        <p>days left: 365</p>
-                        <a href="#" onclick="Show()">Show Photos</a>
-                        <div class="year">
-                            <h2>Year percent</h2>
-                            <div class="percent" id="percent"></div>
-                        </div>
+                        <legend id="name"></legend>
+                            <div class="info">
+                                <div class="data">
+                                    <p>Birthday: <span id="day"></span>-<span id="month"></span></p>
+                                    <p>Age: <span id="age"></span></p>
+                                    <p>Year: <span id="year"></span></p>
+                                    <p>Zodiac: <span id="zodiac"></span></p>
+                                    <p>Element:  <span id="element"></span></p>
+                                    <p>Blood: <span id="blood"></span></p>
+                                    <p id="daysLeft"></p>
+                                </div>
+
+                            </div>
+                            <a href="#" onclick="Show()">Show Photos</a>
                     </fieldset>
                 </div>
             <div class="next" class="change">></div>
@@ -41,14 +44,15 @@
         <div class="Photos" id="Photos">
             <div class="close"><a href="#" onclick="Close()">Close</a></div>
             <p id="previewPhoto" class="change"><</p>
-            <img id="photo" src="../../../../files/img/Family/Sara/sara1.jpg" alt="">
+            <img id="photo">
             <p id="nextPhoto" class="change">></p>
         </div>
     </div>
 
 </body>
-    <script src="js/birthday.js"></script>
-    <script src="js/percentage.js"></script>
-    <script src="js/date.js"></script>
-    <script src="js/photos.js"></script>
+<script src="js/percentage.js"></script>
+<script src="js/date.js"></script>
+<script src="js/photos.js"></script>
+<script src="js/logic.js"></script>
+<script src="js/birthday.js"></script>
 </html>
