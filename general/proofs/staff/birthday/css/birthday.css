@@ -133,13 +133,13 @@ code{
 }
 .percent{
   background-color: salmon;
-  width: 27vw;
-  height: 27vw;
+  width: 4vw;
+  height: 4vw;
   border-radius: 50%;
 }
 
 aside{
-  display: none;
+  /* display: none; */
 }
 
 a{
