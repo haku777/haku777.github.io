@@ -2,86 +2,40 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-body{
-    background: linear-gradient(to top,white,skyblue);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    color: #555555;
     font-family: 'Noto Sans JP', sans-serif;
 }
 
+
 header{
-    background: rgb(0,25,77);
+    background: #ff0042;
     color: white;
     display: flex;
     justify-content: space-around;
     align-content: center;
     align-items: center;
-    width: 100%;
     padding: 10px;
 }
 
-header div{
-    display: flex;
-    justify-content: space-between;
-    align-content: center;
-    align-items: center;
-}
-
-header div h2{
-    display: inline-block;
-}
-
-header img{
-    width: 77px;
-    height: 77px;
-    border-radius: 50%;
-}
-
-header a{
-    text-decoration: none;
-    color: white;
-    font-size: 2rem;
-    right: 0;
-}
-
 main{
-    width: 90%;
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-    backdrop-filter: blur(30px);
-    justify-content: center;
-    align-content: center;
-    align-items: center;
+    background: linear-gradient(140deg,crimson,dodgerblue);
+    width: 100vw;
+    height: 100vh;;
 }
 
-#tarjetas{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-}
 
-section{
+#heros{
     padding: 4px;
-    margin: 5vh 2vh;
     overflow: hidden;
     display: inline-block;
-    box-shadow: 3px 3px 7px lightslategrey;
+    box-shadow: 2px 2px 4px #000;
 }
 
-/* ---------------- */
-
 .hero{
-    /* background: skyblue; */
-    /* padding: 10px; */
-    display: flex;
-    justify-content: space-between;
+    background: crimson;
+    &img{
+        width: 100px;
+        height: 100px;
+    }
 }
 
 .foto{
