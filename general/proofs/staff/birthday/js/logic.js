@@ -55,7 +55,7 @@
 
         data = user;
     }
-    getDate(0);
+    getDate(1);
 
     function calculateAge(year, month, day){
         let now = new Date();
