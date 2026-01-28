@@ -12,7 +12,8 @@
         }
         body{
             height: 100vh;
-            background-color: #000;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            -webkit-font-smoothing: antialiased;
         }
         main{
             display: flex;
@@ -22,28 +23,40 @@
             align-items: center;
         }
         .dashboard{
+            background: #0b003d;
+            padding-top: 7vh;
+            width: 18vw;
+            height: 100vh;
             display: flex;
             flex-direction: column;
-            padding: 2px;
-            margin: 10px;
-            background-color: salmon;
-        }
-        section{
-            background: teal;
-            width: 100%;
-            height: 100vh;
+            align-items: stretch;
         }
         button{
-            background-color: #000;
-            color: #fff;
+            background: transparent;
             padding: 20px;
-            width: 120px;
+            padding-left: 40px;
+            text-align: start;
+            font-size: 20px;
+            color: #fff;
+            width: 100%;
             border: none;
             cursor: pointer;
         }
+        .active{
+            background: crimson;
+        }
+        section{
+            width: 82vw;
+            height: 100vh;
+        }
         iframe{
+            background: #F8F9FA;
             width: 100%;
             height: 100%;
+        }
+        .dashboard button:hover:not(.active) {
+            background-color: rgba(255, 255, 255, 0.1); /* Un brillo sutil */
+            padding-left: 15px; /* Un pequeño desplazamiento hacia la derecha */
         }
     </style>
 </head>
@@ -56,7 +69,10 @@
             <button onclick="changeiframe('date')">date</button>
             <button onclick="changeiframe('vitamins')">Vitamins</button>
             <button onclick="changeiframe('dinner')">Dinner</button>
-            </button>
+            <button onclick="changeiframe('WordsMeaning')">WordsMeaning</button>
+            <button onclick="changeiframe('MentalDisorders')">MentalDisorders</button>
+            <button onclick="changeiframe('Sexuality')">Sexual-Illnes</button>
+            <button onclick="changeiframe('Solid')">SOLID</button>
         </div>
         <section>
             <iframe src="" frameborder="0"></iframe>
@@ -66,29 +82,15 @@
 <script>
 
     let iframe = document.querySelector("iframe");
-    function changeiframe(link){
-        
-        switch(link){
-            case "pays":
-                iframe.src = "pays/pays.html";
-                break;
-            case "links":
-                iframe.src = "links/links.html";
-            break;
-            case "date":
-                iframe.src = "date/date.html";
-                break;
-            case "birthday":
-                iframe.src = "birthday/index.html";
-                break;
-            case "vitamins":
-                iframe.src = "vitamins/vitamins.html";
-                break;
-            case "dinner":
-                iframe.src = "Dinner/dinner.html";
-                break;
-        }
+    let buttons = document.querySelectorAll(".dashboard button");
+    console.log(buttons[1]);
+    function changeiframe(link, element){
+        buttons.forEach(btn => btn.classList.remove("active"));
+            if (element) {
+            element.classList.add("active");
+            }
+        iframe.src = `${link}/index.html`;
     }
-    changeiframe("pays");
+    changeiframe("pays",buttons[1]);
 </script>
 </html>

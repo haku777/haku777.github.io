@@ -10,18 +10,15 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-size: 2vh !important;
         }
         body {
-            font-family: Tahoma, sans-serif; /* Fuente Tahoma o similar */
-            background: #ffe9c9; /* Fondo blanco y limpio */
-            color: #242424; /* Texto oscuro para buena legibilidad */
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
         }
         header {
-            background: #6e0096; /* Morado más oscuro */
+            background: #002e63;
+            padding: 20px;
         }
         header nav {
-            padding: 20px;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -42,11 +39,10 @@
         .wrapper {
             display: flex;
             justify-content: center;
-            margin-top: 30px; /* Separación del header */
+            margin-top: 30px;
         }
 
         .container {
-            background: #fff3e6; /* Fondo blanco para el contenido */
             width: 80vw;
             padding: 20px;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
@@ -54,6 +50,7 @@
         }
 
         .payment-record {
+            background: #fff9f3; 
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -61,7 +58,6 @@
             padding: 15px;
             border: 1px solid #dcdcdc; /* Gris muy claro para el borde */
             border-radius: 8px;
-            background: #ffd8be; /* Gris muy claro */
             color: #333; /* Texto en gris oscuro */
         }
 
@@ -70,15 +66,10 @@
         }
 
         .payment-record a {
-            color: #1E90FF; /* DodgerBlue para los enlaces */
+            color: #007900; /* DodgerBlue para los enlaces */
             text-decoration: none;
             font-size: 1.2rem; /* Aumentamos el tamaño de la fuente */
             transition: all 0.3s ease;
-        }
-
-        .payment-record a:hover {
-            text-decoration: underline;
-            color: #d35400; /* Naranja al pasar el mouse */
         }
 
         .status {
@@ -89,13 +80,15 @@
         }
 
         .status.unpaid {
-            background: #e74c3c; /* Rojo para "unpaid" */
-            color: white;
+            background:#fcb6b6;
+            /* background: #e74c3c;  */
+            color: Crimson;
         }
 
         .status.paid {
-            background: #2ecc71; /* Verde para "paid" */
-            color: white;
+            background: #a9ffcd; /* Verde para "paid" */
+            color : #009940;
+            /* color: #2ecc71; */
         }
     </style>
     <link rel="" href="app.py">
@@ -118,13 +111,14 @@
         // Array con los datos de los pagos
         const paymentRecords = [
             { name: "Internet", limit: "zumaBanc" },//60631888221
-            { name: "Lux",number:"7700492-6", limit:"deadLine:15", link: "https://www.enel.com.co/es.html" },
+            { name: "Lux",number:"7700492-6", limit:"lim", link: "https://www.enel.com.co/es.html" },
             { name: "Water",number:"10451142", link: "https://epz.gov.co/wp/" },
             { name: "Gas", number: "63641057", link: "https://www.grupovanti.com/" },
             { name: "Rent", link: "https://..." },  
+            { name: "Netflix?" },            
+            { name: "Credit Card" },            
             { name: "Baloto"  },            
-            { name: "Apto?",  } ,
-            { name: "Netflix?" }            
+            { name: "Apto?",  }
         ];
 
         // Función para crear los divs dinámicamente
