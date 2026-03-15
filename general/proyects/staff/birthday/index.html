@@ -13,46 +13,50 @@
         <h1>Family Galery</h1>
         <h2 class="date" id="date"></h2>
         <main>
-            <div class="next" class="change"><</div>
-                <div class="card">
-                    <div class="percentage">
-                        <div class="year">
-                            <div class="percent" id="percent"></div>
-                        </div>
+            <div id="previousUser" class="next"><</div>
+            <div class="card">
+                <div class="percentage">
+                    <div class="year">
+                        <div class="percent" id="percent"></div>
                     </div>
                 </div>
-                <div class="information">
-                    <fieldset>
-                        <legend id="name"></legend>
-                            <div class="info">
-                                <div class="data">
-                                    <p>Birthday: <span id="day"></span>-<span id="month"></span></p>
-                                    <p>Age: <span id="age"></span></p>
-                                    <p>Year: <span id="year"></span></p>
-                                    <p>Zodiac: <span id="zodiac"></span></p>
-                                    <p>Element:  <span id="element"></span></p>
-                                    <p>Blood: <span id="blood"></span></p>
-                                    <p id="daysLeft"></p>
-                                </div>
-
-                            </div>
-                            <a href="#" onclick="Show()">Show Photos</a>
-                    </fieldset>
-                </div>
-            <div class="next" class="change">></div>
+            </div>
+            <div class="information">
+                <fieldset>
+                    <legend id="name"></legend>
+                    <div class="info">
+                        <div class="data">
+                            <p hidden>id: <span id="id">0</span></p>
+                            <p>Birthday: <span id="day"></span>-<span id="month"></span></p>
+                            <p>Age: <span id="age"></span></p>
+                            <p>Year: <span id="year"></span></p>
+                            <p>Zodiac: <span id="zodiac"></span></p>
+                            <p>Element:  <span id="element"></span></p>
+                            <p>Blood: <span id="blood"></span></p>
+                            <p>Days left: <span id="daysLeft"></span></p>
+                        </div>
+                        
+                    </div>
+                    <a href="#" onclick="Show()">Show Photos</a>
+                </fieldset>
+            </div>
+            <div id="nextUser" class="next">></div>
         </main>
         <div class="Photos" id="Photos">
-            <div class="close"><a href="#" onclick="Close()">Close</a></div>
-            <p id="previewPhoto" class="change"><</p>
+            <div class="close"><a href="#" onclick="Close()">Close</a>
+                <code style="color: #fff;">1/99</code>
+            </div>
+            <p id="previousPhoto" class="change"><</p>
             <img id="photo">
             <p id="nextPhoto" class="change">></p>
         </div>
     </div>
 
 </body>
-<script src="js/percentage.js"></script>
-<script src="js/date.js"></script>
-<script src="js/photos.js"></script>
-<script src="js/logic.js"></script>
-<script src="js/birthday.js"></script>
+<script src="js/Percentage.js"></script>
+<script src="js/Date.js"></script>
+<script src="js/Logic.js"></script>
+<script src="js/Birthday.js"></script>
+<script src="js/User.js"></script>
+<script src="js/Photos.js"></script>
 </html>

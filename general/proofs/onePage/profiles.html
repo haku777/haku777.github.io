@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Círculo Giratorio Animado</title>
+    <style>
+        :root {
+            --circle-size: 400px;
+            --box-size: 60px;
+            --duration: 10s;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+
+        /* Contenedor principal y el círculo */
+        .container {
+            position: relative;
+            width: var(--circle-size);
+            height: var(--circle-size);
+            border: 2px solid #333; /* El borde del círculo */
+            border-radius: 36%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* Animación de giro a la derecha (CW) */
+            animation: rotate-right var(--duration) linear infinite;
+        }
+        
+        /* Estilo general para los cubos negros */
+        .cube {
+            position: absolute;
+            width: var(--box-size);
+            height: var(--box-size);
+            background-color: #ff009d;
+            /* Animación de giro a la izquierda (CCW) para compensar */
+            animation: rotate-left 3s linear infinite;
+        }
+
+        /* Rectángulo verde central */
+        .center-box {
+            position: absolute;
+            width: 220px;
+            height: 142px;
+            background-color: #ff009d;
+            z-index: 10;
+            /* El centro NO debe girar con el círculo, 
+               así que le aplicamos la rotación inversa */
+            animation: rotate-left var(--duration) linear infinite;
+        }
+        h1{
+            text-align: center;
+            color: #fff;
+        }
+
+
+        /* Animaciones */
+        @keyframes rotate-right {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        @keyframes rotate-left {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(-360deg); }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container" id="circle">
+        <div class="center-box">
+            <h1>Need a change</h1>
+        </div>
+    </div>
+
+    <script>
+        const container = document.getElementById('circle');
+        const totalCubes = 8;
+        const radius = 200; // Mitad de --circle-size
+
+        for (let i = 0; i < totalCubes; i++) {
+            const cube = document.createElement('div');
+            cube.className = 'cube';
+            
+            // Cálculo de posición matemática (Seno y Coseno)
+            // Se resta 90 grados (Math.PI / 2) para que el primero empiece arriba
+            const angle = (i * 2 * Math.PI / totalCubes) - (Math.PI / 2);
+            const x = radius * Math.cos(angle);
+            const y = radius * Math.sin(angle);
+
+            // Posicionamos cada cubo en el borde del círculo
+            // Restamos la mitad del tamaño del cubo para centrarlo sobre la línea
+            cube.style.left = `calc(50% + ${x}px - 30px)`;
+            cube.style.top = `calc(50% + ${y}px - 30px)`;
+
+            container.appendChild(cube);
+        }
+    </script>
+</body>
+</html>

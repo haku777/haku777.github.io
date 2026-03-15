@@ -1,13 +1,12 @@
 (()=>{
-    let data = {};
-    function getDate(person){
-        let user = {};
+    let id = parseInt(document.getElementById("id").textContent);
+    let user = {};
 
-        //validamos con el valor de person si es uno de los 5 usuarios
-        //lo haremos con un switch case
+    function getData(person){
         switch(person){
             case 0:
                 user = {
+                    id: 0,
                     name: "JIMMY",
                     year: 1998,
                     month: 1,
@@ -17,6 +16,7 @@
             break;
             case 1:
                 user = {
+                    id: 1,
                     name: "SARA",
                     year: 2013,
                     month: 10,
@@ -26,6 +26,7 @@
             break;
             case 2:
                 user = {
+                    id: 2,
                     name: "KATE",
                     year: 1997,
                     month: 2,
@@ -35,6 +36,7 @@
             break;
             case 3:
                 user = {
+                    id: 3,
                     name: "NELSA",
                     year: 1977,
                     month: 6,
@@ -44,6 +46,7 @@
             break;
             case 4:
                 user = {
+                    id: 4,
                     name: "JORGE",
                     year: 1974,
                     month: 3,
@@ -51,11 +54,12 @@
                     blood : "ask"
                 };
             break;
+            default:
+                user = null;
         }
 
-        data = user;
+        return user;
     }
-    getDate(1);
 
     function calculateAge(year, month, day){
         let now = new Date();
@@ -78,11 +82,12 @@
             { sign: "Libra", element: "Air", m: 10, d: 23 },
             { sign: "Scorpio", element: "Water", m: 11, d: 22 },
             { sign: "Sagittarius", element: "Fire", m: 12, d: 22 },
-            { sign: "Capricorn", element: "Earth", m: 13, d: 31 } // Cierre de año
+            { sign: "Capricorn", element: "Earth", m: 13, d: 31 }
         ];
         return result = zodiacData.find(z => (month < z.m) || (month === z.m && day < z.d));
     }
 
+    async function actualizarDatos(dataUser) {
         let name = document.getElementById("name");
         let birthdayDay = document.getElementById("day");
         let birthdayMonth = document.getElementById("month");
@@ -92,14 +97,25 @@
         let element = document.getElementById("element");
         let blood = document.getElementById("blood");
 
-        name.innerHTML = data.name;
-        birthdayDay.innerHTML = data.day;
-        birthdayMonth.innerHTML = data.month;
-        year.innerHTML = data.year;
-        age.innerHTML = calculateAge(data.year, data.month, data.day);
-        zodiac.innerHTML = getZodiacSign(data.month, data.day).sign;
-        element.innerHTML = getZodiacSign(data.month, data.day).element;
-        blood.innerHTML = data.blood;
+        id.innerHTML = dataUser.id;
+        name.innerHTML = dataUser.name;
+        birthdayDay.innerHTML = dataUser.day;
+        birthdayMonth.innerHTML = dataUser.month;
+        year.innerHTML = dataUser.year;
+        age.innerHTML = calculateAge(dataUser.year, dataUser.month, dataUser.day);
+        zodiac.innerHTML = getZodiacSign(dataUser.month, dataUser.day).sign;
+        element.innerHTML = getZodiacSign(dataUser.month, dataUser.day).element;
+        blood.innerHTML = dataUser.blood;
+    }
+    actualizarDatos(getData(id));
 
+    async function actualizarUsuario(idUsuario) {
+        const dataUser = await getData(idUsuario);
+        await actualizarDatos(dataUser);
+        await updateGraphics();
+    }
 
-})()
+    window.getData = getData;
+    window.actualizarDatos = actualizarUsuario;
+
+})();

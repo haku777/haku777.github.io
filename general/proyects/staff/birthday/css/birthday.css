@@ -9,7 +9,7 @@ body{
   height: 100vh;
 }
 .wrapper {
-  background: #fff1eb;
+  color-scheme: auto;
   font-family: Cambria, Tahoma ,Arial;
   width: 100vw;
   height: 100vh;
@@ -28,7 +28,7 @@ h2{
 }
 
 main {
-  background-color: #ffdddd;
+  background: linear-gradient(to bottom, #61cdff, #fff);
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -99,8 +99,9 @@ legend{
   border-radius: 50%;
 }
 
-legend,span{
-  color: crimson
+legend,span, #daysLeft{
+  color: #ff0033;
+  text-shadow: 0px 1px #252525;
 }
 
 a{
